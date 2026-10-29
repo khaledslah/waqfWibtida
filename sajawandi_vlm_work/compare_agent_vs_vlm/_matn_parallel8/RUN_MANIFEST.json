@@ -1,0 +1,16 @@
+{
+  "launched_at": "2026-10-29T22:02",
+  "mode": "8_parallel_blind_matn",
+  "pages": "230-261",
+  "agents": [
+    {"id": "ec2e3661-7429-4e0b-9a0c-c5c3e91855a5", "job": "A", "pages": "230-233", "role": "control", "out": "batch_230_233.parallel.raw.json"},
+    {"id": "6502de86-248c-4748-9502-f4f69f3be506", "job": "B", "pages": "234-237", "out": "batch_234_237.parallel.raw.json"},
+    {"id": "a841311d-430f-4340-bb30-3e832144698f", "job": "C", "pages": "238-241", "out": "batch_238_241.parallel.raw.json"},
+    {"id": "eae98ed0-7eff-4c24-8580-8d5484d8911a", "job": "D", "pages": "242-245", "out": "batch_242_245.parallel.raw.json"},
+    {"id": "bd94b820-147d-46a1-ac0c-52ca1e111bc0", "job": "E", "pages": "246-249", "out": "batch_246_249.parallel.raw.json"},
+    {"id": "ff3e4f87-5cc5-410b-bc31-b702587f92b8", "job": "F", "pages": "250-253", "out": "batch_250_253.parallel.raw.json"},
+    {"id": "57e07de2-8f45-45d4-ab4f-4829cae0c664", "job": "G", "pages": "254-257", "out": "batch_254_257.parallel.raw.json"},
+    {"id": "f787ac20-de81-4451-ad57-bbf26dd06e61", "job": "H", "pages": "258-261", "out": "batch_258_261.parallel.raw.json"}
+  ],
+  "control_baseline": "batch_230_233.clear_schema_blind.raw.json"
+}

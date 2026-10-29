@@ -1,0 +1,116 @@
+{
+  "files": 8,
+  "total_waqfs": 98,
+  "batches": [
+    {
+      "file": "batch_230_233.parallel.raw.json",
+      "pages": [
+        230,
+        231,
+        232,
+        233
+      ],
+      "count": 15,
+      "source": "parallel8_control",
+      "labels_ok": true,
+      "fixes_ok": true
+    },
+    {
+      "file": "batch_234_237.parallel.raw.json",
+      "pages": [
+        234,
+        235,
+        236,
+        237
+      ],
+      "count": 18,
+      "source": "parallel8",
+      "labels_ok": true,
+      "fixes_ok": true
+    },
+    {
+      "file": "batch_238_241.parallel.raw.json",
+      "pages": [
+        238,
+        239,
+        240,
+        241
+      ],
+      "count": 8,
+      "source": "parallel8",
+      "labels_ok": true,
+      "fixes_ok": true
+    },
+    {
+      "file": "batch_242_245.parallel.raw.json",
+      "pages": [
+        242,
+        243,
+        244,
+        245
+      ],
+      "count": 12,
+      "source": null,
+      "labels_ok": true,
+      "fixes_ok": true
+    },
+    {
+      "file": "batch_246_249.parallel.raw.json",
+      "pages": [
+        246,
+        247,
+        248,
+        249
+      ],
+      "count": 14,
+      "source": "parallel8",
+      "labels_ok": true,
+      "fixes_ok": true
+    },
+    {
+      "file": "batch_250_253.parallel.raw.json",
+      "pages": [
+        250,
+        251,
+        252,
+        253
+      ],
+      "count": 16,
+      "source": "parallel8",
+      "labels_ok": true,
+      "fixes_ok": true
+    },
+    {
+      "file": "batch_254_257.parallel.raw.json",
+      "pages": [
+        254,
+        255,
+        256,
+        257
+      ],
+      "count": 2,
+      "source": "parallel8",
+      "labels_ok": true,
+      "fixes_ok": true
+    },
+    {
+      "file": "batch_258_261.parallel.raw.json",
+      "pages": [
+        258,
+        259,
+        260,
+        261
+      ],
+      "count": 13,
+      "source": "parallel8",
+      "labels_ok": true,
+      "fixes_ok": true
+    }
+  ],
+  "control_vs_clear_schema": "15/15 structural match (minor punctuation)",
+  "notes": [
+    "batch_254_257 includes حجة page 253 (cross-batch page_split from 250-253 open bracket)",
+    "batch_242_245: p244 empty crop; صبغة may be ج ز dual in text",
+    "batch_250_253 omitted incomplete trailing حجة open; completed in 254-257"
+  ]
+}

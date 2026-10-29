@@ -1,0 +1,102 @@
+{
+  "page_numbers": [
+    223,
+    224,
+    225
+  ],
+  "waqfs": [
+    {
+      "ayah": 102,
+      "target_word": "وماروت",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ وماروت - 102 - ط ﴾",
+      "text_page": 224,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 102,
+      "target_word": "فلا تكفر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ فلا تكفر - 102 - ط ﴾",
+      "text_page": 224,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 102,
+      "target_word": "وزوجه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ وزوجه - 102 - ط ﴾",
+      "text_page": 225,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 102,
+      "target_word": "بإذن الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ بإذن الله - 102 - ط ﴾",
+      "text_page": 225,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 102,
+      "target_word": "ولا ينفعهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ ولا ينفعهم - 102 - ط ﴾",
+      "text_page": 225,
+      "old_text": "﴿ ولاينفعهم - 102 - ط ﴾",
+      "fixes": [
+        {
+          "type": "orthography",
+          "basis": "editor_policy",
+          "old_text": "ولاينفعهم",
+          "new_text": "ولا ينفعهم",
+          "info": "فصل كلمة ينفعهم عن لا النافية"
+        }
+      ]
+    },
+    {
+      "ayah": 102,
+      "target_word": "من خلاق",
+      "verdict_label": "ق",
+      "verdict": "قيل فيه وقف",
+      "text": "﴿ من خلاق - 102 - ق ﴾",
+      "text_page": 225,
+      "old_text": "[ ﴿ من خلاق - وقف ﴾ ]",
+      "fixes": [
+        {
+          "type": "malformed_bracket",
+          "basis": "editor_policy",
+          "old_text": "[ ﴿ من خلاق - وقف ﴾ ]",
+          "new_text": "﴿ من خلاق - وقف ﴾",
+          "info": "إزالة المعقوفتين الزائدتين حول موضع الوقف المضاف من النسخة (د)"
+        },
+        {
+          "type": "ayah_number_correction",
+          "basis": "editor_policy",
+          "old_text": "﴿ من خلاق - وقف ﴾",
+          "new_text": "﴿ من خلاق - 102 - ق ﴾",
+          "info": "إضافة رقم الآية 102 وتحويل كلمة وقف إلى الرمز المعياري ق"
+        }
+      ]
+    },
+    {
+      "ayah": 102,
+      "target_word": "أنفسهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ أنفسهم - 102 - ط ﴾",
+      "text_page": 225,
+      "old_text": null,
+      "fixes": []
+    }
+  ]
+}

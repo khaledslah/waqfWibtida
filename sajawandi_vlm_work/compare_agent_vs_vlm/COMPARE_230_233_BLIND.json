@@ -1,0 +1,21 @@
+{
+  "batch": "230-233",
+  "vlm_model": "gemini-3.6-flash",
+  "blind": true,
+  "vlm_count": 14,
+  "agent_count": 15,
+  "matched": 14,
+  "only_vlm": [],
+  "only_agent": [
+    [
+      113,
+      "ط",
+      "الكتاب"
+    ]
+  ],
+  "label_agree": 14,
+  "page_agree": 14,
+  "text_exact": 0,
+  "agent_file": "compare_agent_vs_vlm/batch_230_233.blind_agent.raw.json",
+  "vlm_file": "cache/raw/batch_230_233.raw.txt"
+}

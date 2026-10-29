@@ -1,0 +1,179 @@
+{
+  "page_numbers": [323, 324, 325, 326],
+  "waqfs": [
+    {
+      "ayah": 249,
+      "target_word": "منهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿منهم - ٢٤٩ - ط﴾ تعظيما لابتداء أمر معظم.",
+      "text_page": 323,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 249,
+      "target_word": "معه",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿معه - ٢٤٩ - لا﴾ لأن ﴿قالوا﴾ جواب ﴿لما﴾.",
+      "text_page": 323,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 249,
+      "target_word": "وجنوده",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿وجنوده - ٢٤٩ - ط﴾.",
+      "text_page": 323,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 249,
+      "target_word": "الله",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ملاقوا الله - ٢٤٩ - لا﴾ لأن ما بعده مفعول ﴿قال﴾.",
+      "text_page": 323,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 249,
+      "target_word": "الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿بإذن الله - ٢٤٩ - ط﴾.",
+      "text_page": 323,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 250,
+      "target_word": "الكافرين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿الكافرين - ٢٥٠ - ط﴾ للآية، ولأن ما قبله دعاء، وما بعده خبر ماض متصل بكلام طويل بعده.",
+      "text_page": 323,
+      "old_text": "﴿ الكافرين - \n ٢٥٠ - ط ﴾ (١) للآية، ولأن ما قبله دعاء، وما بعده خبر ماض متصل (٢) بكلام (٣) طويل بعده .",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿ الكافرين - \n ٢٥٠ - ط ﴾",
+          "new_text": "﴿الكافرين - ٢٥٠ - ط﴾",
+          "info": "وصل موضع الوقف المنقسم بين نهاية صفحة 323 وبداية صفحة 324."
+        }
+      ]
+    },
+    {
+      "ayah": 251,
+      "target_word": "الله",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿بإذن الله - ٢٥١ - لا﴾ لاتصال اللفظ واتساق المعنى، فإن الهزيمة كانت: قتل داود جالوت.",
+      "text_page": 324,
+      "old_text": "ولا وقف على ﴿ بإذن الله - ٢٥١ ﴾ (٤) لاتصال اللفظ واتساق (٥) المعنى، فإن الهزيمة (٦) كانت : قتل داود جالوت .",
+      "fixes": [
+        {
+          "type": "missing_symbol",
+          "basis": "page_prose",
+          "old_text": "ولا وقف على ﴿ بإذن الله - ٢٥١ ﴾",
+          "new_text": "﴿بإذن الله - ٢٥١ - لا﴾",
+          "info": "إدراج رمز الوقف (لا) داخل الحاصرتين استناداً إلى تصريح المؤلف بالنفي: «ولا وقف على»."
+        }
+      ]
+    },
+    {
+      "ayah": 251,
+      "target_word": "يشاء",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿مما يشاء - ٢٥١ - ط﴾.",
+      "text_page": 324,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 252,
+      "target_word": "بالحق",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿بالحق - ٢٥٢ - ط﴾ للابتداء بإن.",
+      "text_page": 325,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 253,
+      "target_word": "بعض",
+      "verdict_label": "م",
+      "verdict": "لازم",
+      "text": "﴿على بعض - ٢٥٣ - م﴾ لأنه لو وصل صار الجار صفة لبعض فينصرف بيان تفضيل الرسل إلى ﴿بعض﴾ فيكون موسى عليه السلام من هذا البعض المفضل عليه غيره [لا من البعض المفضل على غيره] بالتكليم.",
+      "text_page": 325,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 253,
+      "target_word": "درجات",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿درجات - ٢٥٣ - ط﴾ للعدول [من الاخبار إلى الحكاية].",
+      "text_page": 325,
+      "old_text": "﴿ درجات - ٢٥٣ - ط ﴾ (٦) للعدول [ من الاخبار إلى\n الحكاية ] (١) .",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "[ من الاخبار إلى\n الحكاية ]",
+          "new_text": "[من الاخبار إلى الحكاية]",
+          "info": "وصل تعليل موضع الوقف المنقسم بين نهاية صفحة 325 وبداية صفحة 326."
+        }
+      ]
+    },
+    {
+      "ayah": 253,
+      "target_word": "القدس",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿القدس - ٢٥٣ - ط﴾.",
+      "text_page": 326,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 253,
+      "target_word": "كفر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿من كفر - ٢٥٣ - ط﴾.",
+      "text_page": 326,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 254,
+      "target_word": "شفاعة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ولا شفاعة - ٢٥٤ - ط﴾.",
+      "text_page": 326,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 255,
+      "target_word": "هو",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿إلا هو - ٢٥٥ - ج﴾ لأن قوله: ﴿الحي﴾ يصلح بدلا عن الضمير، وخبر ضمير",
+      "text_page": 326,
+      "old_text": null,
+      "fixes": []
+    }
+  ]
+}

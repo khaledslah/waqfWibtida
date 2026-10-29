@@ -1,0 +1,207 @@
+{
+  "page_numbers": [201, 202, 203, 204],
+  "waqfs": [
+    {
+      "ayah": 41,
+      "target_word": "به",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "text": "﴿كافر به - ٤١ - ص﴾ لاتفاق الجملتين،",
+      "text_page": 201,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 41,
+      "target_word": "قليلا",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "text": "﴿قليلا - ٤١ - ز﴾ أجوز لاختلاف النظم بتقديم المفعول .",
+      "text_page": 201,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 44,
+      "target_word": "الكتاب",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿تتلون الكتاب - ٤٤ - ط﴾",
+      "text_page": 202,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 45,
+      "target_word": "والصلاة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿والصلاة - ٤٥ - ط﴾",
+      "text_page": 202,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 45,
+      "target_word": "الخاشعين",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿الخاشعين - ٤٥ - لا﴾ لأن الذين صفتهم .",
+      "text_page": 202,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 49,
+      "target_word": "نساءكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿نساءكم - ٤٩ - ط﴾",
+      "text_page": 202,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 54,
+      "target_word": "أنفسكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿فاقتلوا أنفسكم - ٥٤ - ط﴾",
+      "text_page": 202,
+      "old_text": "﴿فاقتلوا أنفسكم - ٥٤ -",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿فاقتلوا أنفسكم - ٥٤ -",
+          "new_text": "﴿فاقتلوا أنفسكم - ٥٤ - ط﴾",
+          "info": "مكتمل من الصفحة التالية"
+        }
+      ]
+    },
+    {
+      "ayah": 54,
+      "target_word": "بارئكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿عند بارئكم - ٥٤ - ط﴾ لأن التقدير : فنعلم [ فتاب عليكم ]",
+      "text_page": 204,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 54,
+      "target_word": "عليكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿فتاب عليكم - ٥٤ - ط﴾",
+      "text_page": 204,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 57,
+      "target_word": "والسلوى",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿والسلوى - ٥٧ - ط﴾",
+      "text_page": 204,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 57,
+      "target_word": "مارزقناكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿مارزقناكم - ٥٧ - ط﴾",
+      "text_page": 204,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 58,
+      "target_word": "خطاياكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿خطاياكم - ٥٨ - ط﴾",
+      "text_page": 204,
+      "old_text": "﴿خطاياكم - ٥٨ -",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿خطاياكم - ٥٨ -",
+          "new_text": "﴿خطاياكم - ٥٨ - ط﴾",
+          "info": "مكتمل من الصفحة التالية"
+        }
+      ]
+    },
+    {
+      "ayah": 60,
+      "target_word": "الحجر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿بعصاك الحجر - ٦٠ - ط﴾ لحق الحذف، أي : فضرب",
+      "text_page": 203,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 60,
+      "target_word": "عينا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿فانفجرت عينا - ٦٠ - ط﴾",
+      "text_page": 203,
+      "old_text": "﴿فانفجرت ﴿ عينا - ٦٠ - ط﴾",
+      "fixes": [
+        {
+          "type": "malformed_bracket",
+          "basis": "page_prose",
+          "old_text": "﴿فانفجرت ﴿ عينا - ٦٠ - ط﴾",
+          "new_text": "﴿فانفجرت عينا - ٦٠ - ط﴾",
+          "info": "تصحيح القوس الزائد"
+        }
+      ]
+    },
+    {
+      "ayah": 60,
+      "target_word": "مشربهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿مشربهم - ٦٠ - ط﴾",
+      "text_page": 203,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 61,
+      "target_word": "وبصلها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿وبصلها - ٦١ - ط﴾",
+      "text_page": 203,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 61,
+      "target_word": "خير",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿هو خير - ٦١ - ط﴾",
+      "text_page": 203,
+      "old_text": "﴿هو خير - ٦١ -",
+      "fixes": [
+        {
+          "type": "missing_symbol",
+          "basis": "page_prose",
+          "old_text": "﴿هو خير - ٦١ -",
+          "new_text": "﴿هو خير - ٦١ - ط﴾",
+          "info": "إكمال رمز الوقف والقوس المفقودين استناداً إلى التعليل في الحاشية"
+        }
+      ]
+    }
+  ]
+}

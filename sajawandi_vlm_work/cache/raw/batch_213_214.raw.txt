@@ -1,0 +1,103 @@
+{
+  "page_numbers": [213, 214],
+  "waqfs": [
+    {
+      "ayah": 83,
+      "target_word": "كذلك",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿كذلك - 83 - ط﴾ لأن ثم لترتيب الأخبار، أي: ومع ذلك توليتم.",
+      "text_page": 213,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 85,
+      "target_word": "دياركم",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "text": "﴿من دياركم - 85 - ز﴾ لأن ﴿تظاهرون﴾ تشبهه استئنافا، وكونه حالا أوجه.",
+      "text_page": 213,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 85,
+      "target_word": "والعدوان",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿والعدوان - 85 - ط﴾",
+      "text_page": 213,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 85,
+      "target_word": "إخراجهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿إخراجهم - 85 - ط﴾",
+      "text_page": 213,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 85,
+      "target_word": "بعض",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿بعض - 85 - ج﴾ ابتداء الاستفهام، أو النفي مع فاء التعقيب.",
+      "text_page": 213,
+      "old_text": "﴿ بعض - 85 - ج ﴾ ابتداء الاستفهام ، أو النفي مع فاء التعقيب .",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ بعض - 85 - ج ﴾\\nابتداء الاستفهام ، أو النفي مع فاء التعقيب .",
+          "new_text": "﴿بعض - 85 - ج﴾ ابتداء الاستفهام، أو النفي مع فاء التعقيب.",
+          "info": "وصل التعليل الممتد بين أسفل ص 213 وأعلى ص 214"
+        }
+      ]
+    },
+    {
+      "ayah": 85,
+      "target_word": "الدنيا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿الدنيا - 85 - ج﴾ لعطف الجملتين المختلفين.",
+      "text_page": 214,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 85,
+      "target_word": "العذاب",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿العذاب - 85 - ط﴾",
+      "text_page": 214,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 86,
+      "target_word": "بالآخرة",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "text": "﴿بالآخرة - 86 - ز﴾ لأن الفعل مستأنف وفيه فاء التعقيب للجزاء.",
+      "text_page": 214,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 87,
+      "target_word": "القدس",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿القدس - 87 - ط﴾",
+      "text_page": 214,
+      "old_text": null,
+      "fixes": []
+    }
+  ]
+}

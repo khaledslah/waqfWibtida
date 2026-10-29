@@ -1,0 +1,146 @@
+{
+  "page_numbers": [
+    197,
+    198,
+    199,
+    200
+  ],
+  "waqfs": [
+    {
+      "ayah": 30,
+      "target_word": "الدماء",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿الدماء - 30 - ج﴾ لأن انتهاء الاستفهام على قوله: ﴿ويسفك الدماء﴾ يقتضي الفصل، واحتمال الواو معنى الحال في قوله: ﴿ونحن نسبح﴾ يقتضي الوصل.",
+      "text_page": 197,
+      "old_text": "﴿ الدماء - 30 - ج ﴾ لأن انتهاء الاستفهام على قوله: ﴿ ويسفك الدماء ﴾ يقتضي الفصل ، واحتمال الواو معنى الحال في قوله: ﴿ ونحن نسبح ﴾ يقتضي الوصل .",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "يقتضي (في ص 197) ... الوصل (في ص 198)",
+          "new_text": "يقتضي الوصل",
+          "info": "انقطاع نص التعليل بين الصفحتين 197 و198"
+        }
+      ]
+    },
+    {
+      "ayah": 30,
+      "target_word": "لك",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ونقدس لك - 30 - ط﴾",
+      "text_page": 198,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 32,
+      "target_word": "علمتنا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿علمتنا - 32 - ط﴾",
+      "text_page": 198,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 33,
+      "target_word": "بأسمائهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿أنبأهم بأسمائهم - 33 - ج﴾ لأن جواب ﴿لما﴾ منتظر، مع فاء التعقيب فيها.",
+      "text_page": 198,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 33,
+      "target_word": "بأسمائهم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿بأسمائهم - 33 - لا﴾ لأن ﴿قال﴾ جواب ﴿فلما﴾",
+      "text_page": 198,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 34,
+      "target_word": "إبليس",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿إلا إبليس - 34 - ط﴾ لأنه معرف والجملة بعده لاتكون صفة له إلا بواسطة الذي، ولا عامل فنجعل الجملة حالا.",
+      "text_page": 198,
+      "old_text": "﴿ إلا (في ص 198) إبليس - 34 - ط ﴾ (في ص 199) لأنه معرف والجملة بعده لاتكون صفه له إلا بواسطة الذي ، ولا عامل فنجعل الجملة حالا",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿ إلا ... إبليس - 34 - ط ﴾",
+          "new_text": "﴿إلا إبليس - 34 - ط﴾",
+          "info": "انقطاع آية الموقف بين الصفحتين 198 و199"
+        }
+      ]
+    },
+    {
+      "ayah": 35,
+      "target_word": "شئتما",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "text": "﴿شئتما - 35 - ص﴾ لاتفاق الجملتين",
+      "text_page": 199,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 36,
+      "target_word": "فيه",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "text": "﴿كانا فيه - 36 - ص﴾ لعطف الجملتين المتفقتين .",
+      "text_page": 199,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 36,
+      "target_word": "عدو",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿عدو - 36 - ج﴾ لاختلاف الجملتين .",
+      "text_page": 199,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 37,
+      "target_word": "عليه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿فتاب عليه - 37 - ط﴾",
+      "text_page": 200,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 38,
+      "target_word": "جميعا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿جميعا - 38 - ج﴾ للابتداء بالشرط مع فاء التعقيب .",
+      "text_page": 200,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 39,
+      "target_word": "النار",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿النار - 39 - ج﴾ لأن ما بعدها مبتدأ وخبره ﴿خالدون﴾ وقيل : الجملة خبر بعد خبر لأولئك ،",
+      "text_page": 200,
+      "old_text": null,
+      "fixes": []
+    }
+  ]
+}

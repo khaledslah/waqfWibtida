@@ -1,0 +1,152 @@
+{
+  "page_numbers": [258, 259, 260, 261],
+  "source": "parallel8",
+  "waqfs": [
+    {
+      "ayah": 153,
+      "target_word": "الصلاة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿الصلاة - 153 - ط﴾",
+      "text_page": 258,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 154,
+      "target_word": "أموات",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿أموات - 154 - ط﴾",
+      "text_page": 258,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 155,
+      "target_word": "والثمرات",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿والثمرات - 155 - ط﴾",
+      "text_page": 258,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 155,
+      "target_word": "الصابرين",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿الصابرين - 155 - لا﴾ لأن ﴿الذين﴾ صفتهم.",
+      "text_page": 259,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 156,
+      "target_word": "مصيبة",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿مصيبة - 156 - لا﴾ لأن ﴿قالوا﴾ جواب ﴿إذا﴾.",
+      "text_page": 259,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 156,
+      "target_word": "راجعون",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿راجعون - 156 - ط﴾ لأن ﴿أولئك﴾ مبتدأ، ومن ابتدأ بالذين وجعل ﴿أولئك﴾ خبرهم وقف على ﴿الصابرين﴾ ولم يقف على ﴿راجعون﴾ وفيه بعد، لأن جملة الذين بيان الصبر.",
+      "text_page": 259,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 158,
+      "target_word": "شعائر الله",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿شعائر الله - 158 - ج﴾ للشرط [مع فاء التعقيب].",
+      "text_page": 259,
+      "old_text": "﴿شعائر الله -",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿شعائر الله -",
+          "new_text": "﴿شعائر الله - 158 - ج﴾ للشرط [مع فاء التعقيب].",
+          "info": "انقطاع موضع الوقف بين صفحتي 259 و260"
+        }
+      ]
+    },
+    {
+      "ayah": 158,
+      "target_word": "بهما",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿بهما - 158 - ط﴾ لأن التطوع خارج عن موجب كونهما من شعائر الله فكان استئناف حكم.",
+      "text_page": 260,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 158,
+      "target_word": "خيرا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿خيرا - 158 - لا﴾ لأن ﴿فإن﴾ جواب الشرط.",
+      "text_page": 260,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 159,
+      "target_word": "في الكتاب",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿في الكتاب - 159 - لا﴾ لأن ﴿أولئك﴾ خبر إن.",
+      "text_page": 260,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 159,
+      "target_word": "اللاعنون",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿اللاعنون - 159 - لا﴾ للاستثناء.",
+      "text_page": 260,
+      "old_text": "﴿اللاعنون - 159 - لا﴾",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿اللاعنون - 159 - لا﴾",
+          "new_text": "﴿اللاعنون - 159 - لا﴾ للاستثناء.",
+          "info": "انقطاع التعليل بين صفحتي 260 و261"
+        }
+      ]
+    },
+    {
+      "ayah": 160,
+      "target_word": "أتوب عليهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿أتوب عليهم - 160 - ج﴾ لاحتمال الواو الحال والاستئناف [والحال أوجه].",
+      "text_page": 261,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 161,
+      "target_word": "أجمعين",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿أجمعين - 161 - لا﴾ لأن ﴿خالدين﴾ حال عامله معنى الفعل في اللعنة، تقديره: لعنهم الله، حتى قرأ",
+      "text_page": 261,
+      "old_text": null,
+      "fixes": []
+    }
+  ]
+}

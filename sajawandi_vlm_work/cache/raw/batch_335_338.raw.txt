@@ -1,0 +1,215 @@
+{
+  "page_numbers": [335, 336, 337, 338],
+  "waqfs": [
+    {
+      "ayah": 259,
+      "target_word": "لحما",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ لحما - 259 - ط ﴾ لتمام البيان.",
+      "text_page": 335,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 259,
+      "target_word": "له",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ له - 259 - لا ﴾ لأن قوله : ﴿ قال ﴾ جواب ﴿ فلما ﴾.",
+      "text_page": 335,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 260,
+      "target_word": "الموتى",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ الموتى - 260 - ط ﴾.",
+      "text_page": 335,
+      "old_text": "﴿ الموق - 260 - ط ﴾.",
+      "fixes": [
+        {
+          "type": "orthography",
+          "basis": "editor_policy",
+          "old_text": "الموق",
+          "new_text": "الموتى",
+          "info": "تصحيح خطأ مطبعي في كلمة الموتى"
+        }
+      ]
+    },
+    {
+      "ayah": 260,
+      "target_word": "تؤمن",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ تؤمن - 260 - ط ﴾.",
+      "text_page": 335,
+      "old_text": "﴿ تؤمن - 260 - ط ﴾.",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿ تؤمن - 260 - [انقطاع ص 335-336] ط ﴾.",
+          "new_text": "﴿ تؤمن - 260 - ط ﴾.",
+          "info": "دمج المضع المنقسم بين ص 335 وص 336"
+        }
+      ]
+    },
+    {
+      "ayah": 260,
+      "target_word": "قلبي",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ قلبي - 260 - ط ﴾.",
+      "text_page": 336,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 260,
+      "target_word": "سعيا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ سعيا - 260 - ط ﴾ لاعتراض جواب الأمر بين الجملتين المتفقين.",
+      "text_page": 336,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 261,
+      "target_word": "حبة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ مائة حبة - 261 - ط ﴾.",
+      "text_page": 336,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 261,
+      "target_word": "يشاء",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ لمن يشاء - 261 - ط ﴾.",
+      "text_page": 336,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 262,
+      "target_word": "أذى",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ ولا أذى - 262 - لا ﴾ لأن ﴿ لهم ﴾ خبر ﴿ الذين ﴾",
+      "text_page": 336,
+      "old_text": "﴿ ولا [انقطاع ص 336-337] أذى - 262 - لا ﴾ لأن ﴿ لهم ﴾ خبر ﴿ الذين ﴾",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿ ولا ... أذى - 262 - لا ﴾",
+          "new_text": "﴿ ولا أذى - 262 - لا ﴾",
+          "info": "دمج الموضع المنقسم بين ص 336 وص 337"
+        }
+      ]
+    },
+    {
+      "ayah": 262,
+      "target_word": "ربهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ عند ربهم - 262 - ج ﴾ لعطف المختلفين.",
+      "text_page": 337,
+      "old_text": "عند ربهم - 262 - ج ﴾ لعطف المختلفين.",
+      "fixes": [
+        {
+          "type": "malformed_bracket",
+          "basis": "editor_policy",
+          "old_text": "عند ربهم - 262 - ج ﴾",
+          "new_text": "﴿ عند ربهم - 262 - ج ﴾",
+          "info": "إضافة قوس الفتح الناقص قبل الكلمة"
+        }
+      ]
+    },
+    {
+      "ayah": 263,
+      "target_word": "أذى",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ أذى - 263 - ط ﴾.",
+      "text_page": 337,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 264,
+      "target_word": "الأذى",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ والأذى - 264 - لا ﴾ لتعلق كاف التشبيه ، تقديره : لا تبطلوا إبطالا كإبطال الذي .",
+      "text_page": 337,
+      "old_text": "﴿ والأذى - 264 - لا ﴾ لتعلق كاف التشبيه ، [انقطاع ص 337-338] تقديره : لا تبطلوا إبطالا كإبطال الذي .",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿ والأذى - 264 - لا ﴾ لتعلق كاف التشبيه ، [انقطاع ص 337-338] تقديره : لا تبطلوا إبطالا كإبطال الذي .",
+          "new_text": "﴿ والأذى - 264 - لا ﴾ لتعلق كاف التشبيه ، تقديره : لا تبطلوا إبطالا كإبطال الذي .",
+          "info": "دمج تعليل الموضع المنقسم بين ص 337 وص 338"
+        }
+      ]
+    },
+    {
+      "ayah": 264,
+      "target_word": "الآخر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ الآخر - 264 - ط ﴾.",
+      "text_page": 338,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 264,
+      "target_word": "صلدا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ صلدا - 264 - ط ﴾.",
+      "text_page": 338,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 264,
+      "target_word": "كسبوا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ مما كسبوا - 264 - ط ﴾.",
+      "text_page": 338,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 265,
+      "target_word": "ضعفين",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ ضعفين - 265 - ج ﴾ لابتداء الشرط مع فاء التعقيب واتحاد الكلام.",
+      "text_page": 338,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 265,
+      "target_word": "فطل",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ فطل - 265 - ط ﴾.",
+      "text_page": 338,
+      "old_text": null,
+      "fixes": []
+    }
+  ]
+}

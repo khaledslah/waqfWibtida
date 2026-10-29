@@ -1,0 +1,181 @@
+{
+  "source": "blind_cursor_agent",
+  "pages_read": [230, 231, 232, 233],
+  "page_numbers": [230, 231, 232, 233],
+  "waqfs": [
+    {
+      "ayah": 113,
+      "target_word": "شيء",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "text": "﴿ النصارى على شيء - ١١٣ - ص ﴾ [ لعطف الجملتين المتفقتين ]",
+      "text_page": 230,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 113,
+      "target_word": "شيء",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ على شيء - ١١٣ - لا ﴾ لأن الواو للحال",
+      "text_page": 230,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 113,
+      "target_word": "الكتاب",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ الكتاب - ١١٣ - ط ﴾",
+      "text_page": 230,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 113,
+      "target_word": "قولهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ مثل قولهم - ١١٣ - ج ﴾ لأن قوله ﴿ فالله ﴾ مبتدأ مع فاء التعقيب",
+      "text_page": 230,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 114,
+      "target_word": "خرابها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ خرابها - ١١٤ - ط ﴾ للفصل بين الاستفهام والإخبار",
+      "text_page": 230,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 114,
+      "target_word": "خائفين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ خائفين - ١١٤ - ط ﴾ لأن ما بعده إخبار وعيد مبتدأ منتظر ، ولو وصل صارت الجملة صفة لهم ، والصفة تكون كائنة متصلة",
+      "text_page": 230,
+      "old_text": "﴿ خائفين - ١١٤ - ط ﴾ || لأن ما بعده إخبار وعيد مبتدأ منتظر ، ولو وصل صارت الجملة صفة لهم ، والصفة تكون كائنة متصلة",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ خائفين - ١١٤ - ط ﴾ || لأن ما بعده إخبار وعيد مبتدأ منتظر ، ولو وصل صارت الجملة صفة لهم ، والصفة تكون كائنة متصلة",
+          "new_text": "﴿ خائفين - ١١٤ - ط ﴾ لأن ما بعده إخبار وعيد مبتدأ منتظر ، ولو وصل صارت الجملة صفة لهم ، والصفة تكون كائنة متصلة",
+          "info": "Bracket opens on p230 and taʿlīl continues on p231"
+        }
+      ]
+    },
+    {
+      "ayah": 115,
+      "target_word": "الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ وجه الله - ١١٥ - ط ﴾",
+      "text_page": 231,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 116,
+      "target_word": "ولدا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ ولدا - ١١٦ - لا ﴾ وأن جاز الابتداء بقوله ﴿ سبحانه ﴾ ، ولكن يوصل بقولهم ردا له وتعجيلا للتنزيه",
+      "text_page": 231,
+      "old_text": "﴿ ولدا - ١١٦ - لا ﴾ وأن || جاز الابتداء بقوله ﴿ سبحانه ﴾ ، ولكن يوصل بقولهم ردا له وتعجيلا للتنزيه",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ ولدا - ١١٦ - لا ﴾ وأن || جاز الابتداء بقوله ﴿ سبحانه ﴾ ، ولكن يوصل بقولهم ردا له وتعجيلا للتنزيه",
+          "new_text": "﴿ ولدا - ١١٦ - لا ﴾ وأن جاز الابتداء بقوله ﴿ سبحانه ﴾ ، ولكن يوصل بقولهم ردا له وتعجيلا للتنزيه",
+          "info": "Bracket opens on p231 and taʿlīl continues on p232"
+        }
+      ]
+    },
+    {
+      "ayah": 116,
+      "target_word": "سبحانه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ سبحانه - ١١٦ - ط ﴾",
+      "text_page": 232,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 116,
+      "target_word": "والأرض",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ والأرض - ١١٦ - ط ﴾ لأن ما بعده مبتدأ",
+      "text_page": 232,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 117,
+      "target_word": "والأرض",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ والأرض - ١١٧ - ط ﴾ لأن ﴿ إذا ﴾ أجيبت بالفاء فكانت للشرط",
+      "text_page": 232,
+      "old_text": "﴿ والأرض - ١١٧ - ط ﴾ لأن ﴿ إذا ﴾ || أجيبت بالفاء فكانت للشرط",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ والأرض - ١١٧ - ط ﴾ لأن ﴿ إذا ﴾ || أجيبت بالفاء فكانت للشرط",
+          "new_text": "﴿ والأرض - ١١٧ - ط ﴾ لأن ﴿ إذا ﴾ أجيبت بالفاء فكانت للشرط",
+          "info": "Bracket opens on p232 and taʿlīl continues on p233"
+        }
+      ]
+    },
+    {
+      "ayah": 118,
+      "target_word": "آية",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ آية - ١١٨ - ط ﴾",
+      "text_page": 233,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 118,
+      "target_word": "قولهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ قولهم - ١١٨ - ط ﴾",
+      "text_page": 233,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 118,
+      "target_word": "قلوبهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ قلوبهم - ١١٨ - ط ﴾ لأن قد لتأكيد الاستئناف",
+      "text_page": 233,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 119,
+      "target_word": "ونذيرا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ ونذيرا - ١١٩ - لا ﴾ للعطف ، أي : نذيرا وغير مسئول ، الا لمن قرأ : ﴿ ولا تسأل ﴾ على النهي لاختلاف الجملتين",
+      "text_page": 233,
+      "old_text": null,
+      "fixes": []
+    }
+  ]
+}

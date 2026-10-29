@@ -1,0 +1,4072 @@
+{
+  "schema": "sajawandi.extracted.v1",
+  "meta": {
+    "book_id": "Al-Sajawandi-Ilal",
+    "title": "علل الوقوف (الإيضاح في الوقف والابتداء)",
+    "author": "أبو عبد الله محمد بن طيفور السجاوندي",
+    "died_hijri": 560,
+    "source": "PDF: علل الوقوف - السجاوندي - ت العيدي 1-3 - KTB_0073685-1-600.pdf",
+    "surah": 2,
+    "surah_name": "سورة البقرة",
+    "part": 2,
+    "ayah_range": "87-150",
+    "page_range": "215-256"
+  },
+  "waqfs": [
+    {
+      "id": "Al-Sajawandi-Ilal:2:87:26:1",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 87,
+      "position": {
+        "surah": 2,
+        "ayah": 87,
+        "word": 26,
+        "word_id": 1460,
+        "target_word": "كَذَّبْتُمْ"
+      },
+      "target_word": "كذبتم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ كذبتم - 87 - ج ﴾ لعطف المستقبل على الماضي مع تقديم المفعولين فيهما.",
+      "old_text": null,
+      "text_page": 215,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 87 - ج",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:88:3:2",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 88,
+      "position": {
+        "surah": 2,
+        "ayah": 88,
+        "word": 3,
+        "word_id": 1465,
+        "target_word": "غُلْفٌۢ ۚ"
+      },
+      "target_word": "غلف",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ غلف - 88 - ط ﴾ لأن بل اعراض عن الأول وتحقيق للثاني.",
+      "old_text": null,
+      "text_page": 216,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 88 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:89:9:3",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 89,
+      "position": {
+        "surah": 2,
+        "ayah": 89,
+        "word": 9,
+        "word_id": 1481,
+        "target_word": "مَعَهُمْ"
+      },
+      "target_word": "لما معهم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ لما معهم - 89 - لا ﴾ لأن الواو للحال.",
+      "old_text": null,
+      "text_page": 216,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 89 - لا",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:89:16:4",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 89,
+      "position": {
+        "surah": 2,
+        "ayah": 89,
+        "word": 16,
+        "word_id": 1488,
+        "target_word": "كَفَرُوا۟"
+      },
+      "target_word": "كفروا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ كفروا - 89 - ج ﴾ لأن لما متضمنة للشرط ، [ وجوابها ] منتظر ، والوصل أجوز لأن ﴿ لما ﴾ مكرر وجوابهما متحد ، وقوله : ﴿ وكانوا من قبل يستفتحون ﴾ حال معترض .",
+      "old_text": null,
+      "text_page": 216,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 89 - ج",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:89:22:5",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 89,
+      "position": {
+        "surah": 2,
+        "ayah": 89,
+        "word": 22,
+        "word_id": 1494,
+        "target_word": "بِهِۦ ۚ"
+      },
+      "target_word": "كفروا به",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "text": "﴿ كفروا به - 89 - ز ﴾ قد يجوز ، لأن ما بعده مبتدأ ، إلا أن الفاء يقتضي تعجيل ذكر جزائهم .",
+      "old_text": null,
+      "text_page": 217,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 89 - ز",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:90:20:6",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 90,
+      "position": {
+        "surah": 2,
+        "ayah": 90,
+        "word": 20,
+        "word_id": 1518,
+        "target_word": "عِبَادِهِۦ ۖ"
+      },
+      "target_word": "من عباده",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ من عباده - 90 - ج ﴾ لطول الكلام [ مع فاء ] التعقيب .",
+      "old_text": null,
+      "text_page": 217,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 90 - ج",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:90:22:7",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 90,
+      "position": {
+        "surah": 2,
+        "ayah": 90,
+        "word": 22,
+        "word_id": 1520,
+        "target_word": "بِغَضَبٍ"
+      },
+      "target_word": "على غضب",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ على غضب - 90 - ط ﴾.",
+      "old_text": null,
+      "text_page": 217,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 90 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:91:20:8",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 91,
+      "position": {
+        "surah": 2,
+        "ayah": 91,
+        "word": 20,
+        "word_id": 1545,
+        "target_word": "مَعَهُمْ ۗ"
+      },
+      "target_word": "لما معهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ لما معهم - 91 - ط ﴾.",
+      "old_text": null,
+      "text_page": 217,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 91 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:93:6:9",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 93,
+      "position": {
+        "surah": 2,
+        "ayah": 93,
+        "word": 6,
+        "word_id": 1572,
+        "target_word": "ٱلطُّورَ"
+      },
+      "target_word": "الطور",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ الطور - 93 - ط ﴾ لأن التقدير : قيل لكم خذوا .",
+      "old_text": null,
+      "text_page": 217,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 93 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:93:11:10",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 93,
+      "position": {
+        "surah": 2,
+        "ayah": 93,
+        "word": 11,
+        "word_id": 1577,
+        "target_word": "وَٱسْمَعُوا۟ ۖ"
+      },
+      "target_word": "واسمعوا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ واسمعوا - 93 - ط ﴾.",
+      "old_text": null,
+      "text_page": 218,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 93 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:93:19:11",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 93,
+      "position": {
+        "surah": 2,
+        "ayah": 93,
+        "word": 19,
+        "word_id": 1585,
+        "target_word": "بِكُفْرِهِمْ ۚ"
+      },
+      "target_word": "بكفرهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ بكفرهم - 93 - ط ﴾.",
+      "old_text": null,
+      "text_page": 218,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 93 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:95:6:12",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 95,
+      "position": {
+        "surah": 2,
+        "ayah": 95,
+        "word": 6,
+        "word_id": 1616,
+        "target_word": "أَيْدِيهِمْ ۗ"
+      },
+      "target_word": "أيديهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ أيديهم - 95 - ط ﴾.",
+      "old_text": null,
+      "text_page": 218,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 95 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:96:0:13",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 96,
+      "position": null,
+      "target_word": "على حياة",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ على حياة - 96 - ج ﴾ على تقدير : ومن الذين أشركوا قوم يود أحدهم ، ومن وقف على ﴿ أشركوا ﴾ فتقديره : أحرص الناس على حياة وأحرص من الذين أشركوا .",
+      "old_text": null,
+      "text_page": 218,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 96 - ج",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "ayah_only",
+        "review_status": "pending"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:96:14:14",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 96,
+      "position": {
+        "surah": 2,
+        "ayah": 96,
+        "word": 14,
+        "word_id": 1633,
+        "target_word": "سَنَةٍۢ"
+      },
+      "target_word": "سنة",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ألف سنة - 96 - ج﴾ لأن ما بعده يصلح مستأنفاً وحالاً .",
+      "old_text": "﴿ألف سنة - 96 - ج﴾ لأن ما بعده يصلح مستأنفاً",
+      "text_page": 219,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 96 - ج",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ألف سنة - 96 - ج﴾ لأن ما بعده يصلح مستأنفاً",
+          "new_text": "﴿ألف سنة - 96 - ج﴾ لأن ما بعده يصلح مستأنفاً وحالاً .",
+          "info": "تكملة التعليل المنقطع في بداية الصفحة التالية 220"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:96:21:15",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 96,
+      "position": {
+        "surah": 2,
+        "ayah": 96,
+        "word": 21,
+        "word_id": 1640,
+        "target_word": "يُعَمَّرَ ۗ"
+      },
+      "target_word": "يعمر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿أن يعمر - 96 - ط﴾ لأن هذا الواو للابتداء أو الحال ، والحال أوجه .",
+      "old_text": null,
+      "text_page": 220,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 96 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:99:5:16",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 99,
+      "position": {
+        "surah": 2,
+        "ayah": 99,
+        "word": 5,
+        "word_id": 1679,
+        "target_word": "بَيِّنَـٰتٍۢ ۖ"
+      },
+      "target_word": "بينات",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿بينات - 99 - ج﴾ لأن هذا الواو للابتداء أو الحال ، والحال أوجه .",
+      "old_text": null,
+      "text_page": 220,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 99 - ج",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:100:6:17",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 100,
+      "position": {
+        "surah": 2,
+        "ayah": 100,
+        "word": 6,
+        "word_id": 1690,
+        "target_word": "مِّنْهُم ۚ"
+      },
+      "target_word": "منهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿فريق منهم - 100 - ط﴾ لأن بل للإعراض عن الأول .",
+      "old_text": null,
+      "text_page": 220,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 100 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:101:10:21",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 101,
+      "position": {
+        "surah": 2,
+        "ayah": 101,
+        "word": 10,
+        "word_id": 1704,
+        "target_word": "نَبَذَ"
+      },
+      "target_word": "نبذ",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿نبذ - 101 - لا﴾ بدلا ما قبله .",
+      "old_text": "﴿نبذ لا﴾ بدلا ما قبله .",
+      "text_page": 221,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 101 - لا",
+      "fixes": [
+        {
+          "type": "ayah_number_correction",
+          "basis": "editor_policy",
+          "old_text": "﴿نبذ لا﴾",
+          "new_text": "﴿نبذ - 101 - لا﴾",
+          "info": "إضافة رقم الآية وتنسيق الحاصرة بالنص المعياري"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:101:15:18",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 101,
+      "position": {
+        "surah": 2,
+        "ayah": 101,
+        "word": 15,
+        "word_id": 1709,
+        "target_word": "ٱلْكِتَـٰبَ"
+      },
+      "target_word": "الكتاب",
+      "verdict_label": "ق",
+      "verdict": "قيل فيه وقف",
+      "text": "﴿أوتوا الكتاب - 101 - ق﴾ قد قيل .",
+      "old_text": null,
+      "text_page": 220,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 101 - ق",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:101:22:22",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 101,
+      "position": {
+        "surah": 2,
+        "ayah": 101,
+        "word": 22,
+        "word_id": 1716,
+        "target_word": "يَعْلَمُونَ"
+      },
+      "target_word": "يعلمون",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "text": "﴿لا يعلمون - 101 - ز﴾ قد يجوز للآية ، والوصل أصلح للعطف على ﴿نبذ﴾ ولتمام سوء اختيارهم في النبذ والاتباع .",
+      "old_text": null,
+      "text_page": 222,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 101 - ز",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "mismatch",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:102:7:19",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 102,
+      "position": {
+        "surah": 2,
+        "ayah": 102,
+        "word": 7,
+        "word_id": 1723,
+        "target_word": "سُلَيْمَـٰنَ ۖ"
+      },
+      "target_word": "سليمان",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿على ملك سليمان - 102 - ج﴾ لأن الواو قد تصلح حالا لبيان نزاهة سليمان ورد ما افتروا عليه",
+      "old_text": null,
+      "text_page": 221,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 102 - ج",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "mismatch",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:102:16:20",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 102,
+      "position": {
+        "surah": 2,
+        "ayah": 102,
+        "word": 16,
+        "word_id": 1732,
+        "target_word": "ٱلسِّحْرَ"
+      },
+      "target_word": "السحر",
+      "verdict_label": "ق",
+      "verdict": "قيل فيه وقف",
+      "text": "﴿السحر - 102 - ق﴾ قد قيل على جعل ﴿ما﴾ نافية ، ولا يصح لمناقضته ما في السياق من قيل وليس بصحيح ، لبيان أن كتاب الله مفعول .",
+      "old_text": "( السحر - 102 - ق ) قد قيل على جعل ﴿ما﴾ نافية ، ولا يصح لمناقضته ما في السياق من قيل وليس بصحيح ، لبيان أن كتاب الله مفعول .",
+      "text_page": 221,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 102 - ق",
+      "fixes": [
+        {
+          "type": "malformed_bracket",
+          "basis": "editor_policy",
+          "old_text": "( السحر - 102 - ق )",
+          "new_text": "﴿السحر - 102 - ق﴾",
+          "info": "تصحيح الأقواس الهلالية المطبوعة إلى حاصرتين معتمدتين"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:102:23:23",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 102,
+      "position": {
+        "surah": 2,
+        "ayah": 102,
+        "word": 23,
+        "word_id": 1739,
+        "target_word": "وَمَـٰرُوتَ ۚ"
+      },
+      "target_word": "وماروت",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ وماروت - 102 - ط ﴾",
+      "old_text": null,
+      "text_page": 224,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 102 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:102:34:24",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 102,
+      "position": {
+        "surah": 2,
+        "ayah": 102,
+        "word": 34,
+        "word_id": 1750,
+        "target_word": "تَكْفُرْ ۖ"
+      },
+      "target_word": "فلا تكفر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ فلا تكفر - 102 - ط ﴾",
+      "old_text": null,
+      "text_page": 224,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 102 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:102:42:25",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 102,
+      "position": {
+        "surah": 2,
+        "ayah": 102,
+        "word": 42,
+        "word_id": 1758,
+        "target_word": "وَزَوْجِهِۦ ۚ"
+      },
+      "target_word": "وزوجه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ وزوجه - 102 - ط ﴾",
+      "old_text": null,
+      "text_page": 225,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 102 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:102:51:26",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 102,
+      "position": {
+        "surah": 2,
+        "ayah": 102,
+        "word": 51,
+        "word_id": 1767,
+        "target_word": "ٱللَّهِ ۚ"
+      },
+      "target_word": "بإذن الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ بإذن الله - 102 - ط ﴾",
+      "old_text": null,
+      "text_page": 225,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 102 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:102:56:27",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 102,
+      "position": {
+        "surah": 2,
+        "ayah": 102,
+        "word": 56,
+        "word_id": 1772,
+        "target_word": "يَنفَعُهُمْ ۚ"
+      },
+      "target_word": "ولا ينفعهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ ولا ينفعهم - 102 - ط ﴾",
+      "old_text": "﴿ ولاينفعهم - 102 - ط ﴾",
+      "text_page": 225,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 102 - ط",
+      "fixes": [
+        {
+          "type": "orthography",
+          "basis": "editor_policy",
+          "old_text": "ولاينفعهم",
+          "new_text": "ولا ينفعهم",
+          "info": "فصل كلمة ينفعهم عن لا النافية"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:102:66:28",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 102,
+      "position": {
+        "surah": 2,
+        "ayah": 102,
+        "word": 66,
+        "word_id": 1782,
+        "target_word": "خَلَـٰقٍۢ ۚ"
+      },
+      "target_word": "من خلاق",
+      "verdict_label": "ق",
+      "verdict": "قيل فيه وقف",
+      "text": "﴿ من خلاق - 102 - ق ﴾",
+      "old_text": "[ ﴿ من خلاق - وقف ﴾ ]",
+      "text_page": 225,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 102 - ق",
+      "fixes": [
+        {
+          "type": "malformed_bracket",
+          "basis": "editor_policy",
+          "old_text": "[ ﴿ من خلاق - وقف ﴾ ]",
+          "new_text": "﴿ من خلاق - وقف ﴾",
+          "info": "إزالة المعقوفتين الزائدتين حول موضع الوقف المضاف من النسخة (د)"
+        },
+        {
+          "type": "ayah_number_correction",
+          "basis": "editor_policy",
+          "old_text": "﴿ من خلاق - وقف ﴾",
+          "new_text": "﴿ من خلاق - 102 - ق ﴾",
+          "info": "إضافة رقم الآية 102 وتحويل كلمة وقف إلى الرمز المعياري ق"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:102:71:29",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 102,
+      "position": {
+        "surah": 2,
+        "ayah": 102,
+        "word": 71,
+        "word_id": 1787,
+        "target_word": "أَنفُسَهُمْ ۚ"
+      },
+      "target_word": "أنفسهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ أنفسهم - 102 - ط ﴾",
+      "old_text": null,
+      "text_page": 225,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 102 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:103:9:30",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 103,
+      "position": {
+        "surah": 2,
+        "ayah": 103,
+        "word": 9,
+        "word_id": 1799,
+        "target_word": "خَيْرٌۭ ۖ"
+      },
+      "target_word": "خير",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿خير - 103 - ط﴾",
+      "old_text": null,
+      "text_page": 226,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 103 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:104:9:31",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 104,
+      "position": {
+        "surah": 2,
+        "ayah": 104,
+        "word": 9,
+        "word_id": 1811,
+        "target_word": "وَٱسْمَعُوا۟ ۗ"
+      },
+      "target_word": "واسمعوا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿واسمعوا - 104 - ط﴾",
+      "old_text": null,
+      "text_page": 226,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 104 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:105:16:32",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 105,
+      "position": {
+        "surah": 2,
+        "ayah": 105,
+        "word": 16,
+        "word_id": 1830,
+        "target_word": "رَّبِّكُمْ ۗ"
+      },
+      "target_word": "ربكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿من ربكم - 105 - ط﴾",
+      "old_text": null,
+      "text_page": 226,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 105 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:105:21:33",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 105,
+      "position": {
+        "surah": 2,
+        "ayah": 105,
+        "word": 21,
+        "word_id": 1835,
+        "target_word": "يَشَآءُ ۚ"
+      },
+      "target_word": "يشاء",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿من يشاء - 105 - ط﴾",
+      "old_text": null,
+      "text_page": 226,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 105 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:106:11:34",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 106,
+      "position": {
+        "surah": 2,
+        "ayah": 106,
+        "word": 11,
+        "word_id": 1850,
+        "target_word": "مِثْلِهَآ ۗ"
+      },
+      "target_word": "مثلها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿أو مثلها - 106 - ط﴾",
+      "old_text": null,
+      "text_page": 226,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 106 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:107:8:35",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 107,
+      "position": {
+        "surah": 2,
+        "ayah": 107,
+        "word": 8,
+        "word_id": 1866,
+        "target_word": "وَٱلْأَرْضِ ۗ"
+      },
+      "target_word": "والأرض",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿والأرض - 107 - ط﴾",
+      "old_text": null,
+      "text_page": 227,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 107 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:108:10:36",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 108,
+      "position": {
+        "surah": 2,
+        "ayah": 108,
+        "word": 10,
+        "word_id": 1885,
+        "target_word": "قَبْلُ ۗ"
+      },
+      "target_word": "قبل",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿من قبل - 108 - ط﴾",
+      "old_text": null,
+      "text_page": 227,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 108 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:109:11:37",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 109,
+      "position": {
+        "surah": 2,
+        "ayah": 109,
+        "word": 11,
+        "word_id": 1904,
+        "target_word": "كُفَّارًا"
+      },
+      "target_word": "كفارا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿كفارا - 109 - ج﴾ لأن حسدا مصدر محذوف ، أي : يحسدون حسدا ، أو حال ، أو مفعول له ، وهو أوجه ، والوصل أجوز .",
+      "old_text": "﴿كفارا - 109 - ج﴾",
+      "text_page": 227,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 109 - ج",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿كفارا - 109 - ج﴾",
+          "new_text": "﴿كفارا - 109 - ج﴾ لأن حسدا مصدر محذوف ، أي : يحسدون حسدا ، أو حال ، أو مفعول له ، وهو أوجه ، والوصل أجوز .",
+          "info": "انقطاع التعليل بين نهاية ص 227 وبداية ص 228"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:109:21:38",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 109,
+      "position": {
+        "surah": 2,
+        "ayah": 109,
+        "word": 21,
+        "word_id": 1914,
+        "target_word": "ٱلْحَقُّ ۖ"
+      },
+      "target_word": "الحق",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿الحق - 109 - ج﴾ لعطف الجملتين المختلفتين .",
+      "old_text": null,
+      "text_page": 228,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 109 - ج",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:109:27:39",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 109,
+      "position": {
+        "surah": 2,
+        "ayah": 109,
+        "word": 27,
+        "word_id": 1920,
+        "target_word": "بِأَمْرِهِۦٓ ۗ"
+      },
+      "target_word": "بأمره",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿بأمره - 109 - ط﴾",
+      "old_text": null,
+      "text_page": 228,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 109 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:110:4:40",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 110,
+      "position": {
+        "surah": 2,
+        "ayah": 110,
+        "word": 4,
+        "word_id": 1930,
+        "target_word": "ٱلزَّكَوٰةَ ۚ"
+      },
+      "target_word": "الزكاة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿الزكاة - 110 - ط﴾ لأن ﴿ما﴾ للشرط ، والشرط مصدر .",
+      "old_text": "﴿الزكاة - 110 - ط﴾ لأن ﴿ما﴾ للشرط ، والشرط",
+      "text_page": 228,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 110 - ط",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿الزكاة - 110 - ط﴾ لأن ﴿ما﴾ للشرط ، والشرط",
+          "new_text": "﴿الزكاة - 110 - ط﴾ لأن ﴿ما﴾ للشرط ، والشرط مصدر .",
+          "info": "انقطاع التعليل بين نهاية ص 228 وبداية ص 229"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:110:12:41",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 110,
+      "position": {
+        "surah": 2,
+        "ayah": 110,
+        "word": 12,
+        "word_id": 1938,
+        "target_word": "ٱللَّهِ ۗ"
+      },
+      "target_word": "الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿عند الله - 110 - ط﴾",
+      "old_text": null,
+      "text_page": 229,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 110 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:111:10:42",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 111,
+      "position": {
+        "surah": 2,
+        "ayah": 111,
+        "word": 10,
+        "word_id": 1953,
+        "target_word": "نَصَـٰرَىٰ ۗ"
+      },
+      "target_word": "نصارى",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿أو نصارى - 111 - ط﴾",
+      "old_text": "﴿أونصارى - 111 - ط﴾",
+      "text_page": 229,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 111 - ط",
+      "fixes": [
+        {
+          "type": "orthography",
+          "basis": "editor_policy",
+          "old_text": "﴿أونصارى - 111 - ط﴾",
+          "new_text": "﴿أو نصارى - 111 - ط﴾",
+          "info": "فصل حرف العطف 'أو' عن 'نصارى'"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:111:12:43",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 111,
+      "position": {
+        "surah": 2,
+        "ayah": 111,
+        "word": 12,
+        "word_id": 1955,
+        "target_word": "أَمَانِيُّهُمْ ۗ"
+      },
+      "target_word": "أمانيهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿أمانيهم - 111 - ط﴾",
+      "old_text": null,
+      "text_page": 229,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 111 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:112:11:44",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 112,
+      "position": {
+        "surah": 2,
+        "ayah": 112,
+        "word": 11,
+        "word_id": 1972,
+        "target_word": "رَبِّهِۦ"
+      },
+      "target_word": "ربه",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "text": "﴿عند ربه - 112 - ص﴾ لعطف الجملتين المتفقتين .",
+      "old_text": null,
+      "text_page": 229,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 112 - ص",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:113:6:45",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 113,
+      "position": {
+        "surah": 2,
+        "ayah": 113,
+        "word": 6,
+        "word_id": 1984,
+        "target_word": "شَىْءٍۢ"
+      },
+      "target_word": "شيء",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "text": "﴿النصارى على شيء - 113 - ص﴾ لعطف الجملتين المتفقتين.",
+      "old_text": "﴿النصارى على شيء - 113 - ص﴾ لعدف الجملتين المتفقتين.",
+      "text_page": 230,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 113 - ص",
+      "fixes": [
+        {
+          "type": "orthography",
+          "basis": "editor_policy",
+          "old_text": "لعدف",
+          "new_text": "لعطف",
+          "info": "تصحيح خطأ مطبعي في الكلمة"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "mismatch",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:113:12:46",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 113,
+      "position": {
+        "surah": 2,
+        "ayah": 113,
+        "word": 12,
+        "word_id": 1990,
+        "target_word": "شَىْءٍۢ"
+      },
+      "target_word": "شيء",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿على شيء - 113 - لا﴾ لأن الواو للحال.",
+      "old_text": null,
+      "text_page": 230,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 113 - لا",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:113:22:47",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 113,
+      "position": {
+        "surah": 2,
+        "ayah": 113,
+        "word": 22,
+        "word_id": 2000,
+        "target_word": "قَوْلِهِمْ ۚ"
+      },
+      "target_word": "قولهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿مثل قولهم - 113 - ج﴾ لأن قوله ﴿فالله﴾ مبتدأ مع فاء التعقيب.",
+      "old_text": null,
+      "text_page": 230,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 113 - ج",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:114:13:48",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 114,
+      "position": {
+        "surah": 2,
+        "ayah": 114,
+        "word": 13,
+        "word_id": 2022,
+        "target_word": "خَرَابِهَآ ۚ"
+      },
+      "target_word": "خرابها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿خرابها - 114 - ط﴾ للفصل بين الاستفهام والإخبار.",
+      "old_text": null,
+      "text_page": 230,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 114 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:114:21:49",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 114,
+      "position": {
+        "surah": 2,
+        "ayah": 114,
+        "word": 21,
+        "word_id": 2030,
+        "target_word": "خَآئِفِينَ ۚ"
+      },
+      "target_word": "خائفين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿خائفين - 114 - ط﴾ لأن ما بعده إخبار وعيد مبتدأ منتظر ، ولو وصل صارت الجملة صفة لهم ، والصفة تكون كائنة متصلة.",
+      "old_text": "﴿خائفين - 114 - ط﴾ لأن ما بعده إخبار وعيد مبتدأ منتظر ، ولو وصل صارت الجملة صفة لهم ، والصفة تكون كائنة متصلة .",
+      "text_page": 230,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 114 - ط",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿خائفين - 114 - ط﴾ لأن ما بعده إخبار وعيد مبتدأ منتظر ، ولو وصل صارت الجملة صفة لهم ، والصفة تكون كائنة متصلة .",
+          "new_text": "﴿خائفين - 114 - ط﴾ لأن ما بعده إخبار وعيد مبتدأ منتظر ، ولو وصل صارت الجملة صفة لهم ، والصفة تكون كائنة متصلة.",
+          "info": "التعليل ممتد عبر انقطاع الصفحة من 230 إلى 231"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "mismatch",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:115:8:50",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 115,
+      "position": {
+        "surah": 2,
+        "ayah": 115,
+        "word": 8,
+        "word_id": 2047,
+        "target_word": "ٱللَّهِ ۚ"
+      },
+      "target_word": "الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿وجه الله - 115 - ط﴾.",
+      "old_text": null,
+      "text_page": 231,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 115 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:116:4:51",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 116,
+      "position": {
+        "surah": 2,
+        "ayah": 116,
+        "word": 4,
+        "word_id": 2055,
+        "target_word": "وَلَدًۭا ۗ"
+      },
+      "target_word": "ولدا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ولدا - 116 - لا﴾ وأن جاز الابتداء بقوله ﴿سبحانه﴾ ، ولكن يوصل بقولهم ردا له وتعجيلا للتنزيه.",
+      "old_text": "﴿ولدا - 116 - لا﴾ وأن جاز الابتداء بقوله ﴿سبحانه﴾ ، ولكن يوصل بقولهم ردا له وتعجيلا للتنزيه .",
+      "text_page": 231,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 116 - لا",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ولدا - 116 - لا﴾ وأن جاز الابتداء بقوله ﴿سبحانه﴾ ، ولكن يوصل بقولهم ردا له وتعجيلا للتنزيه .",
+          "new_text": "﴿ولدا - 116 - لا﴾ وأن جاز الابتداء بقوله ﴿سبحانه﴾ ، ولكن يوصل بقولهم ردا له وتعجيلا للتنزيه.",
+          "info": "التعليل ممتد عبر انقطاع الصفحة من 231 إلى 232"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:116:5:52",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 116,
+      "position": {
+        "surah": 2,
+        "ayah": 116,
+        "word": 5,
+        "word_id": 2056,
+        "target_word": "سُبْحَـٰنَهُۥ ۖ"
+      },
+      "target_word": "سبحانه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿سبحانه - 116 - ط﴾.",
+      "old_text": null,
+      "text_page": 232,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 116 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:116:11:53",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 116,
+      "position": {
+        "surah": 2,
+        "ayah": 116,
+        "word": 11,
+        "word_id": 2062,
+        "target_word": "وَٱلْأَرْضِ ۖ"
+      },
+      "target_word": "والأرض",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿والأرض - 116 - ط﴾ لأن ما بعده مبتدأ.",
+      "old_text": null,
+      "text_page": 232,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 116 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:117:3:54",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 117,
+      "position": {
+        "surah": 2,
+        "ayah": 117,
+        "word": 3,
+        "word_id": 2068,
+        "target_word": "وَٱلْأَرْضِ ۖ"
+      },
+      "target_word": "والأرض",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿والأرض - 117 - ط﴾ لأن ﴿إذا﴾ أُجيبت بالفاء فكانت للشرط.",
+      "old_text": "﴿والأرض - 117 - ط﴾ لأن ﴿إذا﴾ أُجيبت بالفاء فكانت للشرط .",
+      "text_page": 232,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 117 - ط",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿والأرض - 117 - ط﴾ لأن ﴿إذا﴾ أُجيبت بالفاء فكانت للشرط .",
+          "new_text": "﴿والأرض - 117 - ط﴾ لأن ﴿إذا﴾ أُجيبت بالفاء فكانت للشرط.",
+          "info": "التعليل ممتد عبر انقطاع الصفحة من 232 إلى 233"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:118:10:55",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 118,
+      "position": {
+        "surah": 2,
+        "ayah": 118,
+        "word": 10,
+        "word_id": 2086,
+        "target_word": "ءَايَةٌۭ ۗ"
+      },
+      "target_word": "آية",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿آية - 118 - ط﴾.",
+      "old_text": null,
+      "text_page": 233,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 118 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:118:17:56",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 118,
+      "position": {
+        "surah": 2,
+        "ayah": 118,
+        "word": 17,
+        "word_id": 2093,
+        "target_word": "قَوْلِهِمْ ۘ"
+      },
+      "target_word": "قولهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿قولهم - 118 - ط﴾.",
+      "old_text": null,
+      "text_page": 233,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 118 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:118:19:57",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 118,
+      "position": {
+        "surah": 2,
+        "ayah": 118,
+        "word": 19,
+        "word_id": 2095,
+        "target_word": "قُلُوبُهُمْ ۗ"
+      },
+      "target_word": "قلوبهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿قلوبهم - 118 - ط﴾ لأن قد لتأكيد الاستئناف.",
+      "old_text": null,
+      "text_page": 233,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 118 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:119:5:58",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 119,
+      "position": {
+        "surah": 2,
+        "ayah": 119,
+        "word": 5,
+        "word_id": 2105,
+        "target_word": "وَنَذِيرًۭا ۖ"
+      },
+      "target_word": "ونذيرا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ونذيرا - 119 - لا﴾ للعطف ، أي : نذيرا وغير مسئول ، ألا من قرأ : ﴿ولا تسألُ﴾ على النهي لاختلاف الجملتين.",
+      "old_text": null,
+      "text_page": 233,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 119 - لا",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:120:9:59",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 120,
+      "position": {
+        "surah": 2,
+        "ayah": 120,
+        "word": 9,
+        "word_id": 2119,
+        "target_word": "مِلَّتَهُمْ ۗ"
+      },
+      "target_word": "ملتهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ ملتهم - 120 - ط ﴾",
+      "old_text": null,
+      "text_page": 234,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 120 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:120:12:60",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 120,
+      "position": {
+        "surah": 2,
+        "ayah": 120,
+        "word": 12,
+        "word_id": 2122,
+        "target_word": "هُدَى"
+      },
+      "target_word": "هو الهدى",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ هو الهدى - 120 - ط ﴾",
+      "old_text": "﴿ هو الهدى - 120 ط ﴾",
+      "text_page": 234,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 120 - ط",
+      "fixes": [
+        {
+          "type": "missing_delimiter",
+          "basis": "editor_policy",
+          "old_text": "﴿ هو الهدى - 120 ط ﴾",
+          "new_text": "﴿ هو الهدى - 120 - ط ﴾",
+          "info": "إضافة شرطة فاصلة قبل رمز الوقف."
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:120:23:61",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 120,
+      "position": {
+        "surah": 2,
+        "ayah": 120,
+        "word": 23,
+        "word_id": 2133,
+        "target_word": "ٱلْعِلْمِ ۙ"
+      },
+      "target_word": "من العلم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ من العلم - 120 - لا ﴾ لأن نفي الولاية والنصرة متعلق بشرط اتباع أهوائهم فكان في الإطلاق خطر.",
+      "old_text": null,
+      "text_page": 234,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 120 - لا",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:121:6:62",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 121,
+      "position": {
+        "surah": 2,
+        "ayah": 121,
+        "word": 6,
+        "word_id": 2147,
+        "target_word": "تِلَاوَتِهِۦٓ"
+      },
+      "target_word": "تلاوته",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ تلاوته - 121 - ط ﴾ لأن ما بعدها مبتدأ آخر مع خبره.",
+      "old_text": null,
+      "text_page": 234,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 121 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:121:9:63",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 121,
+      "position": {
+        "surah": 2,
+        "ayah": 121,
+        "word": 9,
+        "word_id": 2150,
+        "target_word": "بِهِۦ ۗ"
+      },
+      "target_word": "يؤمنون به",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ يؤمنون به - 121 - ط ﴾ للابتداء بالشرط.",
+      "old_text": "﴿ يؤمنون به - 121 - ط ﴾ للابتداء بالشرط .",
+      "text_page": 234,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 121 - ط",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ يؤمنون به - [انقطاع بين صفحتي 234 و 235] 121 - ط ﴾ للابتداء بالشرط .",
+          "new_text": "﴿ يؤمنون به - 121 - ط ﴾ للابتداء بالشرط.",
+          "info": "اتصال النص المقطوع بين صفحتي 234 و235."
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "mismatch",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:124:6:64",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 124,
+      "position": {
+        "surah": 2,
+        "ayah": 124,
+        "word": 6,
+        "word_id": 2191,
+        "target_word": "فَأَتَمَّهُنَّ ۖ"
+      },
+      "target_word": "فأتمهن",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ فأتمهن - 124 - ط ﴾",
+      "old_text": null,
+      "text_page": 235,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 124 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:124:11:65",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 124,
+      "position": {
+        "surah": 2,
+        "ayah": 124,
+        "word": 11,
+        "word_id": 2196,
+        "target_word": "إِمَامًۭا ۖ"
+      },
+      "target_word": "إماما",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ إماما - 124 - ط ﴾",
+      "old_text": "إماما - 124 - ط ﴾",
+      "text_page": 235,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 124 - ط",
+      "fixes": [
+        {
+          "type": "missing_delimiter",
+          "basis": "editor_policy",
+          "old_text": "إماما - 124 - ط ﴾",
+          "new_text": "﴿ إماما - 124 - ط ﴾",
+          "info": "إضافة قوس البداية المفقود."
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:124:14:66",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 124,
+      "position": {
+        "surah": 2,
+        "ayah": 124,
+        "word": 14,
+        "word_id": 2199,
+        "target_word": "ذُرِّيَّتِى ۖ"
+      },
+      "target_word": "ذريتي",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ ذريتي - 124 - ط ﴾",
+      "old_text": null,
+      "text_page": 235,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 124 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:125:6:67",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 125,
+      "position": {
+        "surah": 2,
+        "ayah": 125,
+        "word": 6,
+        "word_id": 2210,
+        "target_word": "وَأَمْنًۭا"
+      },
+      "target_word": "وأمنا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ وأمنا - 125 - ط ﴾ لمن قرأ : ﴿ واتخذوا ﴾ بكسر الخاء لاعتراض [ الأمر بين ] الماضيين .",
+      "old_text": "وأمنا - 125 - ط ﴾ لمن قرأ : ﴿ واتخذوا ﴾ بكسر الخاء لاعتراض [ الأمر بين ] الماضيين .",
+      "text_page": 235,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 125 - ط",
+      "fixes": [
+        {
+          "type": "missing_delimiter",
+          "basis": "editor_policy",
+          "old_text": "وأمنا - 125 - ط ﴾ لمن قرأ : ﴿ واتخذوا ﴾ بكسر الخاء لاعتراض [ الأمر بين ] الماضيين .",
+          "new_text": "﴿ وأمنا - 125 - ط ﴾ لمن قرأ : ﴿ واتخذوا ﴾ بكسر الخاء لاعتراض [ الأمر بين ] الماضيين .",
+          "info": "إضافة قوس البداية المفقود."
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:125:11:68",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 125,
+      "position": {
+        "surah": 2,
+        "ayah": 125,
+        "word": 11,
+        "word_id": 2215,
+        "target_word": "مُصَلًّۭى ۖ"
+      },
+      "target_word": "مصلى",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ مصلى - 125 - ط ﴾ كذلك ، ومن فتح الخاء نسق الأفعال الثلاثة بلا وقف .",
+      "old_text": null,
+      "text_page": 235,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 125 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:126:18:69",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 126,
+      "position": {
+        "surah": 2,
+        "ayah": 126,
+        "word": 18,
+        "word_id": 2244,
+        "target_word": "ٱلْـَٔاخِرِ ۖ"
+      },
+      "target_word": "واليوم الآخر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ واليوم الآخر - 126 - ط ﴾",
+      "old_text": "﴿ واليوم الآخر - 126 - ط ﴾",
+      "text_page": 235,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 126 - ط",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ واليوم الآخر - [انقطاع بين صفحتي 235 و 236] 126 - ط ﴾",
+          "new_text": "﴿ واليوم الآخر - 126 - ط ﴾",
+          "info": "اتصال النص المقطوع بين صفحتي 235 و236."
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:126:28:70",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 126,
+      "position": {
+        "surah": 2,
+        "ayah": 126,
+        "word": 28,
+        "word_id": 2254,
+        "target_word": "ٱلنَّارِ ۖ"
+      },
+      "target_word": "عذاب النار",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ عذاب النار - 126 - ط ﴾ لأن نعم وبئس للمبالغة في المدح والذم ، فيبدأ بهما تنبيها على المدح والذم .",
+      "old_text": null,
+      "text_page": 236,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 126 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:127:7:71",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 127,
+      "position": {
+        "surah": 2,
+        "ayah": 127,
+        "word": 7,
+        "word_id": 2263,
+        "target_word": "وَإِسْمَـٰعِيلُ"
+      },
+      "target_word": "وإسماعيل",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ وإسماعيل - 127 - ط ﴾ لإضمار القول ، أي : فقالا ربنا .",
+      "old_text": "﴿ وإسماعيل - 127 - ط ﴾ لإضمار القول ، أي : فقالا ربنا .",
+      "text_page": 236,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 127 - ط",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ وإسماعيل - [انقطاع بين صفحتي 236 و 237] 127 - ط ﴾ لإضمار القول ، أي : فقالا ربنا .",
+          "new_text": "﴿ وإسماعيل - 127 - ط ﴾ لإضمار القول ، أي : فقالا ربنا .",
+          "info": "اتصال النص المقطوع بين صفحتي 236 و237."
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "mismatch",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:127:10:72",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 127,
+      "position": {
+        "surah": 2,
+        "ayah": 127,
+        "word": 10,
+        "word_id": 2266,
+        "target_word": "مِنَّآ ۖ"
+      },
+      "target_word": "منا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ منا - 127 - ط ﴾ للابتداء بأن ، ولجواز الوصل وجه لطيف على تقدير : فإنك أو لأنك .",
+      "old_text": null,
+      "text_page": 237,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 127 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:128:9:73",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 128,
+      "position": {
+        "surah": 2,
+        "ayah": 128,
+        "word": 9,
+        "word_id": 2279,
+        "target_word": "لَّكَ"
+      },
+      "target_word": "مسلمة لك",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "text": "﴿ مسلمة لك - 128 - ص ﴾ لعطف الجملتين المتحققين .",
+      "old_text": null,
+      "text_page": 237,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 128 - ص",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:128:13:74",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 128,
+      "position": {
+        "surah": 2,
+        "ayah": 128,
+        "word": 13,
+        "word_id": 2283,
+        "target_word": "عَلَيْنَآ ۖ"
+      },
+      "target_word": "علينا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ علينا - 128 - ج ﴾ وقد ذكر .",
+      "old_text": null,
+      "text_page": 237,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 128 - ج",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:129:12:75",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 129,
+      "position": {
+        "surah": 2,
+        "ayah": 129,
+        "word": 12,
+        "word_id": 2299,
+        "target_word": "وَيُزَكِّيهِمْ ۚ"
+      },
+      "target_word": "ويزكيهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ ويزكيهم - 129 - ط ﴾",
+      "old_text": null,
+      "text_page": 237,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 129 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:130:9:76",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 130,
+      "position": {
+        "surah": 2,
+        "ayah": 130,
+        "word": 9,
+        "word_id": 2312,
+        "target_word": "نَفْسَهُۥ ۚ"
+      },
+      "target_word": "نفسه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ نفسه - 130 - ط ﴾ للفصل بين الاستفهام",
+      "old_text": null,
+      "text_page": 237,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 130 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:130:13:77",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 130,
+      "position": {
+        "surah": 2,
+        "ayah": 130,
+        "word": 13,
+        "word_id": 2316,
+        "target_word": "ٱلدُّنْيَا ۖ"
+      },
+      "target_word": "في الدنيا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ في الدنيا - 130 - ج ﴾ لعطف الجملتين المختلفين .",
+      "old_text": null,
+      "text_page": 238,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 130 - ج",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:131:5:78",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 131,
+      "position": {
+        "surah": 2,
+        "ayah": 131,
+        "word": 5,
+        "word_id": 2326,
+        "target_word": "أَسْلِمْ ۖ"
+      },
+      "target_word": "أسلم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ أسلم - 131 - لا ﴾ لأن قوله : ﴿ قال أسلمت ﴾ عامل ﴿ إذ ﴾ ، ولو كان عامل إذ محذوفا لكان فـ ﴿ قال أسلمت ﴾ عطفا ، ولو لم يجعل ﴿ قال ﴾ عاملا ﴿ إذ ﴾ ، وليس بمعطوف لانقطع عن الجملة فانتفض المعنى .",
+      "old_text": "﴿ أسلم - 131 - لا ﴾ لأن قوله : ﴿ قال أسلمت ﴾ عامل ﴿ إذ ﴾ ، ولو كان عامل إذ محذوفا لكان فـ ﴿ قال أسلمت ﴾",
+      "text_page": 238,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 131 - لا",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿ أسلم - 131 - لا ﴾ لأن قوله : ﴿ قال أسلمت ﴾ عامل ﴿ إذ ﴾ ، ولو كان عامل إذ محذوفا لكان فـ ﴿ قال أسلمت ﴾",
+          "new_text": "﴿ أسلم - 131 - لا ﴾ لأن قوله : ﴿ قال أسلمت ﴾ عامل ﴿ إذ ﴾ ، ولو كان عامل إذ محذوفا لكان فـ ﴿ قال أسلمت ﴾ عطفا ، ولو لم يجعل ﴿ قال ﴾ عاملا ﴿ إذ ﴾ ، وليس بمعطوف لانقطع عن الجملة فانتفض المعنى .",
+          "info": "تكميل نص تعليل الوقف المنقطع بين صفحتي 238 و239"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:132:5:79",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 132,
+      "position": {
+        "surah": 2,
+        "ayah": 132,
+        "word": 5,
+        "word_id": 2335,
+        "target_word": "وَيَعْقُوبُ"
+      },
+      "target_word": "ويعقوب",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ ويعقوب - 132 - ط ﴾ لأن التقدير : فقال يابني ، ومن",
+      "old_text": null,
+      "text_page": 239,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 132 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:132:16:80",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 132,
+      "position": {
+        "surah": 2,
+        "ayah": 132,
+        "word": 16,
+        "word_id": 2346,
+        "target_word": "مُّسْلِمُونَ"
+      },
+      "target_word": "مسلمون",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ مسلمون - 132 - ط ﴾ لأن أم بمعنى ألف استفهام للإنكار .",
+      "old_text": null,
+      "text_page": 240,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 132 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:133:7:81",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 133,
+      "position": {
+        "surah": 2,
+        "ayah": 133,
+        "word": 7,
+        "word_id": 2353,
+        "target_word": "ٱلْمَوْتُ"
+      },
+      "target_word": "الموت",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ الموت - 133 - لا ﴾ لأن ﴿ إذ ﴾ بدل ﴿ إذ ﴾ الأولى ، ومن قطعها عن الأولى فوقف على ﴿ الموت ﴾ وجعل ﴿ قالوا ﴾ عاملا ، ولم يقف على ﴿ بعدي ﴾ فله وجه لا يتضح لأن الإنكار ﴿ مسلمون ﴾ عليها . متوجه على قولهم أن يعقوب أوصى بنيه باليهودية لا على أن يعقوب قد مات .",
+      "old_text": "﴿ الموت - 133 - لا ﴾ لأن ﴿ إذ ﴾ بدل ﴿ إذ ﴾ الأولى ، ومن قطعها عن الأولى فوفق على ﴿ الموت ﴾ وجعل ﴿ قالوا ﴾ عاملا ، ولم يقف على ﴿ بعدي ﴾ فله وجه لا يتضح لأن الإنكار ﴿ مسلمون ﴾ عليها .",
+      "text_page": 240,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 133 - لا",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿ الموت - 133 - لا ﴾ لأن ﴿ إذ ﴾ بدل ﴿ إذ ﴾ الأولى ، ومن قطعها عن الأولى فوفق على ﴿ الموت ﴾ وجعل ﴿ قالوا ﴾ عاملا ، ولم يقف على ﴿ بعدي ﴾ فله وجه لا يتضح لأن الإنكار ﴿ مسلمون ﴾ عليها .",
+          "new_text": "﴿ الموت - 133 - لا ﴾ لأن ﴿ إذ ﴾ بدل ﴿ إذ ﴾ الأولى ، ومن قطعها عن الأولى فوفق على ﴿ الموت ﴾ وجعل ﴿ قالوا ﴾ عاملا ، ولم يقف على ﴿ بعدي ﴾ فله وجه لا يتضح لأن الإنكار ﴿ مسلمون ﴾ عليها . متوجه على قولهم أن يعقوب أوصى بنيه باليهودية لا على أن يعقوب قد مات .",
+          "info": "تكميل النص المنقطع بين صفحتي 240 و241"
+        },
+        {
+          "type": "orthography",
+          "basis": "editor_policy",
+          "old_text": "فوفق",
+          "new_text": "فوقف",
+          "info": "تصويب خطأ إملائي مطبعي"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:133:14:82",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 133,
+      "position": {
+        "surah": 2,
+        "ayah": 133,
+        "word": 14,
+        "word_id": 2360,
+        "target_word": "بَعْدِى"
+      },
+      "target_word": "من بعدي",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ من بعدي - 133 - ط ﴾ .",
+      "old_text": null,
+      "text_page": 241,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 133 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:133:24:83",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 133,
+      "position": {
+        "surah": 2,
+        "ayah": 133,
+        "word": 24,
+        "word_id": 2370,
+        "target_word": "وَٰحِدًۭا"
+      },
+      "target_word": "واحدا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ واحدا - 133 - ج ﴾ لعطف الجملتين المختلفين ، والوصل أجوز على جعل الواو حالا .",
+      "old_text": null,
+      "text_page": 241,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 133 - ج",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:134:4:84",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 134,
+      "position": {
+        "surah": 2,
+        "ayah": 134,
+        "word": 4,
+        "word_id": 2377,
+        "target_word": "خَلَتْ ۖ"
+      },
+      "target_word": "قد خلت",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ قد خلت - 134 - ج ﴾ لأن ما بعدها يصلح صفة لـ ﴿ أمة ﴾ ، ويصلح استئنافا وهو أوضح لعطف ﴿ ولكم ما كسبتم ﴾ عليها .",
+      "old_text": null,
+      "text_page": 241,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 134 - ج",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:134:10:85",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 134,
+      "position": {
+        "surah": 2,
+        "ayah": 134,
+        "word": 10,
+        "word_id": 2383,
+        "target_word": "كَسَبْتُمْ ۖ"
+      },
+      "target_word": "ولكم ما كسبتم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ ولكم ما كسبتم - 134 - ج ﴾ لعطف الجملتين المختلفين.",
+      "old_text": null,
+      "text_page": 242,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 134 - ج",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:135:6:86",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 135,
+      "position": {
+        "surah": 2,
+        "ayah": 135,
+        "word": 6,
+        "word_id": 2394,
+        "target_word": "تَهْتَدُوا۟ ۗ"
+      },
+      "target_word": "تهتدوا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ تهتدوا - 135 - ط ﴾.",
+      "old_text": null,
+      "text_page": 242,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 135 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:135:11:87",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 135,
+      "position": {
+        "surah": 2,
+        "ayah": 135,
+        "word": 11,
+        "word_id": 2399,
+        "target_word": "حَنِيفًۭا ۖ"
+      },
+      "target_word": "حنيفا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ حنيفا - 135 - ط ﴾.",
+      "old_text": null,
+      "text_page": 242,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 135 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:136:23:88",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 136,
+      "position": {
+        "surah": 2,
+        "ayah": 136,
+        "word": 23,
+        "word_id": 2426,
+        "target_word": "رَّبِّهِمْ"
+      },
+      "target_word": "من ربهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ من ربهم - 136 - ج ﴾ لطول الكلام على تأويل جعل ﴿ لا نفرق بين أحد منهم ﴾ مستأنفاً، والأوضح أنه حال، أي: آمنا غير مفرقين.",
+      "old_text": null,
+      "text_page": 242,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 136 - ج",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:136:28:89",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 136,
+      "position": {
+        "surah": 2,
+        "ayah": 136,
+        "word": 28,
+        "word_id": 2431,
+        "target_word": "مِّنْهُمْ"
+      },
+      "target_word": "منهم",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "text": "﴿ منهم - 136 - ز ﴾ قد يجوز لاحتمال الواو الابتداء والحال، والحال أوجه.",
+      "old_text": null,
+      "text_page": 243,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 136 - ز",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:137:8:90",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 137,
+      "position": {
+        "surah": 2,
+        "ayah": 137,
+        "word": 8,
+        "word_id": 2442,
+        "target_word": "ٱهْتَدَوا۟ ۖ"
+      },
+      "target_word": "اهتدوا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ اهتدوا - 137 - ج ﴾ لابتداء شرط آخر مع العطف.",
+      "old_text": null,
+      "text_page": 243,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 137 - ج",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:137:14:91",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 137,
+      "position": {
+        "surah": 2,
+        "ayah": 137,
+        "word": 14,
+        "word_id": 2448,
+        "target_word": "شِقَاقٍۢ ۖ"
+      },
+      "target_word": "في شقاق",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ في شقاق - 137 - ج ﴾ لابتداء سين الوعيد مع دخول الفاء فيه.",
+      "old_text": null,
+      "text_page": 243,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 137 - ج",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:137:16:92",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 137,
+      "position": {
+        "surah": 2,
+        "ayah": 137,
+        "word": 16,
+        "word_id": 2450,
+        "target_word": "ٱللَّهُ ۚ"
+      },
+      "target_word": "فسيكفيكهم الله",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ فسيكفيكهم الله - 137 - ج ﴾ لاحتمال الواو للابتداء والحال.",
+      "old_text": null,
+      "text_page": 243,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 137 - ج",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:137:19:93",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 137,
+      "position": {
+        "surah": 2,
+        "ayah": 137,
+        "word": 19,
+        "word_id": 2453,
+        "target_word": "ٱلْعَلِيمُ"
+      },
+      "target_word": "العليم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ العليم - 137 - ط ﴾ لأن الجملة الناصبة [لقوله: ﴿ صبغة الله ﴾] محذوفة، أي: [نلزم أو نتبع] راجعاً إلى قوله: بل نلزم ملة إبراهيم، وقوله: ﴿ فإن آمنوا ﴾ شرط معترض.",
+      "old_text": "﴿ العليم - 137 - ط ﴾",
+      "text_page": 243,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 137 - ط",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿ العليم - 137 - ط ﴾",
+          "new_text": "﴿ العليم - 137 - ط ﴾ لأن الجملة الناصبة [لقوله: ﴿ صبغة الله ﴾] محذوفة، أي: [نلزم أو نتبع] راجعاً إلى قوله: بل نلزم ملة إبراهيم، وقوله: ﴿ فإن آمنوا ﴾ شرط معترض.",
+          "info": "متابعة تعليل موضع الوقف في أعلى الصفحة التالية (244)"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:138:2:94",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 138,
+      "position": {
+        "surah": 2,
+        "ayah": 138,
+        "word": 2,
+        "word_id": 2455,
+        "target_word": "ٱللَّهِ ۖ"
+      },
+      "target_word": "صبغة الله",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ صبغة الله - 138 - ج ﴾ لابتداء الاستفهام مع أن الواو للحال.",
+      "old_text": null,
+      "text_page": 244,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 138 - ج",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:138:7:95",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 138,
+      "position": {
+        "surah": 2,
+        "ayah": 138,
+        "word": 7,
+        "word_id": 2460,
+        "target_word": "صِبْغَةًۭ ۖ"
+      },
+      "target_word": "صبغة",
+      "verdict_label": "ج ز",
+      "verdict": "وقف جائز",
+      "text": "﴿ صبغة - 138 - ج ز ﴾ قد يجوز على جعل الواو للابتداء، والحال أوجه وأوضح.",
+      "old_text": null,
+      "text_page": 245,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 138 - ج ز",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "not_checked",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:139:7:96",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 139,
+      "position": {
+        "surah": 2,
+        "ayah": 139,
+        "word": 7,
+        "word_id": 2470,
+        "target_word": "وَرَبُّكُمْ"
+      },
+      "target_word": "وربكم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ وربكم - 139 - ج ﴾ لأن قوله:",
+      "old_text": null,
+      "text_page": 245,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 139 - ج",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "not_checked",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:139:11:97",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 139,
+      "position": {
+        "surah": 2,
+        "ayah": 139,
+        "word": 11,
+        "word_id": 2474,
+        "target_word": "أَعْمَـٰلُكُمْ"
+      },
+      "target_word": "أعمالكم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿أعمالكم - 139 - ج﴾ والاستئناف أجور.",
+      "old_text": null,
+      "text_page": 246,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 139 - ج",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:139:14:98",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 139,
+      "position": {
+        "surah": 2,
+        "ayah": 139,
+        "word": 14,
+        "word_id": 2477,
+        "target_word": "مُخْلِصُونَ"
+      },
+      "target_word": "مخلصون",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿مخلصون - 139 - ط﴾ لمن قرأ ﴿أم يقولون﴾ بالياء؛ فجعل ﴿أم﴾ بمعنى ألف استفهام توبيخ، ومن قرأ بالتاء جعل ﴿أم﴾ جواب قوله: ﴿أتحاجوننا﴾ فلم يقف.",
+      "old_text": "﴿ مخلصون - 139 - ط ﴾ لمن قرأ ﴿ أم يقولون ﴾ بالياء فجعل ﴿ أم ﴾ بمعنى أليف استفهام توبيخ ، ومن قرأ بالتاء جعل ﴿ أم ﴾ جواب قوله : ﴿ أتحاجوننا ﴾ فلم يقف .",
+      "text_page": 246,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 139 - ط",
+      "fixes": [
+        {
+          "type": "orthography",
+          "basis": "editor_policy",
+          "old_text": "أليف",
+          "new_text": "ألف",
+          "info": "تصحيح إملائي للكلمة"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:140:12:99",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 140,
+      "position": {
+        "surah": 2,
+        "ayah": 140,
+        "word": 12,
+        "word_id": 2489,
+        "target_word": "نَصَـٰرَىٰ ۗ"
+      },
+      "target_word": "نصارى",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿أو نصارى - 140 - ط﴾",
+      "old_text": null,
+      "text_page": 247,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 140 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:140:17:100",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 140,
+      "position": {
+        "surah": 2,
+        "ayah": 140,
+        "word": 17,
+        "word_id": 2494,
+        "target_word": "ٱللَّهُ ۗ"
+      },
+      "target_word": "الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿أم الله - 140 - ط﴾",
+      "old_text": null,
+      "text_page": 248,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 140 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:140:25:101",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 140,
+      "position": {
+        "surah": 2,
+        "ayah": 140,
+        "word": 25,
+        "word_id": 2502,
+        "target_word": "ٱللَّهِ ۗ"
+      },
+      "target_word": "الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿من الله - 140 - ط﴾",
+      "old_text": null,
+      "text_page": 248,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 140 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:141:4:102",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 141,
+      "position": {
+        "surah": 2,
+        "ayah": 141,
+        "word": 4,
+        "word_id": 2511,
+        "target_word": "خَلَتْ ۖ"
+      },
+      "target_word": "خلت",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿قد خلت - 141 - ج﴾ وقد ذكر.",
+      "old_text": null,
+      "text_page": 248,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 141 - ج",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:141:10:103",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 141,
+      "position": {
+        "surah": 2,
+        "ayah": 141,
+        "word": 10,
+        "word_id": 2517,
+        "target_word": "كَسَبْتُمْ ۖ"
+      },
+      "target_word": "كسبتم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ما كسبتم - 141 - ج﴾",
+      "old_text": null,
+      "text_page": 248,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 141 - ج",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:142:11:104",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 142,
+      "position": {
+        "surah": 2,
+        "ayah": 142,
+        "word": 11,
+        "word_id": 2533,
+        "target_word": "عَلَيْهَا ۚ"
+      },
+      "target_word": "عليها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿عليها - 142 - ط﴾",
+      "old_text": null,
+      "text_page": 248,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 142 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:142:15:105",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 142,
+      "position": {
+        "surah": 2,
+        "ayah": 142,
+        "word": 15,
+        "word_id": 2537,
+        "target_word": "وَٱلْمَغْرِبُ ۚ"
+      },
+      "target_word": "المغرب",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿والمغرب - 142 - ط﴾",
+      "old_text": null,
+      "text_page": 248,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 142 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:143:12:106",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 143,
+      "position": {
+        "surah": 2,
+        "ayah": 143,
+        "word": 12,
+        "word_id": 2555,
+        "target_word": "شَهِيدًۭا ۗ"
+      },
+      "target_word": "شهيدا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿شهيدا - 143 - ط﴾",
+      "old_text": null,
+      "text_page": 248,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 143 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:143:27:107",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 143,
+      "position": {
+        "surah": 2,
+        "ayah": 143,
+        "word": 27,
+        "word_id": 2570,
+        "target_word": "عَقِبَيْهِ ۚ"
+      },
+      "target_word": "عقبه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿عقبه - 143 - ط﴾",
+      "old_text": null,
+      "text_page": 248,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 143 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:143:30:108",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 143,
+      "position": {
+        "surah": 2,
+        "ayah": 143,
+        "word": 30,
+        "word_id": 2573,
+        "target_word": "لَكَبِيرَةً"
+      },
+      "target_word": "لكبيرة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿لكبيرة - 143 - ط﴾",
+      "old_text": "ط ﴾",
+      "text_page": 249,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 143 - ط",
+      "fixes": [
+        {
+          "type": "missing_delimiter",
+          "basis": "editor_policy",
+          "old_text": "ط ﴾",
+          "new_text": "﴿لكبيرة - 143 - ط﴾",
+          "info": "استكمال القوس والكلمة ورقم الآية المقطوعة في انقطاع الصفحة"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:143:35:109",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 143,
+      "position": {
+        "surah": 2,
+        "ayah": 143,
+        "word": 35,
+        "word_id": 2578,
+        "target_word": "ٱللَّهُ ۗ"
+      },
+      "target_word": "الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿هدى الله - 143 - ط﴾",
+      "old_text": null,
+      "text_page": 249,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 143 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:143:40:110",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 143,
+      "position": {
+        "surah": 2,
+        "ayah": 143,
+        "word": 40,
+        "word_id": 2583,
+        "target_word": "إِيمَـٰنَكُمْ ۚ"
+      },
+      "target_word": "إيمانكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿إيمانكم - 143 - ط﴾",
+      "old_text": null,
+      "text_page": 249,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 143 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:144:6:111",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 144,
+      "position": {
+        "surah": 2,
+        "ayah": 144,
+        "word": 6,
+        "word_id": 2594,
+        "target_word": "ٱلسَّمَآءِ ۖ"
+      },
+      "target_word": "السماء",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿في السماء - 144 - ج﴾ لأن الجملتين وإن اتفقتا شرطا وجزاء، لكنهما اختلفتا معنى، لأن الأول شرط للمضي، والثاني شرط للاستقبال.",
+      "old_text": null,
+      "text_page": 249,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 144 - ج",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:144:9:112",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 144,
+      "position": {
+        "surah": 2,
+        "ayah": 144,
+        "word": 9,
+        "word_id": 2597,
+        "target_word": "تَرْضَىٰهَا ۚ"
+      },
+      "target_word": "ترضاها",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "text": "﴿ ترضاها - 144 - ص ﴾ لأن فاء التعقيب لتعجيل الموعود .",
+      "old_text": null,
+      "text_page": 250,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 144 - ص",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:144:14:113",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 144,
+      "position": {
+        "surah": 2,
+        "ayah": 144,
+        "word": 14,
+        "word_id": 2602,
+        "target_word": "ٱلْحَرَامِ ۚ"
+      },
+      "target_word": "الحرام",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ الحرام - 144 - ط ﴾",
+      "old_text": null,
+      "text_page": 250,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 144 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:144:20:114",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 144,
+      "position": {
+        "surah": 2,
+        "ayah": 144,
+        "word": 20,
+        "word_id": 2608,
+        "target_word": "شَطْرَهُۥ ۗ"
+      },
+      "target_word": "شطره",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ شطره - 144 - ط ﴾ .",
+      "old_text": null,
+      "text_page": 250,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 144 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:144:29:115",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 144,
+      "position": {
+        "surah": 2,
+        "ayah": 144,
+        "word": 29,
+        "word_id": 2617,
+        "target_word": "رَّبِّهِمْ ۗ"
+      },
+      "target_word": "من ربهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ من ربهم - 144 - ط ﴾ .",
+      "old_text": null,
+      "text_page": 250,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 144 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:145:10:116",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 145,
+      "position": {
+        "surah": 2,
+        "ayah": 145,
+        "word": 10,
+        "word_id": 2632,
+        "target_word": "قِبْلَتَكَ ۚ"
+      },
+      "target_word": "قبلتك",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ قبلتك - 145 - ج ﴾",
+      "old_text": null,
+      "text_page": 250,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 145 - ج",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:145:14:117",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 145,
+      "position": {
+        "surah": 2,
+        "ayah": 145,
+        "word": 14,
+        "word_id": 2636,
+        "target_word": "قِبْلَتَهُمْ ۚ"
+      },
+      "target_word": "قبلتهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ قبلتهم - 145 - ج ﴾ وكلاهما لتفصيل الأحوال مع اتحاد المقصود .",
+      "old_text": null,
+      "text_page": 251,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 145 - ج",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:145:19:118",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 145,
+      "position": {
+        "surah": 2,
+        "ayah": 145,
+        "word": 19,
+        "word_id": 2641,
+        "target_word": "بَعْضٍۢ ۚ"
+      },
+      "target_word": "قبلة بعض",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ قبلة بعض - 145 - ط ﴾ .",
+      "old_text": null,
+      "text_page": 251,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 145 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:145:28:119",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 145,
+      "position": {
+        "surah": 2,
+        "ayah": 145,
+        "word": 28,
+        "word_id": 2650,
+        "target_word": "ٱلْعِلْمِ ۙ"
+      },
+      "target_word": "من العلم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ من العلم - 145 - لا ﴾ لأن ﴿ إنك ﴾ جواب القسم في ﴿ لئن ﴾ فلو فصل كان وصف الظلم مطلقا ، وفي الإطلاق خطر .",
+      "old_text": null,
+      "text_page": 251,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 145 - لا",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:145:32:120",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 145,
+      "position": {
+        "surah": 2,
+        "ayah": 145,
+        "word": 32,
+        "word_id": 2654,
+        "target_word": "ٱلظَّـٰلِمِينَ"
+      },
+      "target_word": "لمن الظالمين",
+      "verdict_label": "م",
+      "verdict": "لازم",
+      "text": "﴿ لمن الظالمين - 145 - م ﴾ لأنه لو وصل صار ﴿ الذين ﴾ صفة ﴿ الظالمين ﴾ ، وهو مبتدأ في مدح عبد الله بن سلام وأصحابه .",
+      "old_text": "﴿ لمن الظالمين - 145 - ",
+      "text_page": 251,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 145 - م",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿ لمن الظالمين - 145 - ",
+          "new_text": "﴿ لمن الظالمين - 145 - م ﴾ لأنه لو وصل صار ﴿ الذين ﴾ صفة ﴿ الظالمين ﴾ ، وهو مبتدأ في مدح عبد الله بن سلام وأصحابه .",
+          "info": "تم إكمال موضع الوقف المنقطع بين صفحتي 251 و252"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:146:7:121",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 146,
+      "position": {
+        "surah": 2,
+        "ayah": 146,
+        "word": 7,
+        "word_id": 2661,
+        "target_word": "أَبْنَآءَهُمْ ۖ"
+      },
+      "target_word": "أبناءهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ أبناءهم - 146 - ط ﴾ .",
+      "old_text": null,
+      "text_page": 252,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 146 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:148:6:122",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 148,
+      "position": {
+        "surah": 2,
+        "ayah": 148,
+        "word": 6,
+        "word_id": 2681,
+        "target_word": "ٱلْخَيْرَٰتِ ۚ"
+      },
+      "target_word": "الخيرات",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ الخيرات - 148 - ط ﴾ .",
+      "old_text": null,
+      "text_page": 252,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 148 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:148:13:123",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 148,
+      "position": {
+        "surah": 2,
+        "ayah": 148,
+        "word": 13,
+        "word_id": 2688,
+        "target_word": "جَمِيعًا ۚ"
+      },
+      "target_word": "جميعا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ جميعا - 148 - ط ﴾ .",
+      "old_text": null,
+      "text_page": 252,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 148 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:149:8:124",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 149,
+      "position": {
+        "surah": 2,
+        "ayah": 149,
+        "word": 8,
+        "word_id": 2702,
+        "target_word": "ٱلْحَرَامِ ۖ"
+      },
+      "target_word": "الحرام",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ الحرام - 149 - ط ﴾ .",
+      "old_text": null,
+      "text_page": 253,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 149 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:149:12:125",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 149,
+      "position": {
+        "surah": 2,
+        "ayah": 149,
+        "word": 12,
+        "word_id": 2706,
+        "target_word": "رَّبِّكَ ۗ"
+      },
+      "target_word": "من ربك",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ من ربك - 149 - ط ﴾ .",
+      "old_text": null,
+      "text_page": 253,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 149 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:150:8:126",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 150,
+      "position": {
+        "surah": 2,
+        "ayah": 150,
+        "word": 8,
+        "word_id": 2719,
+        "target_word": "ٱلْحَرَامِ ۚ"
+      },
+      "target_word": "المسجد الحرام",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ المسجد الحرام - 150 - ط ﴾ لأن ﴿ حيث ما ﴾ متضمن للشرط .",
+      "old_text": null,
+      "text_page": 253,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 150 - ط",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:150:14:127",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 150,
+      "position": {
+        "surah": 2,
+        "ayah": 150,
+        "word": 14,
+        "word_id": 2725,
+        "target_word": "شَطْرَهُۥ"
+      },
+      "target_word": "شطره",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ شطره - 150 - لا ﴾ لتعلق لام كي .",
+      "old_text": null,
+      "text_page": 253,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 150 - لا",
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      }
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:150:23:128",
+      "book_id": "Al-Sajawandi-Ilal",
+      "surah": 2,
+      "ayah": 150,
+      "position": {
+        "surah": 2,
+        "ayah": 150,
+        "word": 23,
+        "word_id": 2734,
+        "target_word": "مِنْهُمْ"
+      },
+      "target_word": "منهم",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "text": "﴿ منهم - 150 - ز ﴾ قد قيل على أن إلا بمعنى ولا، أو لكن، والوصل في العربية أوضح لأن لاولكن للعطف أيضا، ومن وقف تحرز عن إثبات الحجة بعد النفي، والخلاص عن ذلك أن المراد من الحجة الخصومة، وبيان الحق لا ينفي الخصومة.",
+      "old_text": "150 - ز قد قيل على أن إِلا بمعنى ولا ، أو لكن ، والوصل في العربية أوضح لأن لاولكن للعطف أيضا ، ومن وقف تحرز عن إثبات الحجة بعد النفي ، والخلاص عن ذلك أن المراد من الحجة الخصومة ، وبيان الحق لا ينفي الخصومة .",
+      "text_page": 254,
+      "evidence_type": "explicit_cataloged",
+      "section": "wuquf",
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 150 - ز",
+      "fixes": [
+        {
+          "type": "malformed_bracket",
+          "basis": "page_prose",
+          "old_text": "150 - ز",
+          "new_text": "﴿ منهم - 150 - ز ﴾",
+          "info": "إضافة القوسين القرآنية والكلمة الموقوف عليها (منهم) المستفادة من سياق الشرح والآية."
+        },
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "عن إثبات الحجة بعد النفي ، والخلاص عن ذلك",
+          "new_text": "عن إثبات الحجة بعد النفي، والخلاص عن ذلك",
+          "info": "دمج النص الممتد بين ص 254 وص 255."
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      }
+    }
+  ]
+}

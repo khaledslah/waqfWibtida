@@ -1,0 +1,161 @@
+{
+  "page_numbers": [284, 285, 286, 287],
+  "waqfs": [
+    {
+      "ayah": 196,
+      "target_word": "محله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿محله - 196 - ط﴾ لابتداء حكم كفارة الضرورة.",
+      "text_page": 284,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 196,
+      "target_word": "أونسك",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿أونسك - 196 - ج﴾ لأن ﴿إذا﴾ للشرط مع الفاء، وجوابه محذوف، أي: فإذا أمنتم من خوف العدو وضعف المرض فامضوا.",
+      "text_page": 284,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 196,
+      "target_word": "أمنتم",
+      "verdict_label": null,
+      "verdict": null,
+      "text": "﴿أمنتم - 196﴾ وقفة لحق الحذف، ولابتداء الشرط في حكم آخر وهو التمتع.",
+      "text_page": 285,
+      "old_text": "﴿أمنتم﴾ وقفة لحق الحذف، ولابتداء الشرط في حكم آخر وهو التمتع.",
+      "fixes": [
+        {
+          "type": "ayah_number_correction",
+          "basis": "editor_policy",
+          "old_text": "﴿أمنتم﴾",
+          "new_text": "﴿أمنتم - 196﴾",
+          "info": "إضافة رقم الآية المفقود لتوحيد نمط الحاصر القرآني"
+        }
+      ]
+    },
+    {
+      "ayah": 196,
+      "target_word": "من الهدي",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿من الهدي - 196 - ج﴾.",
+      "text_page": 285,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 196,
+      "target_word": "رجعتم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿رجعتم - 196 - ط﴾.",
+      "text_page": 285,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 196,
+      "target_word": "كاملة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿كاملة - 196 - ط﴾.",
+      "text_page": 285,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 196,
+      "target_word": "الحرام",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿الحرام - 196 - ط﴾.",
+      "text_page": 285,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 197,
+      "target_word": "معلومات",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿معلومات - 197 - ج﴾.",
+      "text_page": 286,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 197,
+      "target_word": "في الحج",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿في الحج - 197 - ط﴾.",
+      "text_page": 286,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 197,
+      "target_word": "يعلمه الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿يعلمه الله - 197 - ط﴾.",
+      "text_page": 286,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 197,
+      "target_word": "التقوى",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "text": "﴿التقوى - 197 - ز﴾ للعارض بين الجملتين المتفقتين.",
+      "text_page": 286,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 198,
+      "target_word": "من ربكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿من ربكم - 198 - ط﴾ لأن ﴿إذا﴾ أجيبت بالفاء فكانت شرطا في ابتداء حكم آخر.",
+      "text_page": 286,
+      "old_text": "﴿من ربكم - 198 - ﴾ ﴿ط﴾ لأن ﴿إذا﴾ أجيبت بالفاء فكانت شرطا في ابتداء حكم آخر.",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿من ربكم - 198 - ﴾ ﴿ط﴾",
+          "new_text": "﴿من ربكم - 198 - ط﴾",
+          "info": "دمج رمز الوقف وتعليله المنقطعين بين أسفل صفحة 286 وأعلى صفحة 287"
+        }
+      ]
+    },
+    {
+      "ayah": 198,
+      "target_word": "الحرام",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "text": "﴿الحرام - 198 - ص﴾ لعطف المتفقتين.",
+      "text_page": 287,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 198,
+      "target_word": "هداكم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿هداكم - 198 - ج﴾ لأن الواو تصلح حالا.",
+      "text_page": 287,
+      "old_text": null,
+      "fixes": []
+    }
+  ]
+}

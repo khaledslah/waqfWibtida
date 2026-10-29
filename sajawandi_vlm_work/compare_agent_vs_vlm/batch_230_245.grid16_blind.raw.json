@@ -1,0 +1,659 @@
+{
+  "page_numbers": [
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245
+  ],
+  "waqfs": [
+    {
+      "ayah": 113,
+      "target_word": "النصارى على شيء",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "text": "﴿النصارى على شيء - 113 - ص﴾ لعطف الجملتين المتفقتين.",
+      "text_page": 230,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 113,
+      "target_word": "على شيء",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿على شيء - 113 - لا﴾ لأن الواو للحال.",
+      "text_page": 230,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 113,
+      "target_word": "الكتاب",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿الكتاب - 113 - ط﴾",
+      "text_page": 230,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 113,
+      "target_word": "مثل قولهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿مثل قولهم - 113 - ج﴾ لأن قوله ﴿فالله﴾ مبتدأ مع فاء التعقيب.",
+      "text_page": 230,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 114,
+      "target_word": "خرابها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿خرابها - 114 - ط﴾ للفصل بين الاستفهام والإخبار.",
+      "text_page": 230,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 114,
+      "target_word": "خائفين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿خائفين - 114 - ط﴾ لأن ما بعده إخبار وعيد مبتدأ منتظر، ولو وصل صارت الجملة صفة لهم، والصفة تكون كائنة متصلة.",
+      "text_page": 230,
+      "old_text": "﴿خائفين - 114 - ط﴾",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿خائفين - 114 - ط﴾",
+          "new_text": "﴿خائفين - 114 - ط﴾ لأن ما بعده إخبار وعيد مبتدأ منتظر، ولو وصل صارت الجملة صفة لهم، والصفة تكون كائنة متصلة.",
+          "info": "انقطاع التعليل بين صفحتين"
+        }
+      ]
+    },
+    {
+      "ayah": 115,
+      "target_word": "وجه الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿وجه الله - 115 - ط﴾",
+      "text_page": 231,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 116,
+      "target_word": "ولدا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ولدا - 116 - لا﴾ وأن جاز الابتداء بقوله ﴿سبحانه﴾، ولكن يوصل بقولهم ردا له وتعجيلا للتنزيه.",
+      "text_page": 231,
+      "old_text": "﴿ولدا - 116 - لا﴾ وأن",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿ولدا - 116 - لا﴾ وأن",
+          "new_text": "﴿ولدا - 116 - لا﴾ وأن جاز الابتداء بقوله ﴿سبحانه﴾، ولكن يوصل بقولهم ردا له وتعجيلا للتنزيه.",
+          "info": "انقطاع التعليل بين صفحتين"
+        }
+      ]
+    },
+    {
+      "ayah": 116,
+      "target_word": "سبحانه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿سبحانه - 116 - ط﴾",
+      "text_page": 232,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 116,
+      "target_word": "والأرض",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿والأرض - 116 - ط﴾ لأن ما بعده مبتدأ.",
+      "text_page": 232,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 117,
+      "target_word": "والأرض",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿والأرض - 117 - ط﴾ لأن ﴿إذا﴾ أجيبت بالفاء فكانت للشرط.",
+      "text_page": 232,
+      "old_text": "﴿والأرض - 117 - ط﴾ لأن ﴿إذا﴾",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿والأرض - 117 - ط﴾ لأن ﴿إذا﴾",
+          "new_text": "﴿والأرض - 117 - ط﴾ لأن ﴿إذا﴾ أجيبت بالفاء فكانت للشرط.",
+          "info": "انقطاع التعليل بين صفحتين"
+        }
+      ]
+    },
+    {
+      "ayah": 118,
+      "target_word": "آية",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿آية - 118 - ط﴾",
+      "text_page": 233,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 118,
+      "target_word": "قولهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿قولهم - 118 - ط﴾",
+      "text_page": 233,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 118,
+      "target_word": "قلوبهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿قلوبهم - 118 - ط﴾ لأن قد لتأكيد الاستئناف.",
+      "text_page": 233,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 119,
+      "target_word": "ونذيرا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ونذيرا - 119 - لا﴾ للعطف، أي: نذيرا وغير مسئول، إلا لمن قرأ: ﴿ولا تسأل﴾ على النهي لاختلاف الجملتين.",
+      "text_page": 233,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 120,
+      "target_word": "ملتهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ملتهم - 120 - ط﴾",
+      "text_page": 234,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 120,
+      "target_word": "هو الهدى",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿هو الهدى - 120 - ط﴾",
+      "text_page": 234,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 120,
+      "target_word": "من العلم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿من العلم - 120 - لا﴾ لأن نفي الولاية والنصرة متعلق بشرط اتباع أهوائهم فكان في الإطلاق خطر.",
+      "text_page": 234,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 121,
+      "target_word": "تلاوته",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿تلاوته - 121 - ط﴾ لأن ما بعدها مبتدأ آخر مع خبره.",
+      "text_page": 234,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 121,
+      "target_word": "يؤمنون به",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿يؤمنون به - 121 - ط﴾ للابتداء بالشرط.",
+      "text_page": 234,
+      "old_text": "﴿يؤمنون به -",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿يؤمنون به -",
+          "new_text": "﴿يؤمنون به - 121 - ط﴾ للابتداء بالشرط.",
+          "info": "انقطاع التعليل بين صفحتين"
+        }
+      ]
+    },
+    {
+      "ayah": 124,
+      "target_word": "فأتمهن",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿فأتمهن - 124 - ط﴾",
+      "text_page": 235,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 124,
+      "target_word": "اماما",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿اماما - 124 - ط﴾",
+      "text_page": 235,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 124,
+      "target_word": "ذريتي",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ذريتي - 124 - ط﴾",
+      "text_page": 235,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 125,
+      "target_word": "وأمنا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿وأمنا - 125 - ط﴾ لمن قرأ: ﴿واتخذوا﴾ بكسر الخاء لاعتراض الأمر بين الماضين.",
+      "text_page": 235,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 125,
+      "target_word": "مصلى",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿مصلى - 125 - ط﴾ كذلك، ومن فتح الخاء نسق الأفعال الثلاثة بلا وقف.",
+      "text_page": 235,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 126,
+      "target_word": "واليوم الآخر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿واليوم الآخر - 126 - ط﴾",
+      "text_page": 235,
+      "old_text": "﴿واليوم الآخر -",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿واليوم الآخر -",
+          "new_text": "﴿واليوم الآخر - 126 - ط﴾",
+          "info": "انقطاع التعليل بين صفحتين"
+        }
+      ]
+    },
+    {
+      "ayah": 126,
+      "target_word": "عذاب النار",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿عذاب النار - 126 - ط﴾ لأن نعم وبئس للمبالغة في المدح والذم، فيبدأ بهما تنبيها على المدح والذم.",
+      "text_page": 236,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 127,
+      "target_word": "وإسمعيل",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿وإسمعيل - 127 - ط﴾ لإضمار القول، أي: فقالا ربنا.",
+      "text_page": 236,
+      "old_text": "﴿وإسمعيل -",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿وإسمعيل -",
+          "new_text": "﴿وإسمعيل - 127 - ط﴾ لإضمار القول، أي: فقالا ربنا.",
+          "info": "انقطاع التعليل بين صفحتين"
+        }
+      ]
+    },
+    {
+      "ayah": 127,
+      "target_word": "منا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿منا - 127 - ط﴾ للابتداء بإن، ولجواز الوصل وجه لطيف على تقدير: فانك أو لأنك.",
+      "text_page": 237,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 128,
+      "target_word": "مسلمة لك",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "text": "﴿مسلمة لك - 128 - ص﴾ لعطف الجملتين المتفقتين.",
+      "text_page": 237,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 128,
+      "target_word": "علينا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿علينا - 128 - ج﴾ وقد ذكر.",
+      "text_page": 237,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 129,
+      "target_word": "ويزكيهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ويزكيهم - 129 - ط﴾",
+      "text_page": 237,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 130,
+      "target_word": "نفسه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿نفسه - 130 - ط﴾ للفصل بين الاستفهام والإخبار.",
+      "text_page": 237,
+      "old_text": "﴿نفسه - 130 - ط﴾ للفصل بين الاستفهام",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿نفسه - 130 - ط﴾ للفصل بين الاستفهام",
+          "new_text": "﴿نفسه - 130 - ط﴾ للفصل بين الاستفهام والإخبار.",
+          "info": "انقطاع التعليل بين صفحتين"
+        }
+      ]
+    },
+    {
+      "ayah": 130,
+      "target_word": "في الدنيا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿في الدنيا - 130 - ج﴾ لعطف الجملتين المختلفتين.",
+      "text_page": 238,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 131,
+      "target_word": "أسلم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿أسلم - 131 - لا﴾ لأن قوله: ﴿قال أسلمت﴾ عامل إذ، ولو كان عامل إذ محذوفا لكان ﴿قال أسلمت﴾ عطفا، ولو لم يجعل ﴿قال﴾ عامل ﴿إذ﴾، وليس بمعطوف لانقطع عن الجملة فانتقض المعنى.",
+      "text_page": 238,
+      "old_text": "﴿أسلم - 131 - لا﴾ لأن قوله: ﴿قال أسلمت﴾ عامل إذ، ولو كان عامل إذ محذوفا لكان ﴿قال أسلمت﴾",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿أسلم - 131 - لا﴾ لأن قوله: ﴿قال أسلمت﴾ عامل إذ، ولو كان عامل إذ محذوفا لكان ﴿قال أسلمت﴾",
+          "new_text": "﴿أسلم - 131 - لا﴾ لأن قوله: ﴿قال أسلمت﴾ عامل إذ، ولو كان عامل إذ محذوفا لكان ﴿قال أسلمت﴾ عطفا، ولو لم يجعل ﴿قال﴾ عامل ﴿إذ﴾، وليس بمعطوف لانقطع عن الجملة فانتقض المعنى.",
+          "info": "انقطاع التعليل بين صفحتين"
+        }
+      ]
+    },
+    {
+      "ayah": 132,
+      "target_word": "ويعقوب",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ويعقوب - 132 - ط﴾ لأن التقدير: فقال يابني، ومن وصل جعل الوصية بمعنى القول فكان ﴿يا بني﴾ محكي القول.",
+      "text_page": 239,
+      "old_text": "﴿ويعقوب - 132 - ط﴾ لأن التقدير: فقال يابني، ومن",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿ويعقوب - 132 - ط﴾ لأن التقدير: فقال يابني، ومن",
+          "new_text": "﴿ويعقوب - 132 - ط﴾ لأن التقدير: فقال يابني، ومن وصل جعل الوصية بمعنى القول فكان ﴿يا بني﴾ محكي القول.",
+          "info": "انقطاع التعليل بين صفحتين"
+        }
+      ]
+    },
+    {
+      "ayah": 132,
+      "target_word": "مسلمون",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿مسلمون - 132 - ط﴾ لأن أم بمعنى ألف استفهام للإنكار.",
+      "text_page": 240,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 133,
+      "target_word": "الموت",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿الموت - 133 - لا﴾ لأن ﴿إذ﴾ بدل ﴿إذ﴾ الأولى، ومن قطعها عن الأولى فوقف على ﴿الموت﴾ وجعل ﴿قالوا﴾ عاملا، ولم يقف على ﴿بعدي﴾ فله وجه لا يتضح لأن الإنكار متوجه على قولهم أن يعقوب أوصى بنيه باليهودية لا على أن يعقوب قد مات.",
+      "text_page": 240,
+      "old_text": "﴿الموت - 133 - لا﴾ لأن ﴿إذ﴾ بدل ﴿إذ﴾ الأولى، ومن قطعها عن الأولى فوقف على ﴿الموت﴾ وجعل ﴿قالوا﴾ عاملا، ولم يقف على ﴿بعدي﴾ فله وجه لا يتضح لأن الإنكار",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿الموت - 133 - لا﴾ لأن ﴿إذ﴾ بدل ﴿إذ﴾ الأولى، ومن قطعها عن الأولى فوقف على ﴿الموت﴾ وجعل ﴿قالوا﴾ عاملا، ولم يقف على ﴿بعدي﴾ فله وجه لا يتضح لأن الإنكار",
+          "new_text": "﴿الموت - 133 - لا﴾ لأن ﴿إذ﴾ بدل ﴿إذ﴾ الأولى، ومن قطعها عن الأولى فوقف على ﴿الموت﴾ وجعل ﴿قالوا﴾ عاملا، ولم يقف على ﴿بعدي﴾ فله وجه لا يتضح لأن الإنكار متوجه على قولهم أن يعقوب أوصى بنيه باليهودية لا على أن يعقوب قد مات.",
+          "info": "انقطاع التعليل بين صفحتين"
+        }
+      ]
+    },
+    {
+      "ayah": 133,
+      "target_word": "من بعدي",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿من بعدي - 133 - ط﴾",
+      "text_page": 241,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 133,
+      "target_word": "واحدا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿واحدا - 133 - ج﴾ لعطف الجملتين المختلفتين، والوصل أجوز على جعل الواو حالا.",
+      "text_page": 241,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 134,
+      "target_word": "قد خلت",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿قد خلت - 134 - ج﴾ لأن ما بعدها يصلح صفة لـ ﴿أمة﴾، ويصلح استئنافا وهو أوضح.",
+      "text_page": 241,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 134,
+      "target_word": "ولكم ما كسبتم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ولكم ما كسبتم - 134 - ج﴾ لعطف الجملتين المختلفتين.",
+      "text_page": 241,
+      "old_text": "﴿ولكم ما",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿ولكم ما",
+          "new_text": "﴿ولكم ما كسبتم - 134 - ج﴾ لعطف الجملتين المختلفتين.",
+          "info": "انقطاع التعليل بين صفحتين"
+        }
+      ]
+    },
+    {
+      "ayah": 135,
+      "target_word": "تهتدوا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿تهتدوا - 135 - ط﴾",
+      "text_page": 242,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 135,
+      "target_word": "حنيفا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿حنيفا - 135 - ط﴾",
+      "text_page": 242,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 136,
+      "target_word": "من ربهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿من ربهم - 136 - ج﴾ لطول الكلام على تأويل جعل ﴿لانفرق بين أحد منهم﴾ مستأنفا، والأوضح أنه حال، أي: آمنا غير مفرقين.",
+      "text_page": 242,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 136,
+      "target_word": "منهم",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "text": "﴿منهم - 136 - ز﴾ قد يجوز لاحتمال الواو الابتداء والحال، والحال أوجه.",
+      "text_page": 243,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 137,
+      "target_word": "اهتدوا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿اهتدوا - 137 - ج﴾ لابتداء شرط آخر مع العطف.",
+      "text_page": 243,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 137,
+      "target_word": "في شقاق",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿في شقاق - 137 - ج﴾ لابتداء بسين الوعيد مع دخول الفاء فيه.",
+      "text_page": 243,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 137,
+      "target_word": "فسيكفيكهم الله",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿فسيكفيكهم الله - 137 - ج﴾ لاحتمال الواو للابتداء والحال.",
+      "text_page": 243,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 137,
+      "target_word": "العليم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿العليم - 137 - ط﴾",
+      "text_page": 243,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 138,
+      "target_word": "صبغة الله",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿صبغة الله - 138 - ج﴾ لابتداء الاستفهام مع أن الواو للحال.",
+      "text_page": 245,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 138,
+      "target_word": "صبغة",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "text": "﴿صبغة - 138 - ج ز﴾ قد يجوز على جعل الواو للابتداء، والحال أوجه وأوضح.",
+      "text_page": 245,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 139,
+      "target_word": "وربكم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿وربكم - 139 - ج﴾ لأن قوله:",
+      "text_page": 245,
+      "old_text": null,
+      "fixes": []
+    }
+  ],
+  "source": "grid16_matn_blind",
+  "pages_read": [
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245
+  ]
+}

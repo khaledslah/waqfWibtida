@@ -1,0 +1,88 @@
+{
+  "page_numbers": [
+    181,
+    182,
+    183,
+    184
+  ],
+  "waqfs": [
+    {
+      "ayah": 9,
+      "target_word": "آمنوا",
+      "verdict_label": "ج",
+      "verdict": "وقف جائز",
+      "text": "﴿ آمنوا - 9 - ج ﴾ لعطف الجملتين المتفقتين ، مع ابتداء النفي .",
+      "text_page": 182,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 9,
+      "target_word": "يشعرون",
+      "verdict_label": "ط",
+      "verdict": "وقف مطلق",
+      "text": "﴿ وما يشعرون - 9 - ط ﴾ للآية ، وانقطاع النظم والمعنى ، فإن تعلق الجار بما بعده .",
+      "text_page": 182,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 10,
+      "target_word": "مرض",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ مرض - 10 - لا ﴾ لأن الفاء للجزاء فكان تأكيدا لما في قلوبهم .",
+      "text_page": 183,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 10,
+      "target_word": "مرضا",
+      "verdict_label": "ج",
+      "verdict": "وقف جائز",
+      "text": "﴿ مرضا - 10 - ج ﴾ لعطف الجملتين المختلفين .",
+      "text_page": 183,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 11,
+      "target_word": "الأرض",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ في الأرض - 11 - لا ﴾ لأن ﴿ قالوا ﴾ جواب ﴿ إذا ﴾ وعامله .",
+      "text_page": 183,
+      "old_text": "﴿ في الأرض - 11 - لا ﴾ لأن ﴿ قالوا ﴾ جواب ﴿ إذا ﴾",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿ في الأرض - 11 - لا ﴾ لأن ﴿ قالوا ﴾ جواب ﴿ إذا ﴾",
+          "new_text": "﴿ في الأرض - 11 - لا ﴾ لأن ﴿ قالوا ﴾ جواب ﴿ إذا ﴾ وعامله .",
+          "info": "تتمة تعليل الوقف في أول الصفحة التالية (ص 184)"
+        }
+      ]
+    },
+    {
+      "ayah": 13,
+      "target_word": "السفهاء",
+      "verdict_label": "ط",
+      "verdict": "وقف مطلق",
+      "text": "﴿ كما آمن السفهاء - 13 - ط ﴾ لابتداء بكلمة التنبيه ، ومن وصل فلتعجيل رد السفه عليهم [ بكلمة التنبيه ] .",
+      "text_page": 184,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 14,
+      "target_word": "آمنا",
+      "verdict_label": "ج",
+      "verdict": "وقف جائز",
+      "text": "﴿ آمنا - 14 - ج ﴾ لتبدل وجه الكلام معنى ، مع أن الوصل",
+      "text_page": 184,
+      "old_text": null,
+      "fixes": []
+    }
+  ]
+}

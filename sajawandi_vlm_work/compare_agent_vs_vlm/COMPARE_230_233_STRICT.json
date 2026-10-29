@@ -1,0 +1,48 @@
+{
+  "batch": "230-233",
+  "strict": {
+    "matched": 13,
+    "only_agent": [
+      [
+        113,
+        "ط",
+        "الكتاب"
+      ],
+      [
+        115,
+        "ط",
+        "وجهالله"
+      ]
+    ],
+    "only_vlm": [
+      [
+        115,
+        "ط",
+        "الله"
+      ]
+    ],
+    "label": 13,
+    "page": 13,
+    "text": 7,
+    "bracket_core": 13,
+    "n_agent": 15
+  },
+  "prev_loose": {
+    "matched": 14,
+    "only_agent": [
+      [
+        113,
+        "ط",
+        "الكتاب"
+      ]
+    ],
+    "only_vlm": [],
+    "label": 14,
+    "page": 14,
+    "text": 0,
+    "bracket_core": 14,
+    "n_agent": 15
+  },
+  "vlm_model": "gemini-3.6-flash",
+  "vlm_n": 14
+}

@@ -1,0 +1,179 @@
+{
+  "page_numbers": [226, 227, 228, 229],
+  "waqfs": [
+    {
+      "ayah": 103,
+      "target_word": "خير",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿خير - 103 - ط﴾",
+      "text_page": 226,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 104,
+      "target_word": "واسمعوا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿واسمعوا - 104 - ط﴾",
+      "text_page": 226,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 105,
+      "target_word": "ربكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿من ربكم - 105 - ط﴾",
+      "text_page": 226,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 105,
+      "target_word": "يشاء",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿من يشاء - 105 - ط﴾",
+      "text_page": 226,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 106,
+      "target_word": "مثلها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿أو مثلها - 106 - ط﴾",
+      "text_page": 226,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 107,
+      "target_word": "والأرض",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿والأرض - 107 - ط﴾",
+      "text_page": 227,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 108,
+      "target_word": "قبل",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿من قبل - 108 - ط﴾",
+      "text_page": 227,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 109,
+      "target_word": "كفارا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿كفارا - 109 - ج﴾ لأن حسدا مصدر محذوف ، أي : يحسدون حسدا ، أو حال ، أو مفعول له ، وهو أوجه ، والوصل أجوز .",
+      "text_page": 227,
+      "old_text": "﴿كفارا - 109 - ج﴾",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿كفارا - 109 - ج﴾",
+          "new_text": "﴿كفارا - 109 - ج﴾ لأن حسدا مصدر محذوف ، أي : يحسدون حسدا ، أو حال ، أو مفعول له ، وهو أوجه ، والوصل أجوز .",
+          "info": "انقطاع التعليل بين نهاية ص 227 وبداية ص 228"
+        }
+      ]
+    },
+    {
+      "ayah": 109,
+      "target_word": "الحق",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿الحق - 109 - ج﴾ لعطف الجملتين المختلفتين .",
+      "text_page": 228,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 109,
+      "target_word": "بأمره",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿بأمره - 109 - ط﴾",
+      "text_page": 228,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 110,
+      "target_word": "الزكاة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿الزكاة - 110 - ط﴾ لأن ﴿ما﴾ للشرط ، والشرط مصدر .",
+      "text_page": 228,
+      "old_text": "﴿الزكاة - 110 - ط﴾ لأن ﴿ما﴾ للشرط ، والشرط",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿الزكاة - 110 - ط﴾ لأن ﴿ما﴾ للشرط ، والشرط",
+          "new_text": "﴿الزكاة - 110 - ط﴾ لأن ﴿ما﴾ للشرط ، والشرط مصدر .",
+          "info": "انقطاع التعليل بين نهاية ص 228 وبداية ص 229"
+        }
+      ]
+    },
+    {
+      "ayah": 110,
+      "target_word": "الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿عند الله - 110 - ط﴾",
+      "text_page": 229,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 111,
+      "target_word": "نصارى",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿أو نصارى - 111 - ط﴾",
+      "text_page": 229,
+      "old_text": "﴿أونصارى - 111 - ط﴾",
+      "fixes": [
+        {
+          "type": "orthography",
+          "basis": "editor_policy",
+          "old_text": "﴿أونصارى - 111 - ط﴾",
+          "new_text": "﴿أو نصارى - 111 - ط﴾",
+          "info": "فصل حرف العطف 'أو' عن 'نصارى'"
+        }
+      ]
+    },
+    {
+      "ayah": 111,
+      "target_word": "أمانيهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿أمانيهم - 111 - ط﴾",
+      "text_page": 229,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 112,
+      "target_word": "ربه",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "text": "﴿عند ربه - 112 - ص﴾ لعطف الجملتين المتفقتين .",
+      "text_page": 229,
+      "old_text": null,
+      "fixes": []
+    }
+  ]
+}

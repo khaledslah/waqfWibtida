@@ -1,0 +1,181 @@
+{
+  "source": "schema_matn_blind_agent",
+  "pages_read": [230, 231, 232, 233],
+  "page_numbers": [230, 231, 232, 233],
+  "waqfs": [
+    {
+      "ayah": 113,
+      "target_word": "النصارى على شيء",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "text": "﴿النصارى على شيء - 113 - ص﴾ لعطف الجملتين المتفقتين.",
+      "text_page": 230,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 113,
+      "target_word": "على شيء",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿على شيء - 113 - لا﴾ لأن الواو للحال.",
+      "text_page": 230,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 113,
+      "target_word": "الكتاب",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿الكتاب - 113 - ط﴾",
+      "text_page": 230,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 113,
+      "target_word": "مثل قولهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿مثل قولهم - 113 - ج﴾ لأن قوله ﴿فالله﴾ مبتدأ مع فاء التعقيب.",
+      "text_page": 230,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 114,
+      "target_word": "خرابها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿خرابها - 114 - ط﴾ للفصل بين الاستفهام والإخبار.",
+      "text_page": 230,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 114,
+      "target_word": "خائفين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿خائفين - 114 - ط﴾ لأن ما بعده إخبار وعيد مبتدأ منتظر، ولو وصل صارت الجملة صفة لهم، والصفة تكون كائنة متصلة.",
+      "text_page": 230,
+      "old_text": "﴿خائفين - 114 -",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿خائفين - 114 -",
+          "new_text": "﴿خائفين - 114 - ط﴾ لأن ما بعده إخبار وعيد مبتدأ منتظر، ولو وصل صارت الجملة صفة لهم، والصفة تكون كائنة متصلة.",
+          "info": "قوس الوقف ينقطع آخر ص 230 عند ﴿خائفين - 114 - ويكمل رمز ط والتعليل أول ص 231."
+        }
+      ]
+    },
+    {
+      "ayah": 115,
+      "target_word": "وجه الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿وجه الله - 115 - ط﴾",
+      "text_page": 231,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 116,
+      "target_word": "ولدا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ولدا - 116 - لا﴾ وأن جاز الابتداء بقوله ﴿سبحانه﴾، ولكن يوصل بقولهم ردا له وتعجيلا للتنزيه.",
+      "text_page": 231,
+      "old_text": "﴿ولدا - 116 - لا﴾ وأن",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ولدا - 116 - لا﴾ وأن",
+          "new_text": "﴿ولدا - 116 - لا﴾ وأن جاز الابتداء بقوله ﴿سبحانه﴾، ولكن يوصل بقولهم ردا له وتعجيلا للتنزيه.",
+          "info": "التعليل ينقطع آخر ص 231 عند «وأن» ويكمل أول ص 232."
+        }
+      ]
+    },
+    {
+      "ayah": 116,
+      "target_word": "سبحانه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿سبحانه - 116 - ط﴾",
+      "text_page": 232,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 116,
+      "target_word": "والأرض",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿والأرض - 116 - ط﴾ لأن ما بعده مبتدأ.",
+      "text_page": 232,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 117,
+      "target_word": "والأرض",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿والأرض - 117 - ط﴾ لأن ﴿إذا﴾",
+      "text_page": 232,
+      "old_text": "﴿والأرض - 117 - ط﴾ لأن ﴿إذا﴾",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿والأرض - 117 - ط﴾ لأن ﴿إذا﴾",
+          "new_text": null,
+          "info": "التعليل ينقطع عند حافة قص صورة ص 232 بعد «لأن ﴿إذا﴾»؛ تكملة التعليل غير ظاهرة قبل موضع آية في ص 233."
+        }
+      ]
+    },
+    {
+      "ayah": 118,
+      "target_word": "آية",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿آية - 118 - ط﴾ أجيبت بالفاء فكانت للشرط.",
+      "text_page": 233,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 118,
+      "target_word": "قولهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿قولهم - 118 - ط﴾",
+      "text_page": 233,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 118,
+      "target_word": "قلوبهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿قلوبهم - 118 - ط﴾ لأن قد لتأكيد الاستئناف.",
+      "text_page": 233,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 119,
+      "target_word": "ونذيرا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ونذيرا - 119 - لا﴾ للعطف، أي: نذيرا وغير مسئول، إلا لمن قرأ: ﴿ولا تسأل﴾ على النهي لاختلاف الجملتين.",
+      "text_page": 233,
+      "old_text": null,
+      "fixes": []
+    }
+  ]
+}

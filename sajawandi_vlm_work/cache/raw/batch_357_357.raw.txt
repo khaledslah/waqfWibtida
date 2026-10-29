@@ -1,0 +1,48 @@
+{
+  "page_numbers": [357],
+  "waqfs": [
+    {
+      "ayah": 286,
+      "target_word": "لنا",
+      "verdict_label": "ج",
+      "verdict": "وقف جائز",
+      "text": "﴿ لنا - 286 - ج ﴾ كذلك.",
+      "text_page": 357,
+      "old_text": "لنا - ٢٨٦ - ج ﴿ كذلك .",
+      "fixes": [
+        {
+          "type": "malformed_bracket",
+          "basis": "editor_policy",
+          "old_text": "لنا - ٢٨٦ - ج ﴿ كذلك .",
+          "new_text": "﴿ لنا - 286 - ج ﴾ كذلك.",
+          "info": "تصحيح حواصر الوقف وتنسيق نص الموضع"
+        }
+      ]
+    },
+    {
+      "ayah": 286,
+      "target_word": "وارحمنا",
+      "verdict_label": "ج",
+      "verdict": "وقف جائز",
+      "text": "﴿ وارحمنا - 286 - ج ﴾ كذلك للتفصيل بين أنواع المقاصد والاعتراف بأن أطماعنا غير واحد.",
+      "text_page": 357,
+      "old_text": "﴿ وارحمنا - ٢٨٦ ﴿ كذلك للتفصيل بين أنواع المقاصد والاعتراف بأن أطماعنا غير واحد .",
+      "fixes": [
+        {
+          "type": "malformed_bracket",
+          "basis": "editor_policy",
+          "old_text": "﴿ وارحمنا - ٢٨٦ ﴿",
+          "new_text": "﴿ وارحمنا - 286 - ج ﴾",
+          "info": "تصحيح حواصر الوقف"
+        },
+        {
+          "type": "missing_symbol",
+          "basis": "page_prose",
+          "old_text": "وارحمنا - ٢٨٦",
+          "new_text": "وارحمنا - 286 - ج",
+          "info": "إدراج رمز الوقف (ج) لقوله (كذلك) إشارة إلى الموضع السابق"
+        }
+      ]
+    }
+  ]
+}

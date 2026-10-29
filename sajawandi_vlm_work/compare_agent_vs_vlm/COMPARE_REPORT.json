@@ -1,0 +1,13 @@
+{
+  "batch": "226-229",
+  "vlm_model": "gemini-3.8-flash",
+  "vlm_count": 15,
+  "agent_count": 15,
+  "matched": 15,
+  "only_vlm": [],
+  "only_agent": [],
+  "label_agree": 15,
+  "page_agree": 15,
+  "text_exact": 15,
+  "caveat": "Agent vision for page 226 returned a weak header transcription; entries 103-106 were filled with low confidence and are not a clean blind test for that page. Pages 227-229 vision was clear and matched VLM closely."
+}

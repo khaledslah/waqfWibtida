@@ -1,0 +1,153 @@
+{
+  "page_numbers": [327, 328, 329, 330],
+  "waqfs": [
+    {
+      "ayah": 255,
+      "target_word": "القيوم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿القيوم - 255 - ج﴾ لاختلاف الجملتين.",
+      "text_page": 327,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 255,
+      "target_word": "نوم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ولا نوم - 255 - ج﴾",
+      "text_page": 327,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 255,
+      "target_word": "الأرض",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿وما في الأرض - 255 - ط﴾ لابتداء الاستفهام.",
+      "text_page": 327,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 255,
+      "target_word": "بإذنه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿بإذنه - 255 - ط﴾ لانتهاء الاستفهام.",
+      "text_page": 327,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 255,
+      "target_word": "خلفهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿وما خلفهم - 255 - ج﴾ للفرق بين الإخبار عن علمه الكامل مطلقا وإثبات علم الخلق المقدر بمشيئته مبتدء بالنفي.",
+      "text_page": 328,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 255,
+      "target_word": "شاء",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿بما شاء - 255 - ج﴾ لاختلاف الجملتين.",
+      "text_page": 328,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 255,
+      "target_word": "والأرض",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿والأرض - 255 - ج﴾",
+      "text_page": 328,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 255,
+      "target_word": "حفظهما",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿حفظهما - 255 - ج﴾",
+      "text_page": 329,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 256,
+      "target_word": "الغي",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿من الغي - 256 - ج﴾ لأن من الشرط مع فاء التعقيب.",
+      "text_page": 329,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 256,
+      "target_word": "الوثقى",
+      "verdict_label": "ق",
+      "verdict": "قيل فيه وقف",
+      "text": "﴿الوثقى - 256 - ق﴾ قد قيل للاستئناف بالنفي ، والوجه الوصل على جعل الجملة حالا للعروة ، أي : استمسك بها غير منفصمة.",
+      "text_page": 329,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 256,
+      "target_word": "لها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿لا انفصام لها - 256 - ط﴾",
+      "text_page": 329,
+      "old_text": "﴿لا انفصام لها - 256 - ط﴾",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿لا انفصام لها -\n256 - ط﴾",
+          "new_text": "﴿لا انفصام لها - 256 - ط﴾",
+          "info": "تجميع موضع الوقف المنقسم بين أواخر صفحة 329 وأوائل صفحة 330"
+        }
+      ]
+    },
+    {
+      "ayah": 257,
+      "target_word": "آمنوا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿آمنوا - 257 - لا﴾ لأن ﴿يخرجهم﴾ حال ، والعامل معنى الفعل في ﴿ولي﴾ تقديره : الله يليهم مخرجا لهم أو مخرجين.",
+      "text_page": 330,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 257,
+      "target_word": "النور",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿إلى النور - 257 - ط﴾ للفصل بين الفئتين المتضادتين.",
+      "text_page": 330,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 257,
+      "target_word": "الطاغوت",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿الطاغوت - 257 - لا﴾ لأن ﴿يخرجونهم﴾",
+      "text_page": 330,
+      "old_text": null,
+      "fixes": []
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+# Secrets / env
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Large / regenerable VLM work artifacts (keep raw text + compare schemas)
+sajawandi_vlm_work/cache/grids/
+sajawandi_vlm_work/cache/processed/
+sajawandi_vlm_work/rendered_pages/
+sajawandi_vlm_work/compare_agent_vs_vlm/**/_crops/
+sajawandi_vlm_work/compare_agent_vs_vlm/**/_zoom/
+sajawandi_vlm_work/compare_agent_vs_vlm/**/_cells_read/
+sajawandi_vlm_work/compare_agent_vs_vlm/_blind_crops/
+
+# Backups
+*.bak
+*.bak.*

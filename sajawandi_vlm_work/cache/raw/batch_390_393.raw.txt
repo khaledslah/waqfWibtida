@@ -1,0 +1,221 @@
+{
+  "page_numbers": [
+    390,
+    391,
+    392,
+    393
+  ],
+  "waqfs": [
+    {
+      "ayah": 135,
+      "target_word": "لذنوبهم",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "text": "﴿ لذنوبهم - 135 - ص ﴾ للابتداء بالاستفهام",
+      "text_page": 390,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 135,
+      "target_word": "الله",
+      "verdict_label": null,
+      "verdict": null,
+      "text": "﴿ إلا الله - 135 ﴾ لاعتراض الاستفهام، ولزوم الجواب بأن يقول الروح: لا أحد يغفر الذنوب إلا أنت.",
+      "text_page": 390,
+      "old_text": "وعلى: ﴿ إلا الله - \n 135 ﴾ (1) لاعتراض الاستفهام، ولزوم الجواب بأن يقول الروح: لا أحد يغفر الذنوب إلا أنت.",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "وعلى: ﴿ إلا الله - \n 135 ﴾ (1) لاعتراض الاستفهام، ولزوم الجواب بأن يقول الروح: لا أحد يغفر الذنوب إلا أنت.",
+          "new_text": "﴿ إلا الله - 135 ﴾ لاعتراض الاستفهام، ولزوم الجواب بأن يقول الروح: لا أحد يغفر الذنوب إلا أنت.",
+          "info": "وصل الموضع المنقطع بين صفحتي 390 و391."
+        }
+      ]
+    },
+    {
+      "ayah": 136,
+      "target_word": "فيها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ خالدين فيها - 136 - ط ﴾",
+      "text_page": 391,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 136,
+      "target_word": "العاملين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ العاملين - 136 - ط ﴾ لتمام الكلام.",
+      "text_page": 391,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 137,
+      "target_word": "سنن",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ سنن - 137 - لا ﴾ لتعقيب الأمر بالاعتبار بعد الأخبار بالتيار.",
+      "text_page": 391,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 140,
+      "target_word": "مثله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ مثله - 140 - ط ﴾",
+      "text_page": 391,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 140,
+      "target_word": "الناس",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ بين الناس - 140 - ج ﴾ لأن الواو مقحمة، أو عاطفة على محذوف، أي: ليعتبروا وليعلم.",
+      "text_page": 391,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 140,
+      "target_word": "شهداء",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ شهداء - 140 - ط ﴾",
+      "text_page": 391,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 140,
+      "target_word": "الظالمين",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ الظالمين - 140 - لا ﴾ لعطف على ﴿ليعلم﴾.",
+      "text_page": 393,
+      "old_text": "الظالمين - 140 - لا ﴾ للطف على ﴿ليعلم﴾",
+      "fixes": [
+        {
+          "type": "malformed_bracket",
+          "basis": "page_prose",
+          "old_text": "الظالمين - 140 - لا ﴾",
+          "new_text": "﴿ الظالمين - 140 - لا ﴾",
+          "info": "إضافة قوس الفتح المفقود في بداية الموضع."
+        },
+        {
+          "type": "orthography",
+          "basis": "page_prose",
+          "old_text": "للطف",
+          "new_text": "لعطف",
+          "info": "تصحيح التصحيف الإملائي في التعليل."
+        }
+      ]
+    },
+    {
+      "ayah": 143,
+      "target_word": "تلقوه",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "text": "﴿ أن تلقوه - 143 - ص ﴾ لطول الكلام.",
+      "text_page": 393,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 144,
+      "target_word": "رسول",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ إلا رسول - 144 - ج ﴾ لأن الجملة بعده تصلح صفة لرسول أو مستأنفة.",
+      "text_page": 393,
+      "old_text": "﴿ إلا رسول - 144 - \n ج (1) لأن الجملة بعده (1) تصلح صفة لرسول أومستأنفة",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ إلا رسول - 144 - \n ج (1) لأن الجملة بعده (1) تصلح صفة لرسول أومستأنفة",
+          "new_text": "﴿ إلا رسول - 144 - ج ﴾ لأن الجملة بعده تصلح صفة لرسول أو مستأنفة.",
+          "info": "وصل الموضع المنقطع بين صفحتي 393 و392 وإغلاق القوس."
+        }
+      ]
+    },
+    {
+      "ayah": 144,
+      "target_word": "الرسل",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ الرسل - 144 - ط ﴾",
+      "text_page": 392,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 144,
+      "target_word": "أعقابكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ أعقابكم - 144 - ط ﴾ لتناهي الاستفهام.",
+      "text_page": 392,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 144,
+      "target_word": "شيئا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ شيئا - 144 - ط ﴾",
+      "text_page": 392,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 145,
+      "target_word": "مؤجلا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ مؤجلا - 145 - ط ﴾ لابتداء الشرط واختلاف المعنى، لأن في السياق بيان انتهاء الأجل، وفي السياق بيان جزاء العمل.",
+      "text_page": 392,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 145,
+      "target_word": "منها",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ منها - 145 - ج ﴾ لعطف جملتي الشرط.",
+      "text_page": 392,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 145,
+      "target_word": "منها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ منها - 145 - ط ﴾",
+      "text_page": 392,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 146,
+      "target_word": "قتل",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ قتل - 146 - ط ﴾ ليكون...",
+      "text_page": 392,
+      "old_text": null,
+      "fixes": []
+    }
+  ]
+}

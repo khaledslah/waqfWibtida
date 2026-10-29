@@ -1,0 +1,18 @@
+{
+  "pages": [
+    205,
+    206,
+    207,
+    208
+  ],
+  "backend": "gemini",
+  "model": "gemini-3.6-flash",
+  "model_primary": "gemini-3.6-flash",
+  "model_chain": [
+    "gemini-3.6-flash",
+    "gemini-3.8-flash",
+    "gemini-3.5-flash-lite"
+  ],
+  "saved_at": "2026-10-29T06:30:11.807737+00:00",
+  "bytes": 5459
+}

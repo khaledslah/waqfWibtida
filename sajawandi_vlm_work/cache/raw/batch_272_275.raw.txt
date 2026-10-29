@@ -1,0 +1,156 @@
+{
+  "page_numbers": [272, 273, 274, 275],
+  "waqfs": [
+    {
+      "ayah": 180,
+      "target_word": "على المتقين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ على المتقين - 180 - ط ﴾ للآية ، وإن كان بعدها فاء التعقيب .",
+      "text_page": 272,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 181,
+      "target_word": "عليم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ عليم - 181 - ط ﴾ كذلك .",
+      "text_page": 272,
+      "old_text": "[ عليم - 181 ] كذلك .",
+      "fixes": [
+        {
+          "type": "malformed_bracket",
+          "basis": "editor_policy",
+          "old_text": "[ عليم - 181 ]",
+          "new_text": "﴿ عليم - 181 ﴾",
+          "info": "تصحيح الحاصرتين إلى القوسين القرآنيين"
+        },
+        {
+          "type": "missing_symbol",
+          "basis": "page_prose",
+          "old_text": "﴿ عليم - 181 ﴾",
+          "new_text": "﴿ عليم - 181 - ط ﴾",
+          "info": "إثبات رمز الوقف (ط) بناءً على كلمة (كذلك) والتعليل الصريح في الصفحة"
+        }
+      ]
+    },
+    {
+      "ayah": 181,
+      "target_word": "يبدلونه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ يبدلونه - 181 - ط ﴾ .",
+      "text_page": 272,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 182,
+      "target_word": "عليه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ عليه - 182 - ط ﴾ .",
+      "text_page": 272,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 183,
+      "target_word": "تتقون",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ تتقون - 183 - لا ﴾ لأن ﴿ أياما ﴾ ظرف الاتقاء .",
+      "text_page": 273,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 184,
+      "target_word": "معدودات",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ معدودات - 184 - ط ﴾ لأن المرض والسفر عارضان فكانا خارجين عن أصل الوضع .",
+      "text_page": 273,
+      "old_text": "﴿ معدودات - 184 - ط ﴾ لأن المرض والسفر عارضان فكانا",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ معدودات - 184 - ط ﴾ لأن المرض والسفر عارضان فكانا",
+          "new_text": "﴿ معدودات - 184 - ط ﴾ لأن المرض والسفر عارضان فكانا خارجين عن أصل الوضع .",
+          "info": "إكمال التعليل المنقطع بين أسفل الصفحة 273 وأعلى الصفحة 274"
+        }
+      ]
+    },
+    {
+      "ayah": 184,
+      "target_word": "أخر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ أخر - 184 - ط ﴾ لأن خبر الجار منتظر ، وهو ﴿ فدية ﴾ فلا تعلق له بما قبله .",
+      "text_page": 274,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 184,
+      "target_word": "مسكين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ مسكين - 184 - ط ﴾ لأن التطوع خارج عن موجب الأصل .",
+      "text_page": 274,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 184,
+      "target_word": "خير له",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ خير له - 184 - ط ﴾ لأن التقدير : والصوم خير لكم .",
+      "text_page": 274,
+      "old_text": "﴿ خير له - 184 - ط ﴾ [ لأن التقدير ] : والصوم",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ خير له - 184 - ط ﴾ [ لأن التقدير ] : والصوم",
+          "new_text": "﴿ خير له - 184 - ط ﴾ لأن التقدير : والصوم خير لكم .",
+          "info": "إكمال التعليل المنقطع بين أسفل الصفحة 274 وأعلى الصفحة 275 مع إزالة حاصرتي الزيادة لتنسيق النص"
+        }
+      ]
+    },
+    {
+      "ayah": 185,
+      "target_word": "والفرقان",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ والفرقان - 185 - ج ﴾ لابتداء الشرط مع فاء التعقيب .",
+      "text_page": 275,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 185,
+      "target_word": "فليصمه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ فليصمه - 185 - ط ﴾ لابتداء بشرط آخر .",
+      "text_page": 275,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 185,
+      "target_word": "أخر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ أخر - 185 - ط ﴾ .",
+      "text_page": 275,
+      "old_text": null,
+      "fixes": []
+    }
+  ]
+}

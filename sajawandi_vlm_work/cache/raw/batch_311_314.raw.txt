@@ -1,0 +1,221 @@
+{
+  "page_numbers": [311, 312, 313, 314],
+  "waqfs": [
+    {
+      "ayah": 230,
+      "target_word": "الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿أن يقيم حدود الله - 230 - ط﴾ الأولى.",
+      "text_page": 311,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 231,
+      "target_word": "بمعروف",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "text": "﴿أو سرحوهن بمعروف - 231 - ص﴾ لطول الكلام.",
+      "text_page": 311,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 231,
+      "target_word": "لتعتدوا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿لتعتدوا - 231 - ج﴾",
+      "text_page": 311,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 231,
+      "target_word": "نفسه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿نفسه - 231 - ط﴾",
+      "text_page": 311,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 231,
+      "target_word": "هزوا",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "text": "﴿هزوا - 231 - ز﴾ قد يجوز لطول ما بعده.",
+      "text_page": 311,
+      "old_text": "﴿هزوا - 231 - ز﴾ قد [في ص 311] يجوز لطول ما بعده [في ص 312].",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿هزوا - 231 - ز﴾ قد (في نهاية ص 311) يجوز لطول ما بعده (في بداية ص 312)",
+          "new_text": "﴿هزوا - 231 - ز﴾ قد يجوز لطول ما بعده.",
+          "info": "اتصال النص عبر انقطاع الصفحة"
+        }
+      ]
+    },
+    {
+      "ayah": 231,
+      "target_word": "به",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿يعظكم به - 231 - ط﴾",
+      "text_page": 312,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 232,
+      "target_word": "بالمعروف",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿بالمعروف - 232 - ط﴾",
+      "text_page": 312,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 232,
+      "target_word": "الآخر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿الآخر - 232 - ط﴾",
+      "text_page": 312,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 232,
+      "target_word": "وأطهر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿وأطهر - 232 - ط﴾",
+      "text_page": 312,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 233,
+      "target_word": "الرضاعة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿الرضاعة - 233 - ط﴾",
+      "text_page": 312,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 233,
+      "target_word": "بالمعروف",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿بالمعروف - 233 - ط﴾",
+      "text_page": 312,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 233,
+      "target_word": "وسعها",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿إلا وسعها - 233 - ج﴾ لاستئناف اللفظ مع قرب المعنى.",
+      "text_page": 313,
+      "old_text": "﴿الا وسعها - 233 - ج﴾ لاستئناف اللفظ مع قرب المعنى.",
+      "fixes": [
+        {
+          "type": "orthography",
+          "basis": "editor_policy",
+          "old_text": "الا",
+          "new_text": "إلا",
+          "info": "إضافة همزة القطع"
+        }
+      ]
+    },
+    {
+      "ayah": 233,
+      "target_word": "ذلك",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿مثل ذلك - 233 - ج﴾",
+      "text_page": 313,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 233,
+      "target_word": "عليهما",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿عليهما - 233 - ط﴾ لابتداء الحكم في استرضاع الأجنبية.",
+      "text_page": 313,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 233,
+      "target_word": "بالمعروف",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿بالمعروف - 233 - ط﴾",
+      "text_page": 313,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 234,
+      "target_word": "وعشرا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿وعشرا - 234 - ط﴾",
+      "text_page": 313,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 234,
+      "target_word": "بالمعروف",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿بالمعروف - 234 - ط﴾",
+      "text_page": 314,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 235,
+      "target_word": "أنفسكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿في أنفسكم - 235 - ط﴾",
+      "text_page": 314,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 235,
+      "target_word": "معروفا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿معروفا - 235 - ط﴾",
+      "text_page": 314,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 235,
+      "target_word": "أجله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿أجله - 235 - ط﴾ لابتداء الأمر بالاتقاء",
+      "text_page": 314,
+      "old_text": null,
+      "fixes": []
+    }
+  ]
+}

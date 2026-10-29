@@ -1,0 +1,238 @@
+{
+  "page_numbers": [
+    234,
+    235,
+    236,
+    237
+  ],
+  "waqfs": [
+    {
+      "ayah": 120,
+      "target_word": "ملتهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ ملتهم - 120 - ط ﴾",
+      "text_page": 234,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 120,
+      "target_word": "هو الهدى",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ هو الهدى - 120 - ط ﴾",
+      "text_page": 234,
+      "old_text": "﴿ هو الهدى - 120 ط ﴾",
+      "fixes": [
+        {
+          "type": "missing_delimiter",
+          "basis": "editor_policy",
+          "old_text": "﴿ هو الهدى - 120 ط ﴾",
+          "new_text": "﴿ هو الهدى - 120 - ط ﴾",
+          "info": "إضافة شرطة فاصلة قبل رمز الوقف."
+        }
+      ]
+    },
+    {
+      "ayah": 120,
+      "target_word": "من العلم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ من العلم - 120 - لا ﴾ لأن نفي الولاية والنصرة متعلق بشرط اتباع أهوائهم فكان في الإطلاق خطر.",
+      "text_page": 234,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 121,
+      "target_word": "تلاوته",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ تلاوته - 121 - ط ﴾ لأن ما بعدها مبتدأ آخر مع خبره.",
+      "text_page": 234,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 121,
+      "target_word": "يؤمنون به",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ يؤمنون به - 121 - ط ﴾ للابتداء بالشرط.",
+      "text_page": 234,
+      "old_text": "﴿ يؤمنون به - 121 - ط ﴾ للابتداء بالشرط .",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ يؤمنون به - [انقطاع بين صفحتي 234 و 235] 121 - ط ﴾ للابتداء بالشرط .",
+          "new_text": "﴿ يؤمنون به - 121 - ط ﴾ للابتداء بالشرط.",
+          "info": "اتصال النص المقطوع بين صفحتي 234 و235."
+        }
+      ]
+    },
+    {
+      "ayah": 124,
+      "target_word": "فأتمهن",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ فأتمهن - 124 - ط ﴾",
+      "text_page": 235,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 124,
+      "target_word": "إماما",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ إماما - 124 - ط ﴾",
+      "text_page": 235,
+      "old_text": "إماما - 124 - ط ﴾",
+      "fixes": [
+        {
+          "type": "missing_delimiter",
+          "basis": "editor_policy",
+          "old_text": "إماما - 124 - ط ﴾",
+          "new_text": "﴿ إماما - 124 - ط ﴾",
+          "info": "إضافة قوس البداية المفقود."
+        }
+      ]
+    },
+    {
+      "ayah": 124,
+      "target_word": "ذريتي",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ ذريتي - 124 - ط ﴾",
+      "text_page": 235,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 125,
+      "target_word": "وأمنا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ وأمنا - 125 - ط ﴾ لمن قرأ : ﴿ واتخذوا ﴾ بكسر الخاء لاعتراض [ الأمر بين ] الماضيين .",
+      "text_page": 235,
+      "old_text": "وأمنا - 125 - ط ﴾ لمن قرأ : ﴿ واتخذوا ﴾ بكسر الخاء لاعتراض [ الأمر بين ] الماضيين .",
+      "fixes": [
+        {
+          "type": "missing_delimiter",
+          "basis": "editor_policy",
+          "old_text": "وأمنا - 125 - ط ﴾ لمن قرأ : ﴿ واتخذوا ﴾ بكسر الخاء لاعتراض [ الأمر بين ] الماضيين .",
+          "new_text": "﴿ وأمنا - 125 - ط ﴾ لمن قرأ : ﴿ واتخذوا ﴾ بكسر الخاء لاعتراض [ الأمر بين ] الماضيين .",
+          "info": "إضافة قوس البداية المفقود."
+        }
+      ]
+    },
+    {
+      "ayah": 125,
+      "target_word": "مصلى",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ مصلى - 125 - ط ﴾ كذلك ، ومن فتح الخاء نسق الأفعال الثلاثة بلا وقف .",
+      "text_page": 235,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 126,
+      "target_word": "واليوم الآخر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ واليوم الآخر - 126 - ط ﴾",
+      "text_page": 235,
+      "old_text": "﴿ واليوم الآخر - 126 - ط ﴾",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ واليوم الآخر - [انقطاع بين صفحتي 235 و 236] 126 - ط ﴾",
+          "new_text": "﴿ واليوم الآخر - 126 - ط ﴾",
+          "info": "اتصال النص المقطوع بين صفحتي 235 و236."
+        }
+      ]
+    },
+    {
+      "ayah": 126,
+      "target_word": "عذاب النار",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ عذاب النار - 126 - ط ﴾ لأن نعم وبئس للمبالغة في المدح والذم ، فيبدأ بهما تنبيها على المدح والذم .",
+      "text_page": 236,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 127,
+      "target_word": "وإسماعيل",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ وإسماعيل - 127 - ط ﴾ لإضمار القول ، أي : فقالا ربنا .",
+      "text_page": 236,
+      "old_text": "﴿ وإسماعيل - 127 - ط ﴾ لإضمار القول ، أي : فقالا ربنا .",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ وإسماعيل - [انقطاع بين صفحتي 236 و 237] 127 - ط ﴾ لإضمار القول ، أي : فقالا ربنا .",
+          "new_text": "﴿ وإسماعيل - 127 - ط ﴾ لإضمار القول ، أي : فقالا ربنا .",
+          "info": "اتصال النص المقطوع بين صفحتي 236 و237."
+        }
+      ]
+    },
+    {
+      "ayah": 127,
+      "target_word": "منا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ منا - 127 - ط ﴾ للابتداء بأن ، ولجواز الوصل وجه لطيف على تقدير : فإنك أو لأنك .",
+      "text_page": 237,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 128,
+      "target_word": "مسلمة لك",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "text": "﴿ مسلمة لك - 128 - ص ﴾ لعطف الجملتين المتحققين .",
+      "text_page": 237,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 128,
+      "target_word": "علينا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ علينا - 128 - ج ﴾ وقد ذكر .",
+      "text_page": 237,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 129,
+      "target_word": "ويزكيهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ ويزكيهم - 129 - ط ﴾",
+      "text_page": 237,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 130,
+      "target_word": "نفسه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ نفسه - 130 - ط ﴾ للفصل بين الاستفهام",
+      "text_page": 237,
+      "old_text": null,
+      "fixes": []
+    }
+  ]
+}

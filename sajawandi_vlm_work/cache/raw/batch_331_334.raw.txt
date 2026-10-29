@@ -1,0 +1,164 @@
+{
+  "page_numbers": [
+    331,
+    332,
+    333,
+    334
+  ],
+  "waqfs": [
+    {
+      "ayah": 257,
+      "target_word": "إلى الظلمات",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿إلى الظلمات - 257 - ط﴾",
+      "text_page": 331,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 257,
+      "target_word": "النار",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿النار - 257 - ج﴾ وقد ذكر .",
+      "text_page": 331,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 258,
+      "target_word": "الملك",
+      "verdict_label": "م",
+      "verdict": "لازم",
+      "text": "﴿الملك - 258 - م﴾ لأن ﴿إذ﴾ ليس بظرف لإيتاء",
+      "text_page": 331,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 258,
+      "target_word": "الملك",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿الملك - 258 - لا﴾ لأن ﴿قال﴾ عامل ﴿إذ﴾ .",
+      "text_page": 332,
+      "old_text": "الملك - 258 - لا﴾ لأن ﴿قال﴾ عامل ﴿إذ﴾ .",
+      "fixes": [
+        {
+          "type": "missing_delimiter",
+          "basis": "editor_policy",
+          "old_text": "الملك",
+          "new_text": "﴿الملك",
+          "info": "إضافة قوس البداية المفقود"
+        }
+      ]
+    },
+    {
+      "ayah": 258,
+      "target_word": "وأميت",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿وأميت - 258 - ط﴾ .",
+      "text_page": 332,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 258,
+      "target_word": "كفر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿كفر - 258 - ط﴾ .",
+      "text_page": 332,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 258,
+      "target_word": "الظالمين",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿الظالمين - 258 - ج﴾ للآية مع العطف بأو على ما قيل أن أو للتعجيب ، أي : هل رأيت كالذي .",
+      "text_page": 332,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 259,
+      "target_word": "عروشها",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿عروشها - 259 - ج﴾ لأن ما بعده من تتمة كلام ما قبله ولكن لم ينعطف بعاطف .",
+      "text_page": 332,
+      "old_text": "﴿عروشها - 259 - \nج﴾ لأن ما بعده من تتمة كلام ما قبله ولكن لم ينعطف بعاطف .",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿عروشها - 259 - \nج﴾",
+          "new_text": "﴿عروشها - 259 - ج﴾",
+          "info": "تجميع موضع الوقف المنقطع بين صفحتي 332 و 333"
+        }
+      ]
+    },
+    {
+      "ayah": 259,
+      "target_word": "موتها",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿موتها - 259 - ج﴾ تمام المقول مع العطف بفاء الجواب والجزاء .",
+      "text_page": 333,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 259,
+      "target_word": "بعثه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿بعثه - 259 - ط﴾ .",
+      "text_page": 333,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 259,
+      "target_word": "كم لبثت",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿كم لبثت - 259 - ط﴾ .",
+      "text_page": 333,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 259,
+      "target_word": "يوم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿يوم - 259 - ط﴾ .",
+      "text_page": 333,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 259,
+      "target_word": "لم يتسنه",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿لم يتسنه - 259 - ج﴾ وإن اتفقت الجملتان ، ولكن لوقوع الحال المعترض بينهما ، والنون المشددة التي يتحرى لها هاء الاستراحة ، من جعلها من التنسي جاز الوقف ، ومن وصل حسن له الوقف على ﴿حمارك﴾ بإضمار ما [لنجعلك] .",
+      "text_page": 333,
+      "old_text": "﴿لم يتسنه - 259 - ج﴾ وإن اتفقت الجملتان ، ولكن لوقوع الحال المعترض بينهما ، والنون\nالمشددة التي يتحرى لها هاء الاستراحة ، من جعلها من التنسي جاز الوقف ، ومن وصل حسن له الوقف على ﴿حمارك﴾ بإضمار ما [لنجعلك] .",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "والنون\nالمشددة",
+          "new_text": "والنون المشددة",
+          "info": "تجميع تعليل موضع الوقف المنقطع بين صفحتي 333 و 334"
+        }
+      ]
+    }
+  ]
+}

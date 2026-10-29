@@ -1,0 +1,6570 @@
+{
+  "schemaVersion": 1,
+  "book": {
+    "id": "al-sajawandi",
+    "title": "علل الوقوف (الإيضاح في الوقف والابتداء)",
+    "shortTitle": "السجاوندي",
+    "author": "أبو عبد الله محمد بن طيفور السجاوندي",
+    "diedHijri": 560,
+    "role": "comparative_waqf",
+    "rawFile": "Al-Sajawandi-Ilal.json",
+    "modelLabel": "Gemini VLM",
+    "entryCount": 167,
+    "surahCount": 1
+  },
+  "entries": [
+    {
+      "id": "Al-Sajawandi-Ilal:2:217:51:1",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 217,
+        "word": 51,
+        "wordId": 4152,
+        "targetWord": "وَٱلْـَٔاخِرَةِ ۖ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿ والآخرة - 217 - ج ﴾ لأن الجملتين وإن اتفقتا فتكرار ﴿ أولئك ﴾ بنيت على الابتداء مبالغة في تعظيم الأمر .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 299,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 217 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 299
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:217:54:2",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 217,
+        "word": 54,
+        "wordId": 4155,
+        "targetWord": "ٱلنَّارِ ۖ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿ النار - 217 - ج ﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 299,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 217 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 299
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:218:9:3",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 218,
+        "word": 9,
+        "wordId": 4167,
+        "targetWord": "ٱللَّهِ"
+      },
+      "verdict": "لا يوقف",
+      "verdictLabel": "لا",
+      "quote": "﴿ في سبيل الله - 218 - لا ﴾ لأن ما بعده خبر ﴿ إن ﴾ .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 299,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 218 - لا",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 299
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:218:13:4",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 218,
+        "word": 13,
+        "wordId": 4171,
+        "targetWord": "ٱللَّهِ ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ رحمة الله - 218 - ط ﴾ .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 299,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 218 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 299
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:219:4:5",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 219,
+        "word": 4,
+        "wordId": 4178,
+        "targetWord": "وَٱلْمَيْسِرِ ۖ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ والميسر - 219 - ط ﴾ .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 299,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 219 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 299
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:219:10:6",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 219,
+        "word": 10,
+        "wordId": 4184,
+        "targetWord": "لِلنَّاسِ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ز",
+      "quote": "﴿ للناس - 219 - ز ﴾ قد يجوز مع اتفاق الجملتين تنبيها على أن بيان الثانية أهم من الأول .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 300,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 219 - ز",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 300
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:219:14:7",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 219,
+        "word": 14,
+        "wordId": 4188,
+        "targetWord": "نَّفْعِهِمَا ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ من نفعهما - 219 - ط ﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 300,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 219 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 300
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:219:17:8",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 219,
+        "word": 17,
+        "wordId": 4191,
+        "targetWord": "يُنفِقُونَ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ ينفقون - 219 - ط ﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 300,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 219 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 300
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:219:19:9",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 219,
+        "word": 19,
+        "wordId": 4193,
+        "targetWord": "ٱلْعَفْوَ ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ قل العفو - 219 - ط ﴾ .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 301,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 219 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 301
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:219:26:10",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 219,
+        "word": 26,
+        "wordId": 4200,
+        "targetWord": "تَتَفَكَّرُونَ"
+      },
+      "verdict": "لا يوقف",
+      "verdictLabel": "لا",
+      "quote": "﴿ تتفكرون - 219 - لا ﴾ لتعلق الجار .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 301,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 219 - لا",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 301
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:220:0:12",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 220,
+        "word": null,
+        "wordId": null,
+        "targetWord": "اليتامى"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ اليتامى - 220 - ط ﴾ .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "ayah_only",
+        "review_status": "pending"
+      },
+      "text_page": 301,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 220 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 301
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:220:3:11",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 220,
+        "word": 3,
+        "wordId": 4203,
+        "targetWord": "وَٱلْـَٔاخِرَةِ ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ والآخرة - 220 - ط ﴾ .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 301,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 220 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 301
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:220:10:13",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 220,
+        "word": 10,
+        "wordId": 4210,
+        "targetWord": "خَيْرٌۭ ۖ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ خير - 220 - ط ﴾ .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 302,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 220 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 302
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:220:13:14",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 220,
+        "word": 13,
+        "wordId": 4213,
+        "targetWord": "فَإِخْوَٰنُكُمْ ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ فإخوانكم - 220 - ط ﴾ .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 302,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 220 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 302
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:220:18:15",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 220,
+        "word": 18,
+        "wordId": 4218,
+        "targetWord": "ٱلْمُصْلِحِ ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ من المصلح - 220 - ط ﴾ .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 302,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 220 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 302
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:220:22:16",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 220,
+        "word": 22,
+        "wordId": 4222,
+        "targetWord": "لَأَعْنَتَكُمْ ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ لأعنتكم - 220 - ط ﴾ .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 302,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 220 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 302
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:221:0:17",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 221,
+        "word": null,
+        "wordId": null,
+        "targetWord": "يؤمن"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ تؤمن - 221 - ط ﴾ لأن لام التوكيد مبتدأ",
+      "old_text": "﴿ يؤمن - 221 - ط ﴾ لأن لام التوكيد مبتدأ",
+      "fixes": [
+        {
+          "type": "orthography",
+          "basis": "editor_policy",
+          "old_text": "يؤمن",
+          "new_text": "تؤمن",
+          "info": "تصحيح رسم الكلمة القرآنية إلى «تؤمن» وفق السياق القرآني"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "ayah_only",
+        "review_status": "pending"
+      },
+      "text_page": 302,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 221 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 302
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:221:17:19",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 221,
+        "word": 17,
+        "wordId": 4243,
+        "targetWord": "يُؤْمِنُوا۟ ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿يؤمنوا - ٢٢١ - ط﴾.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 303,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 221 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 303
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:221:24:18",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 221,
+        "word": 24,
+        "wordId": 4250,
+        "targetWord": "أَعْجَبَكُمْ ۗ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿أعجبكم - ٢٢١ - ج﴾ لوقوع العارض وإن اتفقت الجملتان.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 303,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 221 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 303
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:221:24:20",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 221,
+        "word": 24,
+        "wordId": 4250,
+        "targetWord": "أَعْجَبَكُمْ ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿أعجبكم - ٢٢١ - ط﴾.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 303,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 221 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 303
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:221:28:21",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 221,
+        "word": 28,
+        "wordId": 4254,
+        "targetWord": "ٱلنَّارِ ۖ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿إلى النار - ٢٢١ - ج﴾ والوصل أجوز لأن مقصود الكلام بيان تفاوت الدعوتين مع اتفاق الجملتين، ومن وقف أراد الفصل بين ذكر الحق والباطل.",
+      "old_text": "﴿ إلى النار - ٢٢١ - ج ﴾ والوصل أجوز لأن مقصود الكلام بيان تفاوت الدعوتين مع اتفاق الجملتين ، ومن وقف أراد الفصل بين ذكر الحق والباطل .",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿ إلى النار - ٢٢١ - ج ﴾\nوالوصل أجوز لأن مقصود الكلام بيان تفاوت الدعوتين مع اتفاق الجملتين ، ومن وقف أراد الفصل بين ذكر الحق والباطل .",
+          "new_text": "﴿إلى النار - ٢٢١ - ج﴾ والوصل أجوز لأن مقصود الكلام بيان تفاوت الدعوتين مع اتفاق الجملتين، ومن وقف أراد الفصل بين ذكر الحق والباطل.",
+          "info": "دمج نص تعليل موضع الوقف المنقطع بين الصفحتين 303 و304"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 303,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 221 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 303
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:221:34:22",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 221,
+        "word": 34,
+        "wordId": 4260,
+        "targetWord": "بِإِذْنِهِۦ ۖ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿بإذنه - ٢٢١ - ج﴾ لأن جملة ﴿والله يدعوا﴾ تقابل الجملة الأولى، فلم يكن قوله: ﴿ويبين آياته﴾ من تمامها، إذ ليس في الجملة الأولى ذكر بيان، ومن وصل فللعطف المستقبل على المستقبل.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 304,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 221 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 304
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:222:3:23",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 222,
+        "word": 3,
+        "wordId": 4268,
+        "targetWord": "ٱلْمَحِيضِ ۖ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿عن المحيض - ٢٢٢ - ط﴾.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 304,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 222 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 304
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:222:6:24",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 222,
+        "word": 6,
+        "wordId": 4271,
+        "targetWord": "أَذًۭى"
+      },
+      "verdict": "لا يوقف",
+      "verdictLabel": "لا",
+      "quote": "﴿أذى - ٢٢٢ - لا﴾ لأن لكونه أذى تأثيرًا بليغًا في وجوب الاعتزال.",
+      "old_text": "﴿ أذى - ٢٢٢ - لا ﴾ لأن لكونه\nأذى تأثيرًا بليغًا في وجوب الاعتزال .",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿ أذى - ٢٢٢ - لا ﴾ لأن لكونه\nأذى تأثيرًا بليغًا في وجوب الاعتزال .",
+          "new_text": "﴿أذى - ٢٢٢ - لا﴾ لأن لكونه أذى تأثيرًا بليغًا في وجوب الاعتزال.",
+          "info": "دمج نص التعليل المنقطع بين الصفحتين 304 و305"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 304,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 222 - لا",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 304
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:222:10:25",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 222,
+        "word": 10,
+        "wordId": 4275,
+        "targetWord": "ٱلْمَحِيضِ ۖ"
+      },
+      "verdict": "لا يوقف",
+      "verdictLabel": "لا",
+      "quote": "﴿في المحيض - ٢٢٢ - لا﴾ للعطف.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 305,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 222 - لا",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 305
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:222:14:26",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 222,
+        "word": 14,
+        "wordId": 4279,
+        "targetWord": "يَطْهُرْنَ ۖ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿حتى يطهرن - ٢٢٢ - ج﴾ لأن ﴿إذا﴾ متضمنة للشروط للفاء في جوابه مع فاء التعقيب فيهما.",
+      "old_text": "﴿ حتى يطهرن -\n٢٢٢ - ج ﴾ لأن ﴿ إذا ﴾ متضمنة للشروط للفاء في جوابه مع فاء التعقيب فيهما .",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿ حتى يطهرن -\n٢٢٢ - ج ﴾ لأن ﴿ إذا ﴾ متضمنة للشروط للفاء في جوابه مع فاء التعقيب فيهما .",
+          "new_text": "﴿حتى يطهرن - ٢٢٢ - ج﴾ لأن ﴿إذا﴾ متضمنة للشروط للفاء في جوابه مع فاء التعقيب فيهما.",
+          "info": "دمج حاصرة موضع الوقف المنقطعة بين الصفحتين 305 و306"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "mismatch",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 305,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 222 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 305
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:222:21:27",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 222,
+        "word": 21,
+        "wordId": 4286,
+        "targetWord": "ٱللَّهُ ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿أمركم الله - ٢٢٢ - ط﴾.",
+      "old_text": "﴿ أمركم الله - ٢٢٣ - ط ﴾",
+      "fixes": [
+        {
+          "type": "ayah_number_correction",
+          "basis": "editor_policy",
+          "old_text": "٢٢٣",
+          "new_text": "٢٢٢",
+          "info": "تصحيح رقم الآية المطبوع خطأ في التحقيق من 223 إلى 222"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 306,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 222 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 306
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:223:3:28",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 223,
+        "word": 3,
+        "wordId": 4295,
+        "targetWord": "لَّكُمْ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿حرث لكم - ٢٢٣ - ج﴾.",
+      "old_text": "﴿ حرث لكم - ٢٢٢ - ج ﴾",
+      "fixes": [
+        {
+          "type": "ayah_number_correction",
+          "basis": "editor_policy",
+          "old_text": "٢٢٢",
+          "new_text": "٢٢٣",
+          "info": "تصحيح رقم الآية المطبوع خطأ في التحقيق من 222 إلى 223"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 306,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 223 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 306
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:223:7:30",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 223,
+        "word": 7,
+        "wordId": 4299,
+        "targetWord": "شِئْتُمْ ۖ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ز",
+      "quote": "﴿أنى شئتم - 223 - ز﴾ قد يجوز لوقوع العارض.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 307,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 223 - ز",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 307
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:223:9:29",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 223,
+        "word": 9,
+        "wordId": 4301,
+        "targetWord": "لِأَنفُسِكُمْ ۚ"
+      },
+      "verdict": "حسن",
+      "verdictLabel": "ص",
+      "quote": "﴿لأنفسكم - 223 - ص﴾ لأن الفاء كالجزاء، أي: إذا كان حرثاً فأتوا، وإلا فقد اختلفت الجملتان.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "mismatch",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 307,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 223 - ص",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 307
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:223:9:31",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 223,
+        "word": 9,
+        "wordId": 4301,
+        "targetWord": "لِأَنفُسِكُمْ ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿لأنفسكم - 223 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 308,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 223 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 308
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:223:14:32",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 223,
+        "word": 14,
+        "wordId": 4306,
+        "targetWord": "مُّلَـٰقُوهُ ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ملاقوه - 223 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 308,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 223 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 308
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:224:11:33",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 224,
+        "word": 11,
+        "wordId": 4319,
+        "targetWord": "ٱلنَّاسِ ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿بين الناس - 224 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 308,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 224 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 308
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:225:11:34",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 225,
+        "word": 11,
+        "wordId": 4333,
+        "targetWord": "قُلُوبُكُمْ ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿قلوبكم - 225 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 308,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 225 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 308
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:226:7:35",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 226,
+        "word": 7,
+        "wordId": 4343,
+        "targetWord": "أَشْهُرٍۢ ۖ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿أشهر - 226 - ج﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 308,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 226 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 308
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:228:5:36",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 228,
+        "word": 5,
+        "wordId": 4361,
+        "targetWord": "قُرُوٓءٍۢ ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿قروء - 228 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 308,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 228 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 308
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:228:21:37",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 228,
+        "word": 21,
+        "wordId": 4377,
+        "targetWord": "ٱلْـَٔاخِرِ ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿الآخر - 228 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 308,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 228 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 308
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:228:29:38",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 228,
+        "word": 29,
+        "wordId": 4385,
+        "targetWord": "إِصْلَـٰحًۭا ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿إصلاحا - 228 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 309,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 228 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 309
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:228:34:39",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 228,
+        "word": 34,
+        "wordId": 4390,
+        "targetWord": "بِٱلْمَعْرُوفِ ۚ"
+      },
+      "verdict": "حسن",
+      "verdictLabel": "ص",
+      "quote": "﴿بالمعروف - 228 - ص﴾ لعطف المتفقين ولإتمام المقصود في تفضيل الرجال.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 309,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 228 - ص",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 309
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:228:37:40",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 228,
+        "word": 37,
+        "wordId": 4393,
+        "targetWord": "دَرَجَةٌۭ ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿درجة - 228 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 309,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 228 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 309
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:229:2:41",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 229,
+        "word": 2,
+        "wordId": 4398,
+        "targetWord": "مَرَّتَانِ ۖ"
+      },
+      "verdict": "حسن",
+      "verdictLabel": "ص",
+      "quote": "﴿مرتان - 229 - ص﴾ لعطف المتفقين.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 309,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 229 - ص",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 309
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:229:7:42",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 229,
+        "word": 7,
+        "wordId": 4403,
+        "targetWord": "بِإِحْسَـٰنٍۢ ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿بإحسان - 229 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 309,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 229 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 309
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:229:22:43",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 229,
+        "word": 22,
+        "wordId": 4418,
+        "targetWord": "ٱللَّهِ ۖ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿حدود الله - 229 الأولى - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 309,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 229 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 309
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:229:28:44",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 229,
+        "word": 28,
+        "wordId": 4424,
+        "targetWord": "ٱللَّهِ"
+      },
+      "verdict": "لا يوقف",
+      "verdictLabel": "لا",
+      "quote": "﴿حدود الله - 229 الثاني - لا﴾ لأن الفاء للجزاء.",
+      "old_text": "﴿ [ حدود الله - 229 الثاني - لا ] ﴾ لأن الفاء للجزاء .",
+      "fixes": [
+        {
+          "type": "malformed_bracket",
+          "basis": "editor_policy",
+          "old_text": "﴿ [ حدود الله - 229 الثاني - لا ] ﴾",
+          "new_text": "﴿حدود الله - 229 الثاني - لا﴾",
+          "info": "إزالة المعقوفات الزائدة التي تحيط بالنص القرآني داخل الحاصرتين"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 309,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 229 - لا",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 309
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:229:34:45",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 229,
+        "word": 34,
+        "wordId": 4430,
+        "targetWord": "بِهِۦ ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿افتدت به - 229 - ط﴾ لأن افتداء خارج عن أصل الموجب لأنه مقرر لما قبله.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 310,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 229 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 310
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:229:39:46",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 229,
+        "word": 39,
+        "wordId": 4435,
+        "targetWord": "تَعْتَدُوهَا ۚ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿تعتدوها - 229 - ج﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 310,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 229 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 310
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:230:11:47",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 230,
+        "word": 11,
+        "wordId": 4453,
+        "targetWord": "غَيْرَهُۥ ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿غيره - 230 - ط﴾ لأن طلاق طلاق الزوج الثاني على خطر الوجود لا منتظر معهود، فكان خارجا من مقتضى الجملة.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 310,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 230 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 310
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:230:24:48",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 230,
+        "word": 24,
+        "wordId": 4466,
+        "targetWord": "ٱللَّهِ ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿أن يقيم حدود الله - 230 - ط﴾ الأولى.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 311,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 230 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 311
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:231:10:49",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 231,
+        "word": 10,
+        "wordId": 4482,
+        "targetWord": "بِمَعْرُوفٍۢ ۚ"
+      },
+      "verdict": "حسن",
+      "verdictLabel": "ص",
+      "quote": "﴿أو سرحوهن بمعروف - 231 - ص﴾ لطول الكلام.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 311,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 231 - ص",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 311
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:231:14:50",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 231,
+        "word": 14,
+        "wordId": 4486,
+        "targetWord": "لِّتَعْتَدُوا۟ ۚ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿لتعتدوا - 231 - ج﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 311,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 231 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 311
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:231:20:51",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 231,
+        "word": 20,
+        "wordId": 4492,
+        "targetWord": "نَفْسَهُۥ ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿نفسه - 231 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 311,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 231 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 311
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:231:25:52",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 231,
+        "word": 25,
+        "wordId": 4497,
+        "targetWord": "هُزُوًۭا ۚ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ز",
+      "quote": "﴿هزوا - 231 - ز﴾ قد يجوز لطول ما بعده.",
+      "old_text": "﴿هزوا - 231 - ز﴾ قد [في ص 311] يجوز لطول ما بعده [في ص 312].",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿هزوا - 231 - ز﴾ قد (في نهاية ص 311) يجوز لطول ما بعده (في بداية ص 312)",
+          "new_text": "﴿هزوا - 231 - ز﴾ قد يجوز لطول ما بعده.",
+          "info": "اتصال النص عبر انقطاع الصفحة"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 311,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 231 - ز",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 311
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:231:37:53",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 231,
+        "word": 37,
+        "wordId": 4509,
+        "targetWord": "بِهِۦ ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿يعظكم به - 231 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "mismatch",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 312,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 231 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 312
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:232:14:54",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 232,
+        "word": 14,
+        "wordId": 4531,
+        "targetWord": "بِٱلْمَعْرُوفِ ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿بالمعروف - 232 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 312,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 232 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 312
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:232:24:55",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 232,
+        "word": 24,
+        "wordId": 4541,
+        "targetWord": "ٱلْـَٔاخِرِ ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿الآخر - 232 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 312,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 232 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 312
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:232:28:56",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 232,
+        "word": 28,
+        "wordId": 4545,
+        "targetWord": "وَأَطْهَرُ ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿وأطهر - 232 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "mismatch",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 312,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 232 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 312
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:233:0:60",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 233,
+        "word": null,
+        "wordId": null,
+        "targetWord": "ذلك"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿مثل ذلك - 233 - ج﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "ayah_only",
+        "review_status": "pending"
+      },
+      "text_page": 313,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 233 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 313
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:233:10:57",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 233,
+        "word": 10,
+        "wordId": 4560,
+        "targetWord": "ٱلرَّضَاعَةَ ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿الرضاعة - 233 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 312,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 233 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 312
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:233:16:58",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 233,
+        "word": 16,
+        "wordId": 4566,
+        "targetWord": "بِٱلْمَعْرُوفِ ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿بالمعروف - 233 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 312,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 233 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 312
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:233:21:59",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 233,
+        "word": 21,
+        "wordId": 4571,
+        "targetWord": "وُسْعَهَا ۚ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿إلا وسعها - 233 - ج﴾ لاستئناف اللفظ مع قرب المعنى.",
+      "old_text": "﴿الا وسعها - 233 - ج﴾ لاستئناف اللفظ مع قرب المعنى.",
+      "fixes": [
+        {
+          "type": "orthography",
+          "basis": "editor_policy",
+          "old_text": "الا",
+          "new_text": "إلا",
+          "info": "إضافة همزة القطع"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 313,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 233 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 313
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:233:43:61",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 233,
+        "word": 43,
+        "wordId": 4593,
+        "targetWord": "عَلَيْهِمَا ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿عليهما - 233 - ط﴾ لابتداء الحكم في استرضاع الأجنبية.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 313,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 233 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 313
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:233:56:62",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 233,
+        "word": 56,
+        "wordId": 4606,
+        "targetWord": "بِٱلْمَعْرُوفِ ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿بالمعروف - 233 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 313,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 233 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 313
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:234:10:63",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 234,
+        "word": 10,
+        "wordId": 4624,
+        "targetWord": "وَعَشْرًۭا ۖ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿وعشرا - 234 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 313,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 234 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 313
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:234:21:64",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 234,
+        "word": 21,
+        "wordId": 4635,
+        "targetWord": "بِٱلْمَعْرُوفِ ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿بالمعروف - 234 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "mismatch",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 314,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 234 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 314
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:235:13:65",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 235,
+        "word": 13,
+        "wordId": 4652,
+        "targetWord": "أَنفُسِكُمْ ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿في أنفسكم - 235 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 314,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 235 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 314
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:235:26:66",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 235,
+        "word": 26,
+        "wordId": 4665,
+        "targetWord": "مَّعْرُوفًۭا ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿معروفا - 235 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 314,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 235 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 314
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:235:34:67",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 235,
+        "word": 34,
+        "wordId": 4673,
+        "targetWord": "أَجَلَهُۥ ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿أجله - 235 - ط﴾ لابتداء الأمر بالاتقاء",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 314,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 235 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 314
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:235:42:68",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 235,
+        "word": 42,
+        "wordId": 4681,
+        "targetWord": "فَٱحْذَرُوهُ ۚ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿ فاحذروه - 235 - ج ﴾ للفصل بين موجبي الخوف والرجاء، ولهذا كررت كلمة ﴿ واعلموا ﴾ تقديره : غفور حليم فارجوه ، والوقف أليق .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 315,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 235 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 315
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:236:13:69",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 236,
+        "word": 13,
+        "wordId": 4699,
+        "targetWord": "فَرِيضَةًۭ ۚ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿ فريضة - 236 - ج ﴾ لعطف المختلفين .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 315,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 236 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 315
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:236:14:70",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 236,
+        "word": 14,
+        "wordId": 4700,
+        "targetWord": "وَمَتِّعُوهُنَّ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿ ومتعوهن - 236 - ج ﴾ لانقطاع النظم مع اتصال المعنى ، لأن الجملة الثانية لقدير المأمور في الأولى .",
+      "old_text": "﴿ ومتعوهن - ٢٣٦ - ج ﴾ لانقطاع النظم مع اتصال المعنى ، لأن الجملة الثانية\nلقدير المأمور في الأولى .",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "الجملة الثانية\nلقدير",
+          "new_text": "الجملة الثانية لقدير",
+          "info": "وصل الكلام المترابط بين صفحتي 315 و316"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 315,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 236 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 315
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:236:17:71",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 236,
+        "word": 17,
+        "wordId": 4703,
+        "targetWord": "قَدَرُهُۥ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿ قدره - 236 الثاني - ج ﴾ لأن ﴿ متاعا ﴾ مصدر ﴿ متعوهن ﴾ والوقف لبيان أنه غير متصل بما يليه من الجملتين العارضتين .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 316,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 236 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 316
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:236:22:72",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 236,
+        "word": 22,
+        "wordId": 4708,
+        "targetWord": "بِٱلْمَعْرُوفِ ۖ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿ بالمعروف - 236 - ج ﴾ لأن ﴿ حقا ﴾ يصلح نعتا للمتاع ، أي : متاعا حقا ، ويصلح مصدرا لمحذوف ، أي : حق ذلك حقاً .",
+      "old_text": "﴿ بالمعروف - ٢٣٦ -ج ﴾ لأن ﴿ حقا ﴾ يصلح نعتا للمتاع ، أي : متاعا حقا ، ويصلح مصدرا لمحذوف ، أي : حق ذلك\nحقاً .",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "حق ذلك\nحقاً .",
+          "new_text": "حق ذلك حقاً .",
+          "info": "وصل الكلام المترابط بين صفحتي 316 و317"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "mismatch",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 316,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 236 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 316
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:237:0:74",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 237,
+        "word": null,
+        "wordId": null,
+        "targetWord": "للتقوى"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ أقرب للتقوى - 237 - ط ﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "ayah_only",
+        "review_status": "pending"
+      },
+      "text_page": 317,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 237 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 317
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:237:22:73",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 237,
+        "word": 22,
+        "wordId": 4733,
+        "targetWord": "ٱلنِّكَاحِ ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ النكاح - 237 - ط ﴾ لأن التقدير : والعفو",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 317,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 237 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 317
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:237:30:75",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 237,
+        "word": 30,
+        "wordId": 4741,
+        "targetWord": "بَيْنَكُمْ ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ بينكم - 237 - ط ﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 317,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 237 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 317
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:239:5:76",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 239,
+        "word": 5,
+        "wordId": 4759,
+        "targetWord": "رُكْبَانًۭا ۖ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿ أو ركبانا - 239 - ج ﴾ لأن ﴿ إذا ﴾ في معنى الشرط مع فاء التعقيب .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 317,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 239 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 317
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:240:5:77",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 240,
+        "word": 5,
+        "wordId": 4774,
+        "targetWord": "أَزْوَٰجًۭا"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿ أزواجا - 240 - ج ﴾ لانقطاع النظم ، ومكان الحذف ، لأن التقدير : [ فعليهم وصية ] ، أو : فليوصوا وصية ، والوصل",
+      "old_text": "﴿ أزواجا - ٢٤٠ - ج ﴾ لانقطاع النظم ، ومكان الحذف ، لأن\nالتقدير : [ فعليهم وصية ] ، أو : فليوصوا وصية ، والوصل",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "لأن\nالتقدير",
+          "new_text": "لأن التقدير",
+          "info": "وصل الكلام المترابط بين صفحتي 317 و318"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 317,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 240 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 317
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:240:12:78",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 240,
+        "word": 12,
+        "wordId": 4781,
+        "targetWord": "إِخْرَاجٍۢ ۚ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿إخراج - 240 - ج﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 319,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 240 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 319
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:240:24:79",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 240,
+        "word": 24,
+        "wordId": 4793,
+        "targetWord": "مَّعْرُوفٍۢ ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿من معروف - 240 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 319,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 240 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 319
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:241:3:80",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 241,
+        "word": 3,
+        "wordId": 4799,
+        "targetWord": "بِٱلْمَعْرُوفِ ۖ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿بالمعروف - 241 - ط﴾ لأن التقدير : حق ذلك حقا .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 319,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 241 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 319
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:243:11:81",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 243,
+        "word": 11,
+        "wordId": 4820,
+        "targetWord": "ٱلْمَوْتِ"
+      },
+      "verdict": "حسن",
+      "verdictLabel": "ص",
+      "quote": "﴿حذر الموت - 243 - ص﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 319,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 243 - ص",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 319
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:243:17:82",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 243,
+        "word": 17,
+        "wordId": 4826,
+        "targetWord": "أَحْيَـٰهُمْ ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ثم أحياهم - 243 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 319,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 243 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 319
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:245:0:84",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 245,
+        "word": null,
+        "wordId": null,
+        "targetWord": "ويبسط"
+      },
+      "verdict": "حسن",
+      "verdictLabel": "ص",
+      "quote": "﴿ويبسط - 245 - ص﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "ayah_only",
+        "review_status": "pending"
+      },
+      "text_page": 320,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 245 - ص",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 320
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:245:11:83",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 245,
+        "word": 11,
+        "wordId": 4857,
+        "targetWord": "كَثِيرَةًۭ ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿كثيرة - 245 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 320,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 245 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 320
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:246:0:85",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 246,
+        "word": null,
+        "wordId": null,
+        "targetWord": "موسى"
+      },
+      "verdict": "لازم",
+      "verdictLabel": "م",
+      "quote": "﴿من بعد موسى - 246 - م﴾ لأنه لو وصل صار «إذ» ظرفاً لقوله «ألم تر» وهو محال .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "ayah_only",
+        "review_status": "pending"
+      },
+      "text_page": 320,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 246 - م",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 320
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:246:21:86",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 246,
+        "word": 21,
+        "wordId": 4883,
+        "targetWord": "ٱللَّهِ ۖ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿في سبيل الله - 246 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 320,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 246 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 320
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:246:30:87",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 246,
+        "word": 30,
+        "wordId": 4892,
+        "targetWord": "تُقَـٰتِلُوا۟ ۖ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ألا تقاتلوا - 246 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 320,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 246 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 320
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:246:43:88",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 246,
+        "word": 43,
+        "wordId": 4905,
+        "targetWord": "وَأَبْنَآئِنَا ۖ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿وأبنائنا - 246 - ط﴾ تعظيماً لابتداء أمر معظم .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "not_checked",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 321,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 246 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 321
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:246:51:89",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 246,
+        "word": 51,
+        "wordId": 4913,
+        "targetWord": "مِّنْهُمْ ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿منهم - 246 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "not_checked",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 321,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 246 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 321
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:247:10:90",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 247,
+        "word": 10,
+        "wordId": 4926,
+        "targetWord": "مَلِكًۭا ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ملكا - 247 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "not_checked",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 321,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 247 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 321
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:247:25:91",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 247,
+        "word": 25,
+        "wordId": 4941,
+        "targetWord": "ٱلْمَالِ ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿من المال - 247 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "not_checked",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 321,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 247 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 321
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:247:35:92",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 247,
+        "word": 35,
+        "wordId": 4951,
+        "targetWord": "وَٱلْجِسْمِ ۖ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿والجسم - 247 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "not_checked",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 321,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 247 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 321
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:247:40:93",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 247,
+        "word": 40,
+        "wordId": 4956,
+        "targetWord": "يَشَآءُ ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿من يشاء - 247 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "not_checked",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 321,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 247 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 321
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:248:22:94",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 248,
+        "word": 22,
+        "wordId": 4981,
+        "targetWord": "ٱلْمَلَـٰٓئِكَةُ ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿الملائكة - 248 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 322,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 248 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 322
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:249:4:95",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 249,
+        "word": 4,
+        "wordId": 4993,
+        "targetWord": "بِٱلْجُنُودِ"
+      },
+      "verdict": "لا يوقف",
+      "verdictLabel": "لا",
+      "quote": "﴿بالجنود - 249 - لا﴾ لأن ﴿قال﴾ جواب ﴿لما﴾ .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 322,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 249 - لا",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 322
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:249:9:96",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 249,
+        "word": 9,
+        "wordId": 4998,
+        "targetWord": "بِنَهَرٍۢ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿بنهر - 249 - ج﴾ للابتداء بالشرط مع الفاء .",
+      "old_text": "﴿بنهر 249 - ج﴾ للابتداء بالشرط مع الفاء .",
+      "fixes": [
+        {
+          "type": "missing_delimiter",
+          "basis": "editor_policy",
+          "old_text": "﴿بنهر 249 - ج﴾",
+          "new_text": "﴿بنهر - 249 - ج﴾",
+          "info": "إضافة شرطة فاصلة قبل رقم الآية للتنسيق المعياري"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 322,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 249 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 322
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:249:14:97",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 249,
+        "word": 14,
+        "wordId": 5003,
+        "targetWord": "مِنِّى"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿فليس مني - 249 - ج﴾ للابتداء بـ ﴿شرط﴾ آخر مع الواو [ مع اتحاد المقصود ] .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 322,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 249 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 322
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:249:24:98",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 249,
+        "word": 24,
+        "wordId": 5013,
+        "targetWord": "بِيَدِهِۦ ۚ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿بيده - 249 - ج﴾ لعطف المختلفين .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 322,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 249 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 322
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:249:29:99",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 249,
+        "word": 29,
+        "wordId": 5018,
+        "targetWord": "مِّنْهُمْ ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿منهم - ٢٤٩ - ط﴾ تعظيما لابتداء أمر معظم.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 323,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 249 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 323
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:249:35:100",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 249,
+        "word": 35,
+        "wordId": 5024,
+        "targetWord": "مَعَهُۥ"
+      },
+      "verdict": "لا يوقف",
+      "verdictLabel": "لا",
+      "quote": "﴿معه - ٢٤٩ - لا﴾ لأن ﴿قالوا﴾ جواب ﴿لما﴾.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 323,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 249 - لا",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 323
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:249:42:101",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 249,
+        "word": 42,
+        "wordId": 5031,
+        "targetWord": "وَجُنُودِهِۦ ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿وجنوده - ٢٤٩ - ط﴾.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 323,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 249 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 323
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:249:48:102",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 249,
+        "word": 48,
+        "wordId": 5037,
+        "targetWord": "ٱللَّهِ"
+      },
+      "verdict": "لا يوقف",
+      "verdictLabel": "لا",
+      "quote": "﴿ملاقوا الله - ٢٤٩ - لا﴾ لأن ما بعده مفعول ﴿قال﴾.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "mismatch",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 323,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 249 - لا",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 323
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:249:57:103",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 249,
+        "word": 57,
+        "wordId": 5046,
+        "targetWord": "ٱللَّهِ ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿بإذن الله - ٢٤٩ - ط﴾.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 323,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 249 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 323
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:250:15:104",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 250,
+        "word": 15,
+        "wordId": 5064,
+        "targetWord": "ٱلْكَـٰفِرِينَ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿الكافرين - ٢٥٠ - ط﴾ للآية، ولأن ما قبله دعاء، وما بعده خبر ماض متصل بكلام طويل بعده.",
+      "old_text": "﴿ الكافرين - \n ٢٥٠ - ط ﴾ (١) للآية، ولأن ما قبله دعاء، وما بعده خبر ماض متصل (٢) بكلام (٣) طويل بعده .",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿ الكافرين - \n ٢٥٠ - ط ﴾",
+          "new_text": "﴿الكافرين - ٢٥٠ - ط﴾",
+          "info": "وصل موضع الوقف المنقسم بين نهاية صفحة 323 وبداية صفحة 324."
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 323,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 250 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 323
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:251:3:105",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 251,
+        "word": 3,
+        "wordId": 5067,
+        "targetWord": "ٱللَّهِ"
+      },
+      "verdict": "لا يوقف",
+      "verdictLabel": "لا",
+      "quote": "﴿بإذن الله - ٢٥١ - لا﴾ لاتصال اللفظ واتساق المعنى، فإن الهزيمة كانت: قتل داود جالوت.",
+      "old_text": "ولا وقف على ﴿ بإذن الله - ٢٥١ ﴾ (٤) لاتصال اللفظ واتساق (٥) المعنى، فإن الهزيمة (٦) كانت : قتل داود جالوت .",
+      "fixes": [
+        {
+          "type": "missing_symbol",
+          "basis": "page_prose",
+          "old_text": "ولا وقف على ﴿ بإذن الله - ٢٥١ ﴾",
+          "new_text": "﴿بإذن الله - ٢٥١ - لا﴾",
+          "info": "إدراج رمز الوقف (لا) داخل الحاصرتين استناداً إلى تصريح المؤلف بالنفي: «ولا وقف على»."
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 324,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 251 - لا",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 324
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:251:13:106",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 251,
+        "word": 13,
+        "wordId": 5077,
+        "targetWord": "يَشَآءُ ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿مما يشاء - ٢٥١ - ط﴾.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 324,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 251 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 324
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:252:6:107",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 252,
+        "word": 6,
+        "wordId": 5097,
+        "targetWord": "بِٱلْحَقِّ ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿بالحق - ٢٥٢ - ط﴾ للابتداء بإن.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 325,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 252 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 325
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:253:6:108",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 253,
+        "word": 6,
+        "wordId": 5106,
+        "targetWord": "بَعْضٍۢ ۘ"
+      },
+      "verdict": "لازم",
+      "verdictLabel": "م",
+      "quote": "﴿على بعض - ٢٥٣ - م﴾ لأنه لو وصل صار الجار صفة لبعض فينصرف بيان تفضيل الرسل إلى ﴿بعض﴾ فيكون موسى عليه السلام من هذا البعض المفضل عليه غيره [لا من البعض المفضل على غيره] بالتكليم.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 325,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 253 - م",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 325
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:253:13:109",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 253,
+        "word": 13,
+        "wordId": 5113,
+        "targetWord": "دَرَجَـٰتٍۢ ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿درجات - ٢٥٣ - ط﴾ للعدول [من الاخبار إلى الحكاية].",
+      "old_text": "﴿ درجات - ٢٥٣ - ط ﴾ (٦) للعدول [ من الاخبار إلى\n الحكاية ] (١) .",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "[ من الاخبار إلى\n الحكاية ]",
+          "new_text": "[من الاخبار إلى الحكاية]",
+          "info": "وصل تعليل موضع الوقف المنقسم بين نهاية صفحة 325 وبداية صفحة 326."
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 325,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 253 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 325
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:253:21:110",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 253,
+        "word": 21,
+        "wordId": 5121,
+        "targetWord": "ٱلْقُدُسِ ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿القدس - ٢٥٣ - ط﴾.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 326,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 253 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 326
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:253:42:111",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 253,
+        "word": 42,
+        "wordId": 5142,
+        "targetWord": "كَفَرَ ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿من كفر - ٢٥٣ - ط﴾.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 326,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 253 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 326
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:254:18:112",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 254,
+        "word": 18,
+        "wordId": 5170,
+        "targetWord": "شَفَـٰعَةٌۭ ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ولا شفاعة - ٢٥٤ - ط﴾.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 326,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 254 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 326
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:255:5:113",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 255,
+        "word": 5,
+        "wordId": 5178,
+        "targetWord": "هُوَ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿إلا هو - ٢٥٥ - ج﴾ لأن قوله: ﴿الحي﴾ يصلح بدلا عن الضمير، وخبر ضمير",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 326,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 255 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 326
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:255:7:114",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 255,
+        "word": 7,
+        "wordId": 5180,
+        "targetWord": "ٱلْقَيُّومُ ۚ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿القيوم - 255 - ج﴾ لاختلاف الجملتين.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 327,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 255 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 327
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:255:12:115",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 255,
+        "word": 12,
+        "wordId": 5185,
+        "targetWord": "نَوْمٌۭ ۚ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿ولا نوم - 255 - ج﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 327,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 255 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 327
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:255:19:116",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 255,
+        "word": 19,
+        "wordId": 5192,
+        "targetWord": "ٱلْأَرْضِ ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿وما في الأرض - 255 - ط﴾ لابتداء الاستفهام.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 327,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 255 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 327
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:255:26:117",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 255,
+        "word": 26,
+        "wordId": 5199,
+        "targetWord": "بِإِذْنِهِۦ ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿بإذنه - 255 - ط﴾ لانتهاء الاستفهام.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 327,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 255 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 327
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:255:32:118",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 255,
+        "word": 32,
+        "wordId": 5205,
+        "targetWord": "خَلْفَهُمْ ۖ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿وما خلفهم - 255 - ج﴾ للفرق بين الإخبار عن علمه الكامل مطلقا وإثبات علم الخلق المقدر بمشيئته مبتدء بالنفي.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "mismatch",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 328,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 255 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 328
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:255:40:119",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 255,
+        "word": 40,
+        "wordId": 5213,
+        "targetWord": "شَآءَ ۚ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿بما شاء - 255 - ج﴾ لاختلاف الجملتين.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "mismatch",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 328,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 255 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 328
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:255:44:120",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 255,
+        "word": 44,
+        "wordId": 5217,
+        "targetWord": "وَٱلْأَرْضَ ۖ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿والأرض - 255 - ج﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "mismatch",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 328,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 255 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 328
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:255:47:121",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 255,
+        "word": 47,
+        "wordId": 5220,
+        "targetWord": "حِفْظُهُمَا ۚ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿حفظهما - 255 - ج﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "not_checked",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 329,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 255 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 329
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:256:0:123",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 256,
+        "word": null,
+        "wordId": null,
+        "targetWord": "الوثقى"
+      },
+      "verdict": "قيل فيه وقف",
+      "verdictLabel": "ق",
+      "quote": "﴿الوثقى - 256 - ق﴾ قد قيل للاستئناف بالنفي ، والوجه الوصل على جعل الجملة حالا للعروة ، أي : استمسك بها غير منفصمة.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "not_checked",
+        "edit_status": "pristine",
+        "mapping_status": "ayah_only",
+        "review_status": "pending"
+      },
+      "text_page": 329,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 256 - ق",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 329
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:256:9:122",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 256,
+        "word": 9,
+        "wordId": 5232,
+        "targetWord": "ٱلْغَىِّ ۚ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿من الغي - 256 - ج﴾ لأن من الشرط مع فاء التعقيب.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "not_checked",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 329,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 256 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 329
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:256:21:124",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 256,
+        "word": 21,
+        "wordId": 5244,
+        "targetWord": "لَهَا ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿لا انفصام لها - 256 - ط﴾",
+      "old_text": "﴿لا انفصام لها - 256 - ط﴾",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿لا انفصام لها -\n256 - ط﴾",
+          "new_text": "﴿لا انفصام لها - 256 - ط﴾",
+          "info": "تجميع موضع الوقف المنقسم بين أواخر صفحة 329 وأوائل صفحة 330"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "not_checked",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 329,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 256 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 329
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:257:4:125",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 257,
+        "word": 4,
+        "wordId": 5251,
+        "targetWord": "ءَامَنُوا۟"
+      },
+      "verdict": "لا يوقف",
+      "verdictLabel": "لا",
+      "quote": "﴿آمنوا - 257 - لا﴾ لأن ﴿يخرجهم﴾ حال ، والعامل معنى الفعل في ﴿ولي﴾ تقديره : الله يليهم مخرجا لهم أو مخرجين.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 330,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 257 - لا",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 330
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:257:9:126",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 257,
+        "word": 9,
+        "wordId": 5256,
+        "targetWord": "ٱلنُّورِ ۖ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿إلى النور - 257 - ط﴾ للفصل بين الفئتين المتضادتين.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 330,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 257 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 330
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:257:13:127",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 257,
+        "word": 13,
+        "wordId": 5260,
+        "targetWord": "ٱلطَّـٰغُوتُ"
+      },
+      "verdict": "لا يوقف",
+      "verdictLabel": "لا",
+      "quote": "﴿الطاغوت - 257 - لا﴾ لأن ﴿يخرجونهم﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 330,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 257 - لا",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 330
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:257:18:128",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 257,
+        "word": 18,
+        "wordId": 5265,
+        "targetWord": "ٱلظُّلُمَـٰتِ ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿إلى الظلمات - 257 - ط﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 331,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 257 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 331
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:257:21:129",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 257,
+        "word": 21,
+        "wordId": 5268,
+        "targetWord": "ٱلنَّارِ ۖ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿النار - 257 - ج﴾ وقد ذكر .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 331,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 257 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 331
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:258:12:130",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 258,
+        "word": 12,
+        "wordId": 5283,
+        "targetWord": "ٱلْمُلْكَ"
+      },
+      "verdict": "لازم",
+      "verdictLabel": "م",
+      "quote": "﴿الملك - 258 - م﴾ لأن ﴿إذ﴾ ليس بظرف لإيتاء",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 331,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 258 - م",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 331
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:258:12:131",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 258,
+        "word": 12,
+        "wordId": 5283,
+        "targetWord": "ٱلْمُلْكَ"
+      },
+      "verdict": "لا يوقف",
+      "verdictLabel": "لا",
+      "quote": "﴿الملك - 258 - لا﴾ لأن ﴿قال﴾ عامل ﴿إذ﴾ .",
+      "old_text": "الملك - 258 - لا﴾ لأن ﴿قال﴾ عامل ﴿إذ﴾ .",
+      "fixes": [
+        {
+          "type": "missing_delimiter",
+          "basis": "editor_policy",
+          "old_text": "الملك",
+          "new_text": "﴿الملك",
+          "info": "إضافة قوس البداية المفقود"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 332,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 258 - لا",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 332
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:258:23:132",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 258,
+        "word": 23,
+        "wordId": 5294,
+        "targetWord": "وَأُمِيتُ ۖ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿وأميت - 258 - ط﴾ .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 332,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 258 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 332
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:258:38:133",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 258,
+        "word": 38,
+        "wordId": 5309,
+        "targetWord": "كَفَرَ ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿كفر - 258 - ط﴾ .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 332,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 258 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 332
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:258:43:134",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 258,
+        "word": 43,
+        "wordId": 5314,
+        "targetWord": "ٱلظَّـٰلِمِينَ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿الظالمين - 258 - ج﴾ للآية مع العطف بأو على ما قيل أن أو للتعجيب ، أي : هل رأيت كالذي .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 332,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 258 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 332
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:259:9:135",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 259,
+        "word": 9,
+        "wordId": 5323,
+        "targetWord": "عُرُوشِهَا"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿عروشها - 259 - ج﴾ لأن ما بعده من تتمة كلام ما قبله ولكن لم ينعطف بعاطف .",
+      "old_text": "﴿عروشها - 259 - \nج﴾ لأن ما بعده من تتمة كلام ما قبله ولكن لم ينعطف بعاطف .",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿عروشها - 259 - \nج﴾",
+          "new_text": "﴿عروشها - 259 - ج﴾",
+          "info": "تجميع موضع الوقف المنقطع بين صفحتي 332 و 333"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "mismatch",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 332,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 259 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 332
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:259:16:136",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 259,
+        "word": 16,
+        "wordId": 5330,
+        "targetWord": "مَوْتِهَا ۖ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿موتها - 259 - ج﴾ تمام المقول مع العطف بفاء الجواب والجزاء .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 333,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 259 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 333
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:259:22:137",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 259,
+        "word": 22,
+        "wordId": 5336,
+        "targetWord": "بَعَثَهُۥ ۖ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿بعثه - 259 - ط﴾ .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "mismatch",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 333,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 259 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 333
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:259:25:138",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 259,
+        "word": 25,
+        "wordId": 5339,
+        "targetWord": "لَبِثْتَ ۖ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿كم لبثت - 259 - ط﴾ .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 333,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 259 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 333
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:259:31:139",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 259,
+        "word": 31,
+        "wordId": 5345,
+        "targetWord": "يَوْمٍۢ ۖ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿يوم - 259 - ط﴾ .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 333,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 259 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 333
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:259:42:140",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 259,
+        "word": 42,
+        "wordId": 5356,
+        "targetWord": "يَتَسَنَّهْ ۖ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿لم يتسنه - 259 - ج﴾ وإن اتفقت الجملتان ، ولكن لوقوع الحال المعترض بينهما ، والنون المشددة التي يتحرى لها هاء الاستراحة ، من جعلها من التنسي جاز الوقف ، ومن وصل حسن له الوقف على ﴿حمارك﴾ بإضمار ما [لنجعلك] .",
+      "old_text": "﴿لم يتسنه - 259 - ج﴾ وإن اتفقت الجملتان ، ولكن لوقوع الحال المعترض بينهما ، والنون\nالمشددة التي يتحرى لها هاء الاستراحة ، من جعلها من التنسي جاز الوقف ، ومن وصل حسن له الوقف على ﴿حمارك﴾ بإضمار ما [لنجعلك] .",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "والنون\nالمشددة",
+          "new_text": "والنون المشددة",
+          "info": "تجميع تعليل موضع الوقف المنقطع بين صفحتي 333 و 334"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 333,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 259 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 333
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:259:56:141",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 259,
+        "word": 56,
+        "wordId": 5370,
+        "targetWord": "لَحْمًۭا ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ لحما - 259 - ط ﴾ لتمام البيان.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 335,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 259 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 335
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:259:59:142",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 259,
+        "word": 59,
+        "wordId": 5373,
+        "targetWord": "لَهُۥ"
+      },
+      "verdict": "لا يوقف",
+      "verdictLabel": "لا",
+      "quote": "﴿ له - 259 - لا ﴾ لأن قوله : ﴿ قال ﴾ جواب ﴿ فلما ﴾.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 335,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 259 - لا",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 335
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:260:0:143",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 260,
+        "word": null,
+        "wordId": null,
+        "targetWord": "الموتى"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ الموتى - 260 - ط ﴾.",
+      "old_text": "﴿ الموق - 260 - ط ﴾.",
+      "fixes": [
+        {
+          "type": "orthography",
+          "basis": "editor_policy",
+          "old_text": "الموق",
+          "new_text": "الموتى",
+          "info": "تصحيح خطأ مطبعي في كلمة الموتى"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "mismatch",
+        "edit_status": "normalized",
+        "mapping_status": "ayah_only",
+        "review_status": "pending"
+      },
+      "text_page": 335,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 260 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 335
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:260:11:144",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 260,
+        "word": 11,
+        "wordId": 5392,
+        "targetWord": "تُؤْمِن ۖ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ تؤمن - 260 - ط ﴾.",
+      "old_text": "﴿ تؤمن - 260 - ط ﴾.",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿ تؤمن - 260 - [انقطاع ص 335-336] ط ﴾.",
+          "new_text": "﴿ تؤمن - 260 - ط ﴾.",
+          "info": "دمج المضع المنقسم بين ص 335 وص 336"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 335,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 260 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 335
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:260:16:145",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 260,
+        "word": 16,
+        "wordId": 5397,
+        "targetWord": "قَلْبِى ۖ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ قلبي - 260 - ط ﴾.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 336,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 260 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 336
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:260:34:146",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 260,
+        "word": 34,
+        "wordId": 5415,
+        "targetWord": "سَعْيًۭا ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ سعيا - 260 - ط ﴾ لاعتراض جواب الأمر بين الجملتين المتفقين.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 336,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 260 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 336
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:261:17:147",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 261,
+        "word": 17,
+        "wordId": 5437,
+        "targetWord": "حَبَّةٍۢ ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ مائة حبة - 261 - ط ﴾.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 336,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 261 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 336
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:261:21:148",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 261,
+        "word": 21,
+        "wordId": 5441,
+        "targetWord": "يَشَآءُ ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ لمن يشاء - 261 - ط ﴾.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 336,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 261 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 336
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:262:14:149",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 262,
+        "word": 14,
+        "wordId": 5458,
+        "targetWord": "أَذًۭى ۙ"
+      },
+      "verdict": "لا يوقف",
+      "verdictLabel": "لا",
+      "quote": "﴿ ولا أذى - 262 - لا ﴾ لأن ﴿ لهم ﴾ خبر ﴿ الذين ﴾",
+      "old_text": "﴿ ولا [انقطاع ص 336-337] أذى - 262 - لا ﴾ لأن ﴿ لهم ﴾ خبر ﴿ الذين ﴾",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿ ولا ... أذى - 262 - لا ﴾",
+          "new_text": "﴿ ولا أذى - 262 - لا ﴾",
+          "info": "دمج الموضع المنقسم بين ص 336 وص 337"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "mismatch",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 336,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 262 - لا",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 336
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:262:18:150",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 262,
+        "word": 18,
+        "wordId": 5462,
+        "targetWord": "رَبِّهِمْ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿ عند ربهم - 262 - ج ﴾ لعطف المختلفين.",
+      "old_text": "عند ربهم - 262 - ج ﴾ لعطف المختلفين.",
+      "fixes": [
+        {
+          "type": "malformed_bracket",
+          "basis": "editor_policy",
+          "old_text": "عند ربهم - 262 - ج ﴾",
+          "new_text": "﴿ عند ربهم - 262 - ج ﴾",
+          "info": "إضافة قوس الفتح الناقص قبل الكلمة"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "mismatch",
+        "edit_status": "normalized",
+        "mapping_status": "mapped",
+        "review_status": "pending"
+      },
+      "text_page": 337,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 262 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 337
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:263:8:151",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 263,
+        "word": 8,
+        "wordId": 5476,
+        "targetWord": "أَذًۭى ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ أذى - 263 - ط ﴾.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 337,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 263 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 337
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:264:0:152",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 264,
+        "word": null,
+        "wordId": null,
+        "targetWord": "الأذى"
+      },
+      "verdict": "لا يوقف",
+      "verdictLabel": "لا",
+      "quote": "﴿ والأذى - 264 - لا ﴾ لتعلق كاف التشبيه ، تقديره : لا تبطلوا إبطالا كإبطال الذي .",
+      "old_text": "﴿ والأذى - 264 - لا ﴾ لتعلق كاف التشبيه ، [انقطاع ص 337-338] تقديره : لا تبطلوا إبطالا كإبطال الذي .",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿ والأذى - 264 - لا ﴾ لتعلق كاف التشبيه ، [انقطاع ص 337-338] تقديره : لا تبطلوا إبطالا كإبطال الذي .",
+          "new_text": "﴿ والأذى - 264 - لا ﴾ لتعلق كاف التشبيه ، تقديره : لا تبطلوا إبطالا كإبطال الذي .",
+          "info": "دمج تعليل الموضع المنقسم بين ص 337 وص 338"
+        }
+      ],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "normalized",
+        "mapping_status": "ayah_only",
+        "review_status": "pending"
+      },
+      "text_page": 337,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 264 - لا",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 337
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:264:18:153",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 264,
+        "word": 18,
+        "wordId": 5497,
+        "targetWord": "ٱلْـَٔاخِرِ ۖ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ الآخر - 264 - ط ﴾.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 338,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 264 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 338
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:264:27:154",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 264,
+        "word": 27,
+        "wordId": 5506,
+        "targetWord": "صَلْدًۭا ۖ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ صلدا - 264 - ط ﴾.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 338,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 264 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 338
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:264:33:155",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 264,
+        "word": 33,
+        "wordId": 5512,
+        "targetWord": "كَسَبُوا۟ ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ مما كسبوا - 264 - ط ﴾.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 338,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 264 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 338
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:265:18:156",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 265,
+        "word": 18,
+        "wordId": 5535,
+        "targetWord": "ضِعْفَيْنِ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿ ضعفين - 265 - ج ﴾ لابتداء الشرط مع فاء التعقيب واتحاد الكلام.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 338,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 265 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 338
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:265:23:157",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 265,
+        "word": 23,
+        "wordId": 5540,
+        "targetWord": "فَطَلٌّۭ ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿ فطل - 265 - ط ﴾.",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 338,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 265 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 338
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:266:6:158",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 266,
+        "word": 6,
+        "wordId": 5550,
+        "targetWord": "جَنَّةٌۭ"
+      },
+      "verdict": "لا يوقف",
+      "verdictLabel": "لا",
+      "quote": "﴿جنة - 266 - لا﴾ لأن ما بعده صفة ﴿جنة﴾ أيضاً .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 339,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 266 - لا",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 339
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:266:18:159",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 266,
+        "word": 18,
+        "wordId": 5562,
+        "targetWord": "ٱلثَّمَرَٰتِ"
+      },
+      "verdict": "لا يوقف",
+      "verdictLabel": "لا",
+      "quote": "﴿الثمرات - 266 - لا﴾ لأن الواو للحال .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 339,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 266 - لا",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 339
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:266:23:160",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 266,
+        "word": 23,
+        "wordId": 5567,
+        "targetWord": "ضُعَفَآءُ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ز",
+      "quote": "﴿ضعفاء - 266 - ز﴾ والوصل أولى ، والوقف على :",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 339,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 266 - ز",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 339
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:266:28:161",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 266,
+        "word": 28,
+        "wordId": 5572,
+        "targetWord": "فَٱحْتَرَقَتْ ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿فاحترقت - 266 - ط﴾ لتناهي مقصود الاستفهام ، أي : أيحب أحدكم احترق جنة صفتها كذا في حال كذا .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 339,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 266 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 339
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:267:13:162",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 267,
+        "word": 13,
+        "wordId": 5592,
+        "targetWord": "ٱلْأَرْضِ ۖ"
+      },
+      "verdict": "حسن",
+      "verdictLabel": "ص",
+      "quote": "﴿من الأرض - 267 - ص﴾ لعطف المتفقين .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 339,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 267 - ص",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 339
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:267:24:163",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 267,
+        "word": 24,
+        "wordId": 5603,
+        "targetWord": "فِيهِ ۚ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿إلا أن تغمضوا فيه - 267 - ط﴾ .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 339,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 267 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 339
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:268:5:164",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 268,
+        "word": 5,
+        "wordId": 5613,
+        "targetWord": "بِٱلْفَحْشَآءِ ۖ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿بالفحشاء - 268 - ج﴾ وإن اتفقت الجملتان ، ولكن للفصل بين تخويف الشيطان الكاذب ، ووعد الله الحق الصادق .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 340,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 268 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 340
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:268:10:165",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 268,
+        "word": 10,
+        "wordId": 5618,
+        "targetWord": "وَفَضْلًۭا ۗ"
+      },
+      "verdict": "تام",
+      "verdictLabel": "ط",
+      "quote": "﴿وفضلا - 268 - ط﴾ .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 340,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 268 - ط",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 340
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:268:13:166",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 268,
+        "word": 13,
+        "wordId": 5621,
+        "targetWord": "عَلِيمٌۭ"
+      },
+      "verdict": "قيل فيه وقف",
+      "verdictLabel": "ق",
+      "quote": "﴿عليم - 268 - ق﴾ قد [يجوز الوصل] على جعل ما بعده صفة .",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 340,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 268 - ق",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 340
+      },
+      "tahqeeq": null
+    },
+    {
+      "id": "Al-Sajawandi-Ilal:2:269:4:167",
+      "bookId": "Al-Sajawandi-Ilal",
+      "kind": "waqf_ruling",
+      "evidenceType": "explicit_cataloged",
+      "section": "wuquf",
+      "position": {
+        "surah": 2,
+        "ayah": 269,
+        "word": 4,
+        "wordId": 5625,
+        "targetWord": "يَشَآءُ ۚ"
+      },
+      "verdict": "جائز",
+      "verdictLabel": "ج",
+      "quote": "﴿من يشاء - 269 - ج﴾ لابتداء الشرط مع العطف ، ومن قرأ : ﴿ومن يؤت الحكمة﴾",
+      "old_text": null,
+      "fixes": [],
+      "trust": {
+        "vlm_vs_shamela": "match",
+        "edit_status": "pristine",
+        "mapping_status": "mapped",
+        "review_status": "affirmed"
+      },
+      "text_page": 340,
+      "mapping_method": "explicit_ayah_number",
+      "matched_anchor": "- 269 - ج",
+      "summary": null,
+      "hasWaqfTerm": true,
+      "span": {
+        "rawFile": "Al-Sajawandi-Ilal-30007.json",
+        "charStart": null,
+        "charEnd": null,
+        "sectionMarker": null,
+        "page": 340
+      },
+      "tahqeeq": null
+    }
+  ],
+  "meta": {
+    "part": 4,
+    "ayah_range": "217-269",
+    "page_range": "299-340",
+    "surah": 2,
+    "surah_name": "سورة البقرة"
+  }
+}

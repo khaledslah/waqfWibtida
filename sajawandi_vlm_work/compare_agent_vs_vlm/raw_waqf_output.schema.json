@@ -1,0 +1,80 @@
+{
+  "$comment": "Immutable VLM raw schema (grilled). Matches EXTRACTION_SYSTEM_PROMPT in extract_sajawandi_local_vlm.py",
+  "type": "object",
+  "required": ["page_numbers", "waqfs"],
+  "properties": {
+    "page_numbers": {
+      "type": "array",
+      "items": { "type": "integer" }
+    },
+    "waqfs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "ayah",
+          "target_word",
+          "verdict_label",
+          "verdict",
+          "text",
+          "text_page",
+          "old_text",
+          "fixes"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "ayah": { "type": "integer" },
+          "target_word": { "type": "string" },
+          "verdict_label": {
+            "type": "string",
+            "enum": ["ط", "م", "ج", "ز", "ص", "لا", "ق"]
+          },
+          "verdict": {
+            "type": "string",
+            "enum": ["تام", "لازم", "جائز", "حسن", "لا يوقف", "قيل فيه وقف"]
+          },
+          "text": { "type": "string" },
+          "text_page": { "type": "integer" },
+          "old_text": { "type": ["string", "null"] },
+          "fixes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["type", "basis", "old_text", "new_text", "info"],
+              "additionalProperties": false,
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "page_split",
+                    "missing_delimiter",
+                    "missing_symbol",
+                    "orthography",
+                    "ayah_number_correction",
+                    "malformed_bracket"
+                  ]
+                },
+                "basis": {
+                  "type": "string",
+                  "enum": ["page_prose", "editor_policy"]
+                },
+                "old_text": { "type": "string" },
+                "new_text": { "type": "string" },
+                "info": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "verdict_mapping": {
+    "ط": "تام",
+    "م": "لازم",
+    "ج": "جائز",
+    "ز": "جائز",
+    "ص": "حسن",
+    "لا": "لا يوقف",
+    "ق": "قيل فيه وقف"
+  }
+}

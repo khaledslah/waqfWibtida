@@ -1,0 +1,348 @@
+{
+  "page_numbers": [386, 387, 388, 389],
+  "waqfs": [
+    {
+      "ayah": 116,
+      "target_word": "النار",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ النار - 116 - ج ﴾.",
+      "text_page": 386,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 117,
+      "target_word": "فأهلكته",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ فأهلكته - 117 - ط ﴾.",
+      "text_page": 386,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 118,
+      "target_word": "خبالا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ خبالا - 118 - ط ﴾.",
+      "text_page": 386,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 118,
+      "target_word": "ماعنتم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ ماعنتم - 118 - ج ﴾ للابتداء بقد، وإضمار واو الحال، أي: ﴿ وقد ﴾.",
+      "text_page": 386,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 118,
+      "target_word": "أفواههم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "[ ﴿ أفواههم - 118 - ج ﴾ والوصل أجوز، لأن الغرض بيان أن مستور بغضائهم أكبر من مظهرها ].",
+      "text_page": 386,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 118,
+      "target_word": "أكبر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ أكبر - 118 - ط ﴾.",
+      "text_page": 386,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 119,
+      "target_word": "كله",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ كله - 119 - ج ﴾ [للعطف مع الحذف، أي: وهم لا يؤمنون بكتبكم].",
+      "text_page": 386,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 119,
+      "target_word": "آمنا",
+      "verdict_label": "ق",
+      "verdict": "قيل فيه وقف",
+      "text": "﴿ آمنا - 119 - ق ﴾ قد قيل، والوصل أولى لأن المقصود بيان تناقض حالهم في النفاق.",
+      "text_page": 386,
+      "old_text": "﴿ آمنا - 119 ﴾\nقد قيل ، والوصل أولى لأن المقصود بيان تناقض حالهم في النفاق .",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ آمنا - 119 ﴾\nقد قيل ، والوصل أولى لأن المقصود بيان تناقض حالهم في النفاق .",
+          "new_text": "﴿ آمنا - 119 - ق ﴾ قد قيل، والوصل أولى لأن المقصود بيان تناقض حالهم في النفاق.",
+          "info": "تجميع الموضع المنقطع بين أسفل صفحة 386 وأعلى صفحة 387"
+        },
+        {
+          "type": "missing_symbol",
+          "basis": "page_prose",
+          "old_text": "﴿ آمنا - 119 ﴾",
+          "new_text": "﴿ آمنا - 119 - ق ﴾",
+          "info": "إضافة رمز الوقف بناء على التعليل الصريح (قد قيل)"
+        }
+      ]
+    },
+    {
+      "ayah": 119,
+      "target_word": "من الغيظ",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ من الغيظ - 119 - ط ﴾.",
+      "text_page": 387,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 119,
+      "target_word": "بغيظكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ بغيظكم - 119 - ط ﴾.",
+      "text_page": 387,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 120,
+      "target_word": "تسؤهم",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "text": "﴿ تسؤهم - 120 - ز ﴾ قد يجوز لابتداء [شرط آخر]، والوصل أجوز، لأن المقصود بيان تضاد حاليهم.",
+      "text_page": 387,
+      "old_text": "﴿ تسؤهم - 120 ﴾ قد يجوز لابتداء [ شرط آخر ] ، والوصل أجوز ، لأن المقصود بيان تضاد حاليهم .",
+      "fixes": [
+        {
+          "type": "missing_symbol",
+          "basis": "page_prose",
+          "old_text": "﴿ تسؤهم - 120 ﴾",
+          "new_text": "﴿ تسؤهم - 120 - ز ﴾",
+          "info": "إضافة الرمز بناء على التعليل الصريح (قد يجوز ... والوصل أجوز)"
+        }
+      ]
+    },
+    {
+      "ayah": 120,
+      "target_word": "يفرحوا بها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ يفرحوا بها - 120 - ط ﴾ لتناهي وصف الذم لهم، وابتداء شرط على المؤمنين.",
+      "text_page": 387,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 120,
+      "target_word": "شيئا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ شيئا - 120 - ط ﴾.",
+      "text_page": 387,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 121,
+      "target_word": "للقتال",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ للقتال - 121 - ط ﴾.",
+      "text_page": 387,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 121,
+      "target_word": "عليم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ عليم - 121 - لا ﴾ لأن ﴿ إذ ﴾ يتعلق بالوصفين، أي: سمع ما أظهروا، وعلم ما أضمروا حين هموا.",
+      "text_page": 387,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 122,
+      "target_word": "أن تفشلا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ أن تفشلا - 122 - لا ﴾ [لأن الواو للحال].",
+      "text_page": 388,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 122,
+      "target_word": "وليهما",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ وليهما - 122 - ط ﴾.",
+      "text_page": 388,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 123,
+      "target_word": "أذلة",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ أذلة - 123 - ج ﴾ للفاء.",
+      "text_page": 388,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 124,
+      "target_word": "منزلين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ منزلين - 124 - ط ﴾ [تمام المقول].",
+      "text_page": 388,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 125,
+      "target_word": "بلى",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ بلى - 125 - لا ﴾ لاتحاد المقول مع ما بعده.",
+      "text_page": 388,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 126,
+      "target_word": "قلوبكم به",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ قلوبكم به - 126 - ط ﴾.",
+      "text_page": 388,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 126,
+      "target_word": "الحكيم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ الحكيم - 126 - لا ﴾ لتعلق اللام بمعنى الفعل في النصر.",
+      "text_page": 388,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 129,
+      "target_word": "وما في الأرض",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ وما في الأرض - 129 - ط ﴾.",
+      "text_page": 388,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 129,
+      "target_word": "ويعذب من يشاء",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ ويعذب من يشاء - 129 - ط ﴾.",
+      "text_page": 389,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 130,
+      "target_word": "مضاعفة",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "text": "﴿ مضاعفة - 130 - ص ﴾ لعطف المتقين.",
+      "text_page": 389,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 130,
+      "target_word": "تفلحون",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ تفلحون - 130 - ج ﴾ للآية مع العطف.",
+      "text_page": 389,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 131,
+      "target_word": "للكافرين",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ للكافرين - 131 - ج ﴾.",
+      "text_page": 389,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 132,
+      "target_word": "ترحمون",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ ترحمون - 132 - ج ﴾، ومن قرأ ﴿ سارعوا ﴾ بغير واو فوقفه [على: ﴿ ترحمون ﴾] مطلق.",
+      "text_page": 389,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 133,
+      "target_word": "والأرض",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ والأرض - 133 - لا ﴾ لأن ما بعده صفة لجنة أيضا، أي: جنة واسعة معدة.",
+      "text_page": 389,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 133,
+      "target_word": "للمتقين",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ للمتقين - 133 - لا ﴾ لأن ﴿ الذين ينفقون ﴾ صفتهم.",
+      "text_page": 389,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 134,
+      "target_word": "عن الناس",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ عن الناس - 134 - ط ﴾.",
+      "text_page": 389,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 134,
+      "target_word": "المحسنين",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ المحسنين - 134 - ج ﴾ لأن ﴿ والذين إذا فعلوا ﴾ يصلح مبتدأ، وخبره ﴿ أولئك جزاؤهم مغفرة ﴾ فلا وقف على ﴿ يعلمون ﴾ [يجعل معطوفا].",
+      "text_page": 389,
+      "old_text": null,
+      "fixes": []
+    }
+  ]
+}

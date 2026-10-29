@@ -1,0 +1,29 @@
+{
+  "pages": "230-233",
+  "surah": 2,
+  "agent_raw": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\batch_230_233.clear_schema_blind.raw.json",
+  "gemini_raw": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\cache\\raw\\batch_230_233.raw.txt",
+  "agent_stats": {
+    "n": 15,
+    "map:mapped": 15,
+    "shamela:mismatch": 1,
+    "edit:pristine": 12,
+    "review:pending": 4,
+    "shamela:match": 14,
+    "review:affirmed": 11,
+    "edit:normalized": 3,
+    "with_fixes": 3
+  },
+  "gemini_stats": {
+    "n": 14,
+    "map:mapped": 14,
+    "shamela:mismatch": 2,
+    "edit:normalized": 4,
+    "review:pending": 4,
+    "with_fixes": 4,
+    "shamela:match": 12,
+    "edit:pristine": 10,
+    "review:affirmed": 10
+  },
+  "outputs_dir": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\full_pipeline_230_233"
+}

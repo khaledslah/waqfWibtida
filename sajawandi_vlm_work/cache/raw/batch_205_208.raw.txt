@@ -1,0 +1,187 @@
+{
+  "page_numbers": [205, 206, 207, 208],
+  "waqfs": [
+    {
+      "ayah": 61,
+      "target_word": "سألتم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ ما سألتم - 61 - ط ﴾",
+      "text_page": 205,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 61,
+      "target_word": "الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ من الله - 61 - ط ﴾",
+      "text_page": 205,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 61,
+      "target_word": "الحق",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ بغير الحق - 61 - ط ﴾",
+      "text_page": 205,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 62,
+      "target_word": "ربهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ عند ربهم - 62 - ط ﴾ لنوع عدول عن إثبات إلى نفي مع اتفاق الجملتين .",
+      "text_page": 205,
+      "old_text": "﴿ عند ربهم - 62 - ط ﴾ ج لنوع عدول عن اثبات إلى نفي مع اتفاق الجملتين .",
+      "fixes": [
+        {
+          "type": "orthography",
+          "basis": "editor_policy",
+          "old_text": "اثبات",
+          "new_text": "إثبات",
+          "info": "تصحيح إملائي بهمزة القطع"
+        }
+      ]
+    },
+    {
+      "ayah": 63,
+      "target_word": "الطور",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ فوقكم الطور - 63 - ط ﴾ لأن التقدير : قلنا لكم ﴿ خذوا ﴾",
+      "text_page": 205,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 64,
+      "target_word": "ذلك",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ من بعد ذلك - 64 - ج ﴾ لأن لولا للابتداء",
+      "text_page": 205,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 65,
+      "target_word": "خاسئين",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ خاسئين - 65 - ج ﴾ للآية ، والعطف بالفاء .",
+      "text_page": 207,
+      "old_text": "﴿ خاستين - 65 - ج ﴾ للآية ، والعطف بالفاء .",
+      "fixes": [
+        {
+          "type": "orthography",
+          "basis": "page_prose",
+          "old_text": "خاستين",
+          "new_text": "خاسئين",
+          "info": "تصحيح خطأ إملائي/تصحيف في أصل الصفحة إلى الرسم القرآني الإملائي المعياري"
+        }
+      ]
+    },
+    {
+      "ayah": 68,
+      "target_word": "ذلك",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ عوان بين ذلك - 68 - ط ﴾ على تقدير : قد بين لكم فافعلوا .",
+      "text_page": 207,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 69,
+      "target_word": "لونها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ ما لونها - 69 - ط ﴾",
+      "text_page": 207,
+      "old_text": "﴿ مالونها - 69 - ط ﴾",
+      "fixes": [
+        {
+          "type": "orthography",
+          "basis": "editor_policy",
+          "old_text": "مالونها",
+          "new_text": "ما لونها",
+          "info": "فصل ما عن لونها وفق الرسم المعياري"
+        }
+      ]
+    },
+    {
+      "ayah": 69,
+      "target_word": "صفراء",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ صفراء - 69 - لا ﴾ آخر الآية لأن الجملة صفة بعد صفة .",
+      "text_page": 207,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 70,
+      "target_word": "هي",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ ما هي - 70 - لا ﴾ لأن التقدير : فإن البقر ، أو لأن البقر ، إيلاء لعذر تكرار",
+      "text_page": 207,
+      "old_text": "﴿ ماهي - 70 - لا ﴾ لأن التقدير : فإن البقر ، أو لأن البقر ، إيلاء لعذر تكرار",
+      "fixes": [
+        {
+          "type": "orthography",
+          "basis": "editor_policy",
+          "old_text": "ماهي",
+          "new_text": "ما هي",
+          "info": "فصل ما النافية/الاستفهامية عن هي"
+        }
+      ]
+    },
+    {
+      "ayah": 67,
+      "target_word": "بقرة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ بقرة - 67 - ط ﴾",
+      "text_page": 208,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 67,
+      "target_word": "هزوا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ هزوا - 67 - ط ﴾",
+      "text_page": 208,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 68,
+      "target_word": "هي",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ ما هي - 68 - ط ﴾",
+      "text_page": 208,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 68,
+      "target_word": "بكر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ ولا بكر - 68 - ط ﴾",
+      "text_page": 208,
+      "old_text": null,
+      "fixes": []
+    }
+  ]
+}

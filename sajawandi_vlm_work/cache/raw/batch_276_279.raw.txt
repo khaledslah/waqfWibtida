@@ -1,0 +1,144 @@
+{
+  "page_numbers": [
+    276,
+    277,
+    278,
+    279
+  ],
+  "waqfs": [
+    {
+      "ayah": 185,
+      "target_word": "العسر",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "text": "﴿ العسر - 185 - ز ﴾ قد يجوز على تقدير : ليسر عليكم ، ولتكملوا العدة ، أو الواو مقحمة تقديره : يريد الله بكم اليسر لتكملوا .",
+      "text_page": 276,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 186,
+      "target_word": "قريب",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ قريب - 186 - ط ﴾ لأن قوله : ﴿ أجيب ﴾ مستأنف . ولو كان وصفا لكان «أجيب»",
+      "text_page": 276,
+      "old_text": "﴿ قريب - 186 - ط ﴾ لأن قوله : ﴿ أجيب",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ قريب - 186 - ط ﴾ لأن قوله : ﴿ أجيب",
+          "new_text": "﴿ قريب - 186 - ط ﴾ لأن قوله : ﴿ أجيب ﴾ مستأنف . ولو كان وصفا لكان «أجيب»",
+          "info": "تكملة تعليل موضع الوقف من الصفحة التالية 277"
+        }
+      ]
+    },
+    {
+      "ayah": 186,
+      "target_word": "دعان",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ دعان - 186 - لا ﴾ للفاء إلا ضرورة [وهو انقطاع النفس] .",
+      "text_page": 277,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 187,
+      "target_word": "نسائكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ إلى نسائكم - 187 - ط ﴾ لأن ﴿ هن ﴾ مبتدأ .",
+      "text_page": 277,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 187,
+      "target_word": "هن",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ هن - 187 - ط ﴾",
+      "text_page": 277,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 187,
+      "target_word": "عنكم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ عنكم - 187 - ج ﴾ لعطف الجملتين المختلفين .",
+      "text_page": 277,
+      "old_text": "﴿ عنكم - 187 - ج ﴾ لعطف الجملتين",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ عنكم - 187 - ج ﴾ لعطف الجملتين",
+          "new_text": "﴿ عنكم - 187 - ج ﴾ لعطف الجملتين المختلفين .",
+          "info": "تكملة تعليل الموضع من الصفحة التالية 278"
+        }
+      ]
+    },
+    {
+      "ayah": 187,
+      "target_word": "عاكفون",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ عاكفون - 187 - لا ﴾ لتعلق الظرف .",
+      "text_page": 278,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 187,
+      "target_word": "المساجد",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ في المساجد - 187 - ط ﴾ لأن ﴿ تلك ﴾ مبتدأ",
+      "text_page": 278,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 187,
+      "target_word": "تقربوها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ فلا تقربوها - 187 - ط ﴾ لأن المختلفتين .",
+      "text_page": 278,
+      "old_text": "﴿ فلا تقربوها - 187 - ط ﴾ لأن",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ فلا تقربوها - 187 - ط ﴾ لأن",
+          "new_text": "﴿ فلا تقربوها - 187 - ط ﴾ لأن المختلفتين .",
+          "info": "تكملة تعليل الموضع من الصفحة التالية 279"
+        }
+      ]
+    },
+    {
+      "ayah": 187,
+      "target_word": "لكم",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "text": "﴿ ما كتب الله لكم - 187 - ص ﴾ لعطف الجملتين المتفقتين مع اتفاق المعنى .",
+      "text_page": 279,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 187,
+      "target_word": "الفجر",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "text": "﴿ من الفجر - 187 - ص ﴾ كذلك .",
+      "text_page": 279,
+      "old_text": null,
+      "fixes": []
+    }
+  ]
+}

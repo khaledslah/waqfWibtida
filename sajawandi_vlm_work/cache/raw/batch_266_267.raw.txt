@@ -1,0 +1,96 @@
+{
+  "page_numbers": [
+    266,
+    267
+  ],
+  "waqfs": [
+    {
+      "ayah": 170,
+      "target_word": "آباءنا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ آباءنا - 170 - ط ﴾ لابتداء الاستفهام .",
+      "text_page": 266,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 171,
+      "target_word": "ونداء",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ ونداء - 171 - ط ﴾ .",
+      "text_page": 266,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 173,
+      "target_word": "لغير الله",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ لغير الله - 173 - ج ﴾ للشرط مع فاء التعقيب .",
+      "text_page": 266,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 173,
+      "target_word": "عليه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ عليه - 173 - ط ﴾ .",
+      "text_page": 266,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 174,
+      "target_word": "قليلا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ قليلا - 174 - لا ﴾ لأن ما بعده خبر أن .",
+      "text_page": 266,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 174,
+      "target_word": "يزكيهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ يزكيهم - 174 - ج ﴾ والوصل أجوز ليتصل بعض جزائهم بالبعض .",
+      "text_page": 266,
+      "old_text": "﴿ يزكيهم - 174 - ج ﴾",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿ يزكيهم - 174 - ج ﴾",
+          "new_text": "﴿ يزكيهم - 174 - ج ﴾ والوصل أجوز ليتصل بعض جزائهم بالبعض .",
+          "info": "إكمال تعليل موضع الوقف المنقطع بين أسفل ص 266 وأعلى ص 267"
+        }
+      ]
+    },
+    {
+      "ayah": 175,
+      "target_word": "بالمغفرة",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿ بالمغفرة - 175 - ج ﴾ لابتداء بالتعجب أو الاستفهام مع [ فاء التعقيب ] ووجه الفصل . أجوز وأوضح للمبالغة في الإنكار .",
+      "text_page": 267,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 176,
+      "target_word": "بالحق",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ بالحق - 176 - ط ﴾ [ لابتداء بيان ] .",
+      "text_page": 267,
+      "old_text": null,
+      "fixes": []
+    }
+  ]
+}

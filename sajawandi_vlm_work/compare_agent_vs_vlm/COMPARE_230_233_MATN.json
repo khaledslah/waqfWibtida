@@ -1,0 +1,46 @@
+{
+  "matn": {
+    "n": 15,
+    "match": 14,
+    "only_a": [
+      [
+        113,
+        "ط",
+        "الكتاب"
+      ]
+    ],
+    "only_v": [],
+    "label": 14,
+    "page": 14,
+    "bracket": 14,
+    "text": 0
+  },
+  "fullpage_strict": {
+    "n": 15,
+    "match": 13,
+    "only_a": [
+      [
+        113,
+        "ط",
+        "الكتاب"
+      ],
+      [
+        115,
+        "ط",
+        "وجهالله"
+      ]
+    ],
+    "only_v": [
+      [
+        115,
+        "ط",
+        "الله"
+      ]
+    ],
+    "label": 13,
+    "page": 13,
+    "bracket": 13,
+    "text": 7
+  },
+  "note": "matn agent put Arabic verdict words in verdict_label; comparison mapped them back to letters"
+}

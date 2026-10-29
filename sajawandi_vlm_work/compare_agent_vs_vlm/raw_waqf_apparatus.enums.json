@@ -1,0 +1,60 @@
+{
+  "$comment": "Enums for margin/apparatus-aware raw trial. Additive to grilled raw_waqf_output.schema.json. Not wired to pipeline yet.",
+  "verdict_label": ["ط", "م", "ج", "ز", "ص", "لا", "ق"],
+  "verdict_label_nullable": true,
+  "verdict": ["تام", "لازم", "جائز", "حسن", "لا يوقف", "قيل فيه وقف"],
+  "verdict_nullable": true,
+  "verdict_mapping": {
+    "ط": "تام",
+    "م": "لازم",
+    "ج": "جائز",
+    "ز": "جائز",
+    "ص": "حسن",
+    "لا": "لا يوقف",
+    "ق": "قيل فيه وقف"
+  },
+  "verdict_status": ["resolved", "unresolved", "contested"],
+  "verdict_resolution_basis": [
+    "matn_symbol",
+    "page_prose",
+    "dual_matn_symbol",
+    "unresolved"
+  ],
+  "fix_type": [
+    "page_split",
+    "missing_delimiter",
+    "missing_symbol",
+    "orthography",
+    "ayah_number_correction",
+    "malformed_bracket"
+  ],
+  "fix_basis": ["page_prose", "editor_policy"],
+  "apparatus_source_kind": ["margin", "matn_aside", "header"],
+  "apparatus_note_kind": [
+    "symbol_witness",
+    "scholar_opinion",
+    "work_citation",
+    "variant",
+    "other"
+  ],
+  "known_scholar_or_work": [
+    "النحاس",
+    "الداني",
+    "الأخفش",
+    "الكسائي",
+    "مكي",
+    "ابن الأنباري",
+    "العكبري",
+    "نسخة أ",
+    "نسخة ب",
+    "unknown"
+  ],
+  "consistency_rules": [
+    "If verdict_status=resolved: verdict_label and verdict non-null; resolution.basis in {matn_symbol, page_prose}",
+    "If verdict_status=unresolved: verdict_label=null, verdict=null; resolution.basis=unresolved",
+    "If verdict_status=contested: keep candidate labels in resolution.candidates[]; verdict_label may be null or primary guess only if page_prose picks one",
+    "missing_symbol fix requires fix.basis=page_prose (never Quran-logic invention)",
+    "apparatus[] never replaces waqfs[]; scholars live only in apparatus",
+    "verdict MUST equal verdict_mapping[verdict_label] when both non-null"
+  ]
+}

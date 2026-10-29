@@ -1,0 +1,189 @@
+{
+  "page_numbers": [288, 289, 290, 291],
+  "waqfs": [
+    {
+      "ayah": 199,
+      "target_word": "واستغفروا الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿واستغفروا الله - 199 - ط﴾",
+      "text_page": 288,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 200,
+      "target_word": "ذكرا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ذكرا - 200 - ط﴾",
+      "text_page": 288,
+      "old_text": "﴿ ذكرا -\n200 - ط ﴾",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿ ذكرا -\n200 - ط ﴾",
+          "new_text": "﴿ذكرا - 200 - ط﴾",
+          "info": "دمج الموضع المنقسم بين صفحتي 288 و289"
+        }
+      ]
+    },
+    {
+      "ayah": 202,
+      "target_word": "مما كسبوا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿مما كسبوا - 202 - ط﴾",
+      "text_page": 289,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 203,
+      "target_word": "معدودات",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿معدودات - 203 - ط﴾ لأن الشرط في بيان حكم آخر.",
+      "text_page": 289,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 203,
+      "target_word": "عليه",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿عليه - 203 الأولى - ج﴾ لابتداء شرط آخر مع العطف.",
+      "text_page": 289,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 203,
+      "target_word": "عليه",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿عليه - 203 الثانية - لا﴾ لتعلق اللام، وإلا وجب أن يكون متعلق اللام بالشرطين المتقدمين، فلا تقف.",
+      "text_page": 289,
+      "old_text": "[ ﴿ عليه - الثاني - لا ﴾ ] (5) لتعلق اللام ، [ وإلا وجب أن يكون متعلق اللام بالشرطين المتقدمين ، فلا تقف ]",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "انقطاع التعليل بين الصفحة 289 و 291",
+          "new_text": "تجميع التعليل كاملاً",
+          "info": "دمج النص المكتمل بين صفحتي 289 و291"
+        },
+        {
+          "type": "malformed_bracket",
+          "basis": "editor_policy",
+          "old_text": "[ ﴿ عليه - الثاني - لا ﴾ ] ... [ وإلا ... تقف ]",
+          "new_text": "﴿عليه - 203 الثانية - لا﴾ لتعلق اللام، وإلا وجب أن يكون متعلق اللام بالشرطين المتقدمين، فلا تقف.",
+          "info": "إزالة أقواس المحقق المربعة الحاصرة للموضع والتعليل"
+        },
+        {
+          "type": "ayah_number_correction",
+          "basis": "editor_policy",
+          "old_text": "﴿ عليه - الثاني - لا ﴾",
+          "new_text": "﴿عليه - 203 الثانية - لا﴾",
+          "info": "إضافة رقم الآية 203 وتنسيق الكلمة الهدف"
+        }
+      ]
+    },
+    {
+      "ayah": 203,
+      "target_word": "اتقى",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿اتقى - 203 - ط﴾ لاختلاف النظم والمعنى.",
+      "text_page": 291,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 204,
+      "target_word": "قلبه",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿قلبه - 204 - لا﴾ لأن الواو للحال.",
+      "text_page": 291,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 205,
+      "target_word": "والنسل",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿والنسل - 205 - ط﴾",
+      "text_page": 291,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 206,
+      "target_word": "جهنم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿جهنم - 206 - ط﴾",
+      "text_page": 291,
+      "old_text": "﴿ جهنم - ... 206 - ط ﴾",
+      "fixes": [
+        {
+          "type": "orthography",
+          "basis": "editor_policy",
+          "old_text": "﴿ جهنم - ... 206 - ط ﴾",
+          "new_text": "﴿جهنم - 206 - ط﴾",
+          "info": "تصحيح تفكك الرمز ورقم الآية عن كلمة الوقف في الطبع"
+        }
+      ]
+    },
+    {
+      "ayah": 207,
+      "target_word": "مرضات الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿مرضات الله - 207 - ط﴾",
+      "text_page": 291,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 208,
+      "target_word": "كافة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿كافة - 208 - ط﴾",
+      "text_page": 291,
+      "old_text": "﴿ كافة - 206 - ط ﴾",
+      "fixes": [
+        {
+          "type": "ayah_number_correction",
+          "basis": "editor_policy",
+          "old_text": "﴿ كافة - 206 - ط ﴾",
+          "new_text": "﴿كافة - 208 - ط﴾",
+          "info": "تصحيح رقم الآية لآية (ادخلوا في السلم كافة) من 206 إلى 208"
+        }
+      ]
+    },
+    {
+      "ayah": 208,
+      "target_word": "الشيطان",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿الشيطان - 208 - ط﴾ مع احتمال الجواز وتعليل ما قبلها.",
+      "text_page": 291,
+      "old_text": "﴿ الشيطان - 208 - ط ﴾ (4) مع احتمال الجواز [ وتعليل ما قبلها ]",
+      "fixes": [
+        {
+          "type": "malformed_bracket",
+          "basis": "editor_policy",
+          "old_text": "[ وتعليل ما قبلها ]",
+          "new_text": "وتعليل ما قبلها",
+          "info": "إزالة الأقواس المربعة لإدراج التعليل ضمن النص التأسيسي للمصنف"
+        }
+      ]
+    }
+  ]
+}

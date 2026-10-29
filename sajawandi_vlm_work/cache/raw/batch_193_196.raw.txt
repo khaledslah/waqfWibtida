@@ -1,0 +1,135 @@
+{
+  "page_numbers": [193, 194, 195, 196],
+  "waqfs": [
+    {
+      "ayah": 26,
+      "target_word": "ربهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿من ربهم - 26 - ج﴾ لأن الجملتين وإن اتفقتا فكلمة ﴿أما﴾ للتفصيل بين الجمل",
+      "text_page": 193,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 26,
+      "target_word": "مثلا",
+      "verdict_label": "م",
+      "verdict": "لازم",
+      "text": "﴿مثلا - 26 - م﴾ لأنه لو وصل صار ما بعده صفة له، ليس بصفة، وإنما هو ابتداء إخبار من الله عز وجل جوابا لهم.",
+      "text_page": 193,
+      "old_text": "﴿مثلا - 26 - م﴾ لأنه",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿مثلا - 26 - م﴾ لأنه",
+          "new_text": "﴿مثلا - 26 - م﴾ لأنه لو وصل صار ما بعده صفة له، ليس بصفة، وإنما هو ابتداء إخبار من الله عز وجل جوابا لهم.",
+          "info": "إكمال تعليل الموضع المنقطع بين صفحتي 193 و194"
+        }
+      ]
+    },
+    {
+      "ayah": 26,
+      "target_word": "كثيرا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ويهدي به كثيرا - 26 - ط﴾",
+      "text_page": 194,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 26,
+      "target_word": "الفاسقين",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿الفاسقين - 26 - لا﴾ لأن الذين صفة لهم.",
+      "text_page": 194,
+      "old_text": "﴿الفاسقين - 26 - لا﴾ لأن",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿الفاسقين - 26 - لا﴾ لأن",
+          "new_text": "﴿الفاسقين - 26 - لا﴾ لأن الذين صفة لهم.",
+          "info": "إكمال تعليل الموضع المنقطع بين صفحتي 194 و195"
+        }
+      ]
+    },
+    {
+      "ayah": 27,
+      "target_word": "ميثاقه",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "text": "﴿ميثاقه - 27 - ص﴾ لعطف المتفقين",
+      "text_page": 195,
+      "old_text": "﴿الذين صفةلهم ميثاقه - 27 - ص﴾ لعطف المتفقين",
+      "fixes": [
+        {
+          "type": "malformed_bracket",
+          "basis": "page_prose",
+          "old_text": "﴿الذين صفةلهم ميثاقه - 27 - ص﴾",
+          "new_text": "﴿ميثاقه - 27 - ص﴾",
+          "info": "تصحيح الحاصرة بفك إقحام تعليل الموضع السابق داخل حاصرة الموضع الحالي"
+        }
+      ]
+    },
+    {
+      "ayah": 27,
+      "target_word": "الأرض",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿في الأرض - 27 - ط﴾",
+      "text_page": 195,
+      "old_text": "في الأرض - 27 - ط﴾",
+      "fixes": [
+        {
+          "type": "missing_delimiter",
+          "basis": "editor_policy",
+          "old_text": "في الأرض - 27 - ط﴾",
+          "new_text": "﴿في الأرض - 27 - ط﴾",
+          "info": "إضافة قوس الفتح لآية الوقف"
+        }
+      ]
+    },
+    {
+      "ayah": 28,
+      "target_word": "فأحياكم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿فأحياكم - 28 - ج﴾ للعدول، أي: ثم هو يميتكم، مع اتحاد مقصود الكلام.",
+      "text_page": 195,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 29,
+      "target_word": "سموات",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿سموات - 29 - ط﴾",
+      "text_page": 195,
+      "old_text": "﴿سموات - 29 -",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿سموات - 29 -",
+          "new_text": "﴿سموات - 29 - ط﴾",
+          "info": "إكمال القوس ورمز الوقف المنقطع في بداية الصفحة التالية 196"
+        }
+      ]
+    },
+    {
+      "ayah": 30,
+      "target_word": "خليفة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿خليفة - 30 - ط﴾ لأن ما بعده ﴿إذ﴾ ابتداء إخبار في إظهار أسرار، فكان عامل إذ محذوفا، أي: واذكر إذ.",
+      "text_page": 196,
+      "old_text": null,
+      "fixes": []
+    }
+  ]
+}

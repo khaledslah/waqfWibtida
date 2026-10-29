@@ -1,0 +1,378 @@
+{
+  "page_numbers": [
+    564,
+    565,
+    566,
+    567
+  ],
+  "waqfs": [
+    {
+      "ayah": 1,
+      "target_word": "الر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿الر - 1 - ط﴾ كوفي .",
+      "text_page": 564,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 2,
+      "target_word": "ربهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿عند ربهم - 2 - ط﴾ .",
+      "text_page": 564,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 3,
+      "target_word": "الأمر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿يدبر الأمر - 3 - ط﴾ .",
+      "text_page": 564,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 3,
+      "target_word": "إذنه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿إذنه - 3 - ط﴾ .",
+      "text_page": 564,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 3,
+      "target_word": "فاعبدوه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿فاعبدوه - 3 - ط﴾ .",
+      "text_page": 564,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 4,
+      "target_word": "جميعاً",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿جميعاً - 4 - ط﴾ .",
+      "text_page": 564,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 4,
+      "target_word": "حقا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿حقا - 4 - ط﴾ إلا لمن قرأ : ﴿أنه﴾ بالفتح ، أي : لأنه ، أو بأنه ، وقرأ الباقون بكسر الهمزة على الاستئناف .",
+      "text_page": 564,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 4,
+      "target_word": "بالقسط",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿بالقسط - 4 - ط﴾ .",
+      "text_page": 565,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 5,
+      "target_word": "والحساب",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿والحساب - 5 - ط﴾ .",
+      "text_page": 565,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 5,
+      "target_word": "بالحق",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿إلا بالحق - 5 - ط﴾ ﴿لا﴾ لمن قرأ ﴿نفصل﴾ بالنون ، ومن قرأ بالياء أمكنه أن يجعل ﴿يفصل﴾ حالاً .",
+      "text_page": 565,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 7,
+      "target_word": "غافلون",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿غافلون - 7 - لا﴾ لأن ﴿أولئك﴾ خبر ﴿إن﴾ .",
+      "text_page": 565,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 9,
+      "target_word": "بآياتهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿بآياتهم - 9 - ج﴾ للحذف ، تقديره : يهديهم ربهم بإيمانهم إلى دار البقاء ، مع اتحاد المقصود وتمام الموعود .",
+      "text_page": 565,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 10,
+      "target_word": "سلام",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿سلام - 10 - ج﴾ لأن الجملتين وإن اتفقتا فقد اعترضت جملة معطوفة أخرى ، لأن قوله : ﴿وآخر﴾ معطوف على ﴿دعواهم﴾ الأول .",
+      "text_page": 565,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 11,
+      "target_word": "أجلهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿أجلهم - 11 - ط﴾ لأن المستقبل لا ينعطف على الماضي ، تقديره : ونحن نذر .",
+      "text_page": 565,
+      "old_text": "﴿أجلهم - 11 - ط﴾ لأن المستقبل",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿أجلهم - 11 - ط﴾ لأن المستقبل",
+          "new_text": "﴿أجلهم - 11 - ط﴾ لأن المستقبل لا ينعطف على الماضي ، تقديره : ونحن نذر .",
+          "info": "تكملة تعليل الموضع من أعلى الصفحة التالية (566)"
+        }
+      ]
+    },
+    {
+      "ayah": 12,
+      "target_word": "قائما",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿أو قائما - 12 - ج﴾ .",
+      "text_page": 566,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 12,
+      "target_word": "مسه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿مسه - 12 - ط﴾ .",
+      "text_page": 566,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 13,
+      "target_word": "ظلموا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿ظلموا - 13 - لا﴾ لأن الواو للحال ، أي : وقد جاءتهم .",
+      "text_page": 566,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 13,
+      "target_word": "جاءتهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿جاءتهم - 13 - ط﴾ .",
+      "text_page": 566,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 13,
+      "target_word": "ليؤمنوا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ليؤمنوا - 13 - ط﴾ .",
+      "text_page": 566,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 15,
+      "target_word": "بينات",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿بينات - 15 - لا﴾ لأن ﴿قال الذين﴾ جواب ﴿إذا﴾ .",
+      "text_page": 566,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 15,
+      "target_word": "بدله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿أو بدله - 15 - ط﴾ .",
+      "text_page": 566,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 15,
+      "target_word": "نفسي",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿نفسي - 15 - ج﴾ لأن ﴿أن﴾ النافية مصدرة ، ولكن القائل متحد .",
+      "text_page": 566,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 15,
+      "target_word": "إلي",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿إلي - 15 - ج﴾ لأن ﴿أن﴾ للابتداء ، والقائل متحد .",
+      "text_page": 566,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 16,
+      "target_word": "به",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "text": "﴿به - 16 - ز﴾ [ قد قيل ] إلا أن الوصل أولى للفاء ، ولشدة اتصال المعنى .",
+      "text_page": 566,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 16,
+      "target_word": "قبله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿من قبله - 16 - ط﴾ .",
+      "text_page": 566,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 17,
+      "target_word": "بآياته",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿بآياته - 17 - ط﴾ .",
+      "text_page": 566,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 18,
+      "target_word": "الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿عند الله - 18 - ط﴾ .",
+      "text_page": 567,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 18,
+      "target_word": "الأرض",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿ولا في الأرض - 18 - ط﴾ .",
+      "text_page": 567,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 19,
+      "target_word": "فاختلفوا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿فاختلفوا - 19 - ط﴾ .",
+      "text_page": 567,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 20,
+      "target_word": "ربه",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿من ربه - 20 - ج﴾ لأن الأمر يبدأ به مع دخول الفاء فيه .",
+      "text_page": 567,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 20,
+      "target_word": "فانتظروا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿فانتظروا - 20 - ج﴾ لأن ﴿أن﴾ للابتداء ، ولكن الجملتين اتحدتا معنى ، فكان التقدير : فإني معكم .",
+      "text_page": 567,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 21,
+      "target_word": "آياتنا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿في آياتنا - 21 - ط﴾ .",
+      "text_page": 567,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 21,
+      "target_word": "مكرا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿مكرا - 21 - ط﴾ وإن قرأ ﴿يمكرون﴾ بالياء فالوقف أوجه لأن الجملة لا تكون من المقول .",
+      "text_page": 567,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 22,
+      "target_word": "والبحر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "text": "﴿والبحر - 22 - ط﴾ لأن ﴿حتى﴾ للابتداء إذا كان بعدها إذا ، إلا قوله : ﴿حتى إذا بلغوا النكاح﴾ فإنها لانتهاء الابتداء .",
+      "text_page": 567,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 22,
+      "target_word": "الفلك",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "text": "﴿في الفلك - 22 - ج﴾ للعدول مع أن جواب ﴿إذا﴾ منتظر ، وهو ﴿جاءتها﴾ .",
+      "text_page": 567,
+      "old_text": null,
+      "fixes": []
+    },
+    {
+      "ayah": 22,
+      "target_word": "بهم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "text": "﴿أحيط بهم - 22 - لا﴾ لأن قوله : ﴿دعوا الله﴾ من بيان حالهم ووجه اتصاله .",
+      "text_page": 567,
+      "old_text": null,
+      "fixes": []
+    }
+  ]
+}

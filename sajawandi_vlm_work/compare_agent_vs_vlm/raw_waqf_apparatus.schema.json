@@ -26,7 +26,7 @@
         "additionalProperties": false,
         "properties": {
           "ayah": { "type": "integer" },
-          "target_word": { "type": "string" },
+          "target_word": { "type": "string", "description": "Full phrase inside the bracket before the first dash, exactly as printed (not shortened to the last word)" },
           "verdict_label": {
             "type": ["string", "null"],
             "enum": ["ط", "م", "ج", "ز", "ص", "لا", "ق", null],

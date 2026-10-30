@@ -3,10 +3,11 @@ BLIND matn+margin apparatus extract pages {{PAGE_START}}-{{PAGE_END}}.
 Read schema: {{SCHEMA_PATH}}
 Read enums/meanings: {{ENUMS_PATH}} and {{MEANINGS_PATH}}
 
-ATTACHED per page:
+IMAGES (NOT attached — open them yourself with Read, in the phase order below), all in {{IMAGE_DIR}}:
 - page_N_matn.png — catalog matn
-- page_N_margin.png — footnotes
+- page_N_margin.png — footnotes (everything below the matn, incl. the short rule and page number)
 {{NEXT_PAGE_NOTE}}
+{{PAGE_NOTES}}
 
 FORBIDDEN: crop/OCR/Shell image/HTTP/cache raw/other blind json.
 FORBIDDEN: computer-use / browser workarounds.
@@ -17,7 +18,8 @@ DO NOT write `suggested` — that is pass 3, a separate run.
 1. Read every page_N_matn.png. Do NOT open margin images yet.
 2. Catalog every waqf bracket from matn only.
 3. Resolve page_splits / malformed brackets with fixes[] from matn evidence only.
-4. Set ayah, target_word, verdict_label, verdict, margin_ref, text, text_page from matn only.
+4. target_word = the FULL phrase inside the bracket before the first dash, exactly as printed (e.g. ﴿ولكم ما كسبتم - 134 - ج﴾ → "ولكم ما كسبتم"; never shorten it to its last word).
+   Set ayah, target_word, verdict_label, verdict, margin_ref, text, text_page from matn only.
 5. verdict_label + verdict may be null together if the letter is unresolved in matn — leave null; do NOT invent; do NOT peek at margin.
 6. margin_ref:
    a. If a footnote number touches the closing ﴾ → that number (Western int).

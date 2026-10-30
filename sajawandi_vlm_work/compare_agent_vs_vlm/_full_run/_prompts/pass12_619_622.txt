@@ -1,0 +1,63 @@
+BLIND matn+margin apparatus extract pages 619-622.
+
+Read schema: D:\AI_Projects\waqfWibtida2\sajawandi_vlm_work\compare_agent_vs_vlm\raw_waqf_apparatus.schema.json
+Read enums/meanings: D:\AI_Projects\waqfWibtida2\sajawandi_vlm_work\compare_agent_vs_vlm\raw_waqf_apparatus.enums.json and D:\AI_Projects\waqfWibtida2\sajawandi_vlm_work\compare_agent_vs_vlm\APPARATUS_ENUM_MEANINGS.md
+
+IMAGES (NOT attached — open them yourself with Read, in the phase order below), all in D:\AI_Projects\waqfWibtida2\sajawandi_vlm_work\compare_agent_vs_vlm\_full_run\crops:
+- page_N_matn.png — catalog matn
+- page_N_margin.png — footnotes (everything below the matn, incl. the short rule and page number)
+- page_623_margin.png — ONLY for '=' continuations of notes on page 622 (do NOT extract any waqf from page 623).
+
+
+FORBIDDEN: crop/OCR/Shell image/HTTP/cache raw/other blind json.
+FORBIDDEN: computer-use / browser workarounds.
+ALLOWED: re-Read the same attached matn/margin PNGs as many times as needed (no guessing).
+DO NOT write `suggested` — that is pass 3, a separate run.
+
+## PHASE 1 — MATN ONLY (do this first; ignore margin images)
+1. Read every page_N_matn.png. Do NOT open margin images yet.
+2. Catalog every waqf bracket from matn only.
+3. Resolve page_splits / malformed brackets with fixes[] from matn evidence only.
+4. target_word = the FULL phrase inside the bracket before the first dash, exactly as printed (e.g. ﴿ولكم ما كسبتم - 134 - ج﴾ → "ولكم ما كسبتم"; never shorten it to its last word).
+   Set ayah, target_word, verdict_label, verdict, margin_ref, text, text_page from matn only.
+5. verdict_label + verdict may be null together if the letter is unresolved in matn — leave null; do NOT invent; do NOT peek at margin.
+6. margin_ref:
+   a. If a footnote number touches the closing ﴾ → that number (Western int).
+   b. Else take the FIRST footnote number you meet inside this waqf's own reasoning clause (e.g. «لأن ﴿الذين﴾ صفتهم(1)» → 1).
+   c. Else null.
+7. text = ONLY this waqf: its bracket(s) plus its own reasoning clause, e.g.
+   "﴿أمنتم﴾ وقفه لحق الحذف، ولابتداء الشرط في حكم آخر وهو التمتع."
+   Never include neighbouring waqf brackets (those get their own entries).
+8. Dual letters in matn (e.g. ج ز): pick the primary visible letter for verdict_label per schema; keep both in text. Do not use margin to choose.
+9. Freeze the Phase-1 catalog before Phase 2. apparatus[] stays [] until Phase 2.
+
+## PHASE 2 — MARGIN ONLY (after Phase 1 is frozen)
+Read page_N_margin.png only. Join notes by margin_ref. Do not re-catalog brackets from margin prose.
+
+### 2A — missing symbol (only if Phase-1 verdict_label is null)
+- For each waqf with verdict_label == null AND margin_ref != null: find margin note (N).
+- If that note states a Sajawandi letter: set verdict_label + verdict, add missing_symbol fix / symbol_witness (basis=page_prose) as schema allows.
+- If matn already had a letter: never overwrite it from margin; MS mark differences go in opinion comment only.
+
+### 2B — continuation notes ("=")
+- A margin note that ENDS with "=" continues on the NEXT page: that page's margin begins with a "=" block.
+- If that next page's margin is attached, merge the continuation into the note's raw_text, extract opinions from the combined note, and set continuation = {"status":"read","page":<next page>}.
+- If the next page's margin is not available, keep what you have and set continuation = {"status":"missing","page":null}.
+- A "=" block at the very top of the FIRST page's margin continues a note from the previous page; ignore it (its waqf is not in this batch).
+- Notes that do not end with "=": continuation = null.
+
+### 2C — opinions
+- apparatus ONLY when margin_ref != null AND margin has the same (N) note; else [].
+- Split each scholar into one opinions[] row. opinion.verdict = final word (حسن/كاف/تام/…), NOT a letter.
+- opinion.scholar: (1) if the person is in the canonical list, use that EXACT spelling (map variants/kunyas via scholar_alias_hints); (2) if not in the list, write the name as printed in the note in its short common form, no honorifics (e.g. أبو حيان, نافع, أبو حاتم) — do NOT use "unknown" for a named person; (3) "unknown" ONLY when the note gives no name at all (قيل / بعضهم / غيره) or it is unreadable.
+- fixes[] not singular fix; old_text null iff fixes=[].
+
+Write UTF-8 no BOM: D:\AI_Projects\waqfWibtida2\sajawandi_vlm_work\compare_agent_vs_vlm\_full_run\out\batch_619_622.apparatus_v4.raw.json
+source=apparatus_v4_619_622. Return count + tuples (ayah,label|null,target,page,margin_ref|null,n_opinions).
+Also return a one-line note: phase1_waqf_count, null labels Phase 2A filled, continuations read/missing.
+
+EXTRA:
+- Images only under D:\AI_Projects\waqfWibtida2\sajawandi_vlm_work\compare_agent_vs_vlm\_full_run\crops.
+- Write ONLY batch_619_622.apparatus_v4.raw.json; never touch other files. Do NOT read any other JSON in this repo except the schema/enums/meanings above.
+- Strict order: Phase 1 on all matn images before any margin Read.
+- If the target output file already exists, STOP and report (never overwrite).

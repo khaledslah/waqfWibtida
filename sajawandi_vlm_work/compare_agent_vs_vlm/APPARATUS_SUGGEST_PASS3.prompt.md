@@ -18,7 +18,7 @@ RULES
 5. scholars[] copies the exact `opinions[].scholar` strings from the input (canonical names or names as printed; skip "unknown"); [] if none.
 6. If nothing is warranted for a note, omit it (do not emit empty suggestions).
 7. Do not invent scholars or opinions that are not in the input.
-
+8. In each suggestion, margin_ref and text_page are copied from the apparatus NOTE (waqfs[].apparatus[i]), NOT from the waqf object; ayah and target_word are copied from the waqf exactly.
 OUTPUT FORMAT (UTF-8 no BOM):
 {
   "source": "{{SOURCE}}",

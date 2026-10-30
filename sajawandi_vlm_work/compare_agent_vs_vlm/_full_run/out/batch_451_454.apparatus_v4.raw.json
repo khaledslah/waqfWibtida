@@ -1,0 +1,774 @@
+{
+  "source": "apparatus_v4_451_454",
+  "page_numbers": [451, 452, 453, 454],
+  "waqfs": [
+    {
+      "ayah": 31,
+      "target_word": "سوءة أخي",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿سوءة أخي - ٣١ - ج﴾ لطول ما اعترض بين(١) المعطوف والمعطوف عليه(٢).",
+      "text_page": 451,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 451,
+          "raw_text": "(١) ب: [به].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 31,
+      "target_word": "النادمين",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿النادمين - ٣١ - ج﴾",
+      "text_page": 451,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 32,
+      "target_word": "من أجل ذلك",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 3,
+      "text": "﴿من أجل ذلك - ٣٢ - ج﴾(٣) كذلك [أي: هما جائزان على سبيل البدل لا على سبيل الاجتماع](٤)، لأن ﴿من أجل﴾ يصلح بقوله: ﴿فأصبح﴾، ويصلح بقوله: ﴿كتبنا﴾، وعلى ﴿أجل ذلك﴾ أجوز(٥)، لأن ندمه من أجل أنه لم يوار أظهر(٦).",
+      "text_page": 451,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 451,
+          "raw_text": "(٣) ب: علامة الوقف: [ط]، وفي ج، د: علامة الوقف ساقطة.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "unknown",
+              "verdict": "تام",
+              "comment": "في نسخة ب علامة الوقف ط، وفي ج ود العلامة ساقطة. رمز المتن ج لا يُبدَّل.",
+              "book": null,
+              "book_ref": null
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "النادمين",
+                "trigger": "meaning_change",
+                "reason": "إن عُلّقت ﴿من أجل﴾ بـ﴿كتبنا﴾ وُقف على النادمين، وهما جائزان على سبيل البدل لا الاجتماع.",
+                "scholars": []
+              },
+              {
+                "target_word": "من أجل ذلك",
+                "trigger": "meaning_change",
+                "reason": "إن عُلّقت ﴿من أجل﴾ بـ﴿فأصبح﴾ وُقف على من أجل ذلك، والوقف عليه أجوز لظهور الندم.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "من أجل ذلك",
+                "trigger": "meaning_change",
+                "reason": "الابتداء به يجعل ﴿من﴾ صلة لـ﴿كتبنا﴾ في حكم جديد.",
+                "scholars": []
+              },
+              {
+                "start_word": "كتبنا",
+                "trigger": "meaning_change",
+                "reason": "إن وُقف على من أجل ذلك كان الابتداء بـ﴿كتبنا﴾ على أن ﴿من﴾ متعلقة بما قبلها.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 32,
+      "target_word": "جميعا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿جميعا - ٣٢ - ط﴾ [الأولى](١).",
+      "text_page": 452,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 452,
+          "raw_text": "(١) أ، د: [(جميعا - ط)]، وفي ب: [(جميعا - الأول ط)].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 32,
+      "target_word": "جميعا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 2,
+      "text": "﴿جميعا - ٣٢ - ط﴾ [الثانية](٢).",
+      "text_page": 452,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 452,
+          "raw_text": "(٢) ج: ما بين المعقوفين غير مثبت.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 32,
+      "target_word": "بالبينات",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 3,
+      "text": "﴿بالبينات - ٣٢ - ز﴾(٣) لأن ثم لترتيب الأخبار.",
+      "text_page": 452,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 452,
+          "raw_text": "(٣) أ: علامة الوقف: [ج]، والصواب ما أثبتناه لدلالة ما بعده عليه. والوقف هنا جائز عند الأشموني. انظر: المنار (١١٩). أما ابن الأنباري في الإيضاح ٢/٦١٨، والنحاس في القطع (٢٨٦)، والداني في المكتفى (٢٣٩)، والأنصاري في المقصد (١١٩) فلم يذكروا هنا وقفا.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأشموني",
+              "verdict": "جائز",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "119"
+            },
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "2/618"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "286"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "239"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "119"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "بالبينات",
+                "trigger": "scholars_disagree",
+                "reason": "الوقف جائز عند الأشموني، ولم يذكره ابن الأنباري والنحاس والداني والأنصاري.",
+                "scholars": ["الأشموني"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "ثم",
+                "trigger": "meaning_change",
+                "reason": "﴿ثم﴾ لترتيب الأخبار، فالابتداء بها يفصل الخبر الثاني عن ﴿بالبينات﴾.",
+                "scholars": ["الأشموني"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 33,
+      "target_word": "من الأرض",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من الأرض - ٣٣ - ط﴾",
+      "text_page": 452,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 33,
+      "target_word": "عظيم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿عظيم - ٣٣ - لا﴾ للاستثناء.",
+      "text_page": 452,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 34,
+      "target_word": "تقدروا عليهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "﴿تقدروا عليهم - ٣٤ - ج﴾(٤) لتناهي الاستثناء مع فاء الجواب، يعني لا تقطعوا التائب فإن الله غفور رحيم.",
+      "text_page": 452,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 452,
+          "raw_text": "(٤) ج: [الاستفهام] وهو خطأ.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 36,
+      "target_word": "منهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 5,
+      "text": "﴿منهم - ٣٦ - ج﴾(٥) لتناهي الشرط مع اتحاد مقصود الكلام.",
+      "text_page": 452,
+      "old_text": "﴿منهم - ٣٦ - ج﴾(٥) لتناهي الشرط مع",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "لتناهي الشرط مع",
+          "new_text": "لتناهي الشرط مع اتحاد مقصود الكلام.",
+          "info": "تتمة العلة في صدر صفحة 453"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 452,
+          "raw_text": "(٥) د: ورد قبلها لفظ: [معنى]. وقال السمين في الدر المصون ٤/٢٥٣: [و﴿ما﴾ نافية، وهي جواب ﴿لو﴾، وجاء على الأكثر من كون الجواب المنفي بغير لام، والجملة الامتناعية في محل رفع خبرا لـ﴿إن﴾].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "السمين",
+              "verdict": "جائز",
+              "comment": "ما نافية وهي جواب لو، والجملة الامتناعية في محل رفع خبر لإن",
+              "book": "الدر المصون",
+              "book_ref": "4/253"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "منهم",
+                "trigger": "meaning_change",
+                "reason": "ينتهي الشرط عند منهم مع اتحاد مقصود الكلام، فالوقف يفصل طرفي المقصود الواحد.",
+                "scholars": ["السمين"]
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 37,
+      "target_word": "منها",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿منها - ٣٧ - ج﴾(١) قد يجوز لاختلاف الجملتين مع اتحاد مقصود الكلام.",
+      "text_page": 453,
+      "old_text": "﴿منها - ٣٧﴾(١) قد يجوز لاختلاف الجملتين مع اتحاد مقصود الكلام.",
+      "fixes": [
+        {
+          "type": "missing_symbol",
+          "basis": "page_prose",
+          "old_text": "﴿منها - ٣٧﴾",
+          "new_text": "﴿منها - ٣٧ - ج﴾",
+          "info": "في نسختي أ وب علامة الوقف ج، وقال المحقق الصواب حذفها لدلالة ما بعده عليه"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 453,
+          "raw_text": "(١) أ، ب: بإثبات علامة الوقف: [ج]، والصواب حذفها لدلالة ما بعده عليه.",
+          "continuation": null,
+          "symbol_witness": {
+            "verdict_label": "ج",
+            "basis": "page_prose",
+            "witness": "أ، ب",
+            "info": "الصواب حذفها لدلالة ما بعده عليه"
+          },
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "منها",
+                "trigger": "meaning_change",
+                "reason": "قد يجوز الوقف لاختلاف الجملتين مع اتحاد مقصود الكلام، وفي أ وب علامة ج والمحقق حذفها لدلالة ما بعده.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 38,
+      "target_word": "نكالا من الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿نكالا من الله - ٣٨ - ط﴾",
+      "text_page": 453,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 39,
+      "target_word": "يتوب عليه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿يتوب عليه - ٣٩ - ط﴾",
+      "text_page": 453,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 40,
+      "target_word": "ويغفر لمن يشاء",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ويغفر لمن يشاء - ٤٠ - ط﴾",
+      "text_page": 453,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 41,
+      "target_word": "قلوبهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿قلوبهم - ٤١ - ج﴾ أي: ومن الذين هادوا قوم سماعون، وإن شئت عطفت ﴿ومن الذين هادوا﴾ على ﴿من الذين﴾(٢) [قالوا آمنا]، ووقفت على ﴿هادوا﴾ واستأنفت بقوله: ﴿سماعون﴾ أي: هم سماعون راجعا إلى الفئتين، والأول أجود(٣) لأن التحريف محكي عنهم، وهو مختص(٤) باليهود.",
+      "text_page": 453,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 453,
+          "raw_text": "(٢) د: ما بين المعقوفين غير مثبت.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "هادوا",
+                "trigger": "meaning_change",
+                "reason": "على العطف يُوقف على هادوا، والأول أجود لأن التحريف محكي عن اليهود.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "سماعون",
+                "trigger": "meaning_change",
+                "reason": "إن وُقف على هادوا استُؤنف بسماعون، أي هم سماعون راجعا إلى الفئتين.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 41,
+      "target_word": "آخرين",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 5,
+      "text": "﴿آخرين - ٤١ - لا﴾ لأن الجملة بعده صفة لهم(٥).",
+      "text_page": 453,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 453,
+          "raw_text": "(٥) وضح هذا السمين في الدر المصون ٤/٢٦٨ حيث قال: [و﴿لم يأتوك﴾ في محل جر، لأنه صفة لـ﴿قوم﴾]. وانظر: إعراب القرآن للعكبري ١/٢١٥.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "السمين",
+              "verdict": "لا يوقف",
+              "comment": "لم يأتوك في محل جر لأنه صفة لقوم",
+              "book": "الدر المصون",
+              "book_ref": "4/268"
+            },
+            {
+              "scholar": "العكبري",
+              "verdict": "لا يوقف",
+              "comment": "إحالة على إعراب القرآن في كون الجملة صفة",
+              "book": "إعراب القرآن",
+              "book_ref": "1/215"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "آخرين",
+                "trigger": "meaning_change",
+                "reason": "الوقف عليه يفصل ﴿لم يأتوك﴾ عن كونها صفة لقوم.",
+                "scholars": ["السمين", "العكبري"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "لم يأتوك",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بلم يأتوك يقطعها عن الصفة.",
+                "scholars": ["السمين", "العكبري"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 41,
+      "target_word": "لم يأتوك",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿لم يأتوك - ٤١ - ط﴾",
+      "text_page": 453,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 41,
+      "target_word": "من بعد مواضعه",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿من بعد مواضعه - ٤١ - ج﴾ لأن قوله: ﴿يقولون﴾ يصلح حالاً، لقوله(١): ﴿يحرفون﴾، ويصلح مستأنفاً(٢).",
+      "text_page": 454,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 454,
+          "raw_text": "(١) ب: [كقوله]، وما أثبتناه هو مراد المؤلف، لأنه رجح أن جملة: ﴿يحرفون﴾ مستأنفة، حيث ذكر أن الوقف على: ﴿لم يأتوك﴾ مطلق. وقد ذكر العكبري في إملائه ١/٢١٥، ٢١٦ أن جملة: ﴿يحرفون﴾ يجوز أن تكون حالاً من الضمير في ﴿سماعون﴾، ومثلها جملة: ﴿يقولون﴾، وذكر أيضاً أن جملة: ﴿يقولون﴾ يجوز أن تكون حالاً من الضمير في ﴿يحرفون﴾. فعلى هذا ما ورد في نسخة «ب» صحيح أيضاً.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "العكبري",
+              "verdict": "جائز",
+              "comment": "يجوز أن تكون جملة يحرفون حالاً من الضمير في سماعون، ومثلها يقولون، ويجوز أن تكون يقولون حالاً من الضمير في يحرفون",
+              "book": "الإملاء",
+              "book_ref": "1/215، 216"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "يحرفون",
+                "trigger": "meaning_change",
+                "reason": "الوقف على يحرفون يجعل يقولون مستأنفة، والوصل يجعلها حالاً من ضميره، وقد أجاز العكبري الحال.",
+                "scholars": ["العكبري"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "يحرفون",
+                "trigger": "meaning_change",
+                "reason": "رجّح المؤلف أن جملة يحرفون مستأنفة بعد الوقف على لم يأتوك، وأجاز العكبري أن تكون حالاً من الضمير في سماعون.",
+                "scholars": ["العكبري"]
+              },
+              {
+                "start_word": "يقولون",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بيقولون يجعلها مستأنفة، ووصلها بيحرفون يجعلها حالاً.",
+                "scholars": ["العكبري"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 41,
+      "target_word": "فاحذروا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿فاحذروا - ٤١ - ط﴾",
+      "text_page": 454,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 41,
+      "target_word": "شيئا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿شيئا - ٤١ - ط﴾",
+      "text_page": 454,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 41,
+      "target_word": "قلوبهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿قلوبهم - ٤١ - ط﴾",
+      "text_page": 454,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 41,
+      "target_word": "خزي",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 3,
+      "text": "[﴿خزي - ٤١ - لا﴾](٣) لتكرار(٤) [﴿ولهم﴾](٥)",
+      "text_page": 454,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 454,
+          "raw_text": "(٣) أ: علامة الوقف ساقطة، وفي د: علامة الوقف: [ج].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "unknown",
+              "verdict": "جائز",
+              "comment": "في د علامة الوقف ج، وفي أ العلامة ساقطة. رمز المتن لا لا يُبدَّل.",
+              "book": null,
+              "book_ref": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 42,
+      "target_word": "للسحت",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 6,
+      "text": "﴿للسحت - ٤٢ - ط﴾(٦) لأن الشروط غير مخصوص بما يليه.",
+      "text_page": 454,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 454,
+          "raw_text": "(٦) ج: [فإن].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 42,
+      "target_word": "أو أعرض عنهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿أو أعرض عنهم - ٤٢ - ج﴾",
+      "text_page": 454,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 42,
+      "target_word": "شيئا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 7,
+      "text": "﴿شيئا - ٤٢ - ط﴾(٧) لابتداء شرط آخر.",
+      "text_page": 454,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 454,
+          "raw_text": "(٧) د: علامة الوقف: [ج].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "unknown",
+              "verdict": "جائز",
+              "comment": "في نسخة د علامة الوقف ج. رمز المتن ط لا يُبدَّل.",
+              "book": null,
+              "book_ref": null
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "شيئا",
+                "trigger": "meaning_change",
+                "reason": "الوقف عليه لابتداء شرط آخر، فلا يُخلط بالشرط السابق.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 42,
+      "target_word": "بالقسط",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿بالقسط - ٤٢ - ط﴾",
+      "text_page": 454,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 43,
+      "target_word": "من بعد ذلك",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 8,
+      "text": "﴿من بعد ذلك - ٤٣ - ط﴾(٨) لتناهي الاستفهام.",
+      "text_page": 454,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 454,
+          "raw_text": "(٨) د: علامة الوقف ساقطة.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 44,
+      "target_word": "ونور",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 9,
+      "text": "﴿ونور - ٤٤ - ج﴾ لأنه منكر، فلو وصلت الجملة به صارت صفة له، والجملة مستأنفة، ويحتمل أنها حال بعد حال،(٩) والتقدير: إنا(١) أنزلنا(٢) التوراة كائنا(٣) فيها هدى ونور محكوما بها، ولأن الضمير العائد من الجملة مؤنث، ونور مذكر، فلا تلتبس بالصفة(٤).",
+      "text_page": 454,
+      "old_text": "﴿ونور - ٤٤ - ج﴾ لأنه منكر، فلو وصلت الجملة به صارت صفة له، والجملة مستأنفة، ويحتمل أنها حال بعد حال،(٩)",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "ويحتمل أنها حال بعد حال،(٩)",
+          "new_text": "ويحتمل أنها حال بعد حال،(٩) والتقدير: إنا(١) أنزلنا(٢) التوراة كائنا(٣) فيها هدى ونور محكوما بها، ولأن الضمير العائد من الجملة مؤنث، ونور مذكر، فلا تلتبس بالصفة(٤).",
+          "info": "القوس تم في صفحة 454 وتتمة العلة في صدر صفحة 455"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 9,
+          "text_page": 454,
+          "raw_text": "(٩) المثبت: [أنها] من: د، وفي بقية النسخ: [أنه].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "ونور",
+                "trigger": "meaning_change",
+                "reason": "الوصل يجعل الجملة صفة للنكرة، والوقف يجعلها مستأنفة، ويحتمل أنها حال بعد حال.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "إنا",
+                "trigger": "meaning_change",
+                "reason": "تقدير الاستئناف: إنا أنزلنا التوراة كائنا فيها هدى ونور، فلا تلتبس الجملة بالصفة.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

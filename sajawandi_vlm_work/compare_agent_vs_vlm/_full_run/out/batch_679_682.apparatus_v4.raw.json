@@ -1,0 +1,525 @@
+{
+  "source": "apparatus_v4_679_682",
+  "page_numbers": [679, 680, 681, 682],
+  "waqfs": [
+    {
+      "ayah": 30,
+      "target_word": "إني عبد الله",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿إني عبد الله - ٣٠ - ج﴾(١) قد يحسن لأن الجملة لا تكون صفة للمعرفة، ولا عامل فتكون حالا، مع أن القائل متحد، وقد يمكن أن يجعل معنى التحقيق في «إني» عاملا، والجملة حالا.",
+      "text_page": 679,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 679,
+          "raw_text": "(١) علامة الوقف من: أ، ب. وقد نص المؤلف على الوقف هنا في كتابه الصغير، المسمى: وقوف القرآن - لوحة (٧٥) ظهر - حيث قال: ﴿عبد الله﴾ قف. اهـ. والوقف هنا جائز عند الأشموني. انظر: المنار (٢٣٧).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "المؤلف",
+              "verdict": "قف",
+              "comment": "في وقوف القرآن، لوحة ٧٥ ظهر: ﴿عبد الله﴾ قف",
+              "book": "وقوف القرآن",
+              "book_ref": "75 ظهر"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "جائز",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "237"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "عبد الله",
+                "trigger": "meaning_change",
+                "reason": "الوقف يجعل الجملة بعده مستقلة، ولو وصلت لاحتملت الحال إذا جُعل معنى التحقيق في «إني» عاملا. المؤلف يقول قف، والأشموني يجعله جائزا.",
+                "scholars": ["المؤلف", "الأشموني"]
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 31,
+      "target_word": "أينما كنت",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "margin_ref": null,
+      "text": "﴿أينما كنت - ٣١ - ص﴾.",
+      "text_page": 679,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 30,
+      "target_word": "نبيا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 2,
+      "text": "[﴿نبيا - ٣٠ - لا﴾] لطول الكلام.",
+      "text_page": 679,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 679,
+          "raw_text": "(٢) ما بين المعقوفين من: ج.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 31,
+      "target_word": "حيا",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "margin_ref": 3,
+      "text": "﴿حيا - ٣١ - ص﴾(٣) كذلك، والوصل أولى(٤) لأن(٥) قوله: ﴿وبرا﴾ عطف على قوله: ﴿مباركا﴾.",
+      "text_page": 679,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 679,
+          "raw_text": "(٣) علامة الوقف من: أ.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "حيا",
+                "trigger": "meaning_change",
+                "reason": "الوصل أولى لأن ﴿وبرا﴾ عطف على ﴿مباركا﴾، فالوقف يقطع هذا العطف.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وبرا",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بـ ﴿وبرا﴾ يفصل عطفه على ﴿مباركا﴾، ولذلك الوصل أولى.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 32,
+      "target_word": "بوالدتي",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿بوالدتي - ٣٢ - ز﴾ لتبدل الكلام من الإثبات إلى النفي.",
+      "text_page": 679,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 34,
+      "target_word": "عيسى بن مريم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿عيسى بن مريم - ٣٤ - ج﴾ لمن نصب «قول الحق»(١) على تقدير(٢): أقول(٣) قول الحق(٤)، أو جعله حالا على نية التنوين، أي: قولا حقا، والعامل معنى الإشارة في «ذلك»، ومن(٥) رفع(٦) جاز له(٧) الوقف(٨) على تقدير: هو(٩) قول الحق(١٠)، والوصل أيضا على أن يكون «قول» بدلا لعيسى(١١) [صلوات الله عليه](١).",
+      "text_page": 679,
+      "old_text": "﴿عيسى بن مريم - ٣٤ - ج﴾",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿عيسى بن مريم - ٣٤ - ج﴾",
+          "new_text": "﴿عيسى بن مريم - ٣٤ - ج﴾ لمن نصب «قول الحق» ... [صلوات الله عليه](١).",
+          "info": "القوس في آخر صفحة ٦٧٩، وعلته تملأ صفحة ٦٨٠ وتنتهي عند «عليه](١)» في أول صفحة ٦٨١ قبل ﴿من ولد﴾."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 680,
+          "raw_text": "(١) وهي قراءة عاصم، وابن عامر. وقرأ باقي السبعة بالرفع. انظر: السبعة (٤٠٩)، والتبصرة (٥٨٦)، والكشف ٢/٨٨، ٨٩، والتيسير (١٤٩).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "عاصم",
+              "verdict": "النصب",
+              "comment": "قرأ بالنصب، وقرأ باقي السبعة بالرفع",
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "ابن عامر",
+              "verdict": "النصب",
+              "comment": null,
+              "book": null,
+              "book_ref": null
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "عيسى بن مريم",
+                "trigger": "meaning_change",
+                "reason": "من رفع جاز الوقف على تقدير «هو قول الحق»، والوصل على أن «قول» بدل من عيسى، فيختلف المعنى.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "قول",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بـ «قول الحق» على تقدير «هو قول الحق» لمن قرأ بالرفع، بخلاف الوصل على البدل.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 35,
+      "target_word": "من ولد",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 2,
+      "text": "﴿من ولد - ٣٥ - لا﴾(٢) وإن جاز الابتداء(٣) بـ«سبحانه»، ولكن قد يوصل استعجالا(٤) إلى(٥) التنزيه عن(٦) الافتراء(٧) بالتشبيه.",
+      "text_page": 681,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 681,
+          "raw_text": "(٢) علامة الوقف ساقطة من: ج.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "من ولد",
+                "trigger": "meaning_change",
+                "reason": "علامة المتن لا، ومع ذلك جاز الابتداء بـ «سبحانه»، والوصل استعجال إلى التنزيه عن الافتراء بالتشبيه.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "سبحانه",
+                "trigger": "meaning_change",
+                "reason": "جاز الابتداء بـ «سبحانه» للتنزيه، وإن وُصل الكلام استعجالا إلى نفي الافتراء.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 35,
+      "target_word": "سبحانه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿سبحانه - ٣٥ - ط﴾.",
+      "text_page": 681,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 35,
+      "target_word": "كن فيكون",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 8,
+      "text": "﴿كن فيكون - ٣٥ - ط﴾ لمن قرأ: «وإن الله» بكسر الألف(٨)، ومن فتح لم(٩) يقف للعطف(١٠).",
+      "text_page": 681,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 681,
+          "raw_text": "(٨) وهي قراءة ابن عامر، وعاصم، وحمزة، والكسائي، وقرأ باقي السبعة بالفتح. انظر: السبعة (٤١٠)، والتبصرة (٥٨٦، ٥٨٧)، والتيسير (١٤٩).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن عامر",
+              "verdict": "كسر",
+              "comment": "قرأ بكسر الألف، وقرأ باقي السبعة بالفتح",
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "عاصم",
+              "verdict": "كسر",
+              "comment": null,
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "حمزة",
+              "verdict": "كسر",
+              "comment": null,
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "الكسائي",
+              "verdict": "كسر",
+              "comment": null,
+              "book": null,
+              "book_ref": null
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "كن فيكون",
+                "trigger": "scholars_disagree",
+                "reason": "من كسر الألف وقف، ومن فتح لم يقف للعطف. الكسر قراءة ابن عامر وعاصم وحمزة والكسائي، والفتح لباقي السبعة.",
+                "scholars": ["ابن عامر", "عاصم", "حمزة", "الكسائي"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وإن",
+                "trigger": "meaning_change",
+                "reason": "كسر «وإن الله» يجعل الكلام مستأنفا فيُبتدأ به، والفتح يعطفه فلا يوقف.",
+                "scholars": ["ابن عامر", "عاصم", "حمزة", "الكسائي"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 36,
+      "target_word": "فاعبدوه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿فاعبدوه - ٣٦ - ط﴾.",
+      "text_page": 682,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 37,
+      "target_word": "من بينهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿من بينهم - ٣٧ - ج﴾(١) لأن(٢) قوله: «فويل» مبتدأ، ولكن دخله(٣) فاء التعقيب(٤).",
+      "text_page": 682,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 682,
+          "raw_text": "(١) د: علامة الوقف: [ط]، وهو خطأ بدلالة ما بعده.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "من بينهم",
+                "trigger": "meaning_change",
+                "reason": "«فويل» مبتدأ فيجوز الوقف قبله، غير أن فاء التعقيب ربطته بما قبله.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "فويل",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بـ «فويل» على أنه مبتدأ، مع دخول فاء التعقيب عليه.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 38,
+      "target_word": "وأبصر",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 5,
+      "text": "﴿وأبصر - ٣٨ - لا﴾ لأن «يوم» ظرف التعجيب(٥)، أي: ما أسمعهم وما أبصرهم في ذلك اليوم(٦).",
+      "text_page": 682,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 682,
+          "raw_text": "(٥) ب، د: [التعجب].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "وأبصر",
+                "trigger": "meaning_change",
+                "reason": "«يوم» ظرف التعجيب، فالوقف على «وأبصر» يفصل الظرف عن فعل التعجب فيتغير المعنى.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 38,
+      "target_word": "يوم يأتونا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 7,
+      "text": "[﴿يوم يأتونا - ٣٨ - ط﴾(٧) لاختلاف الجملتين](٨).",
+      "text_page": 682,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 682,
+          "raw_text": "(٧) علامة الوقف المطلق من: د، وفي أ: [ز]، وفي ب: [لا]. وما أثبتناه موافق لما ذكره المؤلف في كتابه الصغير المسمى وقوف القرآن، لوحة (٧٥) ظهر. ويظهر أنه الصواب بدلالة ما بعده. وقد حسن الوقف هنا ابن الأنباري في الإيضاح ٢/٧٦٥، ونص النحاس في القطع (٤٥٥) على أنه جيد، أما الأشموني في المنار (٢٣٨)، فقال: تجاوزه أجود لاستدراك بعده. وهو كاف عند الداني في المكتفى (٣٧٦)، والأنصاري في المقصد (٢٣٨).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": "في نسخة د علامة الوقف المطلق، وفي أ: ز، وفي ب: لا. والمثبت موافق لوقوف القرآن لوحة ٧٥ ظهر",
+              "book": "الإيضاح",
+              "book_ref": "2/765"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "جيد",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "455"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "تجاوزه أجود",
+              "comment": "لاستدراك بعده",
+              "book": "المنار",
+              "book_ref": "238"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "376"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "238"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "يوم يأتونا",
+                "trigger": "scholars_disagree",
+                "reason": "حسنه ابن الأنباري، وجوّده النحاس، وجعله الداني والأنصاري كافيا، وقال الأشموني: تجاوزه أجود لاستدراك بعده.",
+                "scholars": ["ابن الأنباري", "النحاس", "الداني", "الأنصاري"]
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 39,
+      "target_word": "إذ قضي الأمر",
+      "verdict_label": "م",
+      "verdict": "لازم",
+      "margin_ref": 9,
+      "text": "[﴿إذ قضي الأمر - ٣٩ - م﴾ لأنه لو وصل لاستحال(٩) المعنى، لأنهم وصفوا بالغفلة في الدنيا، فلو(١) وصل صار متعلقا بالظرف](٢).",
+      "text_page": 682,
+      "old_text": "[ إذ قضي الأمر - ٣٩ - م ﴾ لأنه لو وصل لاستحال(٩) المعنى، لأنهم",
+      "fixes": [
+        {
+          "type": "malformed_bracket",
+          "basis": "page_prose",
+          "old_text": "[ إذ قضي الأمر - ٣٩ - م ﴾",
+          "new_text": "[﴿إذ قضي الأمر - ٣٩ - م﴾]",
+          "info": "القفلة ﴾ مطبوعة، و﴿ الافتتاحية غير ظاهرة قبل «إذ» (يُرى القوس المعقوف فقط). نمط الآية والرمز يعيّن قوس الوقف."
+        },
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "لأنهم",
+          "new_text": "لأنهم وصفوا بالغفلة في الدنيا، فلو(١) وصل صار متعلقا بالظرف](٢).",
+          "info": "العلة تبدأ في صفحة ٦٨٢ وتتم في صفحة ٦٨٣ حتى قفل المعقوف قبل ﴿في الكتاب إبراهيم﴾، ولم يُستخرج شيء آخر من ٦٨٣."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 9,
+          "text_page": 682,
+          "raw_text": "(٩) أ: [لاستحلال]، وهو تصحيف، وقد ورد بعدها لفظة: [الأمر]، ويظهر أنها زيادة من الناسخ.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "إذ قضي الأمر",
+                "trigger": "meaning_change",
+                "reason": "لو وصل صار وصف الغفلة متعلقا بالظرف فاستحال المعنى، لأنهم وصفوا بالغفلة في الدنيا.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    }
+  ]
+}

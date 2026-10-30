@@ -1,0 +1,702 @@
+{
+  "source": "apparatus_v4_415_418",
+  "page_numbers": [415, 416, 417, 418],
+  "waqfs": [
+    {
+      "ayah": 6,
+      "target_word": "عليهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿عليهم - ٦ - ط﴾.",
+      "text_page": 415,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 7,
+      "target_word": "والأقربون",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "margin_ref": 2,
+      "text": "﴿والأقربون - ٧﴾ الأول(٢) ص.",
+      "text_page": 415,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 415,
+          "raw_text": "(٢) ب : [ الأولى ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 7,
+      "target_word": "أو كثر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿أو كثر - ٧ - ط﴾ [لتقدير(٣): جعلناه نصيبا](٤).",
+      "text_page": 415,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 415,
+          "raw_text": "(٣) ج : [ لتقدير ] ساقطة ، وفي د : [ بتقدير ] . قال ابن الأنباري في البيان ١/٢٤٤ : [ قوله تعالى : ﴿نصيبا مفروضا﴾ منصوب بفعل مقدر دل عليه الكلام ، لأن قوله تعالى : ﴿للرجال نصيب﴾ ، ﴿وللنساء نصيب﴾ معناه : جعل الله لهم نصيبا مفروضا ، وهو أقوى ما قيل فيه من الأقاويل ] . اهـ . وانظر : إعراب القرآن للعكبري ١/١٦٨ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "منصوب بفعل مقدر",
+              "comment": "معناه: جعل الله لهم نصيبا مفروضا، وهو أقوى ما قيل فيه من الأقاويل",
+              "book": "البيان",
+              "book_ref": "1/244"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "أو كثر",
+                "trigger": "meaning_change",
+                "reason": "الوقف لأن ﴿نصيبا مفروضا﴾ منصوب بفعل مقدر، أي: جعلناه نصيبا، فينفصل عما قبله.",
+                "scholars": ["ابن الأنباري"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "نصيبا",
+                "trigger": "meaning_change",
+                "reason": "يُبتدأ المقدَّر «جعلناه نصيبا» بعد الوقف على ﴿أو كثر﴾.",
+                "scholars": ["ابن الأنباري"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 9,
+      "target_word": "خافوا عليهم",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "margin_ref": null,
+      "text": "﴿خافوا عليهم - ٩ - ص﴾.",
+      "text_page": 415,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 10,
+      "target_word": "نارا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿نارا - ١٠ - ط﴾.",
+      "text_page": 415,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 11,
+      "target_word": "حظ الأنثيين",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 5,
+      "text": "﴿حظ الأنثيين - ١١ - ج﴾(٥).",
+      "text_page": 415,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 415,
+          "raw_text": "(٥) د : علامة الوقف ساقطة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 11,
+      "target_word": "ثلثا ما ترك",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿ثلثا ما ترك - ١١ - ج﴾.",
+      "text_page": 415,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 11,
+      "target_word": "فلها النصف",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿فلها النصف - ١١ - ط﴾ لانتهاء حكم الأولاد.",
+      "text_page": 415,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 11,
+      "target_word": "إن كان له ولد",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿إن كان له ولد - ١١ - ج﴾.",
+      "text_page": 415,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 11,
+      "target_word": "فلأمه الثلث",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿فلأمه الثلث - ١١ - ج﴾.",
+      "text_page": 415,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 11,
+      "target_word": "أو دين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿أو دين - ١١ - ط﴾.",
+      "text_page": 415,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 11,
+      "target_word": "آباؤكم وأبناؤكم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿آباؤكم وأبناؤكم - ١١ - ج﴾ لأنه يحتمل(١) خبر(٢) محذوف، أي: هم [آباؤكم وأبناؤكم](٣) ويصلح مبتدأ خبره: ﴿لا تدرون﴾(٤).",
+      "text_page": 415,
+      "old_text": "﴿آباؤكم وأبناؤكم - ١١ - ج﴾ لأنه",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿آباؤكم وأبناؤكم - ١١ - ج﴾ لأنه",
+          "new_text": "﴿آباؤكم وأبناؤكم - ١١ - ج﴾ لأنه يحتمل(١) خبر(٢) محذوف، أي: هم [آباؤكم وأبناؤكم](٣) ويصلح مبتدأ خبره: ﴿لا تدرون﴾(٤).",
+          "info": "عبارة الوقف تبدأ في الصفحة ٤١٥ وتتمتها في الصفحة ٤١٦"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 416,
+          "raw_text": "(١) ج : [ محتمل ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "آباؤكم وأبناؤكم",
+                "trigger": "meaning_change",
+                "reason": "يحتمل أن يكون خبرا لمبتدأ محذوف، أي: هم، فتتم الجملة عنده.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "لا تدرون",
+                "trigger": "meaning_change",
+                "reason": "ويصلح أن يكون ﴿آباؤكم وأبناؤكم﴾ مبتدأ خبره ﴿لا تدرون﴾، فإن وُقف قبله ابتُدئ بها.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 11,
+      "target_word": "نفعا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿نفعا - ١١ - ط﴾(٥).",
+      "text_page": 416,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 416,
+          "raw_text": "(٥) ج : علامة الوقف : [ ج ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 11,
+      "target_word": "من الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من الله - ١١ - ط﴾.",
+      "text_page": 416,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 12,
+      "target_word": "إن لم يكن لهن ولد",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿إن لم يكن لهن ولد - ١٢ - ج﴾.",
+      "text_page": 416,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 12,
+      "target_word": "أو دين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿أو دين - ١٢ - ط﴾.",
+      "text_page": 416,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 12,
+      "target_word": "إن لم يكن لكم ولد",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿إن لم يكن لكم ولد - ١٢ - ج﴾.",
+      "text_page": 416,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 12,
+      "target_word": "أو دين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿أو دين - ١٢ - ط﴾.",
+      "text_page": 416,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 12,
+      "target_word": "منهما السدس",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿منهما السدس - ١٢ - ج﴾.",
+      "text_page": 416,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 12,
+      "target_word": "أو دين",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 6,
+      "text": "﴿أو دين - ١٢ - لا﴾ لأن ﴿غير﴾ حال، عامله ﴿يوصى﴾(٦).",
+      "text_page": 416,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 416,
+          "raw_text": "(٦) وضح هذا الزمخشري في الكشاف ١/٥١٠ ، فقال : [ ﴿غير مضار﴾ حال ، أي : يوصي بها وهو غير مضار لورثته ، وذلك أن يوصي بزيادة على الثلث ، أو يوصي بالثلث فما دونه ونيته مضارة ورثته ومغاضبتهم لا وجه الله تعالى ] . وانظر : البيان ١/٢٤٦ ، وإعراب القرآن للعكبري ١/١٧٠ ، والبحر ٣/١٩١ .",
+          "continuation": {"status": "read", "page": 417},
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الزمخشري",
+              "verdict": "حال",
+              "comment": "أي: يوصي بها وهو غير مضار لورثته",
+              "book": "الكشاف",
+              "book_ref": "1/510"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "أو دين",
+                "trigger": "meaning_change",
+                "reason": "﴿غير مضار﴾ حال عاملها ﴿يوصى﴾، فالوقف على ﴿أو دين﴾ يفصل الحال عن عاملها.",
+                "scholars": ["الزمخشري"]
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 12,
+      "target_word": "مضار",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿مضار - ١٢ - ج﴾ لأن قوله: ﴿وصية﴾ يحتمل نصبها بوقوع معنى الفعل في: «مضار» عليه](١)[ أي: من غير أن يضار الموصى وصية هي من الله في قسمة الميراث، بقوله: ﴿يوصيكم الله﴾(٢)، ويحتمل نصبها بمحذوف، أي: أوصى الله وصية(٣).",
+      "text_page": 416,
+      "old_text": "﴿مضار - ١٢ - ج﴾ لأن",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿مضار - ١٢ - ج﴾ لأن",
+          "new_text": "﴿مضار - ١٢ - ج﴾ لأن قوله: ﴿وصية﴾ يحتمل نصبها بوقوع معنى الفعل في: «مضار» عليه](١)[ أي: من غير أن يضار الموصى وصية هي من الله في قسمة الميراث، بقوله: ﴿يوصيكم الله﴾(٢)، ويحتمل نصبها بمحذوف، أي: أوصى الله وصية(٣).",
+          "info": "عبارة الوقف تبدأ في الصفحة ٤١٦ وتتمتها في الصفحة ٤١٧"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 417,
+          "raw_text": "(١) أ ، د : [ عليه في ﴿مضار﴾ ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "مضار",
+                "trigger": "meaning_change",
+                "reason": "يحتمل نصب ﴿وصية﴾ بوقوع معنى الفعل في «مضار»، فالوقف عليه يفصل هذا التعلق أو يبقيه.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وصية",
+                "trigger": "meaning_change",
+                "reason": "ويحتمل نصبها بمحذوف، أي: أوصى الله وصية، فيُبتدأ بها.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 12,
+      "target_word": "وصية من الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿وصية من الله - ١٢ - ط﴾.",
+      "text_page": 417,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 12,
+      "target_word": "حليم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿حليم - ١٢ - ط﴾ لأن ﴿تلك﴾ مبتدأ.",
+      "text_page": 417,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 13,
+      "target_word": "حدود الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿حدود الله - ١٣ - ط﴾.",
+      "text_page": 417,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 13,
+      "target_word": "خالدين فيها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿خالدين فيها - ١٣ - ط﴾(٤).",
+      "text_page": 417,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 417,
+          "raw_text": "(٤) أ : ورد بعدها : [ وهو بالعلمتين أليق ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 14,
+      "target_word": "خالدا فيها",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "margin_ref": 1,
+      "text": "[﴿خالدا فيها - ١٤ - ص(١)﴾](٢) لأن ما بعده من تتمة الجزاء، وما بعد(٣) ﴿خالدين فيها﴾ تقرير(٤) الجزاء بعد التمام(٥).",
+      "text_page": 418,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 418,
+          "raw_text": "(١) ب : علامة الوقف : [ ط ] ، والصواب ما أثبتناه لدلالة ما بعده عليه ، والوقف هنا جائز عند الأنصاري والأشموني . انظر : المقصد (٩٧) ، والمنار (٩٧) . أما ابن الأنباري ، والنحاس ، والداني ، فلم يذكروا هنا وقفا . انظر : الإيضاح ٢/٥٩٤ ، والقطع (٢٤٨) ، والمكتفى (٢١٨) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأنصاري",
+              "verdict": "جائز",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "97"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "جائز",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "97"
+            },
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "2/594"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "248"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "218"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "خالدا فيها",
+                "trigger": "scholars_disagree",
+                "reason": "جائز عند الأنصاري والأشموني، ولم يذكر ابن الأنباري والنحاس والداني هنا وقفا، وفي نسخة ب علامة الوقف ط والمتن ص.",
+                "scholars": ["الأنصاري", "الأشموني"]
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 15,
+      "target_word": "أربعة منكم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿أربعة منكم - ١٥ - ج﴾ لابتداء الشرط مع فاء التعقيب.",
+      "text_page": 418,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 16,
+      "target_word": "فآذوهما",
+      "verdict_label": null,
+      "verdict": null,
+      "margin_ref": 6,
+      "text": "﴿فآذوهما - ١٦﴾ كذلك(٦).",
+      "text_page": 418,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 418,
+          "raw_text": "(٦) أ : [ لذلك ] ، والصواب ما أثبتناه لأنه يشمل نوع الوقف مع علته .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 16,
+      "target_word": "عنهما",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "[﴿عنهما - ١٦ - ط﴾].",
+      "text_page": 418,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 17,
+      "target_word": "عليهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿عليهم - ١٧ - ط﴾.",
+      "text_page": 418,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 18,
+      "target_word": "السيئات",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 7,
+      "text": "﴿السيئات - ١٨ - ج﴾(٧) [لأن ﴿حتى إذا﴾ يصلح للابتداء، وجوابه: ﴿قال إني تبت﴾(٨)، ويصلح انتهاء لعمل السيئات](٩).",
+      "text_page": 418,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 418,
+          "raw_text": "(٧) د : ما بين المعقوفين علامة الوقف ساقطة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "السيئات",
+                "trigger": "meaning_change",
+                "reason": "يصلح الوقف انتهاء لعمل السيئات.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "حتى إذا",
+                "trigger": "meaning_change",
+                "reason": "﴿حتى إذا﴾ يصلح للابتداء، وجوابه ﴿قال إني تبت﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 18,
+      "target_word": "وهم كفار",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿وهم كفار - ١٨ - ط﴾.",
+      "text_page": 418,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 19,
+      "target_word": "كرها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 10,
+      "text": "﴿كرها - ١٩ - ط﴾ للعدول عن الإخبار إلى النهى(١٠).",
+      "text_page": 418,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 10,
+          "text_page": 418,
+          "raw_text": "(١٠) ج : [ الأمر ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "كرها",
+                "trigger": "meaning_change",
+                "reason": "الوقف للعدول عن الإخبار إلى النهي.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 19,
+      "target_word": "مبينة",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿مبينة - ١٩ - ج﴾ للعارض بين المتفقتين.",
+      "text_page": 418,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    }
+  ]
+}

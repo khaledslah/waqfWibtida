@@ -1,0 +1,676 @@
+{
+  "source": "apparatus_v4_515_518",
+  "page_numbers": [515, 516, 517, 518],
+  "waqfs": [
+    {
+      "ayah": 148,
+      "target_word": "خوار",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿خوار - ١٤٨ - ط﴾",
+      "text_page": 515,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 148,
+      "target_word": "سبيلا",
+      "verdict_label": "م",
+      "verdict": "لازم",
+      "margin_ref": 1,
+      "text": "﴿سبيلا - ١٤٨ - م﴾ لئلا تصير الجملة صفة السبيل(١) ، فإن الهاء ضمير العجل(٢) .",
+      "text_page": 515,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 515,
+          "raw_text": "(١) أ : [لسبيل] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "سبيلا",
+                "trigger": "meaning_change",
+                "reason": "الوقف لئلا تصير الجملة صفة السبيل، فإن الهاء ضمير العجل؛ فالوصل يعلق ما بعده بالسبيل.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 149,
+      "target_word": "قد ضلوا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 3,
+      "text": "﴿قد ضلوا - ١٤٩ - لا﴾ لأن ﴿قالوا﴾ جواب ﴿لما﴾(٣) .",
+      "text_page": 515,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 515,
+          "raw_text": "(٣) ج : [لما] غير مثبتة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 150,
+      "target_word": "أسفا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 4,
+      "text": "﴿أسفا - ١٥٠ - لا﴾ لما ذكر(٤) .",
+      "text_page": 515,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 515,
+          "raw_text": "(٤) أي : للعلة السابقة ، وهي : لأن ﴿قال﴾ جواب : ﴿لما﴾ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 150,
+      "target_word": "من بعدي",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿من بعدي - ١٥٠ - ج﴾ للابتداء بالاستفهام مع أن القائل واحد .",
+      "text_page": 515,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 150,
+      "target_word": "أمر ربكم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿أمر ربكم - ١٥٠ - ج﴾ لأن قوله : ﴿وألقى﴾ معطوف على قوله : ﴿قال بئسما﴾ وقد اعترض بينهما استفهام .",
+      "text_page": 515,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 150,
+      "target_word": "إليه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿إليه - ١٥٠ - ط﴾",
+      "text_page": 515,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 150,
+      "target_word": "يقتلونني",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 5,
+      "text": "﴿يقتلونني - ١٥٠ - ز﴾ والوصل أولى ، لأن الفاء للجواب ، أي(٥) : إذا هموا بقتلي فلا تشمتهم(٦) بضربي .",
+      "text_page": 515,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 515,
+          "raw_text": "(٥) د : [أي] ساقطة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "يقتلونني",
+                "trigger": "meaning_change",
+                "reason": "الوصل أولى لأن الفاء جواب؛ الوقف يفصل «فلا تشمتهم» عن «إذا هموا بقتلي».",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "فلا",
+                "trigger": "meaning_change",
+                "reason": "إن وقف على «يقتلونني» فالاستئناف من «فلا» لأنها جواب الفاء.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 151,
+      "target_word": "في رحمتك",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿في رحمتك - ١٥١ - ز﴾(١) كذلك والوصل أجوز ، لأن الواو للحال لتحسين الدعاء بالثناء",
+      "text_page": 515,
+      "old_text": "﴿في رحمتك - ١٥١ -",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿في رحمتك - ١٥١ -",
+          "new_text": "﴿في رحمتك - ١٥١ - ز﴾(١) كذلك والوصل أجوز ، لأن الواو للحال لتحسين الدعاء بالثناء",
+          "info": "القوس يُفتح في صفحة ٥١٥ ويُغلق بالحرف ز وتتم العبارة في صفحة ٥١٦"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 516,
+          "raw_text": "(١) علامة الوقف من : أ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "في رحمتك",
+                "trigger": "meaning_change",
+                "reason": "الوصل أجوز لأن الواو للحال لتحسين الدعاء بالثناء؛ والوقف يقطع حال الثناء عن الدعاء.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 152,
+      "target_word": "الدنيا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿الدنيا - ١٥٢ - ط﴾",
+      "text_page": 516,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 153,
+      "target_word": "وآمنوا",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿وآمنوا - ١٥٣ - ز﴾ لظاهر ﴿أن﴾ ، [والوجه الوصل](٢) لأن الجملة خبر ﴿والذين﴾ ، والضمير العائد إلى المبتدأ محذوف ، دل عليه الضمير(٣) العائد إلى صلته ، وهو ﴿ها﴾ في : ﴿من بعدها﴾ فإنها من ضمير التوبة التي هي(٤) من ضرورة : ﴿تابوا﴾ ، تقديره : إن ربك من بعد توبتهم(٥) .",
+      "text_page": 516,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 516,
+          "raw_text": "(٢) ب : [والوصل أجوز] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "وآمنوا",
+                "trigger": "meaning_change",
+                "reason": "الوجه الوصل لأن الجملة خبر ﴿والذين﴾؛ والوقف يفصل الخبر عن المبتدأ. التقدير: إن ربك من بعد توبتهم.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "إن",
+                "trigger": "meaning_change",
+                "reason": "إن وقف على «وآمنوا» كان الابتداء من «إن» جملة مستأنفة لا خبرا لـ﴿والذين﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 154,
+      "target_word": "الألواح",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 6,
+      "text": "﴿الألواح - ١٥٤ - ج﴾ والوصل أولى لأن الواو للحال(٦) .",
+      "text_page": 516,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 516,
+          "raw_text": "(٦) انظر : البيان ١/٣٧٥ ، وإعراب القرآن للعكبري ١/٢٨٦ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "الألواح",
+                "trigger": "meaning_change",
+                "reason": "الوصل أولى لأن الواو للحال؛ والوقف يجعل ما بعد الواو جملة مستقلة لا حالا.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 155,
+      "target_word": "لميقاتنا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 7,
+      "text": "﴿لميقاتنا - ١٥٥ - ج﴾ لأن جواب ﴿لما﴾ منتظر ، مع(٧) العطف بالفاء .",
+      "text_page": 516,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 516,
+          "raw_text": "(٧) أ : [على] ، وفي ج : [على مع] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "لميقاتنا",
+                "trigger": "meaning_change",
+                "reason": "جواب ﴿لما﴾ منتظر مع العطف بالفاء؛ فالوقف يفصل ﴿لما﴾ عن جوابها.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 155,
+      "target_word": "وإياي",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿وإياي - ١٥٥ - ط﴾",
+      "text_page": 516,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 155,
+      "target_word": "منا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 8,
+      "text": "﴿منا - ١٥٥ - ج﴾ لأن ﴿أن﴾(٨) النافية مصدرة(٩) ، والمقول واحد .",
+      "text_page": 516,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 516,
+          "raw_text": "(٨) أ : [(إن)] غير مثبتة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 155,
+      "target_word": "فتنتك",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿فتنتك - ١٥٥ - ط﴾ لأن الجملة لا توصف بها المعرفة ، ولا عامل يجعلها حالا(١) .",
+      "text_page": 516,
+      "old_text": "﴿فتنتك - ١٥٥ - ط﴾ لأن الجملة لا توصف بها المعرفة ، ولا",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿فتنتك - ١٥٥ - ط﴾ لأن الجملة لا توصف بها المعرفة ، ولا",
+          "new_text": "﴿فتنتك - ١٥٥ - ط﴾ لأن الجملة لا توصف بها المعرفة ، ولا عامل يجعلها حالا(١) .",
+          "info": "القوس تام في صفحة ٥١٦ وتتمة التعليل في صفحة ٥١٧"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 517,
+          "raw_text": "(١) مراد المؤلف أن جملة ﴿تضل بها من تشاء﴾ مستأنفة . وقد وضح هذا السمين في الدر ٥/٤٧٦ حيث قال : [ قوله : ﴿تضل بها﴾ يجوز فيها وجهان : أحدهما : أن تكون مستأنفة فلا محل لها . والثاني : أن تكون حالا من ﴿فتنتك﴾ أي : حال كونها مضلا بها . ويجوز أن تكون حالا من الكاف ، لأنها مرفوعة تقديرا بالفاعلية ، ومنعه أبو البقاء ، قال : لعدم العامل فيها ] . وانظر : إعراب القرآن للعكبري ١/٢٨٦ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "السمين",
+              "verdict": "مستأنفة أو حال",
+              "comment": "يجوز في ﴿تضل بها﴾ أن تكون مستأنفة فلا محل لها، أو حالا من ﴿فتنتك﴾، ويجوز حالا من الكاف",
+              "book": "الدر المصون",
+              "book_ref": "5/476"
+            },
+            {
+              "scholar": "العكبري",
+              "verdict": "لا تكون حالا",
+              "comment": "منع كونها حالا من الكاف لعدم العامل فيها",
+              "book": "إعراب القرآن",
+              "book_ref": "1/286"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "فتنتك",
+                "trigger": "meaning_change",
+                "reason": "الاستئناف يجعل ﴿تضل بها من تشاء﴾ جملة جديدة، والحال يعلقها بـ﴿فتنتك﴾، فيتغير المعنى.",
+                "scholars": ["السمين"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "تضل",
+                "trigger": "meaning_change",
+                "reason": "على الاستئناف يُبتدأ بـ«تضل»، وعلى الحال تُوصل بـ«فتنتك».",
+                "scholars": ["السمين"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 155,
+      "target_word": "وتهدي من تشاء",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿وتهدي من تشاء - ١٥٥ - ط﴾",
+      "text_page": 517,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 156,
+      "target_word": "إليك",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿إليك - ١٥٦ - ط﴾",
+      "text_page": 517,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 156,
+      "target_word": "من أشاء",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿من أشاء - ١٥٦ - ج﴾(٢) للفصل بين الجملتين تعظيما لشأنهما(٣) وقد اتفقتا لفظا .",
+      "text_page": 517,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 517,
+          "raw_text": "(٢) ج : علامة الوقف : [ط] وهو خطأ ، بدلالة ما بعده .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 156,
+      "target_word": "كل شيء",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿كل شيء - ١٥٦ - ط﴾ للسين(٤) ، واختلاف الجملتين ، والفاء لاستئناف وعد على الخصوص بعد الإطلاق على العموم .",
+      "text_page": 517,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 517,
+          "raw_text": "(٤) ج : [لنستبين] هو تصحيف .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "كل شيء",
+                "trigger": "meaning_change",
+                "reason": "الفاء لاستئناف وعد على الخصوص بعد الإطلاق على العموم؛ فالوقف يجعل ما بعدها جملة جديدة لا نتيجة متصلة.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 156,
+      "target_word": "يؤمنون",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 5,
+      "text": "﴿يؤمنون - ١٥٦ - ج﴾ لأن ﴿الذين﴾(٥) يصلح خبر مبتدأ محذوف ، أي : هم الذين ، أو نصبا على المدح ، أي : أعني الذين ، أو بدلا عما قبله(٦) .",
+      "text_page": 517,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 517,
+          "raw_text": "(٥) المثبت : [مبتدأ] من : د .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "يؤمنون",
+                "trigger": "meaning_change",
+                "reason": "﴿الذين﴾ يصلح خبر مبتدأ محذوف أو نصبا على المدح أو بدلا عما قبله، فيختلف الوقف باختلاف الوجه.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "الذين",
+                "trigger": "meaning_change",
+                "reason": "على وجه الخبر أو المدح يُبتدأ بـ«الذين»، وعلى البدل يُوصل بما قبله.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 157,
+      "target_word": "والإنجيل",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿والإنجيل - ١٥٧ - ز﴾ لأن قوله : ﴿يأمرهم﴾ يحتمل أن يكون خبر محذوف ، أي : هو يأمرهم(١) ، وأن يكون نعتا لقوله : ﴿مكتوبا﴾ ، [أي : مكتوبا آمرا(٢)](٣) ، أو بدلا ، أي : يجدونه آمرا ، أو صلة للذي(٤) قائما مقام ﴿يجدونه﴾ كالبدل عن تلك الجملة ، أي : الأمي الذي يأمرهم(٥) .",
+      "text_page": 517,
+      "old_text": "﴿والإنجيل - ١٥٧ - ز﴾ لأن قوله :",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿والإنجيل - ١٥٧ - ز﴾ لأن قوله :",
+          "new_text": "﴿والإنجيل - ١٥٧ - ز﴾ لأن قوله : ﴿يأمرهم﴾ يحتمل أن يكون خبر محذوف ، أي : هو يأمرهم(١) ، وأن يكون نعتا لقوله : ﴿مكتوبا﴾ ، [أي : مكتوبا آمرا(٢)](٣) ، أو بدلا ، أي : يجدونه آمرا ، أو صلة للذي(٤) قائما مقام ﴿يجدونه﴾ كالبدل عن تلك الجملة ، أي : الأمي الذي يأمرهم(٥) .",
+          "info": "القوس تام في صفحة ٥١٧ وتتمة التعليل في صفحة ٥١٨"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 518,
+          "raw_text": "(١) انظر : معاني القرآن للزجاج ٢/٣٨١ ، وإعراب القرآن للعكبري ١/٢٨٦ ، والدر المصون ٥/٤٧٩، ٤٨٠ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "والإنجيل",
+                "trigger": "meaning_change",
+                "reason": "﴿يأمرهم﴾ يحتمل خبرا محذوفا أو نعت ﴿مكتوبا﴾ أو بدلا أو صلة ﴿الذي﴾؛ والوقف على «والإنجيل» يلازم وجه الخبر.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "يأمرهم",
+                "trigger": "meaning_change",
+                "reason": "على أنه خبر محذوف يُبتدأ بـ«يأمرهم»، وعلى النعت أو الصلة يُوصل بما قبله.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 157,
+      "target_word": "كانت عليهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿كانت عليهم - ١٥٧ - ط﴾",
+      "text_page": 518,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 157,
+      "target_word": "أنزل معه",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 6,
+      "text": "﴿أنزل معه - ١٥٧ - لا﴾ لأن ﴿أولئك﴾(٦) خبر ﴿فالذين﴾ .",
+      "text_page": 518,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 518,
+          "raw_text": "(٦) أ : [لأنه] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 158,
+      "target_word": "والأرض",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 7,
+      "text": "﴿والأرض - ١٥٨ - ج﴾(٧) لأن الجملة بعدها تصلح مبتدأ(٨) ، وحالا ، تقديره : استحق ملك السماوات والأرض غير(٩) مشارك(١٠) .",
+      "text_page": 518,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 518,
+          "raw_text": "(٧) د : علامة الوقف : [ط] ، والصواب ما أثبتناه بدلالة ما بعده .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "والأرض",
+                "trigger": "meaning_change",
+                "reason": "الجملة بعدها تصلح مبتدأ وحالا؛ فالوقف يجعلها مستأنفة والوصل يجعلها حالا. التقدير: استحق ملك السماوات والأرض غير مشارك.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 158,
+      "target_word": "ويميت",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "margin_ref": 1,
+      "text": "﴿ويميت - ١٥٨ - ص﴾ لطول الكلام ، وإلا [فالفاء](١) للجواب ، أي : إذا كنت رسولا فآمنوا إجابة .",
+      "text_page": 518,
+      "old_text": "﴿ويميت - ١٥٨ - ص﴾ لطول الكلام ، وإلا [",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ويميت - ١٥٨ - ص﴾ لطول الكلام ، وإلا [",
+          "new_text": "﴿ويميت - ١٥٨ - ص﴾ لطول الكلام ، وإلا [فالفاء](١) للجواب ، أي : إذا كنت رسولا فآمنوا إجابة .",
+          "info": "القوس تام في صفحة ٥١٨ وتتمة التعليل حتى «إجابة» في صفحة ٥١٩"
+        }
+      ],
+      "apparatus": []
+    }
+  ]
+}

@@ -1,0 +1,650 @@
+{
+  "source": "apparatus_v4_663_666",
+  "page_numbers": [663, 664, 665, 666],
+  "waqfs": [
+    {
+      "ayah": 39,
+      "target_word": "ما شاء الله",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 1,
+      "text": "﴿ما شاء الله - ٣٩ - لا﴾ لإتمام (١) المقول (٢).",
+      "text_page": 663,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 663,
+          "raw_text": "(١) د: [ تمام ] وهو خطأ، فالمقول لم يتم، ولكن ما بعده إتمام له.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 39,
+      "target_word": "إلا بالله",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 3,
+      "text": "﴿إلا بالله - ٣٩ - ج﴾ لأن جواب الشرط محذوف فيما بعد (٣)، تقديره: إن ترن أن أقل منك مالا وولدا تحتقرني (٤)، مع اتحاد القائل والمقول له (٥).",
+      "text_page": 663,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 663,
+          "raw_text": "(٣) د: [ فيما بعده ].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 39,
+      "target_word": "وولدا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 6,
+      "text": "﴿وولدا - ٣٩ - ج﴾ لاحتمال الفاء جواب (٦) ﴿إن ترن﴾ (٧)، ولإتمام (٨) المقصود، أي: [ أن تحتقرني ] (٩) لقلة المال، فأرجو أن يجعلني ربي خيرا منك مالا في المال.",
+      "text_page": 663,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 663,
+          "raw_text": "(٦) أ: [ وجواب ] بزيادة الواو.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 40,
+      "target_word": "زلقا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 10,
+      "text": "﴿زلقا - ٤٠ - لا﴾ للعطف بأو (١٠).",
+      "text_page": 663,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 10,
+          "text_page": 663,
+          "raw_text": "(١٠) د: [ لعطف أو ].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 43,
+      "target_word": "منتصرا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 11,
+      "text": "﴿منتصرا - ٤٣ - ط﴾، وقد قيل: يوصل، فيوقف على: ﴿هنالك﴾ أي: لا ينصره أحد (١١)، ولا ينتصر (١٢) بنفسه في ذلك الوقت (١)، ثم يبتدأ (٢): ﴿الولاية لله﴾، [ وله وجه ] (٣)، والأوجه أن يبتدأ بـ ﴿هنالك﴾ (٤)، أي: عند ذلك يظهر لكل شاك سلطان الله ونفاذ (٥) أمره (٦).",
+      "text_page": 663,
+      "old_text": "﴿منتصرا - ٤٣ - ط﴾، وقد قيل: يوصل، فيوقف على: ﴿هنالك﴾ أي: لا ينصره أحد (١١)، ولا ينتصر (١٢) بنفسه في ذلك",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "بنفسه في ذلك",
+          "new_text": "بنفسه في ذلك الوقت",
+          "info": "تتمة عبارة الوقف في صدر صفحة 664 قبل ﴿الله الحق﴾"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 11,
+          "text_page": 663,
+          "raw_text": "(١١) أ: [ واحد ].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "هنالك",
+                "trigger": "scholars_disagree",
+                "reason": "قد قيل يوصل فلا يوقف على منتصرا، ويوقف على هنالك، أي لا ينصره أحد ولا ينتصر بنفسه.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "الولاية",
+                "trigger": "scholars_disagree",
+                "reason": "على وجه الوصل يبتدأ بالولاية لله بعد الوقف على هنالك، وله وجه.",
+                "scholars": []
+              },
+              {
+                "start_word": "هنالك",
+                "trigger": "meaning_change",
+                "reason": "الأوجه أن يبتدأ بهنالك، أي عند ذلك يظهر لكل شاك سلطان الله ونفاذ أمره.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 44,
+      "target_word": "الله الحق",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 7,
+      "text": "﴿الله الحق - ٤٤ - ط﴾ بالرفع (٧) قرئ (٨) أو بالخفض (٩).",
+      "text_page": 664,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 664,
+          "raw_text": "(٧) للقاف على أن ﴿الحق﴾ صفة لـ ﴿الولاية﴾. وهذه قراءة أبي عمرو، والكسائي. انظر: السبعة (٣٩٢)، والتبصرة (٥٧٥)، والكشف ٢/٦٣، والتيسير (١٤٢).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 45,
+      "target_word": "الرياح",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿الرياح - ٤٥ - ط﴾.",
+      "text_page": 664,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 46,
+      "target_word": "زينة الحياة الدنيا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿زينة الحياة الدنيا - ٤٦ - ج﴾ فصلا بين المعجل الفاني، والمؤجل الباقي، مع اتفاق الجملتين لفظا.",
+      "text_page": 664,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 47,
+      "target_word": "بارزة",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿بارزة - ٤٧ - لا﴾ لأن التقدير: وقد حشرناهم.",
+      "text_page": 665,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 47,
+      "target_word": "أحدا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿أحدا - ٤٧ - ج﴾ للآية مع العطف.",
+      "text_page": 665,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 48,
+      "target_word": "صفا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿صفا - ٤٨ - ط﴾ للعدول والحذف، أي: فقال (١) لهم: لقد جئتمونا (٢).",
+      "text_page": 665,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 665,
+          "raw_text": "(١) المثبت: [ فقال ] من: ب، وفي بقية النسخ: [ يقال ].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "صفا",
+                "trigger": "meaning_change",
+                "reason": "الوقف للعدول والحذف، وتقدير القول المحذوف: فقال لهم.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "لقد",
+                "trigger": "meaning_change",
+                "reason": "بعد حذف القول يبتدأ بقوله لقد جئتمونا.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 48,
+      "target_word": "مرة",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 3,
+      "text": "﴿مرة - ٤٨ - ز﴾ لأن ﴿بل﴾ قد يبتدأ به، مع أن الكلام متحد (٣).",
+      "text_page": 665,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 665,
+          "raw_text": "(٣) د: [ المتحد ] بزيادة: أل.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "مرة",
+                "trigger": "meaning_change",
+                "reason": "يجوز الوقف على مرة لأن بل قد يبتدأ به، مع بقاء الكلام متحدا إن وصل.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "بل",
+                "trigger": "meaning_change",
+                "reason": "قد يبتدأ ببل فيُقطع الكلام المتحد.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 49,
+      "target_word": "أحصاها",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "﴿أحصاها - ٤٩ - ج﴾ لاستئناف الواو بعد (٤) تمام الاستفهام، مع احتمال الحال، أي: يقولون: مال هذا الكتاب، وقد وجدوا.",
+      "text_page": 665,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 665,
+          "raw_text": "(٤) ب: [ مع ].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "أحصاها",
+                "trigger": "meaning_change",
+                "reason": "الواو بعد تمام الاستفهام تحتمل الاستئناف فيوقف، أو الحال فيوصل.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وجدوا",
+                "trigger": "meaning_change",
+                "reason": "على الاستئناف يبتدأ بوجدوا، وعلى الحال يكون وقد وجدوا حالا من قولهم مال هذا الكتاب.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 49,
+      "target_word": "حاضرا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿حاضرا - ٤٩ - ط﴾(٥).",
+      "text_page": 665,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 665,
+          "raw_text": "(٥) د: علامة الوقف ساقطة.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 50,
+      "target_word": "إلا إبليس",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 6,
+      "text": "﴿إلا إبليس - ٥٠ - ط﴾(٦).",
+      "text_page": 665,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 665,
+          "raw_text": "(٦) د: علامة الوقف ساقطة.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 50,
+      "target_word": "أمر ربه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿أمر ربه - ٥٠ - ط﴾.",
+      "text_page": 665,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 50,
+      "target_word": "عدو",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 7,
+      "text": "﴿عدو - ٥٠ - ط﴾(٧).",
+      "text_page": 665,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 665,
+          "raw_text": "(٧) أ: علامة الوقف ساقطة.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 51,
+      "target_word": "أنفسهم",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "margin_ref": 8,
+      "text": "﴿أنفسهم - ٥١ - ص﴾(٨).",
+      "text_page": 665,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 665,
+          "raw_text": "(٨) أ: علامة الوقف: [ ص، ط ].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 54,
+      "target_word": "من كل مثل",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من كل مثل - ٥٤ - ط﴾.",
+      "text_page": 665,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 56,
+      "target_word": "ومنذرين",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 9,
+      "text": "﴿ومنذرين - ٥٦ - ج﴾ لأن الواو تحتمل الاستئناف أو الحال، على تقريب (٩) المعنى، أي: مبشرين (١) المؤمنين، ومنذرين الكافرين، والذين كفروا (٢) يجادلون [ حال الإنذار ] (٣).",
+      "text_page": 665,
+      "old_text": "﴿ومنذرين - ٥٦ - ج﴾ لأن الواو تحتمل الاستئناف أو الحال، على تقريب (٩) المعنى،",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "على تقريب (٩) المعنى،",
+          "new_text": "على تقريب (٩) المعنى، أي: مبشرين (١) المؤمنين، ومنذرين الكافرين، والذين كفروا (٢) يجادلون [ حال الإنذار ] (٣).",
+          "info": "تتمة عبارة الوقف في صدر صفحة 666 قبل ﴿يداه﴾"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 9,
+          "text_page": 665,
+          "raw_text": "(٩) ج: [ تقريب ] ساقطة.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "ومنذرين",
+                "trigger": "meaning_change",
+                "reason": "الواو تحتمل الاستئناف فيوقف على ومنذرين، أو الحال فيوصل.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "والذين",
+                "trigger": "meaning_change",
+                "reason": "على الاستئناف يبتدأ بالذين كفروا يجادلون، وعلى الحال يكون ذلك حال الإنذار.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 57,
+      "target_word": "يداه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿يداه - ٥٧ - ط﴾.",
+      "text_page": 666,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 57,
+      "target_word": "وقرا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿وقرا - ٥٧ - ط﴾ لاختلاف الجملتين مع ابتداء الشرط.",
+      "text_page": 666,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 58,
+      "target_word": "ذو الرحمة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ذو الرحمة - ٥٨ - ط﴾.",
+      "text_page": 666,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 58,
+      "target_word": "العذاب",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿العذاب - ٥٨ - ط﴾.",
+      "text_page": 666,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 62,
+      "target_word": "غداءنا",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿غداءنا - ٦٢ - ز﴾ لانقطاع النظم مع صدق اتصال المعنى.",
+      "text_page": 666,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 62,
+      "target_word": "الحوت",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "﴿الحوت - ٦٢ - ز﴾ تمام استفهام (٤) التعجب (٥) مع اتحاد الكلام، وكون الواو حالا.",
+      "text_page": 666,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 666,
+          "raw_text": "(٤) ب، ج: [ الاستفهام ].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 63,
+      "target_word": "أن أذكره",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 6,
+      "text": "﴿أن أذكره - ٦٣ - ج﴾ لجواز أن يكون ﴿واتخذ﴾ مستأنفا، أو حالا للضمير في ﴿أن أذكره﴾، أي: وقد اتخذ (٦).",
+      "text_page": 666,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 666,
+          "raw_text": "(٦) انظر: البحر المحيط ٦/١٤٦، ١٤٧، وتفسير أبي السعود ٥/٢٣٣.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "أن أذكره",
+                "trigger": "meaning_change",
+                "reason": "يجوز أن يكون واتخذ مستأنفا فيوقف على أن أذكره، أو حالا للضمير فيوصل.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "واتخذ",
+                "trigger": "meaning_change",
+                "reason": "على الاستئناف يبتدأ باتخذ، أي وقد اتخذ.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 63,
+      "target_word": "في البحر",
+      "verdict_label": "ق",
+      "verdict": "قيل فيه وقف",
+      "margin_ref": 7,
+      "text": "﴿في البحر - ٦٣ - ق﴾(٧) قد قيل تم عليه كلام يوشع، ثم ابتدأ موسى [ عليه السلام ] (٨): ﴿عجبا﴾ أي: أعجب [ لذلك ] (٩).",
+      "text_page": 666,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 666,
+          "raw_text": "(٧) علامة الوقف من: ب.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "في البحر",
+                "trigger": "scholars_disagree",
+                "reason": "قد قيل تم عليه كلام يوشع، فالوقف يفصل كلامه عما بعده.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "عجبا",
+                "trigger": "meaning_change",
+                "reason": "ثم ابتدأ موسى بعجبا، أي أعجب لذلك، فيتغير المتكلم.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

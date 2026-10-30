@@ -1,0 +1,687 @@
+{
+  "source": "apparatus_v4_683_686",
+  "page_numbers": [683, 684, 685, 686],
+  "waqfs": [
+    {
+      "ayah": 41,
+      "target_word": "في الكتاب إبراهيم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ في الكتاب إبراهيم - ٤١ - ط ﴾.",
+      "text_page": 683,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 44,
+      "target_word": "لا تعبد الشيطان",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿ لا تعبد الشيطان - ٤٤ - ط ﴾(3).",
+      "text_page": 683,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 683,
+          "raw_text": "(3) علامة الوقف ساقطة من : أ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 46,
+      "target_word": "يا إبراهيم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "﴿ يا إبراهيم - ٤٦ - ج ﴾ وقد يوصل ويوقف (4) على : « آلهتي » ، والأول (5) أجود (6) ، لأن لام « لئن » للابتداء على تعرض (7) القسم ، أي : والله لئن .",
+      "text_page": 683,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 683,
+          "raw_text": "(4) ب : [ يوقف ] بسقوط الواو من أوله . ويظهر أن مراد المؤلف بقوله : [ ويوقف ] أي : ويكون الوقف . وقد وضح هذا النحاس في القطع (٤٥٦) حيث قال : ﴿ قال أراغب أنت عن آلهتي يا إبراهيم ﴾ فإنه تام عند نافع وأحمد بن جعفر ، وقال أحمد : وإن شئت وقفت على ﴿ قال أراغب أنت عن آلهتي ﴾ ، ثم ابتدأت : ﴿ يا إبراهيم لئن لم تنته ﴾ ، والتمام عند غيرهما : ﴿ واهجرني مليا ﴾ . اهـ . وانظر : المكتفى (٣٧٦) ، ومنار الهدى (٢٣٨) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "آلهتي",
+                "trigger": "scholars_disagree",
+                "reason": "أجاز أحمد بن جعفر الوقف على ﴿قال أراغب أنت عن آلهتي﴾، والتمام عند نافع وأحمد بن جعفر على ﴿يا إبراهيم﴾، وعند غيرهما على ﴿واهجرني مليا﴾.",
+                "scholars": ["أحمد بن جعفر"]
+              },
+              {
+                "target_word": "مليا",
+                "trigger": "scholars_disagree",
+                "reason": "التمام عند غيرهما على ﴿واهجرني مليا﴾ لا على ﴿يا إبراهيم﴾.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "يا إبراهيم",
+                "trigger": "scholars_disagree",
+                "reason": "قال أحمد بن جعفر: ثم ابتدأت ﴿يا إبراهيم لئن لم تنته﴾.",
+                "scholars": ["أحمد بن جعفر"]
+              },
+              {
+                "start_word": "لئن",
+                "trigger": "meaning_change",
+                "reason": "لام «لئن» للابتداء على تعرض القسم، فالابتداء بها يقطعها عما قبلها.",
+                "scholars": []
+              }
+            ]
+          },
+          "opinions": [
+            {
+              "scholar": "نافع",
+              "verdict": "تام",
+              "comment": "على ﴿قال أراغب أنت عن آلهتي يا إبراهيم﴾",
+              "book": "القطع",
+              "book_ref": "456"
+            },
+            {
+              "scholar": "أحمد بن جعفر",
+              "verdict": "تام",
+              "comment": "وإن شئت وقفت على ﴿قال أراغب أنت عن آلهتي﴾ ثم ابتدأت ﴿يا إبراهيم لئن لم تنته﴾",
+              "book": "القطع",
+              "book_ref": "456"
+            },
+            {
+              "scholar": "unknown",
+              "verdict": "تام",
+              "comment": "التمام عند غيرهما على ﴿واهجرني مليا﴾",
+              "book": "القطع",
+              "book_ref": "456"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 47,
+      "target_word": "سلام عليك",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 8,
+      "text": "﴿ سلام عليك - ٤٧ - ج ﴾(8) لأن سين الاستقبال (9) يبتدأ بها مع أن القائل واحد .",
+      "text_page": 683,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 683,
+          "raw_text": "(8) أ : علامة الوقف : [ ط ] وهو خطأ بدلالة ما بعده .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 47,
+      "target_word": "لك ربي",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ لك ربي - ٤٧ - ط ﴾.",
+      "text_page": 684,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 48,
+      "target_word": "وأدعو ربي",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿ وأدعو ربي - ٤٨ - ز ﴾ لانقطاع النظم ، والوصل أولى ، لأن « عسى » كلمة ترجي (1) للإجابة ، فيوصل بالدعاء .",
+      "text_page": 684,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 684,
+          "raw_text": "(1) ج ، د : [ الترجي ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 49,
+      "target_word": "من دون الله",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿ من دون الله - ٤٩ - لا ﴾ لأن قوله : « وهبنا » جواب « فلما » .",
+      "text_page": 684,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 49,
+      "target_word": "ويعقوب",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ ويعقوب - ٤٩ - ط ﴾.",
+      "text_page": 684,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 51,
+      "target_word": "في الكتاب موسى",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿ في الكتاب موسى - ٥١ - ز ﴾ للابتداء بأن (2) ، مع أن (3) المراد في الذكر (4) : إخلاص موسى (5) عليه السلام ] (6) .",
+      "text_page": 684,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 684,
+          "raw_text": "(2) د : [ بان ] غير مثبتة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "إن",
+                "trigger": "meaning_change",
+                "reason": "الوقف للابتداء بأن، مع أن المراد في الذكر إخلاص موسى.",
+                "scholars": []
+              }
+            ]
+          },
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 54,
+      "target_word": "إسماعيل",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 7,
+      "text": "﴿ إسماعيل - ٥٤ - ز ﴾(7) كذلك .",
+      "text_page": 684,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 684,
+          "raw_text": "(7) علامة الوقف من : أ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 54,
+      "target_word": "رسولا نبيا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 8,
+      "text": "﴿ رسولا نبيا - ٥٤ - ج ﴾ لرأس الآية على صدق [ اتصال العطف ] (8) .",
+      "text_page": 684,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 684,
+          "raw_text": "(8) ما بين المعقوفين من : أ ، ج ، وفي ب : [ الاتصال والعطف ] ، وفي د : [ اتصال المعنى ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 55,
+      "target_word": "والزكاة",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "margin_ref": null,
+      "text": "﴿ والزكاة - ٥٥ - ص ﴾.",
+      "text_page": 684,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 56,
+      "target_word": "إدريس",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 9,
+      "text": "﴿ إدريس - ٥٦ - ز ﴾(9) لما ذكر في قوله (10) : « موسى » (11) .",
+      "text_page": 684,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 9,
+          "text_page": 684,
+          "raw_text": "(9) علامة الوقف غير مثبتة في : د .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 56,
+      "target_word": "نبيا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 12,
+      "text": "﴿ نبيا - ٥٦ - لا ﴾(12) قد قيل لا يوقف للعطف .",
+      "text_page": 684,
+      "old_text": "﴿ نبيا - ٥٦ - لا ﴾(12) قد قيل",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "قد قيل",
+          "new_text": "قد قيل لا يوقف للعطف",
+          "info": "تتمة التعليل في أول الصفحة ٦٨٥: «لا يوقف للعطف»."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 12,
+          "text_page": 684,
+          "raw_text": "(12) علامة الوقف : [ لا ] من : أ . ويظهر أنها الصواب ، بدلالة ما بعدها ، ولموافقة ما ذكره المؤلف في كتابه الصغير المسمى : وقوف القرآن ، لوحة (٧٦) وجه . وفي ب ، علامة الوقف : [ ق ] .",
+          "continuation": {
+            "status": "read",
+            "page": 685
+          },
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 58,
+      "target_word": "مع نوح",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿ مع نوح - ٥٨ - ز ﴾ على تقدير : ومن ذرية إبراهيم ، وما بعده قوم إذا تتلى عليهم ، ومن وقف على : « ذرية آدم » (1) ، أو (2) على : « إسرائيل » (3) فوجهه كذلك في التقدير ، ولكن الأصح أن الكل عطف على : « ذرية آدم » ، والوقف على قوله :",
+      "text_page": 685,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 685,
+          "raw_text": "(1) أ : ورد بعدها زيادة ، وهي : [ والوقف ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "ذرية آدم",
+                "trigger": "meaning_change",
+                "reason": "من وقف على «ذرية آدم» فوجهه تقدير محذوف، والأصح أن الكل عطف عليها.",
+                "scholars": []
+              },
+              {
+                "target_word": "إسرائيل",
+                "trigger": "meaning_change",
+                "reason": "من وقف على «إسرائيل» فوجهه كذلك في التقدير، والأصح العطف.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          },
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 58,
+      "target_word": "واجتبينا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿ واجتبينا - ٥٨ - ط ﴾(4) لئلا يحتاج إلى الحذف ، وليرجع ثناء السجود والبكاء إلى الكل .",
+      "text_page": 685,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 685,
+          "raw_text": "(4) علامة الوقف : [ ط ] مثبتة من : ج . ويظهر أنها الصواب بدلالة ما بعدها ، ولموافقة ما ذكره المؤلف في كتابه الصغير المسمى : وقوف القرآن ، لوحة (٧٦) وجه . وفي أ : علامة الوقف : [ ج ] . والوقف هنا حسن عند ابن الأنباري ، وكاف عند الداني ، والأنصاري ، والأشموني ، أما النحاس ، فذكر أنه تام عند أبي حاتم . انظر : الإيضاح ٢/٧٦٥ ، والقطع (٤٥٦) ، والمكتفى (٣٧٦) ، والمقصد (٢٣٩) ، والمنار (٢٣٩) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "2/765"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "376"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "239"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "239"
+            },
+            {
+              "scholar": "أبو حاتم",
+              "verdict": "تام",
+              "comment": "ذكره النحاس",
+              "book": "القطع",
+              "book_ref": "456"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 59,
+      "target_word": "غيا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 5,
+      "text": "﴿ غيا - ٥٩ - لا ﴾(5) للاستثناء .",
+      "text_page": 685,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 685,
+          "raw_text": "(5) علامة الوقف ساقطة من : د .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 60,
+      "target_word": "شيئا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 6,
+      "text": "﴿ شيئا - ٦٠ - لا ﴾(6) لأن « جنات » بدل من قوله : « الجنة » .",
+      "text_page": 685,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 685,
+          "raw_text": "(6) علامة الوقف ساقطة من : د .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 61,
+      "target_word": "بالغيب",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ بالغيب - ٦١ - ط ﴾.",
+      "text_page": 685,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 62,
+      "target_word": "إلا سلاما",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ إلا سلاما - ٦٢ - ط ﴾.",
+      "text_page": 685,
+      "old_text": "﴿ إلا",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ إلا",
+          "new_text": "﴿ إلا سلاما - ٦٢ - ط ﴾",
+          "info": "يفتح القوس في آخر الصفحة ٦٨٥ ويتم في أول الصفحة ٦٨٦: «سلاما - ٦٢ - ط»."
+        }
+      ],
+      "apparatus": []
+    },
+    {
+      "ayah": 64,
+      "target_word": "بأمر ربك",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿ بأمر ربك - ٦٤ - ج ﴾(1) لاختلاف الجملتين .",
+      "text_page": 686,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 686,
+          "raw_text": "(1) ب : علامة الوقف : [ ط ، ج ] . والوقف هنا حسن عند الأنصاري والأشموني . انظر : المقصد (٢٣٩) ، والمنار (٢٣٩) . أما ابن الأنباري ، والنحاس ، والداني فلم يذكروا هنا وقفا . انظر : الإيضاح ٢/٧٦٥ ، والقطع (٤٥٧) ، والمكتفى (٣٧٦) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأنصاري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "239"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "239"
+            },
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "2/765"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "457"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "376"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 64,
+      "target_word": "وما بين ذلك",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿ وما بين ذلك - ٦٤ - ج ﴾(2) لأن قوله : « وما كان » معطوف (3) على « وما تنزل » ، مع وقوع العارض .",
+      "text_page": 686,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 686,
+          "raw_text": "(2) علامة الوقف ساقطة من : أ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 64,
+      "target_word": "نسيا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "﴿ نسيا - ٦٤ - ج ﴾ لأن قوله : « رب السموات » خبر مبتدأ محذوف ، أي : هو رب ، أو بدل : « ربك » (4) ، والوقف أجوز للآية .",
+      "text_page": 686,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 686,
+          "raw_text": "(4) أي : بدل من : ﴿ ربك ﴾ في قوله تعالى : ﴿ وما كان ربك نسيا ﴾ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "رب",
+                "trigger": "meaning_change",
+                "reason": "«رب السموات» خبر مبتدأ محذوف أو بدل «ربك»، فالابتداء به يجعل ما بعده جملة مستقلة والوقف قبله أجوز للآية.",
+                "scholars": []
+              }
+            ]
+          },
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 65,
+      "target_word": "لعبادته",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿ لعبادته - ٦٥ - ط ﴾(5).",
+      "text_page": 686,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 686,
+          "raw_text": "(5) علامة الوقف ساقطة من : أ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 68,
+      "target_word": "جثيا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 6,
+      "text": "﴿ جثيا - ٦٨ - ج ﴾ للآية مع العطف (6) واتصال المعنى .",
+      "text_page": 686,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 686,
+          "raw_text": "(6) د : [ مع واو العطف ] ، وهو خطأ ، لأن العطف بثم ، وليس بالواو .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 69,
+      "target_word": "عيا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 7,
+      "text": "﴿ عيا - ٦٩ - ج ﴾(7) كذلك .",
+      "text_page": 686,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 686,
+          "raw_text": "(7) علامة الوقف مثبتة من : أ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 71,
+      "target_word": "واردها",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿ واردها - ٧١ - ج ﴾ لانقطاع النظم مع اتصال المعنى .",
+      "text_page": 686,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    }
+  ]
+}

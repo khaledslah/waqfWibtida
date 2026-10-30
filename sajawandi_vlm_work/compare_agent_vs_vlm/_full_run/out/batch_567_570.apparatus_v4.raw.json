@@ -1,0 +1,581 @@
+{
+  "source": "apparatus_v4_567_570",
+  "page_numbers": [567, 568, 569, 570],
+  "waqfs": [
+    {
+      "ayah": 18,
+      "target_word": "عند الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿عند الله - ١٨ - ط﴾",
+      "text_page": 567,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 18,
+      "target_word": "ولا في الأرض",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ولا في الأرض - ١٨ - ط﴾",
+      "text_page": 567,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 19,
+      "target_word": "فاختلفوا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿فاختلفوا - ١٩ - ط﴾",
+      "text_page": 567,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 20,
+      "target_word": "من ربه",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿من ربه - ٢٠ - ج﴾ لأن الأمر يبتدأ به مع دخول الفاء فيه(١).",
+      "text_page": 567,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 567,
+          "raw_text": "(١) انظر : منار الهدى (١٧٤) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "من ربه",
+                "trigger": "meaning_change",
+                "reason": "الوقف على «من ربه» يفصل ما قبله عن الأمر الذي يبتدأ بدخول الفاء.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "فقل",
+                "trigger": "meaning_change",
+                "reason": "التعليل أن الأمر يبتدأ به مع دخول الفاء، فيُستأنف «فقل».",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 20,
+      "target_word": "فانتظروا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿فانتظروا - ٢٠ - ج﴾ لأن ﴿إن﴾ للابتداء، ولكن الجملتين اتحدتا معنى، فكان(٢) التقدير: فإني معكم(٣).",
+      "text_page": 567,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 567,
+          "raw_text": "(٢) ب ، د : [ وكان ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "فانتظروا",
+                "trigger": "meaning_change",
+                "reason": "«إن» للابتداء، لكن الجملتين اتحدتا معنى فالتقدير «فإني معكم»، فالوقف جائز لا تام.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "إني",
+                "trigger": "meaning_change",
+                "reason": "«إن» حرف ابتداء، فيصلح استئناف «إني معكم» لولا اتحاد الجملتين معنى.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 21,
+      "target_word": "في آياتنا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿في آياتنا - ٢١ - ط﴾",
+      "text_page": 567,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 21,
+      "target_word": "مكرا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿مكرا - ٢١ - ط﴾ وإن قرأ ﴿يمكرون﴾ بالياء(٤) فالوقف(٥) أوجه لأن الجملة لا تكون من المقول.",
+      "text_page": 567,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 567,
+          "raw_text": "(٤) قرأ بها روح ، وقرأ الباقون بتاء الخطاب . انظر : النشر ٣/١٠٤ ، والمهذب ١/٢٩٤ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "مكرا",
+                "trigger": "meaning_change",
+                "reason": "على قراءة ﴿يمكرون﴾ بالياء فالوقف أوجه لأن الجملة التالية ليست من مقول «قل».",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "إن",
+                "trigger": "meaning_change",
+                "reason": "إذا لم تكن الجملة من المقول استؤنف «إن رسلنا» بعد الوقف على «مكرا».",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 22,
+      "target_word": "والبحر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 6,
+      "text": "﴿والبحر - ٢٢ - ط﴾ لأن ﴿حتى﴾ للابتداء إذا كان بعدها إذا، إلا قوله: ﴿حتى إذا بلغوا النكاح﴾(٦) فإنها لانتهاء الابتداء.",
+      "text_page": 567,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 567,
+          "raw_text": "(٦) سورة النساء من الآية السادسة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "والبحر",
+                "trigger": "meaning_change",
+                "reason": "الوقف على «والبحر» لأن ﴿حتى﴾ بعده للابتداء إذا وليها «إذا».",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "حتى",
+                "trigger": "meaning_change",
+                "reason": "﴿حتى﴾ للابتداء إذا كان بعدها «إذا»، فيُستأنف منها إلا في ﴿حتى إذا بلغوا النكاح﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 22,
+      "target_word": "في الفلك",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 7,
+      "text": "﴿في الفلك - ٢٢ - ج﴾ للعدول مع أن جواب ﴿إذا﴾ منتظر، وهو «جاءتها»(٧).",
+      "text_page": 567,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 567,
+          "raw_text": "(٧) انظر : البحر المحيط ٥/١٣٩ ، والدر المصون ٦/١٧٢ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 22,
+      "target_word": "أحيط بهم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 8,
+      "text": "﴿أحيط بهم - ٢٢ - لا﴾(٨) لأن قوله: ﴿دعوا الله﴾ من بيان حالهم ووجه اتصاله(٩) [ - إن شاء الله - ](١) أن «إذا» كأنها(٢) كررت(٣) على تقدير: وإذا جاءتها ريح عاصف وجاءهم الموج [من كل مكان ...](٤) فكان(٥) ﴿دعوا الله﴾ جوابا لهما، أو ﴿دعوا﴾ كالبدل لجاءتها، فكان «إذا» لها جوابان، والأول(٦) أوجه.",
+      "text_page": 567,
+      "old_text": "﴿أحيط بهم - ٢٢ - لا﴾(٨) لأن قوله: ﴿دعوا الله﴾ من بيان حالهم ووجه اتصاله(٩)",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿أحيط بهم - ٢٢ - لا﴾(٨) لأن قوله: ﴿دعوا الله﴾ من بيان حالهم ووجه اتصاله(٩)",
+          "new_text": "﴿أحيط بهم - ٢٢ - لا﴾(٨) لأن قوله: ﴿دعوا الله﴾ من بيان حالهم ووجه اتصاله(٩) [ - إن شاء الله - ](١) أن «إذا» كأنها(٢) كررت(٣) على تقدير: وإذا جاءتها ريح عاصف وجاءهم الموج [من كل مكان ...](٤) فكان(٥) ﴿دعوا الله﴾ جوابا لهما، أو ﴿دعوا﴾ كالبدل لجاءتها، فكان «إذا» لها جوابان، والأول(٦) أوجه.",
+          "info": "التعليل يبدأ في الصفحة ٥٦٧ ويتم في رأس الصفحة ٥٦٨ قبل ﴿له الدين﴾. أرقام (١)–(٦) حواشي الصفحة ٥٦٨."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 567,
+          "raw_text": "(٨) د : علامة الوقف ساقطة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 22,
+      "target_word": "له الدين",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 7,
+      "text": "﴿له الدين - ٢٢ - ج﴾(٧) لأن قوله: ﴿لئن﴾ يصلح مقول قول(٧) محذوف، ومفعول ﴿دعوا﴾ لأن الدعاء قول(٨).",
+      "text_page": 568,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 568,
+          "raw_text": "(٧) أ : [ قول ] ساقطة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "له الدين",
+                "trigger": "meaning_change",
+                "reason": "الوقف على «له الدين» لأن ﴿لئن﴾ يصلح أن يكون مقول قول محذوف فيُستأنف، أو مفعول ﴿دعوا﴾ فيوصل.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "لئن",
+                "trigger": "meaning_change",
+                "reason": "إذا جُعل ﴿لئن﴾ مقول قول محذوف استؤنف به بعد «له الدين».",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 23,
+      "target_word": "بغير الحق",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿بغير الحق - ٢٣ - ط﴾",
+      "text_page": 568,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 23,
+      "target_word": "على أنفسكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 9,
+      "text": "﴿على أنفسكم - ٢٣ - ط﴾ لأن قوله: ﴿متاع﴾ خبر محذوف(٩)، أي: هو متاع، [ومن نصب متاع](١٠) لم يقف لأنه(١١) جعله [ظرف البغي](١) لأن ﴿متاع﴾(٢) مضاف إلى(٣) ﴿الحياة﴾، والحياة زمان [محدود معدود](٤).",
+      "text_page": 568,
+      "old_text": "﴿على أنفسكم - ٢٣ - ط﴾ لأن قوله: ﴿متاع﴾ خبر محذوف(٩)، أي: هو متاع، [ومن نصب متاع](١٠) لم يقف لأنه(١١) جعله [ظرف",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿على أنفسكم - ٢٣ - ط﴾ لأن قوله: ﴿متاع﴾ خبر محذوف(٩)، أي: هو متاع، [ومن نصب متاع](١٠) لم يقف لأنه(١١) جعله [ظرف",
+          "new_text": "﴿على أنفسكم - ٢٣ - ط﴾ لأن قوله: ﴿متاع﴾ خبر محذوف(٩)، أي: هو متاع، [ومن نصب متاع](١٠) لم يقف لأنه(١١) جعله [ظرف البغي](١) لأن ﴿متاع﴾(٢) مضاف إلى(٣) ﴿الحياة﴾، والحياة زمان [محدود معدود](٤).",
+          "info": "التعليل يبدأ في الصفحة ٥٦٨ ويتم في رأس الصفحة ٥٦٩ قبل ﴿والأنعام﴾. أرقام (١)–(٤) حواشي الصفحة ٥٦٩."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 9,
+          "text_page": 568,
+          "raw_text": "(٩) أي : خبر مبتدأ محذوف .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "على أنفسكم",
+                "trigger": "scholars_disagree",
+                "reason": "على رفع ﴿متاع﴾ يوقف لأنه خبر محذوف المبتدأ، ومن نصب ﴿متاع﴾ لم يقف لأنه جعله ظرف البغي.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "متاع",
+                "trigger": "meaning_change",
+                "reason": "على الرفع تُستأنف «متاع» بمعنى: هو متاع. وعلى النصب لا يُستأنف لأنها ظرف للبغي.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 24,
+      "target_word": "والأنعام",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿والأنعام - ٢٤ - ط﴾",
+      "text_page": 569,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 24,
+      "target_word": "عليها",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿عليها - ٢٤ - لا﴾ لأن «أتاها» جواب «إذا».",
+      "text_page": 569,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 24,
+      "target_word": "بالأمس",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿بالأمس - ٢٤ - ط﴾",
+      "text_page": 569,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 25,
+      "target_word": "السلام",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "[﴿السلام - ٢٥ - ط﴾](٥)",
+      "text_page": 569,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 569,
+          "raw_text": "(٥) ج : ما بين المعقوفين غير مثبت .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 26,
+      "target_word": "وزيادة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿وزيادة - ٢٦ - ط﴾",
+      "text_page": 569,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 26,
+      "target_word": "ذلة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ذلة - ٢٦ - ط﴾",
+      "text_page": 569,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 26,
+      "target_word": "الجنة",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿الجنة - ٢٦ - ج﴾ لأن قوله ﴿هم فيها﴾ يصلح جملة مبتدأة، ويصلح أن يكون خبرا بعد خبر لأولئك(١) على تقدير: رمان حلو حامض(٢).",
+      "text_page": 570,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 570,
+          "raw_text": "(١) د : [ لأن ﴿أولئك﴾ ] وهو تصحيف .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "الجنة",
+                "trigger": "meaning_change",
+                "reason": "الوقف على «الجنة» يجعل ﴿هم فيها﴾ جملة مبتدأة، والوصل يجعلها خبرا ثانيا لأولئك كقولهم: رمان حلو حامض.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "هم",
+                "trigger": "meaning_change",
+                "reason": "على وجه الابتداء تُستأنف ﴿هم فيها﴾ جملة مستقلة بعد «الجنة».",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 27,
+      "target_word": "بمثلها",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 3,
+      "text": "﴿بمثلها - ٢٧ - لا﴾ لأن قوله: [﴿وترهقهم﴾] معطوف على محذوف، والتقدير: يلزمهم جزاء سيئة(٣) [وترهقهم](٤).",
+      "text_page": 570,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 570,
+          "raw_text": "(٣) ب : ما بين المعقوفين غير مثبت .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 27,
+      "target_word": "ذلة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ذلة - ٢٧ - ط﴾",
+      "text_page": 570,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 27,
+      "target_word": "من عاصم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 5,
+      "text": "﴿من عاصم - ٢٧ - ج﴾(٥) لأن الكاف لا تتعلق بعاصم، مع(٦) تعلقها بذلة قبله معنى [لأن رهق الذلة سواد الوجه المعبر(١) بقوله: ﴿كأنما أغشيت﴾](٢).",
+      "text_page": 570,
+      "old_text": "﴿من عاصم - ٢٧ - ج﴾(٥) لأن الكاف لا تتعلق بعاصم، مع(٦) تعلقها بذلة قبله معنى [لأن رهق الذلة سواد الوجه",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿من عاصم - ٢٧ - ج﴾(٥) لأن الكاف لا تتعلق بعاصم، مع(٦) تعلقها بذلة قبله معنى [لأن رهق الذلة سواد الوجه",
+          "new_text": "﴿من عاصم - ٢٧ - ج﴾(٥) لأن الكاف لا تتعلق بعاصم، مع(٦) تعلقها بذلة قبله معنى [لأن رهق الذلة سواد الوجه المعبر(١) بقوله: ﴿كأنما أغشيت﴾](٢).",
+          "info": "التعليل يُفتح في الصفحة ٥٧٠ ويُغلق في أول الصفحة ٥٧١ قبل ﴿مظلما﴾. أرقام (١) و(٢) حواشي الصفحة ٥٧١، ولم يُستخرج منها وقف."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 570,
+          "raw_text": "(٥) د : علامة الوقف : [ ط ] ، ويظهر أن الصواب أن أثبتناه لدلالة ما بعده ، حيث أن العلة الأولى لجواز الوقف ، والعلة الثانية لجواز الوصل . وقد ذكر الأنصاري في المقصد (١٧٥) أن الوقف هنا مفهوم عند بعض العلماء ، ونص الأشموني في المنار (١٧٥) على أنه حسن للعلة التي ذكرها المؤلف .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأنصاري",
+              "verdict": "مفهوم",
+              "comment": "الوقف هنا مفهوم عند بعض العلماء",
+              "book": "المقصد",
+              "book_ref": "175"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": "للعلة التي ذكرها المؤلف. وفي نسخة د العلامة ط، والمثبت في المتن ج",
+              "book": "المنار",
+              "book_ref": "175"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "من عاصم",
+                "trigger": "meaning_change",
+                "reason": "الكاف لا تتعلق بعاصم بل بذلة قبله، لأن رهق الذلة سواد الوجه في ﴿كأنما أغشيت﴾. الأشموني حسّنه، والأنصاري حكى أنه مفهوم عند بعض العلماء، والوصل جائز أيضا.",
+                "scholars": ["الأشموني", "الأنصاري"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "كأنما",
+                "trigger": "meaning_change",
+                "reason": "بعد الوقف على «من عاصم» تُستأنف ﴿كأنما أغشيت﴾ بيانا لسواد الوجه، لا صفة لعاصم.",
+                "scholars": ["الأشموني"]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

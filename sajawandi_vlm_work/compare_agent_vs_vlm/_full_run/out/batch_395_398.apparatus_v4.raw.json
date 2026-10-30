@@ -1,0 +1,571 @@
+{
+  "source": "apparatus_v4_395_398",
+  "page_numbers": [395, 396, 397, 398],
+  "waqfs": [
+    {
+      "ayah": 151,
+      "target_word": "النار",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿النار - 151 - ط﴾.",
+      "text_page": 395,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 152,
+      "target_word": "باذنه",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿باذنه - 152 - ج﴾(1) لأن ﴿حتى﴾(2) يحتمل انتهاء الحس(3) ، ووجه الابتداء أظهر لاقتران ﴿إذا﴾ مع حذف(4) الجواب(5) ، أي : إذا(6) فعلتم وفعلتم(7) انقلب الأمر(8).",
+      "text_page": 395,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 395,
+          "raw_text": "(١) وهو حسن عند النحاس ، والأشموني ، وصالح عند الأنصاري . انظر : القطع ( ٢٣٨ ) ، والمقصد ( ٩٠ ) ، والمنار ( ٩٠ ) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "النحاس",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "238"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "90"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "صالح",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "90"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "باذنه",
+                "trigger": "meaning_change",
+                "reason": "الوقف عند باذنه لأن حتى تحتمل انتهاء الحس، ووجه الابتداء بعده أظهر لاقتران إذا بجواب محذوف.",
+                "scholars": ["النحاس", "الأشموني", "الأنصاري"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "حتى",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بحتى أظهر، لأن إذا اقترنت بجواب محذوف: إذا فعلتم وفعلتم انقلب الأمر.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 152,
+      "target_word": "تحبون",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "والوقف على ﴿تحبون - 152 - ج﴾(1) [ في الوجهين ](2)",
+      "text_page": 396,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 396,
+          "raw_text": "(١) ب ، ج : علامة الوقف : [ ط ] . وفي : د ، ساقطة ، وما أثبتناه من : أ ، هو الظاهر ، لأن ما بعد ﴿تحبون﴾ يدل على ما قبله من الفشل والتنازع والمعصية ، وقد ذكر هذا التعليل أبو حيان في البحر ٣/٧٩ . والوقف هنا حسن عند الأنصاري والأشموني . انظر : المقصد ( ٩٠ ) ، والمنار ( ٩٠ ) . أما ابن الأنباري في الإيضاح ٢/٥٨٧ ، والنحاس في القطع ( ٢٣٨ ) ، والداني في المكتفى ( ٢١٢ ) فلم يذكروا هنا وقفا .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأنصاري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "90"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "90"
+            },
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "2/587"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "238"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "212"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "تحبون",
+                "trigger": "scholars_disagree",
+                "reason": "حسن عند الأنصاري والأشموني، ولم يذكر ابن الأنباري والنحاس والداني هنا وقفا.",
+                "scholars": ["الأنصاري", "الأشموني"]
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 152,
+      "target_word": "الآخرة",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 3,
+      "text": "﴿الآخرة - 152 - ج﴾(3) لأن ﴿ثم﴾ لترتيب الأخبار، [ وقيل ](4) عطف ﴿صرفكم﴾ على الجواب المحذوف الذي ذكر، والأول أوجه.",
+      "text_page": 396,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 396,
+          "raw_text": "(٣) ب ، ح : علامة الوقف : [ ط ] . وما أثبتناه لدلالة ما بعده عليه .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "الآخرة",
+                "trigger": "meaning_change",
+                "reason": "ثم لترتيب الأخبار فيجوز الفصل، وقيل إن صرفكم عطف على الجواب المحذوف، والأول أوجه.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "ثم",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بثم على أنها لترتيب الأخبار، لا على عطف صرفكم على الجواب المحذوف.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 152,
+      "target_word": "ليبتليكم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿ليبتليكم - 152 - ج﴾.",
+      "text_page": 396,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 152,
+      "target_word": "عفا عنكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿عفا عنكم - 152 - ط﴾.",
+      "text_page": 397,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 153,
+      "target_word": "ولا ما أصابكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ولا ما أصابكم - 153 - ط﴾.",
+      "text_page": 397,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 154,
+      "target_word": "طائفة منكم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 1,
+      "text": "﴿طائفة منكم - 154 - لا﴾(1) لأن الواو للحال(2).",
+      "text_page": 397,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 397,
+          "raw_text": "(١) ب : علامة الوقف [ لا ، ط ] وهو خطأ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": null
+        }
+      ]
+    },
+    {
+      "ayah": 154,
+      "target_word": "الجاهلية",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿الجاهلية - 154 - ط﴾.",
+      "text_page": 397,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 154,
+      "target_word": "من شيء",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من شيء - 154 - ط﴾.",
+      "text_page": 397,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 154,
+      "target_word": "الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿الله - 154 - ط﴾.",
+      "text_page": 397,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 154,
+      "target_word": "يبدون لك",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿يبدون لك - 154 - ط﴾.",
+      "text_page": 397,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 154,
+      "target_word": "ههنا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ههنا - 154 - ط﴾.",
+      "text_page": 397,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 154,
+      "target_word": "مضاجعهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 3,
+      "text": "﴿مضاجعهم - 154 - ج﴾. لأن الواو مقحمة ، أو عاطفة على محذوف ، أي : لينفذ الحكم فيكم ، وليبتلي(3).",
+      "text_page": 397,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 397,
+          "raw_text": "(٣) انظر : البحر ٣/٩٠ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "مضاجعهم",
+                "trigger": "meaning_change",
+                "reason": "الواو بعد مضاجعهم مقحمة أو عاطفة على محذوف، فيجوز الوقف قبل جملة لينفذ الحكم فيكم وليبتلي.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "لينفذ",
+                "trigger": "meaning_change",
+                "reason": "تقدير المحذوف: لينفذ الحكم فيكم وليبتلي، فيستأنف الكلام بهذا المعنى.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 154,
+      "target_word": "ما في قلوبكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ما في قلوبكم - 154 - ط﴾.",
+      "text_page": 397,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 155,
+      "target_word": "الجمعان",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿الجمعان - 155 - لا﴾. لأن ﴿إنما﴾ خبر أن.",
+      "text_page": 397,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 155,
+      "target_word": "ما كسبوا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "﴿ما كسبوا - 155 - ج﴾(4) لاحتمال الواو حالا واستئنافا.",
+      "text_page": 397,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 397,
+          "raw_text": "(٤) ب : علامة الوقف : [ ط ] ، والصواب ما أثبتناه لدلالة ما بعده عليه .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "ما كسبوا",
+                "trigger": "meaning_change",
+                "reason": "الواو تحتمل الحال فلا يوقف، والاستئناف فيوقف، فيختلف المعنى.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 155,
+      "target_word": "عفا الله عنهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿عفا الله عنهم - 155 - ط﴾(5).",
+      "text_page": 397,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 397,
+          "raw_text": "(٥) د : علامة الوقف ساقطة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": null
+        }
+      ]
+    },
+    {
+      "ayah": 156,
+      "target_word": "وما قتلوا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿وما قتلوا - 156 - ج﴾ لأن لام ﴿ليجعل﴾(1) [ قد يتعلق بقوله : ﴿وقالوا لإخوانهم﴾ أو بمحذوف(2) ، أي(3) : ذلك ليجعل ](4).",
+      "text_page": 397,
+      "old_text": "﴿وما قتلوا - 156 - ج﴾ لأن لام",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿وما قتلوا - 156 - ج﴾ لأن لام",
+          "new_text": "﴿وما قتلوا - 156 - ج﴾ لأن لام ﴿ليجعل﴾(1) [ قد يتعلق بقوله : ﴿وقالوا لإخوانهم﴾ أو بمحذوف(2) ، أي(3) : ذلك ليجعل ](4).",
+          "info": "التعليل وقوس ﴿ليجعل﴾ يتمان في صدر الصفحة 398."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 398,
+          "raw_text": "(١) وهي لام الصيرورة والعاقبة ، وليست لام كي ، أي صار أمرهم إلى ذلك بسبب مقالتهم ، لا أنهم قالوا هذه المقالة كي يجدوا حسرتها في قلوبهم . انظر : إعراب القرآن للعكبري ١/١٥٥ ، والبحر المحيط ٣/٩٤ ، ٩٥ ، وتفسير أبي السعود ٢/١٠٣ ، ١٠٤ ، ومنار الهدى ( ٩١ ) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "وما قتلوا",
+                "trigger": "meaning_change",
+                "reason": "لام ليجعل قد تتعلق بقوله وقالوا لإخوانهم أو بمحذوف، وهي لام صيرورة لا لام كي، فيتغير متعلق الكلام.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "ليجعل",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بليجعل على تقدير محذوف: ذلك ليجعل، لا على تعلق اللام بقالوا لإخوانهم.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 156,
+      "target_word": "في قلوبهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿في قلوبهم - 156 - ط﴾.",
+      "text_page": 398,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 156,
+      "target_word": "ويميت",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ويميت - 156 - ط﴾.",
+      "text_page": 398,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 159,
+      "target_word": "لنت لهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 5,
+      "text": "﴿لنت لهم - 159 - ج﴾(5) لأن الواو للعطف ، ولو للشرط.",
+      "text_page": 398,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 398,
+          "raw_text": "(٥) د : الآيات التي بين المعقوفين علامة الوقف فيها غير مثبتة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "لنت لهم",
+                "trigger": "meaning_change",
+                "reason": "الواو للعطف ولو للشرط، فيجوز الوقف لابتداء جملة الشرط.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "ولو",
+                "trigger": "meaning_change",
+                "reason": "لو للشرط، فتبتدئ بها جملة جديدة بعد الوقف على لنت لهم.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 159,
+      "target_word": "من حولك",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "margin_ref": 6,
+      "text": "﴿من حولك - 159 - ص﴾ والوصل هو الوجه لتعقيب(6) الأمر بالرحمة(7) على النهي عن الفظاظة(8).",
+      "text_page": 398,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 398,
+          "raw_text": "(٦) المثبت من : أ ، وفي بقية النسخ : [ لتعقب ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "من حولك",
+                "trigger": "meaning_change",
+                "reason": "الوقف حسن والوصل أوجه، لأن الأمر بالرحمة يعقب النهي عن الفظاظة، فيتغير اتصال المعنى بالفصل.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    }
+  ]
+}

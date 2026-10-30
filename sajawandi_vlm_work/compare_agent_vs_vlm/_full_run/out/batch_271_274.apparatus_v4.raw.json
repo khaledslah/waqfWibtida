@@ -1,0 +1,611 @@
+{
+  "source": "apparatus_v4_271_274",
+  "page_numbers": [271, 272, 273, 274],
+  "waqfs": [
+    {
+      "ayah": 180,
+      "target_word": "خيرا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿خيرا - ١٨٠ - ج﴾ لأن قوله(١): ﴿الوصية﴾ مفعول ﴿كتب﴾ وإنما لم يؤنث الفعل لتقدمه(٢)، وللاعتراض(٣) [ظرف وشرط](٤) بينهما، أو الوصية(٥) مبتدأ و﴿للوالدين﴾ خبره، ومفعول ﴿كتب﴾ محذوف، أي: كتب عليكم أن توصوا، ثم بين لمن الوصية(٦)، والوصل أولى لئلا يحتاج إلى الحذف(٧).",
+      "text_page": 271,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 271,
+          "raw_text": "(١) ج: [قول].",
+          "continuation": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "خيرا",
+                "trigger": "meaning_change",
+                "reason": "الوقف على خيرا يفتح وجهين: الوصية مفعول كتب، أو مبتدأ خبره للوالدين، والوصل أولى لئلا يحتاج إلى الحذف.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "الوصية",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بالوصية يجعلها إما مفعولا لكتب وإما مبتدأ، والوصل يبقيها في جملة كتب.",
+                "scholars": []
+              }
+            ]
+          },
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 180,
+      "target_word": "بالمعروف",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 8,
+      "text": "﴿بالمعروف - ١٨٠ - ج﴾(٨) لأن التقدير: حق ذلك حقا، أو كتب الوصية حقا.",
+      "text_page": 271,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 271,
+          "raw_text": "(٨) أ: علامة الوقف: [ط]. وما أثبتناه لدلالة ما بعده عليه، حيث ذكر المؤلف أن الوقف على ﴿بالمعروف﴾ إن نصب ﴿حقا﴾ على المصدر، وليس بوقف إن نصب ﴿حقا﴾ بكتب. وهو كاف عند الأنصاري على التقدير الأول، وليس بوقف على التقدير الثاني. انظر: المقصد (٥٤)، ومنار الهدى (٥٤)، والبيان في غريب إعراب القرآن ١/١٤١، ١٤٢، وإعراب القرآن للعكبري ١/٧٩، والبحر المحيط ٢/٢١، ٢٢.",
+          "continuation": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "بالمعروف",
+                "trigger": "meaning_change",
+                "reason": "كاف إن نصب حقا على المصدر (حق ذلك حقا)، وليس بوقف إن نصب حقا بكتب.",
+                "scholars": ["الأنصاري"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "حقا",
+                "trigger": "meaning_change",
+                "reason": "على التقدير الأول يُبتدأ بحقا مصدرا مؤكدا، وعلى التقدير الثاني تُوصل بكتب فلا يُبتدأ بها.",
+                "scholars": ["الأنصاري"]
+              }
+            ]
+          },
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": "على التقدير الأول: إن نصب حقا على المصدر",
+              "book": "المقصد",
+              "book_ref": "54"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "ليس بوقف",
+              "comment": "على التقدير الثاني: إن نصب حقا بكتب",
+              "book": "المقصد",
+              "book_ref": "54"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 180,
+      "target_word": "على المتقين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿على المتقين - ١٨٠ - ط﴾(١) للآية، وإن كان بعدها فاء التعقيب(٢).",
+      "text_page": 272,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 272,
+          "raw_text": "(١) د: علامة الوقف ساقطة. وهو كاف عند النحاس والأشموني، وحسن عند الأنصاري. انظر: القطع (١٧٦)، والمقصد (٥٤)، والمنار (٥٤).",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "النحاس",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "176"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "54"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "54"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 181,
+      "target_word": "عليم",
+      "verdict_label": null,
+      "verdict": null,
+      "margin_ref": 3,
+      "text": "[﴿عليم - ١٨١﴾] كذلك(٣).",
+      "text_page": 272,
+      "old_text": "[﴿عليم - ١٨١﴾] كذلك(٣).",
+      "fixes": [
+        {
+          "type": "malformed_bracket",
+          "basis": "page_prose",
+          "old_text": "[﴿عليم - ١٨١﴾]",
+          "new_text": "﴿عليم - ١٨١﴾",
+          "info": "العلامة بين قوسين معقوفين وبلا حرف حكم بعد رقم الآية"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 272,
+          "raw_text": "(٣) ب: ما بين المعقوفين غير مثبت. ومراد المؤلف بقوله: [كذلك] أنه يوقف على ﴿عليم﴾ وقفا مطلقا مثل الوقف على قوله تعالى: ﴿على المتقين﴾ وذلك لأنه رأس آية، وإن كان بعده فاء التعقيب في قوله تعالى: ﴿فمن خاف من موص جنفا أو إثما﴾. وهو كاف عند النحاس والأنصاري، وأكفى من الوقف على ﴿يبدلونه﴾ عند الداني، وحسن عند الأشموني. انظر: القطع (١٧٦)، والمكتفى (١٨٠)، والمقصد (٥٤)، والمنار (٥٤).",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "النحاس",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "176"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "54"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "أكفى",
+              "comment": "أكفى من الوقف على يبدلونه",
+              "book": "المكتفى",
+              "book_ref": "180"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "54"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 181,
+      "target_word": "يبدلونه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿يبدلونه - ١٨١ - ط﴾(٤).",
+      "text_page": 272,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 272,
+          "raw_text": "(٤) ب: ورد بعد قوله: [﴿يبدلونه﴾ ط] قوله: [﴿عليهم﴾ كذلك]. وقد وضحنا هذا في الهامش الذي قبله. وهو كاف عند الداني والأنصاري، وحسن عند الأشموني. انظر: المكتفى (١٨٠)، والمقصد (٥٤)، والمنار (٥٤).",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "180"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "54"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "54"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 182,
+      "target_word": "عليه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿عليه - ١٨٢ - ط﴾(٥).",
+      "text_page": 272,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 272,
+          "raw_text": "(٥) وهو كاف عند الأنصاري، وحسن عند الأشموني. انظر: المقصد (٥٤)، والمنار (٥٤).",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "54"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "54"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 183,
+      "target_word": "تتقون",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 1,
+      "text": "﴿تتقون - ١٨٣ - لا﴾(١). لأن(٢) ﴿أياما﴾ ظرف الاتقاء(٣).",
+      "text_page": 273,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 273,
+          "raw_text": "(١) أ: ورد قبله زيادة من الناسخ، وهي: [عليه ط]. وقال ابن الأنباري في الإيضاح ١/٥٤٣: [والوقف على قوله: ﴿لعلكم تتقون﴾ قبيح، لأن ﴿أياما معدودات﴾ منصوبة بكتب، وهو الذي يسميه بعض النحويين خبر ما لم يسم فاعله]. وذكر الأشموني في المنار (٥٤) أن الوقف هنا جائز لأنه رأس آية، وليس بحسن لأن ما بعده متعلق ب﴿كتب عليكم الصيام﴾ لأن ﴿أياما﴾ منصوب على الظرف، أي: كتب عليكم الصيام في أيام معدودات، فلا يفصل بين الظرف وبين ما عمل فيه من الفعل. وذكر قريبا من هذا الأنصاري في المقصد (٥٤).",
+          "continuation": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "تتقون",
+                "trigger": "scholars_disagree",
+                "reason": "ابن الأنباري يعد الوقف على تتقون قبيحا لأن أياما معدودات منصوبة بكتب، والأشموني يجيزه لأنه رأس آية وإن لم يكن حسنا لتعلق ما بعده.",
+                "scholars": ["الأشموني"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "أياما",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بأياما يقطعها عن كتب وعن الاتقاء، والوصل يبقيها ظرفا.",
+                "scholars": ["الأشموني"]
+              }
+            ]
+          },
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "قبيح",
+              "comment": "لأن أياما معدودات منصوبة بكتب",
+              "book": "الإيضاح",
+              "book_ref": "1/543"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "جائز",
+              "comment": "لأنه رأس آية، وليس بحسن لأن ما بعده متعلق بكتب عليكم الصيام",
+              "book": "المنار",
+              "book_ref": "54"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 184,
+      "target_word": "معدودات",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿معدودات - ١٨٤ - ط﴾(٤) لأن المرض والسفر عارضان(٥) فكانا(٦) خارجين عن(١) أصل الوضع(٢).",
+      "text_page": 273,
+      "old_text": "﴿معدودات - ١٨٤ - ط﴾(٤) لأن المرض والسفر عارضان(٥) فكانا(٦)",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "فكانا(٦)",
+          "new_text": "فكانا(٦) خارجين عن(١) أصل الوضع(٢).",
+          "info": "تتمة التعليل في صدر الصفحة 274"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 273,
+          "raw_text": "(٤) وهو حسن عند ابن الأنباري والأشموني، وكاف عند الداني. انظر: الإيضاح ١/٥٤٣، والمكتفى (١٨٠)، والمقصد (٥٤)، والمنار (٥٤).",
+          "continuation": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "معدودات",
+                "trigger": "meaning_change",
+                "reason": "المرض والسفر عارضان خارجان عن أصل الوضع، فالوقف على معدودات يفصل حكم الرخصة عما قبله.",
+                "scholars": ["ابن الأنباري", "الأشموني", "الداني"]
+              }
+            ],
+            "ibtida": []
+          },
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "1/543"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "54"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "180"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 184,
+      "target_word": "أخر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿أخر - ١٨٤ - ط﴾(٣) لأن خبر الجار منتظر، وهو ﴿فدية﴾ فلا تعلق له بما قبله(٤).",
+      "text_page": 274,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 274,
+          "raw_text": "(٣) وهو حسن عند ابن الأنباري والأنصاري والأشموني، وكاف عند الداني. انظر: الإيضاح ١/٥٤٣، والمكتفى (١٨٠)، والمقصد (٥٤)، والمنار (٥٤).",
+          "continuation": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "أخر",
+                "trigger": "meaning_change",
+                "reason": "خبر الجار منتظر وهو فدية فلا تعلق له بما قبل أخر، فالوقف يفصل جملة الفدية عما قبلها.",
+                "scholars": ["ابن الأنباري", "الأنصاري", "الأشموني", "الداني"]
+              }
+            ],
+            "ibtida": []
+          },
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "1/543"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "54"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "54"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "180"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 184,
+      "target_word": "مسكين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿مسكين - ١٨٤ - ط﴾(٥) لأن التطوع خارج عن موجب الأصل.",
+      "text_page": 274,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 274,
+          "raw_text": "(٥) وهو حسن عند ابن الأنباري والأشموني، وكاف عند الداني والأنصاري. انظر: الإيضاح ١/٥٤٣، والمكتفى (١٨٠)، والمقصد (٥٤)، والمنار (٥٤).",
+          "continuation": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "مسكين",
+                "trigger": "meaning_change",
+                "reason": "التطوع خارج عن موجب الأصل، فالوقف على مسكين يفصل حكم التطوع عن الفدية.",
+                "scholars": ["ابن الأنباري", "الأشموني", "الداني", "الأنصاري"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "التطوع",
+                "trigger": "meaning_change",
+                "reason": "ابتداء حكم التطوع الخارج عن موجب الأصل بعد مسكين.",
+                "scholars": ["ابن الأنباري", "الأشموني", "الداني", "الأنصاري"]
+              }
+            ]
+          },
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "1/543"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "54"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "180"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "54"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 184,
+      "target_word": "خير له",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 6,
+      "text": "﴿خير له - ١٨٤ - ط﴾(٦) [لأن التقدير](٧): والصوم خير لكم(١).",
+      "text_page": 274,
+      "old_text": "﴿خير له - ١٨٤ - ط﴾(٦) [لأن التقدير](٧): والصوم",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "والصوم",
+          "new_text": "والصوم خير لكم(١).",
+          "info": "تتمة التعليل في صدر الصفحة 275 وتنتهي قبل وقف والفرقان"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 274,
+          "raw_text": "(٦) وهو حسن عند ابن الأنباري، وكاف عند الداني والأنصاري، وأحسن مما قبله عند الأشموني. انظر: المراجع السابقة.",
+          "continuation": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "خير له",
+                "trigger": "meaning_change",
+                "reason": "التقدير أن ما بعده كلام مستأنف: والصوم خير لكم.",
+                "scholars": ["ابن الأنباري", "الداني", "الأنصاري", "الأشموني"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "والصوم",
+                "trigger": "meaning_change",
+                "reason": "يُبتدأ بقولهم والصوم خير لكم على أنه تقدير جملة مستقلة بعد خير له.",
+                "scholars": ["ابن الأنباري", "الداني", "الأنصاري", "الأشموني"]
+              }
+            ]
+          },
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "1/543"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "180"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "54"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "أحسن",
+              "comment": "أحسن مما قبله",
+              "book": "المنار",
+              "book_ref": "54"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

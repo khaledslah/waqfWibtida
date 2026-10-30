@@ -1,0 +1,839 @@
+{
+  "source": "apparatus_v4_459_462",
+  "page_numbers": [459, 460, 461, 462],
+  "waqfs": [
+    {
+      "ayah": 60,
+      "target_word": "عند الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿عند الله - 60 - ط﴾ لتناهي الاستفهام ، والتقدير : هو من لعنه الله .",
+      "text_page": 459,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 60,
+      "target_word": "الطاغوت",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿الطاغوت - 60 - ط﴾ .",
+      "text_page": 459,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 61,
+      "target_word": "خرجوا به",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿خرجوا به - 61 - ط﴾ .",
+      "text_page": 459,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 62,
+      "target_word": "السحت",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿السحت - 62 - ط﴾ .",
+      "text_page": 459,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 63,
+      "target_word": "السحت",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿السحت - 63 - ط﴾ .",
+      "text_page": 459,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 64,
+      "target_word": "مغلولة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿مغلولة - 64 - ط﴾ وقيل : لا وقف ، ليتصل قوله : ﴿غلت﴾ وهو جزاء قولهم : ﴿يد الله مغلولة﴾ به(1) .",
+      "text_page": 459,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 459,
+          "raw_text": "(1) وهو مفهوم عند الأنصاري . انظر : المقصد (122) . أما الأشموني في المنار (122) فذكر أنه جائز عند بعضهم ، ثم رجح الوصل ليتصل جزاء قولهم بقولهم . أما ابن الأنباري في الإيضاح 2/624 ، والنحاس في القطع (291) ، والداني في المكتفى (243) فلم يذكروا هنا وقفا .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأنصاري",
+              "verdict": "مفهوم",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "122"
+            },
+            {
+              "scholar": "unknown",
+              "verdict": "جائز",
+              "comment": "جائز عند بعضهم ، ذكره الأشموني",
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "الوصل",
+              "comment": "ذكر أنه جائز عند بعضهم ، ثم رجح الوصل ليتصل جزاء قولهم بقولهم",
+              "book": "المنار",
+              "book_ref": "122"
+            },
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "لم يذكروا وقفا",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "2/624"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "لم يذكروا وقفا",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "291"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "لم يذكروا وقفا",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "243"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "مغلولة",
+                "trigger": "scholars_disagree",
+                "reason": "مفهوم عند الأنصاري وجائز عند بعضهم، ورجح الأشموني الوصل ليتصل الجزاء بالقول، ولم يذكر ابن الأنباري والنحاس والداني هنا وقفا، وقيل لا وقف ليتصل ﴿غلت﴾.",
+                "scholars": ["الأنصاري"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "غلت",
+                "trigger": "meaning_change",
+                "reason": "الوصل يجعل ﴿غلت﴾ جزاء قولهم ﴿يد الله مغلولة﴾، والوقف يبتدئ بها كلاما مستقلا.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 64,
+      "target_word": "بما قالوا",
+      "verdict_label": "م",
+      "verdict": "لازم",
+      "margin_ref": 2,
+      "text": "﴿بما قالوا - 64 - م﴾(2) لأنه لو وصل صار قوله : ﴿بل يداه مبسوطتان﴾ [ مقول(3) قالوا ](4) .",
+      "text_page": 459,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 459,
+          "raw_text": "(2) وهو صالح عند النحاس والأنصاري ، وحسن عند الأشموني ، ثم ذكر أنه لا يجوز وصله بما بعده لما ذكره المؤلف . انظر : القطع (291) ، والمقصد (122) ، والمنار (122) . أما ابن الأنباري في الإيضاح 2/624 ، والداني في المكتفى (243) فلم يذكروا هنا وقفا .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "النحاس",
+              "verdict": "صالح",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "291"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "صالح",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "122"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": "ثم ذكر أنه لا يجوز وصله بما بعده لما ذكره المؤلف",
+              "book": "المنار",
+              "book_ref": "122"
+            },
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "لم يذكروا وقفا",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "2/624"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "لم يذكروا وقفا",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "243"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "بما قالوا",
+                "trigger": "meaning_change",
+                "reason": "لو وصل صار ﴿بل يداه مبسوطتان﴾ من مقولهم. وهو صالح عند النحاس والأنصاري وحسن عند الأشموني، ولم يذكره ابن الأنباري والداني.",
+                "scholars": ["النحاس", "الأنصاري", "الأشموني"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "بل",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بـ﴿بل يداه مبسوطتان﴾ يبقيها كلام الله، وقد منع الأشموني وصلها بما قبلها.",
+                "scholars": ["النحاس", "الأنصاري", "الأشموني"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 64,
+      "target_word": "مبسوطتان",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 1,
+      "text": "﴿مبسوطتان - 64 - لا﴾ لأن قوله : ﴿ينفق﴾ من مقصود الكلام ، فلا يستأنف بل هو حال لضمير (1) الهاء(2) على قول من جوز الحال(3) للمضاف(4) إليه(5) ، وتحقيقه أنه تعالى هو الباسط الرزق ، وذكر اليدين(6) زائد(7) لبيان عموم الإنعام(8) على المؤمن الذي هو(9) من أصحاب اليمين ، والكافر الذي هو(10) من أصحاب الشمال .",
+      "text_page": 459,
+      "old_text": "﴿مبسوطتان - 64 - لا﴾ لأن قوله : ﴿ينفق﴾ من",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ينفق﴾ من",
+          "new_text": "﴿ينفق﴾ من مقصود الكلام ، فلا يستأنف بل هو حال لضمير (1) الهاء(2) على قول من جوز الحال(3) للمضاف(4) إليه(5) ، وتحقيقه أنه تعالى هو الباسط الرزق ، وذكر اليدين(6) زائد(7) لبيان عموم الإنعام(8) على المؤمن الذي هو(9) من أصحاب اليمين ، والكافر الذي هو(10) من أصحاب الشمال .",
+          "info": "تتمة التعليل في صدر الصفحة 460"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 460,
+          "raw_text": "(1) أ : [ الضمير ] . وفي ب : [ ضمير ] ، ولعل الصواب : من الضمير .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "مبسوطتان",
+                "trigger": "meaning_change",
+                "reason": "الوقف يقطع ﴿ينفق﴾ عن ﴿يداه﴾ فيصير مستأنفا، والوصل يبقيه حالا وهو مقصود الكلام.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "ينفق",
+                "trigger": "meaning_change",
+                "reason": "لو وقف على ﴿مبسوطتان﴾ لاستؤنف عند ﴿ينفق﴾، والوجه أنه حال لا استئناف.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 64,
+      "target_word": "كيف يشاء",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿كيف يشاء - 64 - ط﴾ .",
+      "text_page": 460,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 64,
+      "target_word": "وكفرا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿وكفرا - 64 - ط﴾ .",
+      "text_page": 461,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 64,
+      "target_word": "يوم القيامة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿يوم القيامة - 64 - ط﴾ .",
+      "text_page": 461,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 64,
+      "target_word": "أطفأها الله",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 1,
+      "text": "﴿أطفأها الله - 64 - لا﴾ لأن الواو للحال ، أي : وهم يسعون(1) .",
+      "text_page": 461,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 461,
+          "raw_text": "(1) د : [ يسمعون ] وهو تصحيف . وانظر : منار الهدى (123) ، فقد ذكر أن الواو يصلح أن تكون للحال وللاستئناف .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأشموني",
+              "verdict": "يصلح للحال وللاستئناف",
+              "comment": "الواو يصلح أن تكون للحال وللاستئناف",
+              "book": "منار الهدى",
+              "book_ref": "123"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "أطفأها الله",
+                "trigger": "meaning_change",
+                "reason": "المتن جعل الواو للحال فمنع الوقف، وذكر الأشموني أنها تصلح للحال وللاستئناف.",
+                "scholars": ["الأشموني"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "يسعون",
+                "trigger": "meaning_change",
+                "reason": "على الاستئناف يبتدأ بـ﴿يسعون﴾، وعلى الحال توصل بما قبلها.",
+                "scholars": ["الأشموني"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 64,
+      "target_word": "فسادا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿فسادا - 64 - ط﴾ .",
+      "text_page": 461,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 66,
+      "target_word": "أرجلهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿أرجلهم - 66 - ط﴾ .",
+      "text_page": 461,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 66,
+      "target_word": "مقتصدة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿مقتصدة - 66 - ط﴾ .",
+      "text_page": 461,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 67,
+      "target_word": "من ربك",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من ربك - 67 - ط﴾ .",
+      "text_page": 461,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 67,
+      "target_word": "رسالته",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿رسالته - 67 - ط﴾ .",
+      "text_page": 461,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 67,
+      "target_word": "من الناس",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من الناس - 67 - ط﴾ .",
+      "text_page": 461,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 68,
+      "target_word": "من ربكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من ربكم - 68 - ط﴾ .",
+      "text_page": 461,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 68,
+      "target_word": "وكفرا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿وكفرا - 68 - ج﴾(2) لاختلاف النظم مع فاء التعقيب .",
+      "text_page": 461,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 461,
+          "raw_text": "(2) ج : علامة الوقف : [ ط ] ، والصواب ما أثبتناه لدلالة ما بعده عليه .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 70,
+      "target_word": "رسلا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿رسلا - 70 - ط﴾ .",
+      "text_page": 461,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 70,
+      "target_word": "أنفسهم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 3,
+      "text": "﴿أنفسهم - 70 - لا﴾ لأن عامل كلما قوله : ﴿كذبوا﴾(3) .",
+      "text_page": 461,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 461,
+          "raw_text": "(3) وضح أبو حيان في البحر 3/532 العامل في ﴿كلما﴾ حيث قال : [ والعامل فيها هو ما يأتي بعد ﴿ما﴾ المذكورة ، وصلتها من الفعل ، كقوله : ﴿كلما نضجت جلودهم بدلناهم﴾ ] . وانظر : منار الهدى (123) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "أبو حيان",
+              "verdict": "العامل ما بعد ما",
+              "comment": "العامل في ﴿كلما﴾ هو ما يأتي بعد ﴿ما﴾، وصلتها من الفعل",
+              "book": "البحر",
+              "book_ref": "3/532"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 71,
+      "target_word": "كثير منهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿كثير منهم - 71 - ط﴾ .",
+      "text_page": 461,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 72,
+      "target_word": "ابن مريم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ابن مريم - 72 - ط﴾ .",
+      "text_page": 461,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 72,
+      "target_word": "وربكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿وربكم - 72 - ط﴾ .",
+      "text_page": 461,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 72,
+      "target_word": "النار",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿النار - 72 - ط﴾ .",
+      "text_page": 461,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 73,
+      "target_word": "ثلاثة",
+      "verdict_label": "م",
+      "verdict": "لازم",
+      "margin_ref": 4,
+      "text": "﴿ثلاثة - 73 - م﴾ لأن قوله : ﴿وما من إله﴾ ليس من قولهم(4) .",
+      "text_page": 461,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 461,
+          "raw_text": "(4) د : [ مقولهم ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "ثلاثة",
+                "trigger": "meaning_change",
+                "reason": "﴿وما من إله﴾ ليس من قولهم، فالوصل يجعلها من مقالة التثليث.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وما",
+                "trigger": "meaning_change",
+                "reason": "يُبتدأ بـ﴿وما من إله﴾ لأنها خارجة عن قولهم.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 73,
+      "target_word": "واحد",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿واحد - 73 - ط﴾ .",
+      "text_page": 461,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 74,
+      "target_word": "ويستغفرونه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿ويستغفرونه - 74 - ط﴾ ويحسن أن يوصل وكأن(1) الواو للحال ، أي : هلا يتوبون(2) ويستغفرون وهو غفور(3) .",
+      "text_page": 461,
+      "old_text": "﴿ويستغفرونه - 74 - ط﴾",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ويستغفرونه - 74 - ط﴾",
+          "new_text": "﴿ويستغفرونه - 74 - ط﴾ ويحسن أن يوصل وكأن(1) الواو للحال ، أي : هلا يتوبون(2) ويستغفرون وهو غفور(3) .",
+          "info": "تتمة التعليل في صدر الصفحة 462"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 462,
+          "raw_text": "(1) أ : [ لأن ] ولم نثبتها لأنه ذكر أن الوقف مطلق ، ولو جزم أنها حالية لنص على عدم الوقف . وفي ج : [ كأن ] بسقوط الواو .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "ويستغفرونه",
+                "trigger": "meaning_change",
+                "reason": "العلامة ط والوقف مطلق، ويحسن الوصل لأن الواو للحال، ولو جزم بحاليتها لنص على عدم الوقف.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وهو",
+                "trigger": "meaning_change",
+                "reason": "على الوصل تكون «وهو غفور» حالا، وعلى الوقف المطلق تُفصل عما قبلها.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 75,
+      "target_word": "رسول",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "﴿رسول - 75 - ج﴾ لأن الجملة بعده(4) صفة له(5) أو مستأنفة .",
+      "text_page": 462,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 462,
+          "raw_text": "(4) ج : [ بعد ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "رسول",
+                "trigger": "meaning_change",
+                "reason": "الجملة بعد ﴿رسول﴾ تحتمل أن تكون صفة له أو مستأنفة، فالوقف جائز على تقدير الاستئناف.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "قد",
+                "trigger": "meaning_change",
+                "reason": "على الاستئناف يبتدأ بـ﴿قد خلت من قبله الرسل﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 75,
+      "target_word": "الرسل",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 6,
+      "text": "﴿الرسل - 75 - ط﴾ لأن الواو للاستئناف ، ولا محل(6) للعطف(7) .",
+      "text_page": 462,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 462,
+          "raw_text": "(6) أ : [ ولا محل ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "الرسل",
+                "trigger": "meaning_change",
+                "reason": "الواو بعد ﴿الرسل﴾ للاستئناف ولا محل للعطف، فالوقف يفصل ما بعدها.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وأمه",
+                "trigger": "meaning_change",
+                "reason": "يُبتدأ بـ﴿وأمه صديقة﴾ لأن الواو استئناف لا عطف.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 75,
+      "target_word": "صديقة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 8,
+      "text": "﴿صديقة - 75 - ط﴾ لأنه لو وصل اقتضى أن يكون الجملة صفة لها ولا يصح لتثنية ضمير « كانا »(8) .",
+      "text_page": 462,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 462,
+          "raw_text": "(8) انظر : البحر 3/537 فقد ذكر أن جملة ﴿كانا يأكلان الطعام﴾ استئنافية منبهة على سمات الحدوث ، وأنهما مشاركان للناس في ذلك . وانظر : منار الهدى (123) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "أبو حيان",
+              "verdict": "استئناف",
+              "comment": "جملة ﴿كانا يأكلان الطعام﴾ استئنافية منبهة على سمات الحدوث، وأنهما مشاركان للناس في ذلك",
+              "book": "البحر",
+              "book_ref": "3/537"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "صديقة",
+                "trigger": "meaning_change",
+                "reason": "لو وصل لكانت ﴿كانا يأكلان الطعام﴾ صفة لها، ولا يصح لتثنية الضمير، وهي استئناف عند أبي حيان.",
+                "scholars": ["أبو حيان"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "كانا",
+                "trigger": "meaning_change",
+                "reason": "يُبتدأ بـ﴿كانا﴾ لأن الجملة استئنافية لا صفة لـ﴿صديقة﴾.",
+                "scholars": ["أبو حيان"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 75,
+      "target_word": "الطعام",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿الطعام - 75 - ط﴾ .",
+      "text_page": 462,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 76,
+      "target_word": "ولا نفعا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿ولا نفعا - 76 - ط﴾ وقد يوصل لحسن معنى كون الواو حالا ، أي : لم تعبدون [ ما لا ينفع ولا يضر ](1) ، والله(2) يسمع دعاء(3) المضطر ، ويعلم رجاء المعتر(4) .",
+      "text_page": 462,
+      "old_text": "﴿ولا نفعا - 76 - ط﴾ وقد يوصل لحسن معنى كون الواو",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "كون الواو",
+          "new_text": "كون الواو حالا ، أي : لم تعبدون [ ما لا ينفع ولا يضر ](1) ، والله(2) يسمع دعاء(3) المضطر ، ويعلم رجاء المعتر(4) .",
+          "info": "تتمة التعليل في صدر الصفحة 463، ولم يُستخرج غيرها من تلك الصفحة"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 463,
+          "raw_text": "(1) ب : [ ما لا يضر ولا ينفع ] ، وفي ج ، ورد قبلها زيادة من الناسخ ، وهي : [ ما لا يضر ولا ينفع ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "ولا نفعا",
+                "trigger": "meaning_change",
+                "reason": "العلامة ط، وقد يوصل لحسن معنى كون الواو حالا.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "والله",
+                "trigger": "meaning_change",
+                "reason": "على الوقف يبتدأ بـ﴿والله﴾، وعلى الوصل تبقى واو ﴿ولا نفعا﴾ حالية.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

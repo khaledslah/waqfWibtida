@@ -1,0 +1,300 @@
+{
+  "source": "apparatus_v4_411_414",
+  "page_numbers": [411, 412, 413, 414],
+  "waqfs": [
+    {
+      "ayah": 1,
+      "target_word": "ونساء",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 3,
+      "text": "﴿ونساء - ١ - ج﴾ لأن الجملتين وإن اتفقتا فقد اعترضت المعطوفات(٣).",
+      "text_page": 413,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 413,
+          "raw_text": "(٣) أ : ورد بعدها زيادة ، وهي : [ فيه ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 1,
+      "target_word": "والأرحام",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿والأرحام - ١ - ط﴾ . [ وعلى(٤) قراءة الكسر(٥) الوصل(٦) أوجه(٧) ، والوقف على قراءة الكسر على ﴿تساءلون به﴾ أي : أقسم بالأرحام أن الله ](٨)",
+      "text_page": 413,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 413,
+          "raw_text": "(٤) ج : الواو ساقطة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "تساءلون به",
+                "trigger": "meaning_change",
+                "reason": "على قراءة الكسر يكون الوقف على ﴿تساءلون به﴾ بمعنى القسم: أقسم بالأرحام أن الله.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "والأرحام",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بـ﴿والأرحام﴾ بعد الوقف على ﴿تساءلون به﴾ يجعله قسماً: أقسم بالأرحام.",
+                "scholars": []
+              }
+            ]
+          },
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 2,
+      "target_word": "بالطيب",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "margin_ref": null,
+      "text": "﴿بالطيب - ٢ - ص﴾ لعطف المتفقتين.",
+      "text_page": 413,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 2,
+      "target_word": "إلى أموالكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿إلى أموالكم - ٢ - ط﴾.",
+      "text_page": 413,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 3,
+      "target_word": "ورباع",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿ورباع - ٣ - ج﴾(١).",
+      "text_page": 414,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 414,
+          "raw_text": "(١) ج : علامة الوقف : [ ط ] ، والصواب ما أثبتناه للفاء وابتداء الشرط ، وقد ذكر ابن الأنباري في البيان ٢/٢٤٢ ، أن : « فواحدة » جواب الشرط . وقد ذكر الأنصاري في المقصد (٩٦) أن الوقف هنا صالح ، أما الأشموني في المنار (٩٦) فقد ذكر أنه حسن . أما ابن الأنباري ، والنحاس ، والداني ، فلم يذكروا هنا وقفا . انظر : الإيضاح ٢/٥٩٢ ، والقطع (٢٤٥) ، والمكتفى (٢١٧) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "ورباع",
+                "trigger": "scholars_disagree",
+                "reason": "الأنصاري جعل الوقف هنا صالحا، والأشموني حسنا، ولم يذكره ابن الأنباري والنحاس والداني.",
+                "scholars": ["الأنصاري", "الأشموني"]
+              }
+            ],
+            "ibtida": []
+          },
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "لم يذكر وقفا",
+              "comment": "ذكر في البيان ٢/٢٤٢ أن «فواحدة» جواب الشرط",
+              "book": "الإيضاح",
+              "book_ref": "2/592"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "صالح",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "96"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "96"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "245"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "217"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 3,
+      "target_word": "أيمانكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿أيمانكم - ٣ - ط﴾.",
+      "text_page": 414,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 3,
+      "target_word": "أن لا تعولوا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿أن لا تعولوا - ٣ - ط﴾ . لابتداء حكم آخر.",
+      "text_page": 414,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 4,
+      "target_word": "نحلة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿نحلة - ٤ - ط﴾ لأن المشروط خارج عن أصل الموجب.",
+      "text_page": 414,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 6,
+      "target_word": "بلغوا النكاح",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿بلغوا النكاح - ٦ - ج﴾.",
+      "text_page": 414,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 6,
+      "target_word": "أموالهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿أموالهم - ٦ - ج﴾ لأن الجملتين وإن اتفقتا فالثانية ليست من موجب(٢) الأولى.",
+      "text_page": 414,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 414,
+          "raw_text": "(٢) أ : [ جملة ] ، وموجب الأولى هو : دفع الأموال إليهم إذا رشدوا .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 6,
+      "target_word": "أن يكبروا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿أن يكبروا - ٦ - ط﴾ لابتداء جملتين(٣) متضادتين(٤).",
+      "text_page": 414,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 414,
+          "raw_text": "(٣) ب : [ الجملتين ] . وفي ج : ساقطة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 6,
+      "target_word": "فليستعفف",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 5,
+      "text": "﴿فليستعفف - ٦ - ج﴾ لعطف جملتى الشرط(٥) مع صدق اتصال المعنى(٦).",
+      "text_page": 414,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 414,
+          "raw_text": "(٥) ج : [ الشرط ] ساقطة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 6,
+      "target_word": "بالمعروف",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 7,
+      "text": "﴿بالمعروف - ٦ - ط﴾ للعود إلى أصل الموجب(٧) بعد وقوع العارض(١).",
+      "text_page": 414,
+      "old_text": "﴿بالمعروف - ٦ - ط﴾ للعود إلى أصل الموجب(٧) بعد",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "بعد",
+          "new_text": "بعد وقوع العارض(١).",
+          "info": "علة الوقف تفتح في صفحة ٤١٤ وتتم في أول صفحة ٤١٥ قبل وقف ﴿عليهم﴾."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 414,
+          "raw_text": "(٧) وهو دفع الأموال إليهم إذا رشدوا ، حيث قال تعالى : ﴿فإن آنستم منهم رشدا فادفعوا إليهم أموالهم﴾ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    }
+  ]
+}

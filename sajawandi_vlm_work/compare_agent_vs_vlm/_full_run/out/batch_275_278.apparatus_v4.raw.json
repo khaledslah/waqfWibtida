@@ -1,0 +1,598 @@
+{
+  "source": "apparatus_v4_275_278",
+  "page_numbers": [275, 276, 277, 278],
+  "waqfs": [
+    {
+      "ayah": 185,
+      "target_word": "والفرقان",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿ والفرقان - ١٨٥ - ج ﴾ (٢) لابتداء الشرط مع فاء التعقيب.",
+      "text_page": 275,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 275,
+          "raw_text": "(٢) أ : علامة الوقف : [ ج ، ط ] ، وفي د : علامة الوقف : [ ط ] ، والصواب ما أثبتناه لقول المؤلف : [ لابتداء الشرط مع فاء التعقيب ] وهو قوله تعالى : ﴿ فمن شهد منكم الشهر فليصمه ﴾ ، فابتداء الشرط يكون به القطع ، وفاء التعقيب يكون به الوصل ، وقد سبق مثل هذا عند قوله تعالى : ﴿ شعائر الله ﴾ ، من الآية (١٥٨) . والوقف هنا حسن عند ابن الأنباري ، وذكر النحاس عن أبي حاتم أنه تام ، وهو كاف عند الداني ، وذكر بصيغة التمريض أنه تام . انظر : الإيضاح ١/٥٤٤ ، والقطع (١٧٧) ، والمكتفى (١٨١) . وقال الأشموني في المنار (٥٥) : [ ﴿ والفرقان ﴾ كاف ، وقيل : تام للابتداء بالشرط ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "1/544"
+            },
+            {
+              "scholar": "أبو حاتم",
+              "verdict": "تام",
+              "comment": "ذكره النحاس",
+              "book": "القطع",
+              "book_ref": "177"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": "ذكر بصيغة التمريض أنه تام",
+              "book": "المكتفى",
+              "book_ref": "181"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "55"
+            },
+            {
+              "scholar": "unknown",
+              "verdict": "تام",
+              "comment": "قيل، للابتداء بالشرط",
+              "book": "المنار",
+              "book_ref": "55"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "والفرقان",
+                "trigger": "meaning_change",
+                "reason": "القطع عند والفرقان لابتداء الشرط، وفاء التعقيب موضع الوصل، فالوقف يفصل الشرط عما قبله.",
+                "scholars": ["ابن الأنباري", "أبو حاتم", "الداني", "الأشموني"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "فمن",
+                "trigger": "meaning_change",
+                "reason": "ابتداء الشرط يكون بالقطع قبل ﴿فمن شهد منكم الشهر فليصمه﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 185,
+      "target_word": "فليصمه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿ فليصمه - ١٨٥ - ط ﴾ (٣) للابتداء بشرط آخر (٤).",
+      "text_page": 275,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 275,
+          "raw_text": "(٣) وهو كاف عند الأنصاري ، وحسن عند الأشموني . انظر : المقصد (٥٥) ، والمنار (٥٥) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "55"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "55"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "فليصمه",
+                "trigger": "meaning_change",
+                "reason": "الوقف على فليصمه للابتداء بشرط آخر.",
+                "scholars": ["الأنصاري", "الأشموني"]
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 185,
+      "target_word": "آخر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿ آخر - ١٨٥ - ط ﴾ (٥).",
+      "text_page": 275,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 275,
+          "raw_text": "(٥) وهو حسن عند الأنصاري والأشموني . انظر : المقصد (٥٤) ، والمنار (٥٥) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأنصاري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "54"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "55"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 185,
+      "target_word": "العسر",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿ العسر - ١٨٥ - ز ﴾ (١) قد يجوز على تقدير : لييسر (٢) عليكم ، ولتكملوا العدة (٣) ، أو الواو مقحمة تقديره : يريد (٤) الله بكم اليسر لتكملوا (٥).",
+      "text_page": 276,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 276,
+          "raw_text": "(١) ج ، د : علامة الوقف ساقطة . وذكر النحاس في القطع (١٧٧) ، والأشموني في المنار (٥٥) عن أحمد بن موسى أن الوقف هنا كاف ، ثم قال الأشموني : [ على أن اللام في قوله : ﴿ ولتكملوا العدة ﴾ متعلقة بمحذوف ، تقديره : وفعل هذا لتكملوا العدة ، وهو مذهب الفراء . وقال غيره : اللام متعلقة بيريد مضمرة ، والتقدير : ويريد لتكملوا العدة ، قاله النكزاوي ] . اهـ . أما الأشموني فنص على أن الوقف هنا حسن .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "أحمد بن موسى",
+              "verdict": "كاف",
+              "comment": "نقله النحاس في القطع والأشموني في المنار",
+              "book": "القطع",
+              "book_ref": "177"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "55"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "العسر",
+                "trigger": "meaning_change",
+                "reason": "يجوز الوقف على تقدير معنى بعد العسر، أو تُجعل الواو مقحمة فيتصل ما بعده بقوله يريد الله بكم اليسر.",
+                "scholars": ["أحمد بن موسى", "الأشموني"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "ولتكملوا",
+                "trigger": "meaning_change",
+                "reason": "على تقدير تعلق اللام بمحذوف يُستأنف بعد الوقف بولتكملوا العدة.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 186,
+      "target_word": "قريب",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 6,
+      "text": "﴿ قريب - ١٨٦ - ط ﴾ (٦) لأن قوله : ﴿ أجيب ﴾ مستأنف . ولو (١) كان وصفا لكان مجيب (٢).",
+      "text_page": 276,
+      "old_text": "﴿ قريب - ١٨٦ - ط ﴾ (٦) لأن قوله : ﴿ أجيب ﴾",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ قريب - ١٨٦ - ط ﴾ (٦) لأن قوله : ﴿ أجيب ﴾",
+          "new_text": "﴿ قريب - ١٨٦ - ط ﴾ (٦) لأن قوله : ﴿ أجيب ﴾ مستأنف . ولو (١) كان وصفا لكان مجيب (٢).",
+          "info": "تتم علة الوقف في أول صفحة 277."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 276,
+          "raw_text": "(٦) ذكر النحاس في القطع (١٧٧) أنه وقف عند يعقوب ، وقد قواه بعض القراء محتجا بقول الحسن : سئل رسول الله - صلى الله عليه وسلم - أين الله جل وعز ؟ فأنزل الله جل ثناؤه : ﴿ وإذا سألك عبادي عني فإني قريب ﴾ . ثم ذكر أن نصير قال : لا يقف على قوله جل وعز : ﴿ فإني قريب ﴾ ، ولكن على قوله جل ثناؤه : ﴿ إذا دعان ﴾ ، أو على رأس الآية . = أما الأنصاري في المقصد (٥٥) فقد ذكر أنه صالح . وقد حسنه الأشموني في المنار (٥٥) .",
+          "continuation": {
+            "status": "read",
+            "page": 277
+          },
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "يعقوب",
+              "verdict": "وقف",
+              "comment": "ذكره النحاس",
+              "book": "القطع",
+              "book_ref": "177"
+            },
+            {
+              "scholar": "نصير",
+              "verdict": "لا يقف",
+              "comment": "لا يقف على ﴿فإني قريب﴾ ويقف على ﴿إذا دعان﴾ أو على رأس الآية",
+              "book": "القطع",
+              "book_ref": "177"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "صالح",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "55"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "55"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "قريب",
+                "trigger": "scholars_disagree",
+                "reason": "يعقوب يقف عليه، وهو صالح عند الأنصاري وحسن عند الأشموني، وقال نصير: لا يقف على فإني قريب.",
+                "scholars": ["يعقوب", "الأنصاري", "الأشموني"]
+              },
+              {
+                "target_word": "دعان",
+                "trigger": "scholars_disagree",
+                "reason": "نصير لا يقف على قريب، ويقف على إذا دعان أو على رأس الآية.",
+                "scholars": ["نصير"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "أجيب",
+                "trigger": "meaning_change",
+                "reason": "أجيب مستأنف، ولو كان وصفا لقريب لكان مجيب.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 186,
+      "target_word": "دعان",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 3,
+      "text": "﴿ دعان - ١٨٦ - لا ﴾ (٣) للفاء إلا ضرورة (٤) [ وهو انقطاع النفس ] (٥).",
+      "text_page": 277,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 277,
+          "raw_text": "(٣) قال بالوقف هنا : نصير . وهو صالح عند الأنصاري ، وحسن عند الأشموني . انظر : القطع (١٧٧) ، والمقصد (٥٥) ، والمنار (٥٥) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "نصير",
+              "verdict": "وقف",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "177"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "صالح",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "55"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "55"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "دعان",
+                "trigger": "scholars_disagree",
+                "reason": "المتن يمنع الوقف للفاء إلا لضرورة انقطاع النفس، ونصير قال بالوقف هنا وهو صالح عند الأنصاري وحسن عند الأشموني.",
+                "scholars": ["نصير", "الأنصاري", "الأشموني"]
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 187,
+      "target_word": "إلى نسائكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 6,
+      "text": "﴿ إلى نسائكم - ١٨٧ - ط ﴾ (٦) لأن ﴿ هن ﴾ مبتدأ.",
+      "text_page": 277,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 277,
+          "raw_text": "(٦) وهو كاف عند الأنصاري ، وحسن عند الأشموني . انظر : المقصد (٥٥) ، والمنار (٥٥) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "55"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "55"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "إلى نسائكم",
+                "trigger": "meaning_change",
+                "reason": "الوقف لأن ما بعده جملة اسمية جديدة.",
+                "scholars": ["الأنصاري", "الأشموني"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "هن",
+                "trigger": "meaning_change",
+                "reason": "هن مبتدأ، فالابتداء به يفصل الجملة الجديدة عما قبلها.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 187,
+      "target_word": "هن",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 7,
+      "text": "﴿ هن - ١٨٧ - ط ﴾ (٧).",
+      "text_page": 277,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 277,
+          "raw_text": "(٧) وهو صالح عند النحاس ، وتام عند الأنصاري ، وحسن عند الأشموني . انظر : القطع (١٧٧) ، والمقصد (٥٥) ، والمنار (٥٥) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "النحاس",
+              "verdict": "صالح",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "177"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "تام",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "55"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "55"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 187,
+      "target_word": "عنكم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 8,
+      "text": "﴿ عنكم - ١٨٧ - ج ﴾ (٨) لعطف الجملتين المختلفتين.",
+      "text_page": 277,
+      "old_text": "﴿ عنكم - ١٨٧ - ج ﴾ (٨) لعطف الجملتين",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ عنكم - ١٨٧ - ج ﴾ (٨) لعطف الجملتين",
+          "new_text": "﴿ عنكم - ١٨٧ - ج ﴾ (٨) لعطف الجملتين المختلفتين.",
+          "info": "تتم علة الوقف في أول صفحة 278 بكلمة: المختلفتين."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 277,
+          "raw_text": "(٨) أ : علامة الوقف : [ ط ، ج ] ، وفي ب علامة الوقف : [ ط ] . وهو صالح عند النحاس والأنصاري ، وحسن عند الأشموني . انظر : المراجع السابقة .",
+          "continuation": {
+            "status": "read",
+            "page": 278
+          },
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "النحاس",
+              "verdict": "صالح",
+              "comment": "انظر المراجع السابقة",
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "صالح",
+              "comment": "انظر المراجع السابقة",
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": "انظر المراجع السابقة",
+              "book": null,
+              "book_ref": null
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "عنكم",
+                "trigger": "meaning_change",
+                "reason": "الوقف لعطف جملتين مختلفتين، فيسوغ الفصل بينهما.",
+                "scholars": ["النحاس", "الأنصاري", "الأشموني"]
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 187,
+      "target_word": "ما كتب الله لكم",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "margin_ref": 1,
+      "text": "﴿ ما كتب الله لكم - ١٨٧ - ص ﴾ (١) لعطف الجملتين (٢) المتفقين مع اتفاق المعنى.",
+      "text_page": 278,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 278,
+          "raw_text": "(١) وهو صالح عند الأنصاري ، وحسن عند الأشموني ، ذكر بصيغة التمريض أنه أحسن من اللذين قبله للعلة التي ذكرها المؤلف . انظر : المقصد (٥٥) ، والمنار (٥٥) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأنصاري",
+              "verdict": "صالح",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "55"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": "ذكر بصيغة التمريض أنه أحسن من اللذين قبله للعلة التي ذكرها المؤلف",
+              "book": "المنار",
+              "book_ref": "55"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 187,
+      "target_word": "من الفجر",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "margin_ref": 3,
+      "text": "﴿ من الفجر - ١٨٧ - ص ﴾ (٣) كذلك (٤)",
+      "text_page": 278,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 278,
+          "raw_text": "(٣) ب ، ج ، د : علامة الوقف ساقطة . وهو صالح عند النحاس ، وجائز عند الأشموني . انظر : القطع (١٧٨) ، والمنار (٥٥) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "النحاس",
+              "verdict": "صالح",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "178"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "جائز",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "55"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,612 @@
+{
+  "source": "apparatus_v4_575_578",
+  "page_numbers": [575, 576, 577, 578],
+  "waqfs": [
+    {
+      "ayah": 77,
+      "target_word": "هذا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 2,
+      "text": "﴿هذا - ٧٧ - ط﴾ للفصل بين [الاستخبار والأخبار](2) .",
+      "text_page": 575,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 575,
+          "raw_text": "(2) ب : [الأخبار والاستخبار] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 78,
+      "target_word": "في الأرض",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿في الأرض - ٧٨ - ط﴾(3) كذلك .",
+      "text_page": 575,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 575,
+          "raw_text": "(3) ج : علامة الوقف ساقطة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 81,
+      "target_word": "ما جئتم به",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿ما جئتم به - ٨١ - ط﴾ لمن قرأ : ﴿السحر﴾(4) مستفهما ، ويكون «ما» استفهاما أيضا ، ومن لم يستفهم(5) بالسحر(6) لم يقف على ﴿به﴾(7) لأن ﴿ما﴾ خبرية ، و﴿السحر﴾ خبرها ، وعليه(1) وقف في الوجهين(2) .",
+      "text_page": 575,
+      "old_text": "﴿ما جئتم به - ٨١ - ط﴾ لمن قرأ : ﴿السحر﴾(4) مستفهما ، ويكون «ما» استفهاما أيضا ، ومن لم يستفهم(5) بالسحر(6) لم يقف على ﴿به﴾(7) لأن ﴿ما﴾ خبرية ،",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "لأن ﴿ما﴾ خبرية ،",
+          "new_text": "لأن ﴿ما﴾ خبرية ، و﴿السحر﴾ خبرها ، وعليه(1) وقف في الوجهين(2) .",
+          "info": "تتمة العبارة في رأس صفحة 576"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 575,
+          "raw_text": "(4) د : [مستقيما] وهو تصحيف . والذي قرأ بالمد على الاستفهام هو أبو عمرو ، وقرأ الباقون بغير مد على الخبر . انظر : السبعة (328) ، والتبصرة (536) ، والتيسير (123) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "ما جئتم به",
+                "trigger": "meaning_change",
+                "reason": "لمن قرأ ﴿السحر﴾ مستفهما تكون «ما» استفهامية فيتم الكلام، ومن لم يستفهم لم يقف على ﴿به﴾ لأن «ما» خبرية و﴿السحر﴾ خبرها.",
+                "scholars": []
+              },
+              {
+                "target_word": "السحر",
+                "trigger": "meaning_change",
+                "reason": "عليه وقف في الوجهين: قراءة أبي عمرو بالمد على الاستفهام، وقراءة الباقين بغير مد على الخبر.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "السحر",
+                "trigger": "meaning_change",
+                "reason": "على قراءة الاستفهام يُبتدأ بـ﴿السحر﴾ سؤالاً جديداً بعد تمام ﴿ما جئتم به﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 81,
+      "target_word": "سيبطله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿سيبطله - ٨١ - ط﴾ .",
+      "text_page": 576,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 83,
+      "target_word": "أن يفتنهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿أن يفتنهم - ٨٣ - ط﴾ .",
+      "text_page": 576,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 83,
+      "target_word": "في الأرض",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 3,
+      "text": "﴿في الأرض - ٨٣ - ج﴾(3) لاتصال الكلام معنى(4) .",
+      "text_page": 576,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 576,
+          "raw_text": "(3) أ : علامة الوقف : [ط ، ج] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 85,
+      "target_word": "توكلنا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿توكلنا - ٨٥ - ج﴾ للعدول مع اتحاد القائل .",
+      "text_page": 576,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 85,
+      "target_word": "الظالمين",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿الظالمين - ٨٥ - لا﴾ للعطف .",
+      "text_page": 576,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 87,
+      "target_word": "وأقيموا الصلاة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿وأقيموا الصلاة - ٨٧ - ط﴾ لأن قوله : ﴿وبشر﴾ خطاب محمد ﷺ(5)(6) . [وإن أريد به موسى](7) فلا بد من العدول(8) .",
+      "text_page": 576,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 576,
+          "raw_text": "(5) ب : [للنبي] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "وأقيموا الصلاة",
+                "trigger": "meaning_change",
+                "reason": "الوقف لأن ﴿وبشر﴾ خطاب محمد. وإن أريد به موسى فلا بد من العدول عن الوقف.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وبشر",
+                "trigger": "meaning_change",
+                "reason": "يُبتدأ بـ﴿وبشر﴾ إذا كان خطاباً لمحمد بعد انتهاء الأمر لموسى وهارون.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 88,
+      "target_word": "الحياة الدنيا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿الحياة الدنيا - ٨٨ - لا﴾ لأن تعلق ﴿ليضلوا﴾ بقوله : ﴿آتيت﴾ ، و﴿ربنا﴾ تكرار الأول للإلحاح في التضرع .",
+      "text_page": 576,
+      "old_text": "﴿الحياة الدنيا - ٨٨ - لا﴾ لأن تعلق ﴿ليضلوا﴾ بقوله :",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "لأن تعلق ﴿ليضلوا﴾ بقوله :",
+          "new_text": "لأن تعلق ﴿ليضلوا﴾ بقوله : ﴿آتيت﴾ ، و﴿ربنا﴾ تكرار الأول للإلحاح في التضرع .",
+          "info": "تتمة العبارة في رأس صفحة 577"
+        }
+      ],
+      "apparatus": []
+    },
+    {
+      "ayah": 88,
+      "target_word": "عن سبيلك",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿عن سبيلك - ٨٨ - ج﴾ لابتداء النداء مع اتحاد القائل .",
+      "text_page": 577,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 90,
+      "target_word": "وعدوا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿وعدوا - ٩٠ - ط﴾ .",
+      "text_page": 577,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 90,
+      "target_word": "الغرق",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿الغرق - ٩٠ - لا﴾ لأن ﴿قال﴾ جواب «إذا» .",
+      "text_page": 577,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 92,
+      "target_word": "آية",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿آية - ٩٢ - ط﴾ .",
+      "text_page": 577,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 93,
+      "target_word": "الطيبات",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿الطيبات - ٩٣ - ج﴾ [للابتداء بالنفي](1) مع الفاء .",
+      "text_page": 577,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 577,
+          "raw_text": "(1) د : [لابتداء النفي] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 93,
+      "target_word": "العلم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿العلم - ٩٣ - ط﴾ .",
+      "text_page": 577,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 94,
+      "target_word": "من قبلك",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿من قبلك - ٩٤ - ج﴾ لانقطاع النظم مع اتفاق(2) المعنى .",
+      "text_page": 577,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 577,
+          "raw_text": "(2) ب ، د : [اتساق] ، وفي ج : [اتفاق] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 94,
+      "target_word": "الممترين",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 3,
+      "text": "﴿الممترين - ٩٤ - لا﴾ للعطف(3) .",
+      "text_page": 577,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 577,
+          "raw_text": "(3) ج : [لعطف] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 96,
+      "target_word": "لا يؤمنون",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 4,
+      "text": "﴿لا يؤمنون - ٩٦ - لا﴾ لأن ﴿لو﴾ تعلقها بما قبلها أي : لو جاءتهم كل آية لا يؤمنون(4) .",
+      "text_page": 577,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 577,
+          "raw_text": "(4) انظر : منار الهدى (180) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 98,
+      "target_word": "قوم يونس",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿قوم يونس - ٩٨ - ط﴾(5) .",
+      "text_page": 577,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 577,
+          "raw_text": "(5) والوقف هنا صالح عند النحاس في القطع (382) . والوقف هنا تام عند عبد الله بن مسلم بن قتيبة . انظر : القطع (382) ، والمكتفى (312) .",
+          "continuation": {"status": "read", "page": 578},
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "النحاس",
+              "verdict": "صالح",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "382"
+            },
+            {
+              "scholar": "ابن قتيبة",
+              "verdict": "تام",
+              "comment": null,
+              "book": null,
+              "book_ref": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 99,
+      "target_word": "جميعا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿جميعا - ٩٩ - ط﴾ .",
+      "text_page": 577,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 100,
+      "target_word": "بإذن الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿بإذن الله - ١٠٠ - ط﴾ أي : وهو يجعل الرجس .",
+      "text_page": 577,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 101,
+      "target_word": "والأرض",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿والأرض - ١٠١ - ط﴾ للفصل بين الاستخبار والأخبار .",
+      "text_page": 577,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 102,
+      "target_word": "من قبلهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من قبلهم - ١٠٢ - ط﴾ .",
+      "text_page": 577,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 103,
+      "target_word": "كذلك",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 6,
+      "text": "﴿كذلك - ١٠٣ - ج﴾ أي : ننجيهم كإنجاء الرسل(6) ، وقيل : الوقف على ﴿آمنوا﴾(1) ، والتقدير : ننجي المؤمنين إنجاء كذلك ، إلا أنه على اعتراض جملة(2) ، أي : حق(3) ذلك(4) حقا(5) ، و﴿ننج المؤمنين﴾ مستأنف ، أي : نحن ننجي .",
+      "text_page": 577,
+      "old_text": "﴿كذلك - ١٠٣ - ج﴾ أي : ننجيهم كإنجاء الرسل(6) ،",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "أي : ننجيهم كإنجاء الرسل(6) ،",
+          "new_text": "أي : ننجيهم كإنجاء الرسل(6) ، وقيل : الوقف على ﴿آمنوا﴾(1) ، والتقدير : ننجي المؤمنين إنجاء كذلك ، إلا أنه على اعتراض جملة(2) ، أي : حق(3) ذلك(4) حقا(5) ، و﴿ننج المؤمنين﴾ مستأنف ، أي : نحن ننجي .",
+          "info": "تتمة العبارة في صفحة 578"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 577,
+          "raw_text": "(6) ب : [الرسل] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "آمنوا",
+                "trigger": "meaning_change",
+                "reason": "قيل الوقف على ﴿آمنوا﴾، والتقدير: ننجي المؤمنين إنجاء كذلك، على أنه اعتراض جملة.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "ننج المؤمنين",
+                "trigger": "meaning_change",
+                "reason": "على هذا القول يُستأنف ﴿ننج المؤمنين﴾، أي: نحن ننجي.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 104,
+      "target_word": "يتوفاكم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿يتوفاكم - ١٠٤ - ج﴾ والوصل أجوز على تقدير : وقد أمرت .",
+      "text_page": 578,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 104,
+      "target_word": "المؤمنين",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿المؤمنين - ١٠٤ - لا﴾ للعطف .",
+      "text_page": 578,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 105,
+      "target_word": "حنيفا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 6,
+      "text": "﴿حنيفا - ١٠٥ - ج﴾ للعطف(6) مع زيادة نون توكيد(7) في المعطوف يؤذن بالاستئناف .",
+      "text_page": 578,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 578,
+          "raw_text": "(6) أ : [للعطف] ساقطة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 106,
+      "target_word": "ولا يضرك",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿ولا يضرك - ١٠٦ - ج﴾ لأن الشرط مصدر ، وقد دخله الفاء .",
+      "text_page": 578,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 107,
+      "target_word": "إلا هو",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 8,
+      "text": "﴿إلا هو - ١٠٧ - ج﴾ لابتداء شرط [آخر مع](8) واو العطف ، ووجه الوقف أوضح للفصل بين الحالتين المتضادتين .",
+      "text_page": 578,
+      "old_text": "﴿إلا هو - ١٠٧ - ج﴾ لابتداء شرط [آخر مع](8) واو العطف ، ووجه",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "ووجه",
+          "new_text": "ووجه الوقف أوضح للفصل بين الحالتين المتضادتين .",
+          "info": "القوس في صفحة 578 وتتم عبارته في صفحة 579"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 578,
+          "raw_text": "(8) أ : [مع آخر] وهو تصحيف .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "إلا هو",
+                "trigger": "meaning_change",
+                "reason": "وجه الوقف أوضح للفصل بين الحالتين المتضادتين.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وإن يردك",
+                "trigger": "meaning_change",
+                "reason": "لابتداء شرط آخر مع واو العطف بعد ﴿إلا هو﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,544 @@
+{
+  "source": "apparatus_v4_675_678",
+  "page_numbers": [675, 676, 677, 678],
+  "waqfs": [
+    {
+      "ayah": 5,
+      "target_word": "وليا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 1,
+      "text": "[﴿وليا - 5 - لا﴾](1).",
+      "text_page": 675,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 675,
+          "raw_text": "(١) ما بين المعقوفين من: ج. وقد أشار المؤلف في كتابه الصغير المسمى وقوف القرآن - لوحة (٧٥) وجه - إلى عدم الوقف هنا.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "المؤلف",
+              "verdict": "عدم الوقف",
+              "comment": "أشار في وقوف القرآن إلى عدم الوقف هنا",
+              "book": "وقوف القرآن",
+              "book_ref": "لوحة 75 وجه"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 6,
+      "target_word": "من آل يعقوب",
+      "verdict_label": "ق",
+      "verdict": "قيل فيه وقف",
+      "margin_ref": 2,
+      "text": "﴿من آل يعقوب - 6 - ق﴾(2) قد قيل، والوجه الوصل لعطف الجملتين المتفقتين(3).",
+      "text_page": 675,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 675,
+          "raw_text": "(٢) علامة الوقف من: ب.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 7,
+      "target_word": "اسمه يحيى",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 4,
+      "text": "﴿اسمه يحيى - 7 - لا﴾ لأن الجملة بعده صفة ﴿غلام﴾، وقد يوقف [على استئناف](4) ﴿لم نجعل﴾، ولا يحسن.",
+      "text_page": 675,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 675,
+          "raw_text": "(٤) ما بين المعقوفين من: ج، د، وفي أ: [على الاستئناف]، وفي ب: [على ﴿يحيى﴾ استئنافا].",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "لم نجعل",
+                "trigger": "meaning_change",
+                "reason": "إن وقف على ﴿اسمه يحيى﴾ صار ﴿لم نجعل﴾ استئنافا لا صفة ﴿غلام﴾، وقد يوقف على ذلك ولا يحسن، وفي نسخة ب: على ﴿يحيى﴾ استئنافا.",
+                "scholars": []
+              }
+            ]
+          },
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 9,
+      "target_word": "كذلك",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿كذلك - 9 - ج﴾ لجواز أنها خبر محذوف(1)، تقديره: الأمر كذلك(2)، على استئناف(3). ﴿قال ربك﴾، [ولجواز(4) أنها(5) صفة مصدر محذوف، تقديره: قال ربك](6) قولا كذلك، [والأول أوجه](7) ليكون: ﴿هو علي هين﴾ وما بعدها(8) مفعول القول.",
+      "text_page": 675,
+      "old_text": "﴿كذلك - 9 - ج﴾ لجواز أنها خبر",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿كذلك - 9 - ج﴾ لجواز أنها خبر",
+          "new_text": "﴿كذلك - 9 - ج﴾ لجواز أنها خبر محذوف(1)، تقديره: الأمر كذلك(2)، على استئناف(3). ﴿قال ربك﴾، [ولجواز(4) أنها(5) صفة مصدر محذوف، تقديره: قال ربك](6) قولا كذلك، [والأول أوجه](7) ليكون: ﴿هو علي هين﴾ وما بعدها(8) مفعول القول.",
+          "info": "التعليل يبدأ في صفحة 675 ويتم في أعلى صفحة 676 بكلمة محذوف."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 676,
+          "raw_text": "(١) أي: خبر مبتدأ محذوف.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 10,
+      "target_word": "آية",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿آية - 10 - ط﴾.",
+      "text_page": 676,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 12,
+      "target_word": "بقوة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿بقوة - 12 - ط﴾.",
+      "text_page": 676,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 12,
+      "target_word": "صبيا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿صبيا - 12 - لا﴾ لعطف ﴿وحنانا﴾ على: ﴿وآتيناه الحكم﴾.",
+      "text_page": 676,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 13,
+      "target_word": "وزكاة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿وزكاة - 13 - ط﴾.",
+      "text_page": 676,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 13,
+      "target_word": "تقيا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿تقيا - 13 - لا﴾ للعطف.",
+      "text_page": 676,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 16,
+      "target_word": "في الكتاب مريم",
+      "verdict_label": "م",
+      "verdict": "لازم",
+      "margin_ref": 9,
+      "text": "﴿في الكتاب مريم - 16 - م﴾ لأنه لو وصل صار [﴿إذ انتبذت﴾](9) ظرفا لقوله: ﴿واذكر﴾، وليس بظرف لذلك(10).",
+      "text_page": 676,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 9,
+          "text_page": 676,
+          "raw_text": "(٩) ب: ما بين المعقوفين غير مثبت.",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "إذ انتبذت",
+                "trigger": "meaning_change",
+                "reason": "لو وصل صار ﴿إذ انتبذت﴾ ظرفا لقوله ﴿واذكر﴾ وليس بظرف لذلك، فالابتداء من ﴿إذ انتبذت﴾.",
+                "scholars": []
+              }
+            ]
+          },
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 16,
+      "target_word": "شرقيا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿شرقيا - 16 - لا﴾ للعطف بالفاء.",
+      "text_page": 676,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 19,
+      "target_word": "رسول ربك",
+      "verdict_label": "ق",
+      "verdict": "قيل فيه وقف",
+      "margin_ref": 1,
+      "text": "﴿رسول ربك - 19 - ق﴾(1) قد قيل على تعليق(2) اللام(3) بمحذوف، أي: أرسلت لأهب لك(4)، أو أرسلني(5) ليهب(6) لك(7)، والوصل أجوز لإمكان(8) تعليق(9) اللام(10) بمعنى الفعل في الرسول لأنه بمعنى المرسل.",
+      "text_page": 677,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 677,
+          "raw_text": "(١) علامة الوقف من: ب.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 21,
+      "target_word": "كذلك",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 11,
+      "text": "﴿كذلك - 21 - ج﴾(11) لما ذكر(12).",
+      "text_page": 677,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 11,
+          "text_page": 677,
+          "raw_text": "(١١) علامة الوقف ساقطة من: د.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 21,
+      "target_word": "هين",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 13,
+      "text": "﴿هين - 21 - ج﴾ لجواز كون(13) الواو مقحمة(14)، أو متعلقة(15) بمحذوف، أي: وقد قدرناه(16) لنجعله(17).",
+      "text_page": 677,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 13,
+          "text_page": 677,
+          "raw_text": "(١٣) أ: [أن يكون].",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "ولنجعله",
+                "trigger": "meaning_change",
+                "reason": "الوقف على ﴿هين﴾ لأن الواو إما مقحمة وإما متعلقة بمحذوف، أي: وقد قدرناه ﴿لنجعله﴾، فيختلف تعلق ما بعدها.",
+                "scholars": []
+              }
+            ]
+          },
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 21,
+      "target_word": "منا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿منا - 21 - ج﴾ لاختلاف الجملتين.",
+      "text_page": 677,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 23,
+      "target_word": "النخلة",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿النخلة - 23 - ج﴾ لترتيب الماضي على الماضي(1)، ولعدم(2) حرف العطف(3).",
+      "text_page": 678,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 678,
+          "raw_text": "(١) أي: لترتيب ﴿قالت﴾ على ﴿فأجاءها﴾.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 23,
+      "target_word": "منسيا",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "[﴿منسيا - 23 - ز﴾](4).",
+      "text_page": 678,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 678,
+          "raw_text": "(٤) ما بين المعقوفين من: ب.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 25,
+      "target_word": "جنيا",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿جنيا - 25 - ز﴾ لحسن العطف، مع أنه رأس آية.",
+      "text_page": 678,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 26,
+      "target_word": "عينا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 5,
+      "text": "﴿عينا - 26 - ج﴾ للابتداء بالشرط(5) مع الفاء.",
+      "text_page": 678,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 678,
+          "raw_text": "(٥) ج، د: [لابتداء الشرط].",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "فإما",
+                "trigger": "meaning_change",
+                "reason": "الوقف على ﴿عينا﴾ للابتداء بالشرط مع الفاء، فجملة ﴿فإما ترين﴾ حكم مستقل عما قبلها.",
+                "scholars": []
+              }
+            ]
+          },
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 26,
+      "target_word": "أحدا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 6,
+      "text": "﴿أحدا - 26 - لا﴾ لأن الفاء في(6) قوله(7): ﴿فقولي﴾ جواب الشرط.",
+      "text_page": 678,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 678,
+          "raw_text": "(٦) أ: [في] ساقطة.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 26,
+      "target_word": "إنسيا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 8,
+      "text": "﴿إنسيا - 26 - ج﴾ لأنه رأس آية، وللعطف(8) بالفاء.",
+      "text_page": 678,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 678,
+          "raw_text": "(٨) ب: [والعطف].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 27,
+      "target_word": "تحمله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿تحمله - 27 - ط﴾.",
+      "text_page": 678,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 28,
+      "target_word": "بغيا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 9,
+      "text": "﴿بغيا - 28 - ج﴾ والوصل أحسن(9)،",
+      "text_page": 678,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 9,
+          "text_page": 678,
+          "raw_text": "(٩) د: [أجوز].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 29,
+      "target_word": "إليه",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 10,
+      "text": "والوقف على: ﴿إليه - 29 - ج﴾(10).",
+      "text_page": 678,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 10,
+          "text_page": 678,
+          "raw_text": "(١٠) علامة الوقف الجائز من: أ، ج، وفي ب: علامة الوقف: [ط]، وفي د: علامة الوقف غير مثبتة. والوقف هنا حسن عند ابن الأنباري، والأنصاري. أما النحاس فذكر أنه كاف، ثم ذكر أن التمام على ﴿في المهد صبيا﴾، ووافقه الداني. أما الأشموني فذكر أن الوقف هنا، وعلى: ﴿في المهد صبيا﴾ كاف. انظر: الإيضاح ٢/٧٦٣، والقطع (٤٥٣)، والمكتفى (٣٧٤)، والمقصد (٢٣٧)، والمنار (٢٣٧).",
+          "continuation": {
+            "status": "read",
+            "page": 679
+          },
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "في المهد صبيا",
+                "trigger": "meaning_change",
+                "reason": "النحاس جعل التمام على ﴿في المهد صبيا﴾ ووافقه الداني، فتمام المعنى عند نهاية سؤالهم، والأشموني جعل الوقف عليه كافيا كالوقف على ﴿إليه﴾.",
+                "scholars": ["النحاس", "الداني", "الأشموني"]
+              }
+            ],
+            "ibtida": []
+          },
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": "الوقف هنا",
+              "book": "الإيضاح",
+              "book_ref": "2/763"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "حسن",
+              "comment": "الوقف هنا",
+              "book": "المقصد",
+              "book_ref": "237"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "كاف",
+              "comment": "ثم ذكر أن التمام على ﴿في المهد صبيا﴾",
+              "book": "القطع",
+              "book_ref": "453"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": "وافق النحاس",
+              "book": "المكتفى",
+              "book_ref": "374"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "كاف",
+              "comment": "الوقف هنا وعلى ﴿في المهد صبيا﴾",
+              "book": "المنار",
+              "book_ref": "237"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

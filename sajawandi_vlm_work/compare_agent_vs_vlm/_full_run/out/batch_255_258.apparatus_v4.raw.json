@@ -1,0 +1,340 @@
+{
+  "source": "apparatus_v4_255_258",
+  "page_numbers": [255, 256, 257, 258],
+  "waqfs": [
+    {
+      "ayah": 150,
+      "target_word": "تهتدون",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 1,
+      "text": "﴿تهتدون - ١٥٠ - لا﴾ لأن تعلق الكاف في ﴿كما﴾ بقوله : ﴿جعلناكم أمة وسطا﴾ (١) . يعني عدلا وخيارا (٢) ﴿كما أرسلنا فيكم رسولا﴾ هو خير الناس ،",
+      "text_page": 257,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 257,
+          "raw_text": "(١) من سورة البقرة ، من الآية (١٤٣) . وقد رده أبو حيان في البحر ١/٤٤٣ حيث قال : [ وقيل : متعلق بقوله : ﴿وكذلك جعلناكم أمة وسطا﴾ أي : جعلا مثل ما أرسلنا وهو قول أبي مسلم ، وهذا بعيد جدا لكثرة الفصل المؤذن بالانقطاع ] . وقال النحاس في القطع (١٦٩) : [ وإن جعلت التقدير : ولأتم نعمتي عليكم كما ، أو لعلكم تهتدون كما ، لم يكن تماما ، ] أي : الوقف على ﴿تهتدون﴾ . انظر : الإيضاح ١/٥٣٥، ٥٣٦ ، والمكتفى (١٧٧) ، ومنار الهدى (٥١، ٥٢) ، والبيان في غريب إعراب القرآن ١/١٢٩ ، والكشاف ١/٣٢٣ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "أبو حيان",
+              "verdict": "بعيد",
+              "comment": "ردّ تعلق الكاف بقوله ﴿وكذلك جعلناكم أمة وسطا﴾، وهو قول أبي مسلم",
+              "book": "البحر",
+              "book_ref": "1/443"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "لم يكن تماما",
+              "comment": "إن جعل التقدير: ولأتم نعمتي عليكم كما، أو لعلكم تهتدون كما",
+              "book": "القطع",
+              "book_ref": "169"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "تهتدون",
+                "trigger": "scholars_disagree",
+                "reason": "أبو حيان ردّ تعلق كاف ﴿كما﴾ بقوله ﴿جعلناكم أمة وسطا﴾ وعدّه بعيدا، والنحاس قال إن الوقف على ﴿تهتدون﴾ لم يكن تماما على تقدير هذا التعلق.",
+                "scholars": ["أبو حيان", "النحاس"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "كما",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بـ ﴿كما﴾ يقطع الكاف عن ﴿جعلناكم أمة وسطا﴾ فيتغير ما تعلقت به.",
+                "scholars": ["أبو حيان"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 151,
+      "target_word": "تعلمون",
+      "verdict_label": null,
+      "verdict": null,
+      "margin_ref": 3,
+      "text": "والوقف على ﴿تعلمون - ١٥١﴾ (٣)",
+      "text_page": 257,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 257,
+          "raw_text": "(٣) أ : ﴿تعلمون﴾ [ ج ] ، والمثبت بدون علامة الوقف من بقية النسخ ، وهو الصواب ، لأن المؤلف هنا لم يرد أن يبين ذكر الجواز إنما أراد أن يبين موطن الوقف من عدمه . وهو تام عند ابن الأنباري والنحاس والداني ، وهذا على أن ﴿كما﴾ متعلقة بما قبلها . انظر : الإيضاح ١/٥٣٦ ، والقطع (١٦٩) ، والمكتفى (١٧٧، ١٧٨) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "تام",
+              "comment": "على أن ﴿كما﴾ متعلقة بما قبلها",
+              "book": "الإيضاح",
+              "book_ref": "1/536"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "تام",
+              "comment": "على أن ﴿كما﴾ متعلقة بما قبلها",
+              "book": "القطع",
+              "book_ref": "169"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "تام",
+              "comment": "على أن ﴿كما﴾ متعلقة بما قبلها",
+              "book": "المكتفى",
+              "book_ref": "177، 178"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "تعلمون",
+                "trigger": "meaning_change",
+                "reason": "عدّوه تاما على أن ﴿كما﴾ متعلقة بما قبلها، فتغير هذا التعلق يغير حكم الوقف.",
+                "scholars": ["ابن الأنباري", "النحاس", "الداني"]
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 150,
+      "target_word": "تهتدون",
+      "verdict_label": null,
+      "verdict": null,
+      "margin_ref": 2,
+      "text": "ومن علق الكاف بقوله : ﴿فاذكروني﴾ (١) وقف على ﴿تهتدون - ١٥٠﴾ (٢) ولم يقف على ﴿تعلمون - ١٥١﴾ .",
+      "text_page": 258,
+      "old_text": "ومن",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "ومن",
+          "new_text": "ومن علق الكاف بقوله : ﴿فاذكروني﴾ (١) وقف على ﴿تهتدون - ١٥٠﴾ (٢) ولم يقف على ﴿تعلمون - ١٥١﴾ .",
+          "info": "The clause begins with «ومن» at the end of page 257 and continues at the top of page 258, where the bracket ﴿تهتدون - ١٥٠﴾ is printed."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 258,
+          "raw_text": "(٢) وهو على هذا التقدير تام عند ابن الأنباري والنحاس والداني . انظر : الإيضاح ١/٥٣٦ ، والقطع (١٦٩) ، والمكتفى (١٧٧) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "تام",
+              "comment": "على تقدير تعلق الكاف بقوله ﴿فاذكروني﴾",
+              "book": "الإيضاح",
+              "book_ref": "1/536"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "تام",
+              "comment": "على تقدير تعلق الكاف بقوله ﴿فاذكروني﴾",
+              "book": "القطع",
+              "book_ref": "169"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "تام",
+              "comment": "على تقدير تعلق الكاف بقوله ﴿فاذكروني﴾",
+              "book": "المكتفى",
+              "book_ref": "177"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "تهتدون",
+                "trigger": "meaning_change",
+                "reason": "على تقدير تعلق الكاف بقوله ﴿فاذكروني﴾ فالوقف على ﴿تهتدون﴾ تام، ولا يوقف على ﴿تعلمون﴾.",
+                "scholars": ["ابن الأنباري", "النحاس", "الداني"]
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 153,
+      "target_word": "الصلاة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿الصلاة - ١٥٣ - ط﴾ (٣) .",
+      "text_page": 258,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 258,
+          "raw_text": "(٣) قال الأنصاري في المقصد (٥٢) : [ كاف ] . وقال الأشموني في المنار (٥٢) : [ جائز عند بعضهم ، وبعضهم لم يقف عليه ، وجعل قوله : ﴿إن الله﴾ جواب الأمر ، ومثله يقال في ﴿وأحسنوا إن الله يحب المحسنين﴾ ، وفي النهي : ﴿ولا تعتدوا﴾ ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "52"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "جائز",
+              "comment": "عند بعضهم",
+              "book": "المنار",
+              "book_ref": "52"
+            },
+            {
+              "scholar": "unknown",
+              "verdict": "لم يقف",
+              "comment": "بعضهم لم يقف عليه، وجعل قوله ﴿إن الله﴾ جواب الأمر",
+              "book": "المنار",
+              "book_ref": "52"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "الصلاة",
+                "trigger": "scholars_disagree",
+                "reason": "الأنصاري عدّه كافيا، ونقل الأشموني أنه جائز عند بعضهم وأن بعضهم لم يقف عليه.",
+                "scholars": ["الأنصاري", "الأشموني"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "إن",
+                "trigger": "meaning_change",
+                "reason": "إن وقف على ﴿الصلاة﴾ ابتدئ بـ ﴿إن الله﴾، وإن وصل كانت ﴿إن الله﴾ جواب الأمر فتغير المعنى.",
+                "scholars": ["الأشموني"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 154,
+      "target_word": "أموات",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿أموات - ١٥٤ - ط﴾ (٤) .",
+      "text_page": 258,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 258,
+          "raw_text": "(٤) وهو تام عند الأخفش والداني ، وذلك على الابتداء بقوله تعالى : ﴿بل أحياء﴾ ، بتقدير : بل هم أحياء . انظر : القطع (١٧٠) ، والمكتفى (١٧٨) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأخفش",
+              "verdict": "تام",
+              "comment": "على الابتداء بقوله ﴿بل أحياء﴾، بتقدير: بل هم أحياء",
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "تام",
+              "comment": "على الابتداء بقوله ﴿بل أحياء﴾، بتقدير: بل هم أحياء",
+              "book": "المكتفى",
+              "book_ref": "178"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "أموات",
+                "trigger": "meaning_change",
+                "reason": "الوقف التام عليه لأن ما بعده ابتداء: ﴿بل أحياء﴾ بتقدير بل هم أحياء.",
+                "scholars": ["الأخفش", "الداني"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "بل",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بقوله ﴿بل أحياء﴾، بتقدير: بل هم أحياء.",
+                "scholars": ["الأخفش", "الداني"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 155,
+      "target_word": "والثمرات",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿والثمرات - ١٥٥ - ط﴾ (٥)",
+      "text_page": 258,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 258,
+          "raw_text": "(٥) وهو حسن عند ابن الأنباري ، وذكر النحاس عن الأخفش أنه تام ، أما الداني فعده كافيا . انظر : الإيضاح ١/٥٣٦ ، والقطع (١٧٠) ، والمكتفى (١٧٨) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "1/536"
+            },
+            {
+              "scholar": "الأخفش",
+              "verdict": "تام",
+              "comment": "ذكره النحاس عنه",
+              "book": "القطع",
+              "book_ref": "170"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "178"
+            }
+          ],
+          "suggested": null
+        }
+      ]
+    }
+  ]
+}

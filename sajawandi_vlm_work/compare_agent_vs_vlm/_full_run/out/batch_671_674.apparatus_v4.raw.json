@@ -1,0 +1,515 @@
+{
+  "source": "apparatus_v4_671_674",
+  "page_numbers": [671, 672, 673, 674],
+  "waqfs": [
+    {
+      "ayah": 90,
+      "target_word": "سترا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 1,
+      "text": "﴿سترا - ٩٠ - لا﴾(١).",
+      "text_page": 671,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 671,
+          "raw_text": "(١) قال ابن الأنباري في الإيضاح ٢/٧٦٠ : ﴿لم نجعل لهم من دونها سترا . كذلك﴾ وقف التمام . اهـ . وتابعه الداني في المكتفى (٣٧١، ٣٧٢) حيث قال : ﴿سترا . كذلك﴾ تام ، أي : كذلك كان خبرهم . اهـ . وقال الأشموني في المنار (٢٣٤) : ﴿سترا﴾ جائز ، وقد اختلف في الكاف من ﴿كذلك﴾ فقيل : في محل نصب ، وقيل : في محل رفع ، فإن كانت في محل رفع ، أي : الأمر كذلك ، أي : بلغ مطلع الشمس كما بلغ مغربها ، أو كما وجد عند مغربها قوما وحكم فيهم وجد عند مطلعها قوما وحكم فيهم ، أو كما أتبع سببا إلى مغرب الشمس ، كذلك أتبع سببا إلى مطلعها ، وكذلك إن كانت الكاف في محل نصب ، أي : فعلنا مثل ذلك ، فعلى هذه التقديرات التشبيه من تمام الكلام ، وصار ما بعد الكاف وما قبلها كالكلام الواحد ، فيبتدئ : ﴿وقد أحطنا﴾ . وإن لم تكن الكاف لا في محل رفع ، ولا في محل نصب ، كان التشبيه مستأنفا ، منقطع لفظا متصل معنى ، فيبتدئ ﴿كذلك﴾ أي : علمناهم ليس لهم ما يستترون به . اهـ . وانظر : القطع (٤٤٩، ٤٥٠) ، والبحر المحيط ٦/١٦١ ، وحاشية الجمل ٣/٤٥ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "تام",
+              "comment": "وقف التمام على ﴿لم نجعل لهم من دونها سترا. كذلك﴾",
+              "book": "الإيضاح",
+              "book_ref": "2/760"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "تام",
+              "comment": "﴿سترا. كذلك﴾ تام، أي: كذلك كان خبرهم",
+              "book": "المكتفى",
+              "book_ref": "371، 372"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "جائز",
+              "comment": "﴿سترا﴾ جائز، ويختلف الابتداء بحسب محل الكاف: ﴿وقد أحطنا﴾ أو ﴿كذلك﴾",
+              "book": "المنار",
+              "book_ref": "234"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "سترا",
+                "trigger": "scholars_disagree",
+                "reason": "الأشموني جعل الوقف على ﴿سترا﴾ جائزا، وابن الأنباري والداني جعلا التمام على ﴿كذلك﴾ بعده.",
+                "scholars": ["الأشموني"]
+              },
+              {
+                "target_word": "كذلك",
+                "trigger": "scholars_disagree",
+                "reason": "وقف التمام عند ابن الأنباري وتام عند الداني على ﴿لم نجعل لهم من دونها سترا. كذلك﴾.",
+                "scholars": ["ابن الأنباري", "الداني"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وقد أحطنا",
+                "trigger": "meaning_change",
+                "reason": "إن كانت الكاف رفعا أو نصبا فالتشبيه من تمام الكلام فيُبتدأ بـ ﴿وقد أحطنا﴾، وهو ما يقتضيه جعل التمام على ﴿كذلك﴾.",
+                "scholars": ["ابن الأنباري", "الداني", "الأشموني"]
+              },
+              {
+                "start_word": "كذلك",
+                "trigger": "meaning_change",
+                "reason": "إن كان التشبيه مستأنفا منقطع اللفظ فيُبتدأ بـ ﴿كذلك﴾، أي: ليس لهم ما يستترون به.",
+                "scholars": ["الأشموني"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 91,
+      "target_word": "كذلك",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿كذلك - ٩١ - ط﴾ أي : كذلك القبيل (١) الذين (٢) كانوا عند مغرب الشمس ، وقيل (٣) : يبتدأ بـ وكذلك ، أي : ذلك (٤) كذلك ، أو : الأمر (٥) كذلك . وقيل (٦) : ﴿أحطنا﴾ أي (٧) : علمنا بما لديه (٨) من العدد والعدد كذلك (٩) ، أي : كعلمنا بقوم سبق ذكرهم .",
+      "text_page": 671,
+      "old_text": "﴿كذلك - ٩١ - ط﴾ أي : كذلك",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "أي : كذلك",
+          "new_text": "أي : كذلك القبيل (١) الذين (٢) كانوا عند مغرب الشمس ، وقيل (٣) : يبتدأ بـ وكذلك ، أي : ذلك (٤) كذلك ، أو : الأمر (٥) كذلك . وقيل (٦) : ﴿أحطنا﴾ أي (٧) : علمنا بما لديه (٨) من العدد والعدد كذلك (٩) ، أي : كعلمنا بقوم سبق ذكرهم .",
+          "info": "التعليل يبدأ في الصفحة ٦٧١ ويتم في الصفحة ٦٧٢"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 672,
+          "raw_text": "(١) أ : [ قيل ] وهو تصحيف .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "كذلك",
+                "trigger": "meaning_change",
+                "reason": "قيل يُبتدأ بـ ﴿وكذلك﴾، على معنى: ذلك كذلك، أو: الأمر كذلك.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 93,
+      "target_word": "قوما",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 10,
+      "text": "﴿قوما - ٩٣ - لا﴾ لأن (١٠) الجملة بعدها صفتهم .",
+      "text_page": 672,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 10,
+          "text_page": 672,
+          "raw_text": "(١٠) ج : [ أن ] بسقوط اللام .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "قوما",
+                "trigger": "meaning_change",
+                "reason": "لا يوقف لأن الجملة بعدها صفة لـ ﴿قوما﴾، وقطعها يغيّر التركيب.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 95,
+      "target_word": "ردما",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 11,
+      "text": "[ ﴿ردما - ٩٥ - لا﴾ ](١١).",
+      "text_page": 672,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 11,
+          "text_page": 672,
+          "raw_text": "(١١) ما بين المعقوفين من : ج .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 96,
+      "target_word": "الحديد",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿الحديد - ٩٦ - ط﴾.",
+      "text_page": 672,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 96,
+      "target_word": "قال انفخوا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿قال انفخوا - ٩٦ - ط﴾.",
+      "text_page": 672,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 96,
+      "target_word": "نارا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿نارا - ٩٦ - لا﴾ لأن ﴿قال﴾ جواب ﴿إذا﴾ .",
+      "text_page": 672,
+      "old_text": "﴿نارا - ٩٦ - لا﴾ لأن ﴿قال",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "لأن ﴿قال",
+          "new_text": "لأن ﴿قال﴾ جواب ﴿إذا﴾ .",
+          "info": "التعليل يبدأ في آخر الصفحة ٦٧٢ ويتم في صدر الصفحة ٦٧٣: جواب ﴿إذا﴾، وتُغلق قوس ﴿قال﴾ قبل «جواب»"
+        }
+      ],
+      "apparatus": []
+    },
+    {
+      "ayah": 96,
+      "target_word": "قطرا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿قطرا - ٩٦ - ط﴾ لأن (١) ﴿فما استطاعوا﴾ ابتداء أخبار .",
+      "text_page": 673,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 673,
+          "raw_text": "(١) د : [ أي ] وهو تصحيف .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "قطرا",
+                "trigger": "meaning_change",
+                "reason": "الوقف لأن ﴿فما استطاعوا﴾ ابتداء أخبار بعد تمام ذكر القطر.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "فما استطاعوا",
+                "trigger": "meaning_change",
+                "reason": "يُبتدأ بـ ﴿فما استطاعوا﴾ لأنه ابتداء أخبار.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 98,
+      "target_word": "من ربي",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿من ربي - ٩٨ - ج﴾ لعطف الجملتين المختلفتين .",
+      "text_page": 673,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 98,
+      "target_word": "دكاء",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿دكاء - ٩٨ - ج﴾ كذلك (٢).",
+      "text_page": 673,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 673,
+          "raw_text": "(٢) علامة الوقف من : أ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "دكاء",
+                "trigger": "meaning_change",
+                "reason": "كالوقف على ﴿من ربي﴾: عطف جملتين مختلفتين، فيجوز الفصل بينهما.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 98,
+      "target_word": "حقا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿حقا - ٩٨ - ط﴾ لانقطاع القصة .",
+      "text_page": 673,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 99,
+      "target_word": "جمعا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿جمعا - ٩٩ - لا﴾ للعطف .",
+      "text_page": 673,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 100,
+      "target_word": "عرضا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 3,
+      "text": "[ ﴿عرضا - ١٠٠ - لا﴾ ](٣).",
+      "text_page": 673,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 673,
+          "raw_text": "(٣) ما بين المعقوفين من : ج .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 102,
+      "target_word": "أولياء",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿أولياء - ١٠٢ - ط﴾.",
+      "text_page": 673,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 103,
+      "target_word": "أعمالا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿أعمالا - ١٠٣ - ط﴾ للفصل بين الاستخبار والأخبار ، لأن التقدير : هم الذين ، مثاله قوله : ﴿قل هل أنبئكم بشر من ذلك مثوبة عند الله من لعنه الله﴾ (٤) ، [ أي : هو من (٥) لعنه الله ] (٦) ، وكذلك قوله (٧) : ﴿قل أفأنبئكم بشر من ذلكم النار﴾ (٨) ، أي : هي النار .",
+      "text_page": 673,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 673,
+          "raw_text": "(٤) المائدة ، من الآية (٦٠) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "أعمالا",
+                "trigger": "meaning_change",
+                "reason": "للفصل بين الاستخبار والأخبار، والتقدير: هم الذين.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "الذين",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بـ ﴿الذين﴾ على أنه خبر لمبتدأ محذوف (هم)، لا تتمة للاستفهام.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 107,
+      "target_word": "نزلا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 9,
+      "text": "﴿نزلا - ١٠٧ - لا﴾ لأن قوله : ﴿خالدين﴾ حال المذكورين (٩) قبله .",
+      "text_page": 673,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 9,
+          "text_page": 673,
+          "raw_text": "(٩) ب : [ المذكور من ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "نزلا",
+                "trigger": "meaning_change",
+                "reason": "لا يوقف لأن ﴿خالدين﴾ حال المذكورين قبله، والوقف يفصل الحال عن صاحبها.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 110,
+      "target_word": "إله واحد",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿إله واحد - ١١٠ - ج﴾ لابتداء الشرط ، مع فاء التعقيب .",
+      "text_page": 673,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 1,
+      "target_word": "كهيعص",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿كهيعص - ١ - ط﴾ كوفي (٣).",
+      "text_page": 674,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 674,
+          "raw_text": "(٣) علامة الوقف من : أ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 2,
+      "target_word": "عبده زكريا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "﴿عبده زكريا - ٢ - ج﴾ لجواز تعلق ﴿إذ﴾ بـ ﴿ذكر رحمة ربك﴾ (٤) ، وجواز تعلقه بمحذوف ، أي : اذكر إذ نادى (٥) ، والوصل أجوز .",
+      "text_page": 674,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 674,
+          "raw_text": "(٤) قال العكبري في إملائه (٢/١١٠) : [ و﴿إذ﴾ ظرف لرحمة أو لذكر ] . وانظر : القطع (٤٥٢) ، والبحر المحيط ٦/١٧٢ ، ومنار الهدى (٢٣٦) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "العكبري",
+              "verdict": "ظرف لرحمة أو لذكر",
+              "comment": "إذ ظرف لرحمة أو لذكر",
+              "book": "الإملاء",
+              "book_ref": "2/110"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "عبده زكريا",
+                "trigger": "meaning_change",
+                "reason": "يجوز الوقف لجواز تعلق ﴿إذ﴾ بـ ﴿ذكر رحمة ربك﴾ أو بمحذوف تقديره «اذكر»، والوصل أجوز.",
+                "scholars": ["العكبري"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "إذ",
+                "trigger": "meaning_change",
+                "reason": "على تقدير «اذكر» يُبتدأ بـ ﴿إذ﴾، وعلى تعلقها بـ ﴿ذكر﴾ أو ﴿رحمة﴾ فالوصل أجوز. والعكبري: إذ ظرف لرحمة أو لذكر.",
+                "scholars": ["العكبري"]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

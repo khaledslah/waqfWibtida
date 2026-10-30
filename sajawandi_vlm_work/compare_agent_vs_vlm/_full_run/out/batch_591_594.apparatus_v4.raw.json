@@ -1,0 +1,519 @@
+{
+  "source": "apparatus_v4_591_594",
+  "page_numbers": [591, 592, 593, 594],
+  "waqfs": [
+    {
+      "ayah": 114,
+      "target_word": "للذاكرين",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿للذاكرين - 114 - ج﴾ للآية مع واو العطف.",
+      "text_page": 591,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 116,
+      "target_word": "أنجينا منهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿أنجينا منهم - 116 - ج﴾(1) لأن التقدير: وقد اتبع الذين.",
+      "text_page": 591,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 591,
+          "raw_text": "(1) د : علامة الوقف : [ ط ] . ويظهر أن الصواب ما أثبتناه بدلالة ما بعده . وقد وضح هذا الزمخشري في الكشاف 2/298 ، حيث قال : [ فإن قلت : علام عطف قوله : ﴿واتبع الذين ظلموا﴾ ؟ قلت : إن كان معناه : واتبعوا الشهوات ، كان معطوفا على مضمر ، لأن المعنى إلا قليلا ممن أنجينا منهم نهوا عن الفساد ، واتبع الذين ظلموا شهواتهم ، فهو عطف على نهوا ، وإن كان معناه : واتبعوا جزاء الإتراف ، فالواو للحال ، كأنه قيل : أنجينا القليل : وقد أتبع الذين ظلموا جزاءهم ] . أما أبو حيان في البحر 5/272 ، نص على أن الواو للاستئناف ، حيث قال : [ ﴿واتبع﴾ استئناف أخبار عن حال هؤلاء الذين ظلموا ، وإخبار عنهم أنهم مع كونهم تاركي النهي عن الفساد كانوا مجرمين ، أي ذوي جرائم غير ذلك ] . اهـ . فالوقف على هذا مطلق لاستئناف ما بعده . والوقف هنا حسن عند ابن الأنباري ، والأنصاري ، والأشموني ، وكاف عند الداني ، وذكر بصيغة التمريض أنه تام . أما النحاس فنص على أنه وقف . انظر : الإيضاح 2/719 ، والقطع (397) ، والمكتفى (321) ، والمقصد (191) ، والمنار (191) . • أي أصحاب جرائم غير ترك النهي عن الفساد .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "أبو حيان",
+              "verdict": "مطلق",
+              "comment": "نص على أن الواو للاستئناف، فالوقف مطلق لاستئناف ما بعده",
+              "book": "البحر",
+              "book_ref": "5/272"
+            },
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "2/719"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "191"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "191"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": "ذكر بصيغة التمريض أنه تام",
+              "book": "المكتفى",
+              "book_ref": "321"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "وقف",
+              "comment": "نص على أنه وقف",
+              "book": "القطع",
+              "book_ref": "397"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "أنجينا منهم",
+                "trigger": "meaning_change",
+                "reason": "الوقف يجعل ﴿واتبع الذين ظلموا﴾ استئنافا، والوصل يحتمله عطفا على مضمر أو حالا على تقدير: وقد اتبع الذين.",
+                "scholars": ["أبو حيان", "ابن الأنباري", "الأنصاري", "الأشموني", "الداني", "النحاس"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "واتبع",
+                "trigger": "meaning_change",
+                "reason": "على قول أبي حيان أن الواو للاستئناف يُبتدأ بـ ﴿واتبع﴾، وعلى العطف أو الحال لا يحسن الابتداء.",
+                "scholars": ["أبو حيان"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 118,
+      "target_word": "مختلفين",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 1,
+      "text": "﴿مختلفين - 118 - لا﴾(1)",
+      "text_page": 591,
+      "old_text": "﴿مختلفين - 118 -",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿مختلفين - 118 -",
+          "new_text": "﴿مختلفين - 118 - لا﴾(1)",
+          "info": "القوس يُفتح في صفحة 591 عند ﴿مختلفين - 118 - ويكتمل بحرف لا وقفل القوس ورقم الحاشية (1) في صفحة 592."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 592,
+          "raw_text": "(1) ما بين المعقوفين من : ب ، ج .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 119,
+      "target_word": "رحم ربك",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿رحم ربك - 119 - ط﴾",
+      "text_page": 592,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 119,
+      "target_word": "خلقهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿خلقهم - 119 - ط﴾",
+      "text_page": 592,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 120,
+      "target_word": "فؤادك",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿فؤادك - 120 - ج﴾ لأن التقدير: وقد جاءك الحق(2).",
+      "text_page": 592,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 592,
+          "raw_text": "(2) ج : [ الحق ] غير مثبتة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "فؤادك",
+                "trigger": "meaning_change",
+                "reason": "الوقف على ﴿فؤادك﴾ لأن التقدير فيما بعده: وقد جاءك الحق، فالوصل يغير جهة العطف.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وجاءك",
+                "trigger": "meaning_change",
+                "reason": "يُبتدأ بـ ﴿وجاءك﴾ على تقدير: وقد جاءك الحق.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 121,
+      "target_word": "مكانتكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿مكانتكم - 121 - ط﴾",
+      "text_page": 592,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 121,
+      "target_word": "عاملون",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿عاملون - 121 - لا﴾ للعطف.",
+      "text_page": 592,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 122,
+      "target_word": "وانتظروا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 3,
+      "text": "﴿وانتظروا - 122 - ج﴾(3) أي: فإنا منتظرون.",
+      "text_page": 592,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 592,
+          "raw_text": "(3) أ : علامة الوقف غير واضحة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "وانتظروا",
+                "trigger": "meaning_change",
+                "reason": "الوقف جائز لأن المعنى: فإنا منتظرون، فجواب الأمر مقدر بالفاء.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "إنا",
+                "trigger": "meaning_change",
+                "reason": "يُبتدأ بـ ﴿إنا منتظرون﴾ على تقدير الفاء: فإنا منتظرون.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 123,
+      "target_word": "وتوكل عليه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿وتوكل عليه - 123 - ط﴾(4)",
+      "text_page": 592,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 592,
+          "raw_text": "(4) أ : علامة الوقف غير واضحة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 1,
+      "target_word": "الر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿الر - 1 - ط﴾(3) كوفي.",
+      "text_page": 593,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 593,
+          "raw_text": "(3) علامة الوقف من : أ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 1,
+      "target_word": "المبين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿المبين - 1 - ط﴾(4) كذلك، وغيرهم(5) يجعل ﴿إنا﴾ جواب معنى(6) القسم في ﴿الر﴾.",
+      "text_page": 593,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 593,
+          "raw_text": "(4) علامة الوقف من : أ . والوقف هنا تام عند النحاس ، والداني ، والأشموني ، وحسن عند الأنصاري . انظر : القطع (399) ، والمكتفى (324) ، والمقصد (191) ، والمنار (191) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "النحاس",
+              "verdict": "تام",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "399"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "تام",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "324"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "تام",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "191"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "191"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "المبين",
+                "trigger": "meaning_change",
+                "reason": "الوقف على ﴿المبين﴾ يفصل ﴿إنا﴾ عما قبلها، وغيرهم يجعل ﴿إنا﴾ جواب معنى القسم في ﴿الر﴾.",
+                "scholars": ["النحاس", "الداني", "الأشموني", "الأنصاري"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "إنا",
+                "trigger": "meaning_change",
+                "reason": "على الوقف التام يُبتدأ بـ ﴿إنا﴾، وإن جُعلت جواب القسم لم يحسن قطعها عن ﴿الر﴾.",
+                "scholars": ["النحاس", "الداني", "الأشموني"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 3,
+      "target_word": "القرآن",
+      "verdict_label": "ق",
+      "verdict": "قيل فيه وقف",
+      "margin_ref": 7,
+      "text": "﴿القرآن - 3 - ق﴾(7) قد قيل لشبهة الابتداء بالنفي(1)، والوصل أوضح(2) لأن الواو للحال.",
+      "text_page": 593,
+      "old_text": "﴿القرآن - 3 - ق﴾(7) قد قيل لشبهة",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿القرآن - 3 - ق﴾(7) قد قيل لشبهة",
+          "new_text": "﴿القرآن - 3 - ق﴾(7) قد قيل لشبهة الابتداء بالنفي(1)، والوصل أوضح(2) لأن الواو للحال.",
+          "info": "القوس يُغلق في صفحة 593، وتتم جملة التعليل في صفحة 594: الابتداء بالنفي، والوصل أوضح لأن الواو للحال."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 593,
+          "raw_text": "(7) علامة الوقف من : ب . والوقف هنا صالح عند النحاس ، وحسن عند الأشموني . انظر : القطع (399) ، والمنار (191) .",
+          "continuation": {
+            "status": "read",
+            "page": 594
+          },
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "النحاس",
+              "verdict": "صالح",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "399"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "191"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "القرآن",
+                "trigger": "meaning_change",
+                "reason": "الوقف على ﴿القرآن﴾ يفتح الابتداء بالنفي في ﴿وإن كنت﴾، والوصل أوضح لأن الواو للحال.",
+                "scholars": ["النحاس", "الأشموني"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وإن",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بـ ﴿وإن كنت﴾ شبهة إن جُعلت إن نافية، والوصل يبقي الواو للحال.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 5,
+      "target_word": "كيدا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿كيدا - 5 - ط﴾",
+      "text_page": 594,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 6,
+      "target_word": "وإسحق",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿وإسحق - 6 - ط﴾",
+      "text_page": 594,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 8,
+      "target_word": "عصبة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿عصبة - 8 - ط﴾",
+      "text_page": 594,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 8,
+      "target_word": "مبين",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 3,
+      "text": "﴿مبين - 8 - ج﴾ والعربية توجب(3) الوقف(4) - وإن قيل إن(5) الابتداء به لا يحسن - [لأنا نقرأ حكايتهم بأن قال بعضهم لبعض: ﴿اقتلوا يوسف﴾ وليس أمرا منا](1).",
+      "text_page": 594,
+      "old_text": "﴿مبين - 8 - ج﴾ والعربية توجب(3) الوقف(4) - وإن قيل إن(5) الابتداء به لا يحسن - [لأنا نقرأ حكايتهم بأن قال بعضهم لبعض: ﴿اقتلوا يوسف﴾",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿مبين - 8 - ج﴾ والعربية توجب(3) الوقف(4) - وإن قيل إن(5) الابتداء به لا يحسن - [لأنا نقرأ حكايتهم بأن قال بعضهم لبعض: ﴿اقتلوا يوسف﴾",
+          "new_text": "﴿مبين - 8 - ج﴾ والعربية توجب(3) الوقف(4) - وإن قيل إن(5) الابتداء به لا يحسن - [لأنا نقرأ حكايتهم بأن قال بعضهم لبعض: ﴿اقتلوا يوسف﴾ وليس أمرا منا](1).",
+          "info": "جملة التعليل تُفتح في صفحة 594 وتتم في صفحة 595 عند: وليس أمرا منا."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 594,
+          "raw_text": "(3) د : [ توهب ] وهو تصحيف .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "مبين",
+                "trigger": "meaning_change",
+                "reason": "العربية توجب الوقف على ﴿مبين﴾ لأن ما بعده حكاية قولهم ﴿اقتلوا يوسف﴾ وليس أمرا من الله.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "اقتلوا",
+                "trigger": "meaning_change",
+                "reason": "قيل إن الابتداء بـ ﴿اقتلوا يوسف﴾ لا يحسن لأنه أمر، والمؤلف يراه حكاية قولهم وليس أمرا منه.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

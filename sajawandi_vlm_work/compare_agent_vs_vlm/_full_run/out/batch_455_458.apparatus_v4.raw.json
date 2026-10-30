@@ -1,0 +1,873 @@
+{
+  "source": "apparatus_v4_455_458",
+  "page_numbers": [455, 456, 457, 458],
+  "waqfs": [
+    {
+      "ayah": 44,
+      "target_word": "شهداء",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿شهداء - ٤٤ - ج﴾ لاختلاف النظم مع اتصال فاء التعقيب.",
+      "text_page": 455,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 44,
+      "target_word": "قليلا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿قليلا - ٤٤ - ط﴾.",
+      "text_page": 455,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 45,
+      "target_word": "بالنفس",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿بالنفس - ٤٥ - ط﴾ لمن قرأ: ﴿والعين﴾ وما بعده بالرفع (٥).",
+      "text_page": 455,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 455,
+          "raw_text": "(٥) المثبت: [بالرفع] من: ب، لموافقة السياق بعده، ولموافقة عبارة مكي في التبصرة (٤٨٥)، وفي بقية النسخ: [مرفوعا]. وقال مكي في التبصرة (٤٨٥): [قرأ الكسائي: العين والأنف والأذن والسن، بالرفع في الأربعة، وقرأ الباقون بالنصب فيهن، ولا اختلاف في نصب النفس]. اهـ. وانظر: السبعة لابن مجاهد (٢٤٤)، والتيسير (٩٩).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "مكي",
+              "verdict": "بالرفع",
+              "comment": "حكى رفع الكسائي للعين والأنف والأذن والسن، ونصب الباقين، ولا اختلاف في نصب النفس",
+              "book": "التبصرة",
+              "book_ref": "485"
+            },
+            {
+              "scholar": "الكسائي",
+              "verdict": "بالرفع",
+              "comment": "قرأ العين والأنف والأذن والسن بالرفع، ولا اختلاف في نصب النفس",
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "unknown",
+              "verdict": "بالنصب",
+              "comment": "الباقون يقرؤون العين والأنف والأذن والسن بالنصب",
+              "book": null,
+              "book_ref": null
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "بالنفس",
+                "trigger": "scholars_disagree",
+                "reason": "الوقف على ﴿بالنفس﴾ لمن قرأ ﴿والعين﴾ وما بعده بالرفع. الكسائي يرفع الأربعة، والباقون ينصبونها، ولا اختلاف في نصب النفس.",
+                "scholars": ["مكي", "الكسائي"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "والعين",
+                "trigger": "meaning_change",
+                "reason": "قراءة الرفع تجعل ﴿والعين﴾ وما بعده ابتداءً مرفوعا، والنصب يبقيه معطوفا على ﴿النفس﴾.",
+                "scholars": ["مكي", "الكسائي"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 45,
+      "target_word": "بالسن",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 6,
+      "text": "﴿بالسن - ٤٥ - ط﴾ لمن قرأ: ﴿والجروح﴾ بالرفع (٦).",
+      "text_page": 455,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 455,
+          "raw_text": "(٦) قرأ بالرفع: الكسائي، وابن كثير، وأبو عمرو، وابن عامر. وقرأ بالنصب: نافع وعاصم وحمزة. انظر: التبصرة (٤٨٥)، والسبعة (٢٤٤)، والتيسير (٩٩)، والمهذب ١/١٨٧.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الكسائي",
+              "verdict": "بالرفع",
+              "comment": "قرأ بالرفع",
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "ابن كثير",
+              "verdict": "بالرفع",
+              "comment": "قرأ بالرفع",
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "أبو عمرو",
+              "verdict": "بالرفع",
+              "comment": "قرأ بالرفع",
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "ابن عامر",
+              "verdict": "بالرفع",
+              "comment": "قرأ بالرفع",
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "نافع",
+              "verdict": "بالنصب",
+              "comment": "قرأ بالنصب",
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "عاصم",
+              "verdict": "بالنصب",
+              "comment": "قرأ بالنصب",
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "حمزة",
+              "verdict": "بالنصب",
+              "comment": "قرأ بالنصب",
+              "book": null,
+              "book_ref": null
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "بالسن",
+                "trigger": "scholars_disagree",
+                "reason": "الوقف على ﴿بالسن﴾ لمن قرأ ﴿والجروح﴾ بالرفع. الكسائي وابن كثير وأبو عمرو وابن عامر يرفعون، ونافع وعاصم وحمزة ينصبون.",
+                "scholars": ["الكسائي", "ابن كثير", "أبو عمرو", "ابن عامر"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "والجروح",
+                "trigger": "meaning_change",
+                "reason": "الرفع يجعل ﴿والجروح﴾ ابتداءً، والنصب يعطفه على ما قبله فلا يُفصل بالوقف.",
+                "scholars": ["الكسائي", "ابن كثير", "أبو عمرو", "ابن عامر"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 45,
+      "target_word": "قصاص",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿قصاص - ٤٥ - ط﴾ لابتداء شرط.",
+      "text_page": 455,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 45,
+      "target_word": "كفارة له",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿كفارة له - ٤٥ - ط﴾.",
+      "text_page": 456,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 46,
+      "target_word": "من التوراة",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "margin_ref": 1,
+      "text": "﴿من التوراة - ٤٦ الأولى - ص﴾(١) لطول الكلام.",
+      "text_page": 456,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 456,
+          "raw_text": "(١) د: علامة الوقف: [ج].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "unknown",
+              "verdict": "جائز",
+              "comment": "في نسخة د علامة الوقف ج",
+              "book": null,
+              "book_ref": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 46,
+      "target_word": "ونور",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 2,
+      "text": "﴿ونور - ٤٦ - لا﴾ لأن قوله: ﴿ومصدقا﴾ عطف على موضع ﴿فيه هدى ونور﴾ أي (٢): آتيناه (٣) الإنجيل كائنا فيه هدى ونور ومصدقا (٤).",
+      "text_page": 456,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 456,
+          "raw_text": "(٢) د: [أي] ساقطة.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "ونور",
+                "trigger": "meaning_change",
+                "reason": "الوقف على ﴿ونور﴾ يقطع عطف ﴿ومصدقا﴾ على موضع ﴿فيه هدى ونور﴾.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "ومصدقا",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بـ﴿ومصدقا﴾ يخرجه عن العطف على موضع ﴿فيه هدى ونور﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 46,
+      "target_word": "للمتقين",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 5,
+      "text": "﴿للمتقين - ٤٦ - لا﴾(٥) لمن قرأ: ﴿وليحكم﴾ بكسر اللام (٦) ونصب الميم (٧)، أي: آتيناه الإنجيل [ليحكم أهل الإنجيل] (٨)، والواو مقحمة، ومن قرأ بجزم اللام كانت الواو للابتداء إذ لا (٩) أمر قبله فينعطف (١٠) عليه.",
+      "text_page": 456,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 456,
+          "raw_text": "(٥) أ: علامة الوقف [ط، لا].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "unknown",
+              "verdict": "تام",
+              "comment": "في نسخة أ علامة الوقف ط",
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "unknown",
+              "verdict": "لا يوقف",
+              "comment": "في نسخة أ علامة الوقف لا",
+              "book": null,
+              "book_ref": null
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "للمتقين",
+                "trigger": "scholars_disagree",
+                "reason": "في نسخة أ علامة الوقف ط ولا. وكسر اللام ونصب الميم يجعل الواو مقحمة فلا يوقف، وجزم اللام يجعل الواو للابتداء.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وليحكم",
+                "trigger": "meaning_change",
+                "reason": "من قرأ بجزم اللام كانت الواو للابتداء، إذ لا أمر قبله فينعطف عليه.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 47,
+      "target_word": "أنزل الله فيه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿أنزل الله فيه - ٤٧ - ط﴾.",
+      "text_page": 456,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 48,
+      "target_word": "جاءك من الحق",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿جاءك من الحق - ٤٨ - ط﴾.",
+      "text_page": 457,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 48,
+      "target_word": "ومنهاجا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ومنهاجا - ٤٨ - ط﴾.",
+      "text_page": 457,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 48,
+      "target_word": "الخيرات",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿الخيرات - ٤٨ - ط﴾.",
+      "text_page": 457,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 48,
+      "target_word": "تختلفون",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 1,
+      "text": "﴿تختلفون - ٤٨ - لا﴾ لعطف ﴿وأن احكم﴾ على قوله: ﴿ولا تتبع أهواءهم﴾، ومن وقف فلأنه رأس الآية (١).",
+      "text_page": 457,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 457,
+          "raw_text": "(١) ب، ج: [آية].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "تختلفون",
+                "trigger": "meaning_change",
+                "reason": "لا يوقف لعطف ﴿وأن احكم﴾ على ﴿ولا تتبع أهواءهم﴾، ومن وقف فلأنه رأس الآية.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وأن",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بـ﴿وأن احكم﴾ يجري على أنه رأس آية، ووصله يجعله معطوفا على ﴿ولا تتبع أهواءهم﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 49,
+      "target_word": "أنزل الله إليك",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿أنزل الله إليك - ٤٩ - ط﴾.",
+      "text_page": 457,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 49,
+      "target_word": "ذنوبهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ذنوبهم - ٤٩ - ط﴾.",
+      "text_page": 457,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 50,
+      "target_word": "يبغون",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿يبغون - ٥٠ - ط﴾.",
+      "text_page": 457,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 51,
+      "target_word": "أولياء",
+      "verdict_label": "م",
+      "verdict": "لازم",
+      "margin_ref": 2,
+      "text": "﴿أولياء - ٥١ - م﴾ لأنه لو وصل صارت الجملة صفة لأولياء فيكون النهي عن اتخاذ (٢) أولياء صفتهم (٣) أن بعضهم أولياء بعض، وهو محال، وإنما النهي عن اتخاذهم أولياء على الإطلاق.",
+      "text_page": 457,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 457,
+          "raw_text": "(٢) ب: [اتخاذهم].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "أولياء",
+                "trigger": "meaning_change",
+                "reason": "لو وصل صارت الجملة صفة لأولياء، فيصير النهي عن أولياء صفتهم أن بعضهم أولياء بعض، وهو محال. والنهي على الإطلاق.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "بعضهم",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بـ﴿بعضهم أولياء بعض﴾ يبقيها جملة مستأنفة، ووصلها يجعلها صفة فتغيّر معنى النهي.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 51,
+      "target_word": "أولياء بعض",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿أولياء بعض - ٥١ - ط﴾.",
+      "text_page": 457,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 51,
+      "target_word": "فإنه منهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿فإنه منهم - ٥١ - ط﴾.",
+      "text_page": 457,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 52,
+      "target_word": "دائرة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿دائرة - ٥٢ - ط﴾ تمام المقول.",
+      "text_page": 457,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 52,
+      "target_word": "نادمين",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 4,
+      "text": "﴿نادمين - ٥٢ - لا﴾(٤) لمن قرأ: ﴿ويقول﴾ بالنصب (٥) عطفا على قوله: ﴿أن يأتي﴾.",
+      "text_page": 457,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 457,
+          "raw_text": "(٤) أ: علامة الوقف: [ج، لا].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "unknown",
+              "verdict": "جائز",
+              "comment": "في نسخة أ علامة الوقف ج",
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "unknown",
+              "verdict": "لا يوقف",
+              "comment": "في نسخة أ علامة الوقف لا",
+              "book": null,
+              "book_ref": null
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "نادمين",
+                "trigger": "scholars_disagree",
+                "reason": "في نسخة أ علامة الوقف ج ولا. والمنع في المتن لمن قرأ ﴿ويقول﴾ بالنصب عطفا على ﴿أن يأتي﴾.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "ويقول",
+                "trigger": "meaning_change",
+                "reason": "نصب ﴿ويقول﴾ يعطفه على ﴿أن يأتي﴾ فلا يُبتدأ به، وعلامة الجواز في نسخة أ تقتضي جواز الفصل قبله.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 53,
+      "target_word": "جهد أيمانهم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 6,
+      "text": "﴿جهد أيمانهم - ٥٣ - لا﴾ لأن قوله: ﴿إنهم﴾ جواب القسم (٦).",
+      "text_page": 457,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 457,
+          "raw_text": "(٦) قال أبو حيان في البحر ٣/٥١٠: [وقوله: ﴿إنهم لمعكم﴾ حكاية لمعنى القسم لا للفظهم إذ لو كان لفظهم لكان: إن لمعكم]. اهـ. وانظر: الدر المصون ٤/٣٠٥.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "أبو حيان",
+              "verdict": "حكاية لمعنى القسم",
+              "comment": "﴿إنهم لمعكم﴾ حكاية لمعنى القسم لا للفظهم، إذ لو كان لفظهم لكان: إن لمعكم",
+              "book": "البحر المحيط",
+              "book_ref": "3/510"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "جهد أيمانهم",
+                "trigger": "meaning_change",
+                "reason": "﴿إنهم﴾ جواب القسم، فالوقف على ﴿جهد أيمانهم﴾ يفصل القسم عن جوابه. وأبو حيان يجعل ﴿إنهم لمعكم﴾ حكاية لمعنى القسم.",
+                "scholars": ["أبو حيان"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "إنهم",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بـ﴿إنهم﴾ يقطع جواب القسم عن ﴿جهد أيمانهم﴾.",
+                "scholars": ["أبو حيان"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 53,
+      "target_word": "لمعكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿لمعكم - ٥٣ - ط﴾.",
+      "text_page": 457,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 54,
+      "target_word": "ويحبونه",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 1,
+      "text": "﴿ويحبونه - ٥٤ - لا﴾ لأن (١) قوله: ﴿أذلة﴾ نعت للقوم (٢) أيضا.",
+      "text_page": 457,
+      "old_text": "﴿ويحبونه -",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ويحبونه -",
+          "new_text": "﴿ويحبونه - ٥٤ - لا﴾",
+          "info": "يفتح القوس في آخر الصفحة ٤٥٧ عند «ويحبونه» ويتم في أول الصفحة ٤٥٨ بالرقم ٥٤ وحرف لا وإغلاق القوس، ثم التعليل."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 458,
+          "raw_text": "(١) ج: ورد قبل قوله: [لأن] زيادة من الناسخ، وهي: [لمن قرأ].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "ويحبونه",
+                "trigger": "meaning_change",
+                "reason": "﴿أذلة﴾ نعت للقوم أيضا، فالوقف على ﴿ويحبونه﴾ يفصل النعت عن المنعوت.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "أذلة",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بـ﴿أذلة﴾ يقطعها عن كونها نعتا للقوم.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 54,
+      "target_word": "الكافرين",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 3,
+      "text": "﴿الكافرين - ٥٤ - ز﴾ للآية (٣)، وإلا فقوله: يجاهدون، نعت لقوم أيضا (٤).",
+      "text_page": 458,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 458,
+          "raw_text": "(٣) لم أجد من ذكر أنه رأس آية إلا الأشموني في المنار (١٢٢). وقد وضح هذا القاضي في شرحه لناظمة الزهر في علم الفواصل، فذكر أنه يشبه رأس الآية، وقد ترك عده إجماعا. انظر: بشير اليسر، شرح ناظمة الزهر (٨٤).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأشموني",
+              "verdict": "رأس آية",
+              "comment": "لم يُذكر أنه رأس آية إلا عنده",
+              "book": "المنار",
+              "book_ref": "122"
+            },
+            {
+              "scholar": "القاضي",
+              "verdict": "ترك عده",
+              "comment": "يشبه رأس الآية، وقد ترك عده إجماعا",
+              "book": "شرح ناظمة الزهر",
+              "book_ref": "84"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "الكافرين",
+                "trigger": "scholars_disagree",
+                "reason": "الوقف للآية. الأشموني ذكره رأس آية، والقاضي ذكر أنه يشبه رأس الآية وقد ترك عده إجماعا. وإلا فـ«يجاهدون» نعت لقوم فلا يفصل.",
+                "scholars": ["الأشموني", "القاضي"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "يجاهدون",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بـ«يجاهدون» يجعله استئنافا، ووصله يجعله نعتا لقوم.",
+                "scholars": ["الأشموني"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 54,
+      "target_word": "لائم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿لائم - ٥٤ - ط﴾.",
+      "text_page": 458,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 54,
+      "target_word": "من يشاء",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿من يشاء - ٥٤ - ط﴾(٥).",
+      "text_page": 458,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 458,
+          "raw_text": "(٥) أ: علامة الوقف ساقطة.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 57,
+      "target_word": "والكفار أولياء",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 6,
+      "text": "﴿والكفار أولياء - ٥٧ - ج﴾ لعطف المتفقتين (٦) مع وقوع العارض، والوقف (٧) أوجه لطول الكلام، وابتداء الأمر بالتقوى على التنبيه (٨).",
+      "text_page": 458,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 458,
+          "raw_text": "(٦) أ: [المتفقتين]، وفي د: [المتفقين] وهذا تصحيف.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "والكفار أولياء",
+                "trigger": "meaning_change",
+                "reason": "عطف المتفقتين مع وقوع العارض، والوقف أوجه لطول الكلام.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "واتقوا",
+                "trigger": "meaning_change",
+                "reason": "ابتداء الأمر بالتقوى على التنبيه.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 58,
+      "target_word": "ولعبا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ولعبا - ٥٨ - ط﴾.",
+      "text_page": 458,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 59,
+      "target_word": "من قبل",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 9,
+      "text": "﴿من قبل - ٥٩ - لا﴾ لعطف ﴿وأن أكثركم﴾ على ﴿أن آمنا﴾(٩).",
+      "text_page": 458,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 9,
+          "text_page": 458,
+          "raw_text": "(٩) انظر: البحر المحيط ٣/٥١٧.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "من قبل",
+                "trigger": "meaning_change",
+                "reason": "﴿وأن أكثركم﴾ معطوف على ﴿أن آمنا﴾، فالوقف على ﴿من قبل﴾ يفصل المعطوف عن المعطوف عليه.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وأن",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بـ﴿وأن أكثركم﴾ يقطع العطف على ﴿أن آمنا﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,662 @@
+{
+  "source": "apparatus_v4_403_406",
+  "page_numbers": [403, 404, 405, 406],
+  "waqfs": [
+    {
+      "ayah": 172,
+      "target_word": "القرح",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿القرح - 172 - ط﴾(3) وقف مطلق لمن لم يقف على ﴿المؤمنين﴾(4) ، ومن وقف فجعل(5) ﴿الذين﴾ مبتدأ(6) لم يقف على ﴿القرح﴾(7) لأن قوله ﴿للذين أحسنوا﴾ يكون خبرا لقوله : ﴿الذين﴾(8) .",
+      "text_page": 403,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 403,
+          "raw_text": "(٣) ج ، د : علامة الوقف ساقطة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "القرح",
+                "trigger": "meaning_change",
+                "reason": "وقف مطلق لمن لم يقف على المؤمنين؛ ومن جعل ﴿الذين﴾ مبتدأ لم يقف على القرح لأن ﴿للذين أحسنوا﴾ خبره.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "للذين",
+                "trigger": "meaning_change",
+                "reason": "إن وقف على القرح ابتدئ بـ ﴿للذين أحسنوا﴾؛ فإن جعلت ﴿الذين﴾ مبتدأ كانت هذه الجملة خبرها فلا يوقف على القرح.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 172,
+      "target_word": "عظيم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 9,
+      "text": "﴿عظيم - 172 - ج﴾ لأن ﴿الذين﴾ يصلح بدلا عن ﴿الذين استجابوا﴾ فإنهم هم(9) . ويحتمل أنه خبر محذوف ، أي : هم الذين .",
+      "text_page": 403,
+      "old_text": "﴿عظيم - 172 - ج﴾ لأن ﴿الذين﴾ يصلح بدلا عن ﴿الذين استجابوا﴾ فإنهم هم(9) .",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "فإنهم هم(9) .",
+          "new_text": "فإنهم هم(9) . ويحتمل أنه خبر محذوف ، أي : هم الذين .",
+          "info": "تتمة العلة في صدر الصفحة 404 قبل ﴿إيمانا﴾."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 9,
+          "text_page": 403,
+          "raw_text": "(٩) انظر : المرجع السابق ، ومشكل إعراب القرآن ١/١٦٦ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "عظيم",
+                "trigger": "meaning_change",
+                "reason": "﴿الذين﴾ يصلح بدلا من ﴿الذين استجابوا﴾ فيتصل ما بعده، أو خبرا محذوفا فيُفصل عند عظيم.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "الذين",
+                "trigger": "meaning_change",
+                "reason": "على تقدير الخبر المحذوف يبتدأ بـ ﴿الذين﴾، أي هم الذين.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 173,
+      "target_word": "إيمانا",
+      "verdict_label": "ق",
+      "verdict": "قيل فيه وقف",
+      "margin_ref": 1,
+      "text": "﴿إيمانا - 173 - ق﴾(1) قد قيل ، والوصل أولى للعطف ، واتصال توكل(2) اللسان بيقين القلب .",
+      "text_page": 404,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 404,
+          "raw_text": "(١) ج ، د : علامة الوقف ساقطة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "إيمانا",
+                "trigger": "scholars_disagree",
+                "reason": "قد قيل بالوقف هنا، والوصل أولى للعطف واتصال توكل اللسان بيقين القلب.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 174,
+      "target_word": "سوء",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿سوء - 174 - لا﴾ للعطف .",
+      "text_page": 404,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 174,
+      "target_word": "رضوان الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿رضوان الله - 174 - ط﴾ .",
+      "text_page": 404,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 175,
+      "target_word": "أولياءه",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "margin_ref": 3,
+      "text": "﴿أولياءه - 175 - ص﴾ لأن الجملتين وأن اختلفتا ففاء التعقيب لوصل(3) النهي عن الخوف بعد ذكر التخويف .",
+      "text_page": 404,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 404,
+          "raw_text": "(٣) أ ، ج : [ لو وصل ] بزيادة الواو .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "أولياءه",
+                "trigger": "meaning_change",
+                "reason": "الجملتان اختلفتا فيسوغ الوقف، وفاء التعقيب تصل النهي عن الخوف بذكر التخويف.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "فلا",
+                "trigger": "meaning_change",
+                "reason": "بعد أولياءه يبتدأ النهي عن الخوف، والفاء تصله بما قبله.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 176,
+      "target_word": "في الكفر",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "﴿في الكفر - 176 - ج﴾ للابتداء بأن(4) ، ولاحتمال(5) إضمار اللام والفاء(6) .",
+      "text_page": 404,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 404,
+          "raw_text": "(٤) د : [ بان ] غير مثبتة ، وفي ج : [ با ] بسقوط النون .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "في الكفر",
+                "trigger": "meaning_change",
+                "reason": "الوقف للابتداء بأن، مع احتمال إضمار اللام أو الفاء.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "إنهم",
+                "trigger": "meaning_change",
+                "reason": "يبتدأ بـ ﴿إنهم﴾ على أنّ، ويحتمل إضمار اللام والفاء.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 176,
+      "target_word": "شيئا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 7,
+      "text": "﴿شيئا - 176 - ط﴾(7) .",
+      "text_page": 404,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 404,
+          "raw_text": "(٧) ب : علامة الوقف : [ ط ، ج ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 176,
+      "target_word": "في الآخرة",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 8,
+      "text": "﴿في الآخرة - 176 - ج﴾ لعطف المختلفتين(8) مع اتحاد مقصود(9) الكلام(10) .",
+      "text_page": 404,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 404,
+          "raw_text": "(٨) فالأولى : نفي الله تعالى أن يكون لهم حظ في الآخرة ، والثانية : أثبت تعالى العذاب لهم في الآخرة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "في الآخرة",
+                "trigger": "meaning_change",
+                "reason": "الجملة الأولى تنفي الحظ في الآخرة، والثانية تثبت العذاب، فعطف جملتين مختلفتين مع اتحاد المقصود.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "ولهم",
+                "trigger": "meaning_change",
+                "reason": "تبتدأ الجملة الثانية بإثبات العذاب ﴿ولهم عذاب عظيم﴾ بعد نفي الحظ.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 177,
+      "target_word": "لن يضروا الله شيئا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿لن يضروا الله شيئا - 177 - ج﴾(1) لما(2) ذكر قبله ﴿في الآخرة﴾(3) .",
+      "text_page": 404,
+      "old_text": "﴿لن يضروا الله شيئا -",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿لن يضروا الله شيئا -",
+          "new_text": "﴿لن يضروا الله شيئا - 177 - ج﴾(1) لما(2) ذكر قبله ﴿في الآخرة﴾(3) .",
+          "info": "القوس مفتوح في آخر الصفحة 404 ويُغلق في صدر الصفحة 405، والهامش (1) فيها."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 405,
+          "raw_text": "(١) ب : علامة الوقف : [ ط ] والصواب ما أثبتناه لقوله : [ لما ذكر قبله ] أي للعلة التي ذكرت قبل الوقف هنا ، وهي علة جواز الوصل والوقف على ﴿في الآخرة﴾ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 178,
+      "target_word": "لأنفسهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿لأنفسهم - 178 - ط﴾ .",
+      "text_page": 405,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 178,
+      "target_word": "ليزدادوا إثما",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "﴿ليزدادوا إثما - 178 - ج﴾(4) لما(5) ذكر من قبل(6) .",
+      "text_page": 405,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 405,
+          "raw_text": "(٤) أ : علامة الوقف ساقطة ، وفي د : علامة الوقف : [ ط ] والصواب ما أثبتناه ، وذلك لعطف المختلفتين مع اتحاد المقصود . وعطف المختلفتين : أن الله تعالى أخبر في الأولى عن حالهم في الدنيا ثم أخبر في الثانية عن مآلهم في الأخرى . أما اتحاد المقصود : فهو بيان خسارتهم في الدنيا والآخرة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "ليزدادوا إثما",
+                "trigger": "meaning_change",
+                "reason": "عطف جملتين مختلفتين: الأولى حالهم في الدنيا والثانية مآلهم في الآخرة، والمقصود واحد وهو خسارتهم في الدارين.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "ولهم",
+                "trigger": "meaning_change",
+                "reason": "بعد ﴿ليزدادوا إثما﴾ تبتدأ جملة المآل ﴿ولهم عذاب مهين﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 179,
+      "target_word": "من الطيب",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من الطيب - 179 - ط﴾ .",
+      "text_page": 405,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 179,
+      "target_word": "ورسله",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 8,
+      "text": "﴿ورسله - 179 - ج﴾(8) .",
+      "text_page": 405,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 405,
+          "raw_text": "(٨) أ ، د : علامة الوقف : [ ط ] . وفي ج : علامة الوقف : [ ج ، ط ] والمثبت من : ب ، هو الصواب ، للعطف ، وابتداء الشرط ، ولما ذكر ابن الأنباري في الإيضاح ٢/٥٨٩ ، أن الوقف هنا حسن ، ولما ذكر أيضا الداني في المكتفى (٢١٣) ، والأنصاري في المقصد (٩٣) ، والأشموني في المنار (٩٣) أن الوقف هنا كاف ، علما أن النحاس في القطع (٢٤١) لم يذكر هنا وقفا .",
+          "continuation": {
+            "status": "read",
+            "page": 406
+          },
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "2/589"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "213"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "93"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "93"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "لم يذكر وقفا",
+              "comment": "لم يذكر هنا وقفا",
+              "book": "القطع",
+              "book_ref": "241"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "ورسله",
+                "trigger": "scholars_disagree",
+                "reason": "ابن الأنباري يجعل الوقف حسنا، والداني والأنصاري والأشموني يجعلونه كافيا، والنحاس لم يذكر هنا وقفا. والمثبت ج للعطف وابتداء الشرط.",
+                "scholars": ["ابن الأنباري", "الداني", "الأنصاري", "الأشموني"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وإن",
+                "trigger": "meaning_change",
+                "reason": "وجه إثبات الجيم العطف وابتداء الشرط، فيبتدأ بـ ﴿وإن تؤمنوا﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 180,
+      "target_word": "هو خيرا لهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿هو خيرا لهم - 180 - ط﴾ .",
+      "text_page": 405,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 180,
+      "target_word": "شر لهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿شر لهم - 180 - ط﴾ .",
+      "text_page": 405,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 180,
+      "target_word": "القيامة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿القيامة - 180 - ط﴾ .",
+      "text_page": 405,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 180,
+      "target_word": "والأرض",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿والأرض - 180 - ط﴾ .",
+      "text_page": 405,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 181,
+      "target_word": "أغنياء",
+      "verdict_label": "م",
+      "verdict": "لازم",
+      "margin_ref": 1,
+      "text": "﴿أغنياء - 181 - م﴾ لأنه لو وصل صار ما بعده من مقولهم ، وهو أخبار من الله مبتداء ، ومن قرأ ﴿سيكتب﴾ بضم الياء(1) فوقفه مطلق .",
+      "text_page": 406,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 406,
+          "raw_text": "(١) وهذه قراءة حمزة ، وقرأ الباقون : ( سنكتب ) بالنون وفتحها وضم التاء . انظر : السبعة (٢٢١) ، والتبصرة (٤٦٩) ، والتيسير (٩٢) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "أغنياء",
+                "trigger": "meaning_change",
+                "reason": "لو وصل صار ما بعده من مقولهم، وهو أخبار من الله مبتدأ لا من كلامهم.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "سيكتب",
+                "trigger": "meaning_change",
+                "reason": "يبتدأ بما بعد أغنياء لأنه إخبار من الله، ومن قرأ ﴿سيكتب﴾ بضم الياء فوقفه مطلق.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 181,
+      "target_word": "بغير حق",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿بغير حق - 181 - ج﴾ لمن قرأ ﴿ويقول﴾ بالياء(2) لأن التقدير : ويقول الله ، أو يقول(3) الزبانية ، فلا ينعطف(4) على قوله : ﴿سيكتب﴾(5) مع اتساق المعنى .",
+      "text_page": 406,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 406,
+          "raw_text": "(٢) وهذه قراءة حمزة ، وقرأ الباقون بالنون . انظر : المراجع السابقة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "بغير حق",
+                "trigger": "meaning_change",
+                "reason": "لمن قرأ ﴿ويقول﴾ بالياء لا ينعطف على ﴿سيكتب﴾، والتقدير ويقول الله أو يقول الزبانية، مع اتساق المعنى.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "ويقول",
+                "trigger": "meaning_change",
+                "reason": "على قراءة الياء يبتدأ بـ ﴿ويقول﴾ بتقدير ويقول الله أو يقول الزبانية.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 182,
+      "target_word": "للعبيد",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 6,
+      "text": "﴿للعبيد - 182 - ج﴾ لأن ﴿الذين﴾ يصلح صفة ﴿للعبيد﴾(6) ، وخبر(7) محذوف ، أي هم الذين(1) . والوقف أولى لأن الله تعالى لايظلم العبيد(2) مطلقا لا عبيدا موصوفين .",
+      "text_page": 406,
+      "old_text": "﴿للعبيد - 182 - ج﴾ لأن ﴿الذين﴾ يصلح صفة ﴿للعبيد﴾(6) ، وخبر(7) محذوف ، أي هم",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "أي هم",
+          "new_text": "أي هم الذين(1) . والوقف أولى لأن الله تعالى لايظلم العبيد(2) مطلقا لا عبيدا موصوفين .",
+          "info": "تتمة العلة في صدر الصفحة 407 حتى «موصوفين» قبل ﴿تأكله النار﴾. الرقمان (1) و(2) من حواشي الصفحة 407."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 406,
+          "raw_text": "(٦) قال به الزجاج في معانيه ١/٥١٢ . وقد رده ابن عطية في تفسيره ٣/٣٠٩ ، وأبو حيان في البحر ٣/١٣٢ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الزجاج",
+              "verdict": "قال به",
+              "comment": "قال بأن ﴿الذين﴾ صفة ﴿للعبيد﴾",
+              "book": "معاني القرآن",
+              "book_ref": "1/512"
+            },
+            {
+              "scholar": "ابن عطية",
+              "verdict": "رده",
+              "comment": "رد كون ﴿الذين﴾ صفة ﴿للعبيد﴾",
+              "book": "تفسير ابن عطية",
+              "book_ref": "3/309"
+            },
+            {
+              "scholar": "أبو حيان",
+              "verdict": "رده",
+              "comment": "رد كون ﴿الذين﴾ صفة ﴿للعبيد﴾",
+              "book": "البحر المحيط",
+              "book_ref": "3/132"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "للعبيد",
+                "trigger": "scholars_disagree",
+                "reason": "الزجاج جعل ﴿الذين﴾ صفة ﴿للعبيد﴾ فيتصل، ورده ابن عطية وأبو حيان. والوقف أولى ليبقى نفي الظلم مطلقا لا عن عبيد موصوفين.",
+                "scholars": ["ابن عطية", "أبو حيان"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "الذين",
+                "trigger": "meaning_change",
+                "reason": "على رد الوصف يبتدأ بـ ﴿الذين﴾ بتقدير هم الذين، فلا يتقيد النفي بعبيد موصوفين.",
+                "scholars": ["ابن عطية", "أبو حيان"]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

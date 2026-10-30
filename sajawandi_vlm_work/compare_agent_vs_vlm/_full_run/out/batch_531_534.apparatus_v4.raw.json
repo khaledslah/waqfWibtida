@@ -1,0 +1,397 @@
+{
+  "source": "apparatus_v4_531_534",
+  "page_numbers": [531, 532, 533, 534],
+  "waqfs": [
+    {
+      "ayah": 3,
+      "target_word": "ينفقون",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "والوقف على ﴿ينفقون - 3 - ط﴾(1) .",
+      "text_page": 531,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 531,
+          "raw_text": "(1) د : علامة الوقف ساقطة ، وورد عنها بعد الآية لفظة : [ مطلق ] ولم نثبتها اكتفاء بالرمز الذي اصطلح عليه المؤلف .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 4,
+      "target_word": "حقا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿حقا - 4 - ط﴾ .",
+      "text_page": 531,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 4,
+      "target_word": "كريم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿كريم - 4 - ج﴾ لأن تعلق الكاف يصلح بقوله : ﴿الأنفال لله﴾ ينفلها من يشاء بالحق وإن كرهوا(2) كما أخرجك ربك من بيتك بالحق(3) وهم كارهون(4) .",
+      "text_page": 531,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 531,
+          "raw_text": "(2) ب : [ أكرهوا ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "كما",
+                "trigger": "meaning_change",
+                "reason": "كاف ﴿كما أخرجك﴾ يصلح تعلقها بقوله ﴿الأنفال لله﴾، فالابتداء بـ كما يقطع هذا التعلق ويجعل ما بعد ﴿كريم﴾ كلاما مستأنفا.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 6,
+      "target_word": "ينظرون",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "فعلى هذا لا يحسن الوقف إلا على ﴿ينظرون - 6 -﴾(1) لأن قوله : ﴿يجادلونك﴾ صفة لقوله : ﴿كارهون﴾(2) ، ولكن قد يوقف(3) على قوله تعالى : ﴿بالحق﴾ ضرورة ، لطول(4) الكلام على تأويل جواز(5) الابتداء بأن ، وإن كان المعنى متصلا ، فإن التقدير : كما أخرجك ربك(6) وبعضهم كارهون ، ويحتمل تعلق الكاف بقوله : ﴿يجادلونك﴾ لأن الجدال عن كراهة تكون ، والتقدير : يكرهون الحق بعدما تبين كما أخرجك وبعضهم كارهون(7) ، وعلى(1) هذا جاز الوقف على قوله : ﴿كريم - 4 -﴾ ثم يوقف على : ﴿ينظرون - 6 -﴾ ، وجواز الوقف على قوله : ﴿كريم - 4 -﴾ ظاهر في القولين ، لأن الآيات فصلت بين الكاف وما تعلق به قبله(2) ، وإنما بيان الخلاف ] لتحقيق تعلق الكاف(3) (4) .",
+      "text_page": 532,
+      "old_text": "فعلى هذا لا يحسن الوقف إلا",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "فعلى هذا لا يحسن الوقف إلا",
+          "new_text": "فعلى هذا لا يحسن الوقف إلا على ﴿ينظرون - 6 -﴾(1)",
+          "info": "صدر الجملة في آخر الصفحة 531 والقوس في أول الصفحة 532."
+        },
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "وبعضهم كارهون(7) ،",
+          "new_text": "وبعضهم كارهون(7) ، وعلى(1) هذا جاز الوقف على قوله : ﴿كريم - 4 -﴾ ثم يوقف على : ﴿ينظرون - 6 -﴾ ، وجواز الوقف على قوله : ﴿كريم - 4 -﴾ ظاهر في القولين ، لأن الآيات فصلت بين الكاف وما تعلق به قبله(2) ، وإنما بيان الخلاف ] لتحقيق تعلق الكاف(3) (4) .",
+          "info": "التعليل موصول بفاصلة في آخر الصفحة 532 ويتم في الصفحة 533."
+        },
+        {
+          "type": "missing_symbol",
+          "basis": "page_prose",
+          "old_text": "﴿ينظرون - 6 -﴾",
+          "new_text": "﴿ينظرون - 6 - ط﴾",
+          "info": "الرمز غير مثبت في المتن. هامش (1) في الصفحة 532 يذكر أن نسخة ب أثبتت ط، وأن الصواب عند المحقق عدم إثباتها لدلالة ما قبلها عليه."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 532,
+          "raw_text": "(1) ب : علامة الوقف : [ ط ] ، والصواب عدم إثباتها لدلالة ما قبله عليه ، لأنه أراد ذكر موطن الوقف على هذا التعليل السابق واللاحق .",
+          "continuation": null,
+          "symbol_witness": {
+            "verdict_label": "ط",
+            "basis": "page_prose",
+            "witness": "ب",
+            "info": "نسخة ب فيها علامة الوقف ط، وعلق المحقق بأن الصواب عدم إثباتها لدلالة ما قبلها عليه لأنه أراد ذكر موطن الوقف لا نوعه."
+          },
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "بالحق",
+                "trigger": "meaning_change",
+                "reason": "قد يوقف على ﴿بالحق﴾ ضرورة لطول الكلام، على تأويل جواز الابتداء بأن، وإن كان المعنى متصلا.",
+                "scholars": []
+              },
+              {
+                "target_word": "كريم",
+                "trigger": "meaning_change",
+                "reason": "على هذا جاز الوقف على ﴿كريم﴾ ثم على ﴿ينظرون﴾، لأن الآيات فصلت بين الكاف وما تعلق به قبله.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "أن",
+                "trigger": "meaning_change",
+                "reason": "الوقف الاضطراري على ﴿بالحق﴾ مبني على جواز الابتداء بأن مع بقاء المعنى متصلا.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 7,
+      "target_word": "الكافرين",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿الكافرين - 7 - لا﴾ لاتصال اللام .",
+      "text_page": 533,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 8,
+      "target_word": "المجرمون",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 5,
+      "text": "﴿المجرمون - 8 - ج﴾(5) لاحتمال تعلق ﴿إذ﴾ بقوله : ﴿ليحق الحق﴾(6) ، أو بمحذوف ، أي : اذكروا(1) إذ(2) .",
+      "text_page": 533,
+      "old_text": "﴿المجرمون - 8 - ج﴾(5) لاحتمال تعلق ﴿إذ﴾ بقوله : ﴿ليحق الحق﴾(6) ، أو",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "أو",
+          "new_text": "أو بمحذوف ، أي : اذكروا(1) إذ(2) .",
+          "info": "تتمة تعليل ﴿المجرمون﴾ في أول الصفحة 534: بمحذوف ، أي : اذكروا إذ."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 533,
+          "raw_text": "(5) أ : علامة الوقف : [ ج ، لا ] والصواب ما أثبتناه لدلالة ما بعده عليه .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "إذ",
+                "trigger": "meaning_change",
+                "reason": "﴿إذ﴾ يحتمل تعلقها بقوله ﴿ليحق الحق﴾ أو بمحذوف تقديره اذكروا، فالابتداء بها يختار أحد الوجهين.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 10,
+      "target_word": "به قلوبكم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿به قلوبكم - 10 - ج﴾ لابتداء النفي مع احتمال الحال .",
+      "text_page": 534,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 10,
+      "target_word": "من عند الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من عند الله - 10 - ط﴾ .",
+      "text_page": 534,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 11,
+      "target_word": "الأقدام",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿الأقدام - 11 - ط﴾ لتعلق ﴿إذ﴾ بمحذوف ، أي : اذكروا(3) إذ .",
+      "text_page": 534,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 534,
+          "raw_text": "(3) د : [ اذكر ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "إذ",
+                "trigger": "meaning_change",
+                "reason": "الوقف تام لأن ﴿إذ﴾ التالية متعلقة بمحذوف تقديره اذكروا، فالابتداء بها استئناف لا عطف على ما قبل ﴿الأقدام﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 12,
+      "target_word": "الذين آمنوا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿الذين آمنوا - 12 - ط﴾ .",
+      "text_page": 534,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 12,
+      "target_word": "كل بنان",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿كل بنان - 12 - ط﴾ .",
+      "text_page": 534,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 13,
+      "target_word": "ورسوله",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "﴿ورسوله - 13 - ج﴾(4) .",
+      "text_page": 534,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 534,
+          "raw_text": "(4) ب : [ الأولى ج ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 15,
+      "target_word": "الأدبار",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 5,
+      "text": "﴿الأدبار - 15 - ج﴾(5) [للشرط واتصال المعنى](6) .",
+      "text_page": 534,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 534,
+          "raw_text": "(5) أ : علامة الوقف ساقطة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "الأدبار",
+                "trigger": "meaning_change",
+                "reason": "الوقف جائز للشرط مع اتصال المعنى، فالوقف يفصل جملة الشرط عن المعنى المتصل بما بعدها.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 16,
+      "target_word": "جهنم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿جهنم - 16 - ط﴾ .",
+      "text_page": 534,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 17,
+      "target_word": "قتلهم",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "margin_ref": null,
+      "text": "﴿قتلهم - 17 - ص﴾ لعطف المنفقين .",
+      "text_page": 534,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 17,
+      "target_word": "رمى",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 7,
+      "text": "﴿رمى - 17 - ج﴾ لأن الواو قد تجعل مقحمة ، وتعلق اللام بما قبلها ، وقد تجعل عاطفة على محذوف ، أي : لتستبشروا وليلي المؤمنين(7) .",
+      "text_page": 534,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 534,
+          "raw_text": "(7) انظر : الدر 5/587 ، ومنار الهدى (157) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "رمى",
+                "trigger": "meaning_change",
+                "reason": "إن جعلت الواو مقحمة تعلق اللام بما قبل ﴿رمى﴾، وإن جعلت عاطفة على محذوف تقديره لتستبشروا تغيّر المعنى.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وليلي",
+                "trigger": "meaning_change",
+                "reason": "اللام في وليلي إما متعلقة بما قبلها وإما معطوفة على محذوف أي لتستبشروا، فالابتداء بها يفصل بين الوجهين.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

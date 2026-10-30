@@ -1,0 +1,416 @@
+{
+  "source": "apparatus_v4_355_358",
+  "page_numbers": [355, 356, 357, 358],
+  "waqfs": [
+    {
+      "ayah": 286,
+      "target_word": "ما اكتسبت",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 2,
+      "text": "﴿ما اكتسبت - ٢٨٦ - ط﴾(٢).",
+      "text_page": 355,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 355,
+          "raw_text": "(٢) د: [ما اكتسبت] ط [غير مثبت]. والوقف هنا حسن عند ابن الأنباري والأنصاري، وكاف عند الداني، وصالح عند الأشموني. انظر: الإيضاح ١/٥٦٠، والمكتفى (١٩٣)، والمقصد (٦٨)، والمنار (٦٨). وقال النحاس في القطع (٢٠٩): [قال الأخفش: وأما قوله جل وعز: ﴿لا يكلف الله نفسا إلا وسعها﴾ فإن التمام فيه: ﴿وعليها ما اكتسبت﴾، وهو مذهب محمد بن جرير، لأنه قال: التقدير: قولوا: ﴿ربنا لا تؤاخذنا إن نسينا أو أخطأنا﴾]. وانظر: تفسير الطبري ٦/١٣٢.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "1/560"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "68"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "193"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "صالح",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "68"
+            },
+            {
+              "scholar": "الأخفش",
+              "verdict": "تام",
+              "comment": "التمام على ﴿وعليها ما اكتسبت﴾، نقله النحاس في القطع",
+              "book": "القطع",
+              "book_ref": "209"
+            },
+            {
+              "scholar": "الطبري",
+              "verdict": "تام",
+              "comment": "مذهبه أن التمام هناك، والتقدير: قولوا ﴿ربنا لا تؤاخذنا﴾",
+              "book": "تفسير الطبري",
+              "book_ref": "6/132"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "ما اكتسبت",
+                "trigger": "meaning_change",
+                "reason": "التمام عند الأخفش والطبري على ﴿وعليها ما اكتسبت﴾ لأن ما بعده بتقدير: قولوا.",
+                "scholars": ["الأخفش", "الطبري"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "ربنا",
+                "trigger": "meaning_change",
+                "reason": "تقدير ما بعد الوقف: قولوا ﴿ربنا لا تؤاخذنا﴾، فالابتداء مستأنف.",
+                "scholars": ["الأخفش", "الطبري"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 286,
+      "target_word": "أو أخطأنا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 3,
+      "text": "﴿أو أخطأنا - ٢٨٦ - ج﴾(٣).",
+      "text_page": 355,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 355,
+          "raw_text": "(٣) وهو حسن عند ابن الأنباري والأنصاري والأشموني، وكاف عند النحاس والداني. انظر: الإيضاح ١/٥٦٠، والقطع (٢٠٩)، والمكتفى (١٩٣)، والمقصد (٦٨)، والمنار (٦٨).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "1/560"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "68"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "68"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "209"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "193"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 286,
+      "target_word": "من قبلنا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿من قبلنا - ٢٨٦ - ج﴾ لأن النداء(١) [لابتداء الدعاء](٢)، ولكن الواو(٣) لعطف(٤) السؤال على السؤال، وتؤذن بأن كلمة(٥) ﴿ربنا﴾ تكرار.",
+      "text_page": 355,
+      "old_text": "﴿من قبلنا - ٢٨٦ -",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿من قبلنا - ٢٨٦ -",
+          "new_text": "﴿من قبلنا - ٢٨٦ - ج﴾",
+          "info": "القوس يُفتح في آخر الصفحة ٣٥٥، والعلامة ج وإغلاق القوس في أول الصفحة ٣٥٦."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 356,
+          "raw_text": "(١) انظر: الهامش السابق.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "من قبلنا",
+                "trigger": "meaning_change",
+                "reason": "النداء بعده لابتداء الدعاء، ولكن الواو لعطف السؤال على السؤال، فتكرار ﴿ربنا﴾ يفرّق بين الوصل والفصل.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "ربنا",
+                "trigger": "meaning_change",
+                "reason": "النداء لابتداء الدعاء، فالابتداء بـ﴿ربنا﴾ يستأنف سؤالًا غير ما قبله.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 286,
+      "target_word": "لنا به",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 6,
+      "text": "﴿لنا به - ٢٨٦ - ج﴾(٦).",
+      "text_page": 356,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 356,
+          "raw_text": "(٦) د: علامة الوقف غير واضحة. وهو حسن عند ابن الأنباري والأشموني. وكاف عند النحاس والداني والأنصاري. انظر: الإيضاح ١/٥٦٠، والقطع (٢٠٩)، والمكتفى (١٩٣)، والمقصد (٦٨)، والمنار (٦٨).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "1/560"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "68"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "209"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "193"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "68"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 286,
+      "target_word": "واعف عنا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 7,
+      "text": "﴿واعف عنا - ٢٨٦ - ط﴾ وقف(٧) واغفر",
+      "text_page": 356,
+      "old_text": "﴿واعف عنا - ٢٨٦ - ﴾ وقف(٧) واغفر",
+      "fixes": [
+        {
+          "type": "missing_symbol",
+          "basis": "page_prose",
+          "old_text": "﴿واعف عنا - ٢٨٦ - ﴾",
+          "new_text": "﴿واعف عنا - ٢٨٦ - ط﴾",
+          "info": "لا حرف وقف في المتن؛ الهامش (٧) يذكر في نسخة ب: وقفة ط."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 356,
+          "raw_text": "(٧) المثبت: [وقف] من: أ، وفي ب: [وقفة ط]، وفي د: [وقفة]. والذي يظهر لي أن الوقف هنا جائز للعطف، ولدلالة ما بعده. وهو كاف عند النحاس، وصالح عند الأنصاري، وحسن عند الأشموني. انظر: القطع (٢٠٩)، والمقصد (٦٨)، والمنار (٦٨).",
+          "continuation": null,
+          "symbol_witness": {
+            "verdict_label": "ط",
+            "basis": "page_prose",
+            "witness": "نسخة ب",
+            "info": "في ب: وقفة ط؛ والمثبت من أ: وقف"
+          },
+          "opinions": [
+            {
+              "scholar": "unknown",
+              "verdict": "جائز",
+              "comment": "يظهر لي أنه جائز للعطف ولدلالة ما بعده",
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "209"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "صالح",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "68"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "68"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "واعف عنا",
+                "trigger": "meaning_change",
+                "reason": "الوقف جائز للعطف ولدلالة ما بعده، فالوصل يُلحق طلب المغفرة بطلب العفو.",
+                "scholars": ["النحاس", "الأنصاري", "الأشموني"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "واغفر",
+                "trigger": "meaning_change",
+                "reason": "ما بعد الوقف هو ﴿واغفر﴾، ودلالته غير دلالة طلب العفو قبله.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 286,
+      "target_word": "لنا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿لنا - ٢٨٦ - ج﴾(١). كذلك(٢).",
+      "text_page": 357,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 357,
+          "raw_text": "(١) أ، ج، د: علامة الوقف ساقطة.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 286,
+      "target_word": "وارحمنا",
+      "verdict_label": null,
+      "verdict": null,
+      "margin_ref": 3,
+      "text": "﴿وارحمنا - ٢٨٦﴾ كذلك(٣) للتفصيل(٤) بين أنواع المقاصد والاعتراف بأن أطماعنا(٥) غير واحد.",
+      "text_page": 357,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 357,
+          "raw_text": "(٣) والوقف هنا كاف عند النحاس والداني، وصالح عند الأنصاري، وحسن عند الأشموني. انظر: القطع (٢٠٩)، والمكتفى (١٩٣)، والمقصد (٦٨)، والمنار (٦٨).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "النحاس",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "209"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "193"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "صالح",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "68"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "68"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "وارحمنا",
+                "trigger": "meaning_change",
+                "reason": "الوقف للتفصيل بين أنواع المقاصد والاعتراف بأن الأطماع غير واحدة، فالوصل يخلطها.",
+                "scholars": ["النحاس", "الداني", "الأنصاري", "الأشموني"]
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,370 @@
+{
+  "source": "apparatus_v4_507_510",
+  "page_numbers": [507, 508, 509, 510],
+  "waqfs": [
+    {
+      "ayah": 91,
+      "target_word": "جاثمين",
+      "verdict_label": null,
+      "verdict": null,
+      "margin_ref": 4,
+      "text": "ويصلح (٤) أن يكون ﴿الذين﴾ مبتدأ، خبره: ﴿كأن لم يغنوا﴾ (٥) فيوقف على: ﴿جاثمين - ٩١ - ﴾",
+      "text_page": 507,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 507,
+          "raw_text": "(٤) د : [ فيصلح ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "الذين",
+                "trigger": "meaning_change",
+                "reason": "يصلح أن يكون ﴿الذين﴾ مبتدأ خبره ﴿كأن لم يغنوا﴾، فيُبتدأ به بعد الوقف على ﴿جاثمين﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 92,
+      "target_word": "فيها",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 6,
+      "text": "وعلى ﴿فيها - ٩٢ - ﴾ (٦)، ومن لم يقف على ﴿فيها﴾ وجعل ﴿الذين﴾ (٧) بدلا عن ﴿الذين﴾ (٨) الأول (٩) لزمه أن يقف على: ﴿كذبوا شعيبا﴾ (١٠)، ويستأنف ب﴿كانوا﴾ ولا يخلو (١) من تعسف (٢).",
+      "text_page": 507,
+      "old_text": "وعلى ﴿فيها - ٩٢ - ﴾ (٦)، ومن لم يقف على ﴿فيها﴾ وجعل ﴿الذين﴾ (٧) بدلا عن ﴿الذين﴾ (٨) الأول (٩) لزمه أن يقف على: ﴿كذبوا شعيبا﴾ (١٠)، ويستأنف ب",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "ويستأنف ب",
+          "new_text": "ويستأنف ب﴿كانوا﴾ ولا يخلو (١) من تعسف (٢).",
+          "info": "تتمة الجملة في رأس صفحة ٥٠٨: ﴿كانوا﴾ ولا يخلو (١) من تعسف (٢)."
+        },
+        {
+          "type": "missing_symbol",
+          "basis": "page_prose",
+          "old_text": "﴿فيها - ٩٢ - ﴾",
+          "new_text": "﴿فيها - ٩٢ - ز﴾",
+          "info": "الهامش (٦): علامة الوقف في نسخة أ ز، ومراد المؤلف أن الوقف مطلق."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 507,
+          "raw_text": "(٦) أ : علامة الوقف : [ ز ] . ومراد المؤلف هنا أن الوقف هنا مطلق لأن ما بعده جملة مستقلة بدلالة ما بعده .",
+          "continuation": null,
+          "symbol_witness": {
+            "verdict_label": "ز",
+            "basis": "page_prose",
+            "witness": "أ",
+            "info": "ومراد المؤلف أن الوقف مطلق لأن ما بعده جملة مستقلة."
+          },
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "كذبوا شعيبا",
+                "trigger": "meaning_change",
+                "reason": "إن جُعل ﴿الذين﴾ الثاني بدلا من الأول لزم الوقف على ﴿كذبوا شعيبا﴾.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "الذين",
+                "trigger": "meaning_change",
+                "reason": "ما بعد الوقف جملة مستقلة، فـ﴿الذين﴾ بعدها مبتدأ.",
+                "scholars": []
+              },
+              {
+                "start_word": "كانوا",
+                "trigger": "meaning_change",
+                "reason": "على وجه البدل يستأنف بـ﴿كانوا﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 93,
+      "target_word": "ونصحت لكم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 3,
+      "text": "﴿ونصحت لكم - ٩٣ - ج﴾ لأن ﴿كيف﴾ للتعجيب (٣) فيصلح (٤) للابتداء مع أن فيه فاء التعقيب.",
+      "text_page": 508,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 508,
+          "raw_text": "(٣) د : [ للتعجب ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "كيف",
+                "trigger": "meaning_change",
+                "reason": "﴿كيف﴾ للتعجيب فتصلح للابتداء، مع أن الفاء للتعقيب.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 97,
+      "target_word": "نائمون",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿نائمون - ٩٧ - ﴾ (٥) وقف لمن قرأ: ﴿أو أمن﴾ بفتح الواو (٦) لأن الألف تكون (٧) للاستفهام (٨)، ومن سكن الواو (٩) فلا وقف له، لأن ﴿أو﴾ للعطف (١٠).",
+      "text_page": 508,
+      "old_text": "﴿نائمون - ٩٧ - ﴾ (٥) وقف لمن قرأ: ﴿أو أمن﴾ بفتح الواو (٦) لأن الألف تكون (٧) للاستفهام (٨)، ومن سكن الواو (٩) فلا وقف له، لأن ﴿أو﴾ للعطف (١٠).",
+      "fixes": [
+        {
+          "type": "missing_symbol",
+          "basis": "page_prose",
+          "old_text": "﴿نائمون - ٩٧ - ﴾",
+          "new_text": "﴿نائمون - ٩٧ - ط﴾",
+          "info": "الهامش (٥): علامة الوقف في أ ط وفي ب ج، والصواب عند المحقق عدم إثباتها بدلالة ما بعده."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 508,
+          "raw_text": "(٥) أ : علامة الوقف : [ ط ] ، وفي ب : علامة الوقف : [ ج ] ، والصواب عدم إثبات علامة الوقف هنا بدلالة ما بعده .",
+          "continuation": null,
+          "symbol_witness": {
+            "verdict_label": "ط",
+            "basis": "page_prose",
+            "witness": "أ",
+            "info": "وفي ب: ج. والصواب عدم إثبات علامة الوقف هنا بدلالة ما بعده."
+          },
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "نائمون",
+                "trigger": "scholars_disagree",
+                "reason": "وقف لمن قرأ ﴿أو أمن﴾ بفتح الواو، ولا وقف لمن سكن الواو لأن ﴿أو﴾ للعطف.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "أو أمن",
+                "trigger": "meaning_change",
+                "reason": "بفتح الواو تكون الألف للاستفهام فيُبتدأ بـ﴿أو أمن﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 99,
+      "target_word": "مكر الله",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿مكر الله - ٩٩ - ج﴾ للفصل بين الاستخبار والأخبار، مع أن الفاء للتعقيب.",
+      "text_page": 509,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 100,
+      "target_word": "بذنوبهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿بذنوبهم - ١٠٠ - ج﴾ للفصل (١) بين الماضي والمستقبل، والتقدير (٢): ونحن نطبع، مع اتحاد القصة (٣).",
+      "text_page": 509,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 509,
+          "raw_text": "(١) أ : [ وللتفصيل ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "ونطبع",
+                "trigger": "meaning_change",
+                "reason": "الفصل بين الماضي والمستقبل، والتقدير: ونحن نطبع.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 101,
+      "target_word": "من أنبائها",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿من أنبائها - ١٠١ - ج﴾ لعطف الجملتين المختلفتين.",
+      "text_page": 509,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 101,
+      "target_word": "بالبينات",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "﴿بالبينات - ١٠١ - ج﴾ لأن ضمير (٤) ﴿فما كانوا ليؤمنوا﴾ لأهل مكة، وضمير ﴿جاءتهم﴾ للأمم الماضية (٥)، مع أن الفاء توجب الاتصال (٦).",
+      "text_page": 509,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 509,
+          "raw_text": "(٤) د : [ الضمير في ] ، وما أثبتناه لمناسبة السياق بعده .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "فما كانوا ليؤمنوا",
+                "trigger": "meaning_change",
+                "reason": "ضمير ﴿فما كانوا ليؤمنوا﴾ لأهل مكة وضمير ﴿جاءتهم﴾ للأمم الماضية، فيُبتدأ به وإن كانت الفاء توجب الاتصال.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 101,
+      "target_word": "من قبل",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من قبل - ١٠١ - ط﴾.",
+      "text_page": 510,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 102,
+      "target_word": "من عهد",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿من عهد - ١٠٢ - ج﴾ لعطف الجملتين المختلفتين.",
+      "text_page": 510,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 103,
+      "target_word": "فظلموا بها",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿فظلموا بها - ١٠٣ - ج﴾ للفصل بين الماضي والمستقبل مع العطف بالفاء.",
+      "text_page": 510,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 104,
+      "target_word": "العالمين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿العالمين - ١٠٤ - ﴾ (١) وقف لمن قرأ: ﴿حقيق علي﴾ بالتشديد (٢)، أي: واجب علي (٣)، ومن قرأ مخففا (٤) جاز له الوصل على جعل (٥) ﴿حقيق﴾ [ وصفا لرسول ] (٦)، و﴿علي﴾ بمعنى الباء، أي: إني رسول حقيق [ بأن لا أقول ] (٧)، أو (٨) تعلق « علي » بمعنى الفعل في الرسول، أي: إني رسول حقيق (١) [(٢) جدير بالرسالة] أرسلت على أن لا أقول",
+      "text_page": 510,
+      "old_text": "﴿العالمين - ١٠٤ - ﴾ (١) وقف لمن قرأ: ﴿حقيق علي﴾ بالتشديد (٢)، أي: واجب علي (٣)، ومن قرأ مخففا (٤) جاز له الوصل على جعل (٥) ﴿حقيق﴾ [ وصفا لرسول ] (٦)، و﴿علي﴾ بمعنى الباء، أي: إني رسول حقيق [ بأن لا أقول ] (٧)، أو (٨) تعلق « علي »",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "أو (٨) تعلق « علي »",
+          "new_text": "أو (٨) تعلق « علي » بمعنى الفعل في الرسول، أي: إني رسول حقيق (١) [(٢) جدير بالرسالة] أرسلت على أن لا أقول",
+          "info": "تتمة جملة الوقف في رأس صفحة ٥١١، وتنتهي قبل ﴿إلا الحق - ١٠٥ - ط﴾."
+        },
+        {
+          "type": "missing_symbol",
+          "basis": "page_prose",
+          "old_text": "﴿العالمين - ١٠٤ - ﴾",
+          "new_text": "﴿العالمين - ١٠٤ - ط﴾",
+          "info": "الهامش (١): علامة الوقف في نسخة أ ط، والصواب عند المحقق عدم إثباتها بدلالة ما بعده."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 510,
+          "raw_text": "(١) أ : علامة الوقف : [ ط ] ، والصواب عدم إثباتها بدلالة ما بعده .",
+          "continuation": null,
+          "symbol_witness": {
+            "verdict_label": "ط",
+            "basis": "page_prose",
+            "witness": "أ",
+            "info": "الصواب عدم إثباتها بدلالة ما بعده."
+          },
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "حقيق",
+                "trigger": "meaning_change",
+                "reason": "الوقف لمن قرأ ﴿علي﴾ مشددة بمعنى واجب عليّ فيُبتدأ بـ﴿حقيق﴾، ومن خفف جاز الوصل على أن ﴿حقيق﴾ وصف للرسول.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

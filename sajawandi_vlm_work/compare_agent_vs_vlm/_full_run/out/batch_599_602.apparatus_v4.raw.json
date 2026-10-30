@@ -1,0 +1,712 @@
+{
+  "source": "apparatus_v4_599_602",
+  "page_numbers": [599, 600, 601, 602],
+  "waqfs": [
+    {
+      "ayah": 37,
+      "target_word": "ربي",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ربي - ٣٧ - ط﴾.",
+      "text_page": 599,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 37,
+      "target_word": "كافرون",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 1,
+      "text": "[﴿كافرون - ٣٧ - لا﴾ لعطف ﴿اتبعت﴾ على ﴿تركت﴾](١).",
+      "text_page": 599,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 599,
+          "raw_text": "(١) ج : ما بين المعقوفين غير مثبت .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 38,
+      "target_word": "ويعقوب",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ويعقوب - ٣٨ - ط﴾.",
+      "text_page": 599,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 38,
+      "target_word": "من شيء",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من شيء - ٣٨ - ط﴾.",
+      "text_page": 599,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 39,
+      "target_word": "القهار",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿القهار - ٣٩ - ط﴾.",
+      "text_page": 599,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 40,
+      "target_word": "من سلطان",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من سلطان - ٤٠ - ط﴾.",
+      "text_page": 599,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 40,
+      "target_word": "إلا الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿إلا الله - ٤٠ - ط﴾.",
+      "text_page": 599,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 40,
+      "target_word": "إلا إياه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿إلا إياه - ٤٠ - ط﴾.",
+      "text_page": 599,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 41,
+      "target_word": "خمرا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿خمرا - ٤١ - ج﴾(٢) فصلا بين الجوابين مع اتفاق الجملتين.",
+      "text_page": 599,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 599,
+          "raw_text": "(٢) ج : علامة الوقف : [ ط ] ، والصواب ما أثبتناه بدلالة ما بعده .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "وأما",
+                "trigger": "meaning_change",
+                "reason": "الوقف على خمرا فصل بين الجوابين (يسقي ربه خمرا / وأما الآخر فيصلب) مع اتفاق الجملتين، فيُبتدأ بالجواب الثاني.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 41,
+      "target_word": "من رأسه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿من رأسه - ٤١ - ط﴾ لأن قوله: ﴿قضي﴾ جواب قولهما كذبا(٣) وما رأينا رؤيا(٤).",
+      "text_page": 599,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 599,
+          "raw_text": "(٣) ج : [ كذبا ] غير مثبتة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "قضي",
+                "trigger": "meaning_change",
+                "reason": "الوقف على من رأسه لأن ﴿قضي﴾ جواب قولهما، فيُبتدأ به منفصلا عن حكاية الرؤيا.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 41,
+      "target_word": "تستفتيان",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿تستفتيان - ٤١ - ط﴾ لتخصيص أحدهما بالخطاب بعد الفراغ منهما في الجواب.",
+      "text_page": 599,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 42,
+      "target_word": "عند ربك",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 5,
+      "text": "﴿عند ربك - ٤٢ - ز﴾(٥) لاحتمال أن الإنساء(١) كان للناجي(٢) [على تقدير: فأنساه الشيطان ذكره لربه(٣)، فاختلفت(٤) الجملتان(٥)] معنى مع اتفاقهما نظما، وعطف(٦) ﴿فلبث﴾ على ﴿فأنساه الشيطان﴾ يؤيد(٧) الوصل.",
+      "text_page": 599,
+      "old_text": "﴿عند ربك - ٤٢ - ز﴾(٥)",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿عند ربك - ٤٢ - ز﴾(٥)",
+          "new_text": "﴿عند ربك - ٤٢ - ز﴾(٥) لاحتمال أن الإنساء(١) كان للناجي(٢) [على تقدير: فأنساه الشيطان ذكره لربه(٣)، فاختلفت(٤) الجملتان(٥)] معنى مع اتفاقهما نظما، وعطف(٦) ﴿فلبث﴾ على ﴿فأنساه الشيطان﴾ يؤيد(٧) الوصل.",
+          "info": "التعليل يتم في الصفحة ٦٠٠ بعد تمام القوس في الصفحة ٥٩٩."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 599,
+          "raw_text": "(٥) د : علامة الوقف ساقطة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "عند ربك",
+                "trigger": "meaning_change",
+                "reason": "الوقف يفصل احتمال أن الإنساء كان للناجي عن عوده إلى يوسف، مع اتفاق الجملتين نظما واختلافهما معنى، وعطف ﴿فلبث﴾ على ﴿فأنساه الشيطان﴾ يؤيد الوصل.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "فأنساه",
+                "trigger": "meaning_change",
+                "reason": "إن وُقف على عند ربك ابتُدئ بـ ﴿فأنساه﴾، وهو موضع اختلاف مرجع الإنساء.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 42,
+      "target_word": "سنين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿سنين - ٤٢ - ط﴾.",
+      "text_page": 600,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 43,
+      "target_word": "يابسات",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 8,
+      "text": "[﴿يابسات - ٤٣ الأولى - ط﴾(٨)].",
+      "text_page": 600,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 600,
+          "raw_text": "(٨) ج : [ ( يابسات - ط ) ] . وقد ورد اللفظ الثاني لـ ﴿يابسات﴾ في الآية السادسة والأربعين من هذه السورة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 44,
+      "target_word": "أضغاث أحلام",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿أضغاث أحلام - ٤٤ - ج﴾ للنفي مع العطف.",
+      "text_page": 600,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 46,
+      "target_word": "يابسات",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 9,
+      "text": "﴿يابسات - ٤٦ - لا﴾ لتعلق(٩) «لعلي»(١٠).",
+      "text_page": 600,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 9,
+          "text_page": 600,
+          "raw_text": "(٩) أ : ورد بعد قوله : [ لتعلق ] زيادة من الناسخ ، وهي : [ على ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 47,
+      "target_word": "دأبا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿دأبا - ٤٧ - ج﴾ للشرط مع الفاء(١).",
+      "text_page": 601,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 601,
+          "raw_text": "(١) في قوله تعالى : ﴿فما حصدتم﴾ . وقد ذكر أبو حيان في البحر ٥/٣١٥ ، والسمين في الدر ٦/٥١٠ ، أن (ما) يجوز أن تكون شرطية أو موصولة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "دأبا",
+                "trigger": "meaning_change",
+                "reason": "الوقف للشرط مع الفاء، ويجوز أن تكون ما شرطية فيُوقف قبل جوابها أو موصولة فيتصل الكلام.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "فما",
+                "trigger": "meaning_change",
+                "reason": "على كون ما شرطية يُبتدأ بجواب الشرط ﴿فما حصدتم﴾ بعد الوقف على دأبا.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 50,
+      "target_word": "ائتوني به",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿ائتوني به - ٥٠ - ج﴾ للفاء(٢).",
+      "text_page": 601,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 601,
+          "raw_text": "(٢) المثبت : [ للفاء ] من د .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "فلما",
+                "trigger": "meaning_change",
+                "reason": "الوقف على ائتوني به لأجل الفاء، فيُبتدأ بـ ﴿فلما جاءه الرسول﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 50,
+      "target_word": "أيديهن",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿أيديهن - ٥٠ - ط﴾.",
+      "text_page": 601,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 51,
+      "target_word": "عن نفسه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿عن نفسه - ٥١ - ط﴾.",
+      "text_page": 601,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 51,
+      "target_word": "من سوء",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من سوء - ٥١ - ط﴾.",
+      "text_page": 601,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 51,
+      "target_word": "الحق",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿الحق - ٥١ - ز﴾ لانقطاع النظم واتصال المعنى واتحاد القائل.",
+      "text_page": 601,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 53,
+      "target_word": "وما أبرئ نفسي",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 3,
+      "text": "﴿وما أبرئ نفسي - ٥٣ - ج﴾ للحذف، لأن التقدير: وما أبرئ نفسي عن السوء(٣).",
+      "text_page": 601,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 601,
+          "raw_text": "(٣) ب : [ سوء ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 53,
+      "target_word": "رحم ربي",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿رحم ربي - ٥٣ - ط﴾.",
+      "text_page": 601,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 54,
+      "target_word": "لنفسي",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿لنفسي - ٥٤ - ج﴾.",
+      "text_page": 601,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 55,
+      "target_word": "الأرض",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿الأرض - ٥٥ - ج﴾ لانقطاع النظم مع اتصال المعنى.",
+      "text_page": 601,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 56,
+      "target_word": "في الأرض",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "﴿في الأرض - ٥٦ - ج﴾ لأن قوله: ﴿يتبوأ﴾ يصلح مستأنفا(٤) وحالا، تقديره: مكنا له متبوأ.",
+      "text_page": 601,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 601,
+          "raw_text": "(٤) ب : [ استئنافا ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "في الأرض",
+                "trigger": "meaning_change",
+                "reason": "﴿يتبوأ﴾ يصلح مستأنفا فيُوقف على في الأرض، أو حالا فلا يُوقف، وتقدير الحال: مكنا له متبوأ.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "يتبوأ",
+                "trigger": "meaning_change",
+                "reason": "على وجه الاستئناف يُبتدأ بـ ﴿يتبوأ﴾، وعلى الحال يوصل بما قبله.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 56,
+      "target_word": "يشاء",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿يشاء - ٥٦ - ط﴾.",
+      "text_page": 601,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 59,
+      "target_word": "من أبيكم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿من أبيكم - ٥٩ - ج﴾ لانقطاع النظم مع اتحاد القائل، والوقف أجوز لحق الاستفهام.",
+      "text_page": 601,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 64,
+      "target_word": "من قبل",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿من قبل - ٦٤ - ط﴾ لانتهاء(٥) الاستفهام إلى الإخبار.",
+      "text_page": 601,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 601,
+          "raw_text": "(٥) أ : [ لاتهام ] وهو تصحيف .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "فالله",
+                "trigger": "meaning_change",
+                "reason": "الوقف على من قبل لانتهاء الاستفهام، ثم يُبتدأ بالإخبار ﴿فالله خير حافظا﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 64,
+      "target_word": "حافظا",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "margin_ref": null,
+      "text": "﴿حافظا - ٦٤ - ص﴾.",
+      "text_page": 601,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 65,
+      "target_word": "إليهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿إليهم - ٦٥ - ط﴾ تمام جواب لما.",
+      "text_page": 601,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 65,
+      "target_word": "نبغي",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 6,
+      "text": "﴿نبغي - ٦٥ - ط﴾ لانتهاء الاستفهام(٦) إلى الإخبار.",
+      "text_page": 601,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 601,
+          "raw_text": "(٦) في قوله : [ ما نبغي ] . ذهب إلى هذا جلال الدين السيوطي في تفسير الجلالين ٢/٤٦٦ ، حيث قال : ﴿ولما فتحوا متاعهم وجدوا بضاعتهم ردت إليهم قالوا يا أبانا ما نبغي﴾ ما : استفهامية ، أي : أي شيء نطلب من إكرام الملك أعظم من هذا . وقد وضح هذا ابن الأنباري في البيان ٢/٤٣ ، حيث قال : ﴿ما﴾ استفهامية في موضع نصب ، لأنها مفعول ﴿نبغي﴾ وتقديره : أي شيء نبغي . وانظر : حاشية الجمل على الجلالين ٢/٤٦٦ . أما الزجاج في معاني القرآن ٣/١١٨ ، والزمخشري في الكشاف ٢/٣٣١ ، والعكبري في إملائه ٢/٥٥ ، وأبو حيان في البحر ٥/٣٢٣ ، ٣٢٤ ، فجوزوا أيضا أن تكون ﴿ما﴾ نافية على تقدير : ما نريد الظلم ، والمؤلف عد ﴿ما﴾ هنا استفهامية ، وعد الوقف مطلقا بناء على هذا ، ولكن خولف في هذا ، فرجح ابن الأنباري والنحاس والأشموني الوقف إذا كانت نافية ، والوصل إذا كانت استفهامية . انظر : الإيضاح ٢/٧٢٥ ، ٧٢٦ ، والقطع (٤٠٣) ، والمنار (١٩٤ ، ١٩٥) . وقد وضح هذا ابن الأنباري في الإيضاح ٢/٧٢٥ ، ٧٢٦ ، حيث قال : ﴿قالوا يا أبانا ما نبغي﴾ في ﴿ما﴾ وجهان : يجوز أن تكون جحدا على معنى : لسنا نبغي دراهمك ، ويجوز أن تكون منصوبة على معنى : أي شيء نبغي . والوقف على ﴿نبغي﴾ إذا كانت ﴿ما﴾ جحدا أحسن منه إذا كانت منصوبة ، لأنها إذا كانت منصوبة كان المعنى : أي شيء نبغي ، وهذه بضاعتنا ردت إلينا . اهـ . وانظر : تفسير البغوي ٣/٢٩٧ ، والخازن ٣/٢٩٧ ، والبيضاوي ٣/١٣٨ .",
+          "continuation": {"status": "read", "page": 602},
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "أحسن",
+              "comment": "الوقف على نبغي إذا كانت ما جحدا أحسن منه إذا كانت منصوبة، والوصل إذا كانت استفهامية",
+              "book": "الإيضاح",
+              "book_ref": "2/725-726"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "وقف",
+              "comment": "رجحه إذا كانت ما نافية، والوصل إذا كانت استفهامية",
+              "book": "القطع",
+              "book_ref": "403"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "وقف",
+              "comment": "رجحه إذا كانت ما نافية، والوصل إذا كانت استفهامية",
+              "book": "المنار",
+              "book_ref": "194-195"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "نبغي",
+                "trigger": "scholars_disagree",
+                "reason": "المؤلف عد الوقف مطلقا على أن ما استفهامية، ورجح ابن الأنباري والنحاس والأشموني الوقف إذا كانت نافية والوصل إذا كانت استفهامية، والوقف إذا كانت جحدا أحسن.",
+                "scholars": ["ابن الأنباري", "النحاس", "الأشموني"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "هذه",
+                "trigger": "meaning_change",
+                "reason": "إن وُقف على نبغي لانتهاء الاستفهام ابتُدئ بالإخبار ﴿هذه بضاعتنا ردت إلينا﴾، وإن كانت ما منصوبة فالمعنى موصول بها.",
+                "scholars": ["ابن الأنباري", "النحاس", "الأشموني"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 65,
+      "target_word": "إلينا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿إلينا - ٦٥ - ج﴾ لأن الواو للاستئناف(١)، أي: ونحن غير، مع اتحاد الكلام.",
+      "text_page": 602,
+      "old_text": "﴿إلينا - ٦٥ - ج﴾ لأن الواو للاستئناف(١)، أي: ونحن غير، مع",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿إلينا - ٦٥ - ج﴾ لأن الواو للاستئناف(١)، أي: ونحن غير، مع",
+          "new_text": "﴿إلينا - ٦٥ - ج﴾ لأن الواو للاستئناف(١)، أي: ونحن غير، مع اتحاد الكلام.",
+          "info": "التعليل يبدأ في الصفحة ٦٠٢ ويتم بكلمة «اتحاد الكلام» في الصفحة ٦٠٣."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 602,
+          "raw_text": "(١) د : [ للاستئناف ] ساقطة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "إلينا",
+                "trigger": "meaning_change",
+                "reason": "الواو للاستئناف فيُوقف على إلينا، ومع اتحاد الكلام يجوز الوصل.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "ونحن",
+                "trigger": "meaning_change",
+                "reason": "على الاستئناف يُبتدأ بـ «ونحن غير» بعد الوقف على إلينا.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

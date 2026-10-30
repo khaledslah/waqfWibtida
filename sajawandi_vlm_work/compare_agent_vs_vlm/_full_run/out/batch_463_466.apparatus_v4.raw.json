@@ -1,0 +1,877 @@
+{
+  "source": "apparatus_v4_463_466",
+  "page_numbers": [463, 464, 465, 466],
+  "waqfs": [
+    {
+      "ayah": 78,
+      "target_word": "وعيسى ابن مريم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿وعيسى ابن مريم - 78 - ط﴾",
+      "text_page": 463,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 79,
+      "target_word": "فعلوه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿فعلوه - 79 - ط﴾",
+      "text_page": 463,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 80,
+      "target_word": "الذين كفروا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿الذين كفروا - 80 - ط﴾",
+      "text_page": 463,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 82,
+      "target_word": "أشركوا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 5,
+      "text": "﴿أشركوا - 82 - ج﴾ لطول الكلام والفصل(5) بين الصفتين(6) المتضادتين.",
+      "text_page": 463,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 463,
+          "raw_text": "(5) ب : [ والوصل ] وهو تصحيف.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 82,
+      "target_word": "إنا نصارى",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿إنا نصارى - 82 - ط﴾",
+      "text_page": 463,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 83,
+      "target_word": "من الحق",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 7,
+      "text": "﴿من الحق - 83 - ج﴾ [ لأن ﴿يقولون﴾ يصلح حالا لقوله : ﴿عرفوا﴾ ، ويصلح مستأنفا(7).",
+      "text_page": 463,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 463,
+          "raw_text": "(7) قال بالحال العكبري في إملائه 1/224. أما أبو حيان في البحر 4/6 فمنعها ، ورجح الاستئناف ، حيث قال : [ ولا جائز أن يكون حالا من ضمير الفاعل في ﴿عرفوا﴾ لأنها تكون قيدا في العرفان ، وهم قد عرفوا الحق في هذه الحال وفي غيرها ، فالأولى أن تكون مستأنفة ، أخبر تعالى عنهم بأنهم التبسوا بهذا القول ، والمعنى أنهم عرفوا الحق بقلوبهم ونطقت به وأقرت ألسنتهم ].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "العكبري",
+              "verdict": "حال",
+              "comment": null,
+              "book": "الإملاء",
+              "book_ref": "1/224"
+            },
+            {
+              "scholar": "أبو حيان",
+              "verdict": "استئناف",
+              "comment": "منع الحال",
+              "book": "البحر",
+              "book_ref": "4/6"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "من الحق",
+                "trigger": "scholars_disagree",
+                "reason": "أبو حيان رجح الاستئناف فمنع أن تكون ﴿يقولون﴾ حالا، فيوقف على ﴿من الحق﴾، والعكبري قال بالحال.",
+                "scholars": ["أبو حيان"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "يقولون",
+                "trigger": "scholars_disagree",
+                "reason": "على قول أبي حيان الجملة مستأنفة فيبتدأ بـ﴿يقولون﴾، خلافا للعكبري الذي جعلها حالا من ضمير ﴿عرفوا﴾.",
+                "scholars": ["أبو حيان"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 84,
+      "target_word": "من الحق",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 1,
+      "text": "﴿من الحق - 84 - لا﴾ [(1) لأن الواو للحال تقديره : ونحن(2) نطمع(3).",
+      "text_page": 463,
+      "old_text": "﴿من الحق - 84",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿من الحق - 84",
+          "new_text": "﴿من الحق - 84 - لا﴾",
+          "info": "فتح القوس في الصفحة 463 وأغلق في رأس الصفحة 464 بالحرف لا"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 464,
+          "raw_text": "(1) ب : ما بين المعقوفين غير مثبت.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 85,
+      "target_word": "خالدين فيها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿خالدين فيها - 85 - ط﴾",
+      "text_page": 464,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 87,
+      "target_word": "ولا تعتدوا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ولا تعتدوا - 87 - ط﴾",
+      "text_page": 464,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 87,
+      "target_word": "المعتدين",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "﴿المعتدين - 87 - ج﴾ للآية ووقوع(4) العارض ، مع واو العطف واتحاد القصة ](5).",
+      "text_page": 464,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 464,
+          "raw_text": "(4) الصواب : [ ووقوع ].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 88,
+      "target_word": "طيبا",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "margin_ref": 6,
+      "text": "﴿طيبا - 88 - ص﴾ لعطف المتفقين(6).",
+      "text_page": 464,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 464,
+          "raw_text": "(6) أ : [ المتفتين ] بسقوط القاف.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 89,
+      "target_word": "عقدتم الأيمان",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿عقدتم الأيمان - 89 - ج﴾ لاختلاف النظم مع اتحاد الكلام وفاء التعقيب.",
+      "text_page": 464,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 89,
+      "target_word": "رقبة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿رقبة - 89 - ط﴾",
+      "text_page": 464,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 89,
+      "target_word": "ثلاثة أيام",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ثلاثة أيام - 89 - ط﴾",
+      "text_page": 464,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 89,
+      "target_word": "إذا حلفتم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 7,
+      "text": "﴿إذا حلفتم - 89 - ط﴾ [ للإضمار ، أي : حلفتم وحنثتم ](7).",
+      "text_page": 464,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 464,
+          "raw_text": "(7) ج : ما بين المعقوفين غير مثبت ، وفي أ : [ وحنثتم ] وسقوط ما قبله.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 89,
+      "target_word": "أيمانكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿أيمانكم - 89 - ط﴾",
+      "text_page": 464,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 91,
+      "target_word": "وعن الصلاة",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿وعن الصلاة - 91 - ج﴾ لابتداء الاستفهام على التحذير مع دخول الفاء فيه.",
+      "text_page": 464,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 92,
+      "target_word": "واحذروا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿واحذروا - 92 - ج﴾(1)",
+      "text_page": 464,
+      "old_text": "﴿واحذروا - 92",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿واحذروا - 92",
+          "new_text": "﴿واحذروا - 92 - ج﴾(1)",
+          "info": "فتح القوس في الصفحة 464 وأغلق في رأس الصفحة 465 بالحرف ج والرقم 1"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 465,
+          "raw_text": "(1) د : علامة الوقف : [ ط ] ، والصواب ما أثبتناه للابتداء بالشرط مع فاء التعقيب. وانظر : منار الهدى (124) فقد ذكر أن الوقف هنا كاف ، ونقل عن نافع أنه تام للابتداء بالشرط. وانظر : القطع (293).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأشموني",
+              "verdict": "كاف",
+              "comment": "نسخة د علامة الوقف ط ، والمثبت ج",
+              "book": "منار الهدى",
+              "book_ref": "124"
+            },
+            {
+              "scholar": "نافع",
+              "verdict": "تام",
+              "comment": "للابتداء بالشرط",
+              "book": null,
+              "book_ref": null
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "واحذروا",
+                "trigger": "meaning_change",
+                "reason": "الوقف للابتداء بالشرط مع فاء التعقيب؛ نافع جعله تاما والأشموني كافيا.",
+                "scholars": ["الأشموني", "نافع"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "فإن",
+                "trigger": "meaning_change",
+                "reason": "بعد ﴿واحذروا﴾ يبتدأ الشرط بفاء التعقيب، وهو تعليل نافع في كون الوقف تاما.",
+                "scholars": ["نافع"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 93,
+      "target_word": "وأحسنوا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿وأحسنوا - 93 - ط﴾",
+      "text_page": 465,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 94,
+      "target_word": "بالغيب",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿بالغيب - 94 - ج﴾(2)",
+      "text_page": 465,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 465,
+          "raw_text": "(2) د : علامة الوقف : [ ط ] ، والصواب ما أثبتناه للابتداء بالشرط مع فاء التعقيب.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "بالغيب",
+                "trigger": "meaning_change",
+                "reason": "الصواب ما أثبت من العلامة للابتداء بالشرط مع فاء التعقيب، فنسخة د جعلتها ط.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "فمن",
+                "trigger": "meaning_change",
+                "reason": "يبتدأ الشرط بعد ﴿بالغيب﴾ بفاء التعقيب.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 95,
+      "target_word": "حرم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿حرم - 95 - ط﴾",
+      "text_page": 465,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 95,
+      "target_word": "وبال أمره",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "[﴿وبال أمره - 95 - ط﴾](3)",
+      "text_page": 465,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 465,
+          "raw_text": "(3) ج : ما بين المعقوفين غير مثبت.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 95,
+      "target_word": "عما سلف",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿عما سلف - 95 - ط﴾",
+      "text_page": 465,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 95,
+      "target_word": "منه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿منه - 95 - ط﴾",
+      "text_page": 465,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 96,
+      "target_word": "وللسيارة",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "﴿وللسيارة - 96 - ج﴾ لطول الكلام وتضاد المعنيين(4) وإن اتفقت الجملتان لفظا.",
+      "text_page": 465,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 465,
+          "raw_text": "(4) أ : [ المعنين ].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 96,
+      "target_word": "حرما",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿حرما - 96 - ط﴾ لإطلاق الأمر بالالتقاء(5) على الابتداء.",
+      "text_page": 465,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 465,
+          "raw_text": "(5) أ : [ بالإبقاء ] وهو تصحيف ، وفي ج : [ بالاتفاق ] وهو تصحيف أيضا.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 97,
+      "target_word": "والقلائد",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿والقلائد - 97 - ط﴾",
+      "text_page": 465,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 98,
+      "target_word": "رحيم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 6,
+      "text": "﴿رحيم - 98 - ط﴾ وقد يوصل لاتفاق المعنى ، وهو اتصال الإنذار(6) بالأخبار(7) عن التبشير والإنذار(8).",
+      "text_page": 465,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 465,
+          "raw_text": "(6) ب : [ الأغدار ] وهو تصحيف ، وفي ج : [ الأغرار ] وهو تصحيف أيضا ، وفي د : [ الأعذار ] وهو بمعنى ما أثبتناه حيث ورد في المثل : أعذر من أنذر ، ومعنى أعذر : صار ذا عذر ، وقد قال تعالى : ﴿رسلا مبشرين ومنذرين لئلا يكون للناس على الله حجة بعد الرسل وكان الله عزيزا حكيما﴾ النساء ، الآية (165). وانظر : الصحاح 2/740 ، مادة (عذر). والإنذار هو ﴿ما على الرسول إلا البلاغ﴾.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "رحيم",
+                "trigger": "meaning_change",
+                "reason": "الوقف تام وقد يوصل لاتفاق المعنى، وهو اتصال الإنذار بالإخبار عن التبشير والإنذار.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "ما",
+                "trigger": "meaning_change",
+                "reason": "على الوقف يبتدأ بـ﴿ما على الرسول إلا البلاغ﴾، والحاشية تجعل الإنذار هو هذه الجملة.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 99,
+      "target_word": "إلا البلاغ",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿إلا البلاغ - 99 - ط﴾(1)",
+      "text_page": 466,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 466,
+          "raw_text": "(1) ب : علامة الوقف : [ ز ].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 100,
+      "target_word": "الخبيث",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿الخبيث - 100 - ج﴾ لاتفاق الجملتين مع وقوع العارض.",
+      "text_page": 466,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 101,
+      "target_word": "تسؤكم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿تسؤكم - 101 - ج﴾ لابتداء شرط آخر مع واو العطف.",
+      "text_page": 466,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 101,
+      "target_word": "تبد لكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 2,
+      "text": "﴿تبد لكم - 101 - ط﴾(2)",
+      "text_page": 466,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 466,
+          "raw_text": "(2) أ : علامة الوقف : [ ج ] ، والمثبت من بقية النسخ ، على أن جملة ﴿عفا الله عنها﴾ مستأنفة ، وهذا هو الذي ظهر لأبي حيان ، ورجحه أبو السعود ، فقد قال أبو حيان في البحر 4/31 : [ ظاهره أنه استئناف أخبار من الله تعالى ، وذهب بعضهم إلى أنها في موضع جر صفة لأشياء ، كأنه قيل : لا تسألوا عن أشياء معفو عنها ]. اهـ. وانظر : تفسير أبي السعود 3/85 ، وإعراب القرآن للعكبري 1/228 ، والدر المصون 4/442.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "أبو حيان",
+              "verdict": "مستأنفة",
+              "comment": "علامة النسخة أ : ج ، والمثبت ط من بقية النسخ",
+              "book": "البحر",
+              "book_ref": "4/31"
+            },
+            {
+              "scholar": "أبو السعود",
+              "verdict": "مستأنفة",
+              "comment": "رجحه",
+              "book": "تفسير أبي السعود",
+              "book_ref": "3/85"
+            },
+            {
+              "scholar": "unknown",
+              "verdict": "صفة",
+              "comment": "في موضع جر صفة لأشياء",
+              "book": null,
+              "book_ref": null
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "تبد لكم",
+                "trigger": "scholars_disagree",
+                "reason": "أبو حيان وأبو السعود على أن ﴿عفا الله عنها﴾ مستأنفة فيوقف قبلها، وذهب بعضهم إلى أنها صفة لـ﴿أشياء﴾.",
+                "scholars": ["أبو حيان", "أبو السعود"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "عفا",
+                "trigger": "scholars_disagree",
+                "reason": "على الاستئناف يبتدأ بـ﴿عفا الله عنها﴾.",
+                "scholars": ["أبو حيان", "أبو السعود"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 101,
+      "target_word": "عنها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿عنها - 101 - ط﴾",
+      "text_page": 466,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 103,
+      "target_word": "ولا حام",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿ولا حام - 103 - لا﴾ لأن ﴿ولكن﴾ للاستدراك.",
+      "text_page": 466,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 103,
+      "target_word": "الكذب",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿الكذب - 103 - ط﴾",
+      "text_page": 466,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 104,
+      "target_word": "آباءنا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿آباءنا - 104 - ط﴾",
+      "text_page": 466,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 105,
+      "target_word": "عليكم أنفسكم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 3,
+      "text": "﴿عليكم أنفسكم - 105 - ج﴾ لأن(3) ﴿لا يضركم﴾ يصلح مستأنفا(4) ، وحالا ، تقديره : احفظوا أنفسكم غير مضرورين.",
+      "text_page": 466,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 466,
+          "raw_text": "(3) ج : [ لأن ] ساقطة.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "أنفسكم",
+                "trigger": "meaning_change",
+                "reason": "﴿لا يضركم﴾ يصلح مستأنفا فيوقف على ﴿أنفسكم﴾، ويصلح حالا فلا يوقف.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "لا يضركم",
+                "trigger": "meaning_change",
+                "reason": "على الاستئناف يبتدأ بـ﴿لا يضركم﴾، والتقدير على الحال: احفظوا أنفسكم غير مضرورين.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 105,
+      "target_word": "إذا اهتديتم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿إذا اهتديتم - 105 - ط﴾",
+      "text_page": 466,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 106,
+      "target_word": "مصيبة الموت",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿مصيبة الموت - 106 - ط﴾(5) [ لأن قوله : ﴿تحبسونهما من بعد الصلاة﴾ بمعنى الأمر ، أي : استوفضوهما ](1).",
+      "text_page": 466,
+      "old_text": "﴿مصيبة الموت - 106 - ط﴾(5) [ لأن",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "[ لأن",
+          "new_text": "[ لأن قوله : ﴿تحبسونهما من بعد الصلاة﴾ بمعنى الأمر ، أي : استوفضوهما ](1).",
+          "info": "تتمة تعليل الوقف في رأس الصفحة 467، والقوس نفسه أغلق في الصفحة 466"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 466,
+          "raw_text": "(5) د : علامة الوقف : [ ص ] ، وما أثبتناه لدلالة ما بعده عليه ، وعلى أن جملة ﴿تحبسونهما﴾ مستأنفة ، وهذا هو قول الزمخشري في الكشاف 1/651 ، والذي ظهر لأبي حيان في البحر 4/42 ، 43. = وعلى أن الوقف مرخص ضرورة كما ورد في نسخة (د) ، فعلى أن جملة ﴿تحبسونهما﴾ صفة لـ﴿آخران﴾ واعترض بين الموصوف والصفة بقوله : ﴿إن أنتم﴾ إلى ﴿الموت﴾ ، وأفاد الاعتراض أن العدول إلى ﴿آخران﴾ من غير الملة والقرابة حسب اختلاف العلماء في ذلك إنما يكون مع ضرورة السفر ، وحلول الموت فيه ، وهذا قول أبي علي ، نص على ابن عطية في تفسيره 5/221. وقال السمين في الدر 4/463 : [ وإلى هذا ذهب الفارسي ، ومكي بن أبي طالب ، والحوفي ، وأبو البقاء ، وابن عطية ]. اهـ. وانظر : مشكل إعراب القرآن 1/250 ، وإعراب القرآن للعكبري 1/229 ، والبحر المحيط 4/42.",
+          "continuation": {"status": "read", "page": 467},
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الزمخشري",
+              "verdict": "مستأنفة",
+              "comment": "في نسخة د علامة الوقف ص ، والمثبت ط",
+              "book": "الكشاف",
+              "book_ref": "1/651"
+            },
+            {
+              "scholar": "أبو حيان",
+              "verdict": "مستأنفة",
+              "comment": null,
+              "book": "البحر",
+              "book_ref": "4/42-43"
+            },
+            {
+              "scholar": "الفارسي",
+              "verdict": "مرخص ضرورة",
+              "comment": "قول أبي علي، ونص عليه ابن عطية 5/221؛ تحبسونهما صفة لآخران مع اعتراض",
+              "book": "الدر المصون",
+              "book_ref": "4/463"
+            },
+            {
+              "scholar": "مكي",
+              "verdict": "مرخص ضرورة",
+              "comment": "تحبسونهما صفة لآخران مع اعتراض",
+              "book": "الدر المصون",
+              "book_ref": "4/463"
+            },
+            {
+              "scholar": "الحوفي",
+              "verdict": "مرخص ضرورة",
+              "comment": "تحبسونهما صفة لآخران مع اعتراض",
+              "book": "الدر المصون",
+              "book_ref": "4/463"
+            },
+            {
+              "scholar": "العكبري",
+              "verdict": "مرخص ضرورة",
+              "comment": "أبو البقاء؛ تحبسونهما صفة لآخران مع اعتراض",
+              "book": "الدر المصون",
+              "book_ref": "4/463"
+            },
+            {
+              "scholar": "ابن عطية",
+              "verdict": "مرخص ضرورة",
+              "comment": "تحبسونهما صفة لآخران مع اعتراض",
+              "book": "الدر المصون",
+              "book_ref": "4/463"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "مصيبة الموت",
+                "trigger": "scholars_disagree",
+                "reason": "الزمخشري وأبو حيان على أن ﴿تحبسونهما﴾ مستأنفة فالوقف تام، والفارسي ومكي والحوفي والعكبري وابن عطية على أنها صفة لـ﴿آخران﴾ فالوقف مرخص ضرورة.",
+                "scholars": ["الزمخشري", "أبو حيان"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "تحبسونهما",
+                "trigger": "scholars_disagree",
+                "reason": "على الاستئناف يبتدأ بـ﴿تحبسونهما﴾، وعلى الصفة هي تتمة ﴿آخران﴾ بعد الاعتراض.",
+                "scholars": ["الزمخشري", "أبو حيان"]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,765 @@
+{
+  "source": "apparatus_v4_595_598",
+  "page_numbers": [595, 596, 597, 598],
+  "waqfs": [
+    {
+      "ayah": 15,
+      "target_word": "أن يجعلوه في غيابت الجب",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿أن يجعلوه في غيابت الجب - 15 - ج﴾(2) لأن الواو قد يجعل مفحمة ويجعل ﴿أوحينا﴾ جواب ﴿لما﴾(3)، وقد يحذف جواب ﴿لما﴾ ويجعل الواو عاطفة عليه(4) تقديره: مضوا عليه وأوحينا(5).",
+      "text_page": 595,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 595,
+          "raw_text": "(2) ب: [أن يجعلوه في غيابت الجب (الثاني ج)] بزيادة: [الثاني]. ويظهر أن الناسخ قيده بالثاني حتى لا يقع لبس بما ورد في الآية العاشرة من هذه السورة، حيث قال تعالى: ﴿وألقوه في غيابت الجب﴾.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "الجب",
+                "trigger": "meaning_change",
+                "reason": "الوقف جائز لأن الواو إما مفحمة فيكون ﴿أوحينا﴾ جواب ﴿لما﴾، وإما عاطفة على جواب محذوف تقديره: مضوا عليه.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وأوحينا",
+                "trigger": "meaning_change",
+                "reason": "على العطف أو على كون ﴿أوحينا﴾ جواب ﴿لما﴾ يُستأنف من ﴿وأوحينا﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 16,
+      "target_word": "يكون",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿يكون - 16 - ط﴾",
+      "text_page": 595,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 17,
+      "target_word": "فأكله الذئب",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿فأكله الذئب - 17 - ج﴾ لابتداء النفي مع واو العطف.",
+      "text_page": 595,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 18,
+      "target_word": "كذب",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿كذب - 18 - ط﴾",
+      "text_page": 595,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 18,
+      "target_word": "أمرا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿أمرا - 18 - ط﴾",
+      "text_page": 595,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 18,
+      "target_word": "جميل",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿جميل - 18 - ط﴾",
+      "text_page": 595,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 19,
+      "target_word": "دلوه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿دلوه - 19 - ط﴾",
+      "text_page": 595,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 19,
+      "target_word": "غلام",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿غلام - 19 - ط﴾",
+      "text_page": 595,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 19,
+      "target_word": "بضاعة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿بضاعة - 19 - ط﴾",
+      "text_page": 595,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 20,
+      "target_word": "معدودة",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿معدودة - 20 - ج﴾ لأن الواو تصلح [عاطفة وحالا](1)، أي: وقد كانوا(2).",
+      "text_page": 595,
+      "old_text": "﴿معدودة - 20 - ج﴾",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿معدودة - 20 - ج﴾",
+          "new_text": "﴿معدودة - 20 - ج﴾ لأن الواو تصلح [عاطفة وحالا](1)، أي: وقد كانوا(2).",
+          "info": "القوس يتم في الصفحة 595 والتعليل يتبعه في الصفحة 596."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 596,
+          "raw_text": "(1) ب: [حالا وعاطفة].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "معدودة",
+                "trigger": "meaning_change",
+                "reason": "الواو تصلح عاطفة فيُوقف، أو حالا فيتصل ما بعدها.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وكانوا",
+                "trigger": "meaning_change",
+                "reason": "على العطف يُستأنف «وكانوا»، وعلى الحال تكون الجملة «وقد كانوا» متصلة.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 21,
+      "target_word": "ولدا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ولدا - 21 - ط﴾",
+      "text_page": 596,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 21,
+      "target_word": "في الأرض",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 3,
+      "text": "﴿في الأرض - 21 - ز﴾ لأن الواو قد تجعل مفحمة وتعلق اللام بمكنا(3)، أو تجعل عاطفة على محذوف، أي: ليتمكن ولنعلمه(4).",
+      "text_page": 596,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 596,
+          "raw_text": "(3) أ: [﴿مكنا﴾] بسقوط الباء.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "الأرض",
+                "trigger": "meaning_change",
+                "reason": "الواو قد تُجعل مفحمة فتعلق اللام بمكنا، أو عاطفة على محذوف أي: ليتمكن.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "ولنعلمه",
+                "trigger": "meaning_change",
+                "reason": "على تقدير محذوف قبلها: ليتمكن ولنعلمه، فيختلف وصل اللام عما قبله.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 21,
+      "target_word": "الأحاديث",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿الأحاديث - 21 - ط﴾",
+      "text_page": 596,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 22,
+      "target_word": "وعلما",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿وعلما - 22 - ط﴾",
+      "text_page": 596,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 23,
+      "target_word": "هيت لك",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿هيت لك - 23 - ط﴾",
+      "text_page": 596,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 23,
+      "target_word": "مثواي",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿مثواي - 23 - ط﴾",
+      "text_page": 596,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 24,
+      "target_word": "همت به",
+      "verdict_label": "ق",
+      "verdict": "قيل فيه وقف",
+      "margin_ref": 5,
+      "text": "﴿همت به - 24 - ق﴾(5) قد قيل(6) على ظن أن يجعل ﴿وهم بها﴾ متعلقا بلولا، وهو فاسد، فإن لولا لا يتعلق(7) بما قبلها البتة، بل جوابها(8) يكون بعدها منطوقا(9) أو محذوفا، وها هنا محذوف، تقديره: لولا أن رأى برهان ربه لحق [ما هم به](10)، والوقف إذا على",
+      "text_page": 596,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 596,
+          "raw_text": "(5) علامة الوقف من: ب.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "به",
+                "trigger": "meaning_change",
+                "reason": "قيل بالوقف على ﴿همت به﴾ على ظن تعلق ﴿وهم بها﴾ بلولا، وهو فاسد لأن لولا لا يتعلق بما قبلها.",
+                "scholars": []
+              },
+              {
+                "target_word": "بها",
+                "trigger": "meaning_change",
+                "reason": "الوقف إذا على ﴿وهم بها﴾ لأن جواب لولا محذوف بعدها.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "لولا",
+                "trigger": "meaning_change",
+                "reason": "جواب لولا يكون بعدها منطوقا أو محذوفا، فلا يُجعل ﴿وهم بها﴾ متعلقا بها.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 24,
+      "target_word": "وهم بها",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿وهم بها - 24 - ج﴾(1)",
+      "text_page": 596,
+      "old_text": "﴿وهم",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿وهم",
+          "new_text": "﴿وهم بها - 24 - ج﴾(1)",
+          "info": "يفتح القوس في آخر الصفحة 596 ويغلق في الصفحة 597."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 597,
+          "raw_text": "(1) ج، د: علامة الوقف غير مثبتة، وورد بدلا عنها: [جائز].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 24,
+      "target_word": "برهان ربه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 2,
+      "text": "﴿برهان ربه - 24 - ط﴾(2)",
+      "text_page": 597,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 597,
+          "raw_text": "(2) أ: ما بين المعقوفين غير مثبت.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 24,
+      "target_word": "والفحشاء",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿والفحشاء - 24 - ط﴾",
+      "text_page": 597,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 25,
+      "target_word": "لدا الباب",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿لدا الباب - 25 - ط﴾",
+      "text_page": 597,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 26,
+      "target_word": "من أهلها",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿من أهلها - 26 - ج﴾ على تقدير: وقال: إن(1) كان قميصه.",
+      "text_page": 597,
+      "old_text": "﴿من",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿من",
+          "new_text": "﴿من أهلها - 26 - ج﴾",
+          "info": "يفتح القوس في آخر الصفحة 597 ويغلق في الصفحة 598."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 598,
+          "raw_text": "(1) أ: [وإن] بزيادة الواو.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "أهلها",
+                "trigger": "meaning_change",
+                "reason": "الوقف على تقدير قول محذوف: وقال.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "إن",
+                "trigger": "meaning_change",
+                "reason": "يُبتدأ بالشرط المحكي: إن كان قميصه.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 28,
+      "target_word": "من كيدكن",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من كيدكن - 28 - ط﴾",
+      "text_page": 598,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 29,
+      "target_word": "عن هذا",
+      "verdict_label": null,
+      "verdict": null,
+      "margin_ref": 2,
+      "text": "﴿عن هذا - 29﴾ سكتة للعدول عن(2) مخاطب إلى مخاطبة(3).",
+      "text_page": 598,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 598,
+          "raw_text": "(2) ب: [من].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "هذا",
+                "trigger": "meaning_change",
+                "reason": "سكتة للعدول عن مخاطب إلى مخاطبة.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "واستغفري",
+                "trigger": "meaning_change",
+                "reason": "بعد السكتة يبدأ خطاب المرأة: واستغفري لذنبك.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 29,
+      "target_word": "لذنبك",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "﴿لذنبك - 29 - ج﴾ والوصل أحسن(4) فإن التقدير: لأنك كنت.",
+      "text_page": 598,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 598,
+          "raw_text": "(4) أ: [لحسن] وهو تصحيف.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "لذنبك",
+                "trigger": "meaning_change",
+                "reason": "الوصل أحسن لأن التقدير: لأنك كنت، فيفصل الوقف السبب عن موضعه.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "إنك",
+                "trigger": "meaning_change",
+                "reason": "إن وُقف فالاستئناف من «إنك»، والأولى الوصل على تقدير «لأنك كنت».",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 30,
+      "target_word": "عن نفسه",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿عن نفسه - 30 - ج﴾ لأن ﴿قد﴾ لتحسين الابتداء مع اتحاد القائل.",
+      "text_page": 598,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 30,
+      "target_word": "حبا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿حبا - 30 - ط﴾",
+      "text_page": 598,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 31,
+      "target_word": "عليهن",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿عليهن - 31 - ج﴾",
+      "text_page": 598,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 31,
+      "target_word": "بشرا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿بشرا - 31 - ط﴾",
+      "text_page": 598,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 32,
+      "target_word": "فيه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿فيه - 32 - ط﴾",
+      "text_page": 598,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 32,
+      "target_word": "فاستعصم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿فاستعصم - 32 - ط﴾ لإضمار قسم، أي: والله لئن.",
+      "text_page": 598,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 33,
+      "target_word": "إليه",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿إليه - 33 - ج﴾ للشرط مع الواو.",
+      "text_page": 598,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 34,
+      "target_word": "كيدهن",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿كيدهن - 34 - ط﴾(5)",
+      "text_page": 598,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 598,
+          "raw_text": "(5) د: [﴿كيدهن﴾ الثاني ط]، وما أثبتناه من بقية النسخ لعدم اللبس لأن اللفظ في هذه الآية لم يتكرر، والوقف المطلق هنا للابتداء بأن. والذي يظهر أن ناسخ نسخة (د) قيد اللفظ بالثاني خوفا من اللبس بما ورد في الآية السابقة – الثالثة والثلاثين – ومعلوم أن هذا اللفظ فيها ليس موطن وقف لأن قوله: ﴿أصب إليهن﴾ جواب الشرط، فلا يفصل بين الشرط وجوابه.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "كيدهن",
+                "trigger": "meaning_change",
+                "reason": "الوقف المطلق هنا للابتداء، واللفظ لم يتكرر في الآية؛ و﴿كيدهن﴾ في الآية 33 ليس موطن وقف لأن ﴿أصب إليهن﴾ جواب الشرط.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "إنه",
+                "trigger": "meaning_change",
+                "reason": "الوقف المطلق للابتداء بأن: إنه هو السميع العليم.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 36,
+      "target_word": "فتيان",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿فتيان - 36 - ط﴾",
+      "text_page": 598,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 36,
+      "target_word": "خمرا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿خمرا - 36 - ج﴾ فصلا بين القصتين مع اتفاق الجملتين.",
+      "text_page": 598,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 36,
+      "target_word": "الطير منه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 6,
+      "text": "﴿الطير منه - 36 - ط﴾ للعدول عن قول الآخر منهما إلى قولهما المضمر، أي: فقالا(6): نبئنا.",
+      "text_page": 598,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 598,
+          "raw_text": "(6) أ: [فقالا له]. وما أثبتناه لموافقة الآية، حيث قال تعالى: ﴿قال أحدهما إني أراني أعصر خمرا وقال الآخر إني أراني أحمل فوق رأسي خبزا تأكل الطير منه﴾، ولم يقل: قال أحدهما له ... ولم يقل أيضا: وقال الآخر له.",
+          "continuation": {
+            "status": "read",
+            "page": 599
+          },
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "منه",
+                "trigger": "meaning_change",
+                "reason": "للعدول عن قول الآخر منهما إلى قولهما المضمر.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "نبئنا",
+                "trigger": "meaning_change",
+                "reason": "يُستأنف من قولهما المضمر: فقالا نبئنا.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 36,
+      "target_word": "بتأويله",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿بتأويله - 36 - ج﴾ على تقدير: لأنا نراك.",
+      "text_page": 598,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 37,
+      "target_word": "يأتيكما",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿يأتيكما - 37 - ط﴾",
+      "text_page": 598,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    }
+  ]
+}

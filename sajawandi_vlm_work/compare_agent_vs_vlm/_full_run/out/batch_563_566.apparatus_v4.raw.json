@@ -1,0 +1,603 @@
+{
+  "source": "apparatus_v4_563_566",
+  "page_numbers": [563, 564, 565, 566],
+  "waqfs": [
+    {
+      "ayah": 129,
+      "target_word": "حسبي الله",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿حسبي الله - ١٢٩ - ز﴾(١) [ قد قيل ](٢) . والأصح الوصل على جعل الجملة حالا(٣) ، أي : يكفيني الله غير مشارك في الألوهية(٤) .",
+      "text_page": 563,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 563,
+          "raw_text": "ب : علامة الوقف : [ ق ، ز ] . والوقف هنا جائز عند الأشموني . انظر : المنار (١٧٢) . أما ابن الأنباري في الإيضاح ٢/٧٠١ ، والنحاس في القطع (٣٧١) ، والداني في المكتفى (٣٠١) ، والأنصاري في المقصد (١٧٢) فلم يذكروا هنا وقفا .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأشموني",
+              "verdict": "جائز",
+              "comment": "في نسخة ب علامة الوقف : ق ، ز",
+              "book": "المنار",
+              "book_ref": "172"
+            },
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "2/701"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "371"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "301"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "172"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "حسبي الله",
+                "trigger": "scholars_disagree",
+                "reason": "الأشموني يجيز الوقف، وابن الأنباري والنحاس والداني والأنصاري لم يذكروا هنا وقفا، والمتن يرجّح الوصل على جعل الجملة حالا : يكفيني الله غير مشارك في الألوهية.",
+                "scholars": ["الأشموني"]
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 129,
+      "target_word": "إلا هو",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿إلا هو - ١٢٩ - ط﴾ .",
+      "text_page": 563,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 1,
+      "target_word": "الر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 2,
+      "text": "﴿الر - ١ - ط﴾(٢) كوفي .",
+      "text_page": 564,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 564,
+          "raw_text": "ج ، د : علامة الوقف ساقطة . فالوقف المطلق هنا على أن ( الر ) في محل رفع خبر لمبتدأ محذوف ، أي : هذه ، أو هذا ، أو في محل نصب لفعل محذوف ، أي : اقرأ ، أو : اتل . ومن وصل فعلى أنها مبتدأ ، وما بعدها الخبر ، أو أنها قسم ، وما بعدها جوابه . انظر : القطع (١١٠) ، وإعراب القرآن للعكبري ١/١٠ ، ٢٦٧ ، والمقصد (٢٩) ، ومنار الهدى (٢٩، ١٤٢) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "الر",
+                "trigger": "meaning_change",
+                "reason": "الوقف المطلق يجعل (الر) خبرا لمبتدأ محذوف أو مفعولا لفعل محذوف، والوصل يجعلها مبتدأ وما بعدها الخبر أو قسما وما بعدها جوابه.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 2,
+      "target_word": "عند ربهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿عند ربهم - ٢ - ط﴾ .",
+      "text_page": 564,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 3,
+      "target_word": "يدبر الأمر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿يدبر الأمر - ٣ - ط﴾ .",
+      "text_page": 564,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 3,
+      "target_word": "إذنه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿إذنه - ٣ - ط﴾ .",
+      "text_page": 564,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 3,
+      "target_word": "فاعبدوه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿فاعبدوه - ٣ - ط﴾ .",
+      "text_page": 564,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 4,
+      "target_word": "جميعا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿جميعا - ٤ - ط﴾ .",
+      "text_page": 564,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 4,
+      "target_word": "حقا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿حقا - ٤ - ط﴾ إلا لمن قرأ : ﴿أنه﴾ بالفتح(٣) .",
+      "text_page": 564,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 564,
+          "raw_text": "قرأ بها أبو جعفر ، على أن ﴿أن﴾ وما دخلت عليه معمول لقوله تعالى : ﴿وعد الله﴾ ، أي : وعد إعادة الخلق بعد بدئه ، أو على حذف حرف الجر ، أي : لأنه ، أو بأنه ، وقرأ الباقون بكسر الهمزة على الاستئناف . انظر : النشر ٣/١٠٢ ، والمهذب ١/٢٩٠ ، والقطع (٣٧٢) ، ومنار الهدى (١٧٣) ، وإعراب القرآن للعكبري ٢/٢٤ ، والبحر المحيط ٥/١٢٤ .",
+          "continuation": {"status": "read", "page": 565},
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "أبو جعفر",
+              "verdict": "وصل",
+              "comment": "قرأ ﴿أنه﴾ بالفتح على أن ﴿أن﴾ وما دخلت عليه معمول لقوله ﴿وعد الله﴾",
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "الباقون",
+              "verdict": "استئناف",
+              "comment": "بكسر الهمزة على الاستئناف",
+              "book": null,
+              "book_ref": null
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "حقا",
+                "trigger": "scholars_disagree",
+                "reason": "أبو جعفر يصل ﴿أنه﴾ بالفتح لأنها معمولة ل﴿وعد الله﴾، والباقون يكسرون الهمزة على الاستئناف فيوقف على ﴿حقا﴾.",
+                "scholars": ["الباقون"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "إنه",
+                "trigger": "meaning_change",
+                "reason": "كسر الهمزة عند الباقين يفتح استئنافا بعد ﴿حقا﴾، بخلاف فتح أبي جعفر الذي يصلها ب﴿وعد الله﴾.",
+                "scholars": ["الباقون"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 4,
+      "target_word": "بالقسط",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿بالقسط - ٤ - ط﴾ .",
+      "text_page": 565,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 5,
+      "target_word": "والحساب",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿والحساب - ٥ - ط﴾ .",
+      "text_page": 565,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 5,
+      "target_word": "إلا بالحق",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿إلا بالحق - ٥ - ط﴾ لمن(١) قرأ ﴿نفصل﴾ بالنون ، ومن قرأ بالياء أمكنه أن يجعل ﴿يفصل﴾ حالا(٢) .",
+      "text_page": 565,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 565,
+          "raw_text": "أ : [إلا لمن] وهو خطأ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "إلا بالحق",
+                "trigger": "meaning_change",
+                "reason": "الوقف لمن قرأ ﴿نفصل﴾ بالنون، ومن قرأ بالياء أمكنه أن يجعل ﴿يفصل﴾ حالا فيوصل.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "نفصل",
+                "trigger": "meaning_change",
+                "reason": "على قراءة النون يُستأنف ب﴿نفصل﴾ بعد الوقف، وعلى قراءة الياء قد تكون ﴿يفصل﴾ حالا فلا يُبتدأ بها.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 7,
+      "target_word": "غافلون",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 3,
+      "text": "﴿غافلون - ٧ - لا﴾(٣) لأن ﴿أولئك﴾ خبر «إن» .",
+      "text_page": 565,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 565,
+          "raw_text": "د : علامة الوقف ساقطة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 9,
+      "target_word": "بإيمانهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "﴿بإيمانهم - ٩ - ج﴾(٤) للحذف ، تقديره : يهديهم ربهم بإيمانهم(٥) إلى دار البقاء ، مع اتحاد المقصود وتمام الموعود .",
+      "text_page": 565,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 565,
+          "raw_text": "أ : علامة الوقف ساقطة ، وقد ذكرت بعد في غير موضعها .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "بإيمانهم",
+                "trigger": "meaning_change",
+                "reason": "الوقف لحق الحذف، وتقدير المحذوف: يهديهم ربهم بإيمانهم إلى دار البقاء، مع اتحاد المقصود وتمام الموعود.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 10,
+      "target_word": "سلام",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 6,
+      "text": "﴿سلام - ١٠ - ج﴾ لأن الجملتين وإن اتفقتا فقد اعترضت جملة معطوفة أخرى ، لأن قوله : ﴿وآخر﴾ معطوف على ﴿دعواهم﴾ الأول(٦) .",
+      "text_page": 565,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 565,
+          "raw_text": "انظر : منار الهدى (١٧٣) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "سلام",
+                "trigger": "meaning_change",
+                "reason": "الجملتان متفقتان، لكن اعترضت جملة معطوفة لأن ﴿وآخر﴾ معطوف على ﴿دعواهم﴾ الأول.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وآخر",
+                "trigger": "meaning_change",
+                "reason": "يُبتدأ ب﴿وآخر﴾ لأنه جملة معطوفة على ﴿دعواهم﴾ الأول، لا تتمة ل﴿سلام﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 11,
+      "target_word": "أجلهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿أجلهم - ١١ - ط﴾ لأن المستقبل لا ينعطف على الماضي(١) ، تقديره : ونحن نذر(٢) .",
+      "text_page": 565,
+      "old_text": "﴿أجلهم - ١١ - ط﴾ لأن المستقبل",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿أجلهم - ١١ - ط﴾ لأن المستقبل",
+          "new_text": "﴿أجلهم - ١١ - ط﴾ لأن المستقبل لا ينعطف على الماضي(١) ، تقديره : ونحن نذر(٢) .",
+          "info": "تتمة التعليل في صفحة ٥٦٦"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 566,
+          "raw_text": "وهو : ﴿قضي﴾ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "أجلهم",
+                "trigger": "meaning_change",
+                "reason": "المستقبل لا ينعطف على الماضي، والماضي هو ﴿قضي﴾، والتقدير: ونحن نذر.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "نذر",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بتقدير: ونحن نذر، لأن المستقبل لا ينعطف على الماضي ﴿قضي﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 12,
+      "target_word": "أو قائما",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿أو قائما - ١٢ - ج﴾ .",
+      "text_page": 566,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 12,
+      "target_word": "مسه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿مسه - ١٢ - ط﴾ .",
+      "text_page": 566,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 13,
+      "target_word": "ظلموا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 3,
+      "text": "﴿ظلموا - ١٣ - لا﴾ لأن الواو للحال ، أي : وقد(٣) جاءتهم(٤) .",
+      "text_page": 566,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 566,
+          "raw_text": "ب : الواو ساقطة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 13,
+      "target_word": "ليؤمنوا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ليؤمنوا - ١٣ - ط﴾ .",
+      "text_page": 566,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 15,
+      "target_word": "بينات",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿بينات - ١٥ - لا﴾ لأن ﴿قال الذين﴾ جواب ﴿إذا﴾ .",
+      "text_page": 566,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 15,
+      "target_word": "أو بدله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿أو بدله - ١٥ - ط﴾ .",
+      "text_page": 566,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 15,
+      "target_word": "نفسي",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿نفسي - ١٥ - ج﴾ لأن ﴿أن﴾ الثانية مصدرة ، ولكن القائل متحد .",
+      "text_page": 566,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 15,
+      "target_word": "إلي",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿إلي - ١٥ - ج﴾ لأن ﴿أن﴾ للابتداء ، والقائل متحد .",
+      "text_page": 566,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 16,
+      "target_word": "به",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 5,
+      "text": "﴿به - ١٦ - ز﴾(٥) [ قد قيل ](٦) إلا أن الوصل أولى للفاء ، ولشدة اتصال المعنى .",
+      "text_page": 566,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 566,
+          "raw_text": "ب : علامة الوقف : [ ق ، ز ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "به",
+                "trigger": "scholars_disagree",
+                "reason": "قد قيل بالوقف، وعلامة نسخة ب: ق ، ز، إلا أن الوصل أولى للفاء ولشدة اتصال المعنى.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 16,
+      "target_word": "من قبله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من قبله - ١٦ - ط﴾ .",
+      "text_page": 566,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 17,
+      "target_word": "بآياته",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿بآياته - ١٧ - ط﴾ .",
+      "text_page": 566,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    }
+  ]
+}

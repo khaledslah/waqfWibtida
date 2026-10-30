@@ -1,0 +1,583 @@
+{
+  "source": "apparatus_v4_391_394",
+  "page_numbers": [391, 392, 393, 394],
+  "waqfs": [
+    {
+      "ayah": 136,
+      "target_word": "خالدين فيها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ خالدين فيها - ١٣٦ - ط ﴾.",
+      "text_page": 391,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 136,
+      "target_word": "العاملين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ العاملين - ١٣٦ - ط ﴾ لتمام الكلام.",
+      "text_page": 391,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 137,
+      "target_word": "سنن",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 2,
+      "text": "﴿ سنن - ١٣٧ - لا ﴾ لتعقيب (٢) الأمر بالاعتبار بعد الاخبار بالتبار (٣).",
+      "text_page": 391,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 391,
+          "raw_text": "(٢) ج ، د : [ لتعقب ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 140,
+      "target_word": "مثله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ مثله - ١٤٠ - ط ﴾.",
+      "text_page": 391,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 140,
+      "target_word": "بين الناس",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "﴿ بين الناس - ١٤٠ - ج ﴾ (٤) لأن الواو مقحمة ، أو عاطفة على محذوف ، أي : ليعتبروا وليعلم (٥).",
+      "text_page": 391,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 391,
+          "raw_text": "(٤) د : علامة الوقف [ ط ] وما أثبتناه هو الصواب بدلالة ما بعده .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "unknown",
+              "verdict": "تام",
+              "comment": "في نسخة د علامة الوقف ط، وما أثبتناه هو الصواب بدلالة ما بعده",
+              "book": null,
+              "book_ref": null
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "بين الناس",
+                "trigger": "meaning_change",
+                "reason": "الواو بعد ﴿بين الناس﴾ إما مقحمة فيُوقف قبلها، وإما عاطفة على محذوف تقديره ليعتبروا، فيختلف قطع الكلام.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وليعلم",
+                "trigger": "meaning_change",
+                "reason": "على أن الواو مقحمة يُبتدأ بـ﴿وليعلم﴾، وعلى العطف على محذوف يكون التقدير: ليعتبروا وليعلم.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 140,
+      "target_word": "شهداء",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ شهداء - ١٤٠ - ط ﴾.",
+      "text_page": 391,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 140,
+      "target_word": "الظالمين",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 1,
+      "text": "﴿ الظالمين - ١٤٠ - لا ﴾ للعطف على ﴿ ليعلم ﴾ (١).",
+      "text_page": 392,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 392,
+          "raw_text": "(١) نص عليه العكبري في إملائه ١/١٥٠ حيث قال : [ ﴿وليمحص﴾ معطوف على : ﴿وليعلم﴾ ] . اهـ . ولم يذكر ابن الأنباري في الإيضاح ٢/٥٨٥ ، والداني في المكتفى (٢١٠) هنا وقفا . أما النحاس في القطع (٢٣٥) ، والأنصاري في المقصد (٨٩) فذكرا أنه كاف ، أما الأشموني في المنار (٨٩) فذكر أنه تام .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "العكبري",
+              "verdict": "معطوف",
+              "comment": "﴿وليمحص﴾ معطوف على ﴿وليعلم﴾",
+              "book": "الإملاء",
+              "book_ref": "1/150"
+            },
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "2/585"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "210"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "235"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "89"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "تام",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "89"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "الظالمين",
+                "trigger": "scholars_disagree",
+                "reason": "النحاس والأنصاري جعلاه كافيا والأشموني تاما، ولم يذكره ابن الأنباري ولا الداني، والعكبري يجعل ﴿وليمحص﴾ معطوفا على ﴿وليعلم﴾، والسجاوندي علّمه لا.",
+                "scholars": ["النحاس", "الأنصاري", "الأشموني"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وليمحص",
+                "trigger": "scholars_disagree",
+                "reason": "من أجاز الوقف على ﴿الظالمين﴾ ابتدأ بـ﴿وليمحص﴾، ومن جعلها معطوفة على ﴿وليعلم﴾ لم يقطعها.",
+                "scholars": ["النحاس", "الأنصاري", "الأشموني"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 143,
+      "target_word": "أن تلقوه",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "margin_ref": 2,
+      "text": "﴿ أن تلقوه - ١٤٣ - ص ﴾ (٢) لطول الكلام (٣).",
+      "text_page": 392,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 392,
+          "raw_text": "(٢) علامة الوقف ساقطة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 144,
+      "target_word": "إلا رسول",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿ إلا رسول - ١٤٤ - ج ﴾ لأن الجملة بعده (١) تصلح صفة لرسول أو مستأنفة (٢).",
+      "text_page": 392,
+      "old_text": "﴿ إلا رسول - ١٤٤ -",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ إلا رسول - ١٤٤ -",
+          "new_text": "﴿ إلا رسول - ١٤٤ - ج ﴾ لأن الجملة بعده (١) تصلح صفة لرسول أو مستأنفة (٢).",
+          "info": "يفتح القوس في آخر صفحة ٣٩٢ ويكتمل بحرف ج وإغلاق القوس والإعلال في أول صفحة ٣٩٣."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 393,
+          "raw_text": "(١) د : [ بعده ] غير مثبتة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "إلا رسول",
+                "trigger": "meaning_change",
+                "reason": "الجملة بعده إن جُعلت مستأنفة وُقف على ﴿إلا رسول﴾، وإن جُعلت صفة لرسول وُصلت.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "قد",
+                "trigger": "meaning_change",
+                "reason": "على الاستئناف يُبتدأ بـ﴿قد خلت﴾، وعلى الصفة تبقى الجملة نعتا لرسول ولا تُقطع.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 144,
+      "target_word": "الرسل",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿ الرسل - ١٤٤ - ط ﴾ (٣).",
+      "text_page": 393,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 393,
+          "raw_text": "(٣) د : علامة الوقف ساقطة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 144,
+      "target_word": "أعقابكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿ أعقابكم - ١٤٤ - ط ﴾ (٤) لتناهي الاستفهام.",
+      "text_page": 393,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 393,
+          "raw_text": "(٤) د : علامة الوقف ساقطة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 144,
+      "target_word": "شيئا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ شيئا - ١٤٤ - ط ﴾.",
+      "text_page": 393,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 145,
+      "target_word": "مؤجلا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿ مؤجلا - ١٤٥ - ط ﴾ (٥) لابتداء الشرط واختلاف المعنى ، لأن في السباق (٦) بيان انتهاء الأجل ، وفي السياق (٧) بيان جزاء العمل.",
+      "text_page": 393,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 393,
+          "raw_text": "(٥) أ : علامة الوقف ساقطة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "مؤجلا",
+                "trigger": "meaning_change",
+                "reason": "الوقف لابتداء الشرط واختلاف المعنى: في السباق بيان انتهاء الأجل، وفي السياق بيان جزاء العمل.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "ومن",
+                "trigger": "meaning_change",
+                "reason": "يُبتدأ شرط الجزاء ﴿ومن يرد ثواب الدنيا﴾ بعد ﴿مؤجلا﴾ لاختلاف معناه عما قبله.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 145,
+      "target_word": "منها",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 8,
+      "text": "﴿ منها - ١٤٥ - ج ﴾ (٨) لعطف جملتي الشرط.",
+      "text_page": 393,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 393,
+          "raw_text": "(٨) د : علامة الوقف : [ ط ] وهو خطأ لدلالة ما بعده .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "unknown",
+              "verdict": "تام",
+              "comment": "في نسخة د علامة الوقف ط، وهو خطأ لدلالة ما بعده",
+              "book": null,
+              "book_ref": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 145,
+      "target_word": "منها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ منها - ١٤٥ - ط ﴾.",
+      "text_page": 393,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 146,
+      "target_word": "قتل",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 9,
+      "text": "﴿ قتل - ١٤٦ - ط ﴾ (٩) ليكون قتل (١) النبي إلزام الحجة على من اعتذر في الانهزام بما (٢) سمع من نداء ابليس : ألا أن محمدا قد قتل . والتقدير : ومعه ربيون كثير (٣) ، ولو وصل كان ربيون مقتولين (٤) . ومن قرأ ﴿ قاتل ﴾ (٥) فله أن لا يقف (٦).",
+      "text_page": 393,
+      "old_text": "﴿ قتل - ١٤٦ - ط ﴾ (٩) ليكون",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ قتل - ١٤٦ - ط ﴾ (٩) ليكون",
+          "new_text": "﴿ قتل - ١٤٦ - ط ﴾ (٩) ليكون قتل (١) النبي إلزام الحجة على من اعتذر في الانهزام بما (٢) سمع من نداء ابليس : ألا أن محمدا قد قتل . والتقدير : ومعه ربيون كثير (٣) ، ولو وصل كان ربيون مقتولين (٤) . ومن قرأ ﴿ قاتل ﴾ (٥) فله أن لا يقف (٦).",
+          "info": "القوس يتم في صفحة ٣٩٣ ويبدأ الإعلال بـ«ليكون» ويتم نصه في صفحة ٣٩٤."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 9,
+          "text_page": 393,
+          "raw_text": "(٩) مبنيا للمفعول ، وهي قراءة : ابن كثير ونافع وأبي عمرو ، وقد رجحها الامام الطبري . انظر : السبعة (٢١٧) ، والتبصرة (٤٦٥) ، وتفسير الطبري ٧/٢٦٤ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن كثير",
+              "verdict": "مبني للمفعول",
+              "comment": "من أصحاب هذه القراءة",
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "نافع",
+              "verdict": "مبني للمفعول",
+              "comment": "من أصحاب هذه القراءة",
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "أبو عمرو",
+              "verdict": "مبني للمفعول",
+              "comment": "من أصحاب هذه القراءة",
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "الطبري",
+              "verdict": "مبني للمفعول",
+              "comment": "رجحها",
+              "book": "تفسير الطبري",
+              "book_ref": "7/264"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "قتل",
+                "trigger": "meaning_change",
+                "reason": "على قراءة ﴿قتل﴾ مبنيا للمفعول يتم الكلام، ومن قرأ ﴿قاتل﴾ فله أن لا يقف؛ ولو وصل لكان الربيون مقتولين.",
+                "scholars": ["ابن كثير", "نافع", "أبو عمرو", "الطبري"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "معه",
+                "trigger": "meaning_change",
+                "reason": "التقدير بعد الوقف: ومعه ربيون كثير، حتى لا يكون الربيون هم المقتولين.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 146,
+      "target_word": "كثير",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿ كثير - ١٤٦ - ج ﴾ لابتداء النفي مع دخول فاء التعقيب.",
+      "text_page": 394,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 146,
+      "target_word": "وما استكانوا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ وما استكانوا - ١٤٦ - ط ﴾.",
+      "text_page": 394,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 148,
+      "target_word": "الآخرة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ الآخرة - ١٤٨ - ط ﴾.",
+      "text_page": 394,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 150,
+      "target_word": "مولاكم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 7,
+      "text": "﴿ مولاكم - ١٥٠ - ج ﴾ لأن الواو (٧) يصلح للاستئناف للحال (٨) ، أي : يليكم [وهو خير] (٩) ناصر (١٠).",
+      "text_page": 394,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 394,
+          "raw_text": "(٧) د : [ الواو ] غير مثبتة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "مولاكم",
+                "trigger": "meaning_change",
+                "reason": "الواو تصلح للاستئناف فيُوقف على ﴿مولاكم﴾، وتصلح للحال فلا يُقطع.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وهو",
+                "trigger": "meaning_change",
+                "reason": "على الاستئناف يُبتدأ ﴿وهو خير الناصرين﴾، أي: يليكم وهو خير ناصر.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 151,
+      "target_word": "سلطانا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿ سلطانا - ١٥١ - ج ﴾ لعطف المختلفين.",
+      "text_page": 394,
+      "old_text": "﴿ سلطانا - ١٥١ - ج ﴾ لعطف",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ سلطانا - ١٥١ - ج ﴾ لعطف",
+          "new_text": "﴿ سلطانا - ١٥١ - ج ﴾ لعطف المختلفين.",
+          "info": "تتمة الإعلال «المختلفين» في أول صفحة ٣٩٥، والقوس تم في صفحة ٣٩٤. لا يُستخرج من صفحة ٣٩٥ وقف آخر."
+        }
+      ],
+      "apparatus": []
+    }
+  ]
+}

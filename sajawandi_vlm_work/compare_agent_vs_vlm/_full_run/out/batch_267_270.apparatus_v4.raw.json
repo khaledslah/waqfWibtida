@@ -1,0 +1,580 @@
+{
+  "source": "apparatus_v4_267_270",
+  "page_numbers": [267, 268, 269, 270],
+  "waqfs": [
+    {
+      "ayah": 175,
+      "target_word": "بالمغفرة",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 3,
+      "text": "﴿بالمغفرة - 175 - ج﴾ للابتداء(3) بالتعجب أو الاستفهام(4) مع [فاء التعقيب](5) ووجه الفصل(6). أجوز(7) وأوضح(8) للمبالغة في الإنكار(9).",
+      "text_page": 267,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 267,
+          "raw_text": "(٣) أ: [لابتداء].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "فما",
+                "trigger": "meaning_change",
+                "reason": "الوقف للابتداء بالتعجب أو الاستفهام مع فاء التعقيب في ﴿فما أصبرهم﴾، والفصل أوضح للمبالغة في الإنكار.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 176,
+      "target_word": "بالحق",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 10,
+      "text": "﴿بالحق - 176 - ط﴾(10) [للابتداء بإن](11).",
+      "text_page": 267,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 10,
+          "text_page": 267,
+          "raw_text": "(١٠) وهو حسن عند ابن الأنباري، وكاف عند الداني والأنصاري والأشموني. انظر: الإيضاح ١/٥٤٢، والمكتفى (١٧٩)، والمقصد (٥٣)، والمنار (٥٣).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "1/542"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "179"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "53"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "53"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "وإن",
+                "trigger": "meaning_change",
+                "reason": "الوقف للابتداء بـ﴿وإن الذين اختلفوا﴾ بعد نزول الكتاب بالحق.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 177,
+      "target_word": "والنبين",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿والنبين - 177 - ج﴾(1) لطول الكلام واختلاف المعنى لأن ما قبله بيان أصل الإيمان وما بعده بيان فرع(2) الشرع.",
+      "text_page": 268,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 268,
+          "raw_text": "(١) وهو ليس بوقف عند النحاس، لأن «آتى» معطوف على «آمن» داخل في الصلة. انظر: القطع (١٧٣). وذكر الأشموني في المنار (٥٣) أنه ليس بوقف، لأن ما بعده معطوف على ما قبله، ثم قال: [وأجاز بعضهم الوقف عليه لطول الكلام]. قلت: ومن البعض السجاوندي.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "النحاس",
+              "verdict": "ليس بوقف",
+              "comment": "لأن «آتى» معطوف على «آمن» داخل في الصلة",
+              "book": "القطع",
+              "book_ref": "173"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "ليس بوقف",
+              "comment": "لأن ما بعده معطوف على ما قبله",
+              "book": "المنار",
+              "book_ref": "53"
+            },
+            {
+              "scholar": "unknown",
+              "verdict": "جائز",
+              "comment": "أجاز بعضهم الوقف عليه لطول الكلام",
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "السجاوندي",
+              "verdict": "جائز",
+              "comment": "من البعض الذين أجازوا الوقف لطول الكلام",
+              "book": null,
+              "book_ref": null
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "والنبين",
+                "trigger": "scholars_disagree",
+                "reason": "النحاس والأشموني يمنعان الوقف لأن ﴿آتى﴾ معطوف على ﴿آمن﴾ داخل في الصلة، وأجازه بعضهم لطول الكلام ومنهم السجاوندي.",
+                "scholars": ["السجاوندي"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وآتى",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بـ﴿وآتى﴾ يقطع عطفه على ﴿آمن﴾ في صلة ﴿من﴾، فيتغير تعلق إيتاء المال بما قبله.",
+                "scholars": ["السجاوندي"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 177,
+      "target_word": "السبيل",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 3,
+      "text": "﴿السبيل - 177 - لا﴾ لأن ما بعده مفعول ما قبله(3).",
+      "text_page": 268,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 268,
+          "raw_text": "(٣) وهو ليس بوقف عند النحاس والأشموني للعطف. انظر: القطع (١٧٤)، والمنار (٥٣). وقال أبو حيان في البحر ٢/٥: [﴿ذوي القربى﴾ وما بعده من المعطوفات هو المفعول الأول، على مذهب الجمهور، و«المال» هو المفعول الثاني، ولما كان المقصود الأعظم هو ايتاء المال على حبه قدم المفعول الثاني اعتناء به لهذا المعنى. وأما على مذهب السهيلي فإن «المال» عنده هو المفعول الأول، و﴿ذوي القربى﴾ وما بعده هو المفعول الثاني، فأتى التقديم على أصله عنده]. اهـ.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "النحاس",
+              "verdict": "ليس بوقف",
+              "comment": "للعطف",
+              "book": "القطع",
+              "book_ref": "174"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "ليس بوقف",
+              "comment": "للعطف",
+              "book": "المنار",
+              "book_ref": "53"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 177,
+      "target_word": "وفي الرقاب",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿وفي الرقاب - 177 - ج﴾ لطول الكلام مع انتهاء شرع(1) المكارم وابتداء اللوازم(2).",
+      "text_page": 268,
+      "old_text": "﴿وفي [صـ268] الرقاب - 177 - ج﴾ لطول الكلام مع انتهاء شرع(1) المكارم وابتداء اللوازم(2).",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿وفي",
+          "new_text": "﴿وفي الرقاب - 177 - ج﴾",
+          "info": "يُفتح القوس في آخر صفحة 268 عند «وفي» ويُغلق في أول صفحة 269: الرقاب - 177 - ج."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 269,
+          "raw_text": "(١) د: [الشرع].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "وأقام",
+                "trigger": "meaning_change",
+                "reason": "الوقف لانتهاء ذكر المكارم وابتداء اللوازم، فيُستأنف بأقام الصلاة وإيتاء الزكاة.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 177,
+      "target_word": "الزكاة",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿الزكاة - 177 - ج﴾.",
+      "text_page": 269,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 177,
+      "target_word": "عاهدوا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 3,
+      "text": "﴿عاهدوا - 177 - ج﴾(3) كذلك، للعدول عن النسق(4) إلى المدح، والتقدير: هم الموفون(5) وأعني الصابرين(6).",
+      "text_page": 269,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 269,
+          "raw_text": "(٣) علامة الوقف من: أ.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "والموفون",
+                "trigger": "meaning_change",
+                "reason": "التقدير: هم الموفون، فالجملة مستأنفة وليست نسقاً على ما قبلها.",
+                "scholars": []
+              },
+              {
+                "start_word": "والصابرين",
+                "trigger": "meaning_change",
+                "reason": "نصب ﴿الصابرين﴾ على المدح بتقدير أعني، وهو عدول عن النسق.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 177,
+      "target_word": "وحين البأس",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿وحين البأس - 177 - ط﴾(1)",
+      "text_page": 270,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 270,
+          "raw_text": "(١) وهو حسن عند ابن الأنباري، وكاف عند النحاس والداني، لأن ما بعده وهو: ﴿أولئك الذين صدقوا﴾ راجع إلى ما قبله. انظر: الإيضاح ١/٥٤٢، والقطع (١٧٥)، والمكتفى (١٨٠).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": "لأن ما بعده وهو ﴿أولئك الذين صدقوا﴾ راجع إلى ما قبله",
+              "book": "الإيضاح",
+              "book_ref": "1/542"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "كاف",
+              "comment": "لأن ما بعده وهو ﴿أولئك الذين صدقوا﴾ راجع إلى ما قبله",
+              "book": "القطع",
+              "book_ref": "175"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": "لأن ما بعده وهو ﴿أولئك الذين صدقوا﴾ راجع إلى ما قبله",
+              "book": "المكتفى",
+              "book_ref": "180"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 177,
+      "target_word": "صدقوا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 2,
+      "text": "﴿صدقوا - 177 - ط﴾(2)",
+      "text_page": 270,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 270,
+          "raw_text": "(٢) وهو مفهوم عند الأنصاري. انظر: المقصد (٥٣).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأنصاري",
+              "verdict": "مفهوم",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "53"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 178,
+      "target_word": "في القتلى",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿في القتلى - 178 - ط﴾(3).",
+      "text_page": 270,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 270,
+          "raw_text": "(٣) وهو حسن عند ابن الأنباري، وكاف عند الداني والأشموني. انظر: الإيضاح ١/٥٤٣، والمكتفى (١٨٠)، والمنار (٥٤).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "1/543"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "180"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "54"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 178,
+      "target_word": "بالأنثى",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿بالأنثى - 178 - ط﴾(4) لأن العفو إعطاء(5) الدية صلحا فكان خارجا عن أصل موجب القتل فكان(6) مستأنفا.",
+      "text_page": 270,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 270,
+          "raw_text": "(٤) وهو حسن عند ابن الأنباري والنحاس والأشموني، وكاف عند الداني. انظر: الإيضاح ١/٥٤٣، والقطع (١٧٥)، والمكتفى (١٨٠)، والمنار (٥٤).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "1/543"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "175"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "54"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "180"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "فمن عفي",
+                "trigger": "meaning_change",
+                "reason": "العفو إعطاء الدية صلحاً خارج عن أصل موجب القتل، فـ﴿فمن عفي﴾ مستأنف.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 178,
+      "target_word": "بإحسان",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 7,
+      "text": "﴿بإحسان - 178 - ط﴾(7).",
+      "text_page": 270,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 270,
+          "raw_text": "(٧) وهو كاف عند أبي حاتم، وصالح عند الأنصاري، وجائز عند الأشموني. انظر: القطع (١٧٥)، والمقصد (٥٤)، والمنار (٥٤).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "أبو حاتم",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "175"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "صالح",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "54"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "جائز",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "54"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 178,
+      "target_word": "ورحمة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 8,
+      "text": "﴿ورحمة - 178 - ط﴾(8) لأن الاعتداء خارج عن أصل الموجب وفرعه فكان مستأنفا.",
+      "text_page": 270,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 270,
+          "raw_text": "(٨) وهو حسن عند ابن الأنباري وتام عند أبي حاتم، وكاف عند الداني والأشموني. انظر: الإيضاح ١/٥٤٣، والقطع (١٧٥) والمكتفى (١٨٠) والمنار (٥٤).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "1/543"
+            },
+            {
+              "scholar": "أبو حاتم",
+              "verdict": "تام",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "175"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "180"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "54"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "فمن اعتدى",
+                "trigger": "meaning_change",
+                "reason": "الاعتداء خارج عن أصل موجب القتل وفرعه، فـ﴿فمن اعتدى﴾ مستأنف.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

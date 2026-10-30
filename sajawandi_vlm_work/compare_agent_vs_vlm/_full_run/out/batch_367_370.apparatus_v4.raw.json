@@ -1,0 +1,708 @@
+{
+  "source": "apparatus_v4_367_370",
+  "page_numbers": [367, 368, 369, 370],
+  "waqfs": [
+    {
+      "ayah": 20,
+      "target_word": "البلاغ",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ البلاغ - ٢٠ - ط ﴾",
+      "text_page": 367,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 21,
+      "target_word": "بغير حق",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿ بغير حق - ٢١ - ز ﴾ لمن قرأ: ويقاتلون، لعدول المعنى عن قوله: ﴿ ويقتلون ﴾(١)",
+      "text_page": 367,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 367,
+          "raw_text": "(١) قال مكي في التبصرة (٤٥٦، ٤٥٧): [قرأ حمزة: ﴿ويقاتلون الذين﴾ بألف وضم الياء من القتال، وقرأ الباقون: ﴿ويقتلون﴾ بغير ألف، من القتل، وفتح الياء]. أه. وانظر: الكشف ١/٣٣٨، والتيسير (٨٧).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "بغير حق",
+                "trigger": "meaning_change",
+                "reason": "الوقف لمن قرأ «ويقاتلون» لعدول المعنى عن قوله «ويقتلون».",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 21,
+      "target_word": "من الناس",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 2,
+      "text": "﴿ من الناس - ٢١ - لا ﴾ لأن ما بعده خبر ان، والفاء لابهام المقرب(٢) إلى الشرط(٢).",
+      "text_page": 367,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 367,
+          "raw_text": "(٢) د: [التقريب].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "من الناس",
+                "trigger": "meaning_change",
+                "reason": "ما بعده خبر إن، والفاء لإبهام الصلة بالشرط، فالوقف يقطع الخبر.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 22,
+      "target_word": "في الدنيا والآخرة",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "﴿ في الدنيا والآخرة - ٢٢ - ز ﴾(٤) للابتداء بالنفي مع اتحاد المقصود.",
+      "text_page": 367,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 367,
+          "raw_text": "(٤) د: علامة الوقف: [ط] وهو خطأ، لدلالة ما بعده عليه.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "unknown",
+              "verdict": "تام",
+              "comment": "في نسخة د علامة الوقف ط، وهو خطأ لدلالة ما بعده عليه",
+              "book": null,
+              "book_ref": null
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "في الدنيا والآخرة",
+                "trigger": "meaning_change",
+                "reason": "الوقف للابتداء بالنفي مع اتحاد المقصود.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 24,
+      "target_word": "معدودات",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "margin_ref": 5,
+      "text": "﴿ معدودات - ٢٤ - ص ﴾ لأن الواو للعطف(٥) أو الحال(٦)، أي: وقد غرهم، تقديره(٧) قالوا مغرورين(٨).",
+      "text_page": 367,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 367,
+          "raw_text": "(٥) ب: [العطف].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "معدودات",
+                "trigger": "meaning_change",
+                "reason": "الواو للعطف أو الحال، فيختلف تعلق ما بعده.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وقد غرهم",
+                "trigger": "meaning_change",
+                "reason": "التقدير: وقد غرهم، قالوا مغرورين.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 26,
+      "target_word": "من تشاء",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 9,
+      "text": "﴿ من تشاء - ٢٦ - ز ﴾ لتناهي الجملتين المتضادتين معنى إلى جملتين(٩) مثلهما(١٠).",
+      "text_page": 367,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 9,
+          "text_page": 367,
+          "raw_text": "(٩) ب، د: [الجملتين].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "من تشاء",
+                "trigger": "meaning_change",
+                "reason": "الوقف لتناهي جملتين متضادتين معنى قبل جملتين مثلهما.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 26,
+      "target_word": "وتذل من تشاء",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ وتذل من تشاء - ٢٦ - ط ﴾",
+      "text_page": 368,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 26,
+      "target_word": "الخير",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ الخير - ٢٦ - ط ﴾",
+      "text_page": 368,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 27,
+      "target_word": "في الليل",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿ في الليل - ٢٧ - ز ﴾ للفصل بين الجملتين المتضادتين",
+      "text_page": 368,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 27,
+      "target_word": "من الحي",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿ من الحي - ٢٧ - ز ﴾ لعطف المتفقتين واطلاق هذه الجملة عن الأولين.",
+      "text_page": 368,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 28,
+      "target_word": "المؤمنين",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿ المؤمنين - ٢٨ - ج ﴾ [ للشرط والعطف ](١).",
+      "text_page": 368,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 368,
+          "raw_text": "(١) ما بين المعقوفين من: د.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "المؤمنين",
+                "trigger": "meaning_change",
+                "reason": "الوقف للشرط والعطف، فتعدد وجه الربط يغيّر موضع الفصل.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 28,
+      "target_word": "تقاة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ تقاة - ٢٨ - ط ﴾",
+      "text_page": 368,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 28,
+      "target_word": "نفسه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ نفسه - ٢٨ - ط ﴾",
+      "text_page": 368,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 29,
+      "target_word": "يعلمه الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ يعلمه الله - ٢٩ - ط ﴾",
+      "text_page": 368,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 29,
+      "target_word": "وما في الأرض",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ وما في الأرض - ٢٩ - ط ﴾",
+      "text_page": 368,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 30,
+      "target_word": "محضرا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿ محضرا - ٣٠ - ج ﴾(٢) والأجوز(٣) أن يوقف(٤) على ﴿ سوء ﴾ تقديره وما عملت(٥) من سوء(٦) كذلك، لأن السوء يوجد محضرا كالخير، و﴿ تود ﴾ مستأنف، لأن صاحب الخير يود لو لم يره من خجل الحياء، كما أن صاحب السوء من وجل الجزاء. والضمير المتحد عائد إلى(٧) ﴿ ما ﴾ أو إلى(٨) جنس العمل(٩).",
+      "text_page": 368,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 368,
+          "raw_text": "(٢) د: علامة الوقف: [ط] والصواب ما أثبتناه بدلالة ما بعده.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "unknown",
+              "verdict": "تام",
+              "comment": "في نسخة د علامة الوقف ط، والصواب ما أثبتناه بدلالة ما بعده",
+              "book": null,
+              "book_ref": null
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "سوء",
+                "trigger": "meaning_change",
+                "reason": "الأجوز أن يوقف على «سوء» لأن السوء يوجد محضرا كالخير.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "تود",
+                "trigger": "meaning_change",
+                "reason": "«تود» مستأنف بعد حضور العمل.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 30,
+      "target_word": "بعيدا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ بعيدا - ٣٠ - ط ﴾",
+      "text_page": 368,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 30,
+      "target_word": "نفسه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ نفسه - ٣٠ - ط ﴾",
+      "text_page": 368,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 31,
+      "target_word": "ذنوبكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ ذنوبكم - ٣١ - ط ﴾",
+      "text_page": 369,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 32,
+      "target_word": "والرسول",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿ والرسول - ٣٢ - ج ﴾ لابتداء الشرط مع فاء التعقيب.",
+      "text_page": 369,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 33,
+      "target_word": "العالمين",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 1,
+      "text": "﴿ العالمين - ٣٣ - لا ﴾ لأن ﴿ ذرية ﴾ نصب على البدل من ﴿ آدم ﴾ ومن بعده(١).",
+      "text_page": 369,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 369,
+          "raw_text": "(١) وضح هذا العكبري في إملائه ١/١٣١ حيث قال في اعراب «ذرية»: [فأما نصبها فعلى البدل من نوح، وما عطف عليه من الاسماء، ولا يجوز أن يكون بدلا من «آدم» لأنه ليس بذرية، ويجوز أن يكون حالا منهم أيضا، والعامل فيها «اصطفى»]. وانظر: منار الهدى (٧٥).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "العكبري",
+              "verdict": "لا يجوز",
+              "comment": "نصب ذرية على البدل من نوح لا من آدم، ويجوز أن تكون حالا والعامل اصطفى",
+              "book": "الإملاء",
+              "book_ref": "1/131"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "العالمين",
+                "trigger": "meaning_change",
+                "reason": "ذرية منصوبة على البدل، فالوقف على العالمين يقطع البدل عن المبدل منه.",
+                "scholars": ["العكبري"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "ذرية",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بذرية يفصلها عما قبلها وهي بدل أو حال عند العكبري، لا استئناف.",
+                "scholars": ["العكبري"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 34,
+      "target_word": "من بعض",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ من بعض - ٣٤ - ط ﴾",
+      "text_page": 369,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 34,
+      "target_word": "عليم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿ عليم - ٣٤ - ج ﴾(٢). للآية على تقدير: واذكر اذ، ولاحتمال(٣) أن اذ متعلق(٤) بالوصفين(٥) أي: سمع(٦) دعاءها، وعلم رجاءها، حين قالت(١).",
+      "text_page": 369,
+      "old_text": "﴿ عليم - ٣٤ - ج ﴾(٢). للآية على تقدير: واذكر اذ، ولاحتمال(٣) أن اذ متعلق(٤) بالوصفين(٥) أي: سمع(٦) دعاءها، وعلم رجاءها، حين",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "حين",
+          "new_text": "حين قالت(١).",
+          "info": "تتمة كلام وقف عليم في صفحة ٣٧٠: قالت."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 369,
+          "raw_text": "(٢) ب: علامة الوقف [ط ج] وهو خطأ لدلالة ما بعده.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "unknown",
+              "verdict": "تام",
+              "comment": "في نسخة ب علامة الوقف ط ج، وهو خطأ لدلالة ما بعده",
+              "book": null,
+              "book_ref": null
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "عليم",
+                "trigger": "meaning_change",
+                "reason": "على تقدير «واذكر إذ» يستأنف ما بعده، وعلى تعلق إذ بالوصفين يتصل بهما.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "إذ",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بإذ على تقدير «واذكر إذ قالت»، بخلاف وصلها بسميع عليم.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 35,
+      "target_word": "مني",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿ مني - ٣٥ - ج ﴾(٢) للابتداء(٢) بإن، ولجواز تقديره: [ لأنك أو فانك ](٣).",
+      "text_page": 370,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 370,
+          "raw_text": "(٢) أ: [لابتداء].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "مني",
+                "trigger": "meaning_change",
+                "reason": "الوقف للابتداء بإن، مع جواز تقدير لأنك أو فإنك.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "إنك",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بإن، وتقديره لأنك أو فإنك.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 36,
+      "target_word": "أنثى",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿ أنثى - ٣٦ - ط ﴾(٤). إلا لمن قرأ: ﴿ بما وضعت ﴾ بالرفع(٥) لأنه(٦) يجعلها من كلامها.",
+      "text_page": 370,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 370,
+          "raw_text": "(٤) أ: علامة الوقف: [ط ج].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "unknown",
+              "verdict": "جائز",
+              "comment": "في نسخة أ علامة الوقف ط ج",
+              "book": null,
+              "book_ref": null
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "أنثى",
+                "trigger": "meaning_change",
+                "reason": "الوقف تام إلا على قراءة «بما وضعت» بالرفع، لأنها حينئذ من كلامها فتتصل.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "بما وضعت",
+                "trigger": "meaning_change",
+                "reason": "على غير الرفع يبتدأ بها من كلام الله، وعلى الرفع تتصل بكلامها.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 36,
+      "target_word": "بما وضعت",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 7,
+      "text": "﴿ بما وضعت - ٣٦ - ط ﴾ بجزم التاء أو رفعها [ على القراءتين ](٧).",
+      "text_page": 370,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 370,
+          "raw_text": "(٧) ما بين المعقوفين من: ب. وانظر المرجعين السابقين.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 36,
+      "target_word": "كالأنثى",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 8,
+      "text": "﴿ كالأنثى - ٣٦ - ج ﴾(٨) للابتداء(٨) بإن، ولاحتمال أن قوله: ﴿ وليس الذكر كالأنثى ﴾ على قراءة: ﴿ وضعت ﴾ بالرفع من قولها متصل متسق(٩) بعض [ الكلام ببعض ](١٠).",
+      "text_page": 370,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 370,
+          "raw_text": "(٨) أ: [لابتداء].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "كالأنثى",
+                "trigger": "meaning_change",
+                "reason": "الوقف للابتداء بإن، مع احتمال اتصال «وليس الذكر كالأنثى» بكلامها على قراءة الرفع.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وإني",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بإن بعد «كالأنثى»، ما لم تتصل الجملة بكلامها على قراءة الرفع.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 37,
+      "target_word": "حسنا",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "margin_ref": 1,
+      "text": "﴿ حسنا - ٣٧ - ص ﴾ لمن قرأ ﴿ وكفلها ﴾ مخففا(١) لتبدل فاعله، فإن(٢) فان فاعل المخفف زكريا، وفاعل(٣) المشدد ضمير اسم(٤) الرب(٥) تعالى كما(٦) في ﴿ أنبتها ﴾.",
+      "text_page": 370,
+      "old_text": "﴿ حسنا - ٣٧ -",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ حسنا - ٣٧ -",
+          "new_text": "﴿ حسنا - ٣٧ - ص ﴾ لمن قرأ ﴿ وكفلها ﴾ مخففا(١) لتبدل فاعله، فإن(٢) فان فاعل المخفف زكريا، وفاعل(٣) المشدد ضمير اسم(٤) الرب(٥) تعالى كما(٦) في ﴿ أنبتها ﴾.",
+          "info": "القوس يفتح في صفحة ٣٧٠، وحرف الوقف ص وتمام الكلام في صفحة ٣٧١ حتى ﴿أنبتها﴾."
+        }
+      ],
+      "apparatus": []
+    }
+  ]
+}

@@ -1,0 +1,595 @@
+{
+  "source": "apparatus_v4_287_290",
+  "page_numbers": [287, 288, 289, 290],
+  "waqfs": [
+    {
+      "ayah": 198,
+      "target_word": "الحرام",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "margin_ref": 6,
+      "text": "﴿الحرام - 198 - ص﴾(6) لعطف المتفقتين.",
+      "text_page": 287,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 287,
+          "raw_text": "(6) وهو كاف عند الأنصاري، وحسن عند الأشموني. انظر المقصد (57)، والمنار (57).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "57"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "57"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 198,
+      "target_word": "هداكم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 7,
+      "text": "﴿هداكم - 198 - ج﴾(7) لأن الواو(8) تصلح حالا واستئنافا، وأن بمعنى قد(1)، فكان الواو(2) للحال، وقيل: إن(3) ﴿أن﴾ بمعنى ما النفي(4)، واللام بمعنى إلا، تقديره: وما كنتم من قبله إلا من الضالين(5).",
+      "text_page": 287,
+      "old_text": "﴿هداكم - 198 - ج﴾(7) لأن الواو(8) تصلح حالا",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿هداكم - 198 - ج﴾(7) لأن الواو(8) تصلح حالا",
+          "new_text": "﴿هداكم - 198 - ج﴾(7) لأن الواو(8) تصلح حالا واستئنافا، وأن بمعنى قد(1)، فكان الواو(2) للحال، وقيل: إن(3) ﴿أن﴾ بمعنى ما النفي(4)، واللام بمعنى إلا، تقديره: وما كنتم من قبله إلا من الضالين(5).",
+          "info": "تتمة تعليل الوقف في صفحة 288"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 287,
+          "raw_text": "(7) وهو كاف عند الداني، وحسن عند الأنصاري. انظر: المكتفى (183)، والمقصد (57). وذكر الأشموني في المنار (57) أنه ليس بوقف لأن الواو بعده للحال، ويكون وقفا إذا كانت استئنافا.",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "هداكم",
+                "trigger": "scholars_disagree",
+                "reason": "الداني يكفيه والأنصاري يحسنه، والأشموني يقول ليس بوقف لأن الواو للحال ويكون وقفا إذا كانت استئنافا.",
+                "scholars": ["الداني", "الأنصاري", "الأشموني"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وإن",
+                "trigger": "meaning_change",
+                "reason": "إن كانت الواو استئنافا وُقف على هداكم وابتُدئ بإن، وإن كانت حالا لم يوقف؛ وتفسير أن بمعنى ما النافية يقلب المعنى إلى: وما كنتم من قبله إلا من الضالين.",
+                "scholars": ["الأشموني"]
+              }
+            ]
+          },
+          "opinions": [
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "183"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "57"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "ليس بوقف",
+              "comment": "لأن الواو بعده للحال، ويكون وقفا إذا كانت استئنافا",
+              "book": "المنار",
+              "book_ref": "57"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 199,
+      "target_word": "واستغفروا الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 6,
+      "text": "﴿واستغفروا الله - 199 - ط﴾(6).",
+      "text_page": 288,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 288,
+          "raw_text": "(6) ج: علامة الوقف: [ج]، وما أثبتناه الصواب للابتداء بإن. وهو كاف عند الأنصاري والأشموني. انظر: المقصد (57)، والمنار (57).",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "إن",
+                "trigger": "meaning_change",
+                "reason": "أُثبت الوقف تاما لأن ما بعده ابتداء بإن، وهو كاف عند الأنصاري والأشموني.",
+                "scholars": ["الأنصاري", "الأشموني"]
+              }
+            ]
+          },
+          "opinions": [
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": "في نسخة ج علامة الوقف ج، وأثبت المتن ط للابتداء بإن",
+              "book": "المقصد",
+              "book_ref": "57"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "57"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 200,
+      "target_word": "ذكرا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿ذكرا - 200 - ط﴾(1).",
+      "text_page": 288,
+      "old_text": "﴿ذكرا -",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ذكرا -",
+          "new_text": "﴿ذكرا - 200 - ط﴾(1).",
+          "info": "انشطر القوس بين صفحة 288 وصفحة 289"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 289,
+          "raw_text": "(1) وهو حسن عند ابن الأنباري والنحاس، وكاف عند الداني والأنصاري، وتام عند الأشموني. انظر: الإيضاح 1/547، والقطع (180)، والمكتفى (183)، والمقصد (57)، والمنار (57).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "1/547"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "180"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "183"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "57"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "تام",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "57"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 202,
+      "target_word": "ما كسبوا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 2,
+      "text": "﴿ما كسبوا - 202 - ط﴾(2).",
+      "text_page": 289,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 289,
+          "raw_text": "(2) وهو كاف عند الداني والأنصاري والأشموني، وذكر الداني بصيغة التمريض أنه تام. انظر: المكتفى (183)، والمقصد (57)، والمنار (57).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": "ذكره بصيغة التمريض أنه تام",
+              "book": "المكتفى",
+              "book_ref": "183"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "57"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "57"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 203,
+      "target_word": "معدودات",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿معدودات - 203 - ط﴾(3) لأن الشرط في بيان حكم آخر.",
+      "text_page": 289,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 289,
+          "raw_text": "(3) وهو حسن عند ابن الأنباري، وكاف عند الداني والأنصاري والأشموني، وذكر النحاس أنه وقف عند أبي حاتم. انظر: الإيضاح 1/547، والقطع (180)، والمكتفى (183)، والمقصد (57)، والمنار (57).",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "فمن",
+                "trigger": "meaning_change",
+                "reason": "الوقف على معدودات لأن الشرط بعده في بيان حكم آخر، فيُبتدأ بفمن.",
+                "scholars": ["ابن الأنباري", "الداني", "الأنصاري", "الأشموني", "أبو حاتم"]
+              }
+            ]
+          },
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "1/547"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "183"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "57"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "57"
+            },
+            {
+              "scholar": "أبو حاتم",
+              "verdict": "وقف",
+              "comment": "ذكره النحاس",
+              "book": "القطع",
+              "book_ref": "180"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 203,
+      "target_word": "عليه",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "﴿عليه - 203 - ج﴾(4) الأولى، لابتداء شرط آخر مع العطف.",
+      "text_page": 289,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 289,
+          "raw_text": "(4) ج: علامة الوقف: [لا] وهو خطأ. وهو كاف عند الأنصاري، وجائز عند الأشموني، ثم قال: [وقال يحيى بن نصير النحوي: لا يوقف على الأول حتى يؤتى بالثاني، وهذا جار في كل معادل]. انظر: المقصد (57)، والمنار (57).",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "عليه",
+                "trigger": "scholars_disagree",
+                "reason": "الأنصاري يكفيه والأشموني يجيزه، ويحيى بن نصير النحوي يمنع الوقف على الأول حتى يؤتى بالثاني لأنه معادل.",
+                "scholars": ["الأنصاري", "الأشموني"]
+              }
+            ],
+            "ibtida": []
+          },
+          "opinions": [
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": "في نسخة ج علامة الوقف لا، وهو خطأ",
+              "book": "المقصد",
+              "book_ref": "57"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "جائز",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "57"
+            },
+            {
+              "scholar": "يحيى بن نصير النحوي",
+              "verdict": "لا يوقف",
+              "comment": "لا يوقف على الأول حتى يؤتى بالثاني، وهذا جار في كل معادل",
+              "book": "المنار",
+              "book_ref": "57"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 203,
+      "target_word": "عليه",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 5,
+      "text": "[﴿عليه - 203 - لا﴾(5) الثاني، لتعلق اللام، وإلا وجب أن يكون متعلق اللام بالشرطين المتقدمين، فلا تقف](1).",
+      "text_page": 289,
+      "old_text": "[﴿عليه - 203 - لا﴾(5) الثاني، لتعلق اللام، وإلا وجب أن",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "[﴿عليه - 203 - لا﴾(5) الثاني، لتعلق اللام، وإلا وجب أن",
+          "new_text": "[﴿عليه - 203 - لا﴾(5) الثاني، لتعلق اللام، وإلا وجب أن يكون متعلق اللام بالشرطين المتقدمين، فلا تقف](1).",
+          "info": "تتمة تعليل الوقف بين صفحة 289 وصفحة 290"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 289,
+          "raw_text": "(5) ب، ج: [(عليه) لا]، وما أثبتناه لموافقة ما قبله، حيث قال: الأولى، ثم ذكر علامة الوقف الجائز. وقد نص الأشموني في المنار (57) عليه بقوله: [﴿عليه﴾ الثاني ليس بوقف، لتعلق ما بعده به، أي: لمن اتقى الله في حجه وغيره].",
+          "continuation": {
+            "status": "read",
+            "page": 290
+          },
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأشموني",
+              "verdict": "ليس بوقف",
+              "comment": "لتعلق ما بعده به، أي: لمن اتقى الله في حجه وغيره",
+              "book": "المنار",
+              "book_ref": "57"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 203,
+      "target_word": "اتقى",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 2,
+      "text": "﴿اتقى - 203 - ط﴾(2).",
+      "text_page": 290,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 290,
+          "raw_text": "(2) وهو حسن عند ابن الأنباري والأنصاري والأشموني، وكاف عند الداني، وذكر النحاس أنه وقف عند أبي حاتم. انظر: الإيضاح 1/547، والقطع (180)، والمكتفى (183)، والمقصد (57)، والمنار (57).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "1/547"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "57"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "57"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "183"
+            },
+            {
+              "scholar": "أبو حاتم",
+              "verdict": "وقف",
+              "comment": "ذكره النحاس",
+              "book": "القطع",
+              "book_ref": "180"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 204,
+      "target_word": "قلبه",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 3,
+      "text": "﴿قلبه - 204 - لا﴾(3) لاختلاف النظم والمعنى.",
+      "text_page": 290,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 290,
+          "raw_text": "(3) انظر: المقصد (57)، والمنار (57)، فقد ذكرا عدم الوقف لهذه العلة.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأنصاري",
+              "verdict": "لا يوقف",
+              "comment": "ذكر عدم الوقف لهذه العلة",
+              "book": "المقصد",
+              "book_ref": "57"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "لا يوقف",
+              "comment": "ذكر عدم الوقف لهذه العلة",
+              "book": "المنار",
+              "book_ref": "57"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 205,
+      "target_word": "والنسل",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿والنسل - 205 - ط﴾(4) لأن الواو للحال.",
+      "text_page": 290,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 290,
+          "raw_text": "(4) وهو تام عند ابن الأنباري والداني، وكاف عند الأنصاري والأشموني. انظر: الإيضاح 1/548، والمكتفى (183)، والمقصد (57)، والمنار (57).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "تام",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "1/548"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "تام",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "183"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "57"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "57"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 206,
+      "target_word": "جهنم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿جهنم - 206 - ط﴾(1).",
+      "text_page": 290,
+      "old_text": "﴿جهنم -",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿جهنم -",
+          "new_text": "﴿جهنم - 206 - ط﴾(1).",
+          "info": "انشطر القوس بين صفحة 290 وصفحة 291 واكتفيت بتتمة هذا الوقف من متن 291"
+        }
+      ],
+      "apparatus": []
+    }
+  ]
+}

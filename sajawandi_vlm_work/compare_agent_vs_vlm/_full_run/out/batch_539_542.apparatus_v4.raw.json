@@ -1,0 +1,795 @@
+{
+  "source": "apparatus_v4_539_542",
+  "page_numbers": [539, 540, 541, 542],
+  "waqfs": [
+    {
+      "ayah": 49,
+      "target_word": "دينهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿دينهم - ٤٩ - ط﴾",
+      "text_page": 539,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 50,
+      "target_word": "كفروا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 1,
+      "text": "﴿كفروا - ٥٠ - لا﴾(١) لأن فاعل ﴿يتوفى﴾ : ﴿الملائكة﴾(٢) . وما قيل أن المتوفي هاهنا(١) الله لا يصح(٢) ، إذ لا اتصال للملائكة بالجملة إلا بإسناد الفعل إليهم ، على أن الكفار لا يستحقون أن يكون الله تعالى متوفيهم(٣) بلا واسطة(٤) .",
+      "text_page": 539,
+      "old_text": "ص٥٣٩: ﴿كفروا - ٥٠ - لا﴾(١) لأن فاعل ﴿يتوفى﴾ : ﴿الملائكة﴾(٢) . | ص٥٤٠: وما قيل أن المتوفي هاهنا(١) الله لا يصح(٢) ، إذ لا اتصال للملائكة بالجملة إلا بإسناد الفعل إليهم ، على أن الكفار لا يستحقون أن يكون الله تعالى متوفيهم(٣) بلا واسطة(٤) .",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿كفروا - ٥٠ - لا﴾(١) لأن فاعل ﴿يتوفى﴾ : ﴿الملائكة﴾(٢) .",
+          "new_text": "﴿كفروا - ٥٠ - لا﴾(١) لأن فاعل ﴿يتوفى﴾ : ﴿الملائكة﴾(٢) . وما قيل أن المتوفي هاهنا(١) الله لا يصح(٢) ، إذ لا اتصال للملائكة بالجملة إلا بإسناد الفعل إليهم ، على أن الكفار لا يستحقون أن يكون الله تعالى متوفيهم(٣) بلا واسطة(٤) .",
+          "info": "تعليل الوقف يبدأ في ص ٥٣٩ ويكتمل في ص ٥٤٠ قبل ﴿وأدبارهم﴾"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 539,
+          "raw_text": "(١) أ : علامة الوقف : [ ج ، لا ] ، وفي د : علامة الوقف : [ ط ] وهو خطأ ، بدلالة ما بعده .",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "كفروا",
+                "trigger": "meaning_change",
+                "reason": "الوقف يفصل فعل «يتوفى» عن فاعله «الملائكة» فيتغير إسناد التوفي، ولذلك مُنع في المتن. ونسخة أ تثبت العلامة [ج ، لا] ونسخة د [ط] والأخير خطأ عند المحشي.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "الملائكة",
+                "trigger": "meaning_change",
+                "reason": "لو استؤنف من «الملائكة» لم تبق فاعلًا لـ«يتوفى» وصارت جملة مستقلة، وهو خلاف جعلها فاعل الفعل.",
+                "scholars": []
+              }
+            ]
+          },
+          "opinions": [
+            {
+              "scholar": "unknown",
+              "verdict": "جائز",
+              "comment": "نسخة أ: علامة الوقف [ج ، لا]",
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "unknown",
+              "verdict": "لا يوقف",
+              "comment": "نسخة أ: علامة الوقف [ج ، لا]",
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "unknown",
+              "verdict": "تام",
+              "comment": "نسخة د: علامة الوقف [ط] وهو خطأ بدلالة ما بعده",
+              "book": null,
+              "book_ref": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 50,
+      "target_word": "وأدبارهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 5,
+      "text": "﴿وأدبارهم - ٥٠ - ج﴾(٥) للإضمار ، أي : ويقولون ذوقوا ، مع ظاهر العطف .",
+      "text_page": 540,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 540,
+          "raw_text": "(٥) أ : علامة الوقف ساقطة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "وأدبارهم",
+                "trigger": "meaning_change",
+                "reason": "الوقف على تقدير إضمار «ويقولون» قبل «ذوقوا»، والوصل على ظاهر العطف.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "ذوقوا",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بـ«ذوقوا» مبني على إضمار «ويقولون»، لا على عطفها ظاهرًا بما قبلها.",
+                "scholars": []
+              }
+            ]
+          },
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 51,
+      "target_word": "للعبيد",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 6,
+      "text": "﴿للعبيد - ٥١ - لا﴾ لتعلق الكاف(٦) .",
+      "text_page": 540,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 540,
+          "raw_text": "(٦) أ : ورد بعدها إحالة في الهامش ، ولكن ليس عليها علامة تصحيح ، وهي توضيح متعلق الكاف ، حيث قال : [ يعني ضربتهم الملائكة كما ضربوا آل فرعون ، أو كفروا ككفرهم ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "للعبيد",
+                "trigger": "meaning_change",
+                "reason": "لا يوقف لتعلق كاف التشبيه، وقطعها يفصل المثل. وتوضيح الهامش: ضربتهم الملائكة كما ضربوا آل فرعون، أو كفروا ككفرهم.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          },
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 52,
+      "target_word": "فرعون",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿فرعون - ٥٢ - لا﴾ للعطف .",
+      "text_page": 540,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 52,
+      "target_word": "والذين من قبلهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿والذين من قبلهم - ٥٢ - ط﴾",
+      "text_page": 540,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 52,
+      "target_word": "بذنوبهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿بذنوبهم - ٥٢ - ط﴾",
+      "text_page": 540,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 53,
+      "target_word": "بأنفسهم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿بأنفسهم - ٥٣ - لا﴾ لعطف ﴿أن﴾ على ﴿بأن﴾ .",
+      "text_page": 540,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 53,
+      "target_word": "عليم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿عليم - ٥٣ - لا﴾ للكاف .",
+      "text_page": 540,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 54,
+      "target_word": "فرعون",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 7,
+      "text": "﴿فرعون - ٥٤ - لا﴾ للعطف(٧) .",
+      "text_page": 540,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 540,
+          "raw_text": "(٧) أ : [ لعطف ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "فرعون",
+                "trigger": "meaning_change",
+                "reason": "لا يوقف لأن ما بعده معطوف، فالوقف يقطع العطف.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          },
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 54,
+      "target_word": "والذين من قبلهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿والذين من قبلهم - ٥٤ - ط﴾",
+      "text_page": 540,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 54,
+      "target_word": "بآيات ربهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 8,
+      "text": "﴿بآيات ربهم - ٥٤ - ج﴾(٨) [ لاختلاف الجملتين مع الفاء ](٩) .",
+      "text_page": 540,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 540,
+          "raw_text": "(٨) ب ، ج : ما بين المعقوفين غير مثبت .",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "بآيات ربهم",
+                "trigger": "meaning_change",
+                "reason": "الوقف جائز لاختلاف الجملتين مع الفاء: الوصل يجعل الفاء عاطفة والوقف يفصل الجملتين.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          },
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 54,
+      "target_word": "آل فرعون",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿آل فرعون - ٥٤ - ج﴾ لأن الواو(١) يصلح(٢) [ للاستئناف(٣) والحال ](٤) .",
+      "text_page": 540,
+      "old_text": "ص٥٤٠: ﴿آل | ص٥٤١: فرعون - ٥٤ - ج﴾ لأن الواو(١) يصلح(٢) [ للاستئناف(٣) والحال ](٤) .",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿آل",
+          "new_text": "﴿آل فرعون - ٥٤ - ج﴾ لأن الواو(١) يصلح(٢) [ للاستئناف(٣) والحال ](٤) .",
+          "info": "القوس يُفتح في آخر ص ٥٤٠ بـ﴿آل ويُغلق في أول ص ٥٤١"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 541,
+          "raw_text": "(١) أ : [ ويصلح ] بزيادة الواو .",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "آل فرعون",
+                "trigger": "meaning_change",
+                "reason": "الواو بعده تحتمل الاستئناف فيجوز الوقف، أو الحال فيوصل، فيختلف تعلق «وكل كانوا ظالمين».",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وكل",
+                "trigger": "meaning_change",
+                "reason": "على الاستئناف يُبتدأ بالواو في «وكل»، وعلى الحال توصل بما قبلها.",
+                "scholars": []
+              }
+            ]
+          },
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 55,
+      "target_word": "لا يؤمنون",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "﴿لا يؤمنون - ٥٥ - ج﴾ لأن ﴿الذين﴾ يصلح بدلا عن ضمير ﴿يؤمنون﴾ ، ويصلح خبر محذوف ، أي : هم الذين(٤) ، والوصل أجوز لاتصال المعنى .",
+      "text_page": 541,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 541,
+          "raw_text": "(٤) انظر : إعراب القرآن للعكبري ٨/٢ ، ٩ ، والبحر المحيط ٤/٥٠٨ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "لا يؤمنون",
+                "trigger": "meaning_change",
+                "reason": "«الذين» يصلح بدلًا من ضمير «يؤمنون» فيوصل، أو خبرًا لمحذوف فيوقف، والوصل أجوز لاتصال المعنى.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "الذين",
+                "trigger": "meaning_change",
+                "reason": "على تقدير «هم الذين» يُستأنف بـ«الذين»، وعلى البدل يوصل بما قبله.",
+                "scholars": []
+              }
+            ]
+          },
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 58,
+      "target_word": "على سواء",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿على سواء - ٥٨ - ط﴾",
+      "text_page": 541,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 59,
+      "target_word": "سبقوا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿سبقوا - ٥٩ - ط﴾ إلا(٥) لمن قرأ : ﴿أنهم﴾ بالفتح(٦) .",
+      "text_page": 541,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 541,
+          "raw_text": "(٥) د : [ لا ] بسقوط الهمزة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "سبقوا",
+                "trigger": "meaning_change",
+                "reason": "الوقف تام إلا لمن قرأ «أنهم» بالفتح، فتتعلق بما قبلها ويمتنع الفصل.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "إنهم",
+                "trigger": "meaning_change",
+                "reason": "على كسر الهمزة تُستأنف «إنهم لا يعجزون»، وعلى الفتح لا ابتداء لأنها معمولة للحسبان.",
+                "scholars": []
+              }
+            ]
+          },
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 60,
+      "target_word": "من دونهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 7,
+      "text": "﴿من دونهم - ٦٠ - ج﴾(٧) لأن قوله : ﴿لا تعلمونهم﴾ يصلح وصفا لآخرين(٨) ، ويصلح استئنافا .",
+      "text_page": 541,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 541,
+          "raw_text": "(٧) د : علامة الوقف ساقطة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "من دونهم",
+                "trigger": "meaning_change",
+                "reason": "«لا تعلمونهم» يصلح وصفًا لـ«آخرين» فيوصل، أو استئنافًا فيوقف.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "لا تعلمونهم",
+                "trigger": "meaning_change",
+                "reason": "على الاستئناف يُبتدأ بـ«لا تعلمونهم»، وعلى الوصف توصل بـ«آخرين».",
+                "scholars": []
+              }
+            ]
+          },
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 60,
+      "target_word": "لا تعلمونهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 9,
+      "text": "﴿لا تعلمونهم - ٦٠ - ج﴾(٩) كذلك(١٠) إلا أن الوقف هاهنا(١) أجوز لتعظيم اسم(٢) الله تعالى .",
+      "text_page": 541,
+      "old_text": "ص٥٤١: ﴿لا تعلمونهم - ٦٠ - ج﴾(٩) كذلك(١٠) إلا أن الوقف | ص٥٤٢: هاهنا(١) أجوز لتعظيم اسم(٢) الله تعالى .",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿لا تعلمونهم - ٦٠ - ج﴾(٩) كذلك(١٠) إلا أن الوقف",
+          "new_text": "﴿لا تعلمونهم - ٦٠ - ج﴾(٩) كذلك(١٠) إلا أن الوقف هاهنا(١) أجوز لتعظيم اسم(٢) الله تعالى .",
+          "info": "التعليل يبدأ في ص ٥٤١ ويكتمل في ص ٥٤٢ قبل ﴿الله يعلمهم﴾"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 9,
+          "text_page": 541,
+          "raw_text": "(٩) علامة الوقف من : أ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "لا تعلمونهم",
+                "trigger": "meaning_change",
+                "reason": "الوقف هنا أجوز من نظيره لتعظيم اسم الله، فيُفصل علم الله عن نفي علمهم.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "الله",
+                "trigger": "meaning_change",
+                "reason": "يُبتدأ بـ«الله يعلمهم» تعظيمًا للاسم بعد الوقف على «لا تعلمونهم».",
+                "scholars": []
+              }
+            ]
+          },
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 60,
+      "target_word": "الله يعلمهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿الله يعلمهم - ٦٠ - ط﴾",
+      "text_page": 542,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 61,
+      "target_word": "على الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿على الله - ٦١ - ط﴾",
+      "text_page": 542,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 62,
+      "target_word": "فإن حسبك الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿فإن حسبك الله - ٦٢ - ط﴾",
+      "text_page": 542,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 62,
+      "target_word": "وبالمؤمنين",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 3,
+      "text": "[ ﴿وبالمؤمنين - ٦٢ - لا﴾(٣) ]",
+      "text_page": 542,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 542,
+          "raw_text": "(٣) ما بين المعقوفين من : ج .",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 63,
+      "target_word": "بين قلوبهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿بين قلوبهم - ٦٣ الأول - ط﴾(٤)",
+      "text_page": 542,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 542,
+          "raw_text": "(٤) ب : [ الأولى ط ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 63,
+      "target_word": "بينهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿بينهم - ٦٣ - ط﴾",
+      "text_page": 542,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 65,
+      "target_word": "على القتال",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿على القتال - ٦٥ - ط﴾",
+      "text_page": 542,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 65,
+      "target_word": "مائتين",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿مائتين - ٦٥ - ج﴾ لابتداء الشرط مع العطف .",
+      "text_page": 542,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 66,
+      "target_word": "ضعفا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ضعفا - ٦٦ - ط﴾",
+      "text_page": 542,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 66,
+      "target_word": "مائتين",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿مائتين - ٦٦ - ج﴾ لابتداء الشرط مع العطف .",
+      "text_page": 542,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 66,
+      "target_word": "بإذن الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿بإذن الله - ٦٦ - ط﴾",
+      "text_page": 542,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 67,
+      "target_word": "في الأرض",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿في الأرض - ٦٧ - ط﴾ لتقدير الاستفهام ، أي : أتريدون(٥) .",
+      "text_page": 542,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 542,
+          "raw_text": "(٥) د : [ تريدون ] بسقوط الهمزة . وانظر : منار الهدى (١٦١) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "في الأرض",
+                "trigger": "meaning_change",
+                "reason": "الوقف لتقدير استفهام بعده، أي «أتريدون»، فالجملة التالية ليست صلة لما قبلها.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "أتريدون",
+                "trigger": "meaning_change",
+                "reason": "الابتداء على تقدير همزة الاستفهام: أتريدون عرض الدنيا. وفي نسخة د سقطت الهمزة.",
+                "scholars": []
+              }
+            ]
+          },
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 67,
+      "target_word": "عرض الدنيا",
+      "verdict_label": "ق",
+      "verdict": "قيل فيه وقف",
+      "margin_ref": 6,
+      "text": "﴿عرض الدنيا - ٦٧ - ق﴾(٦) قد قيل ، لأن قوله(٧) : ﴿والله﴾(٨) مبتدأ(٩) ، والوصل أولى لأن الواو بمنزلة الحال .",
+      "text_page": 542,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 542,
+          "raw_text": "(٦) علامة الوقف من : ب .",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "عرض الدنيا",
+                "trigger": "scholars_disagree",
+                "reason": "قد قيل بالوقف لأن «والله» مبتدأ، والوصل أولى لأن الواو بمنزلة الحال.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "والله",
+                "trigger": "meaning_change",
+                "reason": "على الوقف تُستأنف «والله» مبتدأ، وعلى الوصل تكون الواو للحال.",
+                "scholars": []
+              }
+            ]
+          },
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 67,
+      "target_word": "الآخرة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿الآخرة - ٦٧ - ط﴾",
+      "text_page": 542,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 69,
+      "target_word": "واتقوا الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿واتقوا الله - ٦٩ - ط﴾",
+      "text_page": 542,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 69,
+      "target_word": "رحيم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿رحيم - ٦٩ - ط﴾",
+      "text_page": 542,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    }
+  ]
+}

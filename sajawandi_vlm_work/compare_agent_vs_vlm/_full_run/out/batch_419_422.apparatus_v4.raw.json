@@ -1,0 +1,839 @@
+{
+  "source": "apparatus_v4_419_422",
+  "page_numbers": [419, 420, 421, 422],
+  "waqfs": [
+    {
+      "ayah": 20,
+      "target_word": "مكان زوج",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 1,
+      "text": "﴿مكان زوج - ٢٠ - لا﴾ لأن الواو للحال، أي: وقد آتيتم (١).",
+      "text_page": 419,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 419,
+          "raw_text": "(١) وهذا هو الذي ظهر لأبي حيان في البحر ٣/٢٠٥.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 20,
+      "target_word": "منه شيئا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿منه شيئا - ٢٠ - ط﴾.",
+      "text_page": 419,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 22,
+      "target_word": "قد سلف",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿قد سلف - ٢٢ - ط﴾.",
+      "text_page": 419,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 22,
+      "target_word": "ومقتا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ومقتا - ٢٢ - ط﴾.",
+      "text_page": 419,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 23,
+      "target_word": "دخلتم بهن",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿دخلتم بهن - ٢٣، الأولى - ز﴾ لابتداء الشرط مع اتحاد المقصود.",
+      "text_page": 419,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 23,
+      "target_word": "فلا جناح عليكم",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿فلا جناح عليكم - ٢٣ - ز﴾ (٢) كذلك (٣) لأن جملة الشرط معترضة (٤)، ﴿وحلائل﴾ معطوفة على (٥) ﴿وربائبكم﴾.",
+      "text_page": 419,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 419,
+          "raw_text": "(٢) ج، د: علامة الوقف ساقطة.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "فلا جناح عليكم",
+                "trigger": "meaning_change",
+                "reason": "جملة الشرط معترضة، فالوقف عليها يختم الاعتراض قبل عود العطف.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وحلائل",
+                "trigger": "meaning_change",
+                "reason": "﴿وحلائل﴾ معطوفة على ﴿وربائبكم﴾، فيُستأنف بها سرد المحرمات بعد جملة الشرط المعترضة.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 23,
+      "target_word": "أصلابكم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿أصلابكم - ٢٣ - لا﴾ للعطف، أي: وحرم الجمع بين الأختين.",
+      "text_page": 419,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 23,
+      "target_word": "إلا ما قد سلف",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿إلا ما قد سلف - ٢٣ - ط﴾.",
+      "text_page": 419,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 23,
+      "target_word": "رحيما",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 6,
+      "text": "﴿رحيما - ٢٣ - لا﴾ لأن قوله ﴿والمحصنات﴾ معطوف على ما قبله (٦) من المحرمات.",
+      "text_page": 419,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 419,
+          "raw_text": "(٦) أ، ب، د: [ما قبلها] وما أثبتناه لمناسبة السياق.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 24,
+      "target_word": "إلا ما ملكت أيمانكم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 7,
+      "text": "﴿إلا ما ملكت أيمانكم - ٢٤ - ج﴾ لأن قوله: ﴿كتاب الله﴾ يحتمل نصبه بمحذوف، أي: كتب الله كتابا، فلما حذف الفعل أضيف المصدر إلى الفاعل، ويحتمل أنه مصدر ما تقدم على المعنى، لأن التحريم والكتابة من الله بمعنى (٧)، وإلا حسن أن يجعل مفعولا له أي حرم لكتاب الله (١).",
+      "text_page": 419,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 419,
+          "raw_text": "(٧) وضح هذا أبو حيان في البحر ٣/٢١٤، حيث قال: [﴿كتاب الله عليكم﴾ انتصب بإضمار فعل، وهو فعل مؤكد لمضمون الجملة السابقة من قوله: ﴿حرمت عليكم﴾ وكأنه قيل: كتب الله عليكم تحريم ذلك كتابا]. اهـ.",
+          "continuation": {"status": "read", "page": 420},
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "إلا ما ملكت أيمانكم",
+                "trigger": "meaning_change",
+                "reason": "ما بعده ﴿كتاب الله﴾ يحتمل النصب بمضمر أو المصدرية أو المفعول لأجله، فيختلف المعنى بالوقف عليه.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "كتاب الله",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بـ﴿كتاب الله﴾ يجعله تأكيداً لمضمون التحريم أو مفعولاً لأجله، لا تتمة لفظية لما قبله.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 24,
+      "target_word": "عليكم",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿عليكم - ٢٤ - ز﴾ (٢) فمن قرأ: ﴿وأحل﴾ بالفتح (٣) لم يحسن الوقف له على ﴿عليكم﴾ لأنه يكون معطوفا على كتب (٤) الله كما قدر (٥). ﴿وأحل﴾ بالضم (٦) ينعطف على حرمت (٧) فيجوز (٨) الوقف لطول الكلام.",
+      "text_page": 420,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 420,
+          "raw_text": "(٢) ج: علامة الوقف ساقطة، وما أثبتناه لقوله بعد: [فيجوز الوقف لطول الكلام].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "عليكم",
+                "trigger": "meaning_change",
+                "reason": "على قراءة فتح ﴿وأحل﴾ لم يحسن الوقف لأن العطف على ﴿كتب﴾، وعلى الضم يجوز الوقف لطول الكلام.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وأحل",
+                "trigger": "meaning_change",
+                "reason": "على قراءة الضم يُبتدأ بـ﴿وأحل﴾ لأنه ينعطف على ﴿حرمت﴾ لا على ﴿كتب الله﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 24,
+      "target_word": "مسافحين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿مسافحين - ٢٤ - ط﴾ لابتداء حكم المتعة.",
+      "text_page": 420,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 24,
+      "target_word": "فريضة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿فريضة - ٢٤ - ط﴾.",
+      "text_page": 420,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 24,
+      "target_word": "الفريضة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿الفريضة - ٢٤ - ط﴾.",
+      "text_page": 420,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 25,
+      "target_word": "من فتياتكم المؤمنات",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من فتياتكم المؤمنات - ٢٥ - ط﴾.",
+      "text_page": 420,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 25,
+      "target_word": "بإيمانكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿بإيمانكم - ٢٥ - ط﴾.",
+      "text_page": 420,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 25,
+      "target_word": "من بعض",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 10,
+      "text": "﴿من بعض - ٢٥ - ج﴾ لعطف الجملتين المختلفتين (١٠).",
+      "text_page": 420,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 10,
+          "text_page": 420,
+          "raw_text": "(١٠) ج: [المختلفتين] ساقطة.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 25,
+      "target_word": "أخدان",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 12,
+      "text": "﴿أخدان - ٢٥ - ج﴾ كذلك (١٢) (١١).",
+      "text_page": 420,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 12,
+          "text_page": 420,
+          "raw_text": "(١٢) ب: [كذلك] ساقطة.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 25,
+      "target_word": "من العذاب",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من العذاب - ٢٥ - ط﴾.",
+      "text_page": 421,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 25,
+      "target_word": "العنت منكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿العنت منكم - ٢٥ - ط﴾ لأن التقدير: والصبر خير لكم (١).",
+      "text_page": 421,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 421,
+          "raw_text": "(١) ب، د: [خير لكم] غير مثبت. والوقف هنا حسن عند ابن الأنباري، والأشموني، وكاف عند النحاس، والداني، والأنصاري. انظر: الإيضاح ٢/٥٩٦، والقطع (٢٤٩)، والمكتفى (٢١٩)، والمقصد (٩٩)، والمنار (٩٩).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "2/596"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "99"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "249"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "219"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "99"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 25,
+      "target_word": "خير لكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿خير لكم - ٢٥ - ط﴾.",
+      "text_page": 421,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 26,
+      "target_word": "ويتوب عليكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ويتوب عليكم - ٢٦ - ط﴾.",
+      "text_page": 421,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 28,
+      "target_word": "أن يخفف عنكم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿أن يخفف عنكم - ٢٨ - ج﴾ [لانقطاع النظم مع اتحاد المعنى] (٢) أي: يخفف (٣) عنكم لضعفكم.",
+      "text_page": 421,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 421,
+          "raw_text": "(٢) ج: ما بين المعقوفين غير مثبت.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 29,
+      "target_word": "أنفسكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿أنفسكم - ٢٩ - ط﴾.",
+      "text_page": 421,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 30,
+      "target_word": "نارا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿نارا - ٣٠ - ط﴾.",
+      "text_page": 421,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 32,
+      "target_word": "على بعض",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿على بعض - ٣٢ - ط﴾.",
+      "text_page": 421,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 32,
+      "target_word": "اكتسبن",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿اكتسبن - ٣٢ - ط﴾.",
+      "text_page": 421,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 32,
+      "target_word": "من فضله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من فضله - ٣٢ - ط﴾.",
+      "text_page": 421,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 33,
+      "target_word": "والأقربون",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿والأقربون - ٣٣ - ط﴾ لأن ﴿والذين﴾ مبتدأ، والفاء في (٤) خبره لاحتمال عمومه بتضمن (٥) معنى الشرط.",
+      "text_page": 421,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 421,
+          "raw_text": "(٤) ج: [في] ساقطة.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "والأقربون",
+                "trigger": "meaning_change",
+                "reason": "ما بعده جملة جديدة: ﴿والذين﴾ مبتدأ، وخبره بالفاء لاحتمال عمومه بتضمن معنى الشرط.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "والذين",
+                "trigger": "meaning_change",
+                "reason": "يُبتدأ بـ﴿والذين﴾ لأنه مبتدأ، والفاء في خبره لتضمنه معنى الشرط.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 33,
+      "target_word": "نصيبهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿نصيبهم - ٣٣ - ط﴾.",
+      "text_page": 422,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 34,
+      "target_word": "من أموالهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من أموالهم - ٣٤ - ط﴾ لأن ﴿الصالحات﴾ مبتدأ، و﴿قانتات﴾ خبره.",
+      "text_page": 422,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 34,
+      "target_word": "بما حفظ الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿بما حفظ الله - ٣٤ - ط﴾.",
+      "text_page": 422,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 34,
+      "target_word": "واضربوهن",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿واضربوهن - ٣٤ - ج﴾ لابتداء الشرط مع فاء التعقيب.",
+      "text_page": 422,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 34,
+      "target_word": "سبيلا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿سبيلا - ٣٤ - ط﴾.",
+      "text_page": 422,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 35,
+      "target_word": "من أهلها",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿من أهلها - ٣٥ - ج﴾ لأن ﴿أن﴾ للشرط مع اتحاد الكلام.",
+      "text_page": 422,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 35,
+      "target_word": "بينهما",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿بينهما - ٣٥ - ط﴾.",
+      "text_page": 422,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 36,
+      "target_word": "وابن السبيل",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿وابن السبيل - ٣٦ - لا﴾ للعطف.",
+      "text_page": 422,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 36,
+      "target_word": "أيمانكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿أيمانكم - ٣٦ - ط﴾.",
+      "text_page": 422,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 36,
+      "target_word": "فخورا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 1,
+      "text": "﴿فخورا - ٣٦ - لا﴾ لأن ﴿الذين﴾ بدل ﴿من﴾، و﴿من﴾ يصلح لإبهامه للجمع (١).",
+      "text_page": 422,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 422,
+          "raw_text": "(١) انظر: البيان ١/٢٥٣، وإعراب القرآن للعكبري ١/١٧٩، والبحر المحيط ٣/٢٤٧.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 37,
+      "target_word": "من فضله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من فضله - ٣٧ - ط﴾.",
+      "text_page": 422,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 37,
+      "target_word": "مهينا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿مهينا - ٣٧ - ج﴾ لاحتمال الواو (٢) الاستئناف (٣) والعطف.",
+      "text_page": 422,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 422,
+          "raw_text": "(٢) ج: [واو].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "مهينا",
+                "trigger": "meaning_change",
+                "reason": "الواو تحتمل الاستئناف فيُوقف على ﴿مهينا﴾، والعطف فيُوصل.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "والذين",
+                "trigger": "meaning_change",
+                "reason": "على وجه الاستئناف يُبتدأ بما بعد الواو، وهو ﴿والذين﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 38,
+      "target_word": "باليوم الآخر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿باليوم الآخر - ٣٨ - ط﴾ على جعل ﴿والذين﴾ مبتدأ، وحذف الخبر، أي: فأولئك قرينهم الشيطان (٤).",
+      "text_page": 422,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 422,
+          "raw_text": "(٤) انظر: المرجع السابق.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 39,
+      "target_word": "مما رزقهم الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿مما رزقهم الله - ٣٩ - ط﴾ (٥).",
+      "text_page": 422,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 422,
+          "raw_text": "(٥) د: علامة الوقف ساقطة.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 40,
+      "target_word": "ذرة",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 6,
+      "text": "﴿ذرة - ٤٠ - ج﴾ (٦) لانقطاع النظم مع اتفاق المعنى، أي: لا يظلم بنقص الثواب، ومع ذلك يضاعفه.",
+      "text_page": 422,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 422,
+          "raw_text": "(٦) د: علامة الوقف: [ط].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "ذرة",
+                "trigger": "meaning_change",
+                "reason": "انقطع النظم والمعنى متفق: نفي الظلم بنقص الثواب، ومع ذلك مضاعفة الحسنة.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وإن",
+                "trigger": "meaning_change",
+                "reason": "ما بعد الوقف شرط جديد، ومعناه مضاعفة الحسنة مع بقاء اتفاق المعنى.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 41,
+      "target_word": "شهيدا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿شهيدا - ٤١ - ط﴾.",
+      "text_page": 422,
+      "old_text": "﴿شهيدا - ٤١ -",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿شهيدا - ٤١ -",
+          "new_text": "﴿شهيدا - ٤١ - ط﴾",
+          "info": "فُتح القوس في آخر صفحة ٤٢٢، وحرف الوقف ط والقوس الختام في صدر صفحة ٤٢٣."
+        }
+      ],
+      "apparatus": []
+    }
+  ]
+}

@@ -1,0 +1,637 @@
+{
+  "source": "apparatus_v4_363_366",
+  "page_numbers": [363, 364, 365, 366],
+  "waqfs": [
+    {
+      "ayah": 7,
+      "target_word": "آمنا به",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 7,
+      "text": "﴿آمنا به - ٧ - لا﴾ لأن قوله ﴿كل من عند ربنا﴾ من مقولهم، فإن التسليم من تمام (٧) الإيمان.",
+      "text_page": 363,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 363,
+          "raw_text": "(٧) ج: [علم].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 7,
+      "target_word": "من عند ربنا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 8,
+      "text": "﴿من عند ربنا - ٧ - ج﴾ لاحتمال أن ما بعده من (٨) مقولهم، والأظهر أنه ابتداء تنبيه على الاتعاظ من الله تعالى.",
+      "text_page": 363,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 363,
+          "raw_text": "(٨) أ، ح، د: [من] ساقطة.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "من عند ربنا",
+                "trigger": "meaning_change",
+                "reason": "الوقف جائز لاحتمال أن ما بعده من مقولهم، والأظهر أنه ليس من كلامهم.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وما",
+                "trigger": "meaning_change",
+                "reason": "الأظهر أن ما بعد ﴿من عند ربنا﴾ ابتداء تنبيه على الاتعاظ من الله، فيُستأنف عند ﴿وما يذكر إلا أولو الألباب﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 8,
+      "target_word": "رحمة",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿رحمة - ٨ - ج﴾(١) للابتداء (٢) بأن، ولاحتمال لام التعليل، أو فاء التعقيب للتسبيب.",
+      "text_page": 363,
+      "old_text": "﴿رحمة - ٨ -",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿رحمة - ٨ -",
+          "new_text": "﴿رحمة - ٨ - ج﴾",
+          "info": "القوس مفتوح في آخر صفحة ٣٦٣ ومغلق بحرف ج في أول صفحة ٣٦٤"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 364,
+          "raw_text": "(١) أ: علامة الوقف غير واضحة.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "رحمة",
+                "trigger": "meaning_change",
+                "reason": "يوقف لجواز أن يكون ما بعده مستأنفا، مع احتمال لام التعليل أو فاء التسبيب.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "إنك",
+                "trigger": "meaning_change",
+                "reason": "وجه الجواز الابتداء بأنّ في ﴿إنك أنت الوهاب﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 9,
+      "target_word": "لا ريب فيه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿لا ريب فيه - ٩ - ط﴾",
+      "text_page": 364,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 10,
+      "target_word": "شيئا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿شيئا - ١٠ - ط﴾",
+      "text_page": 364,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 10,
+      "target_word": "النار",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 3,
+      "text": "﴿النار - ١٠ - لا﴾ لتعلق كاف التشبيه (٣).",
+      "text_page": 364,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 364,
+          "raw_text": "(٣) وضح هذا ابن الأنباري في البيان ١/١٩٢، حيث قال: [الكاف في: ﴿كدأب﴾ في موضعها وجهان: الرفع، والنصب، فالرفع: على أن يكون خبر مبتدأ محذوف، وتقديره: دأبهم كدأب آل فرعون. والنصب: على أن يكون متعلقا بفعل دل عليه ما قبله، وهو قوله: (وأولئك هم وقود النار كدأب آل فرعون) أي: يتوقدون توقد آل فرعون. وقال الفراء: تقديره: كفرت العرب كفرا ككفر آل فرعون]. أهـ. ومعلوم أن مراد المؤلف الوجه الثاني، وهو النصب، لذكره عدم الوقف على: (النار). وانظر: إعراب القرآن للعكبري ١/١٢٥.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 11,
+      "target_word": "فرعون",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 4,
+      "text": "﴿فرعون - ١١ - لا﴾ لعطف المفرد (٤).",
+      "text_page": 364,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 364,
+          "raw_text": "(٤) أي أنه عطف مفرد على مفرد، وليس عطف جملة، فعطف: ﴿والذين من قبلهم﴾ على ﴿آل فرعون﴾. انظر: البيان ١/١٩٢، وإعراب القرآن للعكبري ١/١٢٥.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 11,
+      "target_word": "من قبلهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من قبلهم - ١١ - ط﴾",
+      "text_page": 364,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 11,
+      "target_word": "بآياتنا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿بآياتنا - ١١ - ج﴾ للعدول مع فاء التعقيب.",
+      "text_page": 364,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 11,
+      "target_word": "بذنوبهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿بذنوبهم - ١١ - ط﴾",
+      "text_page": 364,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 12,
+      "target_word": "جهنم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿جهنم - ١٢ - ط﴾(٥)",
+      "text_page": 364,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 364,
+          "raw_text": "(٥) ب: علامة الوقف: [ط، ح]. وفي: ح: علامة الوقف: [ج].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 13,
+      "target_word": "التقتا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 6,
+      "text": "﴿التقتا - ١٣ - ط﴾ لأن التقدير منهما فئة [أو إحداهما فئة] (٦).",
+      "text_page": 364,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 364,
+          "raw_text": "(٦) ما بين المعقوفين غير مثبت.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 13,
+      "target_word": "العين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿العين - ١٣ - ط﴾",
+      "text_page": 364,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 13,
+      "target_word": "من يشاء",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من يشاء - ١٣ - ط﴾",
+      "text_page": 364,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 14,
+      "target_word": "والحرث",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿والحرث - ١٤ - ط﴾",
+      "text_page": 365,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 14,
+      "target_word": "الدنيا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿الدنيا - ١٤ - ج﴾ وإن اتفقت الجملتان، ولكن للفصل بين النقيضين (١)، والتعرض للتفكر (٢) بينهما.",
+      "text_page": 365,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 365,
+          "raw_text": "(١) د: [النقضين].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "الدنيا",
+                "trigger": "meaning_change",
+                "reason": "يوقف للفصل بين النقيضين وإن اتفقت الجملتان في الصورة.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "والله",
+                "trigger": "meaning_change",
+                "reason": "تُستأنف جملة النقيض عند ﴿والله عنده حسن المآب﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 15,
+      "target_word": "من ذلكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من ذلكم - ١٥ - ط﴾ لتناهي الاستفهام إلى الإخبار.",
+      "text_page": 365,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 15,
+      "target_word": "من الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من الله - ١٥ - ط﴾",
+      "text_page": 365,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 15,
+      "target_word": "بالعباد",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 3,
+      "text": "﴿بالعباد - ١٥ - ج﴾(٣) للآية على جعل ﴿الذين﴾ خبر لمبتدأ محذوف (٤) أي: هم الذين، أو مدحا، أي (٥) أعني الذين، ولجواز (٦) أنه نعت للعباد (٧).",
+      "text_page": 365,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 365,
+          "raw_text": "(٣) د: علامة الوقف ساقطة.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "بالعباد",
+                "trigger": "meaning_change",
+                "reason": "الوقف يجري إذا جُعل ﴿الذين﴾ خبر مبتدأ محذوف أو مدحا، ولا يجري إذا جُعل نعتا لـ﴿العباد﴾.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "الذين",
+                "trigger": "meaning_change",
+                "reason": "على تقدير «هم الذين» أو «أعني الذين» يُستأنف عند ﴿الذين﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 16,
+      "target_word": "النار",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 8,
+      "text": "﴿النار - ١٦ - ج﴾ لأن ﴿الصابرين﴾ يصلح بدلا للذين، والوقف أجوز على جعله نصبا (٨) على المدح، وتقديره كما ذكر (٩) بدلالة تتابع الأثنية (١٠).",
+      "text_page": 365,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 365,
+          "raw_text": "(٨) أ، ب: [العباد]. وانظر: مشكل إعراب القرآن ١/١٣٠، والبيان في غريب إعراب القرآن ١/١٩٤، وإعراب القرآن للعكبري ١/١٢٨، والبحر ٢/٤٠٠.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "النار",
+                "trigger": "meaning_change",
+                "reason": "الوقف أجوز إن جُعل ﴿الصابرين﴾ نصبا على المدح، ويضعف إن جُعل بدلا من ﴿الذين﴾.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "الصابرين",
+                "trigger": "meaning_change",
+                "reason": "على النصب على المدح يُستأنف الثناء عند ﴿الصابرين﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 18,
+      "target_word": "إلا هو",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 1,
+      "text": "﴿إلا هو - ١٨ - لا﴾ لعطف المفرد (١)، [ولو وقف احترازا عن وهم دخول الملائكة وأولي العلم في الاستثناء والمشاركة في الألوهية كان بعيدا] (٢).",
+      "text_page": 366,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 366,
+          "raw_text": "(١) أي أنه عطف مفرد على مفرد، وليس عطف جملة على جملة، فعطف: ﴿والملائكة وأولو العلم﴾ على لفظ الجلالة في قوله تعالى: ﴿شهد الله﴾.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 18,
+      "target_word": "بالقسط",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿بالقسط - ١٨ - ط﴾",
+      "text_page": 366,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 18,
+      "target_word": "الحكيم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿الحكيم - ١٨ - ط﴾ إلا لمن قرأ ﴿أن الدين﴾ بالفتح على البدل من ﴿أنه﴾ (٣).",
+      "text_page": 366,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 366,
+          "raw_text": "(٣) قرأ الكسائي بفتح الهمزة، وكسرها الباقون. انظر: السبعة لابن مجاهد (٢٠٢)، والتبصرة (٤٥٦)، والكشف ١/٣٣٨، والتيسير (٨٧)، والغاية لابن مهران (١٢٣، ١٢٤)، والمهذب ١/١١٦، والبيان ١/١٩٥، وإعراب القرآن للعكبري ١/١٢٩.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "الحكيم",
+                "trigger": "meaning_change",
+                "reason": "يتم الوقف على قراءة كسر الهمزة، ولا يتم على قراءة فتحها لأن ﴿أن الدين﴾ بدل من ﴿أنه﴾.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "إن",
+                "trigger": "meaning_change",
+                "reason": "على قراءة الكسر تُستأنف جملة ﴿إن الدين عند الله الإسلام﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 19,
+      "target_word": "الإسلام",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿الإسلام - ١٩ - ط﴾(٤)",
+      "text_page": 366,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 366,
+          "raw_text": "(٤) المثبت: [﴿الإسلام﴾ ط] من: أ.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 19,
+      "target_word": "بينهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿بينهم - ١٩ - ط﴾ لإطلاق حكم غير مخصوص بما قبله.",
+      "text_page": 366,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 20,
+      "target_word": "ومن اتبعن",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿ومن اتبعن - ٢٠ - ط﴾ لابتداء أمر (٥) يشمل (٦) أهل الكتاب والعرب (٧)، والأول مختص بأهل الكتاب، فلم يكن الثاني من جملة جزاء الشرط.",
+      "text_page": 366,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 366,
+          "raw_text": "(٥) ح: [لمن] وهو تصحيف.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "ومن اتبعن",
+                "trigger": "meaning_change",
+                "reason": "ما بعده أمر جديد يشمل أهل الكتاب والعرب، وليس من جزاء الشرط المختص بأهل الكتاب.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وقل",
+                "trigger": "meaning_change",
+                "reason": "يُبتدأ الأمر عند ﴿وقل للذين أوتوا الكتاب والأميين﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 20,
+      "target_word": "أسلمتم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿أسلمتم - ٢٠ - ط﴾ لتناهي الاستفهام إلى الشرط.",
+      "text_page": 366,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 20,
+      "target_word": "اهتدوا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 8,
+      "text": "﴿اهتدوا - ٢٠ - ج﴾ لابتداء شرط (٨) آخر مع العطف.",
+      "text_page": 366,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 366,
+          "raw_text": "(٨) أ: [بشرط]، وفي ب: [الشرط].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "اهتدوا",
+                "trigger": "meaning_change",
+                "reason": "الوقف جائز لأن ما بعده شرط آخر معطوف، لا تتمة الشرط الأول.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وإن",
+                "trigger": "meaning_change",
+                "reason": "يُستأنف الشرط المعطوف عند ﴿وإن تولوا﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

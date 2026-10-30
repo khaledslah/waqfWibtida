@@ -1,0 +1,531 @@
+{
+  "source": "apparatus_v4_383_386",
+  "page_numbers": [383, 384, 385, 386],
+  "waqfs": [
+    {
+      "ayah": 110,
+      "target_word": "خيرا لهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿خيرا لهم - 110 - ط﴾",
+      "text_page": 383,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 110,
+      "target_word": "الفاسقون",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿الفاسقون - 110﴾(1) قيل : لا وقف . [ وعليه وقف ] (2) لأن المعرف (3) لا يتصف (4) بالجملة (5) .",
+      "text_page": 383,
+      "old_text": "﴿الفاسقون - 110﴾",
+      "fixes": [
+        {
+          "type": "missing_symbol",
+          "basis": "page_prose",
+          "old_text": "﴿الفاسقون - 110﴾",
+          "new_text": "﴿الفاسقون - 110 - ز﴾",
+          "info": "الهامش (1): نسخة أ فيها علامة الوقف ز، والمثبت من بقية النسخ بدون علامة."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 383,
+          "raw_text": "(١) أ : علامة الوقف : [ ز ] . والمثبت من بقية النسخ بدون علامة وقف لدلالة ما بعده عليه . ولم يذكر ابن الأنباري في الإيضاح ٢/٥٨٢ ، والداني في المكتفى (٢٠٦) هنا وقفا . أما النحاس في القطع (٢٣٢) والأنصاري في المقصد (٨٥) فذكرا أنه حسن ، وذكر الأشموني في المنار (٨٥) أنه كاف .",
+          "continuation": null,
+          "symbol_witness": {
+            "verdict_label": "ز",
+            "basis": "page_prose",
+            "witness": "أ",
+            "info": "علامة الوقف في نسخة أ : ز ، والمثبت من بقية النسخ بدون علامة وقف"
+          },
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "2/582"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "206"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "232"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "85"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "85"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "الفاسقون",
+                "trigger": "scholars_disagree",
+                "reason": "قيل لا وقف، وعليه وقف لأن المعرف لا يتصف بالجملة. النحاس والأنصاري حسّناه، والأشموني جعله كافيا، ولم يذكره ابن الأنباري ولا الداني.",
+                "scholars": ["النحاس", "الأنصاري", "الأشموني"]
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 111,
+      "target_word": "إلا أذى",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿إلا أذى - 111 - ط﴾",
+      "text_page": 383,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 111,
+      "target_word": "يولون الأدبار",
+      "verdict_label": null,
+      "verdict": null,
+      "margin_ref": 6,
+      "text": "﴿يولون الأدبار - 111﴾ وقفة (6) لأن ﴿ثم﴾ لترتيب الاخبار ، أي (7) : ثم هم (8) لا ينصرون ، ولو كان عطفا لكان ثم لا ينصروا (1) [ مجزوما كما جزم الجواب الشرط ] (2) .",
+      "text_page": 383,
+      "old_text": "﴿يولون الأدبار - 111﴾ وقفة (6) لأن ﴿ثم﴾ لترتيب الاخبار ، أي (7) : ثم هم (8) لا ينصرون ، ولو كان عطفا",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿يولون الأدبار - 111﴾ وقفة (6) لأن ﴿ثم﴾ لترتيب الاخبار ، أي (7) : ثم هم (8) لا ينصرون ، ولو كان عطفا",
+          "new_text": "﴿يولون الأدبار - 111﴾ وقفة (6) لأن ﴿ثم﴾ لترتيب الاخبار ، أي (7) : ثم هم (8) لا ينصرون ، ولو كان عطفا لكان ثم لا ينصروا (1) [ مجزوما كما جزم الجواب الشرط ] (2) .",
+          "info": "القوس في صفحة 383 وتتم جملة التعليل في صفحة 384."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 383,
+          "raw_text": "(٦) أ : [ وقف ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "يولون الأدبار",
+                "trigger": "meaning_change",
+                "reason": "الوقف لأن ﴿ثم﴾ لترتيب الاخبار لا للعطف؛ ولو كان عطفا لكان «ثم لا ينصروا» مجزوما كما جزم جواب الشرط.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "ثم",
+                "trigger": "meaning_change",
+                "reason": "يُستأنف بـ﴿ثم﴾ لترتيب الاخبار: ثم هم لا ينصرون، وليست عطفا على الشرط.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 112,
+      "target_word": "والمسكنة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿والمسكنة - 112 - ط﴾",
+      "text_page": 384,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 112,
+      "target_word": "بغير حق",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿بغير حق - 112 - ط﴾",
+      "text_page": 384,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 112,
+      "target_word": "يعتدون",
+      "verdict_label": null,
+      "verdict": null,
+      "margin_ref": 1,
+      "text": "﴿يعتدون - 112﴾ قيل : لا وقف ، وعليه وقف (1) لأن ضمير ﴿ليسوا﴾ عائد (2) إلى قوله (3) : ﴿منهم المؤمنون﴾ (4) لبيان الفصل (5) بين الفريقين (6) ، والذين عصوا واعتدوا أحد الفريقين .",
+      "text_page": 385,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 385,
+          "raw_text": "(١) أ ، ب : [ الوقف ] . وهو كاف عند الأنصاري والأشموني . انظر : المقصد (٨٦) ، والمنار (٨٦) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "86"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "86"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "يعتدون",
+                "trigger": "scholars_disagree",
+                "reason": "قيل لا وقف، وعليه وقف لبيان الفصل بين الفريقين، وهو كاف عند الأنصاري والأشموني.",
+                "scholars": ["الأنصاري", "الأشموني"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "ليسوا",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بـ﴿ليسوا﴾ لأن ضميره عائد إلى ﴿منهم المؤمنون﴾ لبيان الفصل بين الفريقين.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 113,
+      "target_word": "سواء",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 7,
+      "text": "﴿سواء - 113 - ط﴾(7)",
+      "text_page": 385,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 385,
+          "raw_text": "(٧) أ : [ ( سواء ) ط ] غير مثبتة ، وقد تقدمت في غير موضعها .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 113,
+      "target_word": "وهم يسجدون",
+      "verdict_label": null,
+      "verdict": null,
+      "margin_ref": 8,
+      "text": "﴿وهم يسجدون - 113﴾ قيل : لا وقف ، على جعل ﴿يؤمنون﴾ حالا لضمير (8) ﴿يسجدون﴾ . ولا يصح ، بل الايمان والأمر بالمعروف والنهي عن المنكر أوصاف لهم مطلقة غير مختصة بحال السجود (9) .",
+      "text_page": 385,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 385,
+          "raw_text": "(٨) ب : [ الضمير ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "وهم يسجدون",
+                "trigger": "meaning_change",
+                "reason": "قيل لا وقف على جعل ﴿يؤمنون﴾ حالا لضمير ﴿يسجدون﴾، ولا يصح؛ فالايمان والأمر بالمعروف والنهي عن المنكر أوصاف مطلقة غير مختصة بحال السجود.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "يؤمنون",
+                "trigger": "meaning_change",
+                "reason": "يُستأنف بـ﴿يؤمنون﴾ لأنها أوصاف مطلقة، لا حال من ضمير ﴿يسجدون﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 114,
+      "target_word": "الخيرات",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿الخيرات - 114 - ط﴾",
+      "text_page": 385,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 115,
+      "target_word": "يكفروه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿يكفروه - 115 - ط﴾",
+      "text_page": 385,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 116,
+      "target_word": "شيئا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿شيئا - 116 - ط﴾",
+      "text_page": 385,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 116,
+      "target_word": "النار",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿النار - 116 - ج﴾",
+      "text_page": 386,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 117,
+      "target_word": "فأهلكته",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿فأهلكته - 117 - ط﴾",
+      "text_page": 386,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 118,
+      "target_word": "خبالا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿خبالا - 118 - ط﴾",
+      "text_page": 386,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 118,
+      "target_word": "ماعنتم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿ماعنتم - 118 - ج﴾ للابتداء (1) بقد ، وإضمار واو الحال ، أي (2) : وقد (3) .",
+      "text_page": 386,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 386,
+          "raw_text": "(١) أ : [ لابتداء ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "ماعنتم",
+                "trigger": "meaning_change",
+                "reason": "الوقف على ﴿ماعنتم﴾ للابتداء بقد على إضمار واو الحال، أي: وقد.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "قد",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بـ﴿قد﴾ وإضمار واو الحال، أي: وقد.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 118,
+      "target_word": "أفواههم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "[ ﴿أفواههم - 118 - ج﴾ والوصل أجوز ، لأن الغرض بيان أن مستور بغضائهم أكبر من مظهرها ] (4)",
+      "text_page": 386,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 386,
+          "raw_text": "(٤) ما بين المعقوفين من : د . وفي أ : [ ( أفواههم ) ج ، والوصل أجوز ] ، وفي ب : [ ( أفواههم ) ج ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "أفواههم",
+                "trigger": "meaning_change",
+                "reason": "الوقف جائز والوصل أجوز، لأن الغرض بيان أن مستور بغضائهم أكبر من مظهرها.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 118,
+      "target_word": "أكبر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿أكبر - 118 - ط﴾",
+      "text_page": 386,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 119,
+      "target_word": "كله",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 5,
+      "text": "﴿كله - 119 - ج﴾ [ للعطف مع الحذف ، أي : وهم لا يؤمنون بكتابكم ] (5)",
+      "text_page": 386,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 386,
+          "raw_text": "(٥) أ : ما بين المعقوفين غير مثبت .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "كله",
+                "trigger": "meaning_change",
+                "reason": "الوقف للعطف مع الحذف، أي: وهم لا يؤمنون بكتابكم.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 119,
+      "target_word": "آمنا",
+      "verdict_label": null,
+      "verdict": null,
+      "margin_ref": 6,
+      "text": "﴿آمنا - 119﴾(6) قد قيل ، والوصل أولى لأن المقصود (1) بيان تناقض حالهم (2) في النفاق .",
+      "text_page": 386,
+      "old_text": "﴿آمنا - 119﴾(6)",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿آمنا - 119﴾(6)",
+          "new_text": "﴿آمنا - 119﴾(6) قد قيل ، والوصل أولى لأن المقصود (1) بيان تناقض حالهم (2) في النفاق .",
+          "info": "يفتح القوس في صفحة 386 وتتم جملة التعليل في صفحة 387."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 386,
+          "raw_text": "(٦) المثبت من : ح ، د : بدون علامة وقف ، لدلالة ما بعده عليه .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "آمنا",
+                "trigger": "meaning_change",
+                "reason": "قد قيل بالوقف، والوصل أولى لأن المقصود بيان تناقض حالهم في النفاق.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    }
+  ]
+}

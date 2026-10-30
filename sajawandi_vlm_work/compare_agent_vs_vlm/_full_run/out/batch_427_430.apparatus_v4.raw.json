@@ -1,0 +1,908 @@
+{
+  "source": "apparatus_v4_427_430",
+  "page_numbers": [427, 428, 429, 430],
+  "waqfs": [
+    {
+      "ayah": 78,
+      "target_word": "يقولوا هذه من عند الله",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "[ ﴿يقولوا هذه من عند الله - ٧٨ - ج﴾(١) للفصل بين النقيضين .",
+      "text_page": 427,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 427,
+          "raw_text": "(١) ب : علامة الوقف : [ ط ، ج ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 78,
+      "target_word": "من عندك",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 2,
+      "text": "﴿من عندك - ٧٨ - ط﴾(٢) ] .",
+      "text_page": 427,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 427,
+          "raw_text": "(٢) د : ما بين المعقوفين غير مثبت .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 78,
+      "target_word": "قل كل من عند الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿قل كل من عند الله - ٧٨ - ط﴾(٣) .",
+      "text_page": 427,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 427,
+          "raw_text": "(٣) ج : [ ﴿قل كل من عند الله﴾ ط ] غير مثبت .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 79,
+      "target_word": "فمن الله",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿فمن الله - ٧٩ - ز﴾ فصلا بين النقيضين .",
+      "text_page": 427,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 79,
+      "target_word": "فمن نفسك",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿فمن نفسك - ٧٩ - ط﴾ .",
+      "text_page": 427,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 79,
+      "target_word": "رسولا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿رسولا - ٧٩ - ط﴾ .",
+      "text_page": 427,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 80,
+      "target_word": "أطاع الله",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "﴿أطاع الله - ٨٠ - ج﴾(٤) لابتداء شرط آخر مع العطف .",
+      "text_page": 427,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 427,
+          "raw_text": "(٤) د : علامة الوقف [ ط ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "ومن",
+                "trigger": "meaning_change",
+                "reason": "الوقف لابتداء شرط آخر مع العطف، فيستأنف الشرط بعد أطاع الله.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 80,
+      "target_word": "حفيظا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿حفيظا - ٨٠ - ط﴾ للآية ، واستئناف الفعل بعدها ، وإن جاز الوقف على قوله : ﴿طاعة﴾ فالوصل(٥) غير لازم .",
+      "text_page": 427,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 427,
+          "raw_text": "(٥) أ : [ فالوقف ] وهو خطأ ، وفي ب : [ والوصل ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "طاعة",
+                "trigger": "meaning_change",
+                "reason": "جاز الوقف على ﴿طاعة﴾ والوصل غير لازم، مع استئناف الفعل بعد ﴿حفيظا﴾.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 81,
+      "target_word": "طاعة",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 6,
+      "text": "﴿طاعة - ٨١ - ز﴾ لأن مقصود الكلام في بيان نفاقهم إنما يتم على(٦) قوله : [ ﴿غير الذي تقول﴾(٧) ] .",
+      "text_page": 427,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 427,
+          "raw_text": "(٦) د : [ عند ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "غير الذي تقول",
+                "trigger": "meaning_change",
+                "reason": "مقصود الكلام في بيان نفاقهم إنما يتم على قوله ﴿غير الذي تقول﴾، فالوقف على ﴿طاعة﴾ يقطع هذا البيان.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 81,
+      "target_word": "غير الذي تقول",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿غير الذي تقول - ٨١ - ط﴾ .",
+      "text_page": 427,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 81,
+      "target_word": "ما يبيتون",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿ما يبيتون - ٨١ - ج﴾ لاختلاف الجملتين ، ولأن قوله : ﴿فأعرض﴾ متصل بما قبله ، معناه : إذا كتب الله(١) ما يبيتون(٢) فأعرض ولا تهتم(٣) .",
+      "text_page": 427,
+      "old_text": "﴿ما يبيتون - ٨١ - ج﴾ لاختلاف الجملتين ، ولأن",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ما يبيتون - ٨١ - ج﴾ لاختلاف الجملتين ، ولأن",
+          "new_text": "﴿ما يبيتون - ٨١ - ج﴾ لاختلاف الجملتين ، ولأن قوله : ﴿فأعرض﴾ متصل بما قبله ، معناه : إذا كتب الله(١) ما يبيتون(٢) فأعرض ولا تهتم(٣) .",
+          "info": "تتم العلة في رأس الصفحة ٤٢٨ من «قوله : ﴿فأعرض﴾» إلى «ولا تهتم(٣)»."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 428,
+          "raw_text": "(١) أ ، ب : لفظ الجلالة غير مثبت .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 81,
+      "target_word": "على الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿على الله - ٨١ - ط﴾(٤) .",
+      "text_page": 428,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 428,
+          "raw_text": "(٤) د : علامة الوقف ساقطة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 82,
+      "target_word": "القرآن",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿القرآن - ٨٢ - ط﴾ لتناهي الاستفهام إلى الشرط .",
+      "text_page": 428,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 83,
+      "target_word": "أذاعوا به",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿أذاعوا به - ٨٣ - ط﴾ .",
+      "text_page": 428,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 83,
+      "target_word": "يستنبطونه منهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "[ ﴿يستنبطونه منهم - ٨٣ - ط﴾(٥) ] .",
+      "text_page": 428,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 428,
+          "raw_text": "(٥) ما بين المعقوفين من : د ، وفي أ : [ ( منهم - ط ) الثاني ] ، وفي ب : [ ( منهم ) الثاني - ط ] . وما أثبتناه لأمن اللبس ، لأن ﴿يستنبطونه﴾ وردت مرة واحدة في الآية .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 84,
+      "target_word": "في سبيل الله",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 6,
+      "text": "﴿في سبيل الله - ٨٤ - ج﴾ لأن قوله : ﴿لا تكلف﴾ يصلح مستأنفا أو حالا(٦) ، أي قاتل غير مكلف إلا نفسك ، ولعطف قوله(٧) : [ ﴿وحرض المؤمنين﴾ على قوله : ﴿فقاتل﴾(٨) ] .",
+      "text_page": 428,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 428,
+          "raw_text": "(٦) د : [ وحالا ] بسقوط الهمزة . وانظر : إعراب القرآن للعكبري ١/١٨٩ ، والبحر المحيط ٣/٣٠٩ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "لا تكلف",
+                "trigger": "meaning_change",
+                "reason": "﴿لا تكلف﴾ يصلح مستأنفا فيبتدأ به، أو حالا فيوصل بما قبله، فيختلف تعلق القتال.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 84,
+      "target_word": "المؤمنين",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 9,
+      "text": "﴿المؤمنين - ٨٤ - ج﴾ لأن ﴿عسى﴾ مستأنف لفظا ومتصل معنى ، لأنه(٩) لترجية(١٠) تحريض(١١) ما أمر به قبل .",
+      "text_page": 428,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 9,
+          "text_page": 428,
+          "raw_text": "(٩) أ : [ لأنه ] غير مثبتة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "عسى",
+                "trigger": "meaning_change",
+                "reason": "﴿عسى﴾ مستأنف لفظا فيصلح الابتداء به، ومتصل معنى بتحريض ما أمر به قبل.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 84,
+      "target_word": "كفروا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿كفروا - ٨٤ - ط﴾ .",
+      "text_page": 428,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 85,
+      "target_word": "نصيب منها",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿نصيب منها - ٨٥ - ج﴾ لابتداء شرط آخر مع واو العطف .",
+      "text_page": 428,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 85,
+      "target_word": "كفل منها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿كفل منها - ٨٥ - ط﴾ .",
+      "text_page": 428,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 86,
+      "target_word": "أو ردوها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿أو ردوها - ٨٦ - ط﴾ .",
+      "text_page": 428,
+      "old_text": "﴿أو ردوها",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿أو ردوها",
+          "new_text": "﴿أو ردوها - ٨٦ - ط﴾ .",
+          "info": "يُفتح القوس في آخر الصفحة ٤٢٨ ويُتم في رأس الصفحة ٤٢٩ بـ «- ٨٦ - ط﴾»."
+        }
+      ],
+      "apparatus": []
+    },
+    {
+      "ayah": 87,
+      "target_word": "إلا هو",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿إلا هو - ٨٧ - ط﴾ . [ ﴿ليجمعنكم﴾ لأن لام القسم ، والقسم له الصدر(١) ] .",
+      "text_page": 429,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 429,
+          "raw_text": "(١) ما بين المعقوفين من : أ . والذي يظهر لي أن الوقف هنا جائز ، لما ذكره أبو السعود في تفسيره ٢/٢١١ حيث قال : [ والجملة القسمية إما مستأنفة لا محل لها من الإعراب ، أو خبر ثان للمبتدأ ، أو هي الخبر ، و : ﴿لا إله إلا هو﴾ اعتراض ] . وانظر : إعراب القرآن للعكبري ١/١٨٩ ، والبحر المحيط ٣/٣١٢ . وانظر : المقصد (١٠٥) ، ومنار الهدى (١٠٥) ، فقد ذكرا أن الوقف هنا جائز .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "unknown",
+              "verdict": "جائز",
+              "comment": "يظهر للمحقق ذلك لما ذكره أبو السعود من أن الجملة القسمية مستأنفة أو أن ﴿لا إله إلا هو﴾ اعتراض",
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "جائز",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "105"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "جائز",
+              "comment": null,
+              "book": "منار الهدى",
+              "book_ref": "105"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "إلا هو",
+                "trigger": "meaning_change",
+                "reason": "الوقف لأن لام ﴿ليجمعنكم﴾ لام القسم وللقسم الصدر، ولأن ﴿لا إله إلا هو﴾ يصلح اعتراضا والجملة القسمية مستأنفة.",
+                "scholars": ["الأنصاري", "الأشموني"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "ليجمعنكم",
+                "trigger": "meaning_change",
+                "reason": "لام القسم لها الصدر، فابتداء القسم من ﴿ليجمعنكم﴾ بعد الوقف على ﴿إلا هو﴾.",
+                "scholars": ["الأنصاري", "الأشموني"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 87,
+      "target_word": "لا ريب فيه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿لا ريب فيه - ٨٧ - ط﴾ .",
+      "text_page": 429,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 88,
+      "target_word": "فئتين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 2,
+      "text": "[ ﴿فئتين - ٨٨ - ط﴾(٢) ] .",
+      "text_page": 429,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 429,
+          "raw_text": "(٢) ما بين المعقوفين من : ب . والوقف هنا حسن عند ابن الأنباري ، وقد وضحه في الإيضاح ٢/٦٠١ ، ٦٠٢ حيث قال : [ ﴿فما لكم في المنافقين فئتين﴾ حسن غير تام ، لأن المعنى في قوله : ﴿والله أركسهم﴾ وذلك أن هذه الآية نزلت في قوم هاجروا من مكة إلى المدينة سرا فاستثقلوا فرجعوا سرا إلى مكة ، فقال بعض المسلمين : ﴿إن لقيناهم قتلناهم وسلبناهم لأنهم قد ارتدوا﴾ وقال قوم : ﴿أتقتلون قوما على دينكم من أجل أنهم استثقلوا المدينة فخرجوا عنها﴾ فبين الله نفاقهم ، فقال : ﴿فما لكم في المنافقين فئتين﴾ أي مختلفتين ، ﴿والله أركسهم بما كسبوا﴾ أي : ردهم إلى الكفر ] . اهـ . وأيضا ذكر النحاس في القطع (٢٦٠) أنه حسن . أما الأشموني في المنار (١٠٥) فذكر عن أبي حاتم أنه جائز ، وذكر عن النكزاوي أنه ليس بوقف ، لأن قوله : ﴿والله أركسهم بما كسبوا﴾ من تمام المعنى ، ثم ذكر قريبا مما ذكره ابن الأنباري . * أي : فما لكم تفترقون في المنافقين ، وانتصاب ﴿فئتين﴾ على الحالية من المخاطبين ، والعامل ما في ﴿لكم﴾ من معنى الفعل . انظر تفسير أبي السعود ٢/٢١٢ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن غير تام",
+              "comment": "المعنى في قوله ﴿والله أركسهم﴾، و﴿فئتين﴾ أي مختلفتين",
+              "book": "الإيضاح",
+              "book_ref": "2/601، 2/602"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "260"
+            },
+            {
+              "scholar": "أبو حاتم",
+              "verdict": "جائز",
+              "comment": "ذكره الأشموني",
+              "book": "المنار",
+              "book_ref": "105"
+            },
+            {
+              "scholar": "النكزاوي",
+              "verdict": "ليس بوقف",
+              "comment": "لأن ﴿والله أركسهم بما كسبوا﴾ من تمام المعنى",
+              "book": "المنار",
+              "book_ref": "105"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": "ذكر قريبا مما ذكره ابن الأنباري",
+              "book": "المنار",
+              "book_ref": "105"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "فئتين",
+                "trigger": "scholars_disagree",
+                "reason": "حسن عند ابن الأنباري والنحاس، وجائز عند أبي حاتم، وليس بوقف عند النكزاوي لأن ﴿والله أركسهم بما كسبوا﴾ من تمام المعنى.",
+                "scholars": ["ابن الأنباري", "النحاس", "أبو حاتم", "الأشموني"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "والله",
+                "trigger": "meaning_change",
+                "reason": "من وقف على ﴿فئتين﴾ استأنف ﴿والله أركسهم﴾، والنكزاوي يجعل هذه الجملة من تمام المعنى فلا يفصلها.",
+                "scholars": ["ابن الأنباري", "النحاس", "أبو حاتم", "الأشموني"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 88,
+      "target_word": "بما كسبوا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿بما كسبوا - ٨٨ - ط﴾ .",
+      "text_page": 430,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 88,
+      "target_word": "من أضل الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من أضل الله - ٨٨ - ط﴾ لانتهاء الاستفهام إلى الشرط .",
+      "text_page": 430,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 89,
+      "target_word": "في سبيل الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿في سبيل الله - ٨٩ - ط﴾ .",
+      "text_page": 430,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 89,
+      "target_word": "وجدتموهم",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "margin_ref": null,
+      "text": "﴿وجدتموهم - ٨٩ - ص﴾ .",
+      "text_page": 430,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 89,
+      "target_word": "نصيرا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿نصيرا - ٨٩ - لا﴾ للاستثناء .",
+      "text_page": 430,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 90,
+      "target_word": "أو يقاتلوا قومهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿أو يقاتلوا قومهم - ٩٠ - ط﴾ .",
+      "text_page": 430,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 90,
+      "target_word": "فلقاتلوكم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿فلقاتلوكم - ٩٠ - ج﴾(١) .",
+      "text_page": 430,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 430,
+          "raw_text": "(١) د : علامة الوقف : [ ط ] . والصواب ما أثبتناه ، وقد نص الأشموني على علة الجواز ، فقال في المنار (١٠٥) : [ للابتداء بالشرط مع الفاء ] . والوقف هنا حسن عند ابن الأنباري ، وصالح عند النحاس ، وكاف عند الداني والأشموني . انظر : الإيضاح ٢/٦٠٢ ، والقطع (٢٦١) ، والمكتفى (٢٢٣) ، والمنار (١٠٥) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "2/602"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "صالح",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "261"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "223"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "كاف",
+              "comment": "نص على علة الجواز: للابتداء بالشرط مع الفاء",
+              "book": "المنار",
+              "book_ref": "105"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "فإن",
+                "trigger": "meaning_change",
+                "reason": "علة الجواز الابتداء بالشرط مع الفاء، فيستأنف الشرط بعد ﴿فلقاتلوكم﴾.",
+                "scholars": ["ابن الأنباري", "النحاس", "الداني", "الأشموني"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 90,
+      "target_word": "السلم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿السلم - ٩٠ - لا﴾ لأن ما بعده جواب ﴿فإن﴾ .",
+      "text_page": 430,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 91,
+      "target_word": "ويأمنوا قومهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ويأمنوا قومهم - ٩١ - ط﴾ .",
+      "text_page": 430,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 91,
+      "target_word": "أركسوا فيها",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿أركسوا فيها - ٩١ - ج﴾(٢) .",
+      "text_page": 430,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 430,
+          "raw_text": "(٢) د : علامة الوقف : [ ط ] . والصواب ما أثبتناه للابتداء بالشرط مع الفاء . والوقف هنا حسن عند ابن الأنباري ، والنحاس ، والأشموني ، وكاف عند الداني ، وجائز عند الأنصاري . انظر : الإيضاح ٢/٦٠٢ ، والقطع (٢٦١) ، والمكتفى (٢٢٣) ، والمقصد (١٠٥) ، والمنار (١٠٥) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "2/602"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "261"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "105"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "223"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "جائز",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "105"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "فإن",
+                "trigger": "meaning_change",
+                "reason": "الصواب إثبات الجواز للابتداء بالشرط مع الفاء بعد ﴿أركسوا فيها﴾.",
+                "scholars": ["ابن الأنباري", "النحاس", "الأشموني", "الداني", "الأنصاري"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 91,
+      "target_word": "ثقفتموهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ثقفتموهم - ٩١ - ط﴾ .",
+      "text_page": 430,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 92,
+      "target_word": "إلا خطأ",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿إلا خطأ - ٩٢ - ج﴾ .",
+      "text_page": 430,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 92,
+      "target_word": "إلا أن يصدقوا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿إلا أن يصدقوا - ٩٢ - ط﴾ لابتداء حكم آخر .",
+      "text_page": 430,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 92,
+      "target_word": "مؤمنة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿مؤمنة - ٩٢ - ط﴾(٣) كذلك(٤) .",
+      "text_page": 430,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 430,
+          "raw_text": "(٣) ب ، ج ، د : علامة الوقف ساقطة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 92,
+      "target_word": "مؤمنة",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿مؤمنة - ٩٢ - ج﴾ .",
+      "text_page": 430,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 92,
+      "target_word": "متابعين",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿متابعين - ٩٢ - ز﴾ لأن قوله : ﴿توبة﴾ يصلح [ مصدر محذوف ](١) أي : يتوب الله عليه توبة ، والأوجه أن يجعل مفعولا له ، أي لتوبة(٢) .",
+      "text_page": 430,
+      "old_text": "﴿متابعين - ٩٢",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿متابعين - ٩٢",
+          "new_text": "﴿متابعين - ٩٢ - ز﴾ لأن قوله : ﴿توبة﴾ يصلح [ مصدر محذوف ](١) أي : يتوب الله عليه توبة ، والأوجه أن يجعل مفعولا له ، أي لتوبة(٢) .",
+          "info": "يُفتح القوس في آخر الصفحة ٤٣٠، ويُتم الحرف والعلة في رأس الصفحة ٤٣١ حتى «أي لتوبة(٢)»."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 431,
+          "raw_text": "(١) ب : [ مصدرًا بمحذوف ] ، والمثبت من بقية النسخ ، وهو مراد المؤلف ، أي أن ( توبة ) مصدر فعل محذوف ، ويدل على هذا قوله بعد : [ أي يتوب الله عليه توبة ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    }
+  ]
+}

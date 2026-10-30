@@ -1,0 +1,584 @@
+{
+  "source": "apparatus_v4_223_226",
+  "page_numbers": [223, 224, 225, 226],
+  "waqfs": [
+    {
+      "ayah": 102,
+      "target_word": "وماروت",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿وماروت - 102 - ط﴾(3)",
+      "text_page": 224,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 224,
+          "raw_text": "(٣) وهو كاف عند الداني ، وتام عند الأنصاري والأشموني . انظر : المكتفى (١٦٩) ، والمقصد (٤٦) ، والمنار (٤٥) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": null,
+          "opinions": [
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "169"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "تام",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "46"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "تام",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "45"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 102,
+      "target_word": "فلا تكفر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿فلا تكفر - 102 - ط﴾(4)",
+      "text_page": 224,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 224,
+          "raw_text": "(٤) أ : علامة الوقف ساقطة ، وفي ج : علامة الوقف : [ ج ] . وهو حسن عند ابن الأنباري حيث قال في الإيضاح ١/٥٢٦، ٥٢٧ : [ والوقف على قوله : ﴿فلا تكفر﴾ حسن غير تام ، لأن قوله : ﴿فيتعلمون منهما﴾ نسق على قوله : ﴿يعلمون الناس السحر - فيتعلمون﴾ ، ويجوز أن يكون منسوقا على قوله : ﴿إنما نحن فتنة﴾ فيأبون ﴿فيتعلمون﴾ ] اه . وانظر : معاني القرآن للفراء ١/٦٤ . = أما النحاس فذكر في القطع (١٥٦) عن الأخفش ونافع أنه تام ، ثم قال : [ وخالفهما بعض النحوين ، فقال : ﴿فيتعلمون﴾ نسق على ﴿يعلمون﴾ والأول أولى ] . أما الداني فذكر في المكتفى (١٧٠) أنه كاف ، ثم قال : [ وقوله : ﴿فيتعلمون﴾ مستأنف ، والتقدير عند سيبويه : فهم يتعلمون ، وقال : مثله : ﴿كن فيكون﴾ ] اه .",
+          "continuation": {"status": "read", "page": 225},
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "فيتعلمون",
+                "trigger": "scholars_disagree",
+                "reason": "الداني يجعل ﴿فيتعلمون﴾ مستأنفا وتقديره «فهم يتعلمون»، والأخفش ونافع والنحاس يرون الوقف على ﴿فلا تكفر﴾ تاما فيُبتدأ بما بعده. وابن الأنباري يجعل ﴿فيتعلمون﴾ نسقا على ﴿يعلمون الناس السحر﴾ فالوقف حسن غير تام، وبعض النحوين يوافقون هذا النسق.",
+                "scholars": ["الداني", "الأخفش", "نافع", "النحاس"]
+              }
+            ]
+          },
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": "غير تام؛ لأن ﴿فيتعلمون منهما﴾ نسق على ﴿يعلمون الناس السحر﴾",
+              "book": "الإيضاح",
+              "book_ref": "1/526-527"
+            },
+            {
+              "scholar": "الأخفش",
+              "verdict": "تام",
+              "comment": "نقله النحاس",
+              "book": "القطع",
+              "book_ref": "156"
+            },
+            {
+              "scholar": "نافع",
+              "verdict": "تام",
+              "comment": "نقله النحاس",
+              "book": "القطع",
+              "book_ref": "156"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "تام",
+              "comment": "الأول أولى؛ وخالفهما بعض النحوين فجعلوا ﴿فيتعلمون﴾ نسقا على ﴿يعلمون﴾",
+              "book": "القطع",
+              "book_ref": "156"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": "﴿فيتعلمون﴾ مستأنف، والتقدير عند سيبويه: فهم يتعلمون",
+              "book": "المكتفى",
+              "book_ref": "170"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 102,
+      "target_word": "وزوجه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿وزوجه - 102 - ط﴾(1)",
+      "text_page": 225,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 225,
+          "raw_text": "(١) وهو صالح عند النحاس ، وحسن عند الأشموني . انظر : القطع (١٥٧) ، والمنار (٤٦) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": null,
+          "opinions": [
+            {
+              "scholar": "النحاس",
+              "verdict": "صالح",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "157"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "46"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 102,
+      "target_word": "باذن الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 2,
+      "text": "﴿باذن الله - 102 - ط﴾(2)",
+      "text_page": 225,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 225,
+          "raw_text": "(٢) وهو كاف عند النحاس ، وحسن عند الأشموني . انظر : القطع (١٥٧) ، والمنار (٤٦) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": null,
+          "opinions": [
+            {
+              "scholar": "النحاس",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "157"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "46"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 102,
+      "target_word": "ولاينفعهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿ولاينفعهم - 102 - ط﴾(3)",
+      "text_page": 225,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 225,
+          "raw_text": "(٣) وهو حسن عند ابن الأنباري والأشموني ، وكاف عند النحاس والداني . انظر : الإيضاح ١/٥٢٧ ، والقطع (١٥٧) ، والمكتفى (١٧٠) ، والمنار (٤٦) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "1/527"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "46"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "157"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "170"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 102,
+      "target_word": "من خلاق",
+      "verdict_label": null,
+      "verdict": null,
+      "margin_ref": 4,
+      "text": "[﴿من خلاق - وقف﴾](4)",
+      "text_page": 225,
+      "old_text": "[﴿من خلاق - وقف﴾](4)",
+      "fixes": [
+        {
+          "type": "malformed_bracket",
+          "basis": "page_prose",
+          "old_text": "[﴿من خلاق - وقف﴾](4)",
+          "new_text": "[﴿من خلاق - وقف﴾](4)",
+          "info": "القوس مطبوع بين معقوفين وفيه كلمة «وقف» بدل حرف سجاوندي، ورقم الآية غير مذكور داخل القوس. ضُبط حقل الآية على 102 لأن القوسين المجاورين في المتن (ولاينفعهم، أنفسهم) كلاهما 102. الحرف غير محسوم في المتن."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 225,
+          "raw_text": "(٤) ما بين المعقوفين من : د . وهذا خلاف مصطلح المؤلف في بيان الوقف ، لأنه يعتمد الرموز ولا يعتمد الكلمات . وهو كاف عند النحاس والداني ، وحسن عند الأشموني . انظر : القطع (١٥٧) ، والمكتفى (١٧٠) ، والمنار (٤٦) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": null,
+          "opinions": [
+            {
+              "scholar": "النحاس",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "157"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "170"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "46"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 102,
+      "target_word": "أنفسهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿أنفسهم - 102 - ط﴾(5)",
+      "text_page": 225,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 225,
+          "raw_text": "(٥) لم يذكر ابن الأنباري والنحاس والداني والأنصاري والأشموني هنا وقفا . = انظر : الإيضاح ١/٥٢٧ ، والقطع (١٥٧) ، والمكتفى (١٧٠) ، والمقصد (٤٦) ، والمنار (٤٦) .",
+          "continuation": {"status": "read", "page": 226},
+          "symbol_witness": null,
+          "suggested": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "1/527"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "157"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "170"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "46"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "46"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 103,
+      "target_word": "خير",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿خير - 103 - ط﴾(1)",
+      "text_page": 226,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 226,
+          "raw_text": "(١) وهو تام عند ابن الأنباري وأبي حاتم والداني ، وكاف عند الأنصاري ، وحسن عند الأشموني . انظر : الإيضاح ١/٥٢٧ ، والقطع (١٥٧) ، والمكتفى (١٧٠) ، والمقصد (٤٦) ، والمنار (٤٦) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "تام",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "1/527"
+            },
+            {
+              "scholar": "أبو حاتم",
+              "verdict": "تام",
+              "comment": null,
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "تام",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "170"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "46"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "46"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 104,
+      "target_word": "واسمعوا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 2,
+      "text": "﴿واسمعوا - 104 - ط﴾(2)",
+      "text_page": 226,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 226,
+          "raw_text": "(٢) انظر : الهامش السابق .",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 105,
+      "target_word": "من ربكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿من ربكم - 105 - ط﴾(3)",
+      "text_page": 226,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 226,
+          "raw_text": "(٣) وهو حسن عند الأنباري والأنصاري ، وكاف عند الداني والأشموني . انظر : الإيضاح ١/٥٢٧ ، والمكتفى (١٧٠) ، والمقصد (٤٦) ، والمنار (٤٦) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "1/527"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "46"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "170"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "46"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 105,
+      "target_word": "من يشاء",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿من يشاء - 105 - ط﴾(4)",
+      "text_page": 226,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 226,
+          "raw_text": "(٤) وهو كاف عند الأنصاري ، وأكفى مما قبله عند الأشموني . انظر : المقصد (٤٦) ، والمنار (٤٦) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": null,
+          "opinions": [
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "46"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "كاف",
+              "comment": "أكفى مما قبله",
+              "book": "المنار",
+              "book_ref": "46"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 106,
+      "target_word": "أو مثلها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿أو مثلها - 106 - ط﴾(5)",
+      "text_page": 226,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 226,
+          "raw_text": "(٥) قال ابن الأنباري في الإيضاح ١/٥٢٧ : [ والوقف على قوله : ﴿نأت بخير منها أو مثلها﴾ حسن وليس بتام وقال السجستاني : وهو تام ، وهذا غلط ، لأن قوله : ﴿ألم تعلم أن الله على كل شيء قدير﴾ تسديد وتثبيت لقدرة الله على المجيء بما هو خير من الآية المنسوخة ، وبما هو أسهل فرائض منها ] اه . وانظر المكتفى (١٧٠) فقد ذكر الداني أنه كاف ، وذكر بصيغة التمريض أنه تام . وانظر : منار الهدى (٤٦) فقد حسنه الأشموني .",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "ألم تعلم",
+                "trigger": "meaning_change",
+                "reason": "عدّ الوقف تاما يقطع ﴿ألم تعلم أن الله على كل شيء قدير﴾ فيصير استئنافا. السجستاني يقول إنه تام، وابن الأنباري يراه غلطا لأن الجملة تسديد وتثبيت لقدرة الله على الإتيان بخير من الآية المنسوخة.",
+                "scholars": ["السجستاني"]
+              }
+            ]
+          },
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": "وليس بتام، وغلّط قول السجستاني إنه تام",
+              "book": "الإيضاح",
+              "book_ref": "1/527"
+            },
+            {
+              "scholar": "السجستاني",
+              "verdict": "تام",
+              "comment": "ابن الأنباري قال: هذا غلط",
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": "ذكر بصيغة التمريض أنه تام",
+              "book": "المكتفى",
+              "book_ref": "170"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "منار الهدى",
+              "book_ref": "46"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

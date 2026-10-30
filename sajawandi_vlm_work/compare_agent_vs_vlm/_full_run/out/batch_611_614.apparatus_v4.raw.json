@@ -1,0 +1,869 @@
+{
+  "source": "apparatus_v4_611_614",
+  "page_numbers": [611, 612, 613, 614],
+  "waqfs": [
+    {
+      "ayah": 1,
+      "target_word": "المر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿المر - 1 - ط﴾ كوفي (1) وغيرهم (2)،",
+      "text_page": 611,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 611,
+          "raw_text": "(١) أ: [﴿المر﴾ كوفي ط]. وفي ج، د: علامة الوقف ساقطة.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 1,
+      "target_word": "آيات الكتاب",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "ومن لم يقف على ﴿المر﴾ وقف على (3) ﴿آيات الكتاب - 1 - ط﴾(4).",
+      "text_page": 611,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 611,
+          "raw_text": "(٤) وضع النحاس في القطع (٤٠٦) الوقف هنا، حيث قال: [﴿المر﴾ قطع كاف إذا لم ترفع به ما بعده، ﴿تلك آيات الكتاب﴾، وتمام عند الأخفش وأبي حاتم، قال أبو جعفر: وكذا يجب على قراءة مجاهد، لأنه قال: ﴿تلك آيات الكتاب﴾: التوراة والإنجيل، ﴿والذي أنزل إليك من ربك الحق﴾: القرآن، قال أبو جعفر: فالتام على هذا: ﴿تلك آيات الكتاب﴾، ﴿والذي أنزل إليك من ربك﴾ مبتدأ، و﴿الحق﴾ خبره]. وانظر: الإيضاح ٢/٧٣٠، والمكتفى (٢٣٣)، ومنار الهدى (١٩٩)، وإعراب القرآن للعكبري ٢/٦٠، والبحر المحيط ٥/٣٥٩. الصواب: [قول] كما ورد في نسخة (د، ط) من نسخ القطع، ولما ذكره الطبري في تفسيره ١٦/٣٢٠، ٣٢١، أن مجاهدا قال: ﴿الكتاب﴾ التوراة والإنجيل، و﴿الحق﴾ القرآن.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "النحاس",
+              "verdict": "تام",
+              "comment": "فالتام على قراءة مجاهد: تلك آيات الكتاب، والذي أنزل إليك من ربك مبتدأ والحق خبره. وقطع المر كاف إن لم يرفع به ما بعده.",
+              "book": "القطع",
+              "book_ref": "406"
+            },
+            {
+              "scholar": "الأخفش",
+              "verdict": "تام",
+              "comment": null,
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "أبو حاتم",
+              "verdict": "تام",
+              "comment": null,
+              "book": null,
+              "book_ref": null
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "والذي",
+                "trigger": "meaning_change",
+                "reason": "التام عند النحاس على تلك آيات الكتاب، ثم والذي أنزل إليك من ربك مبتدأ والحق خبره، فيُستأنف من والذي.",
+                "scholars": ["النحاس"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 2,
+      "target_word": "بغير عمد",
+      "verdict_label": "م",
+      "verdict": "لازم",
+      "margin_ref": null,
+      "text": "﴿بغير عمد - 2 - م﴾ لكون العمد نكرة، فيتوهم أن الجملة التي بعده صفتها، تقديره: بغير عمد مرئية، والمراد بغير عمد مرئية، وغير مرئية، فيوقف على ﴿عمد﴾ لنفي ذلك التوهم.",
+      "text_page": 611,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 2,
+      "target_word": "ترونها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿ترونها - 2 - ط﴾ أي كذلك (5).",
+      "text_page": 611,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 611,
+          "raw_text": "(٥) ما بين المعقوفين من: ب. ومعنى قوله: [أي كذلك] إشارة إلى قوله آنفا: [والمراد: بغير عمد مرئية، وغير مرئية]. فعلى هذا هاء الكناية ترجع إلى السموات. وقد وضح هذا الأشموني في المنار (١٩٩) حيث قال: [﴿ترونها﴾ حسن، على أن ﴿بغير عمد﴾ متعلق بـ ﴿رفع﴾ أي: رفع السموات بغير عمد ترونها، فالضمير من ﴿ترونها﴾ يعود على ﴿عمد﴾ كأنه قال: للسموات عمد ولكن لا ترى]. ثم قال: [فيكون ﴿ترونها﴾ في موضع الصفة لعمد، والتقدير: بغير عمد مرئية، وحينئذ فالوقف على ﴿السموات﴾ كاف، ثم يبتدئ ﴿بغير عمد ترونها﴾ أي: ترونها بلا عمد، وقال الكواشي: الضمير في ﴿ترونها﴾ يعود إلى السموات، أي: ترون السموات قائمة بغير عمد، وهذا أبلغ في الدلالة على القدرة الباهرة، وإذا الوقف على ﴿عمد﴾ ليبين أحد التأويلين من الآخر، ثم يبتدئ: ﴿ترونها﴾ أي: ترونها كذلك، فترونها مستأنف، فيتعين أن لا عمد لها ألبتة]. وانظر: الإيضاح ٢/٧٣٠، ٧٣١، والقطع (٤٠٦)، وزاد المسير ٤/٣٠١، والبحر المحيط ٥/٣٥٩، ٣٦٠.",
+          "continuation": {"status": "read", "page": 612},
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": "على أن بغير عمد متعلق برفع والضمير عائد على عمد. وفي وجه آخر إن كانت ترونها صفة فالوقف على السموات كاف ثم يبتدأ بغير عمد ترونها.",
+              "book": "المنار",
+              "book_ref": "199"
+            },
+            {
+              "scholar": "الكواشي",
+              "verdict": "مستأنف",
+              "comment": "الضمير عائد إلى السموات، والوقف على عمد لبيان أحد التأويلين، ثم الابتداء بترونها، فيتعين أن لا عمد لها.",
+              "book": null,
+              "book_ref": null
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "عمد",
+                "trigger": "meaning_change",
+                "reason": "الوقف على عمد يجعل ترونها مستأنفا فيتعين أن لا عمد للسموات، بخلاف إعادة الضمير على العمد.",
+                "scholars": ["الكواشي"]
+              },
+              {
+                "target_word": "السموات",
+                "trigger": "meaning_change",
+                "reason": "إن جعلت ترونها صفة لعمد فالوقف على السموات كاف والتقدير بغير عمد مرئية.",
+                "scholars": ["الأشموني"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "ترونها",
+                "trigger": "meaning_change",
+                "reason": "بعد الوقف على عمد يبتدأ بترونها بمعنى رؤية السموات قائمة بغير عمد.",
+                "scholars": ["الكواشي"]
+              },
+              {
+                "start_word": "بغير",
+                "trigger": "meaning_change",
+                "reason": "في وجه الصفة يبتدأ بغير عمد ترونها أي ترونها بلا عمد.",
+                "scholars": ["الأشموني"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 2,
+      "target_word": "والقمر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿والقمر - 2 - ط﴾.",
+      "text_page": 611,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 2,
+      "target_word": "مسمى",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿مسمى - 2 - ط﴾.",
+      "text_page": 611,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 3,
+      "target_word": "أنهارا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿أنهارا - 3 - ط﴾.",
+      "text_page": 612,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 3,
+      "target_word": "زوجين اثنين",
+      "verdict_label": null,
+      "verdict": null,
+      "margin_ref": 1,
+      "text": "﴿زوجين اثنين - 3 - ﴾ لمن قرأ: ﴿يغشي﴾ بالثقيل (1).",
+      "text_page": 612,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 612,
+          "raw_text": "(١) ما بين المعقوفين من: ب، ويلاحظ أن علامة الوقف ساقطة. والوقف هنا حسن عند ابن الأنباري، وكاف عند النحاس، والداني، والأنصاري، والأشموني. انظر: الإيضاح ٢/٧٣١، والقطع (٤٠٧)، والمكتفى (٢٣٣)، والمقصد (٢٠٠)، والمنار (٢٠٠). وقرأ بتخفيف الشين: ابن كثير، ونافع، وأبو عمرو، وابن عامر، وعاصم في رواية حفص، وقرأ بتشديد الشين: عاصم في رواية أبي بكر، وحمزة، والكسائي. انظر: السبعة (٣٥٦)، والتبصرة (٥١٠)، والتيسير (١١٠).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "2/731"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "407"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "233"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "200"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "200"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "يغشي",
+                "trigger": "meaning_change",
+                "reason": "الوقف لمن قرأ يغشي بالثقيل لأن الفعل بعده استئناف، فيُبتدأ به.",
+                "scholars": ["ابن الأنباري", "النحاس", "الداني", "الأنصاري", "الأشموني"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 3,
+      "target_word": "النهار",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿النهار - 3 - ط﴾.",
+      "text_page": 613,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 4,
+      "target_word": "بماء واحد",
+      "verdict_label": null,
+      "verdict": null,
+      "margin_ref": 1,
+      "text": "﴿بماء واحد - 4 - ﴾(1) وقف لمن قرأ: ﴿ونفضل﴾ بالنون (2).",
+      "text_page": 613,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 613,
+          "raw_text": "(١) أ، ب: علامة الوقف: [ط]، والصواب عدم إثباتها كما ورد في نسخة ج، د، بدلالة ما بعده، حيث إنه ذكر الوقف ولم يذكر نوعه.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "ونفضل",
+                "trigger": "meaning_change",
+                "reason": "الوقف لمن قرأ بالنون لأن ونفضل استئناف، بخلاف اتصال القراءة بالياء.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 4,
+      "target_word": "في الأكل",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿في الأكل - 4 - ط﴾(3).",
+      "text_page": 613,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 613,
+          "raw_text": "(٣) د: علامة الوقف: [ج].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 5,
+      "target_word": "جديد",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿جديد - 5 - ط﴾(4).",
+      "text_page": 613,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 613,
+          "raw_text": "(٤) ما بين المعقوفين من: ب.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 5,
+      "target_word": "في أعناقهم",
+      "verdict_label": null,
+      "verdict": null,
+      "margin_ref": null,
+      "text": "﴿في أعناقهم - 5 - ﴾.",
+      "text_page": 613,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 5,
+      "target_word": "بربهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿بربهم - 5 - ج﴾.",
+      "text_page": 613,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 5,
+      "target_word": "كذلك",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 5,
+      "text": "﴿كذلك - 5 - ج﴾(5).",
+      "text_page": 613,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 613,
+          "raw_text": "(٥) ج، د: علامة الوقف ساقطة.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 5,
+      "target_word": "أصحاب النار",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 7,
+      "text": "﴿أصحاب النار - 5 - ج﴾(7) أيضا (8) لعطف الجمل مع تكرار ﴿أولئك﴾ للتفصيل دلالة على تعظيم الأمر.",
+      "text_page": 613,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 613,
+          "raw_text": "(٧) أ: علامة الوقف: [ج، ط]، وفي ج، د: علامة الوقف ساقطة.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 6,
+      "target_word": "المثلات",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿المثلات - 6 - ط﴾.",
+      "text_page": 613,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 6,
+      "target_word": "على ظلمهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 9,
+      "text": "﴿على ظلمهم - 6 - ج﴾(9) لاختلاف الجملتين.",
+      "text_page": 613,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 9,
+          "text_page": 613,
+          "raw_text": "(٩) ج: علامة الوقف: [ط].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 7,
+      "target_word": "من ربه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من ربه - 7 - ط﴾.",
+      "text_page": 613,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 7,
+      "target_word": "منذر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 10,
+      "text": "﴿منذر - 7 - ط﴾(10).",
+      "text_page": 613,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 10,
+          "text_page": 613,
+          "raw_text": "(١٠) المثبت: [(منذر - ط)] من: ب. والوقف هنا تام عند أبي حاتم، كما ذكره النحاس في القطع (٤٠٨). أما الداني في المكتفى (٣٣٤) فذكر أنه كاف، ووافقه الأنصاري في المقصد (٢٠٠). وأما الأشموني في المنار (٢٠٠) فذكر أنه كاف على استئناف ما بعده، وجعل الهادي غير محمد صلى الله عليه وسلم، وليس بوقف إن جعل الهادي محمدا صلى الله عليه وسلم، والمعنى: إنما أنت منذر وهاد.",
+          "continuation": {"status": "read", "page": 614},
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "أبو حاتم",
+              "verdict": "تام",
+              "comment": "كما ذكره النحاس",
+              "book": "القطع",
+              "book_ref": "408"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "334"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": "وافق الداني",
+              "book": "المقصد",
+              "book_ref": "200"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "كاف",
+              "comment": "كاف على استئناف ما بعده إن جعل الهادي غير محمد، وليس بوقف إن جعل الهادي محمدا، والمعنى: إنما أنت منذر وهاد.",
+              "book": "المنار",
+              "book_ref": "200"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "منذر",
+                "trigger": "scholars_disagree",
+                "reason": "تام عند أبي حاتم، وكاف عند الداني والأنصاري والأشموني إن كان الهادي غير النبي، وليس بوقف عند الأشموني إن كان الهادي هو النبي.",
+                "scholars": ["أبو حاتم", "الداني", "الأنصاري", "الأشموني"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "ولكل",
+                "trigger": "meaning_change",
+                "reason": "الأشموني يجعله كافيا على استئناف ما بعده، فيُبدأ بولكل قوم هاد إذا كان الهادي غير محمد.",
+                "scholars": ["الأشموني"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 8,
+      "target_word": "وما تزداد",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿وما تزداد - 8 - ط﴾",
+      "text_page": 613,
+      "old_text": "﴿وما تزداد -",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿وما تزداد -",
+          "new_text": "﴿وما تزداد - 8 - ط﴾",
+          "info": "القوس يُفتح في صفحة 613 بكلمة وما تزداد ويُغلق في صفحة 614 بـ - 8 - ط."
+        }
+      ],
+      "apparatus": []
+    },
+    {
+      "ayah": 11,
+      "target_word": "من أمر الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من أمر الله - 11 - ط﴾.",
+      "text_page": 614,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 11,
+      "target_word": "ما بأنفسهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ما بأنفسهم - 11 - ط﴾.",
+      "text_page": 614,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 11,
+      "target_word": "فلا مرد له",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿فلا مرد له - 11 - ج﴾ لاختلاف الجملتين (1).",
+      "text_page": 614,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 614,
+          "raw_text": "(١) د: ما بين المعقوفين غير مثبت.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 12,
+      "target_word": "الثقال",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿الثقال - 12 - ج﴾ لاختلاف الفاعل مع اتفاق اللفظ.",
+      "text_page": 614,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 13,
+      "target_word": "من خيفته",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿من خيفته - 13 - ج﴾(2) كذلك (3).",
+      "text_page": 614,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 614,
+          "raw_text": "(٢) ج، د: علامة الوقف ساقطة.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 13,
+      "target_word": "في الله",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "﴿في الله - 13 - ج﴾ لاحتمال الواو الحال والاستئناف (4).",
+      "text_page": 614,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 614,
+          "raw_text": "(٤) انظر: منار الهدى (٢٠١).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "وهو",
+                "trigger": "meaning_change",
+                "reason": "إن كانت الواو للاستئناف بُدئ بهو شديد المحال، وإن كانت للحال اتصل بما قبله.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 13,
+      "target_word": "المحال",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿المحال - 13 - ط﴾ للآية، وانقطاع النظم.",
+      "text_page": 614,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 14,
+      "target_word": "دعوة الحق",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿دعوة الحق - 14 - ط﴾.",
+      "text_page": 614,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 14,
+      "target_word": "يبالغه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿يبالغه - 14 - ط﴾.",
+      "text_page": 614,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 16,
+      "target_word": "من رب السموات والأرض",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿من رب السموات والأرض - 16 - ط﴾(5).",
+      "text_page": 614,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 614,
+          "raw_text": "(٥) ب: [(والأرض) الثاني ط]، وما أثبتناه من بقية النسخ لعدم اللبس.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 16,
+      "target_word": "قل الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿قل الله - 16 - ط﴾.",
+      "text_page": 614,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 16,
+      "target_word": "ولا ضرا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ولا ضرا - 16 - ط﴾.",
+      "text_page": 614,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 16,
+      "target_word": "والبصير",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 6,
+      "text": "﴿والبصير - 16 - لا﴾ لعطف أم (6).",
+      "text_page": 614,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 614,
+          "raw_text": "(٦) أي: لعطف ﴿أم﴾ جملة على جملة. وقد وضح المرادي معنى العطف فيها، حيث قال في الجنى الداني (٢٢٥): [وأم هذه عاطفة، وذهب ابن كيسان إلى أن أصلها ﴿أو﴾ والميم بدل من الواو]. والوقف هنا تام عند الأخفش كما ذكره النحاس في القطع (٤٠٩). أما الأشموني في المنار (٢٠١)، فنص على عدم الوقف للعلة التي ذكرها المؤلف، حيث قال: [﴿والبصير﴾ ليس بوقف لعطف أم على ما قبلها]. وأما ابن الأنباري في الإيضاح ٢/٧٣٣، والداني في المكتفى (٣٣٤)، والأنصاري في المقصد (٢٠١) فلم يذكروا هنا وقفا.",
+          "continuation": {"status": "read", "page": 615},
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأخفش",
+              "verdict": "تام",
+              "comment": "كما ذكره النحاس",
+              "book": "القطع",
+              "book_ref": "409"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "ليس بوقف",
+              "comment": "لعطف أم على ما قبلها، موافقة لعلة المؤلف",
+              "book": "المنار",
+              "book_ref": "201"
+            },
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "2/733"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "334"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "201"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "والبصير",
+                "trigger": "scholars_disagree",
+                "reason": "تام عند الأخفش، وليس بوقف عند الأشموني لعطف أم، ولم يذكره ابن الأنباري والداني والأنصاري.",
+                "scholars": ["الأخفش"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "أم",
+                "trigger": "meaning_change",
+                "reason": "من جعل الوقف تاما ابتدأ بأم، ومن منعه فلأن أم عاطفة جملة على جملة.",
+                "scholars": ["الأخفش"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 16,
+      "target_word": "والنور",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿والنور - 16 - ج﴾ لأن أم (1) بمعنى ألف الاستفهام (2)، وقد يجعل بدلا (3) عن الأولى، والوقف أجوز، لأن وجه الاستفهام أوضح توبيخا على الشرك.",
+      "text_page": 614,
+      "old_text": "﴿والنور - 16 - ج﴾ لأن",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿والنور - 16 - ج﴾ لأن",
+          "new_text": "﴿والنور - 16 - ج﴾ لأن أم (1) بمعنى ألف الاستفهام (2)، وقد يجعل بدلا (3) عن الأولى، والوقف أجوز، لأن وجه الاستفهام أوضح توبيخا على الشرك.",
+          "info": "التعليل يبدأ في صفحة 614 بكلمة لأن وتتمته في صفحة 615 إلى على الشرك."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 615,
+          "raw_text": "(١) د: [﴿أم﴾] غير مثبتة.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "والنور",
+                "trigger": "meaning_change",
+                "reason": "الوقف أجوز لأن وجه الاستفهام في أم أوضح توبيخا على الشرك.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "أم",
+                "trigger": "meaning_change",
+                "reason": "يُبدأ بأم التي بمعنى ألف الاستفهام، وقد تكون بدلا عن الأولى.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

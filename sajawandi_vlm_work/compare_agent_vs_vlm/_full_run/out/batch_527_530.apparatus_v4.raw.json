@@ -1,0 +1,381 @@
+{
+  "source": "apparatus_v4_527_530",
+  "page_numbers": [527, 528, 529, 530],
+  "waqfs": [
+    {
+      "ayah": 189,
+      "target_word": "إليها",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿ إليها - ١٨٩ - ج ﴾ لأن جواب لما منتظر ، مع العطف بالفاء .",
+      "text_page": 527,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 189,
+      "target_word": "فمرت به",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 8,
+      "text": "﴿ فمرت به - ١٨٩ - ج ﴾(٨) كذلك .",
+      "text_page": 527,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 527,
+          "raw_text": "(٨) ج ، د : علامة الوقف ساقطة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 190,
+      "target_word": "فيما آتاهما",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 9,
+      "text": "﴿ فيما آتاهما - ١٩٠ - ج ﴾ لابتداء التنزيه [ على التعظيم ](٩) ، ومن وصل عجل التنزيه إلى(١٠) شبهة التشبيه .",
+      "text_page": 527,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 9,
+          "text_page": 527,
+          "raw_text": "(٩) ج : ما بين المعقوفين غير مثبت .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "فيما آتاهما",
+                "trigger": "meaning_change",
+                "reason": "الوقف لابتداء التنزيه، ومن وصل عجل التنزيه إلى شبهة التشبيه.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "فتعالى",
+                "trigger": "meaning_change",
+                "reason": "يبتدأ التنزيه بعد هذا الوقف، ووصله بما قبله يقرن التنزيه بشبهة التشبيه.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 191,
+      "target_word": "وهم يخلقون",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿ وهم يخلقون - ١٩١ - ز ﴾ [ والأولى أن يوصل ] (١) بالعطف .",
+      "text_page": 527,
+      "old_text": "﴿ وهم يخلقون - ١٩١ - ز ﴾",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ وهم يخلقون - ١٩١ - ز ﴾",
+          "new_text": "﴿ وهم يخلقون - ١٩١ - ز ﴾ [ والأولى أن يوصل ] (١) بالعطف .",
+          "info": "الوقف في آخر صفحة ٥٢٧ وتعليله في أول صفحة ٥٢٨."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 528,
+          "raw_text": "(١) د : [ والوصل أولى ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 193,
+      "target_word": "لا يتبعوكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ لا يتبعوكم - ١٩٣ - ط ﴾ .",
+      "text_page": 528,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 195,
+      "target_word": "يمشون بها",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿ يمشون بها - ١٩٥ - ز ﴾ لأن ﴿ أم ﴾ عاطفة ، إلا أنه قد يحمل(٢) على ابتداء [ استفهام إنكار ](٣) إمهالا لفرصة الاعتبار . والثانية(٤) والثالثة(٥) كذلك(٦) .",
+      "text_page": 528,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 528,
+          "raw_text": "(٢) ب : [ يحتمل ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "يمشون بها",
+                "trigger": "meaning_change",
+                "reason": "﴿أم﴾ عاطفة فيوصل، وقد تحمل على ابتداء استفهام الإنكار فيوقف على ﴿يمشون بها﴾ إمهالا لفرصة الاعتبار، والثانية والثالثة كذلك.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "أم",
+                "trigger": "meaning_change",
+                "reason": "على جعل ﴿أم﴾ ابتداء استفهام إنكار بعد الوقف، لا عاطفة.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 195,
+      "target_word": "يسمعون بها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ يسمعون بها - ١٩٥ - ط ﴾ .",
+      "text_page": 528,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 196,
+      "target_word": "الكتاب",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 7,
+      "text": "﴿ الكتاب - ١٩٦ - ز ﴾ والوصل أولى ، وإن(٧) اختلفت(٨) الجملتان لأن الثانية بدل عن الأولى(٩) في كونها صلة(١٠) للذي ، ومعظم المقصود فيها ، أي : ولي الله(١١) الذي يتولى الصالحين .",
+      "text_page": 528,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 528,
+          "raw_text": "(٧) ج : [ إن ] بسقوط النون .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 198,
+      "target_word": "لا يسمعوا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ لا يسمعوا - ١٩٨ - ط ﴾ .",
+      "text_page": 528,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 200,
+      "target_word": "بالله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ بالله - ٢٠٠ - ط ﴾ .",
+      "text_page": 528,
+      "old_text": "﴿ بالله - ٢٠٠ط ﴾ .",
+      "fixes": [
+        {
+          "type": "missing_delimiter",
+          "basis": "page_prose",
+          "old_text": "٢٠٠ط",
+          "new_text": "٢٠٠ - ط",
+          "info": "الفاصل بين رقم الآية ورمز الوقف غير ظاهر في المتن، والطاء مقروءة."
+        }
+      ],
+      "apparatus": []
+    },
+    {
+      "ayah": 201,
+      "target_word": "مبصرون",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿ مبصرون - ٢٠١ - ج ﴾ لأن قوله : ﴿ وإخوانهم ﴾ مبتدأ ، إلا أن المعنى يقتضي الوصل لبيان اختلاف حالتي(١) الفريقين(٢) .",
+      "text_page": 528,
+      "old_text": "﴿ مبصرون - ٢٠١ - ج ﴾ لأن قوله : ﴿ وإخوانهم ﴾ مبتدأ ، إلا أن",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ مبصرون - ٢٠١ - ج ﴾ لأن قوله : ﴿ وإخوانهم ﴾ مبتدأ ، إلا أن",
+          "new_text": "﴿ مبصرون - ٢٠١ - ج ﴾ لأن قوله : ﴿ وإخوانهم ﴾ مبتدأ ، إلا أن المعنى يقتضي الوصل لبيان اختلاف حالتي(١) الفريقين(٢) .",
+          "info": "انقطع التعليل عند «إلا أن» في آخر صفحة ٥٢٨ وتمامه في أول صفحة ٥٢٩."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 529,
+          "raw_text": "(١) د : [ حالي ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "مبصرون",
+                "trigger": "meaning_change",
+                "reason": "الوقف جائز لأن ﴿وإخوانهم﴾ مبتدأ، غير أن المعنى يقتضي الوصل لبيان اختلاف حالتي الفريقين.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وإخوانهم",
+                "trigger": "meaning_change",
+                "reason": "وجه الابتداء جعل ﴿وإخوانهم﴾ مبتدأ، والمعنى على الوصل لبيان اختلاف الحالين.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 203,
+      "target_word": "لولا اجتبيتها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ لولا اجتبيتها - ٢٠٣ - ط ﴾ .",
+      "text_page": 529,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 203,
+      "target_word": "من ربي",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿ من ربي - ٢٠٣ - ج ﴾ لاختلاف الجملتين بلا عطف مع اتحاد المقول .",
+      "text_page": 529,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 1,
+      "target_word": "عن الأنفال",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ عن الأنفال - ١ - ط ﴾ .",
+      "text_page": 530,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 1,
+      "target_word": "والرسول",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿ والرسول - ١ - ج ﴾ لعطف المختلفتين مع الفاء .",
+      "text_page": 530,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 1,
+      "target_word": "ذات بينكم",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "margin_ref": null,
+      "text": "﴿ ذات بينكم - ١ - ص ﴾ .",
+      "text_page": 530,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 2,
+      "target_word": "يتوكلون",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿ يتوكلون - ٢ - ج ﴾ لأن ﴿ الذين ﴾ يصلح(٢) مبتدأ ، إلا أن الوصل أولى على جعل ﴿ الذين ﴾ من تتمة صفات الإيمان(٣) لينصرف الثناء بحقيقة(٤) الإيمان إلى قوله : ﴿ إنما المؤمنون ﴾ .",
+      "text_page": 530,
+      "old_text": "﴿ يتوكلون - ٢ - ج ﴾ لأن ﴿ الذين ﴾ يصلح(٢) مبتدأ ، إلا أن الوصل أولى على جعل ﴿ الذين ﴾ من تتمة صفات الإيمان(٣) لينصرف الثناء بحقيقة(٤) الإيمان إلى قوله : ﴿ إنما",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ يتوكلون - ٢ - ج ﴾ لأن ﴿ الذين ﴾ يصلح(٢) مبتدأ ، إلا أن الوصل أولى على جعل ﴿ الذين ﴾ من تتمة صفات الإيمان(٣) لينصرف الثناء بحقيقة(٤) الإيمان إلى قوله : ﴿ إنما",
+          "new_text": "﴿ يتوكلون - ٢ - ج ﴾ لأن ﴿ الذين ﴾ يصلح(٢) مبتدأ ، إلا أن الوصل أولى على جعل ﴿ الذين ﴾ من تتمة صفات الإيمان(٣) لينصرف الثناء بحقيقة(٤) الإيمان إلى قوله : ﴿ إنما المؤمنون ﴾ .",
+          "info": "انقطع ﴿إنما﴾ في آخر صفحة ٥٣٠ وتمامه ﴿المؤمنون﴾ في أول صفحة ٥٣١، قبل وقف ينفقون الذي لا يدخل في هذه الدفعة."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 530,
+          "raw_text": "(٢) ب : [ يصلح ] ساقطة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "يتوكلون",
+                "trigger": "meaning_change",
+                "reason": "يجوز الوقف لأن ﴿الذين﴾ يصلح مبتدأ، والوصل أولى لجعل ﴿الذين﴾ من تتمة صفات الإيمان حتى ينصرف الثناء إلى ﴿إنما المؤمنون﴾.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "الذين",
+                "trigger": "meaning_change",
+                "reason": "على جعل ﴿الذين﴾ مبتدأ بعد الوقف، والوصل أولى حتى يتصل الثناء بقوله ﴿إنما المؤمنون﴾.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

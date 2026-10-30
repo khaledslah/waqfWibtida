@@ -1,0 +1,599 @@
+{
+  "source": "apparatus_v4_655_658",
+  "page_numbers": [655, 656, 657, 658],
+  "waqfs": [
+    {
+      "ayah": 2,
+      "target_word": "حسنا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 2,
+      "text": "[﴿حسنا - 2 - لا﴾](2).",
+      "text_page": 655,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 655,
+          "raw_text": "(2) ما بين المعقوفين من: ج. والعلة في عدم الوقف هنا، لأن ﴿ماكثين﴾ حال من الضمير في ﴿لهم﴾، والعامل فيها الاستقرار، وقيل: إن ﴿ماكثين﴾ صفة لأجر، والعائد الهاء في ﴿فيه﴾. ذكر هذا العكبري في إملائه 2/98. أما أبو حيان في البحر 6/96 فلم يذكر إلا الوجه الأول.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "العكبري",
+              "verdict": "عدم الوقف",
+              "comment": "ذكر تعليل عدم الوقف: ماكثين حال من الضمير في لهم",
+              "book": "الإملاء",
+              "book_ref": "2/98"
+            },
+            {
+              "scholar": "أبو حيان",
+              "verdict": "عدم الوقف",
+              "comment": "لم يذكر إلا الوجه الأول، وهو أن ماكثين حال",
+              "book": "البحر المحيط",
+              "book_ref": "6/96"
+            },
+            {
+              "scholar": "unknown",
+              "verdict": "عدم الوقف",
+              "comment": "قيل: ماكثين صفة لأجر، والعائد الهاء في فيه",
+              "book": null,
+              "book_ref": null
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "حسنا",
+                "trigger": "meaning_change",
+                "reason": "الوقف على حسنا يقطع ﴿ماكثين﴾ عن كونه حالا من الضمير في ﴿لهم﴾ أو صفة لأجر، فيصير كلاما مستقلا.",
+                "scholars": ["العكبري", "أبو حيان"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "ماكثين",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بماكثين يلغي وجه الحال ووجه الصفة ويجعل العامل فيه الاستقرار غير متجه إلى ما قبله.",
+                "scholars": ["العكبري", "أبو حيان"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 3,
+      "target_word": "أبدا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿أبدا - 3 - لا﴾ للعطف.",
+      "text_page": 655,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 4,
+      "target_word": "ولدا",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 3,
+      "text": "﴿ولدا - 4 - ز﴾(3) قد قيل(4)، لأن الجملة بعده تصلح صفة له، وابتداء أخبار، والوقف أوضح، لأن مقولهم ولد مطلق غير موصوف(5).",
+      "text_page": 655,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 655,
+          "raw_text": "(3) علامة الوقف: [ز] من: أ، وفي ب: علامة الوقف: [ق]، وفي بقية النسخ ساقطة.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "ولدا",
+                "trigger": "meaning_change",
+                "reason": "الجملة بعده تصلح صفة له أو ابتداء أخبار، والوقف أوضح لأن مقولهم ولد مطلق غير موصوف، فالوقف يقطع الصفة.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 5,
+      "target_word": "لآبائهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿لآبائهم - 5 - ط﴾.",
+      "text_page": 655,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 5,
+      "target_word": "من أفواههم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من أفواههم - 5 - ط﴾.",
+      "text_page": 655,
+      "old_text": "﴿من / أفواههم - 5 - ط﴾.",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿من",
+          "new_text": "﴿من أفواههم - 5 - ط﴾",
+          "info": "القوس يفتح في آخر صفحة 655 بكلمة «من» ويغلق في أول صفحة 656: أفواههم - 5 - ط"
+        }
+      ],
+      "apparatus": []
+    },
+    {
+      "ayah": 8,
+      "target_word": "جرزا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿جرزا - 8 - ط﴾ لتمام القصة، و«أم» بمعنى ألف استفهام(1) تقرير وتعجيب(2).",
+      "text_page": 656,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 656,
+          "raw_text": "(1) أ، د: [الاستفهام].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "جرزا",
+                "trigger": "meaning_change",
+                "reason": "الوقف لتمام قصة ما على الأرض، وما بعده استئناف بـ«أم» بمعنى ألف الاستفهام.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "أم",
+                "trigger": "meaning_change",
+                "reason": "«أم» بمعنى ألف استفهام تقرير وتعجيب، فالابتداء بها يفتتح معنى غير قصة جرزا.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 11,
+      "target_word": "عددا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 3,
+      "text": "[﴿عددا - 11 - لا﴾](3).",
+      "text_page": 656,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 656,
+          "raw_text": "(3) ما بين المعقوفين من: ج.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": null
+        }
+      ]
+    },
+    {
+      "ayah": 13,
+      "target_word": "نبأهم بالحق",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿نبأهم بالحق - 13 - ط﴾.",
+      "text_page": 656,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 13,
+      "target_word": "هدى",
+      "verdict_label": "ق",
+      "verdict": "قيل فيه وقف",
+      "margin_ref": 4,
+      "text": "﴿هدى - 13 - ق﴾(4) قد قيل، والوصل أولى للعطف، واتحاد نسق الكلام.",
+      "text_page": 656,
+      "old_text": "﴿هدى - 13 - ق﴾(4) قد قيل، والوصل أولى للعطف، واتحاد",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "واتحاد",
+          "new_text": "واتحاد نسق الكلام",
+          "info": "تتمة جملة التعليل في أول صفحة 657: نسق الكلام"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 656,
+          "raw_text": "(4) علامة الوقف من: ب.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "هدى",
+                "trigger": "scholars_disagree",
+                "reason": "قد قيل بالوقف، والوصل أولى للعطف واتحاد نسق الكلام.",
+                "scholars": []
+              }
+            ],
+            "ibtida": []
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 15,
+      "target_word": "آلهة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿آلهة - 15 - ط﴾ لابتداء الاستفهام بلولا(1).",
+      "text_page": 657,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 657,
+          "raw_text": "(1) انظر: الأزهية للهروي (166)، فقد ذكر أن من مواضع ﴿لولا﴾ الاستفهام. وانظر: المغني لابن هشام 1/275.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "آلهة",
+                "trigger": "meaning_change",
+                "reason": "الوقف لابتداء الاستفهام بلولا، فينقطع ما قبلها عن جملة الطلب.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "لولا",
+                "trigger": "meaning_change",
+                "reason": "لولا من مواضع الاستفهام، فالابتداء بها يفتتح طلبا غير إخبار اتخاذ الآلهة.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 15,
+      "target_word": "بين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿بين - 15 - ط﴾.",
+      "text_page": 657,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 15,
+      "target_word": "كذبا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿كذبا - 15 - ط﴾.",
+      "text_page": 657,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 17,
+      "target_word": "في فجرة منه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿في فجرة منه - 17 - ط﴾.",
+      "text_page": 657,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 17,
+      "target_word": "من آيات الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من آيات الله - 17 - ط﴾.",
+      "text_page": 657,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 17,
+      "target_word": "فهو المهتد",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿فهو المهتد - 17 - ج﴾ لعطف الجملتين مع دخول الواو(2).",
+      "text_page": 657,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 657,
+          "raw_text": "(2) أ: ورد بعدها لفظة: [والفاء]، ويظهر أنها زيادة من الناسخ. ومراد المؤلف أن الابتداء بالشرط: ﴿ومن يضلل﴾ علة الوقف، والعطف بالواو علة الوصل، والله أعلم.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "المؤلف",
+              "verdict": "جائز",
+              "comment": "الابتداء بالشرط ﴿ومن يضلل﴾ علة الوقف، والعطف بالواو علة الوصل",
+              "book": null,
+              "book_ref": null
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "فهو المهتد",
+                "trigger": "meaning_change",
+                "reason": "الوقف لأن ما بعده شرط مستأنف ﴿ومن يضلل﴾، والوصل لأن الواو تعطف الجملتين.",
+                "scholars": ["المؤلف"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "ومن يضلل",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بالشرط يفصل حكم الإضلال عن جملة ﴿فهو المهتد﴾.",
+                "scholars": ["المؤلف"]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 18,
+      "target_word": "رقود",
+      "verdict_label": "ق",
+      "verdict": "قيل فيه وقف",
+      "margin_ref": 3,
+      "text": "﴿رقود - 18 - ق﴾(3) [قد قيل](4)، والوصل أولى(5) لأن قوله: «ونقلبهم» يصلح(6) حالا(7) لهم، أي: رقود(8)، ونحن نقلبهم(9).",
+      "text_page": 657,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 657,
+          "raw_text": "(3) علامة الوقف من: ب، وفي أ: علامة الوقف: [ز].",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "رقود",
+                "trigger": "scholars_disagree",
+                "reason": "قد قيل بالوقف، والوصل أولى لأن «ونقلبهم» يصلح حالا لهم.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "ونقلبهم",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بـ«ونقلبهم» يخرجه عن الحال إلى كلام مستأنف، والوصل يبقيه حالا للرقود.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 18,
+      "target_word": "ذات الشمال",
+      "verdict_label": "ق",
+      "verdict": "قيل فيه وقف",
+      "margin_ref": 1,
+      "text": "﴿ذات الشمال - 18 - ق﴾(1) قد(2) قيل، والوصل أحسن لاتحاد بيان الحال، على أن الواو تصلح للحال أيضا، أي: نقلبهم باسطا كلبهم(3).",
+      "text_page": 658,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 658,
+          "raw_text": "(1) علامة الوقف من: ب.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "ذات الشمال",
+                "trigger": "scholars_disagree",
+                "reason": "قد قيل بالوقف، والوصل أحسن لاتحاد بيان الحال، والواو تصلح للحال أيضا.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "كلبهم",
+                "trigger": "meaning_change",
+                "reason": "الابتداء عند كلبهم يجعل الواو استئنافا لا حالا، فيتفك اتحاد بيان الحال.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 18,
+      "target_word": "ذراعيه بالوصيد",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ذراعيه بالوصيد - 18 - ط﴾.",
+      "text_page": 658,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 19,
+      "target_word": "بينهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿بينهم - 19 - ط﴾.",
+      "text_page": 658,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 19,
+      "target_word": "لبثتم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿لبثتم - 19 - ط﴾.",
+      "text_page": 658,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 19,
+      "target_word": "يوما",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿يوما - 19 - ط﴾.",
+      "text_page": 658,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 19,
+      "target_word": "بعض يوم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿بعض يوم - 19 - ط﴾.",
+      "text_page": 658,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 21,
+      "target_word": "لا ريب فيها",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 4,
+      "text": "﴿لا ريب فيها - 21 - لا﴾(4) قد قيل(5)، لأن ﴿إذ﴾ [يصلح ظرفا](6) للإعثار(7) عليهم(8)، والأولى أن يجعل مفعول محذوف، أي: اذكر إذ يتنازعون بينهم(1).",
+      "text_page": 658,
+      "old_text": "﴿لا ريب فيها - 21 - لا﴾(4) قد قيل(5)، لأن ﴿إذ﴾ [يصلح ظرفا](6) للإعثار(7) عليهم(8)، والأولى أن",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "والأولى أن",
+          "new_text": "والأولى أن يجعل مفعول محذوف، أي: اذكر إذ يتنازعون بينهم(1)",
+          "info": "تتمة التعليل في أول صفحة 659 وتنتهي عند «بينهم» قبل وقف بنيانا"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 658,
+          "raw_text": "(4) علامة الوقف من: أ، وفي ب: علامة الوقف: [ق]. والصواب ما أثبناه بدلالة ما بعده، وبما ذكره العكبري في إملائه 2/100 والأشموني في المنار (230).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "العكبري",
+              "verdict": "لا يوقف",
+              "comment": "احتج المحقق به على العلامة المثبتة (لا)؛ وفي نسخة ب: ق",
+              "book": "الإملاء",
+              "book_ref": "2/100"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "لا يوقف",
+              "comment": "احتج المحقق به على العلامة المثبتة (لا)",
+              "book": "المنار",
+              "book_ref": "230"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "لا ريب فيها",
+                "trigger": "meaning_change",
+                "reason": "إن كانت ﴿إذ﴾ ظرفا للإعثار تعلقت بما قبلها فلا يوقف، وإن قدر «اذكر» انقطع ما قبلها.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "إذ",
+                "trigger": "meaning_change",
+                "reason": "الأولى تقدير مفعول محذوف أي اذكر، فتكون ﴿إذ﴾ ابتداء كلام لا ظرفا للإعثار.",
+                "scholars": []
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

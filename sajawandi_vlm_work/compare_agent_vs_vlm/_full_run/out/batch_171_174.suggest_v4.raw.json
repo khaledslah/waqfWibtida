@@ -1,0 +1,80 @@
+{
+  "source": "apparatus_pass3_v4_171_174",
+  "input": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_full_run\\out\\batch_171_174.apparatus_v4.raw.json",
+  "suggestions": [
+    {
+      "ayah": 6,
+      "target_word": "المستقيم",
+      "margin_ref": 2,
+      "text_page": 172,
+      "suggested": {
+        "basis": "ai_inferred",
+        "waqf": [
+          {
+            "target_word": "المستقيم",
+            "trigger": "scholars_disagree",
+            "reason": "اختلف العلماء في الوقف على ﴿المستقيم﴾: عده ابن الأنباري حسنا لتعلق ما بعده به، ومنعه النحاس لأن ما بعده بدل، وأجازه الأشموني للآية والبدل.",
+            "scholars": ["ابن الأنباري", "النحاس", "الأشموني"]
+          }
+        ],
+        "ibtida": []
+      }
+    },
+    {
+      "ayah": 7,
+      "target_word": "أنعمت عليهم",
+      "margin_ref": 3,
+      "text_page": 172,
+      "suggested": {
+        "basis": "ai_inferred",
+        "waqf": [
+          {
+            "target_word": "عليهم",
+            "trigger": "scholars_disagree",
+            "reason": "اختلف العلماء في الوقف على ﴿عليهم﴾: عده ابن الأنباري والداني حسنا، وأجازه الأشموني، ومنعه النحاس لأن ﴿غير﴾ بدل من ﴿الذين﴾ أو نعت له.",
+            "scholars": ["ابن الأنباري", "الداني", "النحاس", "الأشموني"]
+          }
+        ],
+        "ibtida": [
+          {
+            "start_word": "غير",
+            "trigger": "meaning_change",
+            "reason": "الابتداء بـ﴿غير﴾ يقطعها عما قبلها وهي بدل من ﴿الذين﴾ أو نعت له (أو بدل من الهاء والميم في ﴿عليهم﴾ عن ابن كيسان) أو حال أو استثناء، فيتغير المعنى والإعراب.",
+            "scholars": ["النحاس"]
+          }
+        ]
+      }
+    },
+    {
+      "ayah": 2,
+      "target_word": "لاريب",
+      "margin_ref": 3,
+      "text_page": 173,
+      "suggested": {
+        "basis": "ai_inferred",
+        "waqf": [
+          {
+            "target_word": "لاريب",
+            "trigger": "scholars_disagree",
+            "reason": "الوقف على ﴿لا ريب﴾ وقف تام عند نافع (نص عليه الداني وانتصر له ابن الأنباري) على أن الخبر محذوف، وخالفه من وصل وجعل ﴿فيه﴾ خبر لا.",
+            "scholars": ["نافع", "الداني", "ابن الأنباري"]
+          },
+          {
+            "target_word": "فيه",
+            "trigger": "meaning_change",
+            "reason": "من وصل جعل ﴿فيه﴾ خبر ﴿لا﴾ أو صفة لـ﴿ريب﴾ مع حذف الخبر، فيكون الوقف على ﴿فيه﴾ و﴿هدى﴾ خبر لمبتدأ محذوف، أي: هو هدى؛ فيختلف المعنى بحسب موضع الوقف.",
+            "scholars": []
+          }
+        ],
+        "ibtida": [
+          {
+            "start_word": "فيه",
+            "trigger": "meaning_change",
+            "reason": "على الوقف على ﴿لا ريب﴾ يبتدأ بـ﴿فيه هدى﴾ فتكون ﴿فيه﴾ خبرا مقدما لـ﴿هدى﴾، وعلى الوصل يتغير الإعراب والمعنى.",
+            "scholars": []
+          }
+        ]
+      }
+    }
+  ]
+}

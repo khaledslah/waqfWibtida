@@ -1,0 +1,332 @@
+{
+  "source": "apparatus_v4_231_234",
+  "page_numbers": [231, 232, 233, 234],
+  "waqfs": [
+    {
+      "ayah": 115,
+      "target_word": "وجه الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 2,
+      "text": "﴿وجه الله - ١١٥ - ط﴾(٢).",
+      "text_page": 231,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 231,
+          "raw_text": "(٢) وهو حسن عند ابن الأنباري ، وتام عند أبي حاتم ، وكاف عند الداني والأشموني ، وذكر الداني بصيغة التمريض أنه تام . انظر : الإيضاح ١ /٥٢٩ ، والقطع ( ١٦٠ ) ، والمكتفى ( ١٧٢ ) ، والمنار ( ٤٧ ) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            { "scholar": "ابن الأنباري", "verdict": "حسن", "comment": null, "book": "الإيضاح", "book_ref": "1/529" },
+            { "scholar": "أبو حاتم", "verdict": "تام", "comment": null, "book": "القطع", "book_ref": "160" },
+            { "scholar": "الداني", "verdict": "كاف", "comment": "وذكر الداني بصيغة التمريض أنه تام", "book": "المكتفى", "book_ref": "172" },
+            { "scholar": "الأشموني", "verdict": "كاف", "comment": null, "book": "المنار", "book_ref": "47" }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 116,
+      "target_word": "ولدا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 3,
+      "text": "﴿ولدا - ١١٦ - لا﴾(٣) وأن جاز الابتداء بقوله ﴿سبحانه﴾ ، ولكن يوصل بقولهم ردا له(١) وتعجيلا(٢) للتنزيه .",
+      "text_page": 231,
+      "old_text": "﴿ولدا - ١١٦ - لا﴾(٣) وأن",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "وأن",
+          "new_text": "وأن جاز الابتداء بقوله ﴿سبحانه﴾ ، ولكن يوصل بقولهم ردا له(١) وتعجيلا(٢) للتنزيه .",
+          "info": "Reasoning clause begins at the end of page 231 matn and continues at the top of page 232 matn."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 231,
+          "raw_text": "(٣) د : علامة الوقف : [ ط ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 116,
+      "target_word": "سبحانه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿سبحانه - ١١٦ - ط﴾(٣).",
+      "text_page": 232,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 232,
+          "raw_text": "(٣) وهو تام عند نافع . انظر : القطع ( ١٦٠ ) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            { "scholar": "نافع", "verdict": "تام", "comment": null, "book": "القطع", "book_ref": "160" }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 116,
+      "target_word": "والأرض",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿والأرض - ١١٦ - ط﴾(٤) لأن ما بعده مبتدأ(٥).",
+      "text_page": 232,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 232,
+          "raw_text": "(٤) وهو كاف عند الأنصاري والأشموني ، وقال الأشموني : [ لأن ما بعده مبتدأ وخبر ] . انظر : المقصد ( ٤٧ ) ، والمنار ( ٤٧ ) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            { "scholar": "الأنصاري", "verdict": "كاف", "comment": null, "book": "المقصد", "book_ref": "47" },
+            { "scholar": "الأشموني", "verdict": "كاف", "comment": "لأن ما بعده مبتدأ وخبر", "book": "المنار", "book_ref": "47" }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 117,
+      "target_word": "والأرض",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 6,
+      "text": "﴿والأرض - ١١٧ - ط﴾(٦) لأن ﴿إذا﴾ أجيبت(١) بالفاء فكانت للشرط .",
+      "text_page": 232,
+      "old_text": "﴿والأرض - ١١٧ - ط﴾(٦) لأن ﴿إذا﴾",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "لأن ﴿إذا﴾",
+          "new_text": "لأن ﴿إذا﴾ أجيبت(١) بالفاء فكانت للشرط .",
+          "info": "Reasoning clause begins at the end of page 232 matn and continues at the top of page 233 matn."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 232,
+          "raw_text": "(٦) وهو صالح عند الأنصاري . انظر : المقصد ( ٤٧ ) . وقال الأشموني في المنار ( ٤٧ ) : [ جائز ، لأن ﴿إذا﴾ اذا أجيبت بالفاء كانت شرطية ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            { "scholar": "الأنصاري", "verdict": "صالح", "comment": null, "book": "المقصد", "book_ref": "47" },
+            { "scholar": "الأشموني", "verdict": "جائز", "comment": "لأن ﴿إذا﴾ اذا أجيبت بالفاء كانت شرطية", "book": "المنار", "book_ref": "47" }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 118,
+      "target_word": "آية",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 2,
+      "text": "﴿آية - ١١٨ - ط﴾(٢).",
+      "text_page": 233,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 233,
+          "raw_text": "(٢) وهو تام عند الأخفش . انظر : القطع ( ١٦١ ) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            { "scholar": "الأخفش", "verdict": "تام", "comment": null, "book": "القطع", "book_ref": "161" }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 118,
+      "target_word": "قولهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿قولهم - ١١٨ - ط﴾(٣).",
+      "text_page": 233,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 233,
+          "raw_text": "(٣) وهو تام عند أحمد بن موسى . انظر : القطع ( ١٦١ ) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            { "scholar": "أحمد بن موسى", "verdict": "تام", "comment": null, "book": "القطع", "book_ref": "161" }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 118,
+      "target_word": "قلوبهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿قلوبهم - ١١٨ - ط﴾(٤) لأن قد لتأكيد(٥) الاستئناف .",
+      "text_page": 233,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 233,
+          "raw_text": "(٤) وهو صالح عند النحاس ، وكاف عند الأشموني . انظر : القطع ( ١٦١ ) ، والمنار ( ٤٨ ) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            { "scholar": "النحاس", "verdict": "صالح", "comment": null, "book": "القطع", "book_ref": "161" },
+            { "scholar": "الأشموني", "verdict": "كاف", "comment": null, "book": "المنار", "book_ref": "48" }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 119,
+      "target_word": "ونذيرا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 6,
+      "text": "﴿ونذيرا - ١١٩ - لا﴾ للعطف ، أي : نذيرا وغير(٦) مسئول ، إلا لمن قرأ(٧) : ﴿ولا تسأل﴾ على النهي(٨) لاختلاف الجملتين(٩) .",
+      "text_page": 233,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 233,
+          "raw_text": "(٦) أ ، ب : [ أو غير ] ، وفي ج : [ وغيره ] وهو تصحيف .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 120,
+      "target_word": "ملتهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿ملتهم - ١٢٠ - ط﴾(١).",
+      "text_page": 234,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 234,
+          "raw_text": "(١) وهو حسن عند ابن الأنباري ، وكاف عند الداني . انظر : الإيضاح ١ /٥٣١ ، والمكتفى ( ١٧٤ ) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            { "scholar": "ابن الأنباري", "verdict": "حسن", "comment": null, "book": "الإيضاح", "book_ref": "1/531" },
+            { "scholar": "الداني", "verdict": "كاف", "comment": null, "book": "المكتفى", "book_ref": "174" }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 120,
+      "target_word": "هو الهدى",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 2,
+      "text": "﴿هو الهدى - ١٢٠ - ط﴾(٢).",
+      "text_page": 234,
+      "old_text": "﴿هو الهدى - ١٢٠ ط﴾(٢).",
+      "fixes": [
+        {
+          "type": "missing_delimiter",
+          "basis": "editor_policy",
+          "old_text": "١٢٠ ط",
+          "new_text": "- ١٢٠ - ط",
+          "info": "Dash missing between ayah number and waqf letter in the printed bracket."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 234,
+          "raw_text": "(٢) وهو كاف عند الداني ، وحسن عند الأشموني . انظر : المكتفى ( ١٧٤ ) ، والمنار ( ٤٨ ) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            { "scholar": "الداني", "verdict": "كاف", "comment": null, "book": "المكتفى", "book_ref": "174" },
+            { "scholar": "الأشموني", "verdict": "حسن", "comment": null, "book": "المنار", "book_ref": "48" }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 120,
+      "target_word": "من العلم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 3,
+      "text": "﴿من العلم - ١٢٠ - لا﴾ لأن نفي الولاية والنصرة متعلق(٣) بشرط(٤) اتباع أهوائهم فكان في الإطلاق خطر(٥).",
+      "text_page": 234,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 234,
+          "raw_text": "(٣) أ : [ يتعلق ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 121,
+      "target_word": "تلاوته",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 6,
+      "text": "﴿تلاوته - ١٢١ - ط﴾(٦) لأن ما بعدها مبتدأ آخر مع خبره .",
+      "text_page": 234,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 234,
+          "raw_text": "(٦) وهو قبيح عند ابن الأنباري ، حيث قال في الإيضاح ١ /٥٣١ : [ والوقف على قوله : ﴿حق تلاوته﴾ قبيح ، لأن ﴿الذين﴾ مرفوعون بما عاد من قوله : ﴿أولئك يؤمنون به﴾ ، والمرفوع متعلق بالرافع ] . وقال النحاس في القطع ( ١٦١ ، ١٦٢ ) : [ ﴿الذين آتيناهم الكتاب يتلونه حق تلاوته﴾ ليس بقطع كاف ، ولا يجوز الوقف عليه ، لأنه يصير المعنى : إن الذين أوتوا الكتاب يتلونه حق تلاوته ، وهذا انقلاب المعنى ، وإنما المعنى - والله أعلم - الذين آتيناهم الكتاب وهذه حالهم ﴿أولئك يؤمنون به﴾ فهذا الوقف ، والتمام ﴿هم الخاسرون﴾ ] . اهـ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            { "scholar": "ابن الأنباري", "verdict": "قبيح", "comment": "لأن ﴿الذين﴾ مرفوعون بما عاد من قوله ﴿أولئك يؤمنون به﴾ ، والمرفوع متعلق بالرافع", "book": "الإيضاح", "book_ref": "1/531" },
+            { "scholar": "النحاس", "verdict": "لا يوقف", "comment": "ليس بقطع كاف ، ولا يجوز الوقف عليه ، لأنه يصير المعنى انقلابا ؛ والتمام عنده ﴿هم الخاسرون﴾", "book": "القطع", "book_ref": "161-162" }
+          ]
+        }
+      ]
+    }
+  ]
+}

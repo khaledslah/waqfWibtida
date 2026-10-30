@@ -1,0 +1,75 @@
+{
+  "source": "apparatus_pass3_v4_207_210",
+  "input": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_full_run\\out\\batch_207_210.apparatus_v4.raw.json",
+  "suggestions": [
+    {
+      "ayah": 68,
+      "target_word": "ولا بكر",
+      "margin_ref": 7,
+      "text_page": 207,
+      "suggested": {
+        "basis": "ai_inferred",
+        "waqf": [],
+        "ibtida": [
+          {"start_word": "عوان", "trigger": "meaning_change", "reason": "الوقف على «ولا بكر» تام عند نافع، والتقدير «هي عوان بين ذلك»؛ فالابتداء بـ«عوان» يقتضي تقدير المبتدأ المحذوف (هي) ليستقيم المعنى.", "scholars": ["نافع"]}
+        ]
+      }
+    },
+    {
+      "ayah": 70,
+      "target_word": "ماهي",
+      "margin_ref": 7,
+      "text_page": 208,
+      "suggested": {
+        "basis": "ai_inferred",
+        "waqf": [
+          {"target_word": "ماهي", "trigger": "scholars_disagree", "reason": "المتن يمنع الوقف («لا») لأن التقدير «فإن البقر» أو لأن البقر ... إبلاء لعذر تكرار السؤال، بينما الوقف جائز عند الأنصاري والأشموني؛ فالخلاف بين المنع والإجازة.", "scholars": ["الأنصاري", "الأشموني"]}
+        ],
+        "ibtida": []
+      }
+    },
+    {
+      "ayah": 71,
+      "target_word": "الحرث",
+      "margin_ref": 3,
+      "text_page": 209,
+      "suggested": {
+        "basis": "ai_inferred",
+        "waqf": [
+          {"target_word": "الحرث", "trigger": "scholars_disagree", "reason": "نافع عدّ الوقف تامًا، واستحبّه أبو جعفر الرؤاسي، وذكر ابن الأنباري الوقف ثم الاستئناف على معنى «هي مسلمة»، وخالفهم الأخفش لأنه جعل «مسلمة» نعتًا لبقرة وجعل التمام عند «لاشية فيها».", "scholars": ["ابن الأنباري", "نافع", "أبو جعفر الرؤاسي", "الأخفش"]}
+        ],
+        "ibtida": [
+          {"start_word": "مسلمة", "trigger": "meaning_change", "reason": "الابتداء بـ«مسلمة» يجعلها خبرًا لمبتدأ محذوف (هي مسلمة)، أما الوصل فيجعلها صفة لبقرة؛ فيتغير الإعراب والمعنى.", "scholars": ["ابن الأنباري", "الأخفش"]}
+        ]
+      }
+    },
+    {
+      "ayah": 71,
+      "target_word": "جئت بالحق",
+      "margin_ref": 5,
+      "text_page": 209,
+      "suggested": {
+        "basis": "ai_inferred",
+        "waqf": [
+          {"target_word": "جئت بالحق", "trigger": "scholars_disagree", "reason": "الوقف تام عند أحمد بن موسى، وحسن عند الأنصاري، وجائز فقط عند الأشموني لأن «فذبحوها» عطف على ما قبله؛ فاختلفت درجات الجواز.", "scholars": ["أحمد بن موسى", "الأنصاري", "الأشموني"]}
+        ],
+        "ibtida": [
+          {"start_word": "فذبحوها", "trigger": "meaning_change", "reason": "«فذبحوها» معطوف على محذوف مقدّر (فطلبوها فوجدوها)، فالابتداء بها يقطع العطف عمّا قبلها ويحتاج إلى ملاحظة التقدير.", "scholars": ["الأشموني"]}
+        ]
+      }
+    },
+    {
+      "ayah": 73,
+      "target_word": "بعضها",
+      "margin_ref": 4,
+      "text_page": 210,
+      "suggested": {
+        "basis": "ai_inferred",
+        "waqf": [
+          {"target_word": "بعضها", "trigger": "scholars_disagree", "reason": "النحاس نفى كونه قطعًا كافيًا لأن في الكلام حذفًا (اضربوه ببعضها يحيا)، والأنصاري عدّه كافيًا، والأشموني أجازه لكن رأى الأولى وصله للحذف نفسه.", "scholars": ["النحاس", "الأنصاري", "الأشموني"]}
+        ],
+        "ibtida": []
+      }
+    }
+  ]
+}

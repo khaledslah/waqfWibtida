@@ -1,0 +1,303 @@
+{
+  "source": "apparatus_v4_191_194",
+  "page_numbers": [191, 192, 193, 194],
+  "waqfs": [
+    {
+      "ayah": 22,
+      "target_word": "بناء",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "margin_ref": 3,
+      "text": "﴿بناء - 22 - ص﴾(3) لعطف الجملتين المتفقتين(4)",
+      "text_page": 191,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 191,
+          "raw_text": "(٣) وهو حسن عند ابن الأنباري ، وكاف عند الداني . انظر : الإيضاح ١ /٥٠٢ ، والمكتفى ( ١٦١ ) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {"scholar": "ابن الأنباري", "verdict": "حسن", "comment": null, "book": "الإيضاح", "book_ref": "1/502"},
+            {"scholar": "الداني", "verdict": "كاف", "comment": null, "book": "المكتفى", "book_ref": "161"}
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 22,
+      "target_word": "لكم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 5,
+      "text": "﴿لكم - 22 - ج﴾ لانقطاع النظم، مع فاء التعقيب(5)",
+      "text_page": 191,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 191,
+          "raw_text": "(٥) وهو حسن عند ابن الأنباري ، وذكر أيضا أنه أحسن من الوقف على ﴿ بناء ﴾ ، ثم علل هذا بقوله : لأنه لم يأت بعده ما يتعلق به في اللفظ . اهـ . أما الداني فعد الوقف هنا كافيا . انظر : الإيضاح ١ /٥٠٢ ، والمكتفى ( ١٦١ ) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {"scholar": "ابن الأنباري", "verdict": "حسن", "comment": "وذكر أيضا أنه أحسن من الوقف على ﴿بناء﴾؛ لأنه لم يأت بعده ما يتعلق به في اللفظ", "book": "الإيضاح", "book_ref": "1/502"},
+            {"scholar": "الداني", "verdict": "كاف", "comment": null, "book": "المكتفى", "book_ref": "161"}
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 23,
+      "target_word": "من مثله",
+      "verdict_label": "ص",
+      "verdict": "حسن",
+      "margin_ref": 6,
+      "text": "﴿من مثله - 23 - ص﴾(6)",
+      "text_page": 191,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 191,
+          "raw_text": "(٦) قال ابن الأنباري والقرطبي : والوقف على ﴿ مثله ﴾ ليس بتام ، لأن ﴿ وادعوا ﴾ نسق عليه . اهـ . أي : نسق على قوله : ﴿ فأتوا ﴾ . وذكر النحاس أيضا أن الوقف هنا ليس بتام للعطف . انظر : الإيضاح ١ /٥٠٣ ، والقطع ( ١٢٦ ) ، وتفسير القرطبي ١ /٢٣٢ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {"scholar": "ابن الأنباري", "verdict": "ليس بتام", "comment": "لأن ﴿وادعوا﴾ نسق عليه", "book": "الإيضاح", "book_ref": "1/503"},
+            {"scholar": "القرطبي", "verdict": "ليس بتام", "comment": "لأن ﴿وادعوا﴾ نسق عليه", "book": "تفسير القرطبي", "book_ref": "1/232"},
+            {"scholar": "النحاس", "verdict": "ليس بتام", "comment": "للعطف", "book": "القطع", "book_ref": "126"}
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 24,
+      "target_word": "والحجارة",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿والحجارة - 24 - ج﴾(1) على تقدير: هي أعدت(2)، والوصل أجوز، لأن قوله(3): ﴿أعدت﴾ بدل الجملة الأولى في كونها صلة ﴿التي﴾(4).",
+      "text_page": 191,
+      "old_text": "﴿والحجارة - ٢٤ - [نهاية ص ١٩١ | بداية ص ١٩٢] ج ﴾(١)",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿والحجارة - ٢٤ - [نهاية ص ١٩١ | بداية ص ١٩٢] ج ﴾(١)",
+          "new_text": "﴿والحجارة - 24 - ج﴾(1)",
+          "info": "Bracket opens at end of page 191 matn and closes (letter ج and footnote (1)) at start of page 192 matn; rejoined from matn evidence."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 192,
+          "raw_text": "(١) ج : علامة الوقف ساقطة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 25,
+      "target_word": "الأنهار",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿الأنهار - 25 - ط﴾(5)",
+      "text_page": 192,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 192,
+          "raw_text": "(٥) وهو حسن عند ابن الأنباري ، والقرطبي ، وقالا : وليس بتام ، لأن قوله ﴿ كلما رزقوا منها من ثمرة ﴾ من وصف الجنات . اهـ . انظر النحاس فقال : ﴿ الأنهار ﴾ ليس بقطع كاف ، إلا أن تجعل ما بعده مستأنفا . اهـ . وقد جزم الداني أنه كاف . انظر : الإيضاح ١ /٥٠٦ ، والقطع ( ١٢٧ ) ، والمكتفى ( ١٦٢ ) ، وتفسير القرطبي ١ /٢٤٠ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {"scholar": "ابن الأنباري", "verdict": "حسن", "comment": "وليس بتام، لأن قوله ﴿كلما رزقوا منها من ثمرة﴾ من وصف الجنات", "book": "الإيضاح", "book_ref": "1/506"},
+            {"scholar": "القرطبي", "verdict": "حسن", "comment": "وليس بتام، لأن قوله ﴿كلما رزقوا منها من ثمرة﴾ من وصف الجنات", "book": "تفسير القرطبي", "book_ref": "1/240"},
+            {"scholar": "النحاس", "verdict": "ليس بقطع كاف", "comment": "إلا أن تجعل ما بعده مستأنفا", "book": "القطع", "book_ref": "127"},
+            {"scholar": "الداني", "verdict": "كاف", "comment": "جزم بأنه كاف", "book": "المكتفى", "book_ref": "162"}
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 25,
+      "target_word": "رزقا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 6,
+      "text": "﴿رزقا - 25 - لا﴾ لأن: ﴿قالوا﴾ جواب ﴿كلما﴾(6)",
+      "text_page": 192,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 192,
+          "raw_text": "(٦) قال النحاس في الوقف هنا : ليس بقطع كاف ، لأنه لم يأت الجواب ، لأن ﴿ كلما ﴾ يقول النحويون هي بمعنى : ﴿ إذا ﴾ في مثل هذا يحتاج إلى جواب . اهـ . وقد صرح الأشموني بعدم الوقف هنا لما ذكره المؤلف . انظر : القطع ( ١٢٧ ) ، ومنار الهدى ( ٣٦ ) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {"scholar": "النحاس", "verdict": "ليس بقطع كاف", "comment": "لأنه لم يأت الجواب؛ ﴿كلما﴾ بمعنى ﴿إذا﴾ يحتاج إلى جواب", "book": "القطع", "book_ref": "127"},
+            {"scholar": "الأشموني", "verdict": "لا يوقف", "comment": "صرح بعدم الوقف هنا", "book": "منار الهدى", "book_ref": "36"}
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 25,
+      "target_word": "متشابها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 7,
+      "text": "﴿متشابها - 25 - ط﴾(7)",
+      "text_page": 192,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 192,
+          "raw_text": "(٧) وهو حسن عند ابن الأنباري ، وصالح عند النحاس ، وكاف عند الداني ، وذكر بصيغة التمريض أنه تام . انظر : الإيضاح ١ /٥٠٦ ، والقطع ( ١٢٧ ) ، والمكتفى ( ١٦٢ ) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {"scholar": "ابن الأنباري", "verdict": "حسن", "comment": null, "book": "الإيضاح", "book_ref": "1/506"},
+            {"scholar": "النحاس", "verdict": "صالح", "comment": null, "book": "القطع", "book_ref": "127"},
+            {"scholar": "الداني", "verdict": "كاف", "comment": "وذكر بصيغة التمريض أنه تام", "book": "المكتفى", "book_ref": "162"}
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 26,
+      "target_word": "فما فوقها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿فما فوقها - 26 - ط﴾(1)",
+      "text_page": 192,
+      "old_text": "﴿فما فوقها - ٢٦ - [نهاية ص ١٩٢ | بداية ص ١٩٣] ط ﴾(١)",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿فما فوقها - ٢٦ - [نهاية ص ١٩٢ | بداية ص ١٩٣] ط ﴾(١)",
+          "new_text": "﴿فما فوقها - 26 - ط﴾(1)",
+          "info": "Bracket opens at end of page 192 matn and closes (letter ط and footnote (1)) at start of page 193 matn; rejoined from matn evidence."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 193,
+          "raw_text": "(١) وهو حسن عند ابن الأنباري ، وذكر النحاس عن أبي حاتم أنه تام ، ورجحه ، ولكن الداني رجح أنه كاف ، وذكر بصيغة التمريض أنه تام ، وأخذ الأشموني بقول الداني . انظر : الإيضاح ١ /٥٠٨ ، والقطع ( ١٢٨ ، ١٢٩ ) ، والمكتفى ( ١٦٢ ) ، والمنار ( ٣٧ ) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {"scholar": "ابن الأنباري", "verdict": "حسن", "comment": null, "book": "الإيضاح", "book_ref": "1/508"},
+            {"scholar": "أبو حاتم", "verdict": "تام", "comment": "نقله النحاس عنه", "book": "القطع", "book_ref": "128، 129"},
+            {"scholar": "النحاس", "verdict": "تام", "comment": "ذكر عن أبي حاتم أنه تام ورجحه", "book": "القطع", "book_ref": "128، 129"},
+            {"scholar": "الداني", "verdict": "كاف", "comment": "رجح أنه كاف، وذكر بصيغة التمريض أنه تام", "book": "المكتفى", "book_ref": "162"},
+            {"scholar": "الأشموني", "verdict": "كاف", "comment": "أخذ بقول الداني", "book": "المنار", "book_ref": "37"}
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 26,
+      "target_word": "من ربهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿من ربهم - 26 - ج﴾ لأن الجملتين وإن اتفقتا فكلمة(2) ﴿أما﴾ للتفصيل بين الجمل(3)",
+      "text_page": 193,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 193,
+          "raw_text": "(٢) ج : [ بكلمة ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 26,
+      "target_word": "مثلا",
+      "verdict_label": "م",
+      "verdict": "لازم",
+      "margin_ref": 4,
+      "text": "﴿مثلا - 26 - م﴾(4) لأنه لو وصل صار ما بعده صفة له، ليس بصفة، وإنما(1) هو ابتداء إخبار من(2) الله عز وجل جوابا لهم(3).",
+      "text_page": 193,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 193,
+          "raw_text": "(٤) ذكر النحاس عن أبي حاتم أن هذا الوقف ، وذكر عن الفراء أنه خالف أبا حاتم ، وليس هذا عنده تاما ، والتمام عنده : ﴿ ويهدي به كثيرا ﴾ . وقد رجح النحاس قول أبي حاتم ، فقال : [ والأولى في هذا ما قاله أبو حاتم ، والدليل على ذلك قوله عز وجل في سورة المدثر : ﴿ وليقول الذين في قلوبهم مرض والكافرون ماذا أراد الله بهذا مثلا ﴾ ، ثم قال عز وجل : ﴿ كذلك يضل الله من يشاء ويهدي من يشاء ﴾ ، فهذا يبين ذلك ] . اهـ . = وهذا هو الظاهر لي من الآية . أما الأشموني فقال : [ ﴿ بهذا مثلا ﴾ كاف على استئناف ما بعده جوابا من الله للكفار ، وإن جعل من تتمة الحكاية عنهم كان جائزا ] . اهـ . أما ابن الأنباري والداني فلم يذكروا هنا وقفا . انظر : القطع ( ١٢٩ ) ، والمنار ( ٣٧ ) ، ومعاني القرآن للفراء ١ /٢٣ ، والإيضاح ١ /٥٠٩ ، والمكتفى ( ١٦٢ ) .",
+          "continuation": {"status": "read", "page": 194},
+          "symbol_witness": null,
+          "opinions": [
+            {"scholar": "أبو حاتم", "verdict": "تام", "comment": "نقله النحاس عنه؛ لفظ الحكم محذوف في النص المطبوع (\"أن هذا الوقف ،\") ويفهم من السياق أنه تام", "book": "القطع", "book_ref": "129"},
+            {"scholar": "الفراء", "verdict": "ليس بتام", "comment": "خالف أبا حاتم؛ التمام عنده ﴿ويهدي به كثيرا﴾", "book": "معاني القرآن للفراء", "book_ref": "1/23"},
+            {"scholar": "النحاس", "verdict": "تام", "comment": "رجح قول أبي حاتم واستدل بآية المدثر", "book": "القطع", "book_ref": "129"},
+            {"scholar": "الأشموني", "verdict": "كاف", "comment": "كاف على استئناف ما بعده جوابا من الله للكفار، وإن جعل من تتمة الحكاية عنهم كان جائزا", "book": "المنار", "book_ref": "37"},
+            {"scholar": "ابن الأنباري", "verdict": "لم يذكر وقفا", "comment": "لم يذكر هنا وقفا", "book": "الإيضاح", "book_ref": "1/509"},
+            {"scholar": "الداني", "verdict": "لم يذكر وقفا", "comment": "لم يذكر هنا وقفا", "book": "المكتفى", "book_ref": "162"}
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 26,
+      "target_word": "ويهدي به كثيرا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿ويهدي به كثيرا - 26 - ط﴾(4)",
+      "text_page": 194,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 194,
+          "raw_text": "(٤) ذكر النحاس أنه تام عند الفراء . وقال الفراء : [ وقوله : ﴿ ماذا أراد الله بهذا مثلا يضل به كثيرا ويهدي به كثيرا ﴾ كأنه قال - والله أعلم - ماذا أراد الله بمثل لا يعرفه كل أحد يضل به هذا ، ويهدي به هذا ، قال الله : ﴿ وما يضل به إلا الفاسقين ﴾ ] . اهـ . ولكن الداني عده كافيا . انظر : القطع ( ١٢٩ ) ، ومعاني القرآن للفراء ١ /٢٣ ، والمكتفى ( ١٦٢ ) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {"scholar": "الفراء", "verdict": "تام", "comment": "ذكره النحاس عنه", "book": "معاني القرآن للفراء", "book_ref": "1/23"},
+            {"scholar": "الداني", "verdict": "كاف", "comment": null, "book": "المكتفى", "book_ref": "162"}
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 26,
+      "target_word": "الفاسقين",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿الفاسقين - 26 - لا﴾ لأن",
+      "text_page": 194,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    }
+  ]
+}

@@ -1,0 +1,863 @@
+{
+  "source": "apparatus_v4_grok_211_214",
+  "page_numbers": [211, 212, 213, 214],
+  "waqfs": [
+    {
+      "ayah": 74,
+      "target_word": "الأنهار",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 2,
+      "text": "﴿الأنهار - ٧٤ - ط﴾(٢)",
+      "text_page": 211,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 211,
+          "raw_text": "(٢) وهو صالح عند النحاس، وحسن عند الأشموني. انظر: القطع (١٤٩)، والمنار (٤٢).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "النحاس",
+              "verdict": "صالح",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "149"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "42"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 74,
+      "target_word": "الماء",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿الماء - ٧٤ - ط﴾(٣) لتفصيل(٤) دلائل القدرة إمهالا(٥) للتدبر(٦)",
+      "text_page": 211,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 211,
+          "raw_text": "(٣) أ: ما بين المعقوفين غير مثبت. والوقف عند الأشموني حسن. انظر: المنار (٤٢).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": "في نسخة أ ما بين المعقوفين غير مثبت",
+              "book": "المنار",
+              "book_ref": "42"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 74,
+      "target_word": "من خشية الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 7,
+      "text": "﴿من خشية الله - ٧٤ - ط﴾(٧).",
+      "text_page": 211,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 211,
+          "raw_text": "(٧) وهو حسن عند النحاس والأنصاري والأشموني. انظر: القطع (١٤٩)، والمقصد (٤٢)، والمنار (٤٢). وقد فصل الداني الوقف هنا فقال: [كاف على قراءة من قرأ: ﴿وما الله بغافل عما تعملون﴾ بالتاء، لأنه متصل بالخطاب المتقدم في قوله: ﴿ثم قست قلوبهم﴾، ومن قرأ ذلك بالياء فالوقف على: ﴿من خشية الله﴾ تام، لأن ما بعده استئناف إخبار من الله عز وجل بذلك، فهو منقطع مما قبله]. أهـ. المكتفى (١٦٦، ١٦٧).",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "من خشية الله",
+                "trigger": "meaning_change",
+                "reason": "على قراءة الياء الوقف تام لأن ما بعده استئناف، وعلى قراءة التاء كاف لأنه متصل بخطاب ﴿ثم قست قلوبهم﴾",
+                "scholars": ["الداني"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وما",
+                "trigger": "meaning_change",
+                "reason": "على قراءة الياء ما بعد ﴿من خشية الله﴾ استئناف إخبار، فيُبتدأ بـ﴿وما الله بغافل﴾",
+                "scholars": ["الداني"]
+              }
+            ]
+          },
+          "opinions": [
+            {
+              "scholar": "النحاس",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "149"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "42"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "42"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": "على قراءة ﴿تعملون﴾ بالتاء؛ لأنه متصل بالخطاب في ﴿ثم قست قلوبهم﴾",
+              "book": "المكتفى",
+              "book_ref": "166، 167"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "تام",
+              "comment": "على قراءة الياء؛ الوقف على ﴿من خشية الله﴾ تام لأن ما بعده استئناف",
+              "book": "المكتفى",
+              "book_ref": "166، 167"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 76,
+      "target_word": "آمنا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿آمنا - ٧٦ - ج﴾(١) والوصل أجوز لبيان حالهم(٢) المتناقضين(٣) وهو المقصود.",
+      "text_page": 212,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 212,
+          "raw_text": "(١) د: علامة الوقف [ط]، وورد في نسخة أ بعدها: [إلى بعض] لا [وهو] زيادة من الناسخ، والصواب ما أثبتناه لدلالة ما بعده عليه. والوقف حسن عند الأشموني. انظر: المنار (٤٢).",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "آمنا",
+                "trigger": "meaning_change",
+                "reason": "الوصل أجوز لبيان حالهم المتناقضين وهو المقصود، فالوقف الجائز يفوت بيان التناقض",
+                "scholars": ["الأشموني"]
+              }
+            ],
+            "ibtida": []
+          },
+          "opinions": [
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": "في نسخة د علامة الوقف ط، وفي المتن ج. في نسخة أ بعدها «إلى بعض» لا «وهو»، وهي زيادة من الناسخ",
+              "book": "المنار",
+              "book_ref": "42"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 76,
+      "target_word": "عند ربكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿عند ربكم - ٧٦ - ط﴾(٤)",
+      "text_page": 212,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 212,
+          "raw_text": "(٤) وهو تام عند أحمد بن موسى، وكاف عند الأشموني. انظر: القطع (١٥٠)، والمنار (٤٢).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "أحمد بن موسى",
+              "verdict": "تام",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "150"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "42"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 79,
+      "target_word": "قليلا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿قليلا - ٧٩ - ط﴾(٥)",
+      "text_page": 212,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 212,
+          "raw_text": "(٥) وهو حسن عند ابن الأنباري والأشموني، وكاف عند النحاس والداني. انظر: الإيضاح ١/٥٢٢، والقطع (١٥٠)، والمكتفى (١٦٧)، والمنار (٤٢).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "1/522"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "42"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "150"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "167"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 80,
+      "target_word": "معدودة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 6,
+      "text": "﴿معدودة - ٨٠ - ط﴾(٦)",
+      "text_page": 212,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 212,
+          "raw_text": "(٦) وهو كاف عند النحاس، وحسن عند الأشموني. انظر: القطع (١٥٠)، والمنار (٤٢).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "النحاس",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "150"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "42"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 81,
+      "target_word": "أصحاب النار",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 7,
+      "text": "﴿أصحاب النار - ٨١ - ج﴾(٧) لأن الجملة(٨) مبتدأ وخبر(٩) بعد خبر(١٠)",
+      "text_page": 212,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 212,
+          "raw_text": "(٧) وهو جائز عند الأشموني. انظر: المنار (٤٣).",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "هم",
+                "trigger": "meaning_change",
+                "reason": "الجملة بعد ﴿أصحاب النار﴾ مبتدأ وخبر بعد خبر، فيُبتدأ بـ﴿هم فيها خالدون﴾",
+                "scholars": ["الأشموني"]
+              }
+            ]
+          },
+          "opinions": [
+            {
+              "scholar": "الأشموني",
+              "verdict": "جائز",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "43"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 82,
+      "target_word": "الجنة",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿الجنة - ٨٢ - ج﴾",
+      "text_page": 212,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 82,
+      "target_word": "كذلك",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿كذلك - ج﴾(١)",
+      "text_page": 213,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 213,
+          "raw_text": "(١) أ: [(الجنة) كذلك ج]، وفي ج: [كذلك] ساقطة، وفي د: علامة الوقف ساقطة. وقد ذكر الأشموني في المنار (٤٣) أن الوقف هنا جائز.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأشموني",
+              "verdict": "جائز",
+              "comment": "في نسخة أ: (الجنة) كذلك ج، وفي نسخة ج كذلك ساقطة، وفي نسخة د علامة الوقف ساقطة",
+              "book": "المنار",
+              "book_ref": "43"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 83,
+      "target_word": "الزكاة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 2,
+      "text": "﴿الزكاة - ٨٣ - ط﴾(٢) لأن ثم لترتيب الأخبار، أي: ومع(٣) ذلك توليتم.",
+      "text_page": 213,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 213,
+          "raw_text": "(٢) ذكر النحاس بصيغة التمريض أنه تام، وهو صالح عند الأشموني. انظر: القطع (١٥١)، والمنار (٤٣).",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "ثم",
+                "trigger": "meaning_change",
+                "reason": "ثم لترتيب الأخبار، أي ومع ذلك توليتم، فيُبتدأ بما بعد الزكاة",
+                "scholars": ["النحاس", "الأشموني"]
+              }
+            ]
+          },
+          "opinions": [
+            {
+              "scholar": "النحاس",
+              "verdict": "تام",
+              "comment": "بصيغة التمريض",
+              "book": "القطع",
+              "book_ref": "151"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "صالح",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "43"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 85,
+      "target_word": "من ديارهم",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "﴿من ديارهم - ٨٥ - ز﴾(٤) لأن ﴿تظاهرون﴾ يشبه(٥) استئنافا، وكونه حالا أوجه(٦).",
+      "text_page": 213,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 213,
+          "raw_text": "(٤) أ، ج: علامة الوقف ساقطة.",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "تظاهرون",
+                "trigger": "meaning_change",
+                "reason": "﴿تظاهرون﴾ يشبه استئنافا، وكونه حالا أوجه، فالابتداء به يغيّر وجه الإعراب",
+                "scholars": []
+              }
+            ]
+          },
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 85,
+      "target_word": "والعدوان",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 7,
+      "text": "﴿والعدوان - ٨٥ - ط﴾(٧)",
+      "text_page": 213,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 213,
+          "raw_text": "(٧) وهو صالح عند الأنصاري، وحسن عند الأشموني. انظر: المقصد (٤٣)، والمنار (٤٣).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأنصاري",
+              "verdict": "صالح",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "43"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "43"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 85,
+      "target_word": "إخراجهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 8,
+      "text": "﴿إخراجهم - ٨٥ - ط﴾(٨)",
+      "text_page": 213,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 213,
+          "raw_text": "(٨) وهو حسن عند ابن الأنباري والأنصاري والأشموني، وكاف عند أبي حاتم والداني. انظر: الإيضاح ١/٥٢٤، والقطع (١٥٣)، والمكتفى (١٦٨)، والمقصد (٤٣)، والمنار (٤٣).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "1/524"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "43"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "43"
+            },
+            {
+              "scholar": "أبو حاتم",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "153"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "168"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 85,
+      "target_word": "بعض",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 9,
+      "text": "﴿بعض - ٨٥ - ج﴾(٩) لابتداء الاستفهام، أو النفي(١) مع فاء التعقيب.",
+      "text_page": 213,
+      "old_text": "﴿بعض - ٨٥ - ج﴾(٩)",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿بعض - ٨٥ - ج﴾(٩)",
+          "new_text": "﴿بعض - ٨٥ - ج﴾(٩) لابتداء الاستفهام، أو النفي(١) مع فاء التعقيب.",
+          "info": "القوس يتم في صفحة ٢١٣ والتعليل يتصل في صدر صفحة ٢١٤"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 9,
+          "text_page": 213,
+          "raw_text": "(٩) وهو حسن عند ابن الأنباري والأنصاري والأشموني، وكاف عند أبي حاتم والداني. انظر: الإيضاح ١/٥٢٤، والقطع (١٥٣)، والمكتفى (١٦٨)، والمقصد (٤٣)، والمنار (٤٣).",
+          "continuation": {
+            "status": "read",
+            "page": 214
+          },
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "فما",
+                "trigger": "meaning_change",
+                "reason": "الوقف لابتداء الاستفهام أو النفي مع فاء التعقيب في ﴿فما جزاء﴾",
+                "scholars": ["ابن الأنباري", "الأنصاري", "الأشموني", "أبو حاتم", "الداني"]
+              }
+            ]
+          },
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "1/524"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "43"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "43"
+            },
+            {
+              "scholar": "أبو حاتم",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "153"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "168"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 85,
+      "target_word": "الدنيا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿الدنيا - ٨٥ - ج﴾(٢) لعطف الجملتين المختلفتين.",
+      "text_page": 214,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 214,
+          "raw_text": "(٢) وهو حسن عند ابن الأنباري، وكاف عند النحاس والداني. انظر: الإيضاح ١/٥٢٤، والقطع (١٥٣)، والمكتفى (١٦٨).",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "ويوم",
+                "trigger": "meaning_change",
+                "reason": "عطف جملتين مختلفتين، فيُفصل بين خزي الدنيا و﴿ويوم القيامة يردون﴾",
+                "scholars": ["ابن الأنباري", "النحاس", "الداني"]
+              }
+            ]
+          },
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "1/524"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "153"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "168"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 85,
+      "target_word": "العذاب",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿العذاب - ٨٥ - ط﴾(٣)",
+      "text_page": 214,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 214,
+          "raw_text": "(٣) وهو حسن عند ابن الأنباري. انظر: الإيضاح ١/٥٢٤.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "1/524"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 86,
+      "target_word": "بالآخرة",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "﴿بالآخرة - ٨٦ - ز﴾ لأن الفعل مستأنف وفيه فاء التعقيب للجزاء(٤).",
+      "text_page": 214,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 214,
+          "raw_text": "(٤) وضح هذا الأشموني في المنار (٤٤) بقوله: [﴿بالآخرة﴾ جائز على أن الفعل بعده مستأنف، وعلى أن الفاء للسبب والجزاء يجب الوصل]. اهـ.",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "بالآخرة",
+                "trigger": "meaning_change",
+                "reason": "جائز إن كان الفعل بعده مستأنفا، ويجب الوصل إن كانت الفاء للسبب والجزاء",
+                "scholars": ["الأشموني"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "فلا",
+                "trigger": "meaning_change",
+                "reason": "على أن الفعل بعده مستأنف يُبتدأ بـ﴿فلا يخفف﴾، وعلى السببية يجب الوصل",
+                "scholars": ["الأشموني"]
+              }
+            ]
+          },
+          "opinions": [
+            {
+              "scholar": "الأشموني",
+              "verdict": "جائز",
+              "comment": "على أن الفعل بعده مستأنف",
+              "book": "المنار",
+              "book_ref": "44"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "يجب الوصل",
+              "comment": "على أن الفاء للسبب والجزاء",
+              "book": "المنار",
+              "book_ref": "44"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 87,
+      "target_word": "القدس",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿القدس - ٨٧ - ط﴾(٥)",
+      "text_page": 214,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 214,
+          "raw_text": "(٥) وهو كاف عند الداني. انظر: المكتفى (١٦٨).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "168"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 87,
+      "target_word": "استكبرتم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿استكبرتم - ٨٧ - ج﴾(١) لانتهاء الاستفهام مع تعقب(٢) فاء التعقيب بعده.",
+      "text_page": 214,
+      "old_text": "﴿استكبرتم - ٨٧ -",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿استكبرتم - ٨٧ -",
+          "new_text": "﴿استكبرتم - ٨٧ - ج﴾(١) لانتهاء الاستفهام مع تعقب(٢) فاء التعقيب بعده.",
+          "info": "القوس يُفتح في صفحة ٢١٤، وحرف الوقف والتعليل في صدر صفحة ٢١٥"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 215,
+          "raw_text": "(١) ذكر النحاس أنه حسن. انظر: القطع (١٥٤).",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [],
+            "ibtida": [
+              {
+                "start_word": "ففريقا",
+                "trigger": "meaning_change",
+                "reason": "لانتهاء الاستفهام عند ﴿استكبرتم﴾ وتعقب فاء التعقيب في ﴿ففريقا كذبتم﴾",
+                "scholars": ["النحاس"]
+              }
+            ]
+          },
+          "opinions": [
+            {
+              "scholar": "النحاس",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "154"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

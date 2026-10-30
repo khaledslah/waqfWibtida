@@ -1,0 +1,91 @@
+{
+  "source": "apparatus_pass3_v4_183_186",
+  "input": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_full_run\\out\\batch_183_186.apparatus_v4.raw.json",
+  "suggestions": [
+    {
+      "ayah": 10,
+      "target_word": "مرض",
+      "margin_ref": 1,
+      "text_page": 183,
+      "suggested": {
+        "basis": "ai_inferred",
+        "waqf": [
+          {
+            "target_word": "مرض",
+            "trigger": "scholars_disagree",
+            "reason": "اختلف العلماء في الوقف على ﴿مرض﴾: حسن عند ابن الأنباري، وكاف عند النحاس والداني، وصالح عند الأشموني الذي تعقّب ابن الأنباري بأنه ليس بحسن لتعلق ما بعده به، لأن الفاء للجزاء فما بعدها توكيد.",
+            "scholars": ["ابن الأنباري", "النحاس", "الداني", "الأشموني"]
+          }
+        ],
+        "ibtida": []
+      }
+    },
+    {
+      "ayah": 14,
+      "target_word": "آمنا",
+      "margin_ref": 5,
+      "text_page": 184,
+      "suggested": {
+        "basis": "ai_inferred",
+        "waqf": [
+          {
+            "target_word": "آمنا",
+            "trigger": "meaning_change",
+            "reason": "النحاس عدّ الوقف على ﴿قالوا آمنا﴾ صالحًا، ورجّح الأشموني عدم الوقف لأن الوقف عليه يوهم غير المعنى المراد ويثبت لهم الإيمان، وهم إنما أظهروه استهزاءً وتورية.",
+            "scholars": ["النحاس", "الأشموني"]
+          }
+        ],
+        "ibtida": []
+      }
+    },
+    {
+      "ayah": 14,
+      "target_word": "إنا معكم",
+      "margin_ref": 3,
+      "text_page": 185,
+      "suggested": {
+        "basis": "ai_inferred",
+        "waqf": [
+          {
+            "target_word": "إنا معكم",
+            "trigger": "scholars_disagree",
+            "reason": "رجّح النحاس عدم الوقف لأن الاستئناف بما بعده لا يحسن، وأجازه الأشموني على تقدير أن يكون ما بعده جوابًا عن سؤال مقدر، ومنعه إن جُعل من بقية القول.",
+            "scholars": ["النحاس", "الأشموني"]
+          }
+        ],
+        "ibtida": [
+          {
+            "start_word": "إنما",
+            "trigger": "scholars_disagree",
+            "reason": "الابتداء بـ﴿إنما نحن مستهزؤون﴾ جائز عند الأشموني إن جُعل جوابًا لسؤال مقدر، ولا يحسن الاستئناف به عند النحاس لأنه من بقية القول، فيتغير المعنى بحسب جعله مستأنفًا أو متصلًا بما قبله.",
+            "scholars": ["النحاس", "الأشموني"]
+          }
+        ]
+      }
+    },
+    {
+      "ayah": 17,
+      "target_word": "نارا",
+      "margin_ref": 1,
+      "text_page": 186,
+      "suggested": {
+        "basis": "ai_inferred",
+        "waqf": [
+          {
+            "target_word": "نارا",
+            "trigger": "scholars_disagree",
+            "reason": "نصّ الأشموني على أن الوقف على ﴿نارا﴾ ليس بوقف لأنه من جملة المثل والفائدة لا تحصل إلا بجملة المثل، وينقل النحاس عن الأخفش أن التمام ليس عند ﴿نارا﴾ بل عند ﴿حذر الموت﴾.",
+            "scholars": ["الأخفش", "الأشموني"]
+          },
+          {
+            "target_word": "حذر الموت",
+            "trigger": "scholars_disagree",
+            "reason": "جعل الأخفش (فيما نقله النحاس) التمام عند ﴿حذر الموت﴾ بدل ﴿نارا﴾، فهو موضع الوقف المقابل لمنع الأشموني الوقف على ﴿نارا﴾ لتمام المثل.",
+            "scholars": ["الأخفش"]
+          }
+        ],
+        "ibtida": []
+      }
+    }
+  ]
+}

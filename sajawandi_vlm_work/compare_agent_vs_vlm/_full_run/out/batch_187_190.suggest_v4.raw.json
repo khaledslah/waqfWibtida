@@ -1,0 +1,85 @@
+{
+  "source": "apparatus_pass3_v4_187_190",
+  "input": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_full_run\\out\\batch_187_190.apparatus_v4.raw.json",
+  "suggestions": [
+    {
+      "ayah": 18,
+      "target_word": "لايرجعون",
+      "margin_ref": 5,
+      "text_page": 187,
+      "suggested": {
+        "basis": "ai_inferred",
+        "waqf": [
+          {
+            "target_word": "لايرجعون",
+            "trigger": "scholars_disagree",
+            "reason": "اختلف العلماء في الوقف: حسّنه ابن الأنباري، وهو صالح عند النحاس والأشموني، وكاف عند الداني (وذكر بصيغة التمريض أنه تام)، بينما ذكر الأشموني بصيغة التمريض أنه لا يوقف هنا لأنه لا يتم الكلام إلا بما بعده للعطف بأو.",
+            "scholars": ["ابن الأنباري", "النحاس", "الأشموني", "الداني"]
+          }
+        ],
+        "ibtida": [
+          {
+            "start_word": "أو",
+            "trigger": "meaning_change",
+            "reason": "الابتداء بـ﴿أو كصيب من السماء﴾ يقطع العطف على ﴿مثلهم كمثل الذي استوقد نارا﴾ (أو كمثل صيب)، ومعنى التخيير لا يبقى مع الفصل.",
+            "scholars": ["ابن الأنباري", "الأشموني"]
+          }
+        ]
+      }
+    },
+    {
+      "ayah": 19,
+      "target_word": "وبرق",
+      "margin_ref": 2,
+      "text_page": 189,
+      "suggested": {
+        "basis": "ai_inferred",
+        "waqf": [],
+        "ibtida": [
+          {
+            "start_word": "يجعلون",
+            "trigger": "meaning_change",
+            "reason": "إن كان ﴿يجعلون﴾ خبر مبتدأ محذوف (هم يجعلون) صح الابتداء به، وإن كان حالًا عامله معنى التشبيه في الكاف ارتبط بما قبله ولم يحسن الابتداء به؛ فتغيّر الإعراب والمعنى بحسب الوقف والابتداء.",
+            "scholars": []
+          }
+        ]
+      }
+    },
+    {
+      "ayah": 20,
+      "target_word": "فيه",
+      "margin_ref": 4,
+      "text_page": 190,
+      "suggested": {
+        "basis": "ai_inferred",
+        "waqf": [
+          {
+            "target_word": "فيه",
+            "trigger": "meaning_change",
+            "reason": "الوقف على ﴿مشوا فيه﴾ يفصل بين الحال وما يقابله بعده؛ إذ تمام المقصود بيان الحال المضادّ للحال الأول، فلا يفصل بينهما (نص الأشموني).",
+            "scholars": ["الأشموني"]
+          }
+        ],
+        "ibtida": []
+      }
+    },
+    {
+      "ayah": 20,
+      "target_word": "وأبصارهم",
+      "margin_ref": 7,
+      "text_page": 190,
+      "suggested": {
+        "basis": "ai_inferred",
+        "waqf": [],
+        "ibtida": [
+          {
+            "start_word": "إن",
+            "trigger": "meaning_change",
+            "reason": "جعل الأشموني الوقف كافيًا للابتداء بـ﴿إن﴾ (إن الله على كل شيء قدير)، فهي جملة مستأنفة منقطعة عما قبلها؛ بينما هو صالح عند أبي حاتم.",
+            "scholars": ["الأشموني", "أبو حاتم"]
+          }
+        ]
+      }
+    }
+  ]
+}

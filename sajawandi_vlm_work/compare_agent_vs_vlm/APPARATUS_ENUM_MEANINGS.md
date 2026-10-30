@@ -62,4 +62,4 @@ continuation = null (complete) | {status: read|missing, page}. When read, raw_te
 
 ## Pass 3 — suggested (separate run)
 pparatus[].suggested = null | {basis: ai_inferred, waqf: [{target_word, trigger, reason, scholars}], ibtida: [{start_word, trigger, reason, scholars}]}.
-trigger = scholars_disagree | meaning_change. Written only by pass 3 into a sidecar and merged by merge_apparatus_pass3.py, which proves pass 1/2 data is unchanged.
+trigger = scholars_disagree | meaning_change. Written in Phase 3 of the same extract agent after Phase 1/2 are frozen (only the `suggested` key; no other fields may change). The old sidecar + merge_apparatus_pass3.py path remains available only to backfill batches that were extracted before Phase 3 was inlined.

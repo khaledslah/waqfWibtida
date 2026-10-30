@@ -107,7 +107,7 @@
                 },
                 "suggested": {
                   "type": ["object", "null"],
-                  "description": "PASS 3 ONLY (separate pass, never written by pass 1/2). AI-inferred extra waqf / ibtida points justified by this note's content (scholars disagree on stopping, or stopping/starting changes meaning). null if nothing is warranted.",
+                  "description": "PHASE 3 of the same extract (after Phase 1/2 are frozen). AI-inferred extra waqf / ibtida justified by this note's content (scholars disagree on stopping, or stopping/starting changes meaning). null/omit if nothing is warranted. Phase 3 must not edit any other field.",
                   "required": ["basis", "waqf", "ibtida"],
                   "additionalProperties": false,
                   "properties": {

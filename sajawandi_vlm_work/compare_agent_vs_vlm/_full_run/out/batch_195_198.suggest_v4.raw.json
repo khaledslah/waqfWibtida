@@ -1,0 +1,127 @@
+{
+  "source": "apparatus_pass3_v4_195_198",
+  "input": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_full_run\\out\\batch_195_198.apparatus_v4.raw.json",
+  "suggestions": [
+    {
+      "ayah": 27,
+      "target_word": "ميثاقه",
+      "margin_ref": 2,
+      "text_page": 195,
+      "suggested": {
+        "basis": "ai_inferred",
+        "waqf": [
+          {"target_word": "ميثاقه", "trigger": "scholars_disagree", "reason": "النحاس يرى الوقف غير كاف للعطف، والأشموني يجيزه لعطف المتفقتين.", "scholars": ["النحاس", "الأشموني"]}
+        ],
+        "ibtida": []
+      }
+    },
+    {
+      "ayah": 27,
+      "target_word": "في الأرض",
+      "margin_ref": 3,
+      "text_page": 195,
+      "suggested": {
+        "basis": "ai_inferred",
+        "waqf": [
+          {"target_word": "في الأرض", "trigger": "meaning_change", "reason": "الوقف هنا يفصل المبتدأ ﴿الذين ينقضون عهد الله من بعد ميثاقه﴾ عن خبره ﴿أولئك هم الخاسرون﴾؛ ولذلك عده النحاس حسنا بشرط ألا يكون ﴿الذين﴾ مرتفعا بالابتداء.", "scholars": ["النحاس"]}
+        ],
+        "ibtida": []
+      }
+    },
+    {
+      "ayah": 28,
+      "target_word": "فأحياكم",
+      "margin_ref": 4,
+      "text_page": 195,
+      "suggested": {
+        "basis": "ai_inferred",
+        "waqf": [
+          {"target_word": "فأحياكم", "trigger": "scholars_disagree", "reason": "أبو حاتم (السجستاني) يرى الوقف تاما، وابن الأنباري والداني يردانه لأن ﴿ثم يميتكم﴾ معطوف ومتصل به.", "scholars": ["أبو حاتم", "ابن الأنباري", "الداني"]}
+        ],
+        "ibtida": [
+          {"start_word": "ثم", "trigger": "meaning_change", "reason": "الابتداء بـ﴿ثم يميتكم﴾ يقطع المعطوف عن المعطوف عليه ﴿فأحياكم﴾ مع اتصالهما نسقا.", "scholars": ["ابن الأنباري", "الداني"]}
+        ]
+      }
+    },
+    {
+      "ayah": 29,
+      "target_word": "سموات",
+      "margin_ref": 1,
+      "text_page": 196,
+      "suggested": {
+        "basis": "ai_inferred",
+        "waqf": [
+          {"target_word": "سموات", "trigger": "scholars_disagree", "reason": "أبو حاتم والأنصاري يعدانه تاما، والداني والأشموني يعدانه كافيا.", "scholars": ["أبو حاتم", "الداني", "الأشموني", "الأنصاري"]}
+        ],
+        "ibtida": []
+      }
+    },
+    {
+      "ayah": 30,
+      "target_word": "خليفة",
+      "margin_ref": 2,
+      "text_page": 196,
+      "suggested": {
+        "basis": "ai_inferred",
+        "waqf": [
+          {"target_word": "خليفة", "trigger": "scholars_disagree", "reason": "الأخفش يراه تاما، وغيره يرى أنه ليس بتام لتعلقه بما بعده؛ والأنصاري والأشموني يريان أنه كاف وأن ما بعده جواب له (والأشموني يرى وصله أولى).", "scholars": ["الأخفش", "الأنصاري", "الأشموني"]}
+        ],
+        "ibtida": []
+      }
+    },
+    {
+      "ayah": 30,
+      "target_word": "الدماء",
+      "margin_ref": 3,
+      "text_page": 197,
+      "suggested": {
+        "basis": "ai_inferred",
+        "waqf": [
+          {"target_word": "الدماء", "trigger": "meaning_change", "reason": "انتهاء الاستفهام عند ﴿ويسفك الدماء﴾ يقتضي الفصل، لكن احتمال الواو في ﴿ونحن نسبح﴾ معنى الحال يقتضي الوصل؛ فالوقف قد يقطع الحال عن صاحبها.", "scholars": ["الأشموني"]}
+        ],
+        "ibtida": [
+          {"start_word": "ونحن", "trigger": "meaning_change", "reason": "إن كانت الواو حالية فالابتداء بـ﴿ونحن نسبح﴾ يقطع الحال عن صاحبها ويغير المعنى، وإن كانت استئنافية جاز الابتداء بها.", "scholars": []}
+        ]
+      }
+    },
+    {
+      "ayah": 30,
+      "target_word": "ونقدس لك",
+      "margin_ref": 1,
+      "text_page": 198,
+      "suggested": {
+        "basis": "ai_inferred",
+        "waqf": [
+          {"target_word": "ونقدس لك", "trigger": "scholars_disagree", "reason": "الداني يعده كافيا ويذكر التمام بصيغة التمريض، والأشموني يعده أحسن من الوقف على ﴿ويسفك الدماء﴾.", "scholars": ["الداني", "الأشموني"]}
+        ],
+        "ibtida": []
+      }
+    },
+    {
+      "ayah": 32,
+      "target_word": "علمتنا",
+      "margin_ref": 2,
+      "text_page": 198,
+      "suggested": {
+        "basis": "ai_inferred",
+        "waqf": [
+          {"target_word": "علمتنا", "trigger": "scholars_disagree", "reason": "الأشموني يعده حسنا، والنحاس يصرح بأنه ليس بقطع كاف لأنه لم يأت جملة ما قالوا.", "scholars": ["الأشموني", "النحاس"]}
+        ],
+        "ibtida": []
+      }
+    },
+    {
+      "ayah": 33,
+      "target_word": "بأسمائهم",
+      "margin_ref": 4,
+      "text_page": 198,
+      "suggested": {
+        "basis": "ai_inferred",
+        "waqf": [],
+        "ibtida": [
+          {"start_word": "قال", "trigger": "meaning_change", "reason": "﴿قال ألم أقل لكم﴾ جواب ﴿لما﴾؛ فالابتداء بـ﴿قال﴾ يقطع الجواب عن شرطه ويغير المعنى.", "scholars": ["الأشموني"]}
+        ]
+      }
+    }
+  ]
+}

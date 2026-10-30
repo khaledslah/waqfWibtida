@@ -1,0 +1,92 @@
+{
+  "source": "apparatus_pass3_v4_215_218",
+  "input": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_full_run\\out\\batch_215_218.apparatus_v4.raw.json",
+  "suggestions": [
+    {
+      "ayah": 89,
+      "target_word": "كفروا به",
+      "margin_ref": 1,
+      "text_page": 217,
+      "suggested": {
+        "basis": "ai_inferred",
+        "waqf": [
+          {
+            "target_word": "كفروا به",
+            "trigger": "scholars_disagree",
+            "reason": "نص ابن الأنباري على الوقف هنا، بينما لم يذكر النحاس وقفا هنا وجعل الوقف عند آخر الآية؛ ووصفه الداني بأنه كاف والأشموني بأنه حسن.",
+            "scholars": ["ابن الأنباري", "النحاس", "الداني", "الأشموني"]
+          }
+        ],
+        "ibtida": []
+      }
+    },
+    {
+      "ayah": 90,
+      "target_word": "من عباده",
+      "margin_ref": 5,
+      "text_page": 217,
+      "suggested": {
+        "basis": "ai_inferred",
+        "waqf": [
+          {
+            "target_word": "من عباده",
+            "trigger": "scholars_disagree",
+            "reason": "ذكر النحاس أن الوقف على رأس الآية فلا يقف عند هذا الموضع، بينما عدّه الأنصاري صالحا وعدّه الأشموني حسنا.",
+            "scholars": ["النحاس", "الأنصاري", "الأشموني"]
+          }
+        ],
+        "ibtida": []
+      }
+    },
+    {
+      "ayah": 93,
+      "target_word": "الطور",
+      "margin_ref": 9,
+      "text_page": 217,
+      "suggested": {
+        "basis": "ai_inferred",
+        "waqf": [
+          {
+            "target_word": "الطور",
+            "trigger": "scholars_disagree",
+            "reason": "عدّه الأشموني جائزا، بينما ذكر ابن الأنباري والنحاس أن الوقف على رأس الآية.",
+            "scholars": ["الأشموني", "ابن الأنباري", "النحاس"]
+          }
+        ],
+        "ibtida": [
+          {
+            "start_word": "خذوا",
+            "trigger": "meaning_change",
+            "reason": "ما بعد الطور على إضمار القول (أي: قلنا خذوا)، فالابتداء بـ«خذوا» يقتضي ملاحظة هذا المحذوف حتى لا يُفهم الأمر منقطعا عن الخطاب.",
+            "scholars": ["الأشموني"]
+          }
+        ]
+      }
+    },
+    {
+      "ayah": 96,
+      "target_word": "على حياة",
+      "margin_ref": 4,
+      "text_page": 218,
+      "suggested": {
+        "basis": "ai_inferred",
+        "waqf": [
+          {
+            "target_word": "أشركوا",
+            "trigger": "scholars_disagree",
+            "reason": "الوقف على «أشركوا» تام عند الأخفش والفراء وهو اختيار الطبري (فيكون التقدير: وأحرص من الذين أشركوا)، بخلاف نافع الذي وقف على «على حياة» وقال تم.",
+            "scholars": ["الأخفش", "الفراء", "الطبري", "نافع"]
+          }
+        ],
+        "ibtida": [
+          {
+            "start_word": "ومن",
+            "trigger": "meaning_change",
+            "reason": "على قول نافع بالوقف على «على حياة» يكون الابتداء بـ«ومن الذين أشركوا» استئنافا بتقدير: ومن الذين أشركوا قوم يود أحدهم، وهذا يغيّر المعنى عن تقدير العطف (وأحرص من الذين أشركوا).",
+            "scholars": ["نافع"]
+          }
+        ]
+      }
+    }
+  ]
+}

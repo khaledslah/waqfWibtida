@@ -1,0 +1,627 @@
+{
+  "source": "apparatus_v4_grok_215_218",
+  "page_numbers": [215, 216, 217, 218],
+  "waqfs": [
+    {
+      "ayah": 87,
+      "target_word": "كذبتم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 3,
+      "text": "﴿كذبتم - 87 - ج﴾(3) لعطف المستقبل على الماضي مع تقديم (4) المفعولين فيهما (5).",
+      "text_page": 215,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 215,
+          "raw_text": "(٣) د: علامة الوقف: [ز]. والوقف هنا صالح عند الأنصاري والأشموني. انظر: المقصد (٤٤)، والمنار (٤٤).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأنصاري",
+              "verdict": "صالح",
+              "comment": "في د: علامة الوقف ز",
+              "book": "المقصد",
+              "book_ref": "44"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "صالح",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "44"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 88,
+      "target_word": "غلف",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿غلف - 88 - ط﴾(1) لأن بل إعراض عن الأول وتحقيق للثاني (2).",
+      "text_page": 216,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 216,
+          "raw_text": "(١) وهو صالح عند الأنصاري والأشموني. انظر: المقصد (٤٤)، والمنار (٤٤).",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "غلف",
+                "trigger": "meaning_change",
+                "reason": "الوقف على غلف لأن «بل» إعراض عن القول الأول وتحقيق للثاني، فيفصل بين المعنيين.",
+                "scholars": ["الأنصاري", "الأشموني"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "بل",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بـ «بل» إعراض عن «قلوبنا غلف» وتحقيق للعن الذي بعده.",
+                "scholars": ["الأنصاري", "الأشموني"]
+              }
+            ]
+          },
+          "opinions": [
+            {
+              "scholar": "الأنصاري",
+              "verdict": "صالح",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "44"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "صالح",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "44"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 89,
+      "target_word": "لما معهم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 3,
+      "text": "﴿لما معهم - 89 - لا﴾(3) لأن الواو للحال.",
+      "text_page": 216,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 216,
+          "raw_text": "(٣) د: علامة الوقف: [ط]، وما أثبتناه موافق لما ذكره الأشموني حيث قال في المنار (٤٤): [﴿مصدق لما معهم﴾ ليس بوقف، لأن الواو بعده للحال]. اهـ.",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأشموني",
+              "verdict": "ليس بوقف",
+              "comment": "في د: علامة الوقف ط. لأن الواو بعده للحال",
+              "book": "المنار",
+              "book_ref": "44"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 89,
+      "target_word": "كفروا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "﴿كفروا - 89 - ج﴾ لأن لما متضمنة للشرط، [وجوابها] (4) منتظر، والوصل أجوز لأن ﴿لما﴾ مكرر (5) وجوابهما (6) متحد (7)، وقوله: ﴿وكانوا من قبل يستفتحون﴾ حال معترض.",
+      "text_page": 216,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 216,
+          "raw_text": "(٤) ج: [وما جوابها] بزيادة: ما.",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "كفروا",
+                "trigger": "meaning_change",
+                "reason": "﴿لما﴾ متضمنة للشرط وجوابها منتظر، والوصل أجوز لاتحاد الجواب، و﴿وكانوا من قبل يستفتحون﴾ حال معترض.",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "فلما",
+                "trigger": "meaning_change",
+                "reason": "جواب الشرط المنتظر يُستأنف من «فلما جاءهم ما عرفوا».",
+                "scholars": []
+              }
+            ]
+          },
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 89,
+      "target_word": "كفروا به",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿كفروا به - 89 - ز﴾(1) قد يجوز (2)، لأن ما بعده مبتدأ، إلا أن الفاء يقتضي تعجيل ذكر (3) جزائهم (4).",
+      "text_page": 217,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 217,
+          "raw_text": "(١) ج، د: علامة الوقف ساقطة. وقد نص على الوقف هنا ابن الأنباري في الإيضاح ١/٥٢٤، ولكن النحاس في القطع (١٥٤) لم يذكر هنا وقفا حيث قال: [﴿ولما جاءهم كتاب من عند الله﴾ الوقف آخر الآية]. أما الداني فقال في المكتفى (١٦٨): [﴿كفروا به﴾ كاف]. وقال الأشموني في منار الهدى (٤٤): [﴿كفروا به﴾ حسن].",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "كفروا به",
+                "trigger": "scholars_disagree",
+                "reason": "ابن الأنباري نص على الوقف، وهو كاف عند الداني وحسن عند الأشموني، والنحاس لم يذكر هنا وقفا.",
+                "scholars": ["ابن الأنباري", "الداني", "الأشموني"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "فلعنة",
+                "trigger": "meaning_change",
+                "reason": "ما بعد «كفروا به» مبتدأ فيُبتدأ بـ «فلعنة»، وإن كانت الفاء تقتضي تعجيل ذكر الجزاء.",
+                "scholars": ["ابن الأنباري", "الداني", "الأشموني"]
+              }
+            ]
+          },
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "وقف",
+              "comment": "ج، د: علامة الوقف ساقطة",
+              "book": "الإيضاح",
+              "book_ref": "1/524"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "لم يذكر وقفا",
+              "comment": "قال: الوقف آخر الآية",
+              "book": "القطع",
+              "book_ref": "154"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "168"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "منار الهدى",
+              "book_ref": "44"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 90,
+      "target_word": "من عباده",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 5,
+      "text": "﴿من عباده - 90 - ج﴾(5) لطول الكلام [مع فاء] (6) التعقيب.",
+      "text_page": 217,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 217,
+          "raw_text": "(٥) ذكر النحاس في القطع (١٥٤) أن الوقف على رأس الآية. أما الأنصاري في المقصد (٤٤) فذكر أنه صالح. وقال الأشموني في منار الهدى (٤٤): [﴿من عباده﴾ حسن].",
+          "continuation": null,
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "من عباده",
+                "trigger": "scholars_disagree",
+                "reason": "صالح عند الأنصاري وحسن عند الأشموني، والنحاس ذكر أن الوقف على رأس الآية.",
+                "scholars": ["الأنصاري", "الأشموني"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "فباءوا",
+                "trigger": "meaning_change",
+                "reason": "الوقف لطول الكلام مع فاء التعقيب، فالابتداء بـ «فباءوا».",
+                "scholars": ["الأنصاري", "الأشموني"]
+              }
+            ]
+          },
+          "opinions": [
+            {
+              "scholar": "النحاس",
+              "verdict": "على رأس الآية",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "154"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "صالح",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "44"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "منار الهدى",
+              "book_ref": "44"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 90,
+      "target_word": "على غضب",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 7,
+      "text": "﴿على غضب - 90 - ط﴾(7).",
+      "text_page": 217,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 217,
+          "raw_text": "(٧) وهو كاف عند الداني، وأحسن مما قبله عند الأشموني. انظر: المكتفى (١٦٨)، والمنار (٤٤).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "168"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "أحسن",
+              "comment": "مما قبله",
+              "book": "المنار",
+              "book_ref": "44"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 91,
+      "target_word": "لما معهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 8,
+      "text": "﴿لما معهم - 91 - ط﴾(8).",
+      "text_page": 217,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 217,
+          "raw_text": "(٨) وهو كاف عند الداني، وحسن عند الأشموني. انظر: المكتفى (١٦٨)، والمنار (٤٤).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "168"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "44"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 93,
+      "target_word": "الطور",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 9,
+      "text": "﴿الطور - 93 - ط﴾(9) لأن التقدير: قيل لكم خذوا.",
+      "text_page": 217,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 9,
+          "text_page": 217,
+          "raw_text": "(٩) قال الأشموني في المنار (٤٤): [﴿الطور﴾ جائز، لأن ما بعده على إضمار القول، أي: قلنا خذوا]. أما ابن الأنباري في الإيضاح ١/٥٢٤، والنحاس في القطع (١٥٤)، فذكرا أن الوقف على رأس الآية.",
+          "continuation": {"status": "read", "page": 218},
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "الطور",
+                "trigger": "scholars_disagree",
+                "reason": "جائز عند الأشموني لأن ما بعده على إضمار القول، وابن الأنباري والنحاس ذكرا أن الوقف على رأس الآية.",
+                "scholars": ["الأشموني"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "خذوا",
+                "trigger": "meaning_change",
+                "reason": "التقدير: قيل لكم خذوا، أي: قلنا خذوا.",
+                "scholars": ["الأشموني"]
+              }
+            ]
+          },
+          "opinions": [
+            {
+              "scholar": "الأشموني",
+              "verdict": "جائز",
+              "comment": "لأن ما بعده على إضمار القول، أي: قلنا خذوا",
+              "book": "المنار",
+              "book_ref": "44"
+            },
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "على رأس الآية",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "1/524"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "على رأس الآية",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "154"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 93,
+      "target_word": "واسمعوا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿واسمعوا - 93 - ط﴾(1).",
+      "text_page": 218,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 218,
+          "raw_text": "(١) وهو كاف عند الداني، وحسن عند الأشموني. انظر: المكتفى (١٦٨)، والمنار (٤٤).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "168"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "44"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 93,
+      "target_word": "بكفرهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 2,
+      "text": "﴿بكفرهم - 93 - ط﴾(2).",
+      "text_page": 218,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 218,
+          "raw_text": "(٢) وهو كاف عند الداني، وحسن عند الأشموني. انظر: المكتفى (١٦٨)، والمنار (٤٤).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "168"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "44"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 95,
+      "target_word": "أيديهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿أيديهم - 95 - ط﴾(3).",
+      "text_page": 218,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 218,
+          "raw_text": "(٣) وهو كاف عند الداني والأشموني، وذكر الداني بصيغة التعريض أنه تام. انظر: المكتفى (١٦٨)، والمنار (٤٤).",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": "ذكره بصيغة التعريض أنه تام",
+              "book": "المكتفى",
+              "book_ref": "168"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "44"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 96,
+      "target_word": "على حياة",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "﴿على حياة - 96 - ج﴾ على تقدير: ومن الذين أشركوا قوم يود أحدهم، ومن وقف على ﴿أشركوا﴾ فتقديره: أحرص الناس على حياة وأحرص من الذين أشركوا (4).",
+      "text_page": 218,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 218,
+          "raw_text": "(٤) ذكر النحاس في القطع (١٥٤، ١٥٥) أن الوقف على ﴿أشركوا﴾ تام عند الأخفش والفراء، ثم قال: [وهذا قول أهل التأويل وأهل اللغة والقراءات إلا نافعا فإنه قال: ﴿ولتجدنهم أحرص الناس على حياة﴾ تم، قال أبو جعفر: ولولا مخالفة الجماعة لكان يقال: وجه هذا في العربية كما قال (من الرجز): لو قلت ما في قومها لم تيثم يفضلها في حسب وميسم]. اهـ. والوقف على ﴿أشركوا﴾ اختيار ابن جرير الطبري حيث قال في تفسيره ٢/٣٧٠: [والقول في تأويل قوله تعالى: ﴿ومن الذين أشركوا﴾، قال أبو جعفر: يعني جل ثناؤه بقوله: ﴿ومن الذين أشركوا﴾ وأحرص من الذين أشركوا على الحياة، كما يقال: هو أشجع الناس ومن عنترة، بمعنى: هو أشجع من الناس ومن عنترة، فكذلك قوله: ﴿ومن الذين أشركوا﴾ لأن معنى الكلام: ولتجدن - يا محمد - اليهود من بني إسرائيل أحرص الناس على حياة ومن الذين أشركوا]. ثم قال: [وإنما وصف الله جل ثناؤه اليهود بأنهم أحرص الناس على الحياة، لعلمهم بما قد أعد لهم في الآخرة على كفرهم بما لا يقر به أهل الشرك، فهو للموت أكره من أهل الشرك الذين لا يؤمنون بالبعث، لأنهم يؤمنون بالبعث، ويعلمون ما لهم هنالك من العذاب، والمشركون لا يصدقون بالبعث ولا العقاب، فاليهود أحرص منهم على الحياة، وأكره للموت]. ثم ذكر في تفسيره أيضا ٢/٣٧١ بصيغة التعريض أن الذين أشركوا هم المجوس الذين لا يصدقون بالبعث، وذكر آثارا بهذا عن أبي العالية والربيع.",
+          "continuation": {"status": "read", "page": 219},
+          "symbol_witness": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "على حياة",
+                "trigger": "scholars_disagree",
+                "reason": "نافع يجعل الوقف على «على حياة» تاما، والجمهور على الوقف على «أشركوا». وعلى تقدير الوقف هنا: ومن الذين أشركوا قوم يود أحدهم.",
+                "scholars": ["نافع"]
+              },
+              {
+                "target_word": "أشركوا",
+                "trigger": "scholars_disagree",
+                "reason": "تام عند الأخفش والفراء، وحكاه النحاس قول الجمهور، وهو اختيار الطبري. والتقدير: أحرص الناس على حياة وأحرص من الذين أشركوا.",
+                "scholars": ["الأخفش", "الفراء", "النحاس", "الطبري"]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "ومن",
+                "trigger": "meaning_change",
+                "reason": "بعد الوقف على «على حياة» يُبتدأ بـ «ومن الذين أشركوا» على تقدير: قوم يود أحدهم.",
+                "scholars": ["نافع"]
+              },
+              {
+                "start_word": "يود",
+                "trigger": "meaning_change",
+                "reason": "بعد الوقف على «أشركوا» يُبتدأ بـ «يود أحدهم».",
+                "scholars": ["الأخفش", "الفراء", "النحاس", "الطبري"]
+              }
+            ]
+          },
+          "opinions": [
+            {
+              "scholar": "النحاس",
+              "verdict": "تام",
+              "comment": "حكى أن الوقف على أشركوا تام عند الأخفش والفراء، وهو قول الجمهور إلا نافعا",
+              "book": "القطع",
+              "book_ref": "154، 155"
+            },
+            {
+              "scholar": "الأخفش",
+              "verdict": "تام",
+              "comment": "على أشركوا",
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "الفراء",
+              "verdict": "تام",
+              "comment": "على أشركوا",
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "نافع",
+              "verdict": "تام",
+              "comment": "على حياة، خلافا للجمهور",
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "الطبري",
+              "verdict": "اختيار",
+              "comment": "الوقف على أشركوا، والتقدير: وأحرص من الذين أشركوا. وألمح في ٢/٣٧١ إلى أن الذين أشركوا هم المجوس",
+              "book": "تفسيره",
+              "book_ref": "2/370"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

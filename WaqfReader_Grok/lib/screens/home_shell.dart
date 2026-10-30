@@ -1,0 +1,306 @@
+import 'package:flutter/material.dart';
+
+import '../data/sample_data.dart';
+import '../theme/app_theme.dart';
+import 'index_screen.dart';
+import 'mushaf_screen.dart';
+import 'review_screen.dart';
+
+class HomeShell extends StatefulWidget {
+  const HomeShell({super.key});
+
+  @override
+  State<HomeShell> createState() => _HomeShellState();
+}
+
+class _HomeShellState extends State<HomeShell> {
+  final ReaderController _controller = ReaderController();
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return ListenableBuilder(
+      listenable: _controller,
+      builder: (context, _) {
+        return Scaffold(
+          backgroundColor: AppColors.parchment,
+          body: Column(
+            children: [
+              SafeArea(
+                bottom: false,
+                child: _TopBar(controller: _controller),
+              ),
+              Expanded(
+                child: IndexedStack(
+                  index: _controller.tab,
+                  children: [
+                    MushafScreen(controller: _controller),
+                    IndexScreen(controller: _controller),
+                    ReviewScreen(controller: _controller),
+                  ],
+                ),
+              ),
+              _BottomNav(controller: _controller),
+            ],
+          ),
+        );
+      },
+    );
+  }
+}
+
+class _TopBar extends StatelessWidget {
+  const _TopBar({required this.controller});
+
+  final ReaderController controller;
+
+  @override
+  Widget build(BuildContext context) {
+    // Matches mockup: cream bar, centered brand, surah pill, overflow menu.
+    return Material(
+      color: AppColors.parchment,
+      elevation: 0,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
+        child: SizedBox(
+          height: 48,
+          child: LayoutBuilder(
+            builder: (context, constraints) {
+              final titleWidth = constraints.maxWidth - 168 - 48;
+              return Stack(
+                alignment: Alignment.center,
+                children: [
+                  ConstrainedBox(
+                    constraints: BoxConstraints(
+                      maxWidth: titleWidth > 0 ? titleWidth : 0,
+                    ),
+                    child: FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        'وقف وابتداء',
+                        maxLines: 1,
+                        style: AppText.ui(
+                          size: 20,
+                          weight: FontWeight.w800,
+                          color: AppColors.forestDeep,
+                          height: 1.2,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Align(
+                    alignment: AlignmentDirectional.centerStart,
+                    child: controller.tab == 0
+                        ? _SurahChip(controller: controller)
+                        : const SizedBox(width: 8),
+                  ),
+                  Align(
+                    alignment: AlignmentDirectional.centerEnd,
+                    child: _OverflowMenu(controller: controller),
+                  ),
+                ],
+              );
+            },
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _SurahChip extends StatelessWidget {
+  const _SurahChip({required this.controller});
+
+  final ReaderController controller;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsetsDirectional.only(start: 8),
+      child: Material(
+        color: AppColors.chipFill,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20),
+          side: const BorderSide(color: AppColors.forest, width: 1.2),
+        ),
+        child: InkWell(
+          onTap: () => controller.setTab(1),
+          customBorder: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Icon(Icons.menu_book, size: 16, color: AppColors.forest),
+                const SizedBox(width: 6),
+                Text(
+                  'سورة يوسف',
+                  style: AppText.ui(
+                    size: 13,
+                    weight: FontWeight.w700,
+                    color: AppColors.forest,
+                    height: 1.1,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _OverflowMenu extends StatelessWidget {
+  const _OverflowMenu({required this.controller});
+
+  final ReaderController controller;
+
+  @override
+  Widget build(BuildContext context) {
+    return PopupMenuButton<String>(
+      tooltip: 'المزيد',
+      icon: const Icon(Icons.more_vert, color: AppColors.forestDeep),
+      onSelected: (value) {
+        if (value == 'size') {
+          _showSizeDialog(context);
+        } else if (value == 'legend') {
+          _showLegend(context);
+        }
+      },
+      itemBuilder: (context) => [
+        PopupMenuItem(
+          value: 'size',
+          child: Text('حجم الخط', style: AppText.ui(size: 15)),
+        ),
+        PopupMenuItem(
+          value: 'legend',
+          child: Text('رموز الوقف', style: AppText.ui(size: 15)),
+        ),
+      ],
+    );
+  }
+
+  void _showSizeDialog(BuildContext context) {
+    showDialog<void>(
+      context: context,
+      builder: (dialogContext) {
+        return AlertDialog(
+          title: const Text('حجم خط المصحف'),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              for (final option in const <(double, String)>[
+                (22, 'صغير'),
+                (26, 'متوسط'),
+                (32, 'كبير'),
+              ])
+                ListTile(
+                  contentPadding: EdgeInsets.zero,
+                  title: Text(option.$2, style: AppText.ui(size: 16)),
+                  trailing: controller.quranSize == option.$1
+                      ? const Icon(Icons.check, color: AppColors.forest)
+                      : null,
+                  onTap: () {
+                    controller.setQuranSize(option.$1);
+                    Navigator.of(dialogContext).pop();
+                  },
+                ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
+  void _showLegend(BuildContext context) {
+    const rows = <(String, String)>[
+      ('ط', 'تام — يحسن الوقف والابتداء بما بعده'),
+      ('ج', 'جائز — يجوز الوقف والوصل'),
+      ('لا', 'لا تقف — الوصل لازم'),
+      ('ز', 'مجوّز — الوقف ممكن والوصل أرجح'),
+      ('؟', 'غير محسوم — لا حكم في هذه العيّنة'),
+    ];
+    showDialog<void>(
+      context: context,
+      builder: (dialogContext) {
+        return AlertDialog(
+          title: const Text('رموز الوقف'),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              for (final row in rows)
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 8),
+                  child: Text(row.$2, style: AppText.ui(size: 14)),
+                ),
+            ],
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(dialogContext).pop(),
+              child: Text(
+                'إغلاق',
+                style: AppText.ui(
+                  color: AppColors.forest,
+                  weight: FontWeight.w700,
+                ),
+              ),
+            ),
+          ],
+        );
+      },
+    );
+  }
+}
+
+class _BottomNav extends StatelessWidget {
+  const _BottomNav({required this.controller});
+
+  final ReaderController controller;
+
+  @override
+  Widget build(BuildContext context) {
+    return DecoratedBox(
+      decoration: const BoxDecoration(
+        color: AppColors.parchment,
+        border: Border(top: BorderSide(color: AppColors.hairline)),
+      ),
+      child: SafeArea(
+        top: false,
+        child: NavigationBar(
+          backgroundColor: AppColors.parchment,
+          surfaceTintColor: Colors.transparent,
+          indicatorColor: AppColors.chipFill,
+          selectedIndex: controller.tab,
+          onDestinationSelected: controller.setTab,
+          destinations: const [
+            NavigationDestination(
+              icon: Icon(Icons.menu_book_outlined),
+              selectedIcon: Icon(Icons.menu_book),
+              label: 'مصحف',
+            ),
+            NavigationDestination(
+              icon: Icon(Icons.list_alt_outlined),
+              selectedIcon: Icon(Icons.list_alt),
+              label: 'فهرس',
+            ),
+            NavigationDestination(
+              icon: Icon(Icons.check_circle_outline),
+              selectedIcon: Icon(Icons.check_circle),
+              label: 'مراجعة',
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}

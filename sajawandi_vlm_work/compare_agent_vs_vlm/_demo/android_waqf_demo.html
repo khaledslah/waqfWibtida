@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>وقف وابتداء — Android demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #14231c;
+      --ink-soft: #3d5348;
+      --paper: #f4efe4;
+      --paper-deep: #e8e0d0;
+      --surface: #fbf8f2;
+      --primary: #1a5c48;
+      --primary-soft: #d8ebe3;
+      --accent-tam: #1a5c48;
+      --accent-jaiz: #b7791f;
+      --accent-la: #6b7280;
+      --accent-qil: #7c3aed;
+      --accent-lazim: #9b2226;
+      --accent-hasan: #0e7490;
+      --ai: #8a5a2b;
+      --danger: #9b2226;
+      --hair: rgba(20, 35, 28, 0.12);
+      --shadow: 0 18px 40px rgba(20, 35, 28, 0.18);
+      --radius: 22px;
+      --ui: "IBM Plex Sans Arabic", system-ui, sans-serif;
+      --quran: "Amiri", "Times New Roman", serif;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100dvh;
+      font-family: var(--ui);
+      background:
+        radial-gradient(1200px 600px at 20% 0%, #d7e8df 0%, transparent 55%),
+        radial-gradient(900px 500px at 90% 100%, #ebe3d2 0%, transparent 50%),
+        #cfc7b8;
+      color: var(--ink);
+      display: grid;
+      place-items: center;
+      padding: 24px 16px 40px;
+    }
+
+    .stage {
+      width: min(1120px, 100%);
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 28px;
+      align-items: center;
+    }
+    @media (max-width: 900px) {
+      .stage { grid-template-columns: 1fr; }
+      .notes { order: 2; }
+    }
+
+    .notes h1 {
+      font-family: var(--quran);
+      font-size: clamp(2rem, 4vw, 2.7rem);
+      margin: 0 0 8px;
+      line-height: 1.2;
+    }
+    .notes p {
+      margin: 0 0 14px;
+      color: var(--ink-soft);
+      line-height: 1.7;
+      max-width: 38ch;
+    }
+    .notes .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 18px 0 8px;
+    }
+    .chip {
+      border: 1px solid var(--hair);
+      background: rgba(255,255,255,0.55);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: background .15s, border-color .15s;
+    }
+    .chip:hover, .chip.active {
+      background: var(--primary-soft);
+      border-color: color-mix(in srgb, var(--primary) 35%, transparent);
+      color: var(--primary);
+    }
+    .legend {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      gap: 8px 14px;
+      margin-top: 18px;
+      font-size: 13px;
+      color: var(--ink-soft);
+    }
+    .legend span { display: inline-flex; align-items: center; gap: 6px; }
+    .dot {
+      width: 10px; height: 10px; border-radius: 50%;
+      display: inline-block;
+    }
+
+    .phone {
+      width: min(390px, 100%);
+      margin-inline: auto;
+      aspect-ratio: 9 / 19.2;
+      background: #111;
+      border-radius: 42px;
+      padding: 10px;
+      box-shadow: var(--shadow), inset 0 0 0 1px rgba(255,255,255,0.08);
+      position: relative;
+    }
+    .phone::before {
+      content: "";
+      position: absolute;
+      top: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 108px;
+      height: 28px;
+      background: #0a0a0a;
+      border-radius: 20px;
+      z-index: 5;
+    }
+    .screen {
+      height: 100%;
+      border-radius: 34px;
+      overflow: hidden;
+      background: var(--surface);
+      display: grid;
+      grid-template-rows: auto auto 1fr auto;
+      position: relative;
+    }
+
+    .status {
+      display: flex;
+      justify-content: space-between;
+      padding: 14px 18px 4px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--ink-soft);
+      background: var(--paper);
+    }
+
+    .topbar {
+      background: var(--paper);
+      border-bottom: 1px solid var(--hair);
+      padding: 8px 14px 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .topbar .brand {
+      flex: 1;
+      min-width: 0;
+    }
+    .topbar .brand strong {
+      display: block;
+      font-size: 15px;
+      font-weight: 700;
+    }
+    .topbar .brand small {
+      color: var(--ink-soft);
+      font-size: 12px;
+    }
+    .icon-btn {
+      width: 40px; height: 40px;
+      border: 0;
+      border-radius: 12px;
+      background: transparent;
+      color: var(--ink);
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .icon-btn:active { background: var(--paper-deep); }
+
+    .mushaf {
+      overflow: auto;
+      padding: 18px 16px 100px;
+      background:
+        linear-gradient(180deg, rgba(244,239,228,0.95), rgba(251,248,242,0.98)),
+        repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 31px,
+          rgba(20,35,28,0.035) 31px,
+          rgba(20,35,28,0.035) 32px
+        );
+    }
+    .ayah {
+      font-family: var(--quran);
+      font-size: 27px;
+      line-height: 2.15;
+      margin: 0 0 18px;
+      text-align: justify;
+      text-align-last: center;
+    }
+    .ayah-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      margin-inline: 6px;
+      border: 1.5px solid color-mix(in srgb, var(--primary) 45%, transparent);
+      border-radius: 50%;
+      font-family: var(--ui);
+      font-size: 11px;
+      color: var(--primary);
+      vertical-align: middle;
+    }
+    .stop {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 22px;
+      height: 22px;
+      padding: 0 5px;
+      margin: 0 3px;
+      border-radius: 7px;
+      font-family: var(--ui);
+      font-size: 12px;
+      font-weight: 700;
+      vertical-align: middle;
+      cursor: pointer;
+      border: 0;
+      transform: translateY(-1px);
+      transition: transform .12s, box-shadow .12s;
+    }
+    .stop:active { transform: translateY(0) scale(0.96); }
+    .stop.tam { background: var(--primary-soft); color: var(--accent-tam); }
+    .stop.jaiz { background: #f4e4c4; color: var(--accent-jaiz); }
+    .stop.la { background: #e8eaed; color: var(--accent-la); }
+    .stop.qil { background: #ece4ff; color: #5b21b6; }
+    .stop.lazim { background: #fde2e2; color: var(--accent-lazim); }
+    .stop.hasan { background: #d9f3f7; color: var(--accent-hasan); }
+    .stop.nullish { background: #efeae0; color: #8a8170; border: 1px dashed #b7ad9b; }
+    .stop.selected {
+      box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary) 35%, transparent);
+    }
+    .word-hit {
+      border-radius: 6px;
+      padding: 0 2px;
+      cursor: pointer;
+    }
+    .word-hit.active {
+      background: color-mix(in srgb, var(--primary) 16%, transparent);
+    }
+
+    .bottomnav {
+      position: absolute;
+      inset-inline: 12px;
+      bottom: 12px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4px;
+      background: rgba(251,248,242,0.92);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--hair);
+      border-radius: 18px;
+      padding: 6px;
+      box-shadow: 0 10px 24px rgba(20,35,28,0.12);
+    }
+    .navbtn {
+      border: 0;
+      background: transparent;
+      border-radius: 14px;
+      padding: 10px 6px 8px;
+      font-family: var(--ui);
+      font-size: 11px;
+      color: var(--ink-soft);
+      cursor: pointer;
+    }
+    .navbtn strong { display: block; font-size: 16px; margin-bottom: 2px; }
+    .navbtn.active {
+      background: var(--primary-soft);
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .scrim {
+      position: absolute;
+      inset: 0;
+      background: rgba(16, 24, 20, 0.42);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .2s;
+      z-index: 2;
+    }
+    .scrim.show { opacity: 1; pointer-events: auto; }
+
+    .sheet {
+      position: absolute;
+      inset-inline: 0;
+      bottom: 0;
+      z-index: 3;
+      background: var(--surface);
+      border-radius: 24px 24px 0 0;
+      box-shadow: 0 -12px 40px rgba(0,0,0,0.18);
+      transform: translateY(108%);
+      transition: transform .28s cubic-bezier(.2,.8,.2,1);
+      max-height: 78%;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+    }
+    .sheet.show { transform: translateY(0); }
+    .handle {
+      width: 42px;
+      height: 4px;
+      border-radius: 99px;
+      background: #c9c2b4;
+      margin: 10px auto 4px;
+    }
+    .sheet-head {
+      padding: 4px 18px 12px;
+      border-bottom: 1px solid var(--hair);
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .badge-lg {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+    .sheet-head h2 {
+      margin: 0;
+      font-size: 18px;
+      font-family: var(--quran);
+      line-height: 1.35;
+    }
+    .sheet-head p {
+      margin: 4px 0 0;
+      font-size: 12px;
+      color: var(--ink-soft);
+    }
+    .sheet-body {
+      overflow: auto;
+      padding: 14px 18px 8px;
+    }
+    .quote {
+      font-family: var(--quran);
+      font-size: 18px;
+      line-height: 1.85;
+      background: var(--paper);
+      border: 1px solid var(--hair);
+      border-radius: 16px;
+      padding: 12px 14px;
+      margin: 0 0 14px;
+    }
+    .section-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--ink-soft);
+      letter-spacing: 0.02em;
+      margin: 4px 0 8px;
+    }
+    .opinion {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 2px 10px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--hair);
+    }
+    .opinion:last-child { border-bottom: 0; }
+    .opinion .who { font-weight: 600; font-size: 14px; }
+    .opinion .book { font-size: 12px; color: var(--ink-soft); grid-column: 1 / -1; }
+    .pill {
+      align-self: start;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: var(--primary-soft);
+      color: var(--primary);
+    }
+    .ai-box {
+      margin-top: 12px;
+      border: 1px dashed color-mix(in srgb, var(--ai) 45%, transparent);
+      background: #f8f1e6;
+      border-radius: 16px;
+      padding: 12px;
+    }
+    .ai-box summary {
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 13px;
+      color: var(--ai);
+      list-style: none;
+    }
+    .ai-box summary::-webkit-details-marker { display: none; }
+    .ai-item {
+      margin-top: 10px;
+      font-size: 13px;
+      line-height: 1.65;
+      color: var(--ink-soft);
+    }
+    .ai-item b { color: var(--ink); }
+    .warn {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #8a5a2b;
+      background: #f7ecdc;
+      border-radius: 12px;
+      padding: 8px 10px;
+    }
+    .sheet-actions {
+      padding: 10px 16px calc(14px + env(safe-area-inset-bottom));
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 8px;
+      border-top: 1px solid var(--hair);
+      background: var(--surface);
+    }
+    .btn {
+      border: 0;
+      border-radius: 14px;
+      padding: 13px 12px;
+      font-family: var(--ui);
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .btn.ghost {
+      background: var(--paper);
+      color: var(--ink);
+    }
+    .btn.primary {
+      background: var(--primary);
+      color: #f7fff9;
+    }
+
+    .panel {
+      display: none;
+      padding: 16px;
+      overflow: auto;
+    }
+    .panel.show { display: block; }
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--hair);
+      border-radius: 16px;
+      padding: 12px 14px;
+      margin-bottom: 10px;
+    }
+    .card h3 {
+      margin: 0 0 4px;
+      font-size: 15px;
+    }
+    .card p {
+      margin: 0;
+      font-size: 12px;
+      color: var(--ink-soft);
+      line-height: 1.6;
+    }
+    .meta {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+    .tag {
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: #fff;
+      border: 1px solid var(--hair);
+    }
+    .tag.bad { background: #fde2e2; border-color: transparent; color: var(--danger); }
+    .tag.ok { background: var(--primary-soft); border-color: transparent; color: var(--primary); }
+    .tag.warn { background: #f7ecdc; border-color: transparent; color: var(--ai); }
+  </style>
+</head>
+<body>
+  <div class="stage">
+    <aside class="notes">
+      <h1>وقف وابتداء</h1>
+      <p>
+        تجربة واجهة أندرويد لقراءة مصحف السجاوندي: علامات الوقف على الكلمات،
+        ورقة تفصيل للآراء، ومقترحات الذكاء الاصطناعي منفصلة عن الحكم الأصلي.
+      </p>
+      <div class="chips">
+        <button class="chip active" data-go="mushaf">١ · المصحف</button>
+        <button class="chip" data-go="open-sheet">٢ · تفاصيل الوقف</button>
+        <button class="chip" data-go="review">٣ · طابور المراجعة</button>
+      </div>
+      <div class="legend">
+        <span><i class="dot" style="background:var(--accent-tam)"></i> تام ط</span>
+        <span><i class="dot" style="background:var(--accent-jaiz)"></i> جائز ج/ز</span>
+        <span><i class="dot" style="background:var(--accent-la)"></i> لا يوقف</span>
+        <span><i class="dot" style="background:var(--accent-lazim)"></i> لازم م</span>
+        <span><i class="dot" style="background:var(--accent-hasan)"></i> حسن ص</span>
+        <span><i class="dot" style="background:#b7ad9b"></i> غير معلَّم</span>
+      </div>
+    </aside>
+
+    <div class="phone" aria-label="Android demo phone">
+      <div class="screen">
+        <div class="status"><span>٩:٤١</span><span>LTE · ٨٤٪</span></div>
+
+        <header class="topbar">
+          <button class="icon-btn" aria-label="رجوع">‹</button>
+          <div class="brand">
+            <strong>وقف وابتداء</strong>
+            <small id="subtitle">سورة يوسف · علل الوقوف للسجاوندي</small>
+          </div>
+          <button class="icon-btn" aria-label="بحث">⌕</button>
+        </header>
+
+        <main class="mushaf" id="panel-mushaf">
+          <p class="ayah" data-ayah="100">
+            <span class="word-hit" data-stop="haqqa">حقا</span><button class="stop tam" data-stop="haqqa" type="button">ط</button>
+            وهو الذي أحقّه الله لكم
+            <span class="word-hit" data-stop="ikhwati">إخوتي</span><button class="stop tam" data-stop="ikhwati" type="button">ط</button>
+            لما يشاء الله
+            <span class="ayah-num">١٠٠</span>
+          </p>
+          <p class="ayah" data-ayah="101">
+            رب قد آتيتني من
+            <span class="word-hit" data-stop="ahadith">الأحاديث</span><button class="stop jaiz" data-stop="ahadith" type="button">ج</button>
+            وعلمتني من تأويل
+            <span class="word-hit" data-stop="akhira">والآخرة</span><button class="stop jaiz" data-stop="akhira" type="button">ج</button>
+            <span class="ayah-num">١٠١</span>
+          </p>
+          <p class="ayah" data-ayah="108">
+            قل هذه سبيلي أدعو إلى الله
+            <button class="stop jaiz" data-stop="adwu" type="button">ج</button>
+            على بصيرة أنا ومن اتبعني
+            <button class="stop tam selected" data-stop="ittabaani" type="button">ط</button>
+            <span class="ayah-num">١٠٨</span>
+          </p>
+          <p class="ayah" data-ayah="111">
+            لقد كان في قصصهم عبرة لأولي
+            <span class="word-hit active" data-stop="albab">الألباب</span><button class="stop tam selected" data-stop="albab" type="button">ط</button>
+            <span class="ayah-num">١١١</span>
+          </p>
+          <p class="ayah" style="opacity:.85">
+            وثلاثة فانطلقا بلا حرف معلَّم
+            <button class="stop nullish" data-stop="fantalaqa" type="button">؟</button>
+            للمراجعة
+          </p>
+        </main>
+
+        <section class="panel" id="panel-review">
+          <div class="card">
+            <h3>فانطلقا · الكهف ٧١</h3>
+            <p>العلامة فارغة في المتن — لا حرف سجاوندي ظاهر.</p>
+            <div class="meta">
+              <span class="tag bad">verdict null</span>
+              <span class="tag warn">ayah_only؟</span>
+              <span class="tag">ص ٦٦٧</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3>زوجين اثنين · الرعد ٣</h3>
+            <p>حاشية موجودة، والحرف غير مقروء في المتن.</p>
+            <div class="meta">
+              <span class="tag bad">يحتاج مراجعة</span>
+              <span class="tag">margin_ref 1</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3>مقترح AI · جهنم</h3>
+            <p>اقتراح وقف/ابتداء من Phase 3 — لا يُعرض كعلامة أصلية.</p>
+            <div class="meta">
+              <span class="tag warn">ai_inferred</span>
+              <span class="tag ok">meaning_change</span>
+            </div>
+          </div>
+        </section>
+
+        <nav class="bottomnav" aria-label="التنقل">
+          <button class="navbtn active" data-tab="mushaf" type="button"><strong>﴿﴾</strong>مصحف</button>
+          <button class="navbtn" data-tab="review" type="button"><strong>✓</strong>مراجعة</button>
+          <button class="navbtn" data-tab="index" type="button"><strong>☰</strong>فهرس</button>
+        </nav>
+
+        <div class="scrim" id="scrim"></div>
+        <aside class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+          <div class="handle"></div>
+          <div class="sheet-head">
+            <div class="badge-lg tam" id="sheet-badge" style="background:var(--primary-soft);color:var(--primary)">ط</div>
+            <div>
+              <h2 id="sheet-title">الألباب</h2>
+              <p id="sheet-meta">يوسف · آية ١١١ · ص ٦٠٩ · تام</p>
+            </div>
+          </div>
+          <div class="sheet-body" id="sheet-body"></div>
+          <div class="sheet-actions">
+            <button class="btn ghost" type="button" id="btn-close">إغلاق</button>
+            <button class="btn primary" type="button" id="btn-approve">اعتماد للعرض</button>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const STOPS = {
+      albab: {
+        target: "الألباب",
+        label: "ط",
+        verdict: "تام",
+        cls: "tam",
+        meta: "يوسف · آية ١١١ · ص ٦٠٩",
+        quote: "﴿الألباب - ١١١ - ط﴾",
+        opinions: [
+          { scholar: "النحاس", verdict: "حسن", book: "القطع · ١٤٩" },
+          { scholar: "الأشموني", verdict: "حسن", book: "المنار · ٤٢" },
+          { scholar: "الداني", verdict: "تام", book: "المكتفى · ١٦٦" },
+        ],
+        suggested: {
+          waqf: "الوقف يفصل العبرة عن خاتمة السورة فيظهر الاستئناف.",
+          ibtida: "يُبتدأ بما بعده على وجه الاستئناف إن وُقف.",
+          trigger: "meaning_change",
+        },
+      },
+      ittabaani: {
+        target: "ومن اتبعني",
+        label: "ط",
+        verdict: "تام",
+        cls: "tam",
+        meta: "يوسف · آية ١٠٨ · ص ٦٠٩",
+        quote: "﴿ومن اتبعني - ١٠٨ - ط﴾ لأن ما بعده مستأنف.",
+        opinions: [
+          { scholar: "الأنصاري", verdict: "كاف", book: "المقصد" },
+        ],
+        suggested: null,
+      },
+      ahadith: {
+        target: "الأحاديث",
+        label: "ج",
+        verdict: "جائز",
+        cls: "jaiz",
+        meta: "يوسف · آية ١٠١ · ص ٦٠٨",
+        quote: "﴿الأحاديث - ١٠١ - ج﴾ مع جواز الوصل للعطف المعنوي.",
+        opinions: [],
+        suggested: {
+          waqf: "الوقف يغيّر تعلق ما بعده بين الحال والاستئناف.",
+          ibtida: null,
+          trigger: "meaning_change",
+        },
+      },
+      fantalaqa: {
+        target: "فانطلقا",
+        label: "؟",
+        verdict: "غير معلَّم",
+        cls: "nullish",
+        meta: "الكهف · آية ٧١ · ص ٦٦٧",
+        quote: "﴿فانطلقا﴾ بلا حرف ظاهر في المتن.",
+        opinions: [],
+        suggested: null,
+        warn: "أبقِه في طابور المراجعة — لا تخترع حرفًا.",
+      },
+      haqqa: {
+        target: "حقا",
+        label: "ط",
+        verdict: "تام",
+        cls: "tam",
+        meta: "يوسف · آية ١٠٠ · ص ٦٠٧",
+        quote: "﴿حقا - ١٠٠ - ط﴾",
+        opinions: [],
+        suggested: null,
+      },
+    };
+
+    const sheet = document.getElementById("sheet");
+    const scrim = document.getElementById("scrim");
+    const sheetBody = document.getElementById("sheet-body");
+    const sheetTitle = document.getElementById("sheet-title");
+    const sheetMeta = document.getElementById("sheet-meta");
+    const sheetBadge = document.getElementById("sheet-badge");
+    const panelMushaf = document.getElementById("panel-mushaf");
+    const panelReview = document.getElementById("panel-review");
+    const subtitle = document.getElementById("subtitle");
+
+    function openSheet(id) {
+      const s = STOPS[id] || STOPS.albab;
+      document.querySelectorAll(".stop").forEach((el) => {
+        el.classList.toggle("selected", el.dataset.stop === id);
+      });
+      document.querySelectorAll(".word-hit").forEach((el) => {
+        el.classList.toggle("active", el.dataset.stop === id);
+      });
+      sheetTitle.textContent = s.target;
+      sheetMeta.textContent = `${s.meta} · ${s.verdict}`;
+      sheetBadge.textContent = s.label;
+      sheetBadge.className = `badge-lg ${s.cls}`;
+      sheetBadge.style.background = getComputedStyle(document.querySelector(`.stop.${s.cls}`) || document.body).backgroundColor;
+      sheetBadge.style.color = getComputedStyle(document.querySelector(`.stop.${s.cls}`) || document.body).color;
+
+      let html = `<div class="quote">${s.quote}</div>`;
+      if (s.opinions.length) {
+        html += `<div class="section-title">آراء العلماء</div>`;
+        html += s.opinions.map((o) => `
+          <div class="opinion">
+            <div class="who">${o.scholar}</div>
+            <div class="pill">${o.verdict}</div>
+            <div class="book">${o.book}</div>
+          </div>`).join("");
+      } else {
+        html += `<div class="section-title">آراء العلماء</div><p style="margin:0 0 10px;color:var(--ink-soft);font-size:13px">لا حاشية مربوطة، أو الحاشية تحقيق نسخ فقط.</p>`;
+      }
+      if (s.suggested) {
+        html += `<details class="ai-box" open>
+          <summary>مقترحات AI · ${s.suggested.trigger}</summary>
+          ${s.suggested.waqf ? `<div class="ai-item"><b>وقف مقترح:</b> ${s.suggested.waqf}</div>` : ""}
+          ${s.suggested.ibtida ? `<div class="ai-item"><b>ابتداء مقترح:</b> ${s.suggested.ibtida}</div>` : ""}
+        </details>`;
+      }
+      if (s.warn) html += `<div class="warn">${s.warn}</div>`;
+      sheetBody.innerHTML = html;
+      sheet.classList.add("show");
+      scrim.classList.add("show");
+    }
+
+    function closeSheet() {
+      sheet.classList.remove("show");
+      scrim.classList.remove("show");
+    }
+
+    const REVIEW_HTML = `
+      <div class="card"><h3>فانطلقا · الكهف ٧١</h3><p>العلامة فارغة في المتن — لا حرف سجاوندي ظاهر.</p><div class="meta"><span class="tag bad">verdict null</span><span class="tag warn">ayah_only؟</span><span class="tag">ص ٦٦٧</span></div></div>
+      <div class="card"><h3>زوجين اثنين · الرعد ٣</h3><p>حاشية موجودة، والحرف غير مقروء في المتن.</p><div class="meta"><span class="tag bad">يحتاج مراجعة</span><span class="tag">margin_ref 1</span></div></div>
+      <div class="card"><h3>مقترح AI · جهنم</h3><p>اقتراح وقف/ابتداء من Phase 3 — لا يُعرض كعلامة أصلية.</p><div class="meta"><span class="tag warn">ai_inferred</span><span class="tag ok">meaning_change</span></div></div>`;
+    const INDEX_HTML = `
+      <div class="card"><h3>يوسف</h3><p>٢١ وقفًا · آخر آية الألباب</p><div class="meta"><span class="tag ok">مكتمل</span></div></div>
+      <div class="card"><h3>الكهف</h3><p>جاهز للعرض · بعض null للمراجعة</p><div class="meta"><span class="tag ok">مكتمل</span><span class="tag warn">٣ مراجعة</span></div></div>
+      <div class="card"><h3>مريم</h3><p>جزئي حتى ص ٦٨٦</p><div class="meta"><span class="tag bad">incomplete</span></div></div>`;
+
+    function showTab(tab) {
+      const mushaf = tab === "mushaf";
+      panelMushaf.style.display = mushaf ? "block" : "none";
+      if (mushaf) {
+        panelReview.classList.remove("show");
+      } else {
+        panelReview.classList.add("show");
+        panelReview.innerHTML = tab === "index" ? INDEX_HTML : REVIEW_HTML;
+      }
+      document.querySelectorAll(".navbtn").forEach((b) => {
+        b.classList.toggle("active", b.dataset.tab === tab);
+      });
+      subtitle.textContent =
+        tab === "review" ? "طابور المراجعة · mapping / null labels" :
+        tab === "index" ? "الفهرس · سور جاهزة للعرض" :
+        "سورة يوسف · علل الوقوف للسجاوندي";
+      closeSheet();
+    }
+
+    document.querySelectorAll(".stop, .word-hit").forEach((el) => {
+      el.addEventListener("click", () => openSheet(el.dataset.stop));
+    });
+    scrim.addEventListener("click", closeSheet);
+    document.getElementById("btn-close").addEventListener("click", closeSheet);
+    document.getElementById("btn-approve").addEventListener("click", () => {
+      document.getElementById("btn-approve").textContent = "تم الاعتماد";
+      setTimeout(() => {
+        document.getElementById("btn-approve").textContent = "اعتماد للعرض";
+        closeSheet();
+      }, 700);
+    });
+    document.querySelectorAll(".navbtn").forEach((b) => {
+      b.addEventListener("click", () => {
+        if (b.dataset.tab === "index") {
+          showTab("index");
+          document.querySelector('[data-go="review"]')?.classList.remove("active");
+        } else showTab(b.dataset.tab);
+      });
+    });
+    document.querySelectorAll(".chip").forEach((chip) => {
+      chip.addEventListener("click", () => {
+        document.querySelectorAll(".chip").forEach((c) => c.classList.remove("active"));
+        chip.classList.add("active");
+        const go = chip.dataset.go;
+        if (go === "mushaf") showTab("mushaf");
+        if (go === "open-sheet") { showTab("mushaf"); openSheet("albab"); }
+        if (go === "review") {
+          // ensure review content
+          panelReview.innerHTML = `
+            <div class="card"><h3>فانطلقا · الكهف ٧١</h3><p>العلامة فارغة في المتن — لا حرف سجاوندي ظاهر.</p><div class="meta"><span class="tag bad">verdict null</span><span class="tag warn">ayah_only؟</span><span class="tag">ص ٦٦٧</span></div></div>
+            <div class="card"><h3>زوجين اثنين · الرعد ٣</h3><p>حاشية موجودة، والحرف غير مقروء في المتن.</p><div class="meta"><span class="tag bad">يحتاج مراجعة</span><span class="tag">margin_ref 1</span></div></div>
+            <div class="card"><h3>مقترح AI · جهنم</h3><p>اقتراح وقف/ابتداء من Phase 3 — لا يُعرض كعلامة أصلية.</p><div class="meta"><span class="tag warn">ai_inferred</span><span class="tag ok">meaning_change</span></div></div>`;
+          showTab("review");
+        }
+      });
+    });
+
+    // start with sheet closed; subtle pulse on sample stop
+    openSheet("albab");
+  </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+BLIND matn+margin apparatus extract pages 230-233.
+
+Read schema: D:\AI_Projects\waqfWibtida2\sajawandi_vlm_work\compare_agent_vs_vlm\raw_waqf_apparatus.schema.json
+Read enums/meanings: D:\AI_Projects\waqfWibtida2\sajawandi_vlm_work\compare_agent_vs_vlm\raw_waqf_apparatus.enums.json and D:\AI_Projects\waqfWibtida2\sajawandi_vlm_work\compare_agent_vs_vlm\APPARATUS_ENUM_MEANINGS.md
+
+ATTACHED per page:
+- page_N_matn.png — catalog matn
+- page_N_margin.png — footnotes
+
+FORBIDDEN: crop/OCR/Shell image/HTTP/cache raw/other blind json.
+
+RULES:
+1. Catalog waqfs from MATN brackets.
+2. verdict_label + verdict may be null together if letter unresolved in matn.
+3. margin_ref = footnote number on/after closing ﴾ if present (Western int); else null.
+4. apparatus ONLY when margin_ref != null AND margin has the same (N) note; else [].
+5. Split each scholar into one opinions[] row. opinion.verdict = final word (حسن/كاف/تام/…), NOT a letter.
+6. opinion.scholar MUST be an exact enum value. Map name variants/kunyas to the same person using scholar_alias_hints; if no fit → "unknown".
+7. symbol_witness / missing_symbol ONLY if matn has no letter and margin states one (basis=page_prose).
+8. fixes[] not singular fix; old_text null iff fixes=[].
+
+Write UTF-8 no BOM: D:\AI_Projects\waqfWibtida2\sajawandi_vlm_work\compare_agent_vs_vlm\_apparatus_parallel8\batch_230_233.apparatus.raw.json
+source=apparatus_parallel8. Return count + tuples (ayah,label|null,target,page,margin_ref|null,n_opinions).
+
+
+EXTRA:
+- Images attached: page_230..233 matn+margin from D:\AI_Projects\waqfWibtida2\sajawandi_vlm_work\compare_agent_vs_vlm\_matn_margin_parallel8 only.
+- Do NOT overwrite any other json. Write ONLY batch_230_233.apparatus.raw.json.
+- Do NOT read cache/raw, parallel matn json, or other apparatus outputs.
+- Create parent dir if needed; UTF-8 no BOM JSON.

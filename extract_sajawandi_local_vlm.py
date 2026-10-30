@@ -666,7 +666,7 @@ def call_gemini_vision_rest(
         attempts_per_model = max(len(api_keys) * 2, 4)
         print(f"  [Model] Trying {model} ({mi+1}/{len(models)})...", flush=True)
         for attempt in range(attempts_per_model):
-            key = api_keys[attempt % len(api_keys)]
+        key = api_keys[attempt % len(api_keys)]
             url = (
                 f"https://generativelanguage.googleapis.com/v1beta/models/"
                 f"{model}:generateContent?key={key}"
@@ -676,31 +676,31 @@ def call_gemini_vision_rest(
             )
             try:
                 with urllib.request.urlopen(req, timeout=120) as resp:
-                    res_data = json.loads(resp.read().decode("utf-8"))
+                res_data = json.loads(resp.read().decode("utf-8"))
                     text = res_data["candidates"][0]["content"]["parts"][0]["text"]
                     if mi > 0:
                         print(f"  [Fallback OK] Succeeded with {model}", flush=True)
                     return text, model
-            except urllib.error.HTTPError as e:
-                err_body = e.read().decode("utf-8", errors="ignore")
+        except urllib.error.HTTPError as e:
+            err_body = e.read().decode("utf-8", errors="ignore")
                 last_err = e
-                if e.code == 429:
+            if e.code == 429:
                     wait_t = 8 * ((attempt % 3) + 1)
                     print(
                         f"  [429 {model} key{(attempt % len(api_keys))+1}] "
                         f"wait {wait_t}s ({attempt+1}/{attempts_per_model})",
                         flush=True,
                     )
-                    time.sleep(wait_t)
-                elif e.code >= 500:
+                time.sleep(wait_t)
+            elif e.code >= 500:
                     print(f"  [Server {e.code} {model}] Waiting 6s...", flush=True)
                     time.sleep(6)
-                else:
+            else:
                     print(f"  [HTTP {e.code} {model}] {err_body[:160]}", flush=True)
                     time.sleep(3)
-            except Exception as e:
+        except Exception as e:
                 last_err = e
-                time.sleep(3)
+            time.sleep(3)
         if mi + 1 < len(models):
             print(f"  [Fallback] {model} exhausted → next model", flush=True)
 
@@ -716,7 +716,7 @@ def call_openai_vision(
     base_url: Optional[str] = None,
     model_name: str = "gpt-4o",
 ) -> str:
-    from openai import OpenAI
+        from openai import OpenAI
 
     client = OpenAI(api_key=api_key or "local", base_url=base_url)
     content: List[Dict[str, Any]] = [{"type": "text", "text": prompt}]
@@ -860,8 +860,8 @@ def load_or_fetch_raw(
     )
 
     used_model = model_name
-    try:
-        if backend == "gemini":
+        try:
+            if backend == "gemini":
             raw_response, used_model = call_gemini_vision_rest(
                 input_images,
                 prompt,
@@ -869,7 +869,7 @@ def load_or_fetch_raw(
                 model_name=model_name,
                 model_fallback=chain,
             )
-        else:
+            else:
             raw_response = call_openai_vision(
                 input_images,
                 prompt,
@@ -879,7 +879,7 @@ def load_or_fetch_raw(
             )
         if not raw_response or not str(raw_response).strip():
             raise ValueError("Empty VLM response")
-    except Exception as e:
+        except Exception as e:
         raise RuntimeError(f"VLM failed for pages {batch_pages}: {e}") from e
 
     # Write-once semantics: only write if missing, or explicit rerun
@@ -1356,25 +1356,25 @@ def run_surah_extraction(
 
     # Only render/fetch images for pages still missing raw
     if missing_pages:
-        page_to_img = get_page_images(
+    page_to_img = get_page_images(
             pages=missing_pages,
-            search_dirs=search_dirs,
-            pdf_path=str(pdf_path) if pdf_path else None,
-            render_output_dir=images_dir,
+        search_dirs=search_dirs,
+        pdf_path=str(pdf_path) if pdf_path else None,
+        render_output_dir=images_dir,
             dpi=200,
         )
         for i in range(0, len(missing_pages), batch_size):
             batch_pages = missing_pages[i : i + batch_size]
-            batch_imgs = [page_to_img[p] for p in batch_pages if p in page_to_img]
+        batch_imgs = [page_to_img[p] for p in batch_pages if p in page_to_img]
             try:
                 batch_raw = process_batch_raw_only(
-                    batch_pages=batch_pages,
-                    rendered_images=batch_imgs,
-                    use_grid=use_grid,
-                    backend=backend,
-                    api_keys=api_keys,
-                    base_url=base_url,
-                    model_name=model_name,
+            batch_pages=batch_pages,
+            rendered_images=batch_imgs,
+            use_grid=use_grid,
+            backend=backend,
+            api_keys=api_keys,
+            base_url=base_url,
+            model_name=model_name,
                     raw_dir=raw_dir,
                     grid_dir=grid_dir,
                     rerun_vlm=rerun_vlm,
@@ -1691,7 +1691,7 @@ def main() -> None:
                 match = [x for x in auto if x[0] == args.part]
                 if not match:
                     print(f"Error: part {args.part} out of range for surah {s_num} ({len(auto)} parts)")
-                    continue
+            continue
                 pn, ps, pe = match[0]
                 jobs = [(pn, ps, pe, args.ayah_start, args.ayah_end, s_name)]
             else:
@@ -1725,19 +1725,19 @@ def main() -> None:
             out_ex = Path(args.output_extracted) if args.output_extracted and single else None
 
             print(f"\n>>> Surah {s_num} part {part}: pages {p_start}-{p_end}")
-            run_surah_extraction(
-                surah_num=s_num,
+        run_surah_extraction(
+            surah_num=s_num,
                 surah_name=job_name,
                 page_start=int(p_start),
                 page_end=int(p_end),
-                batch_size=args.batch_size,
+            batch_size=args.batch_size,
                 use_grid=use_grid,
-                backend=args.backend,
-                model_name=args.model,
-                api_keys=api_keys,
-                base_url=args.base_url,
-                pdf_path=pdf_path,
-                work_path=work_path,
+            backend=args.backend,
+            model_name=args.model,
+            api_keys=api_keys,
+            base_url=args.base_url,
+            pdf_path=pdf_path,
+            work_path=work_path,
                 quran_words_path=quran_words,
                 quran_ayahs_path=quran_ayahs,
                 shamela_path=shamela_path,

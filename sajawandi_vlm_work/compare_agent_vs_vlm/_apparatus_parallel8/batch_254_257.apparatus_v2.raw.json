@@ -1,0 +1,88 @@
+{
+  "source": "apparatus_v2_phased_254_257",
+  "page_numbers": [254, 255, 256, 257],
+  "waqfs": [
+    {
+      "ayah": 150,
+      "target_word": "حجة",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿حجة - 150 - ز﴾(1)",
+      "text_page": 254,
+      "old_text": "150 - ز﴾(1)",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "150 - ز﴾(1)",
+          "new_text": "﴿حجة - 150 - ز﴾(1)",
+          "info": "The bracket opening and target word fall on the previous page (not supplied); page 254 begins at the ayah number. Target 'حجة' is taken from the matn prose that follows (إثبات الحجة / إلا بمعنى ولا)."
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 254,
+          "raw_text": "(١) المثبت من : أ ، وهو مصطلح للمجوز لوجه ، وفي ب علامة الوقف : [ ق ] ، وهي ليست من مصطلحات المؤلف ، وفي ج ، د ، علامة الوقف ساقطة .",
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 150,
+      "target_word": "تهتدون",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿تهتدون - 150 - لا﴾",
+      "text_page": 257,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 151,
+      "target_word": "تعلمون",
+      "verdict_label": null,
+      "verdict": null,
+      "margin_ref": 3,
+      "text": "﴿تعلمون - 151﴾(3)",
+      "text_page": 257,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 257,
+          "raw_text": "(٣) أ : [ ﴿تعلمون﴾ ج ] ، والمثبت بدون علامة الوقف من بقية النسخ ، وهو الصواب ، لأن المؤلف هنا لم يرد أن يبين ذكر الجواز إنما أراد أن يبين موطن الوقف من عدمه . وهو تام عند ابن الأنباري والنحاس والداني ، وهذا على أن ﴿كما﴾ متعلقة بما قبلها . انظر : الإيضاح ١ /٥٣٦ ، والقطع ( ١٦٩ ) ، والمكتفى ( ١٧٧ ، ١٧٨ ) .",
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "تام",
+              "comment": "على أن ﴿كما﴾ متعلقة بما قبلها؛ نسخة أ فيها علامة ج، والمثبت بدون علامة من بقية النسخ وهو الصواب عند المحقق",
+              "book": "الإيضاح",
+              "book_ref": "1/536"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "تام",
+              "comment": "على أن ﴿كما﴾ متعلقة بما قبلها",
+              "book": "القطع",
+              "book_ref": "169"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "تام",
+              "comment": "على أن ﴿كما﴾ متعلقة بما قبلها",
+              "book": "المكتفى",
+              "book_ref": "177، 178"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

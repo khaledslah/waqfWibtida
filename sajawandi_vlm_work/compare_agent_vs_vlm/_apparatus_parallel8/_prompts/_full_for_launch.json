@@ -1,0 +1,170 @@
+[
+  {
+    "job": "A",
+    "start": 230,
+    "end": 233,
+    "pages": "230-233",
+    "images": [
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_230_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_230_margin.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_231_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_231_margin.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_232_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_232_margin.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_233_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_233_margin.png"
+    ],
+    "output": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\batch_230_233.apparatus.raw.json",
+    "prompt_file": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\_prompts\\prompt_230_233.txt",
+    "source": "apparatus_parallel8",
+    "description": "Apparatus 230-233",
+    "prompt": "BLIND matn+margin apparatus extract pages 230-233.\n\nRead schema: D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\raw_waqf_apparatus.schema.json\nRead enums/meanings: D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\raw_waqf_apparatus.enums.json and D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\APPARATUS_ENUM_MEANINGS.md\n\nATTACHED per page:\n- page_N_matn.png — catalog matn\n- page_N_margin.png — footnotes\n\nFORBIDDEN: crop/OCR/Shell image/HTTP/cache raw/other blind json.\n\nRULES:\n1. Catalog waqfs from MATN brackets.\n2. verdict_label + verdict may be null together if letter unresolved in matn.\n3. margin_ref = footnote number on/after closing ﴾ if present (Western int); else null.\n4. apparatus ONLY when margin_ref != null AND margin has the same (N) note; else [].\n5. Split each scholar into one opinions[] row. opinion.verdict = final word (حسن/كاف/تام/…), NOT a letter.\n6. opinion.scholar MUST be an exact enum value. Map name variants/kunyas to the same person using scholar_alias_hints; if no fit → \"unknown\".\n7. symbol_witness / missing_symbol ONLY if matn has no letter and margin states one (basis=page_prose).\n8. fixes[] not singular fix; old_text null iff fixes=[].\n\nWrite UTF-8 no BOM: D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\batch_230_233.apparatus.raw.json\nsource=apparatus_parallel8. Return count + tuples (ayah,label|null,target,page,margin_ref|null,n_opinions).\n\n\nEXTRA:\n- Images attached: page_230..233 matn+margin from D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8 only.\n- Do NOT overwrite any other json. Write ONLY batch_230_233.apparatus.raw.json.\n- Do NOT read cache/raw, parallel matn json, or other apparatus outputs.\n- Create parent dir if needed; UTF-8 no BOM JSON.\n"
+  },
+  {
+    "job": "B",
+    "start": 234,
+    "end": 237,
+    "pages": "234-237",
+    "images": [
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_234_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_234_margin.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_235_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_235_margin.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_236_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_236_margin.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_237_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_237_margin.png"
+    ],
+    "output": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\batch_234_237.apparatus.raw.json",
+    "prompt_file": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\_prompts\\prompt_234_237.txt",
+    "source": "apparatus_parallel8",
+    "description": "Apparatus 234-237",
+    "prompt": "BLIND matn+margin apparatus extract pages 234-237.\n\nRead schema: D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\raw_waqf_apparatus.schema.json\nRead enums/meanings: D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\raw_waqf_apparatus.enums.json and D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\APPARATUS_ENUM_MEANINGS.md\n\nATTACHED per page:\n- page_N_matn.png — catalog matn\n- page_N_margin.png — footnotes\n\nFORBIDDEN: crop/OCR/Shell image/HTTP/cache raw/other blind json.\n\nRULES:\n1. Catalog waqfs from MATN brackets.\n2. verdict_label + verdict may be null together if letter unresolved in matn.\n3. margin_ref = footnote number on/after closing ﴾ if present (Western int); else null.\n4. apparatus ONLY when margin_ref != null AND margin has the same (N) note; else [].\n5. Split each scholar into one opinions[] row. opinion.verdict = final word (حسن/كاف/تام/…), NOT a letter.\n6. opinion.scholar MUST be an exact enum value. Map name variants/kunyas to the same person using scholar_alias_hints; if no fit → \"unknown\".\n7. symbol_witness / missing_symbol ONLY if matn has no letter and margin states one (basis=page_prose).\n8. fixes[] not singular fix; old_text null iff fixes=[].\n\nWrite UTF-8 no BOM: D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\batch_234_237.apparatus.raw.json\nsource=apparatus_parallel8. Return count + tuples (ayah,label|null,target,page,margin_ref|null,n_opinions).\n\n\nEXTRA:\n- Images attached: page_234..237 matn+margin from D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8 only.\n- Do NOT overwrite any other json. Write ONLY batch_234_237.apparatus.raw.json.\n- Do NOT read cache/raw, parallel matn json, or other apparatus outputs.\n- Create parent dir if needed; UTF-8 no BOM JSON.\n"
+  },
+  {
+    "job": "C",
+    "start": 238,
+    "end": 241,
+    "pages": "238-241",
+    "images": [
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_238_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_238_margin.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_239_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_239_margin.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_240_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_240_margin.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_241_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_241_margin.png"
+    ],
+    "output": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\batch_238_241.apparatus.raw.json",
+    "prompt_file": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\_prompts\\prompt_238_241.txt",
+    "source": "apparatus_parallel8",
+    "description": "Apparatus 238-241",
+    "prompt": "BLIND matn+margin apparatus extract pages 238-241.\n\nRead schema: D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\raw_waqf_apparatus.schema.json\nRead enums/meanings: D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\raw_waqf_apparatus.enums.json and D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\APPARATUS_ENUM_MEANINGS.md\n\nATTACHED per page:\n- page_N_matn.png — catalog matn\n- page_N_margin.png — footnotes\n\nFORBIDDEN: crop/OCR/Shell image/HTTP/cache raw/other blind json.\n\nRULES:\n1. Catalog waqfs from MATN brackets.\n2. verdict_label + verdict may be null together if letter unresolved in matn.\n3. margin_ref = footnote number on/after closing ﴾ if present (Western int); else null.\n4. apparatus ONLY when margin_ref != null AND margin has the same (N) note; else [].\n5. Split each scholar into one opinions[] row. opinion.verdict = final word (حسن/كاف/تام/…), NOT a letter.\n6. opinion.scholar MUST be an exact enum value. Map name variants/kunyas to the same person using scholar_alias_hints; if no fit → \"unknown\".\n7. symbol_witness / missing_symbol ONLY if matn has no letter and margin states one (basis=page_prose).\n8. fixes[] not singular fix; old_text null iff fixes=[].\n\nWrite UTF-8 no BOM: D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\batch_238_241.apparatus.raw.json\nsource=apparatus_parallel8. Return count + tuples (ayah,label|null,target,page,margin_ref|null,n_opinions).\n\n\nEXTRA:\n- Images attached: page_238..241 matn+margin from D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8 only.\n- Do NOT overwrite any other json. Write ONLY batch_238_241.apparatus.raw.json.\n- Do NOT read cache/raw, parallel matn json, or other apparatus outputs.\n- Create parent dir if needed; UTF-8 no BOM JSON.\n"
+  },
+  {
+    "job": "D",
+    "start": 242,
+    "end": 245,
+    "pages": "242-245",
+    "images": [
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_242_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_242_margin.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_243_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_243_margin.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_244_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_244_margin.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_245_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_245_margin.png"
+    ],
+    "output": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\batch_242_245.apparatus.raw.json",
+    "prompt_file": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\_prompts\\prompt_242_245.txt",
+    "source": "apparatus_parallel8",
+    "description": "Apparatus 242-245",
+    "prompt": "BLIND matn+margin apparatus extract pages 242-245.\n\nRead schema: D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\raw_waqf_apparatus.schema.json\nRead enums/meanings: D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\raw_waqf_apparatus.enums.json and D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\APPARATUS_ENUM_MEANINGS.md\n\nATTACHED per page:\n- page_N_matn.png — catalog matn\n- page_N_margin.png — footnotes\n\nFORBIDDEN: crop/OCR/Shell image/HTTP/cache raw/other blind json.\n\nRULES:\n1. Catalog waqfs from MATN brackets.\n2. verdict_label + verdict may be null together if letter unresolved in matn.\n3. margin_ref = footnote number on/after closing ﴾ if present (Western int); else null.\n4. apparatus ONLY when margin_ref != null AND margin has the same (N) note; else [].\n5. Split each scholar into one opinions[] row. opinion.verdict = final word (حسن/كاف/تام/…), NOT a letter.\n6. opinion.scholar MUST be an exact enum value. Map name variants/kunyas to the same person using scholar_alias_hints; if no fit → \"unknown\".\n7. symbol_witness / missing_symbol ONLY if matn has no letter and margin states one (basis=page_prose).\n8. fixes[] not singular fix; old_text null iff fixes=[].\n\nWrite UTF-8 no BOM: D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\batch_242_245.apparatus.raw.json\nsource=apparatus_parallel8. Return count + tuples (ayah,label|null,target,page,margin_ref|null,n_opinions).\n\n\nEXTRA:\n- Images attached: page_242..245 matn+margin from D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8 only.\n- Do NOT overwrite any other json. Write ONLY batch_242_245.apparatus.raw.json.\n- Do NOT read cache/raw, parallel matn json, or other apparatus outputs.\n- Create parent dir if needed; UTF-8 no BOM JSON.\n"
+  },
+  {
+    "job": "E",
+    "start": 246,
+    "end": 249,
+    "pages": "246-249",
+    "images": [
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_246_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_246_margin.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_247_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_247_margin.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_248_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_248_margin.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_249_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_249_margin.png"
+    ],
+    "output": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\batch_246_249.apparatus.raw.json",
+    "prompt_file": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\_prompts\\prompt_246_249.txt",
+    "source": "apparatus_parallel8",
+    "description": "Apparatus 246-249",
+    "prompt": "BLIND matn+margin apparatus extract pages 246-249.\n\nRead schema: D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\raw_waqf_apparatus.schema.json\nRead enums/meanings: D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\raw_waqf_apparatus.enums.json and D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\APPARATUS_ENUM_MEANINGS.md\n\nATTACHED per page:\n- page_N_matn.png — catalog matn\n- page_N_margin.png — footnotes\n\nFORBIDDEN: crop/OCR/Shell image/HTTP/cache raw/other blind json.\n\nRULES:\n1. Catalog waqfs from MATN brackets.\n2. verdict_label + verdict may be null together if letter unresolved in matn.\n3. margin_ref = footnote number on/after closing ﴾ if present (Western int); else null.\n4. apparatus ONLY when margin_ref != null AND margin has the same (N) note; else [].\n5. Split each scholar into one opinions[] row. opinion.verdict = final word (حسن/كاف/تام/…), NOT a letter.\n6. opinion.scholar MUST be an exact enum value. Map name variants/kunyas to the same person using scholar_alias_hints; if no fit → \"unknown\".\n7. symbol_witness / missing_symbol ONLY if matn has no letter and margin states one (basis=page_prose).\n8. fixes[] not singular fix; old_text null iff fixes=[].\n\nWrite UTF-8 no BOM: D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\batch_246_249.apparatus.raw.json\nsource=apparatus_parallel8. Return count + tuples (ayah,label|null,target,page,margin_ref|null,n_opinions).\n\n\nEXTRA:\n- Images attached: page_246..249 matn+margin from D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8 only.\n- Do NOT overwrite any other json. Write ONLY batch_246_249.apparatus.raw.json.\n- Do NOT read cache/raw, parallel matn json, or other apparatus outputs.\n- Create parent dir if needed; UTF-8 no BOM JSON.\n"
+  },
+  {
+    "job": "F",
+    "start": 250,
+    "end": 253,
+    "pages": "250-253",
+    "images": [
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_250_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_250_margin.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_251_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_251_margin.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_252_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_252_margin.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_253_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_253_margin.png"
+    ],
+    "output": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\batch_250_253.apparatus.raw.json",
+    "prompt_file": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\_prompts\\prompt_250_253.txt",
+    "source": "apparatus_parallel8",
+    "description": "Apparatus 250-253",
+    "prompt": "BLIND matn+margin apparatus extract pages 250-253.\n\nRead schema: D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\raw_waqf_apparatus.schema.json\nRead enums/meanings: D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\raw_waqf_apparatus.enums.json and D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\APPARATUS_ENUM_MEANINGS.md\n\nATTACHED per page:\n- page_N_matn.png — catalog matn\n- page_N_margin.png — footnotes\n\nFORBIDDEN: crop/OCR/Shell image/HTTP/cache raw/other blind json.\n\nRULES:\n1. Catalog waqfs from MATN brackets.\n2. verdict_label + verdict may be null together if letter unresolved in matn.\n3. margin_ref = footnote number on/after closing ﴾ if present (Western int); else null.\n4. apparatus ONLY when margin_ref != null AND margin has the same (N) note; else [].\n5. Split each scholar into one opinions[] row. opinion.verdict = final word (حسن/كاف/تام/…), NOT a letter.\n6. opinion.scholar MUST be an exact enum value. Map name variants/kunyas to the same person using scholar_alias_hints; if no fit → \"unknown\".\n7. symbol_witness / missing_symbol ONLY if matn has no letter and margin states one (basis=page_prose).\n8. fixes[] not singular fix; old_text null iff fixes=[].\n\nWrite UTF-8 no BOM: D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\batch_250_253.apparatus.raw.json\nsource=apparatus_parallel8. Return count + tuples (ayah,label|null,target,page,margin_ref|null,n_opinions).\n\n\nEXTRA:\n- Images attached: page_250..253 matn+margin from D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8 only.\n- Do NOT overwrite any other json. Write ONLY batch_250_253.apparatus.raw.json.\n- Do NOT read cache/raw, parallel matn json, or other apparatus outputs.\n- Create parent dir if needed; UTF-8 no BOM JSON.\n"
+  },
+  {
+    "job": "G",
+    "start": 254,
+    "end": 257,
+    "pages": "254-257",
+    "images": [
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_254_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_254_margin.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_255_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_255_margin.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_256_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_256_margin.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_257_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_257_margin.png"
+    ],
+    "output": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\batch_254_257.apparatus.raw.json",
+    "prompt_file": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\_prompts\\prompt_254_257.txt",
+    "source": "apparatus_parallel8",
+    "description": "Apparatus 254-257",
+    "prompt": "BLIND matn+margin apparatus extract pages 254-257.\n\nRead schema: D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\raw_waqf_apparatus.schema.json\nRead enums/meanings: D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\raw_waqf_apparatus.enums.json and D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\APPARATUS_ENUM_MEANINGS.md\n\nATTACHED per page:\n- page_N_matn.png — catalog matn\n- page_N_margin.png — footnotes\n\nFORBIDDEN: crop/OCR/Shell image/HTTP/cache raw/other blind json.\n\nRULES:\n1. Catalog waqfs from MATN brackets.\n2. verdict_label + verdict may be null together if letter unresolved in matn.\n3. margin_ref = footnote number on/after closing ﴾ if present (Western int); else null.\n4. apparatus ONLY when margin_ref != null AND margin has the same (N) note; else [].\n5. Split each scholar into one opinions[] row. opinion.verdict = final word (حسن/كاف/تام/…), NOT a letter.\n6. opinion.scholar MUST be an exact enum value. Map name variants/kunyas to the same person using scholar_alias_hints; if no fit → \"unknown\".\n7. symbol_witness / missing_symbol ONLY if matn has no letter and margin states one (basis=page_prose).\n8. fixes[] not singular fix; old_text null iff fixes=[].\n\nWrite UTF-8 no BOM: D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\batch_254_257.apparatus.raw.json\nsource=apparatus_parallel8. Return count + tuples (ayah,label|null,target,page,margin_ref|null,n_opinions).\n\n\nEXTRA:\n- Images attached: page_254..257 matn+margin from D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8 only.\n- Do NOT overwrite any other json. Write ONLY batch_254_257.apparatus.raw.json.\n- Do NOT read cache/raw, parallel matn json, or other apparatus outputs.\n- Create parent dir if needed; UTF-8 no BOM JSON.\n"
+  },
+  {
+    "job": "H",
+    "start": 258,
+    "end": 261,
+    "pages": "258-261",
+    "images": [
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_258_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_258_margin.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_259_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_259_margin.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_260_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_260_margin.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_261_matn.png",
+      "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_261_margin.png"
+    ],
+    "output": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\batch_258_261.apparatus.raw.json",
+    "prompt_file": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\_prompts\\prompt_258_261.txt",
+    "source": "apparatus_parallel8",
+    "description": "Apparatus 258-261",
+    "prompt": "BLIND matn+margin apparatus extract pages 258-261.\n\nRead schema: D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\raw_waqf_apparatus.schema.json\nRead enums/meanings: D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\raw_waqf_apparatus.enums.json and D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\APPARATUS_ENUM_MEANINGS.md\n\nATTACHED per page:\n- page_N_matn.png — catalog matn\n- page_N_margin.png — footnotes\n\nFORBIDDEN: crop/OCR/Shell image/HTTP/cache raw/other blind json.\n\nRULES:\n1. Catalog waqfs from MATN brackets.\n2. verdict_label + verdict may be null together if letter unresolved in matn.\n3. margin_ref = footnote number on/after closing ﴾ if present (Western int); else null.\n4. apparatus ONLY when margin_ref != null AND margin has the same (N) note; else [].\n5. Split each scholar into one opinions[] row. opinion.verdict = final word (حسن/كاف/تام/…), NOT a letter.\n6. opinion.scholar MUST be an exact enum value. Map name variants/kunyas to the same person using scholar_alias_hints; if no fit → \"unknown\".\n7. symbol_witness / missing_symbol ONLY if matn has no letter and margin states one (basis=page_prose).\n8. fixes[] not singular fix; old_text null iff fixes=[].\n\nWrite UTF-8 no BOM: D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\batch_258_261.apparatus.raw.json\nsource=apparatus_parallel8. Return count + tuples (ayah,label|null,target,page,margin_ref|null,n_opinions).\n\n\nEXTRA:\n- Images attached: page_258..261 matn+margin from D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8 only.\n- Do NOT overwrite any other json. Write ONLY batch_258_261.apparatus.raw.json.\n- Do NOT read cache/raw, parallel matn json, or other apparatus outputs.\n- Create parent dir if needed; UTF-8 no BOM JSON.\n"
+  }
+]

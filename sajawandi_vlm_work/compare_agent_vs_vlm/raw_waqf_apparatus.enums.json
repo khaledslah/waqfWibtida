@@ -1,5 +1,6 @@
 {
-  "$comment": "Enums for margin/apparatus-aware raw trial. Additive to grilled raw_waqf_output.schema.json. Not wired to pipeline yet.",
+  "$comment": "Canonical enums for raw_waqf_apparatus.schema.json",
+  "schema": "raw_waqf_apparatus.schema.json",
   "verdict_label": ["ط", "م", "ج", "ز", "ص", "لا", "ق"],
   "verdict_label_nullable": true,
   "verdict": ["تام", "لازم", "جائز", "حسن", "لا يوقف", "قيل فيه وقف"],
@@ -13,13 +14,36 @@
     "لا": "لا يوقف",
     "ق": "قيل فيه وقف"
   },
-  "verdict_status": ["resolved", "unresolved", "contested"],
-  "verdict_resolution_basis": [
-    "matn_symbol",
-    "page_prose",
-    "dual_matn_symbol",
-    "unresolved"
+  "scholar": [
+    "ابن الأنباري",
+    "النحاس",
+    "الداني",
+    "الأشموني",
+    "الأخفش",
+    "الكسائي",
+    "مكي",
+    "العكبري",
+    "الأنصاري",
+    "الطبري",
+    "ابن عطية",
+    "unknown"
   ],
+  "scholar_alias_hints": {
+    "ابن الأنباري": ["أبي البركات ابن الأنباري", "ابن الانباري", "الأنباري"],
+    "النحاس": ["أبي جعفر النحاس", "النحّاس"],
+    "الداني": ["أبي عمرو الداني", "أبو عمرو الداني"],
+    "الأشموني": ["الاشموني", "أحمد بن محمد الأشموني"],
+    "الأخفش": ["الأخفش الأوسط", "الاخفش"],
+    "مكي": ["مكي بن أبي طالب", "مكي القيسي"],
+    "العكبري": ["أبي البقاء العكبري", "العكبرى"],
+    "الأنصاري": ["زكريا الأنصاري", "شيخ الإسلام الأنصاري"],
+    "الطبري": ["محمد بن جرير الطبري", "ابن جرير"],
+    "ابن عطية": ["القاضي ابن عطية", "أبي محمد ابن عطية"]
+  },
+  "margin_ref": {
+    "type": ["integer", "null"],
+    "description": "Footnote number on/after closing bracket; null if unnumbered"
+  },
   "fix_type": [
     "page_split",
     "missing_delimiter",
@@ -29,32 +53,38 @@
     "malformed_bracket"
   ],
   "fix_basis": ["page_prose", "editor_policy"],
-  "apparatus_source_kind": ["margin", "matn_aside", "header"],
-  "apparatus_note_kind": [
-    "symbol_witness",
-    "scholar_opinion",
-    "work_citation",
-    "variant",
-    "other"
+  "symbol_witness_basis": ["page_prose"],
+  "opinion_verdict_examples": [
+    "تام",
+    "كاف",
+    "حسن",
+    "جائز",
+    "لازم",
+    "لا يوقف",
+    "قبيح"
   ],
-  "known_scholar_or_work": [
-    "النحاس",
-    "الداني",
-    "الأخفش",
-    "الكسائي",
-    "مكي",
-    "ابن الأنباري",
-    "العكبري",
-    "نسخة أ",
-    "نسخة ب",
-    "unknown"
+  "waqf_required_fields": [
+    "ayah",
+    "target_word",
+    "verdict_label",
+    "verdict",
+    "margin_ref",
+    "text",
+    "text_page",
+    "old_text",
+    "fixes",
+    "apparatus"
   ],
+  "apparatus_item_required_fields": ["margin_ref", "text_page", "opinions"],
+  "opinion_required_fields": ["scholar", "verdict"],
   "consistency_rules": [
-    "If verdict_status=resolved: verdict_label and verdict non-null; resolution.basis in {matn_symbol, page_prose}",
-    "If verdict_status=unresolved: verdict_label=null, verdict=null; resolution.basis=unresolved",
-    "If verdict_status=contested: keep candidate labels in resolution.candidates[]; verdict_label may be null or primary guess only if page_prose picks one",
-    "missing_symbol fix requires fix.basis=page_prose (never Quran-logic invention)",
-    "apparatus[] never replaces waqfs[]; scholars live only in apparatus",
-    "verdict MUST equal verdict_mapping[verdict_label] when both non-null"
+    "apparatus only when waqf.margin_ref != null AND margin has the same number",
+    "waqf.margin_ref null → apparatus []",
+    "apparatus[].margin_ref must equal waqf.margin_ref",
+    "one opinions[] row per scholar",
+    "opinion.verdict = final word (حسن/كاف/تام/…), never a letter",
+    "opinion.scholar: exact canonical name if known (map variants via alias hints); else the name as printed (short form, no honorifics); unknown only if the note gives no name",
+    "symbol_witness only if matn missing letter and margin states one",
+    "If verdict_label non-null: verdict = verdict_mapping[verdict_label]"
   ]
 }

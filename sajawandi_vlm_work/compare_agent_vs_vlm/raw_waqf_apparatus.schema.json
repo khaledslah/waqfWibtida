@@ -1,0 +1,294 @@
+{
+  "$comment": "Apparatus raw: numbered closing-bracket refs → matching margin notes → per-scholar opinions. Enums in raw_waqf_apparatus.enums.json.",
+  "type": "object",
+  "required": ["page_numbers", "waqfs"],
+  "properties": {
+    "page_numbers": {
+      "type": "array",
+      "items": { "type": "integer" }
+    },
+    "waqfs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "ayah",
+          "target_word",
+          "verdict_label",
+          "verdict",
+          "margin_ref",
+          "text",
+          "text_page",
+          "old_text",
+          "fixes",
+          "apparatus"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "ayah": { "type": "integer" },
+          "target_word": { "type": "string" },
+          "verdict_label": {
+            "type": ["string", "null"],
+            "enum": ["ط", "م", "ج", "ز", "ص", "لا", "ق", null],
+            "description": "Sajawandi letter from matn bracket; null if unresolved in matn"
+          },
+          "verdict": {
+            "type": ["string", "null"],
+            "enum": ["تام", "لازم", "جائز", "حسن", "لا يوقف", "قيل فيه وقف", null],
+            "description": "Mapped Sajawandi ruling; null iff verdict_label null"
+          },
+          "margin_ref": {
+            "type": ["integer", "null"],
+            "description": "Western digits of the footnote number touching the closing ﴾, e.g. ﴾(٨) → 8. If no number touches ﴾, take the FIRST footnote number met inside this waqf's own reasoning clause. null only if neither exists. Apparatus only when this matches a margin (N) note."
+          },
+          "text": {
+            "type": "string",
+            "description": "Only this waqf: its bracket(s) plus its own reasoning clause (e.g. ﴿أمنتم﴾ وقفه لحق الحذف، ولابتداء الشرط في حكم آخر وهو التمتع.). Never neighbouring waqf brackets."
+          },
+          "text_page": { "type": "integer" },
+          "old_text": { "type": ["string", "null"] },
+          "fixes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["type", "basis", "old_text", "new_text", "info"],
+              "additionalProperties": false,
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "page_split",
+                    "missing_delimiter",
+                    "missing_symbol",
+                    "orthography",
+                    "ayah_number_correction",
+                    "malformed_bracket"
+                  ]
+                },
+                "basis": {
+                  "type": "string",
+                  "enum": ["page_prose", "editor_policy"]
+                },
+                "old_text": { "type": "string" },
+                "new_text": { "type": "string" },
+                "info": { "type": "string" }
+              }
+            }
+          },
+          "apparatus": {
+            "type": "array",
+            "description": "Only notes whose margin number equals this waqf.margin_ref. Empty [] if margin_ref is null or no matching margin note.",
+            "items": {
+              "type": "object",
+              "required": ["margin_ref", "text_page", "opinions"],
+              "additionalProperties": false,
+              "properties": {
+                "margin_ref": {
+                  "type": "integer",
+                  "description": "Must equal parent waqf.margin_ref"
+                },
+                "text_page": {
+                  "type": "integer",
+                  "description": "Page where the margin note (N) appears"
+                },
+                "raw_text": {
+                  "type": ["string", "null"],
+                  "description": "Full margin note text for that number. If the note ends with '=' and the next page's margin starts with a '=' block, append that continuation here."
+                },
+                "continuation": {
+                  "type": ["object", "null"],
+                  "description": "Only when the note on its own page ends with '='. null if the note is complete.",
+                  "required": ["status", "page"],
+                  "additionalProperties": false,
+                  "properties": {
+                    "status": { "type": "string", "enum": ["read", "missing"], "description": "read = next page margin was available and merged; missing = not available" },
+                    "page": { "type": ["integer", "null"], "description": "Page the continuation was read from; null if missing" }
+                  }
+                },
+                "suggested": {
+                  "type": ["object", "null"],
+                  "description": "PASS 3 ONLY (separate pass, never written by pass 1/2). AI-inferred extra waqf / ibtida points justified by this note's content (scholars disagree on stopping, or stopping/starting changes meaning). null if nothing is warranted.",
+                  "required": ["basis", "waqf", "ibtida"],
+                  "additionalProperties": false,
+                  "properties": {
+                    "basis": { "type": "string", "enum": ["ai_inferred"] },
+                    "waqf": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": ["target_word", "trigger", "reason", "scholars"],
+                        "additionalProperties": false,
+                        "properties": {
+                          "target_word": { "type": "string", "description": "Word after which a stop is suggested" },
+                          "trigger": { "type": "string", "enum": ["scholars_disagree", "meaning_change"] },
+                          "reason": { "type": "string" },
+                          "scholars": { "type": "array", "items": { "type": "string" }, "description": "Scholar names (same value as opinions[].scholar: canonical spelling if known, else name as printed) whose statements support this suggestion; [] if none" }
+                        }
+                      }
+                    },
+                    "ibtida": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": ["start_word", "trigger", "reason", "scholars"],
+                        "additionalProperties": false,
+                        "properties": {
+                          "start_word": { "type": "string", "description": "Word where a restart (ibtida) is suggested" },
+                          "trigger": { "type": "string", "enum": ["scholars_disagree", "meaning_change"] },
+                          "reason": { "type": "string" },
+                          "scholars": { "type": "array", "items": { "type": "string" } }
+                        }
+                      }
+                    }
+                  }
+                },
+                "symbol_witness": {
+                  "type": ["object", "null"],
+                  "description": "Only if matn lacked a letter and margin states one. Else null. Do NOT invent.",
+                  "required": ["verdict_label", "basis"],
+                  "additionalProperties": false,
+                  "properties": {
+                    "verdict_label": {
+                      "type": "string",
+                      "enum": ["ط", "م", "ج", "ز", "ص", "لا", "ق"]
+                    },
+                    "basis": {
+                      "type": "string",
+                      "enum": ["page_prose"],
+                      "description": "Must be page_prose"
+                    },
+                    "witness": {
+                      "type": ["string", "null"],
+                      "description": "e.g. نسخة أ"
+                    },
+                    "info": { "type": ["string", "null"] }
+                  }
+                },
+                "opinions": {
+                  "type": "array",
+                  "description": "One object per scholar opinion. Scholars use final verdict words (حسن/كاف/تام/…), not Sajawandi letters.",
+                  "items": {
+                    "type": "object",
+                    "required": ["scholar", "verdict"],
+                    "additionalProperties": false,
+                    "properties": {
+                      "scholar": {
+                        "type": "string",
+                        "examples": [
+                          "ابن الأنباري",
+                          "النحاس",
+                          "الداني",
+                          "الأشموني",
+                          "الأخفش",
+                          "الكسائي",
+                          "مكي",
+                          "العكبري",
+                          "الأنصاري",
+                          "الطبري",
+                          "ابن عطية"
+                        ],
+                        "description": "Scholar name. STEP 1: if it is one of the known canonical names (examples; map kunyas/variants via scholar_alias_hints) use that EXACT spelling. STEP 2: otherwise write the scholar's name as printed in the note, short common form (e.g. أبو حيان, نافع, أبو حاتم) without honorifics (الإمام/العلامة/رحمه الله). STEP 3: use \"unknown\" ONLY when the note gives no name at all (e.g. قيل / بعضهم / غيره) or the name is unreadable."
+                      },
+                      "verdict": {
+                        "type": "string",
+                        "description": "Final ruling word as stated (حسن, كاف, تام, …) — NOT a Sajawandi letter"
+                      },
+                      "comment": {
+                        "type": ["string", "null"],
+                        "description": "Optional short note about this scholar's view"
+                      },
+                      "book": {
+                        "type": ["string", "null"],
+                        "description": "Work name (الإيضاح, المكتفى, المنار, …)"
+                      },
+                      "book_ref": {
+                        "type": ["string", "null"],
+                        "description": "Locus (1/529, 171, …)"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "verdict_mapping": {
+    "ط": "تام",
+    "م": "لازم",
+    "ج": "جائز",
+    "ز": "جائز",
+    "ص": "حسن",
+    "لا": "لا يوقف",
+    "ق": "قيل فيه وقف"
+  },
+  "example": {
+    "ayah": 114,
+    "target_word": "خرابها",
+    "verdict_label": "ط",
+    "verdict": "تام",
+    "margin_ref": 8,
+    "text": "﴿خرابها - 114 - ط﴾(8)",
+    "text_page": 230,
+    "old_text": null,
+    "fixes": [],
+    "apparatus": [
+      {
+        "margin_ref": 8,
+        "text_page": 230,
+        "raw_text": "(٨) وهو حسن عند ابن الأنباري والأشموني . وكاف عند الداني . انظر : الإيضاح ١ / ٥٢٩ ، والمكتفى ( ١٧١ ) ، والمنار ( ٤٧ )",
+        "symbol_witness": null,
+        "opinions": [
+          {
+            "scholar": "ابن الأنباري",
+            "verdict": "حسن",
+            "comment": null,
+            "book": "الإيضاح",
+            "book_ref": "1/529"
+          },
+          {
+            "scholar": "الأشموني",
+            "verdict": "حسن",
+            "comment": null,
+            "book": "المنار",
+            "book_ref": "47"
+          },
+          {
+            "scholar": "الداني",
+            "verdict": "كاف",
+            "comment": null,
+            "book": "المكتفى",
+            "book_ref": "171"
+          }
+        ]
+      }
+    ]
+  },
+  "rules": [
+    "apparatus ONLY when the waqf has a margin_ref AND margin has the same number",
+    "margin_ref: number touching ﴾; else the first footnote number inside the waqf's own reasoning clause; else null",
+    "text = this waqf's bracket + its own reasoning clause only",
+    "margin note ending with '=' continues on the next page's margin ('=' block at top): merge into raw_text if that page is available, set continuation.status=read; else status=missing",
+    "suggested is written ONLY by pass 3 and never changes any pass 1/2 field",
+    "waqf.margin_ref null → apparatus must be []",
+    "Split each scholar into a separate opinions[] row",
+    "opinion.verdict is final wording (حسن/كاف/تام/…), not ط/ج/…",
+    "opinion.scholar: canonical name (exact spelling) if known; else the name as printed in the note; \"unknown\" only if no name is given",
+    "missing_symbol / symbol_witness ONLY if matn has no letter and margin states one (basis=page_prose)",
+    "If verdict_label non-null: verdict MUST equal verdict_mapping[verdict_label]"
+  ],
+  "scholar_alias_hints": {
+    "ابن الأنباري": ["أبي البركات ابن الأنباري", "ابن الانباري", "الأنباري"],
+    "النحاس": ["أبي جعفر النحاس", "النحّاس"],
+    "الداني": ["أبي عمرو الداني", "أبو عمرو الداني"],
+    "الأشموني": ["الاشموني", "أحمد بن محمد الأشموني"],
+    "الأخفش": ["الأخفش الأوسط", "الاخفش"],
+    "مكي": ["مكي بن أبي طالب", "مكي القيسي"],
+    "العكبري": ["أبي البقاء العكبري", "العكبرى"],
+    "الأنصاري": ["زكريا الأنصاري", "شيخ الإسلام الأنصاري"],
+    "الطبري": ["محمد بن جرير الطبري", "ابن جرير"],
+    "ابن عطية": ["القاضي ابن عطية", "أبي محمد ابن عطية"]
+  }
+}

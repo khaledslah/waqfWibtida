@@ -1,0 +1,6 @@
+BLIND matn extract pages 230-233. Read schema: D:\AI_Projects\waqfWibtida2\sajawandi_vlm_work\compare_agent_vs_vlm\raw_waqf_output.schema.json and EXTRACTION_SYSTEM_PROMPT in D:\AI_Projects\waqfWibtida2\extract_sajawandi_local_vlm.py ~189-285.
+FORBIDDEN: crop/OCR/Shell image/HTTP/cache raw/other blind json.
+Images only under D:\AI_Projects\waqfWibtida2\sajawandi_vlm_work\compare_agent_vs_vlm\_matn_parallel8 page_230..233_matn.png (attached).
+Schema: fixes[] not fix; verdict_label letter; verdict=map; old_text null iff fixes=[].
+Write UTF-8 no BOM: D:\AI_Projects\waqfWibtida2\sajawandi_vlm_work\compare_agent_vs_vlm\_matn_parallel8\batch_230_233.parallel_rerun.raw.json
+source=parallel8_rerun_control. Return count + tuples (ayah,label,target,page).

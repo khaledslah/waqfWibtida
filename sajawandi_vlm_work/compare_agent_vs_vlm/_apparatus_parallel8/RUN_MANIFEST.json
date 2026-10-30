@@ -1,0 +1,220 @@
+{
+  "launched_at": "2026-10-30T01:19",
+  "mode": "8_parallel_blind_apparatus",
+  "pages": "230-261",
+  "crops": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8",
+  "out_dir": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8",
+  "note": "New folder only; does not overwrite matn parallel8 or prior raw.",
+  "agents": [
+    {
+      "id": "59bbe9f4-ac1f-43e7-8609-a7f455bbc204",
+      "job": "A",
+      "pages": "230-233",
+      "out": "batch_230_233.apparatus.raw.json"
+    },
+    {
+      "id": "83e1d45f-8ba5-466a-ab0c-e453cfad21da",
+      "job": "B",
+      "pages": "234-237",
+      "out": "batch_234_237.apparatus.raw.json"
+    },
+    {
+      "id": "50c6a1ee-4f8e-4508-b532-f22d055087fd",
+      "job": "C",
+      "pages": "238-241",
+      "out": "batch_238_241.apparatus.raw.json"
+    },
+    {
+      "id": "9d6332ef-c7ee-4b22-ae97-b213c2a46fd8",
+      "job": "D",
+      "pages": "242-245",
+      "out": "batch_242_245.apparatus.raw.json"
+    },
+    {
+      "id": "7a2cdfab-1f45-430b-b3e1-fa189675773d",
+      "job": "E",
+      "pages": "246-249",
+      "out": "batch_246_249.apparatus.raw.json"
+    },
+    {
+      "id": "fcf62ff6-3ca8-4956-88e4-f08ff590d42d",
+      "job": "F",
+      "pages": "250-253",
+      "out": "batch_250_253.apparatus.raw.json"
+    },
+    {
+      "id": "ffcd3236-edde-4cce-9db9-fc21d54b5072",
+      "job": "G",
+      "pages": "254-257",
+      "out": "batch_254_257.apparatus.raw.json"
+    },
+    {
+      "id": "06693894-d75e-43d0-926b-5372f29ca559",
+      "job": "H",
+      "pages": "258-261",
+      "out": "batch_258_261.apparatus.raw.json"
+    }
+  ],
+  "jobs": [
+    {
+      "job": "A",
+      "start": 230,
+      "end": 233,
+      "pages": "230-233",
+      "images": [
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_230_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_230_margin.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_231_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_231_margin.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_232_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_232_margin.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_233_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_233_margin.png"
+      ],
+      "output": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\batch_230_233.apparatus.raw.json",
+      "prompt_file": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\_prompts\\prompt_230_233.txt",
+      "source": "apparatus_parallel8",
+      "description": "Apparatus 230-233"
+    },
+    {
+      "job": "B",
+      "start": 234,
+      "end": 237,
+      "pages": "234-237",
+      "images": [
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_234_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_234_margin.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_235_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_235_margin.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_236_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_236_margin.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_237_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_237_margin.png"
+      ],
+      "output": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\batch_234_237.apparatus.raw.json",
+      "prompt_file": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\_prompts\\prompt_234_237.txt",
+      "source": "apparatus_parallel8",
+      "description": "Apparatus 234-237"
+    },
+    {
+      "job": "C",
+      "start": 238,
+      "end": 241,
+      "pages": "238-241",
+      "images": [
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_238_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_238_margin.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_239_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_239_margin.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_240_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_240_margin.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_241_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_241_margin.png"
+      ],
+      "output": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\batch_238_241.apparatus.raw.json",
+      "prompt_file": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\_prompts\\prompt_238_241.txt",
+      "source": "apparatus_parallel8",
+      "description": "Apparatus 238-241"
+    },
+    {
+      "job": "D",
+      "start": 242,
+      "end": 245,
+      "pages": "242-245",
+      "images": [
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_242_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_242_margin.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_243_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_243_margin.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_244_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_244_margin.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_245_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_245_margin.png"
+      ],
+      "output": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\batch_242_245.apparatus.raw.json",
+      "prompt_file": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\_prompts\\prompt_242_245.txt",
+      "source": "apparatus_parallel8",
+      "description": "Apparatus 242-245"
+    },
+    {
+      "job": "E",
+      "start": 246,
+      "end": 249,
+      "pages": "246-249",
+      "images": [
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_246_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_246_margin.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_247_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_247_margin.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_248_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_248_margin.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_249_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_249_margin.png"
+      ],
+      "output": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\batch_246_249.apparatus.raw.json",
+      "prompt_file": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\_prompts\\prompt_246_249.txt",
+      "source": "apparatus_parallel8",
+      "description": "Apparatus 246-249"
+    },
+    {
+      "job": "F",
+      "start": 250,
+      "end": 253,
+      "pages": "250-253",
+      "images": [
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_250_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_250_margin.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_251_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_251_margin.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_252_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_252_margin.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_253_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_253_margin.png"
+      ],
+      "output": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\batch_250_253.apparatus.raw.json",
+      "prompt_file": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\_prompts\\prompt_250_253.txt",
+      "source": "apparatus_parallel8",
+      "description": "Apparatus 250-253"
+    },
+    {
+      "job": "G",
+      "start": 254,
+      "end": 257,
+      "pages": "254-257",
+      "images": [
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_254_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_254_margin.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_255_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_255_margin.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_256_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_256_margin.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_257_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_257_margin.png"
+      ],
+      "output": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\batch_254_257.apparatus.raw.json",
+      "prompt_file": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\_prompts\\prompt_254_257.txt",
+      "source": "apparatus_parallel8",
+      "description": "Apparatus 254-257"
+    },
+    {
+      "job": "H",
+      "start": 258,
+      "end": 261,
+      "pages": "258-261",
+      "images": [
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_258_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_258_margin.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_259_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_259_margin.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_260_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_260_margin.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_261_matn.png",
+        "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_matn_margin_parallel8\\page_261_margin.png"
+      ],
+      "output": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\batch_258_261.apparatus.raw.json",
+      "prompt_file": "D:\\AI_Projects\\waqfWibtida2\\sajawandi_vlm_work\\compare_agent_vs_vlm\\_apparatus_parallel8\\_prompts\\prompt_258_261.txt",
+      "source": "apparatus_parallel8",
+      "description": "Apparatus 258-261"
+    }
+  ]
+}

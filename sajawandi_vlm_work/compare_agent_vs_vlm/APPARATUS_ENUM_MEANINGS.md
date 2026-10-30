@@ -1,98 +1,65 @@
-# Apparatus trial — enum meanings
+# Apparatus raw — meanings
 
-Standalone glossary. Does not change the grilled pipeline schema.
+Files: `raw_waqf_apparatus.schema.json`, `raw_waqf_apparatus.enums.json`, `schema_definitions_apparatus.py`
 
-## `verdict_label` (Sajawandi letter in bracket)
+## Link rule (core)
 
-| Value | Meaning |
+Only when the **closing waqf bracket is numbered**, e.g. `﴿خرابها - ١١٤ - ط﴾(٨)`  
+and the **margin has the same number** `(٨) …`.
+
+Then set `margin_ref: 8` and fill `apparatus` from that margin note.  
+If no number on the bracket → `margin_ref: null`, `apparatus: []`.
+
+## Waqf fields
+
+| Field | Meaning |
 |-------|---------|
-| `ط` | مطلق / تام — full stop allowed; speech complete |
-| `م` | لازم — must stop; harmful to connect |
-| `ج` | جائز — pause allowed; either stop or continue OK |
-| `ز` | مجوز لوجه — allowed for a stated reason/face (maps to جائز) |
-| `ص` | مرخص ضرورة — licensed/hasan pause (maps to حسن) |
-| `لا` | لا يوقف — do not stop here |
-| `ق` | قيل فيه وقف — some said there is a stop (reported, not primary) |
-| `null` | **Trial only:** letter not printed / not safely known yet |
+| `verdict_label` | Sajawandi **letter** from matn; `null` if missing/unresolved |
+| `verdict` | Mapped Sajawandi ruling; `null` with null label |
+| `margin_ref` | Footnote number on/after `﴾`; else `null` |
+| `fixes` | Print repairs; `missing_symbol` only if matn has no letter and margin states one |
+| `apparatus` | Notes for **this** `margin_ref` only |
 
-## `verdict` (mapped ruling string)
+## `opinions[].scholar` (enum — exact JSON string)
 
-| Value | Meaning |
+| Enum value | Map variants such as… |
+|------------|------------------------|
+| `ابن الأنباري` | أبي البركات ابن الأنباري، الأنباري |
+| `النحاس` | أبي جعفر النحاس |
+| `الداني` | أبي عمرو الداني |
+| `الأشموني` | الاشموني |
+| `الأخفش` | الأخفش الأوسط |
+| `الكسائي` | — |
+| `مكي` | مكي بن أبي طالب |
+| `العكبري` | أبي البقاء العكبري |
+| `الأنصاري` | زكريا الأنصاري |
+| `الطبري` | ابن جرير |
+| `ابن عطية` | القاضي ابن عطية |
+| `unknown` | No confident match to the list |
+
+**Prompt rule (v4):** 1) normalize to the canonical name when it's the same person (exact spelling); 2) otherwise write the name as printed, short form, no honorifics (e.g. أبو حيان); 3) `unknown` only when the note gives no name at all. The list is now a normalization list, not a closed enum.
+
+## `opinions[]` other fields
+
+| Field | Meaning |
 |-------|---------|
-| `تام` | Complete stop (from `ط`) |
-| `لازم` | Obligatory stop (from `م`) |
-| `جائز` | Permissible stop (from `ج` or `ز`) |
-| `حسن` | Good / licensed pause (from `ص`) |
-| `لا يوقف` | No stop (from `لا`) |
-| `قيل فيه وقف` | Reported stop opinion (from `ق`) |
-| `null` | **Trial only:** no mapped ruling because label is null |
+| `verdict` | Final word as stated: `حسن`, `كاف`, `تام`, … (**not** letters) |
+| `comment` | Optional short note; else `null` |
+| `book` | Work name; else `null` |
+| `book_ref` | Locus; else `null` |
 
-## `verdict_status`
+## `apparatus[]` item
 
-| Value | Meaning |
-|-------|---------|
-| `resolved` | One clear letter for this stop (from matn and/or margin prose) |
-| `unresolved` | Stop is real (e.g. `﴿تعلمون - ١٥١﴾`) but no letter yet — do not invent |
-| `contested` | Conflict: dual letters (`ج ز`), or margin vs matn, or scholars disagree |
+`margin_ref`, `text_page`, optional `raw_text`, optional `symbol_witness`, `opinions[]`.
 
-## `verdict_resolution_basis`
+## margin_ref + text rules
+- margin_ref = number touching closing ﴾; else the FIRST number met inside the waqf's own reasoning clause; else null.
+- text = this waqf's bracket + its own reasoning clause only (not neighbouring waqfs).
 
-| Value | Meaning |
-|-------|---------|
-| `matn_symbol` | Letter taken from the matn catalog bracket itself |
-| `page_prose` | Letter taken from explicit commentary (usually margin): e.g. “الرمز ج عن النسخة أ” |
-| `dual_matn_symbol` | Matn prints two letters together (`ج ز`) — typically → `contested` |
-| `unresolved` | No letter chosen; waiting / insufficient page evidence |
+## Continuation (note ends with =)
+A margin note ending with = continues in the next page's margin (a block starting with =).
+continuation = null (complete) | {status: read|missing, page}. When read, raw_text includes the merged continuation.
 
-## `fix_type` (repair of printed text)
-
-| Value | Meaning |
-|-------|---------|
-| `page_split` | Bracket/taʿlīl cut across pages; stitch continuation |
-| `missing_delimiter` | Missing `-` / structure around ayah/label in bracket |
-| `missing_symbol` | Letter absent in print; restore **only** if prose states it |
-| `orthography` | Typos / stuck letters (لعدف→لعطف, etc.) |
-| `ayah_number_correction` | Wrong ayah digit in bracket vs page evidence |
-| `malformed_bracket` | Broken `﴿ ﴾` / mangled bracket form |
-
-## `fix_basis`
-
-| Value | Meaning |
-|-------|---------|
-| `page_prose` | Change justified by words on the page (matn or margin commentary) |
-| `editor_policy` | Structural/editorial join (page split, delimiters) without inventing a ruling letter |
-
-## `apparatus_source_kind` (where the note was read)
-
-| Value | Meaning |
-|-------|---------|
-| `margin` | Footnote / hashiya below the separator rule |
-| `matn_aside` | Inside matn taʿlīl but not a catalog letter line (e.g. “والوقف على ﴿تعلمون - ١٥١﴾”) |
-| `header` | Page header / running title if it carries relevant witness |
-
-## `apparatus_note_kind` (what the note is doing)
-
-| Value | Meaning |
-|-------|---------|
-| `symbol_witness` | Attests or restores a waqf **letter** (نسخة أ = ج) |
-| `scholar_opinion` | Named scholar’s view on the stop/grammar |
-| `work_citation` | Citation of a book (إعراب القرآن, مشكل …) |
-| `variant` | Manuscript/print variant not solely a letter restore |
-| `other` | Useful margin text that doesn’t fit above |
-
-## `known_scholar_or_work` (optional short names)
-
-| Value | Meaning |
-|-------|---------|
-| `النحاس` | Abū Jaʿfar al-Naḥḥās (often إعراب القرآن) |
-| `الداني` | Abū ʿAmr al-Dānī (waqf/ibtidāʾ tradition) |
-| `الأخفش` | Al-Akhfash (معاني القرآن) |
-| `الكسائي` | Al-Kisāʾī |
-| `مكي` | Makkī (مشكل إعراب القرآن) |
-| `ابن الأنباري` | Ibn al-Anbārī (البيان / غريب الإعراب) |
-| `العكبري` | Al-ʿUkbarī (الإملاء) |
-| `نسخة أ` | Editor’s manuscript witness أ in this edition |
-| `نسخة ب` | Editor’s manuscript witness ب |
-| `unknown` | Name/work not identified; put raw text in `apparatus.text` |
-
-Free text is still allowed when the page names someone outside this list.
+## Pass 3 — suggested (separate run)
+pparatus[].suggested = null | {basis: ai_inferred, waqf: [{target_word, trigger, reason, scholars}], ibtida: [{start_word, trigger, reason, scholars}]}.
+trigger = scholars_disagree | meaning_change. Written only by pass 3 into a sidecar and merged by merge_apparatus_pass3.py, which proves pass 1/2 data is unchanged.

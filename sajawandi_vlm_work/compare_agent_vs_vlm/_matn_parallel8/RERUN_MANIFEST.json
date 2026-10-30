@@ -1,0 +1,14 @@
+{
+  "mode": "parallel8_rerun_grilled_baseline",
+  "note": "Same matn crops + grilled schema; outputs *.parallel_rerun.raw.json (does not overwrite first parallel8). Margin schema trial comes after.",
+  "agents": [
+    {"id": "44b9566b-3499-448a-b476-408beb1b3826", "pages": "230-233", "role": "control"},
+    {"id": "47aeca5e-bdcb-448c-8cbd-c4f4378313ec", "pages": "234-237"},
+    {"id": "ffd5bf95-6149-4c2e-ba22-edb8451a68c3", "pages": "238-241"},
+    {"id": "f3ee6310-baf4-414c-9455-9d2863095fff", "pages": "242-245"},
+    {"id": "b811e82a-fbdb-4d83-a1f4-600f05997398", "pages": "246-249"},
+    {"id": "507847fa-2d2e-4a3f-b1ac-9c66734c5faf", "pages": "250-253"},
+    {"id": "8719b508-25c2-4104-99d8-2ee32eea2586", "pages": "254-257"},
+    {"id": "0c9daef3-2538-4903-9eef-9aff16c04f4f", "pages": "258-261"}
+  ]
+}

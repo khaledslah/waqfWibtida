@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-NEW file — apparatus/margin-aware trial enums only.
-Does not modify schema_definitions.py or the grilled raw schema.
+Apparatus raw enums — pairs with raw_waqf_apparatus.schema.json.
+Numbered closing-bracket refs → matching margin → per-scholar opinions.
 """
 
 from enum import Enum
-from typing import Dict
+from typing import Dict, List, Optional, TypedDict
 
-# Re-declare grilled labels/verdicts here so this module stays standalone.
+
 class WaqfVerdictLabel(str, Enum):
     TA = "ط"
     MIM = "م"
@@ -39,21 +39,6 @@ VERDICT_MAPPING: Dict[WaqfVerdictLabel, WaqfVerdict] = {
 }
 
 
-class VerdictStatus(str, Enum):
-    """Whether the Sajawandi letter/ruling is settled for this waqf row."""
-    RESOLVED = "resolved"
-    UNRESOLVED = "unresolved"
-    CONTESTED = "contested"
-
-
-class VerdictResolutionBasis(str, Enum):
-    """How verdict_label was chosen (or why not)."""
-    MATN_SYMBOL = "matn_symbol"
-    PAGE_PROSE = "page_prose"
-    DUAL_MATN_SYMBOL = "dual_matn_symbol"
-    UNRESOLVED = "unresolved"
-
-
 class FixType(str, Enum):
     PAGE_SPLIT = "page_split"
     MISSING_DELIMITER = "missing_delimiter"
@@ -68,28 +53,96 @@ class FixBasis(str, Enum):
     EDITOR_POLICY = "editor_policy"
 
 
-class ApparatusSourceKind(str, Enum):
-    MARGIN = "margin"
-    MATN_ASIDE = "matn_aside"
-    HEADER = "header"
-
-
-class ApparatusNoteKind(str, Enum):
-    SYMBOL_WITNESS = "symbol_witness"
-    SCHOLAR_OPINION = "scholar_opinion"
-    WORK_CITATION = "work_citation"
-    VARIANT = "variant"
-    OTHER = "other"
-
-
-class KnownScholarOrWork(str, Enum):
+class Scholar(str, Enum):
+    """Canonical scholar ids for opinions[].scholar (exact JSON string)."""
+    IBN_AL_ANBARI = "ابن الأنباري"
     NAHHAS = "النحاس"
     DANI = "الداني"
+    ASHMUNI = "الأشموني"
     AKHFASH = "الأخفش"
     KISAI = "الكسائي"
     MAKKI = "مكي"
-    IBN_AL_ANBARI = "ابن الأنباري"
     UKBARI = "العكبري"
-    NUSKHA_ALIF = "نسخة أ"
-    NUSKHA_BA = "نسخة ب"
+    ANSARI = "الأنصاري"
+    TABARI = "الطبري"
+    IBN_ATIYYA = "ابن عطية"
     UNKNOWN = "unknown"
+
+
+# Prompt/VLM: map printed variants → Scholar value; else unknown.
+SCHOLAR_ALIAS_HINTS: Dict[Scholar, List[str]] = {
+    Scholar.IBN_AL_ANBARI: ["أبي البركات ابن الأنباري", "ابن الانباري", "الأنباري"],
+    Scholar.NAHHAS: ["أبي جعفر النحاس", "النحّاس"],
+    Scholar.DANI: ["أبي عمرو الداني", "أبو عمرو الداني"],
+    Scholar.ASHMUNI: ["الاشموني", "أحمد بن محمد الأشموني"],
+    Scholar.AKHFASH: ["الأخفش الأوسط", "الاخفش"],
+    Scholar.MAKKI: ["مكي بن أبي طالب", "مكي القيسي"],
+    Scholar.UKBARI: ["أبي البقاء العكبري", "العكبرى"],
+    Scholar.ANSARI: ["زكريا الأنصاري", "شيخ الإسلام الأنصاري"],
+    Scholar.TABARI: ["محمد بن جرير الطبري", "ابن جرير"],
+    Scholar.IBN_ATIYYA: ["القاضي ابن عطية", "أبي محمد ابن عطية"],
+}
+
+
+class ScholarOpinion(TypedDict, total=False):
+    scholar: str  # Scholar value if known; else name as printed; "unknown" only if no name
+    verdict: str  # final word: حسن / كاف / تام / …
+    comment: Optional[str]
+    book: Optional[str]
+    book_ref: Optional[str]
+
+
+class SymbolWitness(TypedDict, total=False):
+    verdict_label: str
+    basis: str  # page_prose
+    witness: Optional[str]
+    info: Optional[str]
+
+
+class Continuation(TypedDict):
+    status: str  # read | missing
+    page: Optional[int]
+
+
+class SuggestedWaqf(TypedDict):
+    target_word: str
+    trigger: str  # scholars_disagree | meaning_change
+    reason: str
+    scholars: List[str]
+
+
+class SuggestedIbtida(TypedDict):
+    start_word: str
+    trigger: str  # scholars_disagree | meaning_change
+    reason: str
+    scholars: List[str]
+
+
+class Suggested(TypedDict):
+    """Pass 3 only. AI-inferred; never edits pass 1/2 fields."""
+    basis: str  # ai_inferred
+    waqf: List[SuggestedWaqf]
+    ibtida: List[SuggestedIbtida]
+
+
+class ApparatusNote(TypedDict, total=False):
+    margin_ref: int
+    text_page: int
+    raw_text: Optional[str]
+    continuation: Optional[Continuation]
+    symbol_witness: Optional[SymbolWitness]
+    opinions: List[ScholarOpinion]
+    suggested: Optional[Suggested]  # pass 3 only
+
+
+class ApparatusWaqf(TypedDict, total=False):
+    ayah: int
+    target_word: str
+    verdict_label: Optional[str]
+    verdict: Optional[str]
+    margin_ref: Optional[int]
+    text: str
+    text_page: int
+    old_text: Optional[str]
+    fixes: List[dict]
+    apparatus: List[ApparatusNote]

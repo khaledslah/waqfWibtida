@@ -1,0 +1,132 @@
+{
+  "apparatus_count": 100,
+  "matn_parallel8_count": 98,
+  "match_key": "ayah + verdict_label (multiset)",
+  "vs_matn_parallel8": {
+    "missing_from_apparatus": [
+      {
+        "ayah": 118,
+        "label": "ط",
+        "verdict": "تام",
+        "target": "قلوبهم",
+        "page": 233
+      },
+      {
+        "ayah": 119,
+        "label": "لا",
+        "verdict": "لا يوقف",
+        "target": "ونذيرا",
+        "page": 233
+      }
+    ],
+    "extra_in_apparatus": [
+      {
+        "ayah": 119,
+        "label": "ط",
+        "verdict": "تام",
+        "target": "ونذيرا",
+        "page": 233
+      },
+      {
+        "ayah": 150,
+        "label": "ط",
+        "verdict": "تام",
+        "target": "تهتدون",
+        "page": 258
+      },
+      {
+        "ayah": 151,
+        "label": null,
+        "verdict": null,
+        "target": "تعلمون",
+        "page": 257
+      },
+      {
+        "ayah": 151,
+        "label": null,
+        "verdict": null,
+        "target": "تعلمون",
+        "page": 258
+      }
+    ]
+  },
+  "vs_matn16_230_245": {
+    "prev_count": 52,
+    "apparatus_in_page_range": 52,
+    "missing_from_apparatus": [
+      {
+        "ayah": 119,
+        "label": "لا",
+        "verdict": "لا يوقف",
+        "target": "ونذيرا",
+        "page": 233
+      },
+      {
+        "ayah": 138,
+        "label": "ز",
+        "verdict": "جائز",
+        "target": "صبغة",
+        "page": 245
+      }
+    ],
+    "extra_in_apparatus": [
+      {
+        "ayah": 119,
+        "label": "ط",
+        "verdict": "تام",
+        "target": "ونذيرا",
+        "page": 233
+      },
+      {
+        "ayah": 138,
+        "label": "ج",
+        "verdict": "جائز",
+        "target": "صبغة",
+        "page": 245
+      }
+    ]
+  },
+  "vs_grid16_230_245": {
+    "prev_count": 53,
+    "apparatus_in_page_range": 52,
+    "missing_from_apparatus": [
+      {
+        "ayah": 118,
+        "label": "ط",
+        "verdict": "تام",
+        "target": "قلوبهم",
+        "page": 233
+      },
+      {
+        "ayah": 119,
+        "label": "لا",
+        "verdict": "لا يوقف",
+        "target": "ونذيرا",
+        "page": 233
+      },
+      {
+        "ayah": 138,
+        "label": "ز",
+        "verdict": "جائز",
+        "target": "صبغة",
+        "page": 245
+      }
+    ],
+    "extra_in_apparatus": [
+      {
+        "ayah": 119,
+        "label": "ط",
+        "verdict": "تام",
+        "target": "ونذيرا",
+        "page": 233
+      },
+      {
+        "ayah": 138,
+        "label": "ج",
+        "verdict": "جائز",
+        "target": "صبغة",
+        "page": 245
+      }
+    ]
+  }
+}

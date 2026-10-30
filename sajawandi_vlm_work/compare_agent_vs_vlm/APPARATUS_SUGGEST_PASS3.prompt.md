@@ -1,0 +1,41 @@
+PASS 3 — SUGGESTED WAQF / IBTIDA for pages {{PAGE_START}}-{{PAGE_END}}.
+
+INPUT (read-only, NEVER modify, NEVER overwrite): {{INPUT_PATH}}
+Schema: {{SCHEMA_PATH}}  (see apparatus[].suggested)
+
+YOUR JOB
+Read the pass 1/2 JSON above. For each waqf apparatus note (matched by ayah + target_word + margin_ref), decide whether the note's content justifies extra suggested points, then output ONLY those suggestions.
+
+You may think freely and logically from the Arabic content. Suggest a waqf (stop after a word) and/or an ibtida (restart at a word) when:
+- scholars disagree (one allows/prefers stopping, another forbids or discourages it), or
+- stopping or restarting there would change the meaning (e.g. «﴿أمنتم﴾ وقفه لحق الحذف، ولابتداء الشرط…»).
+
+RULES
+1. Output goes to {{OUTPUT_PATH}} ONLY — a new sidecar file. Never write to the input file or any other existing file.
+2. Do NOT copy, rewrite, re-letter, re-verdict or "fix" any pass 1/2 field. You only produce suggestions.
+3. Base suggestions on text already in the input JSON (text, raw_text, opinions[].comment). Do not read images, other JSON files, or crops. No OCR/Shell image/HTTP/computer-use.
+4. suggested.basis = "ai_inferred". trigger ∈ {"scholars_disagree","meaning_change"}.
+5. scholars[] copies the exact `opinions[].scholar` strings from the input (canonical names or names as printed; skip "unknown"); [] if none.
+6. If nothing is warranted for a note, omit it (do not emit empty suggestions).
+7. Do not invent scholars or opinions that are not in the input.
+
+OUTPUT FORMAT (UTF-8 no BOM):
+{
+  "source": "{{SOURCE}}",
+  "input": "{{INPUT_PATH}}",
+  "suggestions": [
+    {
+      "ayah": 138,
+      "target_word": "…",
+      "margin_ref": 4,
+      "text_page": 245,
+      "suggested": {
+        "basis": "ai_inferred",
+        "waqf":   [ {"target_word":"…","trigger":"scholars_disagree","reason":"…","scholars":["الأشموني"]} ],
+        "ibtida": [ {"start_word":"…","trigger":"meaning_change","reason":"…","scholars":[]} ]
+      }
+    }
+  ]
+}
+
+Return: number of notes in input, number of suggestions written, one-line list (ayah,target,#waqf,#ibtida).

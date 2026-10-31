@@ -1,0 +1,292 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://antigravity.ai/schemas/app_feed.schema.json",
+  "title": "Quran Waqf & Ibtida Application Feed Schema",
+  "description": "Production feed schema projecting raw Al-Sajawandi Waqf apparatus merged with Uthmani Mushaf pause marks and canonical Quran word tokens.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "surah",
+    "surahName",
+    "ayahRange",
+    "sourceBatch",
+    "sourceTag",
+    "ayahs",
+    "stops"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "description": "Semantic version of the feed schema, e.g. '1.0.0'"
+    },
+    "surah": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 114,
+      "description": "Surah number (1-114)"
+    },
+    "surahName": {
+      "type": "string",
+      "description": "Arabic name of the surah, e.g. 'سورة يوسف'"
+    },
+    "ayahRange": {
+      "type": "array",
+      "items": { "type": "integer" },
+      "minItems": 2,
+      "maxItems": 2,
+      "description": "Range of ayahs included [startAyah, endAyah]"
+    },
+    "sourceBatch": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "List of source batch files used in this feed"
+    },
+    "sourceTag": {
+      "type": "string",
+      "enum": ["sonnet", "antigravity", "base", "grok"],
+      "description": "Precedence tag of the extraction source"
+    },
+    "ayahs": {
+      "type": "array",
+      "description": "Sequential ayahs containing words and word-level stop linkages",
+      "items": {
+        "type": "object",
+        "required": ["number", "words"],
+        "additionalProperties": false,
+        "properties": {
+          "number": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Ayah number within the surah"
+          },
+          "words": {
+            "type": "array",
+            "description": "Quranic words in reading order",
+            "items": {
+              "type": "object",
+              "required": [
+                "index",
+                "text",
+                "stopId",
+                "inUthmaniMushaf"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "index": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "description": "1-based word position in this ayah (matches quran-words position p)"
+                },
+                "text": {
+                  "type": "string",
+                  "description": "Display text in Uthmani script with diacritics (from quran-words clean_u)"
+                },
+                "textImlai": {
+                  "type": ["string", "null"],
+                  "description": "Imla'i / simple Arabic text without archaic orthography (from quran-words i)"
+                },
+                "stopId": {
+                  "type": ["string", "null"],
+                  "description": "ID of the associated WaqfStop if a stop is present on this word, else null"
+                },
+                "inUthmaniMushaf": {
+                  "type": "boolean",
+                  "description": "Whether this word carries an official Uthmani mushaf pause mark glyph"
+                },
+                "uthmaniMark": {
+                  "type": ["string", "null"],
+                  "description": "Printed Uthmani mark symbol (صلى, قلى, ج, مـ, لا, ∴, س) or null"
+                },
+                "uthmaniMarkName": {
+                  "type": ["string", "null"],
+                  "description": "Descriptive rule name of the Uthmani mark (e.g. جائز, الوصل أولى, etc.)"
+                },
+                "uthmaniMarkCode": {
+                  "type": ["string", "null"],
+                  "description": "Canonical identifier code for the mark (e.g. JEEM, SALA, QALA, MEEM, LA, MUANAQAH, SAKTAH)"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "stops": {
+      "type": "array",
+      "description": "Catalog of waqf stops with scholastic rulings, reasons, and apparatus opinions",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "surah",
+          "ayah",
+          "wordIndex",
+          "word",
+          "targetWord",
+          "verdictLabel",
+          "verdict",
+          "label",
+          "symbol",
+          "reason",
+          "textPage",
+          "marginRef",
+          "fixes",
+          "opinions",
+          "aiSuggestion",
+          "symbolWitness",
+          "inUthmaniMushaf",
+          "isVerseEnd",
+          "sourceBatch"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^s[0-9]+-a[0-9]+-w[0-9]+$",
+            "description": "Stable unique identifier formatted as s{surah}-a{ayah}-w{wordIndex}"
+          },
+          "surah": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 114
+          },
+          "ayah": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "wordIndex": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "1-based word position in ayah"
+          },
+          "word": {
+            "type": "string",
+            "description": "Display word with diacritics from quran-words"
+          },
+          "targetWord": {
+            "type": "string",
+            "description": "Raw target word / phrase exactly as printed in Al-Sajawandi"
+          },
+          "verdictLabel": {
+            "type": ["string", "null"],
+            "enum": ["ط", "م", "ج", "ز", "ص", "لا", "ق", null],
+            "description": "Sajawandi letter from matn bracket"
+          },
+          "verdict": {
+            "type": ["string", "null"],
+            "enum": ["تام", "لازم", "جائز", "حسن", "لا يوقف", "قيل فيه وقف", null],
+            "description": "Mapped Sajawandi ruling"
+          },
+          "label": {
+            "type": "string",
+            "description": "Display label in Arabic (e.g. تام, جائز, مجوَّز, مرخَّص, لازم, لا يوقف, قيل فيه وقف, غير محسوم)"
+          },
+          "symbol": {
+            "type": "string",
+            "enum": ["tam", "lazim", "jaiz", "mujawwaz", "murakhkhas", "la", "unsettled"],
+            "description": "UI badge symbol enum"
+          },
+          "reason": {
+            "type": "string",
+            "description": "Grammatical/theological justification for the stop"
+          },
+          "textPage": {
+            "type": "integer",
+            "description": "Page in the printed book Ilal al-Wuquf"
+          },
+          "marginRef": {
+            "type": ["integer", "null"],
+            "description": "Footnote reference number in the margin"
+          },
+          "fixes": {
+            "type": "array",
+            "description": "Editorial fixes applied to matn text",
+            "items": {
+              "type": "object",
+              "required": ["type", "basis", "old_text", "new_text", "info"],
+              "additionalProperties": false,
+              "properties": {
+                "type": { "type": "string" },
+                "basis": { "type": "string" },
+                "old_text": { "type": "string" },
+                "new_text": { "type": "string" },
+                "info": { "type": "string" }
+              }
+            }
+          },
+          "opinions": {
+            "type": "array",
+            "description": "Scholarly opinions. Item 1 is always Al-Sajawandi from matn, followed by margin apparatus opinions",
+            "items": {
+              "type": "object",
+              "required": ["scholar", "verdict", "book"],
+              "additionalProperties": false,
+              "properties": {
+                "scholar": {
+                  "type": "string",
+                  "description": "Scholar name (e.g. أبو عبد الله السجاوندي, ابن الأنباري, الداني, النحاس, etc.)"
+                },
+                "verdict": {
+                  "type": ["string", "null"],
+                  "description": "Scholarly verdict (تام, كاف, حسن, صالح, جائز, مفهوم, لا يوقف, etc.)"
+                },
+                "verdictLabel": {
+                  "type": ["string", "null"],
+                  "description": "Sajawandi symbol letter if applicable, else null"
+                },
+                "book": {
+                  "type": ["string", "null"],
+                  "description": "Reference source work (علل الوقوف, الإيضاح, المكتفى, المنار, etc.)"
+                },
+                "page": {
+                  "type": ["string", "null"],
+                  "description": "Locus or page in the source work"
+                },
+                "comment": {
+                  "type": ["string", "null"],
+                  "description": "Commentary or qualification regarding the opinion"
+                }
+              }
+            }
+          },
+          "aiSuggestion": {
+            "type": ["string", "null"],
+            "description": "Concatenated Phase 3 AI suggestions if present"
+          },
+          "symbolWitness": {
+            "type": ["object", "null"],
+            "description": "Manuscript witness for symbol when matn symbol was null",
+            "additionalProperties": false,
+            "properties": {
+              "verdictLabel": { "type": "string" },
+              "basis": { "type": "string" },
+              "witness": { "type": ["string", "null"] },
+              "info": { "type": ["string", "null"] }
+            }
+          },
+          "inUthmaniMushaf": {
+            "type": "boolean",
+            "description": "True if an Uthmani mushaf pause mark occurs at this word"
+          },
+          "uthmaniMark": {
+            "type": ["string", "null"],
+            "description": "Uthmani pause symbol (صلى, قلى, ج, مـ, لا, ∴, س) or null"
+          },
+          "uthmaniMarkName": {
+            "type": ["string", "null"],
+            "description": "Arabic rule name of the Uthmani pause mark"
+          },
+          "isVerseEnd": {
+            "type": "boolean",
+            "description": "True if this stop occurs at the final word of the ayah"
+          },
+          "sourceBatch": {
+            "type": "string",
+            "description": "Batch raw filename from which this stop was projected"
+          }
+        }
+      }
+    }
+  }
+}

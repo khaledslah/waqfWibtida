@@ -17,6 +17,12 @@ class _HomeShellState extends State<HomeShell> {
   final ReaderController _controller = ReaderController();
 
   @override
+  void initState() {
+    super.initState();
+    _controller.bootstrap(initialSurah: 1);
+  }
+
+  @override
   void dispose() {
     _controller.dispose();
     super.dispose();
@@ -35,22 +41,59 @@ class _HomeShellState extends State<HomeShell> {
                 bottom: false,
                 child: _TopBar(controller: _controller),
               ),
-              Expanded(
-                child: IndexedStack(
-                  index: _controller.tab,
-                  children: [
-                    MushafScreen(controller: _controller),
-                    IndexScreen(controller: _controller),
-                    ReviewScreen(controller: _controller),
-                  ],
-                ),
-              ),
+              Expanded(child: _Body(controller: _controller)),
               _BottomNav(controller: _controller),
             ],
           ),
         );
       },
     );
+  }
+}
+
+class _Body extends StatelessWidget {
+  const _Body({required this.controller});
+
+  final ReaderController controller;
+
+  @override
+  Widget build(BuildContext context) {
+    switch (controller.loadState) {
+      case ReaderLoadState.loading:
+        return const Center(
+          child: CircularProgressIndicator(color: AppColors.forest),
+        );
+      case ReaderLoadState.error:
+        return Center(
+          child: Padding(
+            padding: const EdgeInsets.all(24),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  controller.loadError ?? 'تعذّر التحميل',
+                  textAlign: TextAlign.center,
+                  style: AppText.ui(size: 16, color: AppColors.forestDeep),
+                ),
+                const SizedBox(height: 16),
+                FilledButton(
+                  onPressed: () => controller.bootstrap(initialSurah: 1),
+                  child: const Text('إعادة المحاولة'),
+                ),
+              ],
+            ),
+          ),
+        );
+      case ReaderLoadState.ready:
+        return IndexedStack(
+          index: controller.tab,
+          children: [
+            MushafScreen(controller: controller),
+            IndexScreen(controller: controller),
+            ReviewScreen(controller: controller),
+          ],
+        );
+    }
   }
 }
 
@@ -141,7 +184,9 @@ class _SurahChip extends StatelessWidget {
                 const Icon(Icons.menu_book, size: 16, color: AppColors.forest),
                 const SizedBox(width: 6),
                 Text(
-                  'سورة يوسف',
+                  controller.currentSurahName.isEmpty
+                      ? '…'
+                      : controller.currentSurahName,
                   style: AppText.ui(
                     size: 13,
                     weight: FontWeight.w700,

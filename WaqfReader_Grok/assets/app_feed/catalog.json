@@ -1,0 +1,1488 @@
+{
+  "schemaVersion": "1.0.0",
+  "surahCount": 114,
+  "surahs": [
+    {
+      "number": 1,
+      "name": "سورة الفاتحة",
+      "ayahCount": 7,
+      "ayahRange": [
+        1,
+        7
+      ],
+      "stopCount": 7,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_001.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 2,
+      "name": "سورة البقرة",
+      "ayahCount": 286,
+      "ayahRange": [
+        1,
+        286
+      ],
+      "stopCount": 596,
+      "uthmaniStopCount": 426,
+      "asset": "app_feed/surah_002.json",
+      "sourceTag": "antigravity"
+    },
+    {
+      "number": 3,
+      "name": "سورة آل عمران",
+      "ayahCount": 200,
+      "ayahRange": [
+        1,
+        200
+      ],
+      "stopCount": 315,
+      "uthmaniStopCount": 193,
+      "asset": "app_feed/surah_003.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 4,
+      "name": "سورة النساء",
+      "ayahCount": 176,
+      "ayahRange": [
+        1,
+        176
+      ],
+      "stopCount": 328,
+      "uthmaniStopCount": 224,
+      "asset": "app_feed/surah_004.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 5,
+      "name": "سورة المائدة",
+      "ayahCount": 120,
+      "ayahRange": [
+        1,
+        120
+      ],
+      "stopCount": 228,
+      "uthmaniStopCount": 181,
+      "asset": "app_feed/surah_005.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 6,
+      "name": "سورة الأنعام",
+      "ayahCount": 165,
+      "ayahRange": [
+        1,
+        165
+      ],
+      "stopCount": 250,
+      "uthmaniStopCount": 205,
+      "asset": "app_feed/surah_006.json",
+      "sourceTag": "antigravity"
+    },
+    {
+      "number": 7,
+      "name": "سورة الأعراف",
+      "ayahCount": 206,
+      "ayahRange": [
+        1,
+        206
+      ],
+      "stopCount": 252,
+      "uthmaniStopCount": 177,
+      "asset": "app_feed/surah_007.json",
+      "sourceTag": "antigravity"
+    },
+    {
+      "number": 8,
+      "name": "سورة الأنفال",
+      "ayahCount": 75,
+      "ayahRange": [
+        1,
+        75
+      ],
+      "stopCount": 106,
+      "uthmaniStopCount": 74,
+      "asset": "app_feed/surah_008.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 9,
+      "name": "سورة التوبة",
+      "ayahCount": 129,
+      "ayahRange": [
+        1,
+        129
+      ],
+      "stopCount": 202,
+      "uthmaniStopCount": 149,
+      "asset": "app_feed/surah_009.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 10,
+      "name": "سورة يونس",
+      "ayahCount": 109,
+      "ayahRange": [
+        1,
+        109
+      ],
+      "stopCount": 139,
+      "uthmaniStopCount": 103,
+      "asset": "app_feed/surah_010.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 11,
+      "name": "سورة هود",
+      "ayahCount": 123,
+      "ayahRange": [
+        1,
+        123
+      ],
+      "stopCount": 154,
+      "uthmaniStopCount": 110,
+      "asset": "app_feed/surah_011.json",
+      "sourceTag": "antigravity"
+    },
+    {
+      "number": 12,
+      "name": "سورة يوسف",
+      "ayahCount": 111,
+      "ayahRange": [
+        1,
+        111
+      ],
+      "stopCount": 132,
+      "uthmaniStopCount": 102,
+      "asset": "app_feed/surah_012.json",
+      "sourceTag": "antigravity"
+    },
+    {
+      "number": 13,
+      "name": "سورة الرعد",
+      "ayahCount": 43,
+      "ayahRange": [
+        1,
+        43
+      ],
+      "stopCount": 87,
+      "uthmaniStopCount": 64,
+      "asset": "app_feed/surah_013.json",
+      "sourceTag": "antigravity"
+    },
+    {
+      "number": 14,
+      "name": "سورة إبراهيم",
+      "ayahCount": 52,
+      "ayahRange": [
+        1,
+        52
+      ],
+      "stopCount": 72,
+      "uthmaniStopCount": 48,
+      "asset": "app_feed/surah_014.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 15,
+      "name": "سورة الحجر",
+      "ayahCount": 99,
+      "ayahRange": [
+        1,
+        99
+      ],
+      "stopCount": 44,
+      "uthmaniStopCount": 5,
+      "asset": "app_feed/surah_015.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 16,
+      "name": "سورة النحل",
+      "ayahCount": 128,
+      "ayahRange": [
+        1,
+        128
+      ],
+      "stopCount": 140,
+      "uthmaniStopCount": 96,
+      "asset": "app_feed/surah_016.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 17,
+      "name": "سورة الإسراء",
+      "ayahCount": 111,
+      "ayahRange": [
+        1,
+        111
+      ],
+      "stopCount": 103,
+      "uthmaniStopCount": 73,
+      "asset": "app_feed/surah_017.json",
+      "sourceTag": "antigravity"
+    },
+    {
+      "number": 18,
+      "name": "سورة الكهف",
+      "ayahCount": 110,
+      "ayahRange": [
+        1,
+        110
+      ],
+      "stopCount": 123,
+      "uthmaniStopCount": 60,
+      "asset": "app_feed/surah_018.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 19,
+      "name": "سورة مريم",
+      "ayahCount": 98,
+      "ayahRange": [
+        1,
+        98
+      ],
+      "stopCount": 89,
+      "uthmaniStopCount": 35,
+      "asset": "app_feed/surah_019.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 20,
+      "name": "سورة طه",
+      "ayahCount": 135,
+      "ayahRange": [
+        1,
+        135
+      ],
+      "stopCount": 99,
+      "uthmaniStopCount": 49,
+      "asset": "app_feed/surah_020.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 21,
+      "name": "سورة الأنبياء",
+      "ayahCount": 112,
+      "ayahRange": [
+        1,
+        112
+      ],
+      "stopCount": 101,
+      "uthmaniStopCount": 54,
+      "asset": "app_feed/surah_021.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 22,
+      "name": "سورة الحج",
+      "ayahCount": 78,
+      "ayahRange": [
+        1,
+        78
+      ],
+      "stopCount": 104,
+      "uthmaniStopCount": 63,
+      "asset": "app_feed/surah_022.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 23,
+      "name": "سورة المؤمنون",
+      "ayahCount": 118,
+      "ayahRange": [
+        1,
+        118
+      ],
+      "stopCount": 81,
+      "uthmaniStopCount": 25,
+      "asset": "app_feed/surah_023.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 24,
+      "name": "سورة النور",
+      "ayahCount": 64,
+      "ayahRange": [
+        1,
+        64
+      ],
+      "stopCount": 117,
+      "uthmaniStopCount": 85,
+      "asset": "app_feed/surah_024.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 25,
+      "name": "سورة الفرقان",
+      "ayahCount": 77,
+      "ayahRange": [
+        1,
+        77
+      ],
+      "stopCount": 62,
+      "uthmaniStopCount": 30,
+      "asset": "app_feed/surah_025.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 26,
+      "name": "سورة الشعراء",
+      "ayahCount": 227,
+      "ayahRange": [
+        1,
+        227
+      ],
+      "stopCount": 144,
+      "uthmaniStopCount": 25,
+      "asset": "app_feed/surah_026.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 27,
+      "name": "سورة النمل",
+      "ayahCount": 93,
+      "ayahRange": [
+        1,
+        93
+      ],
+      "stopCount": 82,
+      "uthmaniStopCount": 48,
+      "asset": "app_feed/surah_027.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 28,
+      "name": "سورة القصص",
+      "ayahCount": 88,
+      "ayahRange": [
+        1,
+        88
+      ],
+      "stopCount": 97,
+      "uthmaniStopCount": 68,
+      "asset": "app_feed/surah_028.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 29,
+      "name": "سورة العنكبوت",
+      "ayahCount": 69,
+      "ayahRange": [
+        1,
+        69
+      ],
+      "stopCount": 89,
+      "uthmaniStopCount": 58,
+      "asset": "app_feed/surah_029.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 30,
+      "name": "سورة الروم",
+      "ayahCount": 60,
+      "ayahRange": [
+        1,
+        60
+      ],
+      "stopCount": 63,
+      "uthmaniStopCount": 47,
+      "asset": "app_feed/surah_030.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 31,
+      "name": "سورة لقمان",
+      "ayahCount": 34,
+      "ayahRange": [
+        1,
+        34
+      ],
+      "stopCount": 48,
+      "uthmaniStopCount": 31,
+      "asset": "app_feed/surah_031.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 32,
+      "name": "سورة السجدة",
+      "ayahCount": 30,
+      "ayahRange": [
+        1,
+        30
+      ],
+      "stopCount": 21,
+      "uthmaniStopCount": 11,
+      "asset": "app_feed/surah_032.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 33,
+      "name": "سورة الأحزاب",
+      "ayahCount": 73,
+      "ayahRange": [
+        1,
+        73
+      ],
+      "stopCount": 102,
+      "uthmaniStopCount": 72,
+      "asset": "app_feed/surah_033.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 34,
+      "name": "سورة سبأ",
+      "ayahCount": 54,
+      "ayahRange": [
+        1,
+        54
+      ],
+      "stopCount": 75,
+      "uthmaniStopCount": 47,
+      "asset": "app_feed/surah_034.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 35,
+      "name": "سورة فاطر",
+      "ayahCount": 45,
+      "ayahRange": [
+        1,
+        45
+      ],
+      "stopCount": 84,
+      "uthmaniStopCount": 58,
+      "asset": "app_feed/surah_035.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 36,
+      "name": "سورة يس",
+      "ayahCount": 83,
+      "ayahRange": [
+        1,
+        83
+      ],
+      "stopCount": 53,
+      "uthmaniStopCount": 21,
+      "asset": "app_feed/surah_036.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 37,
+      "name": "سورة الصافات",
+      "ayahCount": 182,
+      "ayahRange": [
+        1,
+        182
+      ],
+      "stopCount": 83,
+      "uthmaniStopCount": 9,
+      "asset": "app_feed/surah_037.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 38,
+      "name": "سورة ص",
+      "ayahCount": 88,
+      "ayahRange": [
+        1,
+        88
+      ],
+      "stopCount": 77,
+      "uthmaniStopCount": 32,
+      "asset": "app_feed/surah_038.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 39,
+      "name": "سورة الزمر",
+      "ayahCount": 75,
+      "ayahRange": [
+        1,
+        75
+      ],
+      "stopCount": 101,
+      "uthmaniStopCount": 74,
+      "asset": "app_feed/surah_039.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 40,
+      "name": "سورة غافر",
+      "ayahCount": 85,
+      "ayahRange": [
+        1,
+        85
+      ],
+      "stopCount": 97,
+      "uthmaniStopCount": 58,
+      "asset": "app_feed/surah_040.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 41,
+      "name": "سورة فصلت",
+      "ayahCount": 54,
+      "ayahRange": [
+        1,
+        54
+      ],
+      "stopCount": 57,
+      "uthmaniStopCount": 37,
+      "asset": "app_feed/surah_041.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 42,
+      "name": "سورة الشورى",
+      "ayahCount": 53,
+      "ayahRange": [
+        1,
+        53
+      ],
+      "stopCount": 90,
+      "uthmaniStopCount": 63,
+      "asset": "app_feed/surah_042.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 43,
+      "name": "سورة الزخرف",
+      "ayahCount": 89,
+      "ayahRange": [
+        1,
+        89
+      ],
+      "stopCount": 59,
+      "uthmaniStopCount": 28,
+      "asset": "app_feed/surah_043.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 44,
+      "name": "سورة الدخان",
+      "ayahCount": 59,
+      "ayahRange": [
+        1,
+        59
+      ],
+      "stopCount": 50,
+      "uthmaniStopCount": 14,
+      "asset": "app_feed/surah_044.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 45,
+      "name": "سورة الجاثية",
+      "ayahCount": 37,
+      "ayahRange": [
+        1,
+        37
+      ],
+      "stopCount": 36,
+      "uthmaniStopCount": 22,
+      "asset": "app_feed/surah_045.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 46,
+      "name": "سورة الأحقاف",
+      "ayahCount": 35,
+      "ayahRange": [
+        1,
+        35
+      ],
+      "stopCount": 49,
+      "uthmaniStopCount": 29,
+      "asset": "app_feed/surah_046.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 47,
+      "name": "سورة محمد",
+      "ayahCount": 38,
+      "ayahRange": [
+        1,
+        38
+      ],
+      "stopCount": 43,
+      "uthmaniStopCount": 24,
+      "asset": "app_feed/surah_047.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 48,
+      "name": "سورة الفتح",
+      "ayahCount": 29,
+      "ayahRange": [
+        1,
+        29
+      ],
+      "stopCount": 52,
+      "uthmaniStopCount": 37,
+      "asset": "app_feed/surah_048.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 49,
+      "name": "سورة الحجرات",
+      "ayahCount": 18,
+      "ayahRange": [
+        1,
+        18
+      ],
+      "stopCount": 27,
+      "uthmaniStopCount": 23,
+      "asset": "app_feed/surah_049.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 50,
+      "name": "سورة ق",
+      "ayahCount": 45,
+      "ayahRange": [
+        1,
+        45
+      ],
+      "stopCount": 28,
+      "uthmaniStopCount": 13,
+      "asset": "app_feed/surah_050.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 51,
+      "name": "سورة الذاريات",
+      "ayahCount": 60,
+      "ayahRange": [
+        1,
+        60
+      ],
+      "stopCount": 44,
+      "uthmaniStopCount": 10,
+      "asset": "app_feed/surah_051.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 52,
+      "name": "سورة الطور",
+      "ayahCount": 49,
+      "ayahRange": [
+        1,
+        49
+      ],
+      "stopCount": 40,
+      "uthmaniStopCount": 9,
+      "asset": "app_feed/surah_052.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 53,
+      "name": "سورة النجم",
+      "ayahCount": 62,
+      "ayahRange": [
+        1,
+        62
+      ],
+      "stopCount": 37,
+      "uthmaniStopCount": 10,
+      "asset": "app_feed/surah_053.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 54,
+      "name": "سورة القمر",
+      "ayahCount": 55,
+      "ayahRange": [
+        1,
+        55
+      ],
+      "stopCount": 24,
+      "uthmaniStopCount": 5,
+      "asset": "app_feed/surah_054.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 55,
+      "name": "سورة الرحمن",
+      "ayahCount": 78,
+      "ayahRange": [
+        1,
+        78
+      ],
+      "stopCount": 22,
+      "uthmaniStopCount": 3,
+      "asset": "app_feed/surah_055.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 56,
+      "name": "سورة الواقعة",
+      "ayahCount": 96,
+      "ayahRange": [
+        1,
+        96
+      ],
+      "stopCount": 71,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_056.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 57,
+      "name": "سورة الحديد",
+      "ayahCount": 29,
+      "ayahRange": [
+        1,
+        29
+      ],
+      "stopCount": 53,
+      "uthmaniStopCount": 36,
+      "asset": "app_feed/surah_057.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 58,
+      "name": "سورة المجادلة",
+      "ayahCount": 22,
+      "ayahRange": [
+        1,
+        22
+      ],
+      "stopCount": 45,
+      "uthmaniStopCount": 36,
+      "asset": "app_feed/surah_058.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 59,
+      "name": "سورة الحشر",
+      "ayahCount": 24,
+      "ayahRange": [
+        1,
+        24
+      ],
+      "stopCount": 37,
+      "uthmaniStopCount": 24,
+      "asset": "app_feed/surah_059.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 60,
+      "name": "سورة الممتحنة",
+      "ayahCount": 13,
+      "ayahRange": [
+        1,
+        13
+      ],
+      "stopCount": 28,
+      "uthmaniStopCount": 21,
+      "asset": "app_feed/surah_060.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 61,
+      "name": "سورة الصف",
+      "ayahCount": 14,
+      "ayahRange": [
+        1,
+        14
+      ],
+      "stopCount": 13,
+      "uthmaniStopCount": 11,
+      "asset": "app_feed/surah_061.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 62,
+      "name": "سورة الجمعة",
+      "ayahCount": 11,
+      "ayahRange": [
+        1,
+        11
+      ],
+      "stopCount": 10,
+      "uthmaniStopCount": 8,
+      "asset": "app_feed/surah_062.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 63,
+      "name": "سورة المنافقون",
+      "ayahCount": 11,
+      "ayahRange": [
+        1,
+        11
+      ],
+      "stopCount": 17,
+      "uthmaniStopCount": 12,
+      "asset": "app_feed/surah_063.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 64,
+      "name": "سورة التغابن",
+      "ayahCount": 18,
+      "ayahRange": [
+        1,
+        18
+      ],
+      "stopCount": 23,
+      "uthmaniStopCount": 20,
+      "asset": "app_feed/surah_064.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 65,
+      "name": "سورة الطلاق",
+      "ayahCount": 12,
+      "ayahRange": [
+        1,
+        12
+      ],
+      "stopCount": 27,
+      "uthmaniStopCount": 21,
+      "asset": "app_feed/surah_065.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 66,
+      "name": "سورة التحريم",
+      "ayahCount": 12,
+      "ayahRange": [
+        1,
+        12
+      ],
+      "stopCount": 19,
+      "uthmaniStopCount": 13,
+      "asset": "app_feed/surah_066.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 67,
+      "name": "سورة الملك",
+      "ayahCount": 30,
+      "ayahRange": [
+        1,
+        30
+      ],
+      "stopCount": 25,
+      "uthmaniStopCount": 12,
+      "asset": "app_feed/surah_067.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 68,
+      "name": "سورة القلم",
+      "ayahCount": 52,
+      "ayahRange": [
+        1,
+        52
+      ],
+      "stopCount": 33,
+      "uthmaniStopCount": 6,
+      "asset": "app_feed/surah_068.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 69,
+      "name": "سورة الحاقة",
+      "ayahCount": 52,
+      "ayahRange": [
+        1,
+        52
+      ],
+      "stopCount": 33,
+      "uthmaniStopCount": 4,
+      "asset": "app_feed/surah_069.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 70,
+      "name": "سورة المعارج",
+      "ayahCount": 44,
+      "ayahRange": [
+        1,
+        44
+      ],
+      "stopCount": 26,
+      "uthmaniStopCount": 4,
+      "asset": "app_feed/surah_070.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 71,
+      "name": "سورة نوح",
+      "ayahCount": 28,
+      "ayahRange": [
+        1,
+        28
+      ],
+      "stopCount": 15,
+      "uthmaniStopCount": 3,
+      "asset": "app_feed/surah_071.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 72,
+      "name": "سورة الجن",
+      "ayahCount": 28,
+      "ayahRange": [
+        1,
+        28
+      ],
+      "stopCount": 15,
+      "uthmaniStopCount": 7,
+      "asset": "app_feed/surah_072.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 73,
+      "name": "سورة المزمل",
+      "ayahCount": 20,
+      "ayahRange": [
+        1,
+        20
+      ],
+      "stopCount": 15,
+      "uthmaniStopCount": 12,
+      "asset": "app_feed/surah_073.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 74,
+      "name": "سورة المدثر",
+      "ayahCount": 56,
+      "ayahRange": [
+        1,
+        56
+      ],
+      "stopCount": 32,
+      "uthmaniStopCount": 7,
+      "asset": "app_feed/surah_074.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 75,
+      "name": "سورة القيامة",
+      "ayahCount": 40,
+      "ayahRange": [
+        1,
+        40
+      ],
+      "stopCount": 24,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_075.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 76,
+      "name": "سورة الإنسان",
+      "ayahCount": 31,
+      "ayahRange": [
+        1,
+        31
+      ],
+      "stopCount": 20,
+      "uthmaniStopCount": 6,
+      "asset": "app_feed/surah_076.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 77,
+      "name": "سورة المرسلات",
+      "ayahCount": 50,
+      "ayahRange": [
+        1,
+        50
+      ],
+      "stopCount": 15,
+      "uthmaniStopCount": 1,
+      "asset": "app_feed/surah_077.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 78,
+      "name": "سورة النبأ",
+      "ayahCount": 40,
+      "ayahRange": [
+        1,
+        40
+      ],
+      "stopCount": 21,
+      "uthmaniStopCount": 3,
+      "asset": "app_feed/surah_078.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 79,
+      "name": "سورة النازعات",
+      "ayahCount": 46,
+      "ayahRange": [
+        1,
+        46
+      ],
+      "stopCount": 35,
+      "uthmaniStopCount": 1,
+      "asset": "app_feed/surah_079.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 80,
+      "name": "سورة عبس",
+      "ayahCount": 42,
+      "ayahRange": [
+        1,
+        42
+      ],
+      "stopCount": 25,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_080.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 81,
+      "name": "سورة التكوير",
+      "ayahCount": 29,
+      "ayahRange": [
+        1,
+        29
+      ],
+      "stopCount": 6,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_081.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 82,
+      "name": "سورة الانفطار",
+      "ayahCount": 19,
+      "ayahRange": [
+        1,
+        19
+      ],
+      "stopCount": 13,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_082.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 83,
+      "name": "سورة المطففين",
+      "ayahCount": 36,
+      "ayahRange": [
+        1,
+        36
+      ],
+      "stopCount": 35,
+      "uthmaniStopCount": 1,
+      "asset": "app_feed/surah_083.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 84,
+      "name": "سورة الانشقاق",
+      "ayahCount": 25,
+      "ayahRange": [
+        1,
+        25
+      ],
+      "stopCount": 12,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_084.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 85,
+      "name": "سورة البروج",
+      "ayahCount": 22,
+      "ayahRange": [
+        1,
+        22
+      ],
+      "stopCount": 18,
+      "uthmaniStopCount": 2,
+      "asset": "app_feed/surah_085.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 86,
+      "name": "سورة الطارق",
+      "ayahCount": 17,
+      "ayahRange": [
+        1,
+        17
+      ],
+      "stopCount": 7,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_086.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 87,
+      "name": "سورة الأعلى",
+      "ayahCount": 19,
+      "ayahRange": [
+        1,
+        19
+      ],
+      "stopCount": 14,
+      "uthmaniStopCount": 1,
+      "asset": "app_feed/surah_087.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 88,
+      "name": "سورة الغاشية",
+      "ayahCount": 26,
+      "ayahRange": [
+        1,
+        26
+      ],
+      "stopCount": 11,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_088.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 89,
+      "name": "سورة الفجر",
+      "ayahCount": 30,
+      "ayahRange": [
+        1,
+        30
+      ],
+      "stopCount": 11,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_089.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 90,
+      "name": "سورة البلد",
+      "ayahCount": 20,
+      "ayahRange": [
+        1,
+        20
+      ],
+      "stopCount": 10,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_090.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 91,
+      "name": "سورة الشمس",
+      "ayahCount": 15,
+      "ayahRange": [
+        1,
+        15
+      ],
+      "stopCount": 3,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_091.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 92,
+      "name": "سورة الليل",
+      "ayahCount": 21,
+      "ayahRange": [
+        1,
+        21
+      ],
+      "stopCount": 10,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_092.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 93,
+      "name": "سورة الضحى",
+      "ayahCount": 11,
+      "ayahRange": [
+        1,
+        11
+      ],
+      "stopCount": 8,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_093.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 94,
+      "name": "سورة الشرح",
+      "ayahCount": 8,
+      "ayahRange": [
+        1,
+        8
+      ],
+      "stopCount": 4,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_094.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 95,
+      "name": "سورة التين",
+      "ayahCount": 8,
+      "ayahRange": [
+        1,
+        8
+      ],
+      "stopCount": 4,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_095.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 96,
+      "name": "سورة العلق",
+      "ayahCount": 19,
+      "ayahRange": [
+        1,
+        19
+      ],
+      "stopCount": 14,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_096.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 97,
+      "name": "سورة القدر",
+      "ayahCount": 5,
+      "ayahRange": [
+        1,
+        5
+      ],
+      "stopCount": 6,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_097.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 98,
+      "name": "سورة البينة",
+      "ayahCount": 8,
+      "ayahRange": [
+        1,
+        8
+      ],
+      "stopCount": 10,
+      "uthmaniStopCount": 3,
+      "asset": "app_feed/surah_098.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 99,
+      "name": "سورة الزلزلة",
+      "ayahCount": 8,
+      "ayahRange": [
+        1,
+        8
+      ],
+      "stopCount": 6,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_099.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 100,
+      "name": "سورة العاديات",
+      "ayahCount": 11,
+      "ayahRange": [
+        1,
+        11
+      ],
+      "stopCount": 5,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_100.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 101,
+      "name": "سورة القارعة",
+      "ayahCount": 11,
+      "ayahRange": [
+        1,
+        11
+      ],
+      "stopCount": 7,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_101.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 102,
+      "name": "سورة التكاثر",
+      "ayahCount": 8,
+      "ayahRange": [
+        1,
+        8
+      ],
+      "stopCount": 6,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_102.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 103,
+      "name": "سورة العصر",
+      "ayahCount": 3,
+      "ayahRange": [
+        1,
+        3
+      ],
+      "stopCount": 1,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_103.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 104,
+      "name": "سورة الهمزة",
+      "ayahCount": 9,
+      "ayahRange": [
+        1,
+        9
+      ],
+      "stopCount": 5,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_104.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 105,
+      "name": "سورة الفيل",
+      "ayahCount": 5,
+      "ayahRange": [
+        1,
+        5
+      ],
+      "stopCount": 5,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_105.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 106,
+      "name": "سورة قريش",
+      "ayahCount": 4,
+      "ayahRange": [
+        1,
+        4
+      ],
+      "stopCount": 2,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_106.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 107,
+      "name": "سورة الماعون",
+      "ayahCount": 7,
+      "ayahRange": [
+        1,
+        7
+      ],
+      "stopCount": 3,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_107.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 108,
+      "name": "سورة الكوثر",
+      "ayahCount": 3,
+      "ayahRange": [
+        1,
+        3
+      ],
+      "stopCount": 2,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_108.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 109,
+      "name": "سورة الكافرون",
+      "ayahCount": 6,
+      "ayahRange": [
+        1,
+        6
+      ],
+      "stopCount": 2,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_109.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 110,
+      "name": "سورة النصر",
+      "ayahCount": 3,
+      "ayahRange": [
+        1,
+        3
+      ],
+      "stopCount": 2,
+      "uthmaniStopCount": 1,
+      "asset": "app_feed/surah_110.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 111,
+      "name": "سورة المسد",
+      "ayahCount": 5,
+      "ayahRange": [
+        1,
+        5
+      ],
+      "stopCount": 5,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_111.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 112,
+      "name": "سورة الإخلاص",
+      "ayahCount": 4,
+      "ayahRange": [
+        1,
+        4
+      ],
+      "stopCount": 3,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_112.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 113,
+      "name": "سورة الفلق",
+      "ayahCount": 5,
+      "ayahRange": [
+        1,
+        5
+      ],
+      "stopCount": 0,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_113.json",
+      "sourceTag": "base"
+    },
+    {
+      "number": 114,
+      "name": "سورة الناس",
+      "ayahCount": 6,
+      "ayahRange": [
+        1,
+        6
+      ],
+      "stopCount": 0,
+      "uthmaniStopCount": 0,
+      "asset": "app_feed/surah_114.json",
+      "sourceTag": "base"
+    }
+  ]
+}

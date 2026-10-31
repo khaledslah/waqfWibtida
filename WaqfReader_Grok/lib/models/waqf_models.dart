@@ -1,6 +1,58 @@
 enum StopSymbol { tam, la, jaiz, mujawwaz, unsettled }
 
+/// Maps app-feed symbol strings onto existing badge styles (no new UI).
+StopSymbol stopSymbolFromFeed(String? raw) {
+  switch (raw) {
+    case 'tam':
+    case 'lazim':
+      return StopSymbol.tam;
+    case 'la':
+      return StopSymbol.la;
+    case 'jaiz':
+      return StopSymbol.jaiz;
+    case 'mujawwaz':
+    case 'murakhkhas':
+      return StopSymbol.mujawwaz;
+    default:
+      return StopSymbol.unsettled;
+  }
+}
+
 enum SurahLoadStatus { inProgress, notStarted, awaitingReview }
+
+enum ReviewListFilter {
+  all,
+  needsAttention,
+  favorites,
+  verified,
+  unsettled,
+  ai,
+  uthmani,
+  verseEnd,
+}
+
+extension ReviewListFilterLabel on ReviewListFilter {
+  String get labelAr {
+    switch (this) {
+      case ReviewListFilter.all:
+        return 'الكل';
+      case ReviewListFilter.needsAttention:
+        return 'يحتاج مراجعة';
+      case ReviewListFilter.favorites:
+        return 'المفضلة';
+      case ReviewListFilter.verified:
+        return 'مُتحقَّق';
+      case ReviewListFilter.unsettled:
+        return 'غير محسوم';
+      case ReviewListFilter.ai:
+        return 'مقترح AI';
+      case ReviewListFilter.uthmani:
+        return 'عثماني';
+      case ReviewListFilter.verseEnd:
+        return 'رأس آية';
+    }
+  }
+}
 
 class ScholarOpinion {
   const ScholarOpinion({
@@ -8,12 +60,21 @@ class ScholarOpinion {
     required this.verdict,
     required this.book,
     required this.page,
+    this.comment,
+    this.fromMargin = false,
   });
 
   final String scholar;
   final String? verdict;
   final String book;
   final String? page;
+  final String? comment;
+
+  /// True for margin apparatus opinions (not the matn Sajawandi row).
+  final bool fromMargin;
+
+  bool get isSajawandiMatn =>
+      !fromMargin && (scholar == 'السجاوندي' || book.contains('علل الوقوف'));
 }
 
 class WaqfStop {
@@ -28,6 +89,8 @@ class WaqfStop {
     required this.opinions,
     this.aiSuggestion,
     this.inUthmaniMushaf = false,
+    this.isVerseEnd = false,
+    this.textPage,
   });
 
   final String id;
@@ -39,9 +102,11 @@ class WaqfStop {
   final String reason;
   final List<ScholarOpinion> opinions;
   final String? aiSuggestion;
-
-  /// Middle stop that already appears as a printed symbol in the Madinah/Uthmani mushaf.
   final bool inUthmaniMushaf;
+  final bool isVerseEnd;
+
+  /// Page in علل الوقوف (matches page_N.png).
+  final int? textPage;
 
   bool get needsReview {
     if (symbol == StopSymbol.unsettled) return true;
@@ -56,6 +121,12 @@ class WaqfStop {
   }
 
   bool get hasNullVerdict => opinions.any((opinion) => opinion.verdict == null);
+
+  List<ScholarOpinion> get matnOpinions =>
+      opinions.where((o) => !o.fromMargin).toList();
+
+  List<ScholarOpinion> get marginOpinions =>
+      opinions.where((o) => o.fromMargin).toList();
 }
 
 class AyahWord {
@@ -100,4 +171,15 @@ class SurahIndexEntry {
 String arabicDigits(int value) {
   const map = ['٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩'];
   return value.toString().split('').map((digit) => map[int.parse(digit)]).join();
+}
+
+int? parsePageNumber(String? raw) {
+  if (raw == null || raw.trim().isEmpty) return null;
+  final western = raw
+      .replaceAllMapped(RegExp('[٠-٩]'), (m) {
+        const digits = '٠١٢٣٤٥٦٧٨٩';
+        return '${digits.indexOf(m.group(0)!)}';
+      })
+      .replaceAll(RegExp(r'[^0-9]'), '');
+  return int.tryParse(western);
 }

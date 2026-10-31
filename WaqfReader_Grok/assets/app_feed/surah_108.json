@@ -1,0 +1,198 @@
+{
+  "schemaVersion": "1.0.0",
+  "surah": 108,
+  "surahName": "سورة الكوثر",
+  "ayahRange": [
+    1,
+    3
+  ],
+  "sourceBatch": [
+    "batch_1167_1170.apparatus_v4.raw.json"
+  ],
+  "sourceTag": "base",
+  "ayahs": [
+    {
+      "number": 1,
+      "words": [
+        {
+          "index": 1,
+          "text": "إِنَّآ",
+          "textImlai": "اِنَّاۤ",
+          "stopId": null,
+          "inUthmaniMushaf": false,
+          "uthmaniMark": null,
+          "uthmaniMarkName": null,
+          "uthmaniMarkCode": null
+        },
+        {
+          "index": 2,
+          "text": "أَعْطَيْنَـٰكَ",
+          "textImlai": "اَعۡطَيۡنٰكَ",
+          "stopId": null,
+          "inUthmaniMushaf": false,
+          "uthmaniMark": null,
+          "uthmaniMarkName": null,
+          "uthmaniMarkCode": null
+        },
+        {
+          "index": 3,
+          "text": "ٱلْكَوْثَرَ",
+          "textImlai": "الۡكَوۡثَرَؕ‏",
+          "stopId": "s108-a1-w3",
+          "inUthmaniMushaf": false,
+          "uthmaniMark": null,
+          "uthmaniMarkName": null,
+          "uthmaniMarkCode": null
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "words": [
+        {
+          "index": 1,
+          "text": "فَصَلِّ",
+          "textImlai": "فَصَلِّ",
+          "stopId": null,
+          "inUthmaniMushaf": false,
+          "uthmaniMark": null,
+          "uthmaniMarkName": null,
+          "uthmaniMarkCode": null
+        },
+        {
+          "index": 2,
+          "text": "لِرَبِّكَ",
+          "textImlai": "لِرَبِّكَ",
+          "stopId": null,
+          "inUthmaniMushaf": false,
+          "uthmaniMark": null,
+          "uthmaniMarkName": null,
+          "uthmaniMarkCode": null
+        },
+        {
+          "index": 3,
+          "text": "وَٱنْحَرْ",
+          "textImlai": "وَانۡحَرۡ ؕ‏",
+          "stopId": "s108-a2-w3",
+          "inUthmaniMushaf": false,
+          "uthmaniMark": null,
+          "uthmaniMarkName": null,
+          "uthmaniMarkCode": null
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "words": [
+        {
+          "index": 1,
+          "text": "إِنَّ",
+          "textImlai": "اِنَّ",
+          "stopId": null,
+          "inUthmaniMushaf": false,
+          "uthmaniMark": null,
+          "uthmaniMarkName": null,
+          "uthmaniMarkCode": null
+        },
+        {
+          "index": 2,
+          "text": "شَانِئَكَ",
+          "textImlai": "شَانِئَكَ",
+          "stopId": null,
+          "inUthmaniMushaf": false,
+          "uthmaniMark": null,
+          "uthmaniMarkName": null,
+          "uthmaniMarkCode": null
+        },
+        {
+          "index": 3,
+          "text": "هُوَ",
+          "textImlai": "هُوَ",
+          "stopId": null,
+          "inUthmaniMushaf": false,
+          "uthmaniMark": null,
+          "uthmaniMarkName": null,
+          "uthmaniMarkCode": null
+        },
+        {
+          "index": 4,
+          "text": "ٱلْأَبْتَرُ",
+          "textImlai": "الۡاَبۡتَرُ‏",
+          "stopId": null,
+          "inUthmaniMushaf": false,
+          "uthmaniMark": null,
+          "uthmaniMarkName": null,
+          "uthmaniMarkCode": null
+        }
+      ]
+    }
+  ],
+  "stops": [
+    {
+      "id": "s108-a1-w3",
+      "surah": 108,
+      "ayah": 1,
+      "wordIndex": 3,
+      "word": "ٱلْكَوْثَرَ",
+      "targetWord": "الكوثر",
+      "verdictLabel": "ط",
+      "verdict": "تام",
+      "label": "تام",
+      "symbol": "tam",
+      "reason": "وقف السجاوندي: تام",
+      "textPage": 1167,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "verdict": "تام",
+          "verdictLabel": "ط",
+          "book": "علل الوقوف",
+          "page": "1167",
+          "comment": null
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "batch_1167_1170.apparatus_v4.raw.json"
+    },
+    {
+      "id": "s108-a2-w3",
+      "surah": 108,
+      "ayah": 2,
+      "wordIndex": 3,
+      "word": "وَٱنْحَرْ",
+      "targetWord": "وانحر",
+      "verdictLabel": "ط",
+      "verdict": "تام",
+      "label": "تام",
+      "symbol": "tam",
+      "reason": "للابتداء بـ : ﴿إن﴾ ",
+      "textPage": 1167,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "verdict": "تام",
+          "verdictLabel": "ط",
+          "book": "علل الوقوف",
+          "page": "1167",
+          "comment": null
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "batch_1167_1170.apparatus_v4.raw.json"
+    }
+  ]
+}

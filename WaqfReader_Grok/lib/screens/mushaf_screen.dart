@@ -20,7 +20,7 @@ class MushafScreen extends StatelessWidget {
         WaqfFilterBar(controller: controller),
         const OrnamentDivider(),
         Expanded(
-          child: yusufAyahs.isEmpty
+          child: controller.currentAyahs.isEmpty
               ? const _EmptyReading()
               : SingleChildScrollView(
                   padding: const EdgeInsets.fromLTRB(12, 8, 12, 12),
@@ -62,7 +62,7 @@ class _ReadingBlock extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final children = <Widget>[];
-    for (final ayah in yusufAyahs) {
+    for (final ayah in controller.currentAyahs) {
       for (final word in ayah.words) {
         children.add(_WordToken(word: word, controller: controller));
       }

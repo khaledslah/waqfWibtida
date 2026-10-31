@@ -1,0 +1,1336 @@
+{
+  "schemaVersion": 1,
+  "surah": 12,
+  "surahName": "سورة يوسف",
+  "ayahRange": [
+    100,
+    111
+  ],
+  "source": "apparatus_v4 production (Cursor)",
+  "sourceFiles": [
+    "batch_607_610.apparatus_v4.raw.json"
+  ],
+  "stops": [
+    {
+      "id": "yusuf-100-sujjadan",
+      "surah": 12,
+      "ayah": 100,
+      "word": "سُجَّدًا",
+      "wordIndex": 6,
+      "targetWord": "سجدا",
+      "symbol": "jaiz",
+      "label": "جائز",
+      "verdictLabel": "ج",
+      "reason": "لابتداء بيان أمر معظم مع اتفاق اللفظ",
+      "inUthmaniMushaf": false,
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "verdict": "جائز",
+          "book": "علل الوقوف",
+          "page": "607",
+          "comment": null
+        }
+      ],
+      "aiSuggestion": null,
+      "sourceBatch": "batch_607_610.apparatus_v4.raw.json"
+    },
+    {
+      "id": "yusuf-100-qablu",
+      "surah": 12,
+      "ayah": 100,
+      "word": "قَبْلُ",
+      "wordIndex": 13,
+      "targetWord": "من قبل",
+      "symbol": "mujawwaz",
+      "label": "مجوَّز",
+      "verdictLabel": "ز",
+      "reason": "(8) لتمام الجملة لفظا دون تمام المعنى",
+      "inUthmaniMushaf": false,
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "verdict": "جائز",
+          "book": "علل الوقوف",
+          "page": "607",
+          "comment": null
+        }
+      ],
+      "aiSuggestion": "الجملة تامة لفظا دون تمام المعنى، فالوقف مجوز لوجه ولا يتم المعنى بالوقوف.",
+      "sourceBatch": "batch_607_610.apparatus_v4.raw.json"
+    },
+    {
+      "id": "yusuf-100-haqqa",
+      "surah": 12,
+      "ayah": 100,
+      "word": "حَقًّا",
+      "wordIndex": 17,
+      "targetWord": "حقا",
+      "symbol": "tam",
+      "label": "تام",
+      "verdictLabel": "ط",
+      "reason": "لتمام بيان الجملة الأولى، وابتداء جملة عظمى",
+      "inUthmaniMushaf": false,
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "verdict": "تام",
+          "book": "علل الوقوف",
+          "page": "607",
+          "comment": null
+        }
+      ],
+      "aiSuggestion": null,
+      "sourceBatch": "batch_607_610.apparatus_v4.raw.json"
+    },
+    {
+      "id": "yusuf-100-ikhwati",
+      "surah": 12,
+      "ayah": 100,
+      "word": "إِخْوَتِي",
+      "wordIndex": 36,
+      "targetWord": "إخوتي",
+      "symbol": "tam",
+      "label": "تام",
+      "verdictLabel": "ط",
+      "reason": "وقف السجاوندي: تام",
+      "inUthmaniMushaf": false,
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "verdict": "تام",
+          "book": "علل الوقوف",
+          "page": "608",
+          "comment": null
+        }
+      ],
+      "aiSuggestion": null,
+      "sourceBatch": "batch_607_610.apparatus_v4.raw.json"
+    },
+    {
+      "id": "yusuf-100-yashau",
+      "surah": 12,
+      "ayah": 100,
+      "word": "يَشَاءُ",
+      "wordIndex": 41,
+      "targetWord": "لما يشاء",
+      "symbol": "tam",
+      "label": "تام",
+      "verdictLabel": "ط",
+      "reason": "وقف السجاوندي: تام",
+      "inUthmaniMushaf": false,
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "verdict": "تام",
+          "book": "علل الوقوف",
+          "page": "608",
+          "comment": null
+        }
+      ],
+      "aiSuggestion": null,
+      "sourceBatch": "batch_607_610.apparatus_v4.raw.json"
+    },
+    {
+      "id": "yusuf-101-ahadith",
+      "surah": 12,
+      "ayah": 101,
+      "word": "الْأَحَادِيثِ",
+      "wordIndex": 8,
+      "targetWord": "الأحاديث",
+      "symbol": "jaiz",
+      "label": "جائز",
+      "verdictLabel": "ج",
+      "reason": "لحذف حرف النداء مع اتصال تقرير(1) الوفاء(2) بذكر المنة(3) والثناء(4) تشبيبا(5) لما(6) في السياق من الدعاء، وهو قوله: ﴿توفني﴾ بعد(7) [وقف لتوقف](8) خجل الحياء، حتى لم يقل فتوفني بحرف الفاء",
+      "inUthmaniMushaf": false,
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "verdict": "جائز",
+          "book": "علل الوقوف",
+          "page": "608",
+          "comment": null
+        }
+      ],
+      "aiSuggestion": "الوقف لحذف حرف النداء، مع اتصال تقرير الوفاء بذكر المنة والثناء تشبيبا لما في السياق من الدعاء.\nقوله ﴿توفني﴾ واقع بعد وقف لتوقف خجل الحياء، حتى لم يقل فتوفني بحرف الفاء.",
+      "sourceBatch": "batch_607_610.apparatus_v4.raw.json"
+    },
+    {
+      "id": "yusuf-101-akhira",
+      "surah": 12,
+      "ayah": 101,
+      "word": "وَالْآخِرَةِ",
+      "wordIndex": 16,
+      "targetWord": "والآخرة",
+      "symbol": "jaiz",
+      "label": "جائز",
+      "verdictLabel": "ج",
+      "reason": "(9) كذلك(10)",
+      "inUthmaniMushaf": false,
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "verdict": "جائز",
+          "book": "علل الوقوف",
+          "page": "608",
+          "comment": null
+        }
+      ],
+      "aiSuggestion": null,
+      "sourceBatch": "batch_607_610.apparatus_v4.raw.json"
+    },
+    {
+      "id": "yusuf-102-ilayk",
+      "surah": 12,
+      "ayah": 102,
+      "word": "إِلَيْكَ",
+      "wordIndex": 5,
+      "targetWord": "إليك",
+      "symbol": "jaiz",
+      "label": "جائز",
+      "verdictLabel": "ج",
+      "reason": "لابتداء النفي مع واو العطف",
+      "inUthmaniMushaf": false,
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "verdict": "جائز",
+          "book": "علل الوقوف",
+          "page": "608",
+          "comment": null
+        }
+      ],
+      "aiSuggestion": null,
+      "sourceBatch": "batch_607_610.apparatus_v4.raw.json"
+    },
+    {
+      "id": "yusuf-104-ajr",
+      "surah": 12,
+      "ayah": 104,
+      "word": "أَجْرٍ",
+      "wordIndex": 4,
+      "targetWord": "من أجر",
+      "symbol": "tam",
+      "label": "تام",
+      "verdictLabel": "ط",
+      "reason": "(11)",
+      "inUthmaniMushaf": false,
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "verdict": "تام",
+          "book": "علل الوقوف",
+          "page": "608",
+          "comment": null
+        },
+        {
+          "scholar": "حاشية المحقق",
+          "verdict": "جائز",
+          "book": "علل الوقوف (حاشية)",
+          "page": "608",
+          "comment": "في نسخة أ علامة الوقف ج، والمتن ط"
+        }
+      ],
+      "aiSuggestion": null,
+      "sourceBatch": "batch_607_610.apparatus_v4.raw.json"
+    },
+    {
+      "id": "yusuf-108-allah",
+      "surah": 12,
+      "ayah": 108,
+      "word": "اللَّهِ",
+      "wordIndex": 5,
+      "targetWord": "أدعو إلى الله",
+      "symbol": "jaiz",
+      "label": "جائز",
+      "verdictLabel": "ج",
+      "reason": "لاختصاص الدعوة له، وانتفائه عن غيره، وإثبات الشركة بينه وبين من أتبعه في البصيرة](1)",
+      "inUthmaniMushaf": false,
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "verdict": "جائز",
+          "book": "علل الوقوف",
+          "page": "608",
+          "comment": null
+        }
+      ],
+      "aiSuggestion": "الوقف يفيد اختصاص الدعوة له وانتفاءها عن غيره.\nما بعد الوقف لإثبات الشركة بينه وبين من أتبعه في البصيرة، وهو غير اختصاص الدعوة.",
+      "sourceBatch": "batch_607_610.apparatus_v4.raw.json"
+    },
+    {
+      "id": "yusuf-108-ittabaani",
+      "surah": 12,
+      "ayah": 108,
+      "word": "اتَّبَعَنِي",
+      "wordIndex": 10,
+      "targetWord": "ومن اتبعني",
+      "symbol": "tam",
+      "label": "تام",
+      "verdictLabel": "ط",
+      "reason": "وقف السجاوندي: تام",
+      "inUthmaniMushaf": false,
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "verdict": "تام",
+          "book": "علل الوقوف",
+          "page": "609",
+          "comment": null
+        }
+      ],
+      "aiSuggestion": null,
+      "sourceBatch": "batch_607_610.apparatus_v4.raw.json"
+    },
+    {
+      "id": "yusuf-109-qura",
+      "surah": 12,
+      "ayah": 109,
+      "word": "الْقُرَى",
+      "wordIndex": 10,
+      "targetWord": "من أهل القرى",
+      "symbol": "tam",
+      "label": "تام",
+      "verdictLabel": "ط",
+      "reason": "وقف السجاوندي: تام",
+      "inUthmaniMushaf": false,
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "verdict": "تام",
+          "book": "علل الوقوف",
+          "page": "609",
+          "comment": null
+        }
+      ],
+      "aiSuggestion": null,
+      "sourceBatch": "batch_607_610.apparatus_v4.raw.json"
+    },
+    {
+      "id": "yusuf-109-qablihim",
+      "surah": 12,
+      "ayah": 109,
+      "word": "قَبْلِهِمْ",
+      "wordIndex": 21,
+      "targetWord": "من قبلهم",
+      "symbol": "tam",
+      "label": "تام",
+      "verdictLabel": "ط",
+      "reason": "وقف السجاوندي: تام",
+      "inUthmaniMushaf": false,
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "verdict": "تام",
+          "book": "علل الوقوف",
+          "page": "609",
+          "comment": null
+        }
+      ],
+      "aiSuggestion": null,
+      "sourceBatch": "batch_607_610.apparatus_v4.raw.json"
+    },
+    {
+      "id": "yusuf-109-ittaqaw",
+      "surah": 12,
+      "ayah": 109,
+      "word": "اتَّقَوْا",
+      "wordIndex": 26,
+      "targetWord": "اتقوا",
+      "symbol": "tam",
+      "label": "تام",
+      "verdictLabel": "ط",
+      "reason": "وقف السجاوندي: تام",
+      "inUthmaniMushaf": false,
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "verdict": "تام",
+          "book": "علل الوقوف",
+          "page": "609",
+          "comment": null
+        }
+      ],
+      "aiSuggestion": null,
+      "sourceBatch": "batch_607_610.apparatus_v4.raw.json"
+    },
+    {
+      "id": "yusuf-110-nasr",
+      "surah": 12,
+      "ayah": 110,
+      "word": "نَصْرُنَا",
+      "wordIndex": 9,
+      "targetWord": "نصرنا",
+      "symbol": "tam",
+      "label": "تام",
+      "verdictLabel": "ط",
+      "reason": "لمن قرأ: ﴿فنجي﴾ مخففا(2) ولا وقف على ﴿من نشاء﴾. ومن قرأ ﴿فنجي﴾ مشددا وصله(3) بما(4) قبله(5)، ووقف على: «من نشاء»(6)",
+      "inUthmaniMushaf": false,
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "verdict": "تام",
+          "book": "علل الوقوف",
+          "page": "609",
+          "comment": null
+        }
+      ],
+      "aiSuggestion": "الوقف تام لمن قرأ ﴿فنجي﴾ مخففا، ومن قرأها مشددا وصلها بما قبلها فلا يقف هنا.\nلا وقف على ﴿من نشاء﴾ عند قراءة التخفيف، ومن قرأ ﴿فنجي﴾ مشددا وقف عليه.",
+      "sourceBatch": "batch_607_610.apparatus_v4.raw.json"
+    },
+    {
+      "id": "yusuf-111-albab",
+      "surah": 12,
+      "ayah": 111,
+      "word": "الْأَلْبَابِ",
+      "wordIndex": 6,
+      "targetWord": "الألباب",
+      "symbol": "tam",
+      "label": "تام",
+      "verdictLabel": "ط",
+      "reason": "وقف السجاوندي: تام",
+      "inUthmaniMushaf": false,
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "verdict": "تام",
+          "book": "علل الوقوف",
+          "page": "609",
+          "comment": null
+        }
+      ],
+      "aiSuggestion": null,
+      "sourceBatch": "batch_607_610.apparatus_v4.raw.json"
+    }
+  ],
+  "ayahs": [
+    {
+      "number": 100,
+      "words": [
+        {
+          "text": "وَرَفَعَ",
+          "stopId": null
+        },
+        {
+          "text": "أَبَوَيْهِ",
+          "stopId": null
+        },
+        {
+          "text": "عَلَى",
+          "stopId": null
+        },
+        {
+          "text": "الْعَرْشِ",
+          "stopId": null
+        },
+        {
+          "text": "وَخَرُّوا",
+          "stopId": null
+        },
+        {
+          "text": "لَهُ",
+          "stopId": null
+        },
+        {
+          "text": "سُجَّدًا",
+          "stopId": "yusuf-100-sujjadan"
+        },
+        {
+          "text": "وَقَالَ",
+          "stopId": null
+        },
+        {
+          "text": "يَاأَبَتِ",
+          "stopId": null
+        },
+        {
+          "text": "هَٰذَا",
+          "stopId": null
+        },
+        {
+          "text": "تَأْوِيلُ",
+          "stopId": null
+        },
+        {
+          "text": "رُؤْيَايَ",
+          "stopId": null
+        },
+        {
+          "text": "مِن",
+          "stopId": null
+        },
+        {
+          "text": "قَبْلُ",
+          "stopId": "yusuf-100-qablu"
+        },
+        {
+          "text": "قَدْ",
+          "stopId": null
+        },
+        {
+          "text": "جَعَلَهَا",
+          "stopId": null
+        },
+        {
+          "text": "رَبِّي",
+          "stopId": null
+        },
+        {
+          "text": "حَقًّا",
+          "stopId": "yusuf-100-haqqa"
+        },
+        {
+          "text": "وَقَدْ",
+          "stopId": null
+        },
+        {
+          "text": "أَحْسَنَ",
+          "stopId": null
+        },
+        {
+          "text": "بِي",
+          "stopId": null
+        },
+        {
+          "text": "إِذْ",
+          "stopId": null
+        },
+        {
+          "text": "أَخْرَجَنِي",
+          "stopId": null
+        },
+        {
+          "text": "مِنَ",
+          "stopId": null
+        },
+        {
+          "text": "السِّجْنِ",
+          "stopId": null
+        },
+        {
+          "text": "وَجَاءَ",
+          "stopId": null
+        },
+        {
+          "text": "بِكُم",
+          "stopId": null
+        },
+        {
+          "text": "مِنَ",
+          "stopId": null
+        },
+        {
+          "text": "الْبَدْوِ",
+          "stopId": null
+        },
+        {
+          "text": "مِن",
+          "stopId": null
+        },
+        {
+          "text": "بَعْدِ",
+          "stopId": null
+        },
+        {
+          "text": "أَن",
+          "stopId": null
+        },
+        {
+          "text": "نَزَغَ",
+          "stopId": null
+        },
+        {
+          "text": "الشَّيْطَانُ",
+          "stopId": null
+        },
+        {
+          "text": "بَيْنِي",
+          "stopId": null
+        },
+        {
+          "text": "وَبَيْنَ",
+          "stopId": null
+        },
+        {
+          "text": "إِخْوَتِي",
+          "stopId": "yusuf-100-ikhwati"
+        },
+        {
+          "text": "إِنَّ",
+          "stopId": null
+        },
+        {
+          "text": "رَبِّي",
+          "stopId": null
+        },
+        {
+          "text": "لَطِيفٌ",
+          "stopId": null
+        },
+        {
+          "text": "لِمَا",
+          "stopId": null
+        },
+        {
+          "text": "يَشَاءُ",
+          "stopId": "yusuf-100-yashau"
+        },
+        {
+          "text": "إِنَّهُ",
+          "stopId": null
+        },
+        {
+          "text": "هُوَ",
+          "stopId": null
+        },
+        {
+          "text": "الْعَلِيمُ",
+          "stopId": null
+        },
+        {
+          "text": "الْحَكِيمُ",
+          "stopId": null
+        }
+      ]
+    },
+    {
+      "number": 101,
+      "words": [
+        {
+          "text": "رَبِّ",
+          "stopId": null
+        },
+        {
+          "text": "قَدْ",
+          "stopId": null
+        },
+        {
+          "text": "آتَيْتَنِي",
+          "stopId": null
+        },
+        {
+          "text": "مِنَ",
+          "stopId": null
+        },
+        {
+          "text": "الْمُلْكِ",
+          "stopId": null
+        },
+        {
+          "text": "وَعَلَّمْتَنِي",
+          "stopId": null
+        },
+        {
+          "text": "مِن",
+          "stopId": null
+        },
+        {
+          "text": "تَأْوِيلِ",
+          "stopId": null
+        },
+        {
+          "text": "الْأَحَادِيثِ",
+          "stopId": "yusuf-101-ahadith"
+        },
+        {
+          "text": "فَاطِرَ",
+          "stopId": null
+        },
+        {
+          "text": "السَّمَاوَاتِ",
+          "stopId": null
+        },
+        {
+          "text": "وَالْأَرْضِ",
+          "stopId": null
+        },
+        {
+          "text": "أَنْتَ",
+          "stopId": null
+        },
+        {
+          "text": "وَلِيِّي",
+          "stopId": null
+        },
+        {
+          "text": "فِي",
+          "stopId": null
+        },
+        {
+          "text": "الدُّنْيَا",
+          "stopId": null
+        },
+        {
+          "text": "وَالْآخِرَةِ",
+          "stopId": "yusuf-101-akhira"
+        },
+        {
+          "text": "تَوَفَّنِي",
+          "stopId": null
+        },
+        {
+          "text": "مُسْلِمًا",
+          "stopId": null
+        },
+        {
+          "text": "وَأَلْحِقْنِي",
+          "stopId": null
+        },
+        {
+          "text": "بِالصَّالِحِينَ",
+          "stopId": null
+        }
+      ]
+    },
+    {
+      "number": 102,
+      "words": [
+        {
+          "text": "ذَٰلِكَ",
+          "stopId": null
+        },
+        {
+          "text": "مِنْ",
+          "stopId": null
+        },
+        {
+          "text": "أَنْبَاءِ",
+          "stopId": null
+        },
+        {
+          "text": "الْغَيْبِ",
+          "stopId": null
+        },
+        {
+          "text": "نُوحِيهِ",
+          "stopId": null
+        },
+        {
+          "text": "إِلَيْكَ",
+          "stopId": "yusuf-102-ilayk"
+        },
+        {
+          "text": "وَمَا",
+          "stopId": null
+        },
+        {
+          "text": "كُنْتَ",
+          "stopId": null
+        },
+        {
+          "text": "لَدَيْهِمْ",
+          "stopId": null
+        },
+        {
+          "text": "إِذْ",
+          "stopId": null
+        },
+        {
+          "text": "أَجْمَعُوا",
+          "stopId": null
+        },
+        {
+          "text": "أَمْرَهُمْ",
+          "stopId": null
+        },
+        {
+          "text": "وَهُمْ",
+          "stopId": null
+        },
+        {
+          "text": "يَمْكُرُونَ",
+          "stopId": null
+        }
+      ]
+    },
+    {
+      "number": 103,
+      "words": [
+        {
+          "text": "وَمَا",
+          "stopId": null
+        },
+        {
+          "text": "أَكْثَرُ",
+          "stopId": null
+        },
+        {
+          "text": "النَّاسِ",
+          "stopId": null
+        },
+        {
+          "text": "وَلَوْ",
+          "stopId": null
+        },
+        {
+          "text": "حَرَصْتَ",
+          "stopId": null
+        },
+        {
+          "text": "بِمُؤْمِنِينَ",
+          "stopId": null
+        }
+      ]
+    },
+    {
+      "number": 104,
+      "words": [
+        {
+          "text": "وَمَا",
+          "stopId": null
+        },
+        {
+          "text": "تَسْأَلُهُمْ",
+          "stopId": null
+        },
+        {
+          "text": "عَلَيْهِ",
+          "stopId": null
+        },
+        {
+          "text": "مِنْ",
+          "stopId": null
+        },
+        {
+          "text": "أَجْرٍ",
+          "stopId": "yusuf-104-ajr"
+        },
+        {
+          "text": "إِنْ",
+          "stopId": null
+        },
+        {
+          "text": "هُوَ",
+          "stopId": null
+        },
+        {
+          "text": "إِلَّا",
+          "stopId": null
+        },
+        {
+          "text": "ذِكْرٌ",
+          "stopId": null
+        },
+        {
+          "text": "لِلْعَالَمِينَ",
+          "stopId": null
+        }
+      ]
+    },
+    {
+      "number": 105,
+      "words": [
+        {
+          "text": "وَكَأَيِّنْ",
+          "stopId": null
+        },
+        {
+          "text": "مِنْ",
+          "stopId": null
+        },
+        {
+          "text": "آيَةٍ",
+          "stopId": null
+        },
+        {
+          "text": "فِي",
+          "stopId": null
+        },
+        {
+          "text": "السَّمَاوَاتِ",
+          "stopId": null
+        },
+        {
+          "text": "وَالْأَرْضِ",
+          "stopId": null
+        },
+        {
+          "text": "يَمُرُّونَ",
+          "stopId": null
+        },
+        {
+          "text": "عَلَيْهَا",
+          "stopId": null
+        },
+        {
+          "text": "وَهُمْ",
+          "stopId": null
+        },
+        {
+          "text": "عَنْهَا",
+          "stopId": null
+        },
+        {
+          "text": "مُعْرِضُونَ",
+          "stopId": null
+        }
+      ]
+    },
+    {
+      "number": 106,
+      "words": [
+        {
+          "text": "وَمَا",
+          "stopId": null
+        },
+        {
+          "text": "يُؤْمِنُ",
+          "stopId": null
+        },
+        {
+          "text": "أَكْثَرُهُمْ",
+          "stopId": null
+        },
+        {
+          "text": "بِاللَّهِ",
+          "stopId": null
+        },
+        {
+          "text": "إِلَّا",
+          "stopId": null
+        },
+        {
+          "text": "وَهُمْ",
+          "stopId": null
+        },
+        {
+          "text": "مُشْرِكُونَ",
+          "stopId": null
+        }
+      ]
+    },
+    {
+      "number": 107,
+      "words": [
+        {
+          "text": "أَفَأَمِنُوا",
+          "stopId": null
+        },
+        {
+          "text": "أَن",
+          "stopId": null
+        },
+        {
+          "text": "تَأْتِيَهُمْ",
+          "stopId": null
+        },
+        {
+          "text": "غَاشِيَةٌ",
+          "stopId": null
+        },
+        {
+          "text": "مِنْ",
+          "stopId": null
+        },
+        {
+          "text": "عَذَابِ",
+          "stopId": null
+        },
+        {
+          "text": "اللَّهِ",
+          "stopId": null
+        },
+        {
+          "text": "أَوْ",
+          "stopId": null
+        },
+        {
+          "text": "تَأْتِيَهُمُ",
+          "stopId": null
+        },
+        {
+          "text": "السَّاعَةُ",
+          "stopId": null
+        },
+        {
+          "text": "بَغْتَةً",
+          "stopId": null
+        },
+        {
+          "text": "وَهُمْ",
+          "stopId": null
+        },
+        {
+          "text": "لَا",
+          "stopId": null
+        },
+        {
+          "text": "يَشْعُرُونَ",
+          "stopId": null
+        }
+      ]
+    },
+    {
+      "number": 108,
+      "words": [
+        {
+          "text": "قُلْ",
+          "stopId": null
+        },
+        {
+          "text": "هَٰذِهِ",
+          "stopId": null
+        },
+        {
+          "text": "سَبِيلِي",
+          "stopId": null
+        },
+        {
+          "text": "أَدْعُو",
+          "stopId": null
+        },
+        {
+          "text": "إِلَى",
+          "stopId": null
+        },
+        {
+          "text": "اللَّهِ",
+          "stopId": "yusuf-108-allah"
+        },
+        {
+          "text": "عَلَىٰ",
+          "stopId": null
+        },
+        {
+          "text": "بَصِيرَةٍ",
+          "stopId": null
+        },
+        {
+          "text": "أَنَا",
+          "stopId": null
+        },
+        {
+          "text": "وَمَنِ",
+          "stopId": null
+        },
+        {
+          "text": "اتَّبَعَنِي",
+          "stopId": "yusuf-108-ittabaani"
+        },
+        {
+          "text": "وَسُبْحَانَ",
+          "stopId": null
+        },
+        {
+          "text": "اللَّهِ",
+          "stopId": null
+        },
+        {
+          "text": "وَمَا",
+          "stopId": null
+        },
+        {
+          "text": "أَنَا",
+          "stopId": null
+        },
+        {
+          "text": "مِنَ",
+          "stopId": null
+        },
+        {
+          "text": "الْمُشْرِكِينَ",
+          "stopId": null
+        }
+      ]
+    },
+    {
+      "number": 109,
+      "words": [
+        {
+          "text": "وَمَا",
+          "stopId": null
+        },
+        {
+          "text": "أَرْسَلْنَا",
+          "stopId": null
+        },
+        {
+          "text": "مِنْ",
+          "stopId": null
+        },
+        {
+          "text": "قَبْلِكَ",
+          "stopId": null
+        },
+        {
+          "text": "إِلَّا",
+          "stopId": null
+        },
+        {
+          "text": "رِجَالًا",
+          "stopId": null
+        },
+        {
+          "text": "نُوحِي",
+          "stopId": null
+        },
+        {
+          "text": "إِلَيْهِمْ",
+          "stopId": null
+        },
+        {
+          "text": "مِنْ",
+          "stopId": null
+        },
+        {
+          "text": "أَهْلِ",
+          "stopId": null
+        },
+        {
+          "text": "الْقُرَى",
+          "stopId": "yusuf-109-qura"
+        },
+        {
+          "text": "أَفَلَمْ",
+          "stopId": null
+        },
+        {
+          "text": "يَسِيرُوا",
+          "stopId": null
+        },
+        {
+          "text": "فِي",
+          "stopId": null
+        },
+        {
+          "text": "الْأَرْضِ",
+          "stopId": null
+        },
+        {
+          "text": "فَيَنْظُرُوا",
+          "stopId": null
+        },
+        {
+          "text": "كَيْفَ",
+          "stopId": null
+        },
+        {
+          "text": "كَانَ",
+          "stopId": null
+        },
+        {
+          "text": "عَاقِبَةُ",
+          "stopId": null
+        },
+        {
+          "text": "الَّذِينَ",
+          "stopId": null
+        },
+        {
+          "text": "مِنْ",
+          "stopId": null
+        },
+        {
+          "text": "قَبْلِهِمْ",
+          "stopId": "yusuf-109-qablihim"
+        },
+        {
+          "text": "وَلَدَارُ",
+          "stopId": null
+        },
+        {
+          "text": "الْآخِرَةِ",
+          "stopId": null
+        },
+        {
+          "text": "خَيْرٌ",
+          "stopId": null
+        },
+        {
+          "text": "لِلَّذِينَ",
+          "stopId": null
+        },
+        {
+          "text": "اتَّقَوْا",
+          "stopId": "yusuf-109-ittaqaw"
+        },
+        {
+          "text": "أَفَلَا",
+          "stopId": null
+        },
+        {
+          "text": "تَعْقِلُونَ",
+          "stopId": null
+        }
+      ]
+    },
+    {
+      "number": 110,
+      "words": [
+        {
+          "text": "حَتَّىٰ",
+          "stopId": null
+        },
+        {
+          "text": "إِذَا",
+          "stopId": null
+        },
+        {
+          "text": "اسْتَيْأَسَ",
+          "stopId": null
+        },
+        {
+          "text": "الرُّسُلُ",
+          "stopId": null
+        },
+        {
+          "text": "وَظَنُّوا",
+          "stopId": null
+        },
+        {
+          "text": "أَنَّهُمْ",
+          "stopId": null
+        },
+        {
+          "text": "قَدْ",
+          "stopId": null
+        },
+        {
+          "text": "كُذِبُوا",
+          "stopId": null
+        },
+        {
+          "text": "جَاءَهُمْ",
+          "stopId": null
+        },
+        {
+          "text": "نَصْرُنَا",
+          "stopId": "yusuf-110-nasr"
+        },
+        {
+          "text": "فَنُجِّيَ",
+          "stopId": null
+        },
+        {
+          "text": "مَنْ",
+          "stopId": null
+        },
+        {
+          "text": "نَشَاءُ",
+          "stopId": null
+        },
+        {
+          "text": "وَلَا",
+          "stopId": null
+        },
+        {
+          "text": "يُرَدُّ",
+          "stopId": null
+        },
+        {
+          "text": "بَأْسُنَا",
+          "stopId": null
+        },
+        {
+          "text": "عَنِ",
+          "stopId": null
+        },
+        {
+          "text": "الْقَوْمِ",
+          "stopId": null
+        },
+        {
+          "text": "الْمُجْرِمِينَ",
+          "stopId": null
+        }
+      ]
+    },
+    {
+      "number": 111,
+      "words": [
+        {
+          "text": "لَقَدْ",
+          "stopId": null
+        },
+        {
+          "text": "كَانَ",
+          "stopId": null
+        },
+        {
+          "text": "فِي",
+          "stopId": null
+        },
+        {
+          "text": "قَصَصِهِمْ",
+          "stopId": null
+        },
+        {
+          "text": "عِبْرَةٌ",
+          "stopId": null
+        },
+        {
+          "text": "لِأُولِي",
+          "stopId": null
+        },
+        {
+          "text": "الْأَلْبَابِ",
+          "stopId": "yusuf-111-albab"
+        },
+        {
+          "text": "مَا",
+          "stopId": null
+        },
+        {
+          "text": "كَانَ",
+          "stopId": null
+        },
+        {
+          "text": "حَدِيثًا",
+          "stopId": null
+        },
+        {
+          "text": "يُفْتَرَىٰ",
+          "stopId": null
+        },
+        {
+          "text": "وَلَٰكِنْ",
+          "stopId": null
+        },
+        {
+          "text": "تَصْدِيقَ",
+          "stopId": null
+        },
+        {
+          "text": "الَّذِي",
+          "stopId": null
+        },
+        {
+          "text": "بَيْنَ",
+          "stopId": null
+        },
+        {
+          "text": "يَدَيْهِ",
+          "stopId": null
+        },
+        {
+          "text": "وَتَفْصِيلَ",
+          "stopId": null
+        },
+        {
+          "text": "كُلِّ",
+          "stopId": null
+        },
+        {
+          "text": "شَيْءٍ",
+          "stopId": null
+        },
+        {
+          "text": "وَهُدًى",
+          "stopId": null
+        },
+        {
+          "text": "وَرَحْمَةً",
+          "stopId": null
+        },
+        {
+          "text": "لِقَوْمٍ",
+          "stopId": null
+        },
+        {
+          "text": "يُؤْمِنُونَ",
+          "stopId": null
+        }
+      ]
+    }
+  ]
+}

@@ -24,14 +24,16 @@ class IndexScreen extends StatelessWidget {
         ),
         const SizedBox(height: 4),
         Text(
-          'عيّنة من ثلاث سور',
+          controller.catalog.isEmpty
+              ? 'لا فهرس محمّل'
+              : '${arabicDigits(controller.catalog.length)} سورة من علل الوقوف',
           style: AppText.ui(size: 14, color: AppColors.muted),
         ),
         const SizedBox(height: 16),
-        if (sampleSurahs.isEmpty)
+        if (controller.sampleSurahs.isEmpty)
           const _EmptyIndex()
         else
-          for (final surah in sampleSurahs) ...[
+          for (final surah in controller.sampleSurahs) ...[
             _SurahCard(
               surah: surah,
               onTap: () => _open(context, controller, surah),
@@ -42,19 +44,24 @@ class IndexScreen extends StatelessWidget {
     );
   }
 
-  void _open(
+  Future<void> _open(
     BuildContext context,
     ReaderController controller,
     SurahIndexEntry surah,
-  ) {
-    if (surah.status == SurahLoadStatus.inProgress) {
+  ) async {
+    if (surah.number == controller.currentSurah) {
       controller.setTab(0);
       return;
     }
-    final message = surah.status == SurahLoadStatus.awaitingReview
-        ? 'سورة ${surah.name} بانتظار المراجعة، ونصها غير محمّل في العيّنة.'
-        : 'نص ${surah.name} غير محمّل في هذه العيّنة.';
-    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(message)));
+    await controller.loadSurah(surah.number);
+    if (!context.mounted) return;
+    if (controller.loadState == ReaderLoadState.ready) {
+      controller.setTab(0);
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(controller.loadError ?? 'تعذّر فتح السورة')),
+      );
+    }
   }
 }
 

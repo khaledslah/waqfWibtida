@@ -12,7 +12,7 @@ class WaqfFilterBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final visible = controller.visibleStopCount;
-    final total = sampleStops.length;
+    final total = controller.sampleStops.length;
 
     return Material(
       color: AppColors.parchment,

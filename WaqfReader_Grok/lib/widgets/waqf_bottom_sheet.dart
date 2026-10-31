@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../data/sample_data.dart';
 import '../models/waqf_models.dart';
 import '../theme/app_theme.dart';
+import 'page_image_viewer.dart';
 import 'stop_badge.dart';
 
 Future<void> showWaqfSheet(
@@ -54,9 +55,14 @@ class _WaqfBottomSheetState extends State<WaqfBottomSheet> {
     );
   }
 
+  Future<void> _openPage(int? page) async {
+    if (page == null) return;
+    await showSajawandiPage(context, page: page);
+  }
+
   @override
   Widget build(BuildContext context) {
-    final height = MediaQuery.sizeOf(context).height * 0.67;
+    final height = MediaQuery.sizeOf(context).height * 0.72;
     final bottom = MediaQuery.paddingOf(context).bottom;
 
     return Align(
@@ -73,6 +79,8 @@ class _WaqfBottomSheetState extends State<WaqfBottomSheet> {
               final stop = widget.controller.stopById(widget.stopId);
               if (stop == null) return const _MissingStop();
               final sent = widget.controller.isSent(stop.id);
+              final fav = widget.controller.isFavorite(stop.id);
+              final verified = widget.controller.isVerified(stop.id);
               return Column(
                 children: [
                   const _DragHandle(),
@@ -84,6 +92,13 @@ class _WaqfBottomSheetState extends State<WaqfBottomSheet> {
                         aiOpen: _aiOpen,
                         onToggleAi: () => setState(() => _aiOpen = !_aiOpen),
                         isVerseEnd: widget.controller.isVerseEnd(stop),
+                        favorite: fav,
+                        verified: verified,
+                        onToggleFavorite: () =>
+                            widget.controller.toggleFavorite(stop.id),
+                        onToggleVerified: () =>
+                            widget.controller.toggleVerified(stop.id),
+                        onOpenPage: _openPage,
                       ),
                     ),
                   ),
@@ -129,15 +144,28 @@ class _SheetBody extends StatelessWidget {
     required this.aiOpen,
     required this.onToggleAi,
     required this.isVerseEnd,
+    required this.favorite,
+    required this.verified,
+    required this.onToggleFavorite,
+    required this.onToggleVerified,
+    required this.onOpenPage,
   });
 
   final WaqfStop stop;
   final bool aiOpen;
   final VoidCallback onToggleAi;
   final bool isVerseEnd;
+  final bool favorite;
+  final bool verified;
+  final VoidCallback onToggleFavorite;
+  final VoidCallback onToggleVerified;
+  final Future<void> Function(int? page) onOpenPage;
 
   @override
   Widget build(BuildContext context) {
+    final matn = stop.matnOpinions;
+    final margin = stop.marginOpinions;
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
@@ -149,17 +177,35 @@ class _SheetBody extends StatelessWidget {
               core: 36,
             ),
             const SizedBox(width: 8),
-            Text(
-              stop.label,
-              style: AppText.ui(
-                size: 18,
-                weight: FontWeight.w700,
-                color: const Color(0xFFE7F6EE),
+            Expanded(
+              child: Text(
+                stop.label,
+                style: AppText.ui(
+                  size: 18,
+                  weight: FontWeight.w700,
+                  color: const Color(0xFFE7F6EE),
+                ),
+              ),
+            ),
+            IconButton(
+              tooltip: favorite ? 'إزالة من المفضلة' : 'إضافة للمفضلة',
+              onPressed: onToggleFavorite,
+              icon: Icon(
+                favorite ? Icons.favorite : Icons.favorite_border,
+                color: favorite ? const Color(0xFFE8A0A0) : AppColors.sheetMuted,
+              ),
+            ),
+            IconButton(
+              tooltip: verified ? 'إلغاء التحقق' : 'تحقّق',
+              onPressed: onToggleVerified,
+              icon: Icon(
+                verified ? Icons.verified : Icons.verified_outlined,
+                color: verified ? AppColors.goldSoft : AppColors.sheetMuted,
               ),
             ),
           ],
         ),
-        const SizedBox(height: 8),
+        const SizedBox(height: 4),
         Text(
           stop.word,
           textAlign: TextAlign.start,
@@ -170,18 +216,17 @@ class _SheetBody extends StatelessWidget {
             height: 1.3,
           ),
         ),
-        if (isVerseEnd || stop.inUthmaniMushaf) ...[
-          const SizedBox(height: 8),
-          Wrap(
-            spacing: 6,
-            runSpacing: 6,
-            children: [
-              if (isVerseEnd) const _SheetTag(text: 'رأس آية'),
-              if (stop.inUthmaniMushaf)
-                const _SheetTag(text: 'في المصحف العثماني'),
-            ],
-          ),
-        ],
+        const SizedBox(height: 8),
+        Wrap(
+          spacing: 6,
+          runSpacing: 6,
+          crossAxisAlignment: WrapCrossAlignment.center,
+          children: [
+            if (isVerseEnd) const _SheetTag(text: 'رأس آية'),
+            if (stop.inUthmaniMushaf)
+              const _SheetTag(text: 'في المصحف العثماني'),
+          ],
+        ),
         const SizedBox(height: 12),
         Text(
           stop.reason,
@@ -194,35 +239,36 @@ class _SheetBody extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 20),
-        Row(
-          children: [
-            Container(
-              width: 28,
-              height: 28,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                border: Border.all(color: AppColors.goldSoft),
-              ),
-              child: const Icon(
-                Icons.person_outline,
-                size: 16,
-                color: AppColors.sheetText,
-              ),
-            ),
-            const SizedBox(width: 8),
-            Text(
-              'آراء العلماء',
-              style: AppText.ui(
-                size: 16,
-                weight: FontWeight.w700,
-                color: AppColors.sheetText,
-              ),
-            ),
-          ],
+        const _SectionTitle(
+          icon: Icons.menu_book_outlined,
+          title: 'رأي السجاوندي (المتن)',
         ),
         const SizedBox(height: 8),
-        _OpinionTable(opinions: stop.opinions),
+        _OpinionTable(
+          opinions: matn,
+          emptyText: 'لا حكم متن مسجّل.',
+          sajawandiPage: stop.textPage,
+          onOpenPage: onOpenPage,
+        ),
+        if (margin.isNotEmpty) ...[
+          const SizedBox(height: 16),
+          const _SectionTitle(
+            icon: Icons.notes_outlined,
+            title: 'آراء من الحواشي',
+          ),
+          const SizedBox(height: 4),
+          Text(
+            'مستخرجة من هوامش علل الوقوف المرتبطة برقم الحاشية، وليست من سطر المتن.',
+            style: AppText.ui(size: 12, color: AppColors.sheetMuted, height: 1.45),
+          ),
+          const SizedBox(height: 8),
+          _OpinionTable(
+            opinions: margin,
+            emptyText: 'لا آراء حاشية.',
+            sajawandiPage: stop.textPage,
+            onOpenPage: onOpenPage,
+          ),
+        ],
         const SizedBox(height: 12),
         _AiPanel(
           open: aiOpen,
@@ -234,16 +280,49 @@ class _SheetBody extends StatelessWidget {
   }
 }
 
+class _SectionTitle extends StatelessWidget {
+  const _SectionTitle({required this.icon, required this.title});
+
+  final IconData icon;
+  final String title;
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Icon(icon, size: 18, color: AppColors.goldSoft),
+        const SizedBox(width: 8),
+        Text(
+          title,
+          style: AppText.ui(
+            size: 15,
+            weight: FontWeight.w700,
+            color: AppColors.sheetText,
+          ),
+        ),
+      ],
+    );
+  }
+}
+
 class _OpinionTable extends StatelessWidget {
-  const _OpinionTable({required this.opinions});
+  const _OpinionTable({
+    required this.opinions,
+    required this.emptyText,
+    required this.sajawandiPage,
+    required this.onOpenPage,
+  });
 
   final List<ScholarOpinion> opinions;
+  final String emptyText;
+  final int? sajawandiPage;
+  final Future<void> Function(int? page) onOpenPage;
 
   @override
   Widget build(BuildContext context) {
     if (opinions.isEmpty) {
       return Text(
-        'لا آراء مسجّلة لهذه العلامة.',
+        emptyText,
         style: AppText.ui(size: 14, color: AppColors.sheetMuted),
       );
     }
@@ -261,7 +340,11 @@ class _OpinionTable extends StatelessWidget {
               const Divider(height: 1, thickness: 1, color: AppColors.sheetLine),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
-              child: _OpinionRow(opinion: opinions[i]),
+              child: _OpinionRow(
+                opinion: opinions[i],
+                sajawandiPage: sajawandiPage,
+                onOpenPage: onOpenPage,
+              ),
             ),
           ],
         ],
@@ -271,9 +354,15 @@ class _OpinionTable extends StatelessWidget {
 }
 
 class _OpinionRow extends StatelessWidget {
-  const _OpinionRow({required this.opinion});
+  const _OpinionRow({
+    required this.opinion,
+    required this.sajawandiPage,
+    required this.onOpenPage,
+  });
 
   final ScholarOpinion opinion;
+  final int? sajawandiPage;
+  final Future<void> Function(int? page) onOpenPage;
 
   @override
   Widget build(BuildContext context) {
@@ -294,20 +383,44 @@ class _OpinionRow extends StatelessWidget {
         ),
         Expanded(
           flex: 4,
-          child: Text(
-            verdict ?? '—',
-            textAlign: TextAlign.center,
-            style: AppText.ui(
-              size: 14,
-              color: verdict == null ? AppColors.sheetMuted : AppColors.sheetText,
-            ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Text(
+                verdict ?? '—',
+                textAlign: TextAlign.center,
+                style: AppText.ui(
+                  size: 14,
+                  color: verdict == null
+                      ? AppColors.sheetMuted
+                      : AppColors.sheetText,
+                ),
+              ),
+              if (opinion.comment != null &&
+                  opinion.comment!.trim().isNotEmpty) ...[
+                const SizedBox(height: 4),
+                Text(
+                  opinion.comment!,
+                  textAlign: TextAlign.center,
+                  style: AppText.ui(
+                    size: 11,
+                    color: AppColors.sheetMuted,
+                    height: 1.35,
+                  ),
+                ),
+              ],
+            ],
           ),
         ),
         Expanded(
           flex: 3,
           child: Align(
             alignment: AlignmentDirectional.centerEnd,
-            child: _PageRef(opinion: opinion),
+            child: _PageRef(
+              opinion: opinion,
+              sajawandiPage: sajawandiPage,
+              onOpenPage: onOpenPage,
+            ),
           ),
         ),
       ],
@@ -316,47 +429,105 @@ class _OpinionRow extends StatelessWidget {
 }
 
 class _PageRef extends StatelessWidget {
-  const _PageRef({required this.opinion});
+  const _PageRef({
+    required this.opinion,
+    required this.sajawandiPage,
+    required this.onOpenPage,
+  });
 
   final ScholarOpinion opinion;
+  final int? sajawandiPage;
+  final Future<void> Function(int? page) onOpenPage;
 
   @override
   Widget build(BuildContext context) {
-    final page = opinion.page;
-    if (page == null) {
+    // Keep displayed book + ref as-is; PNG always opens علل الوقوف textPage.
+    final pageStr = opinion.page;
+    final openPage = sajawandiPage ??
+        (opinion.fromMargin ? null : parsePageNumber(opinion.page));
+
+    if (pageStr == null) {
       return Semantics(
         label: '${opinion.book}، بدون رقم صفحة',
-        child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 2),
-          decoration: BoxDecoration(
-            color: AppColors.dash,
-            borderRadius: BorderRadius.circular(12),
-          ),
-          child: Text(
-            '−',
-            style: AppText.ui(size: 14, color: AppColors.sheetMuted, height: 1.2),
-          ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.end,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(
+              opinion.book,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: AppText.ui(size: 11, color: AppColors.sheetMuted),
+            ),
+            const SizedBox(height: 2),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 2),
+              decoration: BoxDecoration(
+                color: AppColors.dash,
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Text(
+                '−',
+                style: AppText.ui(
+                  size: 14,
+                  color: AppColors.sheetMuted,
+                  height: 1.2,
+                ),
+              ),
+            ),
+          ],
         ),
       );
     }
 
+    // Previous reference look: page digits + book icon; book title above.
+    final refRow = Row(
+      mainAxisSize: MainAxisSize.min,
+      textDirection: TextDirection.ltr,
+      children: [
+        Text(
+          pageStr,
+          style: AppText.ui(size: 14, color: AppColors.sheetText),
+        ),
+        const SizedBox(width: 4),
+        const Icon(
+          Icons.menu_book_outlined,
+          size: 16,
+          color: AppColors.sheetMuted,
+        ),
+      ],
+    );
+
+    final body = Column(
+      crossAxisAlignment: CrossAxisAlignment.end,
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text(
+          opinion.book,
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          textAlign: TextAlign.end,
+          style: AppText.ui(size: 11, color: AppColors.sheetMuted),
+        ),
+        const SizedBox(height: 2),
+        refRow,
+      ],
+    );
+
+    if (openPage == null) {
+      return Semantics(label: '${opinion.book}، صفحة $pageStr', child: body);
+    }
+
     return Semantics(
-      label: '${opinion.book}، صفحة $page',
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        textDirection: TextDirection.ltr,
-        children: [
-          Text(
-            page,
-            style: AppText.ui(size: 14, color: AppColors.sheetText),
-          ),
-          const SizedBox(width: 4),
-          const Icon(
-            Icons.menu_book_outlined,
-            size: 16,
-            color: AppColors.sheetMuted,
-          ),
-        ],
+      button: true,
+      label: 'فتح صورة صفحة علل الوقوف $openPage (${opinion.book} $pageStr)',
+      child: InkWell(
+        onTap: () => onOpenPage(openPage),
+        borderRadius: BorderRadius.circular(8),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 2, vertical: 2),
+          child: body,
+        ),
       ),
     );
   }

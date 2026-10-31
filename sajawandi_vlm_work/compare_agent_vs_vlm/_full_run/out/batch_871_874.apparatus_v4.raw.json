@@ -1,0 +1,438 @@
+{
+  "source": "apparatus_v4_871_874",
+  "page_numbers": [
+    871,
+    872,
+    873,
+    874
+  ],
+  "waqfs": [
+    {
+      "ayah": 54,
+      "target_word": "من نفاد",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 7,
+      "text": "﴿من نفاد - ٥٤ - . هذا - ٥٥ - ط﴾(٧) [ أي : هذا ](٨) [ بيان جزاء المتقين ](٩) . فإذا انقطع « هذا » عن(١٠) خبره(١١) لم يستقلَّ بنَفْسِه ، فحَسُن اتصاله بما قبله ، وفَصْلُه عنه جائز على تقدير : الأمر هذا(١) .",
+      "text_page": 871,
+      "old_text": "﴿من نفاد - ٥٤ - . هذا - ٥٥ - ط﴾(٧) [ أي : هذا ](٨) [ بيان جزاء المتقين ](٩) . فإذا انقطع « هذا » عن(١٠) خبره(١١) لم يستقلَّ بنَفْسِه ، فحَسُن اتصاله بما قبله ، وفَصْلُه عنه",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿من نفاد - ٥٤ - . هذا - ٥٥ - ط﴾(٧) [ أي : هذا ](٨) [ بيان جزاء المتقين ](٩) . فإذا انقطع « هذا » عن(١٠) خبره(١١) لم يستقلَّ بنَفْسِه ، فحَسُن اتصاله بما قبله ، وفَصْلُه عنه",
+          "new_text": "﴿من نفاد - ٥٤ - . هذا - ٥٥ - ط﴾(٧) [ أي : هذا ](٨) [ بيان جزاء المتقين ](٩) . فإذا انقطع « هذا » عن(١٠) خبره(١١) لم يستقلَّ بنَفْسِه ، فحَسُن اتصاله بما قبله ، وفَصْلُه عنه جائز على تقدير : الأمر هذا(١) .",
+          "info": "clause continues on page 872"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 871,
+          "raw_text": "(٧) ما بين المعقوفين من : ب ، د . وفي : أ : [ ﴿ من نفاد - لا ﴾ ﴿ هذا ﴾ ] . وفي : ج : [ ﴿ من نفاد - ج ﴾ ﴿ هذا - ط ﴾ ] . وما أثبتناه هو مراد المؤلف بدلالة لحاق الكلام ، وهو قول ابن الأنباري في الإيضاح : ٢ / ٨٦٣ ، حيث قال : ﴿ ما له من نفاد . هذا ﴾ وقف حسن ، ثم تبتدئ : ﴿ وإن للطاغين ﴾ . ا.هـ.",
+          "continuation": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "هذا",
+                "trigger": "meaning_change",
+                "reason": "الوقف على هذا حسن عند ابن الأنباري على تقدير الأمر هذا أو بيان جزاء المتقين",
+                "scholars": [
+                  "ابن الأنباري"
+                ]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وإن",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بـ وإن للطاغين بعد تمام الكلام في جزاء المتقين",
+                "scholars": [
+                  "ابن الأنباري"
+                ]
+              }
+            ]
+          },
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": "حيث قال : ﴿ ما له من نفاد . هذا ﴾ وقف حسن ، ثم تبتدئ : ﴿ وإن للطاغين ﴾",
+              "book": "الإيضاح",
+              "book_ref": "2/863"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 55,
+      "target_word": "مآب",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 2,
+      "text": "﴿مآب - ٥٥ - لا﴾ لأن « جهنم » بدَلٌ مِنْ : « لشر مآب »(٢) .",
+      "text_page": 872,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 872,
+          "raw_text": "(٢) انظر القطع : (٦١٥) .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 56,
+      "target_word": "جهنم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 3,
+      "text": "﴿جهنم - ٥٦ - ج﴾ لأن الجملة تصلح(٣) مُسْتَأْنَفَةً ، وحالًا(٤) بإعمال معنى التحقيق في « أن » ، أي : حقت جهنم مصلية ، أي(٥) : مدخولة .",
+      "text_page": 872,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 872,
+          "raw_text": "(٣) ب : [ تصلح ] ساقطة .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 56,
+      "target_word": "يصلونها",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 6,
+      "text": "﴿يصلونها - ٥٦ - ج﴾ للابتداء بما وضع للمبالغة في الذم - على(٦) عكس نِعْمَ مع دخول(٧) الفاء فيه .",
+      "text_page": 872,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 872,
+          "raw_text": "(٦) ج : [ في ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 57,
+      "target_word": "هذا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 8,
+      "text": "﴿هذا - ٥٧ - ﴾(٨) لا وقف - بخلاف الأول(٩) - لأن خبره مذكور ، تقديره : هذا حميم(١٠) وغسّاق فليذوقوه(١١).",
+      "text_page": 872,
+      "old_text": "﴿هذا - ٥٧ - ﴾(٨) لا وقف - بخلاف الأول(٩) - لأن خبره مذكور ، تقديره : هذا حميم(١٠) وغسّاق فليذوقوه(١١).",
+      "fixes": [
+        {
+          "type": "missing_symbol",
+          "basis": "page_prose",
+          "old_text": "",
+          "new_text": "لا",
+          "info": "ورد عليها علامة الوقف : [ لا ] في نسخة أ"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 872,
+          "raw_text": "(٨) أ : ورد عليها علامة الوقف : [ لا ] . ولم نثبتها لأنها تكرار لما بعدها .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": {
+            "verdict_label": "لا",
+            "basis": "page_prose",
+            "witness": "نسخة أ",
+            "info": "ورد عليها علامة الوقف : [ لا ] . ولم نثبتها لأنها تكرار لما بعدها ."
+          },
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 57,
+      "target_word": "وغساق",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 1,
+      "text": "] ﴿وغساق - ٥٧ - لا﴾ لأن « وآخر » وصف معطوف على « حميم » أي : عذاب آخر من شكله ](١) .",
+      "text_page": 873,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 873,
+          "raw_text": "(١) ما بين المعقوفين من : ج .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 58,
+      "target_word": "أزواج",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿أزواج - ٥٨ - ط﴾",
+      "text_page": 873,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 59,
+      "target_word": "معكم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿معكم - ٥٩ - ج﴾ لأن « لا مرحبًا » يبتدأ به على معنى : لاجعل(٢) الله له مرحبًا ، أي : موضع رَحْب وسَعَة(٣) ، أو على المصدر ، أي : لا رَحُبَ(٤) الله له مرحبًا ، مع اتصال معنى الكلام .",
+      "text_page": 873,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 873,
+          "raw_text": "(٢) أ ، ج : [ جعل ] بسقوط : لا . وفي : د : [ ما جعل ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 59,
+      "target_word": "بهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿بهم - ٥٩ - ط﴾",
+      "text_page": 873,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 60,
+      "target_word": "بل أنتم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 5,
+      "text": "﴿بل أنتم - ٦٠ - ﴾(٥) وقفة على معنى ، أي : أنتم أهْلٌ أنْ يُقالَ لكم لامرحبًا . . .",
+      "text_page": 873,
+      "old_text": "﴿بل أنتم - ٦٠ - ﴾(٥) وقفة على معنى ، أي : أنتم أهْلٌ أنْ يُقالَ لكم لامرحبًا . . .",
+      "fixes": [
+        {
+          "type": "missing_symbol",
+          "basis": "page_prose",
+          "old_text": "",
+          "new_text": "ج",
+          "info": "ورد عليها علامة الوقف : [ ج ] في نسخة أ"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 873,
+          "raw_text": "(٥) أ : ورد عليها علامة الوقف : [ ج ] . ويظهر أنها من الناسخ بدلالة ما بعدها .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": {
+            "verdict_label": "ج",
+            "basis": "page_prose",
+            "witness": "نسخة أ",
+            "info": "ورد عليها علامة الوقف : [ ج ] . ويظهر أنها من الناسخ بدلالة ما بعدها ."
+          },
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 60,
+      "target_word": "بكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿بكم - ٦٠ - ط﴾",
+      "text_page": 873,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 60,
+      "target_word": "لنا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 6,
+      "text": "﴿لنا - ٦٠ - ج﴾ لما ذكر قبل(٦) .",
+      "text_page": 873,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 873,
+          "raw_text": "(٦) في هذه السورة ، في الآية السادسة والخمسين ، في جواز الوقف على : ﴿ يصلونها ﴾ .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 62,
+      "target_word": "الأشرار",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 7,
+      "text": "﴿الأشرار - ٦٢ - ج﴾ لأن معنى(٧) « اتخذناهم » مستفهم ، والألف(١) مضمرة ، بدلالة جوابها بـ « أم »(٢) مع أن القائل متحد . ومَنْ صرح بألف(٣) الاستفهام(٤) فَوَقْفُه مُطْلَق .",
+      "text_page": 873,
+      "old_text": "﴿الأشرار - ٦٢ - ج﴾ لأن معنى(٧) « اتخذناهم » مستفهم ،",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿الأشرار - ٦٢ - ج﴾ لأن معنى(٧) « اتخذناهم » مستفهم ،",
+          "new_text": "﴿الأشرار - ٦٢ - ج﴾ لأن معنى(٧) « اتخذناهم » مستفهم ، والألف(١) مضمرة ، بدلالة جوابها بـ « أم »(٢) مع أن القائل متحد . ومَنْ صرح بألف(٣) الاستفهام(٤) فَوَقْفُه مُطْلَق .",
+          "info": "clause continues on page 874"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 873,
+          "raw_text": "(٧) المثبت : [ معنى ] من أ .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 65,
+      "target_word": "منذر",
+      "verdict_label": "ق",
+      "verdict": "قيل فيه وقف",
+      "margin_ref": 5,
+      "text": "﴿منذر - ٦٥ - ق﴾(٥) قد(٦) قيل للابتداء بـ « ما » النفي . والوصل أوجب لأنه مقول مأمور به .",
+      "text_page": 874,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 874,
+          "raw_text": "(٥) علامة الوقف من : ب . وفي : أ : علامة الوقف : [ ز ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 65,
+      "target_word": "القهار",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 7,
+      "text": "﴿القهار - ٦٥ - ج﴾ لأن اسم الرب(٧) تعالى يصلح بدلًا وخَبَرَ مَحْذُوفٍ(٨) ، أي : هو رب .",
+      "text_page": 874,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 874,
+          "raw_text": "(٧) ب : [ ﴿ رب ﴾ ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 67,
+      "target_word": "عظيم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 9,
+      "text": "[ ﴿عظيم - ٦٧ - لا﴾(٩) .",
+      "text_page": 874,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 9,
+          "text_page": 874,
+          "raw_text": "(٩) وضّح ابن الأنباري في البيان : ٢ / ٣١٩ ، عدم الوقف هنا ، بقوله : ويروى عن عاصم أنه كان يقف على ﴿ نبأ ﴾ ، ويبتدىء : ﴿ عظيم أنتم عنه معرضون ﴾ فيكون ﴿ عظيم ﴾ خبر مبتدأ محذوف ، وتقديره : هو عظيم ، ويكون : ﴿ أنتم ﴾ مبتدأ ، و : ﴿ معرضون ﴾ خبره ، و : ﴿ عنه ﴾ متعلّق بـ : ﴿ مُعْرِضِينَ ﴾ والجملة وصف لـ : ﴿ عظيم ﴾ ، لمكان العائد إليه وهو الهاء في ﴿ عنه ﴾ ، والمبتدأ مع خبره في موضع رفع صفة لـ : ﴿ نبأ ﴾ . ا . هـ .",
+          "continuation": {
+            "status": "read",
+            "page": 875
+          },
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "نبأ",
+                "trigger": "meaning_change",
+                "reason": "الوقف على نبأ على قراءة الابتداء بـ عظيم ليكون خبر مبتدأ محذوف",
+                "scholars": [
+                  "ابن الأنباري"
+                ]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "عظيم",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بـ عظيم أنتم عنه معرضون على تقدير هو عظيم",
+                "scholars": [
+                  "ابن الأنباري"
+                ]
+              }
+            ]
+          },
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "لا يوقف",
+              "comment": "وضّح عدم الوقف هنا بقوله ويروى عن عاصم أنه كان يقف على نبأ ويبتدئ عظيم أنتم عنه معرضون",
+              "book": "البيان",
+              "book_ref": "2/319"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

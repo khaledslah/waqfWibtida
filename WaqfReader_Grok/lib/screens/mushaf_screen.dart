@@ -6,6 +6,7 @@ import '../theme/app_theme.dart';
 import '../widgets/ornament_divider.dart';
 import '../widgets/stop_badge.dart';
 import '../widgets/waqf_bottom_sheet.dart';
+import '../widgets/waqf_filter_bar.dart';
 
 class MushafScreen extends StatelessWidget {
   const MushafScreen({super.key, required this.controller});
@@ -16,10 +17,8 @@ class MushafScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const Padding(
-          padding: EdgeInsets.only(top: 8),
-          child: OrnamentDivider(),
-        ),
+        WaqfFilterBar(controller: controller),
+        const OrnamentDivider(),
         Expanded(
           child: yusufAyahs.isEmpty
               ? const _EmptyReading()
@@ -91,7 +90,10 @@ class _WordToken extends StatelessWidget {
   Widget build(BuildContext context) {
     final stopId = word.stopId;
     final stop = stopId == null ? null : controller.stopById(stopId);
-    final selected = stop != null && controller.selectedStopId == stop.id;
+    final visibleStop =
+        (stop != null && controller.isStopVisible(stop)) ? stop : null;
+    final selected =
+        visibleStop != null && controller.selectedStopId == visibleStop.id;
     final text = Text(
       word.text,
       textDirection: TextDirection.rtl,
@@ -116,15 +118,15 @@ class _WordToken extends StatelessWidget {
             child: text,
           ),
         ),
-        if (stop != null)
+        if (visibleStop != null)
           StopBadge(
-            key: ValueKey<String>('stop-${stop.id}'),
-            symbol: stop.symbol,
+            key: ValueKey<String>('stop-${visibleStop.id}'),
+            symbol: visibleStop.symbol,
             selected: selected,
-            semanticsLabel: 'وقف ${stop.label} عند ${stop.word}',
+            semanticsLabel: 'وقف ${visibleStop.label} عند ${visibleStop.word}',
             onTap: () {
-              controller.select(stop.id);
-              showWaqfSheet(context, controller, stop.id);
+              controller.select(visibleStop.id);
+              showWaqfSheet(context, controller, visibleStop.id);
             },
           ),
       ],

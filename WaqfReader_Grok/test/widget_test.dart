@@ -23,6 +23,13 @@ void main() {
     expect(find.text('مصحف'), findsOneWidget);
     expect(find.text('فهرس'), findsOneWidget);
     expect(find.text('مراجعة'), findsOneWidget);
+    expect(find.text('إخفاء رؤوس الآي'), findsOneWidget);
+    expect(find.text('إخفاء وقف المصحف'), findsOneWidget);
+    // Default filters hide Uthmani middle stop سجدا.
+    expect(
+      find.byKey(const ValueKey<String>('stop-yusuf-100-sujjadan')),
+      findsNothing,
+    );
 
     await tester.ensureVisible(
       find.byKey(const ValueKey<String>('stop-yusuf-100-haqqa')),

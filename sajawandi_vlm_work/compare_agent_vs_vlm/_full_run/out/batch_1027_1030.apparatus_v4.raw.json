@@ -1,0 +1,569 @@
+{
+  "page_numbers": [
+    1027,
+    1028,
+    1029,
+    1030
+  ],
+  "waqfs": [
+    {
+      "ayah": 2,
+      "target_word": "مولاكم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿مولاكم - 2 - ج﴾ للابتداء(1) بذكر ما لم يزل (2) من الوصفين (3) مع اتفاق الجملتين (4) .",
+      "text_page": 1027,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 1027,
+          "raw_text": "(١) ج : [ لابتداء ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 3,
+      "target_word": "حديثا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿حديثا - 3 - ج﴾ .",
+      "text_page": 1027,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 3,
+      "target_word": "عن بعض",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 5,
+      "text": "﴿عن بعض - 3 - ج﴾(5) .",
+      "text_page": 1027,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 1027,
+          "raw_text": "(٥) ب : علامة الوقف : [ ط ، ج ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 3,
+      "target_word": "هذا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿هذا - 3 - ط﴾",
+      "text_page": 1027,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 4,
+      "target_word": "قلوبكما",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 6,
+      "text": "﴿قلوبكما - 4 - ج﴾ لعطف جملتي(6) الشرط .",
+      "text_page": 1027,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 1027,
+          "raw_text": "(٦) أ : [ الجملتين ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 4,
+      "target_word": "المؤمنين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 7,
+      "text": "﴿المؤمنين - 4 - ط﴾(7) لتناهي الشرط إلى الإخبار .",
+      "text_page": 1027,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 1027,
+          "raw_text": "(٧) ب ، د : علامة الوقف : [ ج ] .\nوالوقف هنا حسن عند ابن الأنباري ، وكاف عند الداني والأنصاري ، وذكر النحاس : أنه تام عند الفراء .\nانظر الإيضاح : ٢ / ٩٤١ ، والقطع : (٧٣٣) ، والمكتفى : (٥٧٦) ، والمقصد : (۳۹۷) .\nوقال الأشموني في المنار : (۳۹۷) : والأكثر على أن الوقف على : ﴿ وصالح المؤمنين ﴾ ، ثم يبتدىء ﴿ والملائكة . . . ﴾ اهـ .",
+          "continuation": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "المؤمنين",
+                "trigger": "meaning_change",
+                "reason": "لتناهي الشرط إلى الإخبار وتمام المعنى قبل استئناف والملائكة",
+                "scholars": [
+                  "ابن الأنباري",
+                  "الداني",
+                  "الأنصاري",
+                  "الفراء",
+                  "النحاس",
+                  "الأشموني"
+                ]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "والملائكة",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بها على الاستئناف بعد الوقف على وصالح المؤمنين",
+                "scholars": [
+                  "الأشموني"
+                ]
+              }
+            ]
+          },
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "2/941"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "576"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "397"
+            },
+            {
+              "scholar": "الفراء",
+              "verdict": "تام",
+              "comment": "ذكره النحاس",
+              "book": "القطع",
+              "book_ref": "733"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "تام",
+              "comment": "نقله عن الفراء",
+              "book": "القطع",
+              "book_ref": "733"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "وقف",
+              "comment": "والأكثر على أن الوقف على وصالح المؤمنين ثم يبتدىء والملائكة",
+              "book": "المنار",
+              "book_ref": "397"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 7,
+      "target_word": "لا تعتذروا اليوم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 8,
+      "text": "[ ﴿ لا تعتذروا اليوم - 7 - ط ﴾ ](8) .",
+      "text_page": 1027,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 1027,
+          "raw_text": "(٨) أ : ما بين المعقوفين ورد هكذا : [ ولا تعتذروا بيان ﴿ اليوم - ط ﴾ ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 8,
+      "target_word": "نصوحا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿نصوحا - 8 - ط﴾(1) .",
+      "text_page": 1027,
+      "old_text": "﴿ نصوحا - 8 -\nط ﴾(1) .",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ نصوحا - 8 -\nط ﴾(1) .",
+          "new_text": "﴿نصوحا - 8 - ط﴾(1) .",
+          "info": "waqf bracket split across page 1027 and page 1028"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 1028,
+          "raw_text": "(١) د : علامة الوقف : [ ج ] . وما أثبتناه من بقية النسخ موافق لما ذكره المؤلف في كتابه الصغير - المسمى : وقوف القرآن - لوحة : (١٤٩) ظهر . وهذا على استئناف : ﴿ عسى ربكم . . . ﴾ والله أعلم .\nوقد ذكر الأنصاري في المقصد : (۳۹۷) أن الوقف هنا كاف . أما الأشموني في المنار : (۳۹۷) فقال : ﴿ نصوحًا ﴾ كاف على استئناف ما بعده ، وقيل : لا يجوز ، لأن قوله : ﴿ عسى ﴾ في موضع الجواب لـ : ﴿ توبوا ﴾ . اهـ .\nأما ابن الأنباري والنحاس والداني فلم يذكروا هنا وقفًا .\nانظر الإيضاح : ۲ / ٩٤١ ، والقطع : (۷۳۳) ، والمكتفى : (٥٧٧) .",
+          "continuation": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "نصوحا",
+                "trigger": "scholars_disagree",
+                "reason": "اختلفوا في الوقف عليه بين الكفاية على الاستئناف والمنع لكون عسى جوابا للأمر",
+                "scholars": [
+                  "الأنصاري",
+                  "الأشموني"
+                ]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "عسى",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بها على الاستئناف بخلاف جعلها في موضع جواب الأمر",
+                "scholars": [
+                  "الأنصاري",
+                  "الأشموني"
+                ]
+              }
+            ]
+          },
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "397"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "كاف",
+              "comment": "على استئناف ما بعده",
+              "book": "المنار",
+              "book_ref": "397"
+            },
+            {
+              "scholar": "unknown",
+              "verdict": "لا يجوز",
+              "comment": "لأن قوله عسى في موضع الجواب لتوبوا",
+              "book": null,
+              "book_ref": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 8,
+      "target_word": "الأنهار",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 2,
+      "text": "﴿الأنهار - 8 - لا﴾ لأن قوله(2) : ﴿ يوم ﴾(3) قد(4) يتعلق بقوله : ﴿ ويدخلكم ﴾ .",
+      "text_page": 1028,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 1028,
+          "raw_text": "(٢) ج : [ قوله ] غير مثبت .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 8,
+      "target_word": "معه",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 5,
+      "text": "﴿معه - 8 - ج﴾(5) لأن ﴿ نورهم ﴾ مبتدأ ، و : ﴿ يقولون ﴾ حال ، أي : [ وهم يقولون ](6) ، وقد يتعلق(7) بقوله : ﴿ يسعى ﴾ فلا يوقف على : ﴿ معه - 8 - ﴾ .",
+      "text_page": 1028,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 1028,
+          "raw_text": "(٥) علامة الوقف ساقطة من : د .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 8,
+      "target_word": "واغفر لنا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 8,
+      "text": "﴿واغفر لنا - 8 - ج﴾ للابتداء بإنّ ، مع احتمال اللام أو الفاء(8) .",
+      "text_page": 1028,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 1028,
+          "raw_text": "(٨) د : [ والفاء ] . بسقوط الهمزة من أوله .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 9,
+      "target_word": "عليهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿عليهم - 9 - ط﴾",
+      "text_page": 1029,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 9,
+      "target_word": "جهنم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿جهنم - 9 - ط﴾",
+      "text_page": 1029,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 10,
+      "target_word": "امرأة لوط",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿امرأة لوط - 10 - ط﴾ لأن الجملة لا تكون صفة للمعرفة ، بل التقدير : وذلك أنهما كانتا(1)",
+      "text_page": 1029,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 1029,
+          "raw_text": "(١) وضّح الأشموني في المنار : (۳۹۸) الوقف هنا حيث قال : ﴿ وامرأة لوط ﴾ حسن ، لأن الجملة لا تكون صفة للمعرفة ، وليس بوقف ان جعلت الجملة مفسرة لضرب المثل . اهـ .\nوقد ذكر الأنصاري في المقصد : (۳۹۸) أن الوقف هنا كاف .\nأما ابن الأنباري والنحاس والداني فلم يذكروا هنا وقفا .\nانظر الإيضاح : ۲ / ٩٤١ ، والقطع : (۷۳۳) ، والمكتفى : (٥٧٨) .",
+          "continuation": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "امرأة لوط",
+                "trigger": "scholars_disagree",
+                "reason": "اختلاف توجيه جملة كانتا بين الاستئناف فيحسن الوقف وبين التفسير لضرب المثل فلا يوقف",
+                "scholars": [
+                  "الأشموني",
+                  "الأنصاري"
+                ]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "كانتا",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بها على تقدير مستأنف (وذلك أنهما كانتا) بخلاف جعلها مفسرة لضرب المثل",
+                "scholars": [
+                  "الأشموني",
+                  "الأنصاري"
+                ]
+              }
+            ]
+          },
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": "لأن الجملة لا تكون صفة للمعرفة، وليس بوقف إن جعلت الجملة مفسرة لضرب المثل",
+              "book": "المنار",
+              "book_ref": "398"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "398"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 11,
+      "target_word": "فرعون",
+      "verdict_label": "م",
+      "verdict": "لازم",
+      "margin_ref": null,
+      "text": "﴿فرعون - 11 - م﴾ لأن ﴿ إذ ﴾ ليس بظرف لضرب المثل ، بل التقدير : واذكر إذ",
+      "text_page": 1029,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 11,
+      "target_word": "الظالمين",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 2,
+      "text": "﴿الظالمين - 11 - لا﴾ لأن ﴿ ومريم ﴾ عطف على : ﴿ امرأة فرعون ﴾(2) .",
+      "text_page": 1029,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 1029,
+          "raw_text": "(٢) أ : [ ﴿ ومريم ﴾ ] غير مثبتة .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 1,
+      "target_word": "بيده الملك",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿بيده الملك - 1 - ز﴾ لأن الجملتين وإن اتفقتا فقد تقدم في الأولى الجار الذي حقه التأخير ، فكان نوع اختلاف .",
+      "text_page": 1030,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 1,
+      "target_word": "قدير",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿قدير - 1 - لا﴾ لأن ﴿ الذي ﴾ بدله .",
+      "text_page": 1030,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 2,
+      "target_word": "عملا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿عملا - 2 - ط﴾",
+      "text_page": 1030,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 2,
+      "target_word": "الغفور",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿الغفور - 2 - لا﴾ ﴿ الذي ﴾ صفته ، أو بدله",
+      "text_page": 1030,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 3,
+      "target_word": "طباقا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿طباقا - 3 - ط﴾",
+      "text_page": 1030,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 3,
+      "target_word": "تفاوت",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿تفاوت - 3 - ط﴾",
+      "text_page": 1030,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 3,
+      "target_word": "فارجع البصر",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 2,
+      "text": "﴿فارجع البصر - 3 - لا ﴾ وإن كان بعدها(2) استفهام ؛ لأن المعنى : فانظر هل ترى . . . .",
+      "text_page": 1030,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 1030,
+          "raw_text": "(٢) ج : [ ما بعدها ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    }
+  ]
+}

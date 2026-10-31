@@ -1,0 +1,456 @@
+{
+  "page_numbers": [
+    1055,
+    1056,
+    1057,
+    1058
+  ],
+  "waqfs": [
+    {
+      "ayah": 9,
+      "target_word": "للسمع",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ للسمع - 9 - ط ﴾",
+      "text_page": 1055,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 11,
+      "target_word": "دون ذلك",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ دون ذلك - 11 - ط ﴾",
+      "text_page": 1055,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 13,
+      "target_word": "آمنا به",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ آمنا به - 13 - ط ﴾",
+      "text_page": 1055,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 14,
+      "target_word": "القاسطون",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ القاسطون - 14 - ط ﴾ للابتداء بالشرط .",
+      "text_page": 1055,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 15,
+      "target_word": "حطبًا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿ حطبًا - 15 - لا ﴾ لتعلق ﴿ وأن ﴾",
+      "text_page": 1056,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 17,
+      "target_word": "لنفتنهم فيه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ لنفتنهم فيه - 17 - ط ﴾",
+      "text_page": 1056,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 17,
+      "target_word": "صعدًا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 1,
+      "text": "﴿ صعدًا - 17 - لا ﴾ لعطف ﴿ وأن المساجد ﴾ ورأس الآية (1) :",
+      "text_page": 1056,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 1056,
+          "raw_text": "(١) ب : [ الآية ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 18,
+      "target_word": "أحدًا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 2,
+      "text": "[ ﴿ أحدًا - 18 - لا ﴾ لمن قرأ ﴿ وأنه ﴾ بالفتح (2) .",
+      "text_page": 1056,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 1056,
+          "raw_text": "(۲) قرأ بها ابن كثير وأبو عمرو وابن عامر وحمزة والكسائي وحفص عن عاصم . انظر التبصرة : ( ٧١١ ، ٧١٢ ) ، والتيسير : ( ٢١٥ ) . وقد وضح مكي في الكشف : ( ٢ / ٣٤١ ) علة عدم الوقف هنا لمن قرأ بالفتح ، وعلة الوقف لمن قرأ بالكسر ، بقوله : وحجة من فتح ﴿ وأنه لما قام ﴾ أنه عطفه على ما قبله من قوله : ﴿ قل أوحي إلي أنه ﴾ ، تقديره : وأوحي إلي أنه لما قام . ومن كسره استأنفه . وقد ذكر المؤلف قبل : أن من فتحها ردها إلى قوله : ﴿ قل أوحي إلي أنه ﴾ ، ومن كسرها ردها إلى : ﴿ فقالوا انا . . ﴾ ، فعلى ما ذكره المؤلف لا وقف على ﴿ أحدًا ﴾ سواء على قراءة الفتح أو الكسر للعطف . والله أعلم .",
+          "continuation": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "أحدًا",
+                "trigger": "scholars_disagree",
+                "reason": "يجوز الوقف على أحدًا لمن قرأ بكسر الهمزة في (وإنه) على الاستئناف",
+                "scholars": [
+                  "مكي"
+                ]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وأنه",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بـ (وإنه) بالكسر على الاستئناف خلافًا لقراءة الفتح بالعطف",
+                "scholars": [
+                  "مكي"
+                ]
+              }
+            ]
+          },
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "مكي",
+              "verdict": "لا يوقف",
+              "comment": "علة عدم الوقف لمن قرأ بالفتح، وعلة الوقف لمن قرأ بالكسر",
+              "book": "الكشف",
+              "book_ref": "2/341"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 19,
+      "target_word": "لبدًا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿ لبدًا - 19 - ط ﴾ (3) ]",
+      "text_page": 1056,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 1056,
+          "raw_text": "(۳) ما بين المعقوفين من : ب ، د . وفي : أ ، ج : [ ﴿ لبدًا - ط ﴾ ﴿ أحدًا - لا ﴾ لمن قرأ ﴿ وأنه ﴾ بالفتح ] . وما أثبتناه موافقة لترتيب الآيات .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 22,
+      "target_word": "ملتحَدًا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿ ملتحَدًا - 22 - لا ﴾ للاستثناء .",
+      "text_page": 1056,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 23,
+      "target_word": "ورسالاته",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ ورسالاته - 23 - ط ﴾",
+      "text_page": 1056,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 23,
+      "target_word": "فيها أبدًا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ فيها أبدًا - 23 - ط ﴾",
+      "text_page": 1056,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 26,
+      "target_word": "أحدًا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 4,
+      "text": "[ ﴿ أحدًا - 26 - لا ﴾ ] (4)",
+      "text_page": 1056,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 1056,
+          "raw_text": "(٤) ما بين المعقوفين من : ب .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 27,
+      "target_word": "رصدًا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿ رصدًا - 27 - لا ﴾ لتعلق اللام .",
+      "text_page": 1056,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 8,
+      "target_word": "تبتيلًا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 2,
+      "text": "﴿ تبتيلًا - 8 - لا ﴾ لمن قرأ ﴿ رب ﴾ بالخفض (2) .",
+      "text_page": 1057,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 1057,
+          "raw_text": "(۲) قرأ بها ابن عامر وحمزة والكسائي وأبو بكر عن عاصم . وقرأ بالرفع ابن كثير ونافع وأبو عمرو وحفص عن عاصم ، وذلك على الابتداء ، وجملة : ﴿ لا إله إلا هو ﴾ الخبر ، أو على أنه خبر مبتدأ محذوف ، أي : هو رب . . . انظر السبعة : ( ٦٥٨ ) ، والتبصرة : ( ٧١٣ ) ، والكشف : ٢ / ٣٤٥ ، والتيسير : ( ٢١٦ ) .",
+          "continuation": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "تبتيلًا",
+                "trigger": "meaning_change",
+                "reason": "جواز الوقف على (تبتيلا) لمن قرأ (ربُّ المشرق) بالرفع على الابتداء",
+                "scholars": []
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "رب",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بـ (ربُّ) بالرفع على أنه مبتدأ أو خبر مبتدأ محذوف",
+                "scholars": []
+              }
+            ]
+          },
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 13,
+      "target_word": "أليمًا",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 3,
+      "text": "﴿ أليمًا - 13 - ز ﴾ (3) قد قيل إنه يوصل على جعل ﴿ يوم ﴾ ظرفًا لقوله : ﴿ إن لدينا أنكالًا ... ﴾ ، والوقف أجوز لأن كون الأنكال وغيرها لا يختص بيوم الرجفة (1) بنفخة إسرافيل بل عامله محذوف ، أي : اذكر (2) يوم الرجفة (3) أو : يوم يكون ذلك يرون ما يرون (4) .",
+      "text_page": 1057,
+      "old_text": "﴿ أليمًا - 13 - ز ﴾ (3) قد قيل إنه يوصل على جعل ﴿ يوم ﴾ ظرفًا",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ أليمًا - 13 - ز ﴾ (3) قد قيل إنه يوصل على جعل ﴿ يوم ﴾ ظرفًا",
+          "new_text": "﴿ أليمًا - 13 - ز ﴾ (3) قد قيل إنه يوصل على جعل ﴿ يوم ﴾ ظرفًا لقوله : ﴿ إن لدينا أنكالًا ... ﴾ ، والوقف أجوز لأن كون الأنكال وغيرها لا يختص بيوم الرجفة (1) بنفخة إسرافيل بل عامله محذوف ، أي : اذكر (2) يوم الرجفة (3) أو : يوم يكون ذلك يرون ما يرون (4) .",
+          "info": "Clause continues from bottom of page 1057 onto top of page 1058"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 1057,
+          "raw_text": "(۳) علامة الوقف من : أ . وفي ب : علامة الوقف : [ ق ] . وما أثبتناه بدلالة ما بعده .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 15,
+      "target_word": "رسولًا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ رسولًا - 15 - ط ﴾",
+      "text_page": 1058,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 17,
+      "target_word": "شيئًا",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 5,
+      "text": "﴿ شيئًا - 17 - ز ﴾ (5) قد قيل ، والأولى الوصل ، لأن ما بعده (6) صفة ﴿ يومًا ﴾ (7) أيضًا ، والضمير (8) [ في ﴿ به ﴾ ] (9) عائد إليه (10) .",
+      "text_page": 1058,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 1058,
+          "raw_text": "(٥) علامة الوقف من : أ . وفي : ب : علامة الوقف : [ ق ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 18,
+      "target_word": "منفطر به",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ منفطر به - 18 - ط ﴾",
+      "text_page": 1058,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 19,
+      "target_word": "تذكرة",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 11,
+      "text": "﴿ تذكرة - 19 - ج ﴾ للابتداء بالشرط مع دخول الفاء فيه (11) .",
+      "text_page": 1058,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 11,
+          "text_page": 1058,
+          "raw_text": "(۱۱) أ : [ فيه ] ساقطة .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 20,
+      "target_word": "معك",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ معك - 20 - ط ﴾",
+      "text_page": 1058,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 20,
+      "target_word": "والنهار",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ والنهار - 20 - ط ﴾",
+      "text_page": 1058,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 20,
+      "target_word": "من القرآن",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ من القرآن - 20 - ط ﴾",
+      "text_page": 1058,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 20,
+      "target_word": "مرضى",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿ مرضى - 20 - لا ﴾ للعطف",
+      "text_page": 1058,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 20,
+      "target_word": "من فضل الله",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 12,
+      "text": "﴿ من فضل الله - 20 - لا ﴾ (12) كذلك .",
+      "text_page": 1058,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 12,
+          "text_page": 1058,
+          "raw_text": "(۱۲) علامة الوقف ساقطة من : ب ، د .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    }
+  ]
+}

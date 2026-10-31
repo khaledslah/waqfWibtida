@@ -1,0 +1,556 @@
+{
+  "page_numbers": [
+    899,
+    900,
+    901,
+    902
+  ],
+  "waqfs": [
+    {
+      "ayah": 10,
+      "target_word": "أيام",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿ أيام - 10 - ط ﴾ لمن نَصَبَ « سواء » على المصدر ، أي : استوت سواء للسائلين وغير السائلين ، أو رَفَعَه على خبر مبتدأ محذوف (1) ، أي : هي (2) سواء ، ومَنْ خَفَضَ جعله (3) صفة « أيام » ، أي : أيام مستوية ، فلم يقف (4)",
+      "text_page": 899,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 899,
+          "raw_text": "(۱) المثبت : [ محذوف ] من : د .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 11,
+      "target_word": "كرها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ كرها - 11 - ط ﴾",
+      "text_page": 899,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 12,
+      "target_word": "أمرها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ أمرها - 12 - ط ﴾ للعدول .",
+      "text_page": 899,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 12,
+      "target_word": "بمصابيح وحفظا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿ بمصابيح (5) وحفظا - 12 - ط ﴾",
+      "text_page": 899,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 899,
+          "raw_text": "(٥) ج ، د : ورد عليها علامة الوقف : [ ط ] . ويظهر أنه سهو من الناسخ ، لأن الموطن هنا ليس مظنة للوقف التام أو المطلق ، وقد ذكر المؤلف في كتابه الصغير - المسمى وقوف القرآن - ، لوحة : (۱۲۳) وجه ، أن الوصل هنا أولى ، وأن الوقف على : ﴿ وحفظًا ﴾ وقف مطلق . ولم يذكر ابن الأنباري والنحاس والداني هنا وقفًا . انظر الإيضاح : 2 / 876 ، 877 ، والقطع : (633) ، والمكتفى : (497) . أما الأنصاري في المقصد : (342) فذكر أن الوقف هنا كافٍ ووافقه الأشموني في المنار : (342) انْ نصب ﴿ وحفظًا ﴾ بفعل محذوف ، أي : وحفظناها حفظًا ، ثم قال : [ ويلزم عليه الابتداء بكلمة والوقف عليها ، وقيل الوقف على : ﴿ حفظًا ﴾ = أي : جعلنا النجوم زينة وحفظًا ] . اهـ .",
+          "continuation": {
+            "status": "read",
+            "page": 900
+          },
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "وحفظا",
+                "trigger": "scholars_disagree",
+                "reason": "استحسان الأنصاري والأشموني للوقف على «وحفظا» والحكم بأنه كاف بتقدير فعل محذوف (وحفظناها حفظا)، في مقابل من لم يذكره وقفا أو رأى الوصل أولى",
+                "scholars": [
+                  "الأنصاري",
+                  "الأشموني"
+                ]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وحفظا",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بكلمة «وحفظا» على إضمار فعل محذوف تقديره (وحفظناها حفظا) كما أشار إليه الأشموني",
+                "scholars": [
+                  "الأشموني"
+                ]
+              }
+            ]
+          },
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "لا يوقف",
+              "comment": "لم يذكر هنا وقفا",
+              "book": "الإيضاح",
+              "book_ref": "2/876 ، 877"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "لا يوقف",
+              "comment": "لم يذكر هنا وقفا",
+              "book": "القطع",
+              "book_ref": "633"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "لا يوقف",
+              "comment": "لم يذكر هنا وقفا",
+              "book": "المكتفى",
+              "book_ref": "497"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "342"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "كاف",
+              "comment": "إن نصب ﴿وحفظا﴾ بفعل محذوف",
+              "book": "المنار",
+              "book_ref": "342"
+            },
+            {
+              "scholar": "unknown",
+              "verdict": "وقف",
+              "comment": "وقيل الوقف على : ﴿ حفظًا ﴾ أي : جعلنا النجوم زينة وحفظًا",
+              "book": null,
+              "book_ref": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 13,
+      "target_word": "وثمود",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿ وثمود - 13 - ط ﴾ لأن « إذ » (1) قد يتعلق بمحذوف ، أي : اذكر (2) إذ (3) ، أو بمعنى الفعل في الصاعقة (4) ، [ تقديره : أنذرتكم صاعقة تصعقون بها ، كما صعق عاد (5) إذ جاءتهم الرسل ، فيكون « إذ » ظرفًا لمعنى (6) الفعل في الصاعقة ] (7) ، ولايصح (8) تعليقه بـ : « أنذرتكم » (9) .",
+      "text_page": 899,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 900,
+          "raw_text": "(۱) أ : [ ﴿ إذ ﴾ ] غير مثبتة .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 14,
+      "target_word": "إلا الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 10,
+      "text": "﴿ إلا الله - 14 - ط ﴾ [ ويحتمل تعلق « إذ » بقوله : « قالوا لو شاء ربنا » ولا يوقف على : « إلا الله » ] (10) .",
+      "text_page": 900,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 10,
+          "text_page": 900,
+          "raw_text": "(۱۰) ما بين المعقوفين من : أ .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 15,
+      "target_word": "منا قوة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ منا قوة - 15 - ط ﴾",
+      "text_page": 900,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 15,
+      "target_word": "منهم قوة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 11,
+      "text": "[ ﴿ منهم قوة - 15 - ط ﴾ للفصل بين الاستخبار والإخبار ] (11) .",
+      "text_page": 900,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 11,
+          "text_page": 900,
+          "raw_text": "(۱۱) ب : ما بين المعقوفين ورد بلفظ : [ للفصل بين الاستخبار والإخبار ﴿ قوة - = ط ﴾ ] وهو سهو من الناسخ حيث قدّم عِلّة الوقف على الوقف .",
+          "continuation": {
+            "status": "read",
+            "page": 901
+          },
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 16,
+      "target_word": "الحياة الدنيا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ الحياة الدنيا - 16 - ط ﴾",
+      "text_page": 901,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 17,
+      "target_word": "يكسبون",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿ يكسبون - 17 - ج ﴾ للآية مع العطف",
+      "text_page": 901,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 20,
+      "target_word": "يعلمون",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "[ ﴿ يعلمون - 20 - ج ﴾ كذلك ] (1) .",
+      "text_page": 901,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 901,
+          "raw_text": "(۱) ما بين المعقوفين من : أ .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 21,
+      "target_word": "شهدتم علينا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 2,
+      "text": "﴿ شهدتم علينا - 21 - ط ﴾ (2)",
+      "text_page": 901,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 901,
+          "raw_text": "(۲) علامة الوقف ساقطة من : د .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 24,
+      "target_word": "مثوى لهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿ مثوى لهم - 24 - ج ﴾ لعطف جملتي الشرط .",
+      "text_page": 901,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 25,
+      "target_word": "والإنس",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 3,
+      "text": "﴿ والإنس - 25 - ج ﴾ للابتداء بـ « إن » ، مع احتمال أنها (3) جواب معنى القسم في : « وحق عليهم » (4) .",
+      "text_page": 901,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 901,
+          "raw_text": "(۳) ج : ورد قبلها عبارة : [ كلمة ان ] وهي زيادة من الناسخ .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 28,
+      "target_word": "أعداء الله النار",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 5,
+      "text": "﴿ أعداء الله النار - 28 - ج ﴾ لأن ما بعده يصلح مستأنَفًا (5) ، وحالًا عامله معنى الفعل في الجزاء ، تقديره : يُجْزَى (6) أعداءُ اللهِ النارَ ، كائنا لهم فيها دار الخلد (7) .",
+      "text_page": 901,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 901,
+          "raw_text": "(٥) ج : [ استئنافًا ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 28,
+      "target_word": "الخلد",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ الخلد - 28 - ط ﴾",
+      "text_page": 902,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 31,
+      "target_word": "وفي الآخرة",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿ وفي الآخرة - 31 - ج ﴾ لانقطاع النظم بتقديم الجار ، مع اتصال المعنى واتحاد المقول .",
+      "text_page": 902,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 31,
+      "target_word": "تدعون",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿ تدعون - 31 - ط ﴾ لأن التقدير : أصبتم نزلًا ، أو وجدتم (1) نزلًا .",
+      "text_page": 902,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 902,
+          "raw_text": "(۱) ب : [ ووجدتم ] بسقوط الهمزة .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 34,
+      "target_word": "ولا السيئة",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿ ولا السيئة - 34 - ج ﴾",
+      "text_page": 902,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 35,
+      "target_word": "صبروا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 2,
+      "text": "﴿ صبروا - 35 - ط ﴾ لاتفاق الجملتين ، مع تكرارهما (2) للتوكيد فكان (3) الوقف أليق ؛ للتدبر في حقيقة كلتيهما (4) .",
+      "text_page": 902,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 902,
+          "raw_text": "(۲) ج : [ تكرارها ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 36,
+      "target_word": "بالله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ بالله - 36 - ط ﴾",
+      "text_page": 902,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 37,
+      "target_word": "والشمس والقمر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ والشمس والقمر - 37 - ط ﴾",
+      "text_page": 902,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 39,
+      "target_word": "وربت",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ وربت - 39 - ط ﴾",
+      "text_page": 902,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 39,
+      "target_word": "الموتى",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ الموتى - 39 - ط ﴾",
+      "text_page": 902,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 40,
+      "target_word": "علينا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ علينا - 40 - ط ﴾",
+      "text_page": 902,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 40,
+      "target_word": "يوم القيامة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ يوم القيامة - 40 - ط ﴾",
+      "text_page": 902,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 40,
+      "target_word": "شئتم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 5,
+      "text": "﴿ شئتم - 40 - لا ﴾ لأن ما بعده [ دليل أنه ] (5) أمر تهديد ، ولو فصل عن (6) الدليل صار مُطْلَقًا ، ومُطْلَق الأمر للوجوب ، فأقَلُّ حُكْمِه أنْ يُوجب (7) الإباحة .",
+      "text_page": 902,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 902,
+          "raw_text": "(٥) أ : [ دليلًا ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 41,
+      "target_word": "لما جاءهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 8,
+      "text": "﴿ لما جاءهم - 41 - ج ﴾ لأن خبر [ « إن » محذوف أي ] (8) : لايخفون علينا ، أو يلقون (1) في النار ، بدلالة ما قبله (2) ، ومحل الحذف قبل قوله : « وإنه » ، والواو مستأنف (3) ، أو بعد قوله : « من خلفه » ، والواو في : « وإنه » للحال .",
+      "text_page": 902,
+      "old_text": "﴿ لما جاءهم - 41 - ج ﴾ لأن خبر [ « إن » محذوف أي ] (8) :",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿ لما جاءهم - 41 - ج ﴾ لأن خبر [ « إن » محذوف أي ] (8) :",
+          "new_text": "﴿ لما جاءهم - 41 - ج ﴾ لأن خبر [ « إن » محذوف أي ] (8) : لايخفون علينا ، أو يلقون (1) في النار ، بدلالة ما قبله (2) ، ومحل الحذف قبل قوله : « وإنه » ، والواو مستأنف (3) ، أو بعد قوله : « من خلفه » ، والواو في : « وإنه » للحال .",
+          "info": "انقطاع نص التعليل بين الصفحتين 902 و903 وتكميلته من مطلع الصفحة 903"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 902,
+          "raw_text": "(۸) أ : ما بين المعقوفين مكرر .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    }
+  ]
+}

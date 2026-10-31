@@ -1,0 +1,444 @@
+{
+  "page_numbers": [
+    1103,
+    1104,
+    1105,
+    1106
+  ],
+  "waqfs": [
+    {
+      "ayah": 18,
+      "target_word": "يوم الدين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 2,
+      "text": "﴿ يوم الدين - ۱۸ - ط ﴾ (۲) لمن قرأ : ﴿ يوم ﴾ بالنصب (۳) ، على تقدير : ذلك في يوم (٤) . ومَنْ رَفَعَ جَعَلَه بدلًا عن الأول ، فلم يقف (٥)",
+      "text_page": 1103,
+      "old_text": "[ ﴿ يوم الدين - ۱۸ - ﴾ الثاني - ط ] (۲) لمن قرأ : ﴿ يوم ﴾ بالنصب (۳) ، على تقدير : ذلك في يوم (٤) . ومَنْ رَفَعَ جَعَلَه بدلًا عن الأول ، فلم يقف (٥)",
+      "fixes": [
+        {
+          "type": "malformed_bracket",
+          "basis": "page_prose",
+          "old_text": "[ ﴿ يوم الدين - ۱۸ - ﴾ الثاني - ط ]",
+          "new_text": "﴿ يوم الدين - ۱۸ - ط ﴾",
+          "info": "Closing bracket placed before verdict letter ط"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 1103,
+          "raw_text": "(۲) أ : [ ﴿ الدين ﴾ - ج - الثاني ] . وما أثبتناه بدلالة ما بعده ، وهو موافق لما ذكره المؤلف في كتابه الصغير - المسمى وقوف القرآن - ، لوحة : (١٦٠) ظهر .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 19,
+      "target_word": "شيئًا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ شيئًا - ۱۹ - ط ﴾ .",
+      "text_page": 1103,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 2,
+      "target_word": "يستوفون",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿ يستوفون - ۲ - ز ﴾ (۲) للفصل بين تناقض الحالين تنبيهًا على الاعتبار ، مع اتفاق الجملتين ، والوصل أجوز ، لأن مقصود الكلام في بيان الصفاتين جميعًا .",
+      "text_page": 1104,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 1104,
+          "raw_text": "(۲) علامة الوقف ساقطة من : أ .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 3,
+      "target_word": "يخسرون",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿ يخسرون - ۳ - ط ﴾ (۳) لابتداء الاستفهام .",
+      "text_page": 1104,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 1104,
+          "raw_text": "(۳) ب : علامة الوقف : [ لا ] . وما أثبتناه بدلالة ما بعده ، وهو موافق لما ذكره المؤلف في كتابه الصغير - المسمى وقوف القرآن - ، لوحة : (١٦٠) ظهر . والوقف هنا تام عند ابن الأنباري والنحاس والداني والأنصاري والأشموني . انظر الإيضاح : ۲ / ۹۷۰ ، والقطع : (٧٦٨) ، والمكتفى : (٦١١) ، والمقصد : (٤٢١) ، والمنار : (٤٢١) .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "تام",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "2/970"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "تام",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "768"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "تام",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "611"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "تام",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "421"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "تام",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "421"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 4,
+      "target_word": "مبعوثون",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿ مبعوثون - ٤ - لا ﴾ لتعلق اللام .",
+      "text_page": 1104,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 5,
+      "target_word": "عظيم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 1,
+      "text": "﴿ عظيم - ٥ - لا ﴾ (١) لأن التقدير : مبعوثون لأمر (٢) يوم عظيم ، في يوم (۳) يقوم الناس (٤) [ لرب العالمين ] (٥) .",
+      "text_page": 1105,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 1105,
+          "raw_text": "(۱) د : علامة الوقف : [ ط ] . وما أثبتناه بدلالة ما بعده ، وهو موافق لما ذكره المؤلف في كتابه الصغير - المسمى وقوف القرآن - ، لوحة : (١٦٠) ظهر . وانظر منار الهدى : (٤٢١) .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 6,
+      "target_word": "العالمين",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 6,
+      "text": "﴿ العالمين - ٦ - ج ﴾ لأن ﴿ كلا ﴾ لتحقيق (٦) : ﴿ إن ﴾ ، بمعنى : أَلَا ، أو : حَقًّا ، وقد قيل : ردع عن التطفيف . والأول أصح (۷) ، وكذا (۸) ما في هذه (۹) السورة من كلمة : ﴿ كلا ﴾ .",
+      "text_page": 1105,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 1105,
+          "raw_text": "(٦) أ : [ التحقيق ] بزيادة الألف .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 7,
+      "target_word": "لفي سجين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 10,
+      "text": "﴿ لفي سجين - ۷ - ط ﴾ (١٠) للابتداء بالنفي أو الاستفهام (١٠) .",
+      "text_page": 1105,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 10,
+          "text_page": 1105,
+          "raw_text": "(۱۰) ج : [ بالنفي للاستفهام ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 8,
+      "target_word": "ما سجين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ ما سجين - ۸ - ط ﴾ أي : هو كتاب ...",
+      "text_page": 1105,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 9,
+      "target_word": "مرقوم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ مرقوم - ۹ - ط ﴾ لأن قوله : ﴿ ويل ﴾ مبتدأ .",
+      "text_page": 1105,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 10,
+      "target_word": "للمكذبين",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿ للمكذبين - ۱۰ - لا ﴾ لأن ﴿ الذين ﴾ صفتهم .",
+      "text_page": 1105,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 11,
+      "target_word": "الدين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ الدين - ۱۱ - ط ﴾ للابتداء بالنفي .",
+      "text_page": 1106,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 12,
+      "target_word": "أثيم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿ أثيم - ۱۲ - لا ﴾ لأن الجملة صفته .",
+      "text_page": 1106,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 13,
+      "target_word": "الأولين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿ الأولين - ۱۳ - ط ﴾ لما ذكر (١) .",
+      "text_page": 1106,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 1106,
+          "raw_text": "(۱) أ : [ كما ذكرنا ] . وفي : ج : [ كما ذكر ] . وقد ذكر في بيان الوقف على : ﴿ العالمين ﴾ من الآية السادسة من هذه السورة ، حيث رجح المؤلف أن ﴿ كلا ﴾ بمعنى : ألا ، أو : حقًّا . وقد ذكر النحاس في القطع : (٧٦٨) أن الوقف هنا تمام عند أبي حاتم . ثم قال النحاس في القطع : (٧٦٨) : وليس في هذه السورة عند أبي حاتم تمام على ﴿ كلا ﴾ ، و ﴿ كلا ﴾ عنده بمعنى : ألا ، وهي تنبيه ابتداء كلام اهـ .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "أبو حاتم",
+              "verdict": "تام",
+              "comment": "ذكره النحاس في القطع",
+              "book": "القطع",
+              "book_ref": "768"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 15,
+      "target_word": "لمحجوبون",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ لمحجوبون - ۱۵ - ط ﴾ لأن ﴿ ثم ﴾ لترتيب الأخبار .",
+      "text_page": 1106,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 16,
+      "target_word": "الجحيم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 2,
+      "text": "﴿ الجحيم - ۱٦ - ط ﴾ (۲) لاختلاف الجملتين .",
+      "text_page": 1106,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 1106,
+          "raw_text": "(۲) أ ، ب : علامة الوقف : [ ج ] . وما أثبتناه موافق لما ذكره المؤلف في كتابه الصغير - المسمى وقوف القرآن - لوحة :(١٦١) وجه .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 17,
+      "target_word": "تكذبون",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿ تكذبون - ۱۷ - ط ﴾ لما ذكر (۳)",
+      "text_page": 1106,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 1106,
+          "raw_text": "(۳) أ : [ لما ذكرنا لما ] . وانظر الهامش رقم(۹) في الصفحة السابقة .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 18,
+      "target_word": "لفي عليين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ لفي عليين - ۱۸ - ط ﴾",
+      "text_page": 1106,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 19,
+      "target_word": "عليون",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ عليون - ۱۹ - ط ﴾",
+      "text_page": 1106,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 20,
+      "target_word": "مرقوم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 4,
+      "text": "﴿ مرقوم - ۲۰ - لا ﴾ لأن الجملة بعده (٤) صفته .",
+      "text_page": 1106,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 1106,
+          "raw_text": "(٤) أ : [ بعده ] ساقطة .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 21,
+      "target_word": "المقربون",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ المقربون - ۲۱ - ط ﴾ للابتداء بإن .",
+      "text_page": 1106,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 22,
+      "target_word": "نعيم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 1,
+      "text": "﴿ نعيم - ۲۲ - لا ﴾ لأن ما بعده حال عامله [ معنى الفعل في الجار ، و : ﴿ ينظرون ﴾ حال عامله معنى الفعل في : ﴿ على ﴾ ] (١) .",
+      "text_page": 1106,
+      "old_text": "﴿ نعيم - ۲۲ - لا ﴾ لأن ما بعده حال عامله [ معنى الفعل في الجار ،",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ نعيم - ۲۲ - لا ﴾ لأن ما بعده حال عامله [ معنى الفعل في الجار ،",
+          "new_text": "﴿ نعيم - ۲۲ - لا ﴾ لأن ما بعده حال عامله [ معنى الفعل في الجار ، و : ﴿ ينظرون ﴾ حال عامله معنى الفعل في : ﴿ على ﴾ ] (١) .",
+          "info": "Clause split across page 1106 and 1107"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 1107,
+          "raw_text": "(۱) ج : ما بين المعقوفين غير مثبت .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    }
+  ]
+}

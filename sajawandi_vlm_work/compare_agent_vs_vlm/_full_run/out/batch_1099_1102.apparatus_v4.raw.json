@@ -1,0 +1,424 @@
+{
+  "source": "apparatus_v4_1099_1102",
+  "page_numbers": [
+    1099,
+    1100,
+    1101,
+    1102
+  ],
+  "waqfs": [
+    {
+      "ayah": 21,
+      "target_word": "ثَمَّ أمين",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "ثم الوقف على قوله : ﴿ ثَمَّ أمين - ٢١ - ج ﴾(١) لانتساق(٢) الصفات ، واتصال جواب القسم .",
+      "text_page": 1099,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 1099,
+          "raw_text": "(١) علامة الوقف ساقطة من : ب ، د .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": null
+        }
+      ]
+    },
+    {
+      "ayah": 26,
+      "target_word": "تذهبون",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "ثم تمام الكلام على قوله : ﴿ تذهبون - ٢٦ - ط ﴾(٣) وعلى كل آية جواز ، ومن جعل : ﴿ وما صاحبكم ﴾ وما بعدها معطوفا على جواب القسم لم يقف على : ﴿ ثم أمين - ٢١ - ﴾ ، ولايجوز له الوقف إلى(٤) قوله : ﴿ فأين تذهبون - ٢٦ - ﴾ .",
+      "text_page": 1099,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 1099,
+          "raw_text": "(٣) علامة الوقف ساقطة من : د .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": null
+        }
+      ]
+    },
+    {
+      "ayah": 27,
+      "target_word": "للعالمين",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 5,
+      "text": "﴿ للعالمين - ٢٧ - لا ﴾(٥) لأن ما بعده (٦) بدل البعض ، فإن من شاء(٧) أن يستقيم بعض العالمين(٨) .",
+      "text_page": 1099,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 1099,
+          "raw_text": "(٥) علامة الوقف ساقطة من : أ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": null
+        }
+      ]
+    },
+    {
+      "ayah": 28,
+      "target_word": "يستقيم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 9,
+      "text": "﴿ يستقيم - ٢٨ - ط ﴾(٩) .",
+      "text_page": 1099,
+      "old_text": "[ ﴿ يستقيم - ٢٨ - ط ﴾ ](٩) .",
+      "fixes": [
+        {
+          "type": "malformed_bracket",
+          "basis": "editor_policy",
+          "old_text": "[ ﴿ يستقيم - ٢٨ - ط ﴾ ](٩) .",
+          "new_text": "﴿ يستقيم - ٢٨ - ط ﴾(٩) .",
+          "info": "حذف القوسين المعقوفين الزائدين حول علامة الوقف"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 9,
+          "text_page": 1099,
+          "raw_text": "(٩) ما بين المعقوفين من : د .\nوالوقف هنا تام عند ابن الأنباري والداني والأنصاري .\nانظر الإيضاح : ٢ / ٩٦٨ ، والمكتفى : (٦١٠) ، والمقصد : (٤٢٠) .\nوقد ذكر النحاس في القطع : (٧٦٥) أن الوقف هنا كاف إنْ قَدَّرْتَ المعنى : وما تشاؤون شيئًا إلا بمشيئة الله تعالى ، وإن قَدَّرْتَ المعنى : وما تشاؤون الاستقامة إلا بمشيئة الله تعالى فالكلام متصل ، والتمام آخر السورة .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "تام",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "2/968"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "تام",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "610"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "تام",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "420"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "كاف",
+              "comment": "إنْ قَدَّرْتَ المعنى : وما تشاؤون شيئًا إلا بمشيئة الله تعالى ، وإن قَدَّرْتَ المعنى : وما تشاؤون الاستقامة إلا بمشيئة الله تعالى فالكلام متصل ، والتمام آخر السورة",
+              "book": "القطع",
+              "book_ref": "765"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "يستقيم",
+                "trigger": "scholars_disagree",
+                "reason": "الوقف على (يستقيم) تام عند ابن الأنباري والداني والأنصاري، بينما فصّل النحاس: جعله كافيًا على تقدير (وما تشاؤون شيئًا)، ومتصلًا ممتنع الوقف على تقدير (وما تشاؤون الاستقامة) حيث يكون التمام آخر السورة.",
+                "scholars": [
+                  "ابن الأنباري",
+                  "الداني",
+                  "الأنصاري",
+                  "النحاس"
+                ]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "وما تشاؤون",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بـ (وما تشاؤون) استئناف لنفي المشيئة المستقلة على تقدير المعنى: وما تشاؤون شيئًا، بخلاف وصله عند تعليق الاستقامة بالمشيئة.",
+                "scholars": [
+                  "ابن الأنباري",
+                  "الداني",
+                  "الأنصاري",
+                  "النحاس"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 5,
+      "target_word": "وأخرت",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "لاَوْقَفَ مُطْلَقًا إلى قوله : ﴿ وأخرت - ٥ - ط ﴾ لأن عامل ﴿ إذا ﴾ قوله(٣) : ﴿ علمت ﴾ .",
+      "text_page": 1100,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 1100,
+          "raw_text": "(٣) أ : [ قول ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": null
+        }
+      ]
+    },
+    {
+      "ayah": 6,
+      "target_word": "الكريم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 4,
+      "text": "﴿ الكريم - ٦ - لا ﴾ لأن ما بعده(٤) صفته(٥) .",
+      "text_page": 1100,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 1100,
+          "raw_text": "(٤) أ : [ بعده ] بسقوط : ما .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": null
+        }
+      ]
+    },
+    {
+      "ayah": 7,
+      "target_word": "فعدلك",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 6,
+      "text": "﴿ فعدلك - ٧ - ط ﴾ لأن التقدير : ركّبك في أي صورة شاء ، و : ﴿ ما ﴾ صلة(٦) ، ومن خَفَّف(٧) : ﴿ فعدلك ﴾(٨) لم يقف عليه ، وجعل ﴿ في ﴾ بمعنى(١) : إلى(٢) ، [ أي : أمالك إلى أي ](٣) صورة شاء(٤) ، وجعل : ﴿ ركبك ﴾ حالًا عامله : ﴿ عدل ﴾ ، تقديره : عدلك إلى أي صورة شاء مركبًا لك .",
+      "text_page": 1100,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 1100,
+          "raw_text": "(٦) انظر معاني القرآن للزجاج : ٥ / ٢٩٥ ، والكشاف : ٤ / ٢٢٨ ، والبيان : ٢ / ٤٩٨ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": null
+        }
+      ]
+    },
+    {
+      "ayah": 8,
+      "target_word": "ركبك",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿ ركبك - ٨ - ط ﴾ لأن ﴿ كلا ﴾ توكيد لتحقيق ﴿ بل ﴾ ، وقد قيل : رَدْعٌ عن الاغترار(٥) ، والأوضح(٦) : الأولى .",
+      "text_page": 1101,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 1101,
+          "raw_text": "(٥) أ : [ الاعتراض ] وهو تصحيف .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": null
+        }
+      ]
+    },
+    {
+      "ayah": 9,
+      "target_word": "بالدين",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿ بالدين - ٩ - لا ﴾ لأن الواو للحال ، مع احتمال الابتداء :",
+      "text_page": 1102,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 9,
+      "target_word": "بالدين",
+      "verdict_label": null,
+      "verdict": null,
+      "margin_ref": 3,
+      "text": "ومن قرأ : ﴿ يكذبون ﴾ [ بالياء(١) وقف ](٢) على ﴿ بالدين - ٩ - ﴾(٣) للعدول(٣) .",
+      "text_page": 1102,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 1102,
+          "raw_text": "(٣) من الغيبة إلى الخطاب .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": null
+        }
+      ]
+    },
+    {
+      "ayah": 10,
+      "target_word": "لحافظين",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿ لحافظين - ١٠ - لا ﴾ لأن ﴿ كرامًا ﴾ صفة لهم",
+      "text_page": 1102,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 11,
+      "target_word": "كاتبين",
+      "verdict_label": null,
+      "verdict": null,
+      "margin_ref": 4,
+      "text": "﴿ كاتبين - ١١ - ﴾ [ كذلك ، أي : كرامًا كاتبين عالمين ](٤) .",
+      "text_page": 1102,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 1102,
+          "raw_text": "(٤) ما بين المعقوفين من : أ ، ب . وفي : ج : المثبت : [ عالمين ] . وفي : د : المثبت : [ كذلك ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": null
+        }
+      ]
+    },
+    {
+      "ayah": 13,
+      "target_word": "لفي نعيم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 5,
+      "text": "﴿ لفي نعيم - ١٣ - ج ﴾ لاتفاق الجملتين ، والفصل بين القبيلتين(٥) من(٦) الضِّدَّيْنِ .",
+      "text_page": 1102,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 1102,
+          "raw_text": "(٥) أ : [ القبيلين ] . وفي : ب : [ الفتيين ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": null
+        }
+      ]
+    },
+    {
+      "ayah": 14,
+      "target_word": "جحيم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 7,
+      "text": "﴿ جحيم - ١٤ - ج ﴾ لأن ما بعدها يصلح مستأنفًا ، وصفة للفظ الجحيم - على التنكير - [ لأنه اسم ](٧) وصف في الأصل(٨) ، ومَنْ جعله عَلَمًا كان : ﴿ يصلونها ﴾ حالًا ، والحال أليق .",
+      "text_page": 1102,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 1102,
+          "raw_text": "(٧) أ : [ في اسم لأنه ] . وهي عبارة فيها اضطراب .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": null
+        }
+      ]
+    },
+    {
+      "ayah": 16,
+      "target_word": "بغائبين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 9,
+      "text": "﴿ بغائبين - ١٦ - ط ﴾ لابتداء النفي أو الاستفهام(٩)",
+      "text_page": 1102,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 9,
+          "text_page": 1102,
+          "raw_text": "(٩) ب ، ج : [ والاستفهام ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [],
+          "suggested": null
+        }
+      ]
+    },
+    {
+      "ayah": 17,
+      "target_word": "يوم الدين",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 1,
+      "text": "﴿ يوم الدين - ١٧ - لا ﴾(١) لتكرار ﴿ يوم ﴾ .",
+      "text_page": 1102,
+      "old_text": "﴿ يوم\nالدين - ١٧ - لا ﴾(١) لتكرار ﴿ يوم ﴾ .",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ يوم\nالدين - ١٧ - لا ﴾(١) لتكرار ﴿ يوم ﴾ .",
+          "new_text": "﴿ يوم الدين - ١٧ - لا ﴾(١) لتكرار ﴿ يوم ﴾ .",
+          "info": "انقسام علامة الوقف بين أسفل ص 1102 وأعلى ص 1103"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 1103,
+          "raw_text": "(١) د : علامة الوقف : [ ط ] . وما أثبتناه بدلالة ما بعده ، وهو موافق لما ذكره المؤلف في كتابه الصغير - المسمى وقوف القرآن - ، لوحة : (١٦٠) ظهر . ولم أجد مَن ذكر هنا وقفًا ، وقد نص الأشموني في المنار : (٤٢٠) على عدم الوقف هنا ، حيث قال : ﴿ ما يوم الدين ﴾ الأول ليس بوقف لعطف ما بعده عليه اهـ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأشموني",
+              "verdict": "لا يوقف",
+              "comment": "﴿ ما يوم الدين ﴾ الأول ليس بوقف لعطف ما بعده عليه",
+              "book": "المنار",
+              "book_ref": "420"
+            }
+          ],
+          "suggested": null
+        }
+      ]
+    }
+  ]
+}

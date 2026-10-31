@@ -33,6 +33,7 @@ const sampleStops = <WaqfStop>[
     label: 'جائز',
     reason:
         'الوقف جائز لابتداء بيان أمر معظم مع اتفاق اللفظ، كما ذكر السجاوندي على «سجدًا».',
+    inUthmaniMushaf: true,
     opinions: [
       ScholarOpinion(
         scholar: 'السجاوندي',
@@ -161,6 +162,7 @@ const sampleStops = <WaqfStop>[
     label: 'جائز',
     reason:
         'جائز لحذف حرف النداء، مع اتصال تقرير الوفاء بذكر المنة والثناء تمهيدًا للدعاء.',
+    inUthmaniMushaf: true,
     opinions: [
       ScholarOpinion(
         scholar: 'السجاوندي',
@@ -207,6 +209,7 @@ const sampleStops = <WaqfStop>[
     symbol: StopSymbol.jaiz,
     label: 'جائز',
     reason: 'جائز لابتداء النفي مع واو العطف: «وما كنت لديهم».',
+    inUthmaniMushaf: true,
     opinions: [
       ScholarOpinion(
         scholar: 'السجاوندي',
@@ -230,6 +233,7 @@ const sampleStops = <WaqfStop>[
     symbol: StopSymbol.tam,
     label: 'تام',
     reason: 'وقف تام على «من أجر»، ثم استئناف «إن هو إلا ذكر للعالمين».',
+    inUthmaniMushaf: true,
     opinions: [
       ScholarOpinion(
         scholar: 'السجاوندي',
@@ -254,6 +258,7 @@ const sampleStops = <WaqfStop>[
     label: 'جائز',
     reason:
         'جائز لاختصاص الدعوة بالله، قبل بيان أن البصيرة له ولمن اتبعه.',
+    inUthmaniMushaf: true,
     opinions: [
       ScholarOpinion(
         scholar: 'السجاوندي',
@@ -463,6 +468,28 @@ const sampleStops = <WaqfStop>[
         page: '321',
       ),
     ],
+  ),
+  WaqfStop(
+    id: 'yusuf-110-mujrimin',
+    surah: 12,
+    ayah: 110,
+    word: 'الْمُجْرِمِينَ',
+    symbol: StopSymbol.tam,
+    label: 'تام',
+    reason: 'وقف على رأس الآية — يُخفى عند تفعيل «إخفاء رؤوس الآي».',
+    inUthmaniMushaf: true,
+    opinions: [],
+  ),
+  WaqfStop(
+    id: 'yusuf-111-yuminun',
+    surah: 12,
+    ayah: 111,
+    word: 'يُؤْمِنُونَ',
+    symbol: StopSymbol.tam,
+    label: 'تام',
+    reason: 'وقف على رأس الآية — يُخفى عند تفعيل «إخفاء رؤوس الآي».',
+    inUthmaniMushaf: true,
+    opinions: [],
   ),
 ];
 
@@ -713,7 +740,7 @@ const yusufAyahs = <Ayah>[
       AyahWord('بَأْسُنَا'),
       AyahWord('عَنِ'),
       AyahWord('الْقَوْمِ'),
-      AyahWord('الْمُجْرِمِينَ'),
+      AyahWord('الْمُجْرِمِينَ', 'yusuf-110-mujrimin'),
     ],
   ),
   Ayah(
@@ -741,10 +768,17 @@ const yusufAyahs = <Ayah>[
       AyahWord('وَهُدًى'),
       AyahWord('وَرَحْمَةً'),
       AyahWord('لِقَوْمٍ'),
-      AyahWord('يُؤْمِنُونَ'),
+      AyahWord('يُؤْمِنُونَ', 'yusuf-111-yuminun'),
     ],
   ),
 ];
+
+/// Stop ids that sit on the last word of an ayah (رأس الآية).
+final Set<String> verseEndStopIds = {
+  for (final ayah in yusufAyahs)
+    if (ayah.words.isNotEmpty && ayah.words.last.stopId != null)
+      ayah.words.last.stopId!,
+};
 
 class ReaderController extends ChangeNotifier {
   int tab = 0;
@@ -752,11 +786,45 @@ class ReaderController extends ChangeNotifier {
   String? selectedStopId = 'yusuf-100-haqqa';
   final Set<String> sentToReview = <String>{};
 
+  /// Hide stops on the last word of an ayah (already cued by the ayah mark).
+  bool hideVerseEnd = true;
+
+  /// Hide middle stops that already appear in the printed Uthmani mushaf.
+  bool hideUthmani = true;
+
   WaqfStop? stopById(String id) {
     for (final stop in sampleStops) {
       if (stop.id == id) return stop;
     }
     return null;
+  }
+
+  bool isVerseEnd(WaqfStop stop) => verseEndStopIds.contains(stop.id);
+
+  bool isStopVisible(WaqfStop stop) {
+    if (hideVerseEnd && isVerseEnd(stop)) return false;
+    if (hideUthmani && stop.inUthmaniMushaf) return false;
+    return true;
+  }
+
+  int get visibleStopCount =>
+      sampleStops.where(isStopVisible).length;
+
+  void toggleHideVerseEnd() {
+    hideVerseEnd = !hideVerseEnd;
+    notifyListeners();
+  }
+
+  void toggleHideUthmani() {
+    hideUthmani = !hideUthmani;
+    notifyListeners();
+  }
+
+  void showAllStops() {
+    if (!hideVerseEnd && !hideUthmani) return;
+    hideVerseEnd = false;
+    hideUthmani = false;
+    notifyListeners();
   }
 
   void select(String id) {

@@ -1,0 +1,380 @@
+{
+  "page_numbers": [
+    1115,
+    1116,
+    1117,
+    1118
+  ],
+  "waqfs": [
+    {
+      "ayah": 8,
+      "target_word": "الحميد",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿ الحميد - ٨ - لا ﴾ لأن ﴿ الذي . . ﴾ صفته .",
+      "text_page": 1115,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 9,
+      "target_word": "والأرض",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ والأرض - ٩ - ط ﴾ لأن قوله : ﴿ والله ﴾ مبتدأ .",
+      "text_page": 1115,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 9,
+      "target_word": "شهيد",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 7,
+      "text": "﴿ شهيد - ٩ - ط ﴾ للابتداء(٧) بإن .",
+      "text_page": 1115,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 1115,
+          "raw_text": "(٧) ب : [ لابتداء ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 10,
+      "target_word": "الحريق",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 8,
+      "text": "﴿ الحريق - ١٠ - ط ﴾(٨) كذلك(٩) .",
+      "text_page": 1115,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 1115,
+          "raw_text": "(٨) علامة الوقف ساقطة من : د .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 11,
+      "target_word": "الأنهار",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ الأنهار - ١١ - ط ﴾",
+      "text_page": 1115,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 11,
+      "target_word": "الكبير",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 10,
+      "text": "﴿ الكبير - ١١ - ط ﴾ ، وقد قيل : ﴿ إن بطش . . ﴾ جواب القسم(١٠) ، ولكن قد طال الكلام فلابد من وَقْفٍ(١) بينهما .",
+      "text_page": 1115,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 10,
+          "text_page": 1115,
+          "raw_text": "(۱۰) رجّح هذا النحاس ، حيث قال في القطع : (۷۷۱) : وإن قدرت أن الجواب ﴿ إن بطش ربك لشديد ﴾ فهذا الوقف ، وهذا أصح الأجوبة ، وهذا يُروى عن عبد الله بن مسعود ، وهو قول قتادة ، وإليه يذهب محمد بن يزيد ، والكلام المعترض توطئة للقسم اهـ .\nأما ابن الأنباري فلم يذهب إليه ، حيث قال في الإيضاح : ٢ / ٩٧٣ : وقال قوم : جواب القسم : ﴿ إن بطش ربك لشديد ﴾ ، وهذا قبيح لأن الكلام قد طال فيما بينهما اهـ .\nوانظر المكتفى : (٦١٥) .",
+          "continuation": {
+            "status": "read",
+            "page": 1116
+          },
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "الكبير",
+                "trigger": "scholars_disagree",
+                "reason": "رجح النحاس الوقف على (الكبير) إذا قُدر أن (إن بطش ربك لشديد) جواب القسم، بينما اعتبر ابن الأنباري ذلك قبيحاً لطول الكلام بينهما، وقرر السجاوندي أنه لا بد من وقف لطول الكلام.",
+                "scholars": [
+                  "النحاس"
+                ]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "إن",
+                "trigger": "scholars_disagree",
+                "reason": "الابتداء بـ (إن بطش ربك لشديد) على أنها جواب القسم عند النحاس، في حين استقبح ابن الأنباري وصلها بالقسم السابق.",
+                "scholars": [
+                  "النحاس"
+                ]
+              }
+            ]
+          },
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "النحاس",
+              "verdict": "وقف",
+              "comment": "قال: وإن قدرت أن الجواب ﴿إن بطش ربك لشديد﴾ فهذا الوقف، وهذا أصح الأجوبة",
+              "book": "القطع",
+              "book_ref": "771"
+            },
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "قبيح",
+              "comment": "قال: وقال قوم: جواب القسم: ﴿إن بطش ربك لشديد﴾، وهذا قبيح لأن الكلام قد طال فيما بينهما",
+              "book": "الإيضاح",
+              "book_ref": "2/973"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 12,
+      "target_word": "لشديد",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ لشديد - ١٢ - ط ﴾ للابتداء بإن .",
+      "text_page": 1116,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 13,
+      "target_word": "ويعيد",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿ ويعيد - ١٣ - ج ﴾ لاختلاف الجملتين .",
+      "text_page": 1116,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 14,
+      "target_word": "الودود",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿ الودود - ١٤ - لا ﴾ لاتصال الوصف .",
+      "text_page": 1116,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 15,
+      "target_word": "المجيد",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 2,
+      "text": "[ ﴿ المجيد - ١٥ - لا ﴾ كذلك ](٢) .",
+      "text_page": 1116,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 1116,
+          "raw_text": "(٢) ما بين المعقوفين من : أ . وفي : ب ، د : علامة الوقف ساقطة . وفي : ج : ورد هكذا : [ ﴿ المجيد - لا ﴾ كذلك ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 16,
+      "target_word": "يريد",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿ يريد - ١٦ - ط ﴾ [ للابتداء بالاستفهام ](٣) .",
+      "text_page": 1116,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 1116,
+          "raw_text": "(٣) ما بين المعقوفين من : د . وفي بقية النسخ : [ لابتداء الاستفهام ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 17,
+      "target_word": "الجنود",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 4,
+      "text": "﴿ الجنود - ١٧ - لا ﴾(٤) لأن ما بعده(٥) بدلها .",
+      "text_page": 1116,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 1116,
+          "raw_text": "(٤) علامة الوقف ساقطة من : د .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 18,
+      "target_word": "وثمود",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ وثمود - ١٨ - ط ﴾ لأن ﴿ بل ﴾ للإعراض عمّا تقدم .",
+      "text_page": 1116,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 19,
+      "target_word": "في تكذيب",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿ في تكذيب - ١٩ - لا ﴾ لأن الواو للحال .",
+      "text_page": 1116,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 20,
+      "target_word": "محيط",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿ محيط - ٢٠ - ط ﴾(١) [ لقوله : ﴿ بل . . ﴾ ](٢) .",
+      "text_page": 1117,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 1117,
+          "raw_text": "(١) ج : علامة الوقف : [ ج ] . وما أثبتناه بدلالة ما بعده ، ولموافقة ما ذكره المؤلف - آنفًا - في الوقف على : ﴿ وثمود ﴾ من الآية الثامنة عشرة ، وذلك لاتفاق العلتين .\nوالوقف هنا حسن عند ابن الأنباري ، وتام عند النحاس * والداني ، وكاف عند الأنصاري والأشموني .\nانظر الإيضاح : ٢ / ٩٧٣ ، والقطع : (۷۷۱) ، والمكتفى : (٦١٥) ، والمقصد : (٤٢٤) ، والمنار : (٢٤٢) .\n* ذكر محقق القطع : أنه كاف في نسختي : د ، ط .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "2/973"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "تام",
+              "comment": "ذكر محقق القطع : أنه كاف في نسختي : د ، ط",
+              "book": "القطع",
+              "book_ref": "771"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "تام",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "615"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "424"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "242"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 21,
+      "target_word": "مجيد",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 3,
+      "text": "﴿ مجيد - ٢١ - لا ﴾ لأن ما بعده(٣) صفته(٤) أيضًا .",
+      "text_page": 1117,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 1117,
+          "raw_text": "(٣) أ : [ لأن ما بعدها ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 4,
+      "target_word": "عليها حافظ",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "لا وَقْفَ [ إلى قوله ](٢) : ﴿ عليها حافظ - ٤ - ط ﴾ لأن [ ﴿ إن .. ﴾ جواب القسم ](٣) ﴿ ، بمعنى : التحقيق ، وهي مُخَفَّفة من إن(٤) ، إذا خففت لم تنصب(٥) ، و : ﴿ ما ﴾(٦) صلة ، وتقديره : إن كل نفس لَعليها حافظ(١) .",
+      "text_page": 1118,
+      "old_text": "لا وَقْفَ [ إلى قوله ](٢) : ﴿ عليها حافظ - ٤ - ط ﴾ لأن [ ﴿ إن .. ﴾ جواب القسم ](٣) ﴿ ، بمعنى : التحقيق ، وهي مُخَفَّفة من إن(٤) ، إذا خففت لم تنصب(٥) ، و : ﴿ ما ﴾(٦) صلة ، وتقديره : إن",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "لا وَقْفَ [ إلى قوله ](٢) : ﴿ عليها حافظ - ٤ - ط ﴾ لأن [ ﴿ إن .. ﴾ جواب القسم ](٣) ﴿ ، بمعنى : التحقيق ، وهي مُخَفَّفة من إن(٤) ، إذا خففت لم تنصب(٥) ، و : ﴿ ما ﴾(٦) صلة ، وتقديره : إن",
+          "new_text": "لا وَقْفَ [ إلى قوله ](٢) : ﴿ عليها حافظ - ٤ - ط ﴾ لأن [ ﴿ إن .. ﴾ جواب القسم ](٣) ﴿ ، بمعنى : التحقيق ، وهي مُخَفَّفة من إن(٤) ، إذا خففت لم تنصب(٥) ، و : ﴿ ما ﴾(٦) صلة ، وتقديره : إن كل نفس لَعليها حافظ(١) .",
+          "info": "انقطاع التعليل بين صفحتي 1118 و1119 وتم إتمامه من صفحة 1119"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 1118,
+          "raw_text": "(٣) أ : [ جواب القسم ﴿ إن ﴾ ] . وفي : ج : ورد بعد قوله : [ جواب القسم ] عبارة : [ بمعنى إن ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,427 @@
+{
+  "page_numbers": [
+    1119,
+    1120,
+    1121,
+    1122
+  ],
+  "waqfs": [
+    {
+      "ayah": 5,
+      "target_word": "مم خلق",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿مم خلق - ٥ - ط﴾ للفصل بين الاستخبار والإخبار .",
+      "text_page": 1119,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 7,
+      "target_word": "والترائب",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 2,
+      "text": "﴿والترائب - ٧ - ط﴾ للابتداء بإنّ(٢) . ومن جعل ﴿ان﴾ جواب القسم لم يقف ، وهو يبعد(٣) .",
+      "text_page": 1119,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 1119,
+          "raw_text": "(٢) والوقف هنا : حسن عند ابن الأنباري ، وكاف عند النحاس والداني ، وتام عند الأنصاري والأشموني .\nانظر الإيضاح : ٢ / ٩٧٤ ، والقطع : (٧٧٢) ، والمكتفى ، (٦١٦) ، والمقصد : (٤٢٥) ، والمنار : (٤٢٥) .",
+          "continuation": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "والترائب",
+                "trigger": "meaning_change",
+                "reason": "الوقف على الترائب للابتداء بإنّ على الاستئناف، والوصل لمن جعل إنّ جواب القسم",
+                "scholars": [
+                  "ابن الأنباري",
+                  "النحاس",
+                  "الداني",
+                  "الأنصاري",
+                  "الأشموني"
+                ]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "إنه",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بإنّ على الاستئناف والإخبار بقدرة الله تعالى على رجعه",
+                "scholars": [
+                  "ابن الأنباري",
+                  "النحاس",
+                  "الداني",
+                  "الأنصاري",
+                  "الأشموني"
+                ]
+              }
+            ]
+          },
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "2/974"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "772"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "616"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "تام",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "425"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "تام",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "425"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 8,
+      "target_word": "لقادر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿لقادر - ٨ - ط﴾ لمن جعل المعنى : إنّه على رجع الماء إلى الإحليل(٤) أو إلى الصُّلْب لقادر(٥) ، و : ﴿يوم﴾ منصوب بمحذوف(٦) ، أي : اذكر(١) ومن قال : الرَّجع(٢) : هو ﴿الْبَعْث﴾ لم يقف(٣) ؛ لأن ﴿يوم﴾(٤) ظرف الرجع(٥) .",
+      "text_page": 1119,
+      "old_text": "﴿لقادر - ٨ - ط﴾ لمن جعل المعنى : إنّه على رجع الماء إلى الإحليل(٤) أو إلى الصُّلْب لقادر(٥) ، و : ﴿يوم﴾ منصوب بمحذوف(٦) ،",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿لقادر - ٨ - ط﴾ لمن جعل المعنى : إنّه على رجع الماء إلى الإحليل(٤) أو إلى الصُّلْب لقادر(٥) ، و : ﴿يوم﴾ منصوب بمحذوف(٦) ،",
+          "new_text": "﴿لقادر - ٨ - ط﴾ لمن جعل المعنى : إنّه على رجع الماء إلى الإحليل(٤) أو إلى الصُّلْب لقادر(٥) ، و : ﴿يوم﴾ منصوب بمحذوف(٦) ، أي : اذكر(١) ومن قال : الرَّجع(٢) : هو ﴿الْبَعْث﴾ لم يقف(٣) ؛ لأن ﴿يوم﴾(٤) ظرف الرجع(٥) .",
+          "info": "reasoning clause continues across page boundary to page 1120"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 1119,
+          "raw_text": "(٤) ب : [ الأصل ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 10,
+      "target_word": "ولاناصر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 6,
+      "text": "﴿ولاناصر - ١٠ - ط﴾ لابتداء القسم ، وجوابـــــه : ﴿انه . . (٦) وتمامه(٧) :",
+      "text_page": 1120,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 1120,
+          "raw_text": "(٦) أ : [ ﴿ انه ﴾ ] غير مثبت .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 14,
+      "target_word": "وما هو بالهزل",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 8,
+      "text": "[ ﴿وما هو بالهزل - ١٤ - ط﴾ ، والوقف عليه - ط ](٨) .",
+      "text_page": 1120,
+      "old_text": "[ ﴿وما هو بالهزل - ١٤ - ﴾ ، والوقف عليه - ط ](٨) .",
+      "fixes": [
+        {
+          "type": "missing_symbol",
+          "basis": "page_prose",
+          "old_text": "[ ﴿وما هو بالهزل - ١٤ - ﴾ ، والوقف عليه - ط ](٨) .",
+          "new_text": "[ ﴿وما هو بالهزل - ١٤ - ط﴾ ، والوقف عليه - ط ](٨) .",
+          "info": "symbol 'ط' supplied from margin note 8 witness (نسخة أ، ب)"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 1120,
+          "raw_text": "(٨) ما بين المعقوفين من : ج . وفي : د : علامة الوقف ساقطة .\nوفي : أ ، ب : ورد هكذا : [ ﴿ وما هو بالهزل - ط ﴾ والوقف عليه ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": {
+            "verdict_label": "ط",
+            "basis": "page_prose",
+            "witness": "نسخة أ ، ب",
+            "info": "ورد هكذا : [ ﴿ وما هو بالهزل - ط ﴾ والوقف عليه ]"
+          },
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 16,
+      "target_word": "وأكيد كيدًا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 9,
+      "text": "﴿وأكيد كيدًا - ١٦ - ج﴾ والوصل أجوز ؛ [ للفاء ، وتمام المقصود ] (٩) من الكلام(١٠) .",
+      "text_page": 1120,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 9,
+          "text_page": 1120,
+          "raw_text": "(٩) د : ما بين المعقوفين غير موجود بسبب خرم في الأصل .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 5,
+      "target_word": "أحوى",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 2,
+      "text": "الوقف المطلق على : ﴿أحوى - ٥ - ط﴾ وعلى كل آية جواز(٢) .",
+      "text_page": 1121,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 1121,
+          "raw_text": "(٢) أ : [ جواز ] ساقطة .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 6,
+      "target_word": "تنسى",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿تنسى - ٦ - لا﴾ للاستثناء .",
+      "text_page": 1121,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 7,
+      "target_word": "ماشاء الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ماشاء الله - ٧ - ط﴾",
+      "text_page": 1121,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 7,
+      "target_word": "وما يخفى",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿وما يخفى - ٧ - ط﴾ للعدول .",
+      "text_page": 1121,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 8,
+      "target_word": "لليسرى",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 3,
+      "text": "﴿لليسرى - ٨ - ج﴾ والوصل أليق(٣) للفاء .",
+      "text_page": 1121,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 1121,
+          "raw_text": "(٣) د : [ أجوز ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 9,
+      "target_word": "الذكرى",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿الذكرى - ٩ - ط﴾",
+      "text_page": 1121,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 10,
+      "target_word": "من يخشى",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿من يخشى - ١٠ - لا﴾ للعطف .",
+      "text_page": 1121,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 12,
+      "target_word": "الكبرى",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿الكبرى - ١٢ - ج﴾ لأن ﴿ثم﴾ لترتيب الأخبار .",
+      "text_page": 1121,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 13,
+      "target_word": "ولا يحيى",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ولا يحيى - ١٣ - ط﴾ لأن ﴿قد﴾ للابتداء .",
+      "text_page": 1121,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 14,
+      "target_word": "تزكى",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿تزكى - ١٤ - لا﴾ للعطف .",
+      "text_page": 1122,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 15,
+      "target_word": "فصلى",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿فصلى - ١٥ - ط﴾ لأن ﴿بل﴾ للإعراض .",
+      "text_page": 1122,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 16,
+      "target_word": "الدنيا",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿الدنيا - ١٦ - ز﴾ والوصل أَوْجَهُ ؛ لأن الواو في معنى الحال ، أي : تؤثرون الدنيا(١) مع أن الآخرة خير . . .",
+      "text_page": 1122,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 1122,
+          "raw_text": "(١) أ : ورد عليها علامة الوقف : [ ز ] . وهو سهو من الناسخ ، حيث ذكرت آنفًا في موضعها .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 17,
+      "target_word": "وأبقى",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿وأبقى - ١٧ - ط﴾",
+      "text_page": 1122,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 18,
+      "target_word": "الأولى",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 2,
+      "text": "﴿الأولى - ١٨ - لا﴾ لاتصال البدل به(٢) .",
+      "text_page": 1122,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 1122,
+          "raw_text": "(٢) ب ، ج : [ به ] غير مثبتة .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    }
+  ]
+}

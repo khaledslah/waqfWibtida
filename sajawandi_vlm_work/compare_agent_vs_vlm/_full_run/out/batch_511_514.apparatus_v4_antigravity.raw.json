@@ -1,0 +1,841 @@
+{
+  "source": "apparatus_v4_antigravity_511_514",
+  "page_numbers": [
+    511,
+    512,
+    513,
+    514
+  ],
+  "waqfs": [
+    {
+      "ayah": 105,
+      "target_word": "إلا الحق",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿ إلا الحق - ١٠٥ - ط ﴾(٣) .",
+      "text_page": 511,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 511,
+          "raw_text": "(٣) انظر : البحر المحيط ٤ / ٣٥٦ ، والدر المصون ٥ / ٤٠٣ .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 105,
+      "target_word": "معي بني إسرائيل",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ معي بني إسرائيل - ١٠٥ - ط ﴾ .",
+      "text_page": 511,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 107,
+      "target_word": "مبين",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿ مبين - ١٠٧ - ج ﴾ للفصل بين الجملتين ، والوصل أجوز للجمع بين الحجتين .",
+      "text_page": 511,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 109,
+      "target_word": "عليم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 4,
+      "text": "﴿ عليم - ١٠٩ - لا ﴾ لأن قوله : ﴿ يريد ﴾ وصف لساحر(٤) .",
+      "text_page": 511,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 511,
+          "raw_text": "(٤) وضح هذا الأشموني في المنار (١٤٩) حيث ذكر أن الوقف هنا حسن على استئناف ما بعده ، وليس بوقف إن جعل ( يريد ) في موضع الصفة لما قبله .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأشموني",
+              "verdict": "حسن",
+              "comment": "على استئناف ما بعده ، وليس بوقف إن جعل ( يريد ) في موضع الصفة لما قبله",
+              "book": "المنار",
+              "book_ref": "149"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "عليم",
+                "trigger": "scholars_disagree",
+                "reason": "الوقف على (عليم) حسن عند الأشموني على إضمار استئناف ما بعده، بينما منع السجاوندي الوقف عليه لكون (يريد) صفة لساحر",
+                "scholars": [
+                  "الأشموني"
+                ]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "يريد",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بـ (يريد) على الاستئناف يغير المعنى بقطع الجملة عما قبلها، في حين أن وصلها يجعلها صفة لساحر",
+                "scholars": [
+                  "الأشموني"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 110,
+      "target_word": "من أرضكم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 5,
+      "text": "﴿ من أرضكم - ١١٠ - ج ﴾ لاحتمال أن يكون قوله : ﴿ فماذا تأمرون ﴾ من تمام قول الملأ لفرعون(٥) على خطاب الجمع للتعظيم ، وأن يكون ابتداء جواب من(٦) فرعون ، أي : فماذا تشيرون(٧) ، دليله(٨) قوله تعالى : ﴿ قالوا أرجه ﴾ .",
+      "text_page": 511,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 511,
+          "raw_text": "(٥) ب : [ فرعون ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 111,
+      "target_word": "حاشرين",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿ حاشرين - ١١١ - لا ﴾ لأن ما بعده جواب لما قبله .",
+      "text_page": 511,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 116,
+      "target_word": "قال ألقوا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿ قال ألقوا - ١١٦ - ج ﴾ لأن جواب لما منتظر مع العطف بالفاء .",
+      "text_page": 511,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 117,
+      "target_word": "عصاك",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 9,
+      "text": "﴿ عصاك - ١١٧ - ج ﴾(٩) لأن التقدير : فألقاها فإذا هي تلقف(١٠) .",
+      "text_page": 511,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 9,
+          "text_page": 511,
+          "raw_text": "(٩) ب : علامة الوقف : [ ط ] ، والصواب ما أثبتناه بدلالة ما بعده .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 117,
+      "target_word": "ما يأفكون",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿ ما يأفكون - ١١٧ - ج ﴾(١) .",
+      "text_page": 512,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 512,
+          "raw_text": "(١) د : علامة الوقف ساقطة .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 118,
+      "target_word": "يعملون",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "وكذلك ﴿ يعملون - ١١٨ - ج ﴾(٢) .",
+      "text_page": 512,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 512,
+          "raw_text": "(٢) علامة الوقف من : أ .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 119,
+      "target_word": "صاغرين",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 3,
+      "text": "و﴿ صاغرين - ١١٩ - ج ﴾(٣) .",
+      "text_page": 512,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 512,
+          "raw_text": "(٣) علامة الوقف من : أ .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 120,
+      "target_word": "ساجدين",
+      "verdict_label": null,
+      "verdict": null,
+      "margin_ref": 4,
+      "text": "وكذلك ﴿ ساجدين - ١٢٠ ﴾ إلا أن الوصل أجوز على جواز كلمة(٤) ﴿ قالوا ﴾ حالا لهم ، أي : ساجدين قائلين(٥) ، وتقريبه بإضمار قد ، أي : ألقوا ساجدين ، [ وقد قالوا ](٦) .",
+      "text_page": 512,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 512,
+          "raw_text": "(٤) ب : [ الكلمة ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 121,
+      "target_word": "العالمين",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿ العالمين - ١٢١ - لا ﴾ لأن قوله : ﴿ رب موسى ﴾ بدل : ﴿ برب ﴾ .",
+      "text_page": 512,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 123,
+      "target_word": "أن آذن لكم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 7,
+      "text": "﴿ أن آذن لكم - ١٢٣ - ج ﴾ لأن ﴿ أن ﴾ للابتداء مع أن جملة(٧) الكلام مقول واحد(٨) .",
+      "text_page": 512,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 512,
+          "raw_text": "(٧) ج : [ جملة ] ساقطة .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 123,
+      "target_word": "أهلها",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 9,
+      "text": "﴿ أهلها - ١٢٣ - ج ﴾ لأن(٩) ﴿ سوف ﴾ للتهديد مع العطف بالفاء .",
+      "text_page": 512,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 9,
+          "text_page": 512,
+          "raw_text": "(٩) ج : [ لا ] بسقوط النون .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 125,
+      "target_word": "منقلبون",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 10,
+      "text": "﴿ منقلبون - ١٢٥ - ج ﴾ للآية مع أن المقول واحد(١٠).",
+      "text_page": 512,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 10,
+          "text_page": 512,
+          "raw_text": "(١٠) د : [ متحد ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 126,
+      "target_word": "جاءتنا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ جاءتنا - ١٢٦ - ط ﴾ للعدول عن محاباة فرعون إلى مناجاة الرب .",
+      "text_page": 513,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 127,
+      "target_word": "وآلهتك",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ وآلهتك - ١٢٧ - ط ﴾ .",
+      "text_page": 513,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 127,
+      "target_word": "نساءهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿ نساءهم - ١٢٧ - ج ﴾ لأن ﴿ إنا ﴾ للابتداء ، والقائل(١) واحد(٢) .",
+      "text_page": 513,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 513,
+          "raw_text": "(١) ب : [ القائل ] بسقوط الواو .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 128,
+      "target_word": "واصبروا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 3,
+      "text": "[ ﴿ واصبروا - ١٢٨ - ج ﴾ كذلك ](٣) .",
+      "text_page": 513,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 513,
+          "raw_text": "(٣) أ : [ ( واصبروا ) كذلك ج ] ، وفي ج : علامة الوقف ساقطة .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 128,
+      "target_word": "من عباده",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ من عباده - ١٢٨ - ط ﴾ .",
+      "text_page": 513,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 129,
+      "target_word": "ما جئتنا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ ما جئتنا - ١٢٩ - ط ﴾ .",
+      "text_page": 513,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 131,
+      "target_word": "لنا هذه",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "﴿ لنا هذه - ١٣١ - ج ﴾ لبيان تباين الإضافتين على(٤) التناقض(٥) .",
+      "text_page": 513,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 513,
+          "raw_text": "(٤) د : [ مع ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 131,
+      "target_word": "ومن معه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ ومن معه - ١٣١ - ط ﴾ .",
+      "text_page": 513,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 132,
+      "target_word": "بها",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿ بها - ١٣٢ - لا ﴾ لأن الفاء في ﴿ فما ﴾ جواب الشرط في ﴿ مهما ﴾ .",
+      "text_page": 513,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 134,
+      "target_word": "عندك",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿ عندك - ١٣٤ - ج ﴾ لأن جواب ﴿ لئن ﴾ منتظر ، مع أن القائل واحد .",
+      "text_page": 513,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 134,
+      "target_word": "بني إسرائيل",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 6,
+      "text": "﴿ بني إسرائيل - ١٣٤ - ج ﴾ لأن جواب ﴿ لما ﴾ منتظر ، مع دخول الفاء فيه(٦) .",
+      "text_page": 513,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 513,
+          "raw_text": "(٦) أي : في ﴿ لما ﴾ في قوله تعالى : ﴿ فلما كشفنا عنهم الرجز ﴾ .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 137,
+      "target_word": "باركنا فيها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ باركنا فيها - ١٣٧ - ط ﴾ للعدول من الحكاية إلى الأخبار ،",
+      "text_page": 513,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 137,
+      "target_word": "بما صبروا",
+      "verdict_label": null,
+      "verdict": null,
+      "margin_ref": 7,
+      "text": "وكذلك ﴿ بما صبروا - ١٣٧ ﴾ لعكسه(٧) .",
+      "text_page": 513,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 513,
+          "raw_text": "(٧) أي : من الأخبار إلى الحكاية .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 138,
+      "target_word": "أصنام لهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿ أصنام لهم - ١٣٨ - ج ﴾ لاتحاد القائل بلا عطف .",
+      "text_page": 513,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 138,
+      "target_word": "آلهة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ آلهة - ١٣٨ - ط ﴾ .",
+      "text_page": 513,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 141,
+      "target_word": "العذاب",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 8,
+      "text": "﴿ العذاب - ١٤١ - ج ﴾ لاحتمال أن يكون ﴿ يقتلون ﴾ مستأنفا ، أي : هم يقتلون ، وأن يكون تفسيرا لقوله : ﴿ يسومونكم ﴾ [ كالبدل عنه ، أو حالا ، أي : يسومونكم مقتلين ](٨) .",
+      "text_page": 513,
+      "old_text": "﴿ العذاب - ١٤١ - ج ﴾ لاحتمال أن يكون ﴿ يقتلون ﴾ مستأنفا ، أي : هم يقتلون ، وأن يكون تفسيرا لقوله : ﴿ يسومونكم ﴾ [ كالبدل عنه ، أو حالا ، أي : يسومونكم ](٨)\nمقتلين](١) .",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "يسومونكم ](٨)\nمقتلين](١) .",
+          "new_text": "يسومونكم مقتلين ](٨) .",
+          "info": "Clause split across page 513 and 514; merged clause and resolved duplicate square brackets and page-restart footnote"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 513,
+          "raw_text": "(٨) ج : ما بين المعقوفين غير مثبت .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 141,
+      "target_word": "نساءكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 2,
+      "text": "﴿ نساءكم - ١٤١ - ط ﴾(٢) .",
+      "text_page": 514,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 514,
+          "raw_text": "(٢) ب : ورد بعدها : [ والوصل أصح لاتصال المعنى واللفظ ] . وهي زيادة من الناسخ تأتي بعد قوله تعالى : [ وبكلامي ] من الآية (١٤٤) .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 142,
+      "target_word": "أربعين ليلة",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 3,
+      "text": "﴿ أربعين ليلة - ١٤٢ - ج ﴾(٣) للعطف مع اختلاف القائل .",
+      "text_page": 514,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 514,
+          "raw_text": "(٣) د : علامة الوقف : [ ط ] ، وهو خطأ بدلالة ما بعده .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 143,
+      "target_word": "ربه",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 4,
+      "text": "﴿ ربه - ١٤٣ - لا ﴾(٤) لأن ﴿ قال ﴾ جواب ﴿ لما ﴾ .",
+      "text_page": 514,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 514,
+          "raw_text": "(٤) د : علامة الوقف : [ ساقطة ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 143,
+      "target_word": "إليك",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ إليك - ١٤٣ - ط ﴾ .",
+      "text_page": 514,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 143,
+      "target_word": "فسوف تراني",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿ فسوف تراني - ١٤٣ - ج ﴾ .",
+      "text_page": 514,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 143,
+      "target_word": "صعقا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿ صعقا - ١٤٣ - ج ﴾ .",
+      "text_page": 514,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 144,
+      "target_word": "وبكلامي",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 5,
+      "text": "﴿ وبكلامي - ١٤٤ - ز ﴾(٥) [ قد قيل ](٦) ، والوصل أوضح(٧) لاتصال المعنى واللفظ .",
+      "text_page": 514,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 514,
+          "raw_text": "(٥) أ : علامة الوقف : [ ق ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 145,
+      "target_word": "لكل شيء",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿ لكل شيء - ١٤٥ - ج ﴾ للعدول مع فاء التعقيب .",
+      "text_page": 514,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 145,
+      "target_word": "بأحسنها",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ بأحسنها - ١٤٥ - ط ﴾ .",
+      "text_page": 514,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 146,
+      "target_word": "بغير الحق",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ بغير الحق - ١٤٦ - ط ﴾ فصلا بين الأخبار والشرط .",
+      "text_page": 514,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 146,
+      "target_word": "لا يؤمنوا بها",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 8,
+      "text": "﴿ لا يؤمنوا بها - ١٤٦ - ج ﴾ لابتداء شرط آخر ، ولبيان [ تعارض الأحوال ](٨) مع العطف .",
+      "text_page": 514,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 514,
+          "raw_text": "(٨) ب : [ التعارض للأحوال ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 146,
+      "target_word": "سبيلا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 9,
+      "text": "[ ﴿ سبيلا - ١٤٦ - ج ﴾(٩) كذلك ](١٠).",
+      "text_page": 514,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 9,
+          "text_page": 514,
+          "raw_text": "(٩) ج : علامة الوقف ساقطة .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 146,
+      "target_word": "سبيلا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 11,
+      "text": "﴿ سبيلا - ١٤٦ - ط ﴾(١١) .",
+      "text_page": 514,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 11,
+          "text_page": 514,
+          "raw_text": "(١١) ب : علامة الوقف : [ ج ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 147,
+      "target_word": "أعمالهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ أعمالهم - ١٤٧ - ط ﴾ .",
+      "text_page": 514,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    }
+  ]
+}

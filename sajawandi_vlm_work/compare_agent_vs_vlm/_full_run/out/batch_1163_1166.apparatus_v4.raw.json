@@ -1,0 +1,132 @@
+{
+  "page_numbers": [
+    1163,
+    1164,
+    1165,
+    1166
+  ],
+  "waqfs": [
+    {
+      "ayah": 3,
+      "target_word": "البيت",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 6,
+      "text": "﴿ البيت - 3 - لا ﴾ (6) .",
+      "text_page": 1164,
+      "old_text": "[ ﴿ البيت - 3 - لا ﴾ ] (6) .",
+      "fixes": [
+        {
+          "type": "malformed_bracket",
+          "basis": "editor_policy",
+          "old_text": "[ ﴿ البيت - 3 - لا ﴾ ]",
+          "new_text": "﴿ البيت - 3 - لا ﴾",
+          "info": "قوس معقوف زائد حول قوس الوقف"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 1164,
+          "raw_text": "(٦) ما بين المعقوفين من : ج .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 1,
+      "target_word": "بالدين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿ بالدين - 1 - ط ﴾ لتناهي الاستفهام ، [ ومن وصل فللفاء ] (1) ، والوقف أَوْجَه .",
+      "text_page": 1166,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 1166,
+          "raw_text": "(١) ب : [ والاتصال بالفاء ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 2,
+      "target_word": "اليتيم",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿ اليتيم - 2 - لا ﴾ للعطف",
+      "text_page": 1166,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 3,
+      "target_word": "المسكين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 2,
+      "text": "﴿ المسكين - 3 - ط ﴾ لأن قوله : ﴿ فويل ﴾ مبتدأ (2) .",
+      "text_page": 1166,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 1166,
+          "raw_text": "(٢) والوقف هنا تام عند ابن الأنباري والداني والأنصاري والأشموني ، وكاف عند النحاس . انظر الإيضاح : ۲ / ۹۸۸ ، والقطع : (٧٨٥) ، والمكتفى : (٦٣٠) والمقصد : (٤٣٥) ، والمنار : (٤٣٥) .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "تام",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "2/988"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "تام",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "630"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "تام",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "435"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "تام",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "435"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "785"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

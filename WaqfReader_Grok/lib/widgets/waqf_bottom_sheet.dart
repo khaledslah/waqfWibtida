@@ -83,6 +83,7 @@ class _WaqfBottomSheetState extends State<WaqfBottomSheet> {
                         stop: stop,
                         aiOpen: _aiOpen,
                         onToggleAi: () => setState(() => _aiOpen = !_aiOpen),
+                        isVerseEnd: widget.controller.isVerseEnd(stop),
                       ),
                     ),
                   ),
@@ -127,11 +128,13 @@ class _SheetBody extends StatelessWidget {
     required this.stop,
     required this.aiOpen,
     required this.onToggleAi,
+    required this.isVerseEnd,
   });
 
   final WaqfStop stop;
   final bool aiOpen;
   final VoidCallback onToggleAi;
+  final bool isVerseEnd;
 
   @override
   Widget build(BuildContext context) {
@@ -167,6 +170,18 @@ class _SheetBody extends StatelessWidget {
             height: 1.3,
           ),
         ),
+        if (isVerseEnd || stop.inUthmaniMushaf) ...[
+          const SizedBox(height: 8),
+          Wrap(
+            spacing: 6,
+            runSpacing: 6,
+            children: [
+              if (isVerseEnd) const _SheetTag(text: 'رأس آية'),
+              if (stop.inUthmaniMushaf)
+                const _SheetTag(text: 'في المصحف العثماني'),
+            ],
+          ),
+        ],
         const SizedBox(height: 12),
         Text(
           stop.reason,
@@ -456,6 +471,33 @@ class _ApproveButton extends StatelessWidget {
             const SizedBox(width: 8),
             const Icon(Icons.check, size: 20),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class _SheetTag extends StatelessWidget {
+  const _SheetTag({required this.text});
+
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+      decoration: BoxDecoration(
+        color: AppColors.sheetRaised,
+        borderRadius: BorderRadius.circular(999),
+        border: Border.all(color: AppColors.goldSoft.withOpacity(0.55)),
+      ),
+      child: Text(
+        text,
+        style: AppText.ui(
+          size: 11,
+          weight: FontWeight.w700,
+          color: AppColors.goldSoft,
+          height: 1.1,
         ),
       ),
     );

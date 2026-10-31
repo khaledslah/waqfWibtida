@@ -1,0 +1,568 @@
+{
+  "page_numbers": [
+    687,
+    688,
+    689,
+    690
+  ],
+  "waqfs": [
+    {
+      "ayah": 71,
+      "target_word": "مقضيا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿ مقضيا - 71 - ج ﴾ لأن « ثم » لترتيب الأخبار ، ولكن يحسن الوصل [ تقريبا للنجاة ](1) من الورود .",
+      "text_page": 687,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 687,
+          "raw_text": "(١) أ : [ لتقريب النجاة ] ، وفي د : [ لتقريب للنجاة ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 73,
+      "target_word": "آمنوا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿ آمنوا - 73 - لا ﴾ لأن ما بعدها مفعول « قال » .",
+      "text_page": 687,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 75,
+      "target_word": "مدا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿ مدا - 75 - ج ﴾ لأن « حتى إذا » لانتهاء مدد(2) الضلالة ، أو لابتداء(3) الرؤية ، وجوابها(4) محذوف ، أي : إذا رأوا(5) العذاب أو الساعة آمنوا .",
+      "text_page": 687,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 687,
+          "raw_text": "(٢) ج : [ مد ] ، وما أثبتناه من بقية النسخ لموافقة الآية ، حيث قال تعالى : ﴿ قل من كان في الضلالة فليمدد له الرحمن مدا ﴾ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 75,
+      "target_word": "وإما الساعة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 6,
+      "text": "﴿ وإما الساعة - 75 - ط ﴾(6) لابتداء التهديد مع حذف(7) جواب « إذا »(8) .",
+      "text_page": 687,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 687,
+          "raw_text": "(٦) د : علامة الوقف : [ ج ] ، ويظهر أن الصواب ما أثبتناه لدلالة ما بعده عليه ، ولموافقة ما ذكره المؤلف في كتابه الصغير المسمى : وقوف القرآن ، لوحة (٧٦) ظهر . والوقف هنا عند الأشموني جائز للابتداء بالتهديد . انظر : منار الهدى (٢٤٠) . أما ابن الأنباري والنحاس ، والداني ، والأنصاري ، فلم يذكروا هنا وقفا . انظر : الإيضاح ٢ / ٧٦٥ ، ٧٦٦ ، والقطع (٤٥٧) ، والمكتفى (٣٧٦) ، والمقصد (٢٤٠) .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "الأشموني",
+              "verdict": "جائز",
+              "comment": "للابتداء بالتهديد",
+              "book": "منار الهدى",
+              "book_ref": "240"
+            },
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "2/765-766"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "457"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "376"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "لم يذكر وقفا",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "240"
+            }
+          ],
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "وإما الساعة",
+                "trigger": "scholars_disagree",
+                "reason": "أجاز الأشموني الوقف هنا للابتداء بالتهديد بينما لم يذكره غيره من العلماء",
+                "scholars": [
+                  "الأشموني"
+                ]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "فسيعلمون",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بقوله فسيعلمون على معنى التهديد",
+                "scholars": [
+                  "الأشموني"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ayah": 76,
+      "target_word": "هدى",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ هدى - 76 - ط ﴾ .",
+      "text_page": 687,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 77,
+      "target_word": "وولدا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ وولدا - 77 - ط ﴾ للابتداء باستفهام التقريع .",
+      "text_page": 687,
+      "old_text": "﴿ وولدا - 77 - ط ﴾ للابتداء",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿ وولدا - 77 - ط ﴾ للابتداء",
+          "new_text": "﴿ وولدا - 77 - ط ﴾ للابتداء باستفهام التقريع .",
+          "info": "انقطاع التعليل بين صفحتين"
+        }
+      ],
+      "apparatus": []
+    },
+    {
+      "ayah": 78,
+      "target_word": "عهدا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 1,
+      "text": "﴿ عهدا - 78 - لا ﴾(1) .",
+      "text_page": 688,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 688,
+          "raw_text": "(١) علامة الوقف ساقطة من : ب ، د .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 79,
+      "target_word": "كلا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ كلا - 79 - ط ﴾ .",
+      "text_page": 688,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 79,
+      "target_word": "مدا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 2,
+      "text": "﴿ مدا - 79 - لا ﴾(2) للعطف .",
+      "text_page": 688,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 688,
+          "raw_text": "(٢) علامة الوقف ساقطة من : أ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 81,
+      "target_word": "عزا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 3,
+      "text": "﴿ عزا - 81 - لا ﴾(3) .",
+      "text_page": 688,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 688,
+          "raw_text": "(٣) علامة الوقف ساقطة من : ب ، د .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 82,
+      "target_word": "كلا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿ كلا - 82 - ط ﴾ للاتفاق على أن « كلا » هذه(4) وما قبلها للردع .",
+      "text_page": 688,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 688,
+          "raw_text": "(٤) د : [ هذا ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 83,
+      "target_word": "أزا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿ أزا - 83 - لا ﴾ .",
+      "text_page": 688,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 84,
+      "target_word": "فلا تعجل عليهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ فلا تعجل عليهم - 84 - ط ﴾ .",
+      "text_page": 688,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 84,
+      "target_word": "عدا",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 5,
+      "text": "﴿ عدا - 84 - ز ﴾(5) قد يوصل على جعل « يوم » ظرفا للعد(6) ، والأولى أن يوقف ، وينصب « يوم » بمحذوف ، أي : اذكر يوم ، أو(7) أنذرهم(8) .",
+      "text_page": 688,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 688,
+          "raw_text": "(٥) علامة الوقف مثبتة من : أ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 85,
+      "target_word": "وفدا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿ وفدا - 85 - لا ﴾ للعطف .",
+      "text_page": 688,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 86,
+      "target_word": "وردا",
+      "verdict_label": "م",
+      "verdict": "لازم",
+      "margin_ref": 9,
+      "text": "﴿ وردا - 86 - م ﴾ لئلا تشتبه الجملة بعدهم بالوصف لهم ، بل الجملة لنفي شفاعة معبوديهم ، ردا لقولهم(9) : « هؤلاء شفعاؤنا »(10) .",
+      "text_page": 688,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 9,
+          "text_page": 688,
+          "raw_text": "(٩) د : [ كقولهم ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 87,
+      "target_word": "عهدا",
+      "verdict_label": "م",
+      "verdict": "لازم",
+      "margin_ref": 11,
+      "text": "﴿ عهدا - 87 - م ﴾ لأنه لو وصل لانعطف « وقالوا اتخذ الرحمن ولدا » على : « من اتخذ عند الرحمن عهدا » ، وإن كان(11) « اتخذ » موحدا على لفظ « من » كان « قالوا » عائدا(1) إلى(2) معنى « من »(3) ، لأنه(4) يصلح للجمع ، فيؤدي إذا إلى إثبات الشفاعة لمن قال : « اتخذ الرحمن ولدا » .",
+      "text_page": 688,
+      "old_text": "﴿ عهدا - 87 - م ﴾ لأنه لو وصل لانعطف « وقالوا اتخذ الرحمن ولدا » على : « من اتخذ عند الرحمن عهدا » ، وإن كان(11) « اتخذ » موحدا",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "editor_policy",
+          "old_text": "﴿ عهدا - 87 - م ﴾ لأنه لو وصل لانعطف « وقالوا اتخذ الرحمن ولدا » على : « من اتخذ عند الرحمن عهدا » ، وإن كان(11) « اتخذ » موحدا",
+          "new_text": "﴿ عهدا - 87 - م ﴾ لأنه لو وصل لانعطف « وقالوا اتخذ الرحمن ولدا » على : « من اتخذ عند الرحمن عهدا » ، وإن كان(11) « اتخذ » موحدا على لفظ « من » كان « قالوا » عائدا(1) إلى(2) معنى « من »(3) ، لأنه(4) يصلح للجمع ، فيؤدي إذا إلى إثبات الشفاعة لمن قال : « اتخذ الرحمن ولدا » .",
+          "info": "انقطاع التعليل بين صفحتين"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 11,
+          "text_page": 688,
+          "raw_text": "(١١) ج : [ وكان ] بسقوط : إن .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 88,
+      "target_word": "ولدا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ ولدا - 88 - ط ﴾ أي : يقال لهم : « لقد جئتم » .",
+      "text_page": 689,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 89,
+      "target_word": "إدا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 5,
+      "text": "﴿ إدا - 89 - لا ﴾ لأن الجملة بعده(5) صفة له .",
+      "text_page": 689,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 689,
+          "raw_text": "(٥) ب : [ بعد ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 90,
+      "target_word": "هدا",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿ هدا - 90 - لا ﴾ لأن التقدير : لأن ، أو : بأن .",
+      "text_page": 689,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 91,
+      "target_word": "ولدا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 6,
+      "text": "﴿ ولدا - 91 - ج ﴾ لأن الواو يصلح للابتداء [ ويصلح للحال ](6) .",
+      "text_page": 689,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 6,
+          "text_page": 689,
+          "raw_text": "(٦) د : [ والحال ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 92,
+      "target_word": "ولدا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ ولدا - 92 - ط ﴾ .",
+      "text_page": 689,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 93,
+      "target_word": "عبدا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ عبدا - 93 - ط ﴾ .",
+      "text_page": 689,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 94,
+      "target_word": "عدا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ عدا - 94 - ط ﴾ .",
+      "text_page": 689,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 98,
+      "target_word": "من قرن",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 7,
+      "text": "﴿ من قرن - 98 - ط ﴾ للابتداء بالاستفهام(7) .",
+      "text_page": 689,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 689,
+          "raw_text": "(٧) ج : ورد بعدها لفظ : [ والله أعلم ] ، ويظهر أنها زيادة من الناسخ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 1,
+      "target_word": "طه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 2,
+      "text": "﴿ طه - 1 - ط ﴾(2) كوفي ، ومن قال معناه : يا رجل ، أو يا طالب(3) ، أو يا هادي(4) لم يقف .",
+      "text_page": 690,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 690,
+          "raw_text": "(٢) علامة الوقف مثبتة من : أ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 2,
+      "target_word": "لتشقى",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿ لتشقى - 2 - لا ﴾ للاستثناء .",
+      "text_page": 690,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 3,
+      "target_word": "يخشى",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿ يخشى - 3 - لا ﴾ لأن « تنزيلا » بدل : « تذكرة » .",
+      "text_page": 690,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 4,
+      "target_word": "العلى",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿ العلى - 4 - ط ﴾ [ لأن « الرحمن » ](5) مبتدأ .",
+      "text_page": 690,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 690,
+          "raw_text": "(٥) أ : [ الرحمن ] ، وفي ج ، د : [ والرحمن ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    }
+  ]
+}

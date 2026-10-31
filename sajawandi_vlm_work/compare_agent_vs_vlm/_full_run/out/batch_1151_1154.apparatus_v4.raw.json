@@ -1,0 +1,346 @@
+{
+  "page_numbers": [
+    1151,
+    1152,
+    1153,
+    1154
+  ],
+  "waqfs": [
+    {
+      "ayah": 7,
+      "target_word": "لشهيد",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿ لشهيد - 7 - ج ﴾(1) كذلك(2) .",
+      "text_page": 1151,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 1151,
+          "raw_text": "(۱) علامة الوقف ساقطة من : ب ، د .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 8,
+      "target_word": "لشديد",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ لشديد - 8 - ط ﴾ .",
+      "text_page": 1151,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 10,
+      "target_word": "في الصدور",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": 3,
+      "text": "﴿ في الصدور - 10 - لا ﴾ لأن ﴿ إن ﴾ في تأويل أن لوقوع العلم عليها ، وإنما كُسرت أَلِفُها(3) لدخول اللام(4) في خبرها(5) .",
+      "text_page": 1151,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 1151,
+          "raw_text": "(۳) أ : [ الفاء ] . وفي : ب : [ ألف ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 2,
+      "target_word": "ما القارعة",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿ ما القارعة - 2 - ج ﴾ لتمام المبتدأ [ بالخبر ](2) ، ولاتصال(3) المبالغة في التعظيم(4) بالمُعَظَّم .",
+      "text_page": 1152,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 1152,
+          "raw_text": "(۲) أ : [ ويوم بالخير ] .\nوانظر مشكل إعراب القرآن : ٢ / ٤٠١ ، ٤٩٤ ، والبيان : ٢ / ٤٥٦ ، ٥٣٠ .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 3,
+      "target_word": "ما القارعة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿ ما القارعة - 3 - ط ﴾ ، و : ﴿ يوم ﴾ منصوب بمحذوف(1) ، أي : اذكر يوم(2) ، ولو جُعل ظرفًا للفزع كان محتملًا(3) .",
+      "text_page": 1153,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 1153,
+          "raw_text": "(۳) ب : [ محتمل ] وهو خطأ . والوقف هنا تام عند أبي حاتم وابن الأنباري والداني ، وكاف عند النحاس والأنصاري والأشموني . انظر : الإيضاح : ٢ / ٩٨٣ ، والقطع : (۷۸۳) ، والمكتفى : (٦٢٧) ، والمقصد : (٤٣٣) ، والمنار : (٤٣٣) .",
+          "continuation": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "ما القارعة",
+                "trigger": "meaning_change",
+                "reason": "وقفه لتمام جملة الاستفهام واستئناف ما بعده بتقدير عامل محذوف",
+                "scholars": [
+                  "أبو حاتم",
+                  "ابن الأنباري",
+                  "الداني",
+                  "النحاس",
+                  "الأنصاري",
+                  "الأشموني"
+                ]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "يوم",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بتقدير اذكر يوم، ولو جُعل ظرفاً للفزع لاتصل بما قبله واختلف المعنى",
+                "scholars": []
+              }
+            ]
+          },
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "أبو حاتم",
+              "verdict": "تام",
+              "comment": null,
+              "book": null,
+              "book_ref": null
+            },
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "تام",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "2/983"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "تام",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "627"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "783"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "433"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "433"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 4,
+      "target_word": "المبثوث",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿ المبثوث - 4 - لا ﴾ للعطف",
+      "text_page": 1153,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 5,
+      "target_word": "المنفوش",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ المنفوش - 5 - ط ﴾ للابتداء بالشرط .",
+      "text_page": 1153,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 7,
+      "target_word": "راضية",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 4,
+      "text": "﴿ راضية - 7 - ط ﴾ كذلك (4)",
+      "text_page": 1153,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 1153,
+          "raw_text": "(٤) علامة الوقف ساقطة من : ب ، د .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 9,
+      "target_word": "هاوية",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ هاوية - 9 - ط ﴾ لتمام الجزاء .",
+      "text_page": 1153,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 10,
+      "target_word": "ما هيه",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 5,
+      "text": "﴿ ما هيه - 10 - ط ﴾ لتمام الجملة ، و : ﴿ نار ﴾ خبر مبتدأ محذوف ، أي(5) : هي نار .",
+      "text_page": 1153,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 1153,
+          "raw_text": "(٥) ب : ورد بعدها زيادة لفظة : [ نار ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 2,
+      "target_word": "المقابر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 2,
+      "text": "﴿ المقابر - 2 - ط ﴾ لأن ﴿ كلا ﴾ بمعنى : [ حقًّا ، أو أَلَا ](2) ، وقد(3) يُحمل(4) على(5) الردع عن(6) التكاثر ، والتكرار دليل التوكيد للتهديد في : ﴿ سوف ﴾ .",
+      "text_page": 1154,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 1154,
+          "raw_text": "(۲) ب : [ ألا أو حقا ] .",
+          "continuation": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 3,
+      "target_word": "تعلمون",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "[ ﴿ تعلمون - 3 - لا ﴾ الأولى للعطف .",
+      "text_page": 1154,
+      "old_text": "[ ﴿ تعلمون - 3 - ﴾ الأولى - لا - للعطف .",
+      "fixes": [
+        {
+          "type": "malformed_bracket",
+          "basis": "page_prose",
+          "old_text": "[ ﴿ تعلمون - 3 - ﴾ الأولى - لا - للعطف .",
+          "new_text": "[ ﴿ تعلمون - 3 - لا ﴾ الأولى للعطف .",
+          "info": "Closing bracket ﴾ placed before verdict letter 'لا'"
+        }
+      ],
+      "apparatus": []
+    },
+    {
+      "ayah": 4,
+      "target_word": "تعلمون",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 7,
+      "text": "﴿ تعلمون - 4 - ط ﴾ الثانية ] (7)",
+      "text_page": 1154,
+      "old_text": "﴿ تعلمون - 4 - الثانية - ط - ] (7)",
+      "fixes": [
+        {
+          "type": "malformed_bracket",
+          "basis": "page_prose",
+          "old_text": "﴿ تعلمون - 4 - الثانية - ط - ] (7)",
+          "new_text": "﴿ تعلمون - 4 - ط ﴾ الثانية ] (7)",
+          "info": "Missing closing ornate bracket ﴾ and misplaced verdict letter 'ط'"
+        }
+      ],
+      "apparatus": [
+        {
+          "margin_ref": 7,
+          "text_page": 1154,
+          "raw_text": "(۷) ما بين المعقوفين من : ب ، ج . وفي : أ : [ ﴿ تعلمون ﴾ - لا - الأولى للعطف . ﴿ تعلمون ﴾ - ط - الثانية ] . وفي : د : [ ﴿ تعلمون ﴾ الأولى - لا - للعطف ، والثانية - ط ] .",
+          "continuation": {
+            "status": "read",
+            "page": 1155
+          },
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 5,
+      "target_word": "علم اليقين",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ علم اليقين - 5 - ط ﴾ لأن التقدير : لو تعلمون علم اليقين لما ألهاكم التكاثر ، وقوله : ﴿ لترون الجحيم ﴾ (1) جواب قسم محذوف ، أي : والله لترون . . .",
+      "text_page": 1154,
+      "old_text": "﴿ علم اليقين - 5 - ط ﴾ لأن التقدير : لو تعلمون",
+      "fixes": [
+        {
+          "type": "page_split",
+          "basis": "page_prose",
+          "old_text": "﴿ علم اليقين - 5 - ط ﴾ لأن التقدير : لو تعلمون",
+          "new_text": "﴿ علم اليقين - 5 - ط ﴾ لأن التقدير : لو تعلمون علم اليقين لما ألهاكم التكاثر ، وقوله : ﴿ لترون الجحيم ﴾ (1) جواب قسم محذوف ، أي : والله لترون . . .",
+          "info": "Clause continues onto page 1155"
+        }
+      ],
+      "apparatus": []
+    }
+  ]
+}

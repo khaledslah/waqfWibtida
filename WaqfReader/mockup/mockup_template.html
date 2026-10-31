@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>WaqfReader — Android mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Amiri:wght@400;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  /* ------------------------------------------------------------------
+     Themes are scoped to .app (not :root) so the mockup can be dropped
+     into any host page. Three reading themes: light / sepia / dark.
+  ------------------------------------------------------------------ */
+  .app {
+    --ui: "Noto Sans Arabic", "Segoe UI", system-ui, sans-serif;
+    --quran: "Amiri Quran", "Amiri", "KFGQPC Uthmanic Script HAFS", "Traditional Arabic", serif;
+    --naskh: "Amiri", "Traditional Arabic", serif;
+
+    --bg: #fbf8f1; --surface: #ffffff; --surface-2: #f3eee3; --surface-3: #ebe4d4;
+    --ink: #1c1b18; --ink-2: #5b574d; --ink-3: #8a8476; --hair: rgba(28,27,24,.12);
+    --primary: #1f5f4a; --on-primary: #fff; --primary-soft: #dcebe4;
+    --scrim: rgba(18,16,12,.42);
+    --page-tint: #fffdf7;
+
+    --c-t: #1f7a4d;  --c-t-bg: #dff1e6;   /* ط تام / مطلق */
+    --c-m: #b3261e;  --c-m-bg: #fbe1de;   /* م لازم */
+    --c-j: #2c5fa8;  --c-j-bg: #e0e9f8;   /* ج جائز */
+    --c-z: #6a4bb5;  --c-z-bg: #ebe4fa;   /* ز مجوّز */
+    --c-s: #9a5b00;  --c-s-bg: #f8ead2;   /* ص مرخّص */
+    --c-l: #5f6368;  --c-l-bg: #e8e8e6;   /* لا */
+    --c-q: #7a4e2d;  --c-q-bg: #f1e4d8;   /* ق */
+    --ai: #a86b00;   --ai-bg: #fdf0d5;
+    --pos: #1f7a4d;  --neg: #b3261e;  --neu: #8a8476;
+  }
+  .app[data-theme="sepia"] {
+    --bg: #f1e7d2; --surface: #f8f0de; --surface-2: #ebdfc4; --surface-3: #e2d3b3;
+    --ink: #2e2416; --ink-2: #5e4f37; --ink-3: #8b7a5c; --hair: rgba(46,36,22,.16);
+    --primary: #6b4a1c; --primary-soft: #e8d6b0; --page-tint: #f6ecd6;
+  }
+  .app[data-theme="dark"] {
+    --bg: #12140f; --surface: #1b1e18; --surface-2: #23271f; --surface-3: #2c3127;
+    --ink: #e8e6df; --ink-2: #b5b1a5; --ink-3: #85817a; --hair: rgba(232,230,223,.12);
+    --primary: #8fd3b4; --on-primary: #08261a; --primary-soft: #1f3a2f; --page-tint: #171a14;
+    --scrim: rgba(0,0,0,.6);
+    --c-t: #7fd6a3; --c-t-bg: #173426; --c-m: #ff8a80; --c-m-bg: #3d1a17;
+    --c-j: #8fb5ff; --c-j-bg: #1a2740; --c-z: #c3a8ff; --c-z-bg: #2a2142;
+    --c-s: #ffc067; --c-s-bg: #3a2a10; --c-l: #b4b8bd; --c-l-bg: #2a2c2e;
+    --c-q: #e0b38e; --c-q-bg: #33251a; --ai: #ffcb6b; --ai-bg: #3a2c0e;
+    --pos: #7fd6a3; --neg: #ff8a80;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    min-height: 100dvh;
+    display: grid;
+    place-items: center;
+    gap: 18px;
+    padding: 24px 12px;
+    font-family: "Noto Sans Arabic", "Segoe UI", system-ui, sans-serif;
+    background: radial-gradient(900px 500px at 80% -10%, #dfe9e2, transparent 60%),
+                radial-gradient(700px 400px at 0% 110%, #eadfca, transparent 60%), #d9d4c8;
+  }
+  button { font: inherit; color: inherit; }
+  .caption {
+    max-width: 420px; text-align: center; color: #4a463d; font-size: 13px; line-height: 1.7;
+  }
+
+  /* ---------------- device frame ---------------- */
+  .device {
+    width: 400px; height: 860px; padding: 11px; border-radius: 48px;
+    background: #0d0d0d; position: relative;
+    box-shadow: 0 30px 60px rgba(0,0,0,.28), inset 0 0 0 2px #2a2a2a;
+  }
+  .device::after { /* punch-hole camera */
+    content: ""; position: absolute; top: 22px; left: 50%; translate: -50% 0;
+    width: 12px; height: 12px; border-radius: 50%; background: #050505; z-index: 30;
+    box-shadow: 0 0 0 2px #1b1b1b;
+  }
+  @media (max-width: 460px) {
+    body { padding: 0; background: none; }
+    .device { width: 100vw; height: 100dvh; padding: 0; border-radius: 0; box-shadow: none; }
+    .device::after, .caption { display: none; }
+  }
+
+  .app {
+    position: relative; width: 100%; height: 100%; overflow: hidden;
+    border-radius: 38px; background: var(--bg); color: var(--ink);
+    font-family: var(--ui);
+    display: grid; grid-template-rows: auto auto 1fr auto;
+    transition: background .25s, color .25s;
+  }
+  @media (max-width: 460px) { .app { border-radius: 0; } }
+
+  /* status bar */
+  .status { display: flex; justify-content: space-between; align-items: center;
+    padding: 12px 26px 2px; font-size: 13px; font-weight: 600; color: var(--ink-2); direction: ltr; }
+  .status .icons { display: flex; gap: 6px; align-items: center; }
+  .status svg { width: 15px; height: 15px; fill: currentColor; }
+
+  /* top app bar */
+  .topbar { display: flex; align-items: center; gap: 4px; padding: 6px 8px 8px; }
+  .topbar .title { flex: 1; min-width: 0; padding-inline: 6px; }
+  .topbar .title strong { display: block; font-size: 19px; font-weight: 700; line-height: 1.3; }
+  .topbar .title small { display: block; font-size: 12px; color: var(--ink-2); }
+  .icon-btn {
+    width: 44px; height: 44px; border: 0; border-radius: 50%; background: transparent;
+    display: grid; place-items: center; cursor: pointer; color: var(--ink-2);
+  }
+  .icon-btn:hover { background: var(--surface-2); }
+  .icon-btn svg { width: 22px; height: 22px; fill: currentColor; }
+
+  /* views */
+  .views { position: relative; overflow: hidden; }
+  .view { position: absolute; inset: 0; overflow-y: auto; overscroll-behavior: contain;
+    padding: 4px 14px 24px; scrollbar-width: thin; }
+  .view[hidden] { display: none; }
+
+  /* ---------------- mushaf ---------------- */
+  .page-meta { display: flex; justify-content: space-between; align-items: center;
+    font-size: 12px; color: var(--ink-3); padding: 2px 6px 8px; }
+  .page {
+    background: var(--page-tint); border: 1px solid var(--hair); border-radius: 22px;
+    padding: 18px 16px 20px; position: relative;
+  }
+  .page::before { /* thin ornamental inner frame */
+    content: ""; position: absolute; inset: 6px; border-radius: 17px;
+    border: 1px solid color-mix(in srgb, var(--primary) 22%, transparent); pointer-events: none;
+  }
+  .mushaf {
+    font-family: var(--quran); font-size: var(--qsize, 25px); line-height: 2.35;
+    text-align: justify; text-align-last: center; word-spacing: 1px; margin: 0;
+  }
+  .w { border-radius: 8px; padding: 0 1px; transition: background .2s; }
+  .w.stop-hl { background: color-mix(in srgb, var(--hl, var(--primary)) 18%, transparent); }
+  .w.start-hl { background: var(--ai-bg); box-shadow: inset 0 -2px 0 var(--ai); }
+  .hafs { color: var(--ink-3); font-size: .8em; display: none; }
+  .app.show-hafs .hafs { display: inline; }
+
+  .mark {
+    position: relative; display: inline-grid; place-items: center;
+    min-width: 22px; height: 22px; padding: 0 4px; margin-inline: 1px 3px;
+    border: 0; border-radius: 7px; cursor: pointer;
+    font-family: var(--ui); font-size: 12.5px; font-weight: 700; line-height: 1;
+    vertical-align: .9em; color: var(--c); background: var(--cbg);
+  }
+  .mark::before { content: ""; position: absolute; inset: -10px -6px; } /* 42px hit area */
+  .mark:focus-visible { outline: 2px solid var(--c); outline-offset: 2px; }
+  .mark.sel { background: var(--c); color: var(--surface); }
+  .mark .dot { position: absolute; top: -3px; left: -3px; width: 8px; height: 8px; border-radius: 50%;
+    background: var(--neg); box-shadow: 0 0 0 2px var(--page-tint); display: none; }
+  .app.show-khilaf .mark.khilaf .dot { display: block; }
+
+  .ibt-tick { display: none; font-family: var(--ui); font-size: 11px; color: var(--ai);
+    vertical-align: 1.1em; margin-inline-end: 1px; }
+  .app.show-ibtida .ibt-tick { display: inline; }
+
+  .ayah-end {
+    display: inline-grid; place-items: center; width: 1.45em; height: 1.45em; margin-inline: 4px;
+    font-family: var(--naskh); font-size: .62em; color: var(--primary); vertical-align: .25em;
+    border-radius: 50%; border: 1.5px solid color-mix(in srgb, var(--primary) 55%, transparent);
+    box-shadow: inset 0 0 0 2px var(--page-tint), inset 0 0 0 3px color-mix(in srgb, var(--primary) 25%, transparent);
+  }
+
+  .legend { display: flex; flex-wrap: wrap; gap: 6px; margin: 14px 2px 0; }
+  .legend button {
+    display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--hair);
+    background: var(--surface); border-radius: 999px; padding: 5px 10px 5px 8px; font-size: 12px;
+    color: var(--ink-2); cursor: pointer;
+  }
+  .badge { display: inline-grid; place-items: center; min-width: 22px; height: 22px; padding: 0 5px;
+    border-radius: 7px; font-weight: 700; font-size: 12.5px; color: var(--c); background: var(--cbg); }
+
+  .hint { margin: 14px 2px 0; padding: 12px 14px; border-radius: 16px; background: var(--surface-2);
+    color: var(--ink-2); font-size: 12.5px; line-height: 1.8; display: flex; gap: 10px; align-items: flex-start; }
+  .hint b { color: var(--ink); }
+
+  /* ---------------- lists (الوقوف / الأئمة) ---------------- */
+  .chips { display: flex; gap: 6px; overflow-x: auto; padding: 2px 2px 12px; scrollbar-width: none; }
+  .chip { flex: none; border: 1px solid var(--hair); background: var(--surface); color: var(--ink-2);
+    border-radius: 10px; padding: 6px 12px; font-size: 13px; cursor: pointer; }
+  .chip[aria-pressed="true"] { background: var(--primary-soft); color: var(--primary);
+    border-color: color-mix(in srgb, var(--primary) 40%, transparent); font-weight: 600; }
+
+  .card { width: 100%; text-align: start; display: grid; grid-template-columns: auto 1fr auto; gap: 12px;
+    align-items: start; background: var(--surface); border: 1px solid var(--hair); border-radius: 18px;
+    padding: 12px 14px; margin-bottom: 8px; cursor: pointer; }
+  .card:hover { border-color: color-mix(in srgb, var(--primary) 35%, transparent); }
+  .card .badge { min-width: 34px; height: 34px; border-radius: 11px; font-size: 15px; }
+  .card h3 { margin: 0; font-family: var(--quran); font-size: 19px; font-weight: 400; line-height: 1.6; }
+  .card p { margin: 2px 0 8px; font-size: 12.5px; color: var(--ink-2); line-height: 1.7;
+    display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .card .meta { font-size: 12px; color: var(--ink-3); display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  .card .aya { font-size: 12px; color: var(--ink-3); white-space: nowrap; padding-top: 4px; }
+  .meter { display: flex; height: 6px; border-radius: 6px; overflow: hidden; background: var(--surface-3); width: 84px; }
+  .meter i { display: block; height: 100%; }
+  .tag { display: inline-flex; align-items: center; gap: 4px; border-radius: 6px; padding: 1px 7px; font-size: 12px; }
+  .tag.khilaf { background: var(--c-m-bg); color: var(--c-m); }
+  .tag.ai { background: var(--ai-bg); color: var(--ai); }
+  .tag.ms { background: var(--surface-2); color: var(--ink-2); }
+
+  .sch { display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: center;
+    background: var(--surface); border: 1px solid var(--hair); border-radius: 18px; padding: 12px 14px; margin-bottom: 8px; }
+  .avatar { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center;
+    background: var(--primary-soft); color: var(--primary); font-weight: 700; font-family: var(--naskh); font-size: 18px; }
+  .sch strong { font-size: 15px; }
+  .sch small { color: var(--ink-3); font-size: 12px; margin-inline-start: 6px; }
+  .vchips { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+  .vchip { font-size: 12px; border-radius: 6px; padding: 1px 8px; background: var(--surface-2); color: var(--ink-2); }
+  .vchip.pos { background: var(--c-t-bg); color: var(--c-t); }
+  .vchip.neg { background: var(--c-m-bg); color: var(--c-m); }
+  .section-h { font-size: 13px; color: var(--ink-3); margin: 6px 4px 10px; font-weight: 600; }
+
+  /* ---------------- bottom navigation ---------------- */
+  .navbar { display: grid; grid-template-columns: repeat(3, 1fr); background: var(--surface-2);
+    padding: 10px 6px 22px; border-top: 1px solid var(--hair); position: relative; }
+  .navbar::after { /* gesture pill */
+    content: ""; position: absolute; bottom: 7px; left: 50%; translate: -50% 0; width: 110px; height: 4px;
+    border-radius: 4px; background: var(--ink-3); opacity: .55; }
+  .nav { border: 0; background: none; display: grid; justify-items: center; gap: 4px; cursor: pointer;
+    font-size: 12px; color: var(--ink-2); }
+  .nav .pill { width: 58px; height: 30px; border-radius: 16px; display: grid; place-items: center; transition: background .2s; }
+  .nav svg { width: 22px; height: 22px; fill: currentColor; }
+  .nav[aria-current="page"] { color: var(--ink); font-weight: 700; }
+  .nav[aria-current="page"] .pill { background: var(--primary-soft); color: var(--primary); }
+
+  /* ---------------- bottom sheets (native <dialog>) ---------------- */
+  .scrim { position: absolute; inset: 0; background: var(--scrim); opacity: 0; pointer-events: none;
+    transition: opacity .2s; z-index: 20; }
+  .app.sheet-open .scrim { opacity: 1; }
+
+  dialog.sheet {
+    position: fixed; inset: auto; margin: 0; padding: 0; border: 0;
+    left: var(--sx, 0px); top: auto; bottom: var(--sb, 0px); width: var(--sw, 100vw);
+    max-width: none; max-height: var(--sh, 85dvh);
+    background: var(--surface); color: var(--ink); font-family: var(--ui);
+    border-radius: 28px 28px var(--sr, 0px) var(--sr, 0px);
+    box-shadow: 0 -10px 40px rgba(0,0,0,.18);
+    display: none; flex-direction: column; overflow: hidden;
+  }
+  dialog.sheet[open] { display: flex; animation: sheet-up .28s cubic-bezier(.2,.8,.2,1); }
+  /* page behind must not scroll through the sheet / backdrop */
+  dialog.sheet:modal { overscroll-behavior: contain; }
+  dialog.sheet::backdrop { background: transparent; overflow: hidden; overscroll-behavior: contain; }
+  @keyframes sheet-up { from { transform: translateY(40%); opacity: .4; } to { transform: none; opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) { dialog.sheet[open] { animation: none; } }
+
+  .handle { width: 36px; height: 4px; border-radius: 4px; background: var(--ink-3); opacity: .5; margin: 10px auto 2px; flex: none; }
+  .sheet-head { display: grid; grid-template-columns: auto 1fr auto; gap: 12px; align-items: center; padding: 8px 18px 10px; flex: none; }
+  .sheet-head .badge { min-width: 48px; height: 48px; border-radius: 15px; font-size: 22px; }
+  .sheet-head h2 { margin: 0; font-family: var(--quran); font-weight: 400; font-size: 23px; line-height: 1.5; }
+  .sheet-head .sub { font-size: 12.5px; color: var(--ink-2); }
+  .stepper { display: flex; gap: 2px; }
+  .stepper .icon-btn { width: 38px; height: 38px; }
+
+  .read-as { margin: 0 18px 10px; padding: 10px 12px; border-radius: 14px; background: var(--surface-2);
+    font-size: 12.5px; color: var(--ink-2); display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; flex: none; }
+  .read-as .q { font-family: var(--quran); font-size: 18px; color: var(--ink); }
+  .read-as .sep { color: var(--ink-3); }
+
+  .tabs { display: flex; gap: 4px; padding: 0 12px; border-bottom: 1px solid var(--hair); flex: none; overflow-x: auto; scrollbar-width: none; }
+  .tab { flex: 1 0 auto; border: 0; background: none; padding: 10px 8px 11px; font-size: 13px; color: var(--ink-2);
+    cursor: pointer; border-bottom: 3px solid transparent; white-space: nowrap; }
+  .tab[aria-selected="true"] { color: var(--primary); font-weight: 700; border-bottom-color: var(--primary); }
+  .tab .n { font-size: 12px; background: var(--surface-2); border-radius: 8px; padding: 0 6px; margin-inline-start: 4px; color: var(--ink-2); }
+  .tab.ai-tab[aria-selected="true"] { color: var(--ai); border-bottom-color: var(--ai); }
+
+  .panel { overflow-y: auto; overscroll-behavior: contain; padding: 14px 18px 26px; flex: 1; }
+  .panel[hidden] { display: none; }
+  .matn { font-family: var(--naskh); font-size: 18px; line-height: 2.05; margin: 0 0 12px; }
+  .matn .qb { font-family: var(--quran); color: var(--primary); }
+  .matn sup, .raw sup { font-family: var(--ui); font-size: 11px; color: var(--ink-3); }
+  .kv { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; font-size: 13px; margin: 0; }
+  .kv dt { color: var(--ink-3); }
+  .kv dd { margin: 0; }
+
+  .consensus { background: var(--surface-2); border-radius: 16px; padding: 12px 14px; margin-bottom: 12px; }
+  .consensus .bar { display: flex; height: 10px; border-radius: 10px; overflow: hidden; background: var(--surface-3); margin: 8px 0 6px; }
+  .consensus .bar i { display: block; }
+  .consensus .row { display: flex; justify-content: space-between; font-size: 12px; color: var(--ink-2); }
+  .consensus strong { font-size: 14px; }
+
+  .op { display: grid; grid-template-columns: auto 1fr; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--hair); }
+  .op:last-child { border-bottom: 0; }
+  .op .avatar { width: 36px; height: 36px; font-size: 16px; }
+  .op .top { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .op .name { font-weight: 700; font-size: 14.5px; }
+  .op .cmt { font-size: 13px; color: var(--ink-2); line-height: 1.8; margin-top: 4px; }
+  .op .src { font-size: 12px; color: var(--ink-3); margin-top: 4px; }
+
+  .ai-banner { display: flex; gap: 10px; align-items: flex-start; background: var(--ai-bg); color: var(--ai);
+    border-radius: 14px; padding: 10px 12px; font-size: 12.5px; line-height: 1.7; margin-bottom: 12px; }
+  .sug { border: 1px dashed color-mix(in srgb, var(--ai) 55%, transparent); border-radius: 16px; padding: 12px 14px; margin-bottom: 10px; }
+  .sug .top { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; }
+  .sug .kind { font-weight: 700; font-size: 13px; color: var(--ai); }
+  .sug .q { font-family: var(--quran); font-size: 19px; }
+  .sug p { margin: 0 0 8px; font-size: 13px; line-height: 1.85; color: var(--ink-2); }
+  .sug .who { display: flex; gap: 4px; flex-wrap: wrap; }
+  .btn-text { border: 0; background: none; color: var(--primary); font-weight: 600; font-size: 13px; cursor: pointer; padding: 6px 4px; }
+
+  .raw { font-family: var(--naskh); font-size: 16.5px; line-height: 2; background: var(--surface-2);
+    border-radius: 14px; padding: 12px 14px; margin: 0 0 12px; }
+  .fix { border-inline-start: 3px solid var(--c-s); padding: 4px 12px; margin: 10px 0; font-size: 13px; }
+  .fix .old { text-decoration: line-through; color: var(--ink-3); font-family: var(--naskh); font-size: 15px; }
+  .fix .new { font-family: var(--naskh); font-size: 15px; }
+  .review { display: flex; gap: 8px; margin-top: 14px; }
+  .btn { flex: 1; border-radius: 999px; padding: 10px 14px; font-size: 13.5px; font-weight: 600; cursor: pointer;
+    border: 1px solid var(--hair); background: var(--surface); }
+  .btn.primary { background: var(--primary); color: var(--on-primary); border-color: transparent; }
+
+  /* layers sheet */
+  .opt { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--hair); }
+  .opt:last-child { border-bottom: 0; }
+  .opt .txt { flex: 1; }
+  .opt .txt b { display: block; font-size: 14.5px; font-weight: 600; }
+  .opt .txt small { color: var(--ink-3); font-size: 12px; }
+  .switch { appearance: none; width: 52px; height: 32px; border-radius: 16px; background: var(--surface-3);
+    border: 2px solid var(--ink-3); position: relative; cursor: pointer; transition: background .2s, border-color .2s; flex: none; margin: 0; }
+  .switch::after { content: ""; position: absolute; top: 50%; translate: 0 -50%; inset-inline-start: 6px;
+    width: 16px; height: 16px; border-radius: 50%; background: var(--ink-3); transition: all .2s; }
+  .switch:checked { background: var(--primary); border-color: var(--primary); }
+  .switch:checked::after { inset-inline-start: 24px; width: 22px; height: 22px; background: var(--on-primary); }
+  .switch:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+  input[type=range] { width: 100%; accent-color: var(--primary); }
+  .segmented { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--ink-3); border-radius: 999px; overflow: hidden; }
+  .segmented button { border: 0; background: none; padding: 8px; font-size: 13px; cursor: pointer; }
+  .segmented button + button { border-inline-start: 1px solid var(--ink-3); }
+  .segmented button[aria-pressed="true"] { background: var(--primary-soft); color: var(--primary); font-weight: 700; }
+
+  .snackbar { position: absolute; left: 16px; right: 16px; bottom: 96px; z-index: 25; background: var(--ink); color: var(--bg);
+    border-radius: 10px; padding: 12px 16px; font-size: 13px; opacity: 0; translate: 0 10px; transition: all .25s; pointer-events: none; }
+  .snackbar.on { opacity: 1; translate: 0 0; }
+</style>
+</head>
+<body>
+
+<div class="device">
+<div class="app show-khilaf show-ibtida" id="app" data-theme="light">
+
+  <div class="status" aria-hidden="true">
+    <span>9:41</span>
+    <span class="icons">
+      <svg viewBox="0 0 24 24"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3a4.237 4.237 0 0 0-6 0zm-4-4l2 2a7.074 7.074 0 0 1 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M2 22h20V2z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4z"/></svg>
+    </span>
+  </div>
+
+  <header class="topbar">
+    <button class="icon-btn" aria-label="فهرس السور" data-snack="فهرس السور والأجزاء (غير مفعّل في النموذج)">
+      <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+    </button>
+    <div class="title">
+      <strong id="title">سورة البقرة</strong>
+      <small id="subtitle"></small>
+    </div>
+    <button class="icon-btn" aria-label="بحث" data-snack="بحث في الكلمات والتعليلات وأسماء الأئمة">
+      <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+    </button>
+    <button class="icon-btn" aria-label="طبقات العرض" id="openLayers">
+      <svg viewBox="0 0 24 24"><path d="M11.99 18.54l-7.37-5.73L3 14.07l9 7 9-7-1.63-1.27-7.38 5.74zM12 16l7.36-5.73L21 9l-9-7-9 7 1.63 1.27L12 16z"/></svg>
+    </button>
+  </header>
+
+  <main class="views">
+    <!-- 1. Reader -->
+    <section class="view" id="v-read" aria-label="المصحف">
+      <div class="page-meta"><span id="pmRight"></span><span id="pmLeft"></span></div>
+      <article class="page"><p class="mushaf" id="mushaf"></p></article>
+      <div class="legend" id="legend"></div>
+      <div class="hint">
+        <span aria-hidden="true">👆</span>
+        <span>اضغط على أي <b>علامة وقف</b> لعرض تعليل السجاوندي وأقوال الأئمة.
+        النقطة الحمراء = <b>موضع خلاف</b>، و<b style="color:var(--ai)">✦</b> = موضع <b>ابتداء</b> مقترح.</span>
+      </div>
+    </section>
+
+    <!-- 2. Waqf index -->
+    <section class="view" id="v-list" aria-label="الوقوف" hidden>
+      <div class="chips" id="filters" role="toolbar" aria-label="تصفية"></div>
+      <div id="list"></div>
+    </section>
+
+    <!-- 3. Scholars -->
+    <section class="view" id="v-sch" aria-label="الأئمة" hidden>
+      <div class="section-h" id="schHead"></div>
+      <div id="schList"></div>
+    </section>
+  </main>
+
+  <nav class="navbar" aria-label="التنقل الرئيسي">
+    <button class="nav" data-view="v-read" aria-current="page">
+      <span class="pill"><svg viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg></span>
+      المصحف
+    </button>
+    <button class="nav" data-view="v-list">
+      <span class="pill"><svg viewBox="0 0 24 24"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg></span>
+      الوقوف
+    </button>
+    <button class="nav" data-view="v-sch">
+      <span class="pill"><svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></span>
+      الأئمة
+    </button>
+  </nav>
+
+  <div class="scrim" aria-hidden="true"></div>
+  <div class="snackbar" id="snack" role="status"></div>
+
+  <!-- Waqf detail sheet -->
+  <dialog class="sheet" id="sheet" closedby="any" aria-labelledby="sTitle">
+    <div class="handle" aria-hidden="true"></div>
+    <div class="sheet-head">
+      <span class="badge" id="sBadge"></span>
+      <div>
+        <h2 id="sTitle"></h2>
+        <div class="sub" id="sSub"></div>
+      </div>
+      <div class="stepper">
+        <button class="icon-btn" id="sPrev" aria-label="الوقف السابق"><svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></button>
+        <button class="icon-btn" id="sNext" aria-label="الوقف التالي"><svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg></button>
+      </div>
+    </div>
+    <div class="read-as" id="sRead"></div>
+    <div class="tabs" role="tablist" id="sTabs">
+      <button class="tab" role="tab" data-p="p-saj" aria-selected="true">السجاوندي</button>
+      <button class="tab" role="tab" data-p="p-ops">الأئمة <span class="n" id="nOps">0</span></button>
+      <button class="tab ai-tab" role="tab" data-p="p-ai">✦ وقف وابتداء <span class="n" id="nAi">0</span></button>
+      <button class="tab" role="tab" data-p="p-src">المصدر</button>
+    </div>
+    <div class="panel" role="tabpanel" id="p-saj"></div>
+    <div class="panel" role="tabpanel" id="p-ops" hidden></div>
+    <div class="panel" role="tabpanel" id="p-ai" hidden></div>
+    <div class="panel" role="tabpanel" id="p-src" hidden></div>
+  </dialog>
+
+  <!-- Layers / display sheet -->
+  <dialog class="sheet" id="layers" closedby="any" aria-labelledby="lTitle">
+    <div class="handle" aria-hidden="true"></div>
+    <div class="panel" style="padding-top:6px">
+      <h2 id="lTitle" style="margin:0 0 6px;font-size:18px">طبقات العرض</h2>
+      <label class="opt"><span class="txt"><b>إبراز مواضع الخلاف</b><small>نقطة حمراء حين تختلف أحكام الأئمة</small></span>
+        <input type="checkbox" class="switch" data-cls="show-khilaf" checked /></label>
+      <label class="opt"><span class="txt"><b>نقاط الابتداء المقترحة ✦</b><small>استنباط آلي من الحاشية — للمراجعة</small></span>
+        <input type="checkbox" class="switch" data-cls="show-ibtida" checked /></label>
+      <label class="opt"><span class="txt"><b>علامات مصحف المدينة</b><small>إظهار علامات الضبط الأصلية بجانب علامات السجاوندي</small></span>
+        <input type="checkbox" class="switch" data-cls="show-hafs" /></label>
+      <div class="opt" style="display:block">
+        <div class="txt" style="margin-bottom:8px"><b>حجم خط المصحف</b></div>
+        <input type="range" min="20" max="34" value="25" id="qsize" aria-label="حجم خط المصحف" />
+      </div>
+      <div class="opt" style="display:block">
+        <div class="txt" style="margin-bottom:8px"><b>مظهر القراءة</b></div>
+        <div class="segmented" id="themes">
+          <button data-theme="light" aria-pressed="true">فاتح</button>
+          <button data-theme="sepia" aria-pressed="false">ورقي</button>
+          <button data-theme="dark" aria-pressed="false">ليلي</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+</div>
+</div>
+
+<p class="caption">نموذج تفاعلي لتطبيق <b>قارئ الوقف والابتداء</b> — البيانات حقيقية من مخرجات خط الاستخراج
+(علل الوقوف للسجاوندي + حاشية المحقق) لسورة البقرة.</p>
+
+<script>
+const D = /*__DATA__*/null;
+
+/* ---------------- dictionaries ---------------- */
+const LABELS = {
+  "ط": { k: "t", name: "مطلق", hint: "الوقف المطلق: يحسن الابتداء بما بعده" },
+  "م": { k: "m", name: "لازم", hint: "لو وُصل لتغيّر المعنى المراد" },
+  "ج": { k: "j", name: "جائز", hint: "يجوز الوقف والوصل" },
+  "ز": { k: "z", name: "مجوَّز لوجه", hint: "الوصل أولى ويجوز الوقف لوجه" },
+  "ص": { k: "s", name: "مرخَّص ضرورة", hint: "يُرخَّص فيه لانقطاع النفس" },
+  "لا": { k: "l", name: "لا يوقف", hint: "لا يوقف عليه" },
+  "ق": { k: "q", name: "قيل عليه", hint: "قيل فيه وقف" },
+};
+const POS = ["تام","كاف","حسن","صالح","جائز","أحسن","مفهوم","مطلق","كاف جدا"];
+const NEG = ["ليس بوقف","لا يوقف","قبيح","مستبعد","لا","ممنوع"];
+const TRIG = { scholars_disagree: "خلاف الأئمة", meaning_change: "تغيّر المعنى" };
+const FIX = { page_split: "انقسام بين صفحتين", missing_delimiter: "قوس ناقص", missing_symbol: "رمز ساقط",
+  orthography: "إملاء", ayah_number_correction: "تصحيح رقم آية", malformed_bracket: "قوس مختل" };
+
+const ar = n => String(n).replace(/\d/g, d => "٠١٢٣٤٥٦٧٨٩"[d]);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
+const stance = v => { v = (v || "").trim(); if (NEG.some(n => v.startsWith(n))) return "neg"; if (POS.some(p => v.startsWith(p))) return "pos"; return "neu"; };
+const cssVars = lab => { const k = (LABELS[lab] || LABELS["ق"]).k; return `--c:var(--c-${k});--cbg:var(--c-${k}-bg)`; };
+const HAFS = /\s*([\u06D6-\u06DC])/g;
+const fmt = s => esc(s)
+  .replace(/﴿([^﴾]*)﴾/g, '<span class="qb">﴿$1﴾</span>')
+  .replace(/\(([0-9٠-٩]+)\)/g, "<sup>($1)</sup>");
+
+/* ---------------- derive per-waqf facts ---------------- */
+const W = D.waqfs.map(w => {
+  const ops = w.apparatus.flatMap(a => a.opinions || []);
+  const sug = w.apparatus.map(a => a.suggested).filter(Boolean);
+  const sWaqf = sug.flatMap(s => s.waqf), sIbt = sug.flatMap(s => s.ibtida);
+  const st = ops.map(o => stance(o.verdict));
+  const sajSt = w.label === "لا" ? "neg" : "pos";
+  const counts = { pos: st.filter(s => s === "pos").length, neg: st.filter(s => s === "neg").length, neu: st.filter(s => s === "neu").length };
+  const khilaf = st.some(s => s !== "neu" && s !== sajSt) || (counts.pos && counts.neg) || sWaqf.some(s => s.trigger === "scholars_disagree");
+  const ms = w.apparatus.some(a => /علامة الوقف/.test(a.raw_text || ""));
+  return { ...w, ops, sWaqf, sIbt, counts, khilaf: !!khilaf, ms };
+});
+const byWord = new Map(W.map(w => [w.word, w]));
+const ibtWords = new Map();
+W.forEach(w => w.sIbt.forEach(s => s.word != null && ibtWords.set(s.word, w)));
+
+/* ---------------- header ---------------- */
+const pages = D.bookPages;
+document.getElementById("title").textContent = "سورة " + D.surahName;
+document.getElementById("subtitle").textContent = `الآيات ${ar(D.ayahFrom)}–${ar(D.ayahTo)} · الجزء ${ar(1)}`;
+document.getElementById("pmRight").textContent = `صفحة ${ar(21)} · الحزب ${ar(2)}`;
+document.getElementById("pmLeft").textContent = `علل الوقوف ص ${ar(pages[0])}–${ar(pages.at(-1))}`;
+
+/* ---------------- mushaf ---------------- */
+function renderMushaf() {
+  const out = [];
+  for (const a of D.ayahs) {
+    for (let i = a.from; i <= a.to; i++) {
+      const raw = D.words[i].t;
+      const hafs = [...raw.matchAll(HAFS)].map(m => m[1]).join("");
+      const t = raw.replace(HAFS, "");
+      const ibt = ibtWords.has(i) ? `<span class="ibt-tick" aria-hidden="true">✦</span>` : "";
+      let html = `${ibt}<span class="w" data-i="${i}">${esc(t)}</span>`;
+      if (hafs) html += `<span class="hafs">${hafs}</span>`;
+      const w = byWord.get(i);
+      if (w) {
+        html += `<button class="mark${w.khilaf ? " khilaf" : ""}" style="${cssVars(w.label)}" data-w="${w.id}"
+          aria-label="وقف ${esc(LABELS[w.label]?.name || "")} على ${esc(w.target)}">${esc(w.label || "؟")}<span class="dot"></span></button>`;
+      }
+      out.push(html);
+    }
+    out.push(`<span class="ayah-end">${ar(a.n)}</span>`);
+  }
+  document.getElementById("mushaf").innerHTML = out.join(" ");
+}
+
+function renderLegend() {
+  const c = {};
+  W.forEach(w => c[w.label] = (c[w.label] || 0) + 1);
+  document.getElementById("legend").innerHTML = Object.keys(LABELS).filter(l => c[l]).map(l =>
+    `<button data-filter="${l}"><span class="badge" style="${cssVars(l)}">${l}</span>${LABELS[l].name} · ${ar(c[l])}</button>`).join("");
+}
+
+/* ---------------- list view ---------------- */
+let filter = "all";
+function renderFilters() {
+  const labs = [...new Set(W.map(w => w.label))];
+  const f = [["all","الكل"],["khilaf","مواضع الخلاف"],["ai","✦ فيها اقتراح"],["ms","اختلاف النسخ"], ...labs.map(l => [l, `${l} ${LABELS[l]?.name || ""}`])];
+  document.getElementById("filters").innerHTML = f.map(([k, t]) =>
+    `<button class="chip" data-f="${k}" aria-pressed="${filter === k}">${t}</button>`).join("");
+}
+function meter(c) {
+  const tot = c.pos + c.neg + c.neu || 1;
+  return `<span class="meter" title="أقوال الأئمة"><i style="width:${c.pos/tot*100}%;background:var(--pos)"></i><i style="width:${c.neg/tot*100}%;background:var(--neg)"></i><i style="width:${c.neu/tot*100}%;background:var(--neu)"></i></span>`;
+}
+function renderList() {
+  const items = W.filter(w => filter === "all" || (filter === "khilaf" && w.khilaf) || (filter === "ai" && (w.sWaqf.length || w.sIbt.length)) || (filter === "ms" && w.ms) || w.label === filter);
+  const reason = w => (w.text || "").replace(/﴿[^﴾]*﴾/, "").replace(/\([0-9٠-٩]+\)/g, "").trim();
+  document.getElementById("list").innerHTML = items.map(w => `
+    <button class="card" data-w="${w.id}">
+      <span class="badge" style="${cssVars(w.label)}">${esc(w.label || "؟")}</span>
+      <span>
+        <h3>${esc(w.target)}</h3>
+        <p>${esc(reason(w)) || "— بلا تعليل في المتن —"}</p>
+        <span class="meta">${meter(w.counts)} <span>${ar(w.ops.length)} أقوال</span>
+          ${w.khilaf ? '<span class="tag khilaf">خلاف</span>' : ""}
+          ${w.sIbt.length ? `<span class="tag ai">✦ ${ar(w.sIbt.length + w.sWaqf.length)}</span>` : ""}
+          ${w.ms ? '<span class="tag ms">النسخ</span>' : ""}</span>
+      </span>
+      <span class="aya">آية ${ar(w.ayah)}</span>
+    </button>`).join("") || `<p class="hint">لا توجد مواضع مطابقة.</p>`;
+}
+
+/* ---------------- scholars view ---------------- */
+function renderScholars() {
+  const m = new Map();
+  W.forEach(w => w.ops.forEach(o => {
+    const s = m.get(o.scholar) || { n: 0, v: {}, books: new Set() };
+    s.n++; s.v[o.verdict] = (s.v[o.verdict] || 0) + 1; if (o.book) s.books.add(o.book);
+    m.set(o.scholar, s);
+  }));
+  const rows = [...m.entries()].sort((a, b) => b[1].n - a[1].n);
+  document.getElementById("schHead").textContent = `${ar(rows.length)} من الأئمة في هذه الصفحة · ${ar(W.reduce((a, w) => a + w.ops.length, 0))} قولًا`;
+  document.getElementById("schList").innerHTML = rows.map(([name, s]) => `
+    <div class="sch">
+      <span class="avatar">${esc(name === "unknown" ? "؟" : name.replace(/^(ال|ابن |أبو )/, "")[0])}</span>
+      <span>
+        <strong>${esc(name === "unknown" ? "غير مسمّى" : name)}</strong><small>${ar(s.n)} أقوال${s.books.size ? " · " + esc([...s.books].join("، ")) : ""}</small>
+        <span class="vchips">${Object.entries(s.v).map(([v, n]) => `<span class="vchip ${stance(v)}">${esc(v)} ${ar(n)}</span>`).join("")}</span>
+      </span>
+    </div>`).join("");
+}
+
+/* ---------------- detail sheet ---------------- */
+const app = document.getElementById("app");
+const sheet = document.getElementById("sheet");
+let cur = -1;
+
+function placeSheet(dlg) {
+  // align the top-layer dialog with the phone screen instead of the browser viewport
+  const r = app.getBoundingClientRect();
+  dlg.style.setProperty("--sx", r.left + "px");
+  dlg.style.setProperty("--sw", r.width + "px");
+  dlg.style.setProperty("--sb", (innerHeight - r.bottom) + "px");
+  dlg.style.setProperty("--sh", (r.height * .86) + "px");
+  dlg.style.setProperty("--sr", getComputedStyle(app).borderBottomLeftRadius);
+}
+function openDialog(dlg) {
+  placeSheet(dlg);
+  dlg.showModal();
+  app.classList.add("sheet-open");
+}
+document.querySelectorAll("dialog.sheet").forEach(dlg => {
+  dlg.addEventListener("close", () => { app.classList.remove("sheet-open"); if (dlg === sheet) clearHl(); });
+  // light-dismiss fallback for browsers without <dialog closedby>
+  if (!("closedBy" in HTMLDialogElement.prototype)) {
+    dlg.addEventListener("click", e => {
+      if (e.target !== dlg) return;
+      const r = dlg.getBoundingClientRect();
+      const inside = r.top <= e.clientY && e.clientY <= r.bottom && r.left <= e.clientX && e.clientX <= r.right;
+      if (!inside) dlg.close();
+    });
+  }
+});
+
+function clearHl() {
+  document.querySelectorAll(".w.stop-hl,.w.start-hl").forEach(e => e.classList.remove("stop-hl", "start-hl"));
+  document.querySelectorAll(".mark.sel").forEach(e => e.classList.remove("sel"));
+}
+function wordText(i) { return i == null ? "" : D.words[i].t.replace(HAFS, ""); }
+
+function showWaqf(idx) {
+  cur = (idx + W.length) % W.length;
+  const w = W[cur], L = LABELS[w.label] || { name: "غير محدد", hint: "" };
+
+  // highlight in mushaf
+  clearHl();
+  const wEl = document.querySelector(`.w[data-i="${w.word}"]`);
+  wEl?.classList.add("stop-hl"); wEl?.style.setProperty("--hl", `var(--c-${(LABELS[w.label] || LABELS["ق"]).k})`);
+  document.querySelector(`.mark[data-w="${w.id}"]`)?.classList.add("sel");
+  const startIdx = w.sIbt[0]?.word ?? (w.word + 1 < D.words.length ? w.word + 1 : null);
+  if (w.sIbt[0]?.word != null) document.querySelector(`.w[data-i="${w.sIbt[0].word}"]`)?.classList.add("start-hl");
+  wEl?.scrollIntoView({ block: "center", behavior: "smooth" });
+
+  // head
+  const b = document.getElementById("sBadge");
+  b.textContent = w.label || "؟"; b.style.cssText = cssVars(w.label);
+  document.getElementById("sTitle").textContent = `﴿${w.target}﴾`;
+  document.getElementById("sSub").textContent = `${D.surahName} ${ar(w.ayah)} · ${L.name}${w.verdict ? " (" + w.verdict + ")" : ""} · ${ar(cur + 1)}/${ar(W.length)}`;
+
+  // practical recitation line: stop on X, start with Y
+  document.getElementById("sRead").innerHTML = w.label === "لا"
+    ? `<span>لا تقف على</span> <span class="q">${esc(wordText(w.word))}</span> <span class="sep">—</span> <span>صِلها بـ</span> <span class="q">${esc(wordText(w.word + 1))}</span>`
+    : `<span>قِف على</span> <span class="q">${esc(wordText(w.word))}</span> <span class="sep">◂</span> <span>وابدأ بـ</span> <span class="q">${esc(wordText(startIdx))}</span>`;
+
+  // tab: Sajawandi
+  document.getElementById("p-saj").innerHTML = `
+    <p class="matn">${fmt(w.text)}</p>
+    <dl class="kv">
+      <dt>العلامة</dt><dd><b>${esc(w.label || "—")}</b> — ${esc(L.name)}: ${esc(L.hint)}</dd>
+      <dt>الموضع</dt><dd>${esc(D.surahName)} · الآية ${ar(w.ayah)}</dd>
+      <dt>في الكتاب</dt><dd>علل الوقوف، ص ${ar(w.text_page)}${w.margin_ref ? ` · حاشية (${ar(w.margin_ref)})` : ""}</dd>
+      ${w.khilaf ? `<dt>الحالة</dt><dd><span class="tag khilaf">موضع خلاف بين الأئمة</span></dd>` : ""}
+      ${w.ms ? `<dt>النسخ</dt><dd><span class="tag ms">اختلاف في علامة الوقف بين النسخ الخطية</span></dd>` : ""}
+    </dl>`;
+
+  // tab: opinions
+  document.getElementById("nOps").textContent = ar(w.ops.length);
+  const c = w.counts, tot = w.ops.length || 1;
+  document.getElementById("p-ops").innerHTML = w.ops.length ? `
+    <div class="consensus">
+      <strong>${w.khilaf ? "الأئمة مختلفون في هذا الموضع" : "الأئمة متفقون على جواز الوقف"}</strong>
+      <div class="bar"><i style="width:${c.pos/tot*100}%;background:var(--pos)"></i><i style="width:${c.neg/tot*100}%;background:var(--neg)"></i><i style="width:${c.neu/tot*100}%;background:var(--neu)"></i></div>
+      <div class="row"><span>يُجيزون الوقف ${ar(c.pos)}</span><span>يمنعونه ${ar(c.neg)}</span><span>أخرى ${ar(c.neu)}</span></div>
+    </div>
+    ${w.ops.map(o => `
+      <div class="op">
+        <span class="avatar">${esc(o.scholar === "unknown" ? "؟" : o.scholar.replace(/^(ال|ابن |أبو )/, "")[0])}</span>
+        <div>
+          <div class="top"><span class="name">${esc(o.scholar === "unknown" ? "غير مسمّى" : o.scholar)}</span>
+            <span class="vchip ${stance(o.verdict)}">${esc(o.verdict)}</span></div>
+          ${o.comment ? `<div class="cmt">${fmt(o.comment)}</div>` : ""}
+          ${o.book ? `<div class="src">📖 ${esc(o.book)}${o.book_ref ? " · " + ar(o.book_ref) : ""}</div>` : ""}
+        </div>
+      </div>`).join("")}`
+    : `<p class="hint">لا توجد حاشية مقارنة لهذا الموضع${w.margin_ref ? "" : " (لا رقم حاشية على القوس)"}.</p>`;
+
+  // tab: AI suggestions
+  const nAi = w.sWaqf.length + w.sIbt.length;
+  document.getElementById("nAi").textContent = ar(nAi);
+  const sugCard = (s, kind) => `
+    <div class="sug">
+      <div class="top"><span class="kind">${kind === "waqf" ? "⏸ وقف على" : "▶ ابتداء بـ"}</span>
+        <span class="q">${esc(wordText(s.word) || s.target_word || s.start_word)}</span>
+        <span class="tag ${s.trigger === "scholars_disagree" ? "khilaf" : "ai"}">${TRIG[s.trigger] || s.trigger}</span></div>
+      <p>${fmt(s.reason)}</p>
+      <div class="who">${(s.scholars || []).map(n => `<span class="vchip">${esc(n)}</span>`).join("")}</div>
+      ${s.word != null ? `<button class="btn-text" data-jump="${s.word}">اعرض في المصحف ←</button>` : ""}
+    </div>`;
+  document.getElementById("p-ai").innerHTML = nAi ? `
+    <div class="ai-banner"><span>✦</span><span>استنباط آلي مبني على نص الحاشية وأقوال الأئمة المذكورة فيها فقط. ليس من كلام السجاوندي ولا المحقق، ويُعرض للمراجعة.</span></div>
+    ${w.sWaqf.map(s => sugCard(s, "waqf")).join("")}${w.sIbt.map(s => sugCard(s, "ibtida")).join("")}`
+    : `<p class="hint">لا توجد اقتراحات لهذا الموضع.</p>`;
+
+  // tab: source / provenance
+  document.getElementById("p-src").innerHTML = `
+    ${w.apparatus.map(a => `
+      <div class="section-h">حاشية المحقق (${ar(a.margin_ref)}) · ص ${ar(a.text_page)}${a.continuation?.status === "read" ? ` · تتمتها ص ${ar(a.continuation.page)}` : ""}</div>
+      <p class="raw">${fmt(a.raw_text)}</p>`).join("") || `<p class="hint">لا حاشية مرتبطة.</p>`}
+    ${w.fixes.length ? `<div class="section-h">تصويبات الاستخراج</div>` + w.fixes.map(f => `
+      <div class="fix"><b>${FIX[f.type] || f.type}</b> <span class="tag ms">${f.basis === "page_prose" ? "من نص الصفحة" : "سياسة التحرير"}</span>
+        <div class="old">${esc(f.old_text)}</div><div class="new">${fmt(f.new_text)}</div>
+        ${f.info ? `<div style="color:var(--ink-3);font-size:12px;margin-top:4px">${esc(f.info)}</div>` : ""}</div>`).join("") : ""}
+    <dl class="kv" style="margin-top:12px">
+      <dt>المراجعة</dt><dd><span class="tag ai">بانتظار المراجعة البشرية</span></dd>
+      <dt>المصدر</dt><dd>علل الوقوف — ت. العيدي، ص ${ar(w.text_page)}</dd>
+    </dl>
+    <div class="review">
+      <button class="btn" data-snack="شكرًا — أُرسل البلاغ للمراجِع">أبلغ عن خطأ</button>
+      <button class="btn primary" data-snack="سُجّل التأكيد (review_status = affirmed)">تأكيد الموضع</button>
+    </div>`;
+
+  selectTab("p-saj");
+  if (!sheet.open) openDialog(sheet);
+}
+
+function selectTab(id) {
+  document.querySelectorAll("#sTabs .tab").forEach(t => t.setAttribute("aria-selected", t.dataset.p === id));
+  ["p-saj", "p-ops", "p-ai", "p-src"].forEach(p => document.getElementById(p).hidden = p !== id);
+}
+
+/* ---------------- wiring ---------------- */
+function showView(id) {
+  document.querySelectorAll(".view").forEach(v => v.hidden = v.id !== id);
+  document.querySelectorAll(".nav").forEach(n => n.dataset.view === id ? n.setAttribute("aria-current", "page") : n.removeAttribute("aria-current"));
+}
+let snackT;
+function snack(msg) {
+  const s = document.getElementById("snack");
+  s.textContent = msg; s.classList.add("on");
+  clearTimeout(snackT); snackT = setTimeout(() => s.classList.remove("on"), 2200);
+}
+
+document.addEventListener("click", e => {
+  const t = e.target.closest("[data-w],[data-view],[data-f],[data-filter],[data-jump],[data-snack],.tab,#sPrev,#sNext,#openLayers,#themes button");
+  if (!t) return;
+  if (t.dataset.w) return showWaqf(W.findIndex(w => w.id === t.dataset.w));
+  if (t.dataset.view) return showView(t.dataset.view);
+  if (t.dataset.f) { filter = t.dataset.f; renderFilters(); return renderList(); }
+  if (t.dataset.filter) { filter = t.dataset.filter; renderFilters(); renderList(); return showView("v-list"); }
+  if (t.dataset.jump) {
+    sheet.close(); showView("v-read");
+    const el = document.querySelector(`.w[data-i="${t.dataset.jump}"]`);
+    el?.classList.add("start-hl"); el?.scrollIntoView({ block: "center", behavior: "smooth" });
+    return setTimeout(() => el?.classList.remove("start-hl"), 2600);
+  }
+  if (t.dataset.snack) return snack(t.dataset.snack);
+  if (t.classList.contains("tab")) return selectTab(t.dataset.p);
+  if (t.id === "sPrev") return showWaqf(cur - 1);
+  if (t.id === "sNext") return showWaqf(cur + 1);
+  if (t.id === "openLayers") return openDialog(document.getElementById("layers"));
+  if (t.dataset.theme) {
+    app.dataset.theme = t.dataset.theme;
+    document.querySelectorAll("#themes button").forEach(b => b.setAttribute("aria-pressed", b === t));
+  }
+});
+document.querySelectorAll(".switch").forEach(s => s.addEventListener("change", () => app.classList.toggle(s.dataset.cls, s.checked)));
+document.getElementById("qsize").addEventListener("input", e => app.style.setProperty("--qsize", e.target.value + "px"));
+addEventListener("resize", () => document.querySelectorAll("dialog.sheet[open]").forEach(placeSheet));
+
+renderMushaf(); renderLegend(); renderFilters(); renderList(); renderScholars();
+
+/* deep links for demos/screenshots: #view=v-list | #w=4&tab=p-ops | #theme=dark */
+const H = new URLSearchParams(location.hash.slice(1));
+if (H.get("theme")) app.dataset.theme = H.get("theme");
+if (H.get("view")) showView(H.get("view"));
+if (H.get("w")) { showWaqf(+H.get("w")); if (H.get("tab")) selectTab(H.get("tab")); }
+</script>
+</body>
+</html>

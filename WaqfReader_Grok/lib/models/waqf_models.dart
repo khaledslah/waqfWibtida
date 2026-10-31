@@ -27,6 +27,7 @@ class WaqfStop {
     required this.reason,
     required this.opinions,
     this.aiSuggestion,
+    this.inUthmaniMushaf = false,
   });
 
   final String id;
@@ -38,6 +39,9 @@ class WaqfStop {
   final String reason;
   final List<ScholarOpinion> opinions;
   final String? aiSuggestion;
+
+  /// Middle stop that already appears as a printed symbol in the Madinah/Uthmani mushaf.
+  final bool inUthmaniMushaf;
 
   bool get needsReview {
     if (symbol == StopSymbol.unsettled) return true;

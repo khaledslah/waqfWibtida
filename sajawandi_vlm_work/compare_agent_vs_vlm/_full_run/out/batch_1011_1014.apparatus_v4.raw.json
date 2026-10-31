@@ -1,0 +1,621 @@
+{
+  "source": "apparatus_v4_1011_1014",
+  "page_numbers": [
+    1011,
+    1012,
+    1013,
+    1014
+  ],
+  "waqfs": [
+    {
+      "ayah": 1,
+      "target_word": "من الحق",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿من الحق - ١ - ج﴾ (٢) لأن ﴿يخرجون﴾ مستأنف أو حال .",
+      "text_page": 1011,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 1011,
+          "raw_text": "(٢) ج : علامة الوقف : [ ط ] . وما أثبتناه بدلالة ما بعده .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 1,
+      "target_word": "بالله ربكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 3,
+      "text": "﴿بالله ربكم - ١ - ط﴾ (٣) .",
+      "text_page": 1011,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 3,
+          "text_page": 1011,
+          "raw_text": "(٣) في تمام الوقف هنا خلاف ، حيث قال ابن الأنباري في الإيضاح : ٢ / ٩٣٢ : والوقف على : ﴿ أن تؤمنوا بالله ربكم ﴾ حسن غير تام ، لأن قوله : ﴿ إن كنتم خرجتم جهادًا في سبيلي ﴾ متعلق بالأول ، كأنه قال : لاتتخذوا عدوي وعدوكم أولياء إن كنتم خرجتم جهادا في سبيلي .اهـ .\nوقال النحاس في القطع : (٧٢٠) - في توجيه القول بتمام الوقف هنا - : قال أبو جعفر : وهذا على ألا يكون : ﴿ إن كنتم ﴾ متعلقًا بأول السورة ، ويكون المعنى : إن كنتم خرجتم جهادًا في سبيلي وابتغاء مرضاتي فلا تلقوا إليهم بالمودة ، ويكون هذا محذوفا . اهـ .",
+          "continuation": null,
+          "suggested": {
+            "basis": "ai_inferred",
+            "waqf": [
+              {
+                "target_word": "بالله ربكم",
+                "trigger": "meaning_change",
+                "reason": "الوقف على (بالله ربكم) تام عند النحاس على تقدير جواب محذوف لـ(إن كنتم)، بينما هو غير تام عند ابن الأنباري لتعلق الشرط بأول السورة.",
+                "scholars": [
+                  "ابن الأنباري",
+                  "النحاس"
+                ]
+              }
+            ],
+            "ibtida": [
+              {
+                "start_word": "إن كنتم",
+                "trigger": "meaning_change",
+                "reason": "الابتداء بـ(إن كنتم) على تقدير شرط مستأنف حُذف جوابه عند من جعل الوقف تاما.",
+                "scholars": [
+                  "النحاس"
+                ]
+              }
+            ]
+          },
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": "غير تام ، لأن قوله : ﴿ إن كنتم خرجتم جهادًا في سبيلي ﴾ متعلق بالأول",
+              "book": "الإيضاح",
+              "book_ref": "2/932"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "تام",
+              "comment": "في توجيه القول بتمام الوقف هنا : وهذا على ألا يكون : ﴿ إن كنتم ﴾ متعلقًا بأول السورة",
+              "book": "القطع",
+              "book_ref": "720"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 1,
+      "target_word": "بالمودة",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": 1,
+      "text": "﴿بالمودة - ١ - ز﴾(١) الثانية(٢) قد قيل ، [ والوصل أولى ](٣) لأن قوله : ﴿وأنا أعلم﴾ بالحال أليق .",
+      "text_page": 1012,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 1012,
+          "raw_text": "(١) علامة الوقف من : أ ، ج . وفي : ب : علامة الوقف : [ ق ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 1,
+      "target_word": "أعلنتم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿أعلنتم - ١ - ط﴾",
+      "text_page": 1012,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 2,
+      "target_word": "تكفرون",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿تكفرون - ٢ - ط﴾",
+      "text_page": 1012,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 3,
+      "target_word": "أولادكم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿أولادكم - ٣ - ج﴾ لأن قوله : ﴿يوم﴾ قد يتعلق بقوله : ﴿لن تنفعكم﴾ ، وقد يتعلق بقوله : ﴿يفصل﴾ .",
+      "text_page": 1012,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 3,
+      "target_word": "يوم القيامة",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 4,
+      "text": "﴿يوم القيامة - ٣ - ج﴾ لما ذكر أن قوله : ﴿يفصل﴾ متعلق(٤) بقوله : ﴿يوم﴾ ، أو مستأنف .",
+      "text_page": 1012,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 4,
+          "text_page": 1012,
+          "raw_text": "(٤) ج : [ يتعلق ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 3,
+      "target_word": "بينكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿بينكم - ٣ - ط﴾",
+      "text_page": 1012,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 4,
+      "target_word": "والذين معه",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 5,
+      "text": "﴿والذين معه - ٤ - ج﴾ لأن ﴿إذ﴾ ظرف محذوف ، أي : فاذكروا إذ(٥) ، أو ظرف(٦) قوله(٧) : ﴿أسوة﴾ والأول أوجه .",
+      "text_page": 1012,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 5,
+          "text_page": 1012,
+          "raw_text": "(٥) د : [ فاذكر إذ ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 4,
+      "target_word": "من دون الله",
+      "verdict_label": "ز",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿من دون الله - ٤ - ز﴾ لأن قوله : ﴿كفرنا﴾ مستأنف في النظم ، وإن كان متصلًا في المعنى .",
+      "text_page": 1012,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 4,
+      "target_word": "من شيء",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿من شيء - ٤ - ط﴾",
+      "text_page": 1012,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 5,
+      "target_word": "لنا ربنا",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 8,
+      "text": "﴿لنا ربنا - ٥ - ج﴾ للابتداء(٨) بإن ، مع أن التقدير : فإنك أنت . . .",
+      "text_page": 1012,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 8,
+          "text_page": 1012,
+          "raw_text": "(٨) ب : [ لابتداء ] .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": []
+        }
+      ]
+    },
+    {
+      "ayah": 6,
+      "target_word": "الآخر",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": 1,
+      "text": "﴿الآخر - ٦ - ط﴾(١)",
+      "text_page": 1013,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 1,
+          "text_page": 1013,
+          "raw_text": "(١) ب : ورد بعدها : [ للابتداء ] .\nوالوقف هنا حسن عند ابن الأنباري والنحاس والأنصاري ، وكاف عند الداني والأشموني .\nانظر الإيضاح : ٢ / ٩٣٣ ، والقطع : (٧٢١) ، والمكتفى : (٥٦٥) ، والمقصد : (٣٩٠) ، والمنار : (٣٩٠) .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "2/933"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "721"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "حسن",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "390"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "565"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "390"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 7,
+      "target_word": "مودة",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿مودة - ٧ - ط﴾",
+      "text_page": 1013,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 7,
+      "target_word": "قدير",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿قدير - ٧ - ط﴾",
+      "text_page": 1013,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 8,
+      "target_word": "إليهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿إليهم - ٨ - ط﴾",
+      "text_page": 1013,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 9,
+      "target_word": "أن تولوهم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿أن تولوهم - ٩ - ج﴾ للشرط مع العطف .",
+      "text_page": 1013,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 10,
+      "target_word": "فامتحنوهن",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿فامتحنوهن - ١٠ - ط﴾",
+      "text_page": 1013,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 10,
+      "target_word": "بإيمانهن",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿بإيمانهن - ١٠ - ج﴾",
+      "text_page": 1013,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 10,
+      "target_word": "إلى الكفار",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿إلى الكفار - ١٠ - ط﴾",
+      "text_page": 1013,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 10,
+      "target_word": "لهن",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿لهن - ١٠ - ط﴾",
+      "text_page": 1013,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 10,
+      "target_word": "ما أنفقوا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ما أنفقوا - ١٠ - ط﴾",
+      "text_page": 1013,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 10,
+      "target_word": "أجورهن",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿أجورهن - ١٠ - ط﴾",
+      "text_page": 1013,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 10,
+      "target_word": "ما أنفقوا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ما أنفقوا - ١٠ - ط﴾",
+      "text_page": 1013,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 10,
+      "target_word": "حكم الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿حكم الله - ١٠ - ط﴾",
+      "text_page": 1013,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 10,
+      "target_word": "بينكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿بينكم - ١٠ - ط﴾",
+      "text_page": 1013,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 11,
+      "target_word": "ما أنفقوا",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿ما أنفقوا - ١١ - ط﴾",
+      "text_page": 1013,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 12,
+      "target_word": "لهن الله",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿لهن الله - ١٢ - ط﴾ .",
+      "text_page": 1013,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 1,
+      "target_word": "وما في الأرض",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": null,
+      "text": "﴿وما في الأرض - ١ - ج﴾ لاختلاف الجملتين .",
+      "text_page": 1014,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 5,
+      "target_word": "رسول الله إليكم",
+      "verdict_label": "ج",
+      "verdict": "جائز",
+      "margin_ref": 2,
+      "text": "﴿رسول الله إليكم - ٥ - ج﴾(٢)",
+      "text_page": 1014,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": [
+        {
+          "margin_ref": 2,
+          "text_page": 1014,
+          "raw_text": "(٢) علامة الوقف من : ب . وفي بقية النسخ علامة الوقف : [ ط ] . وما أثبتناه للشرط مع الفاء .\nوالوقف هنا تام عند ابن الأنباري والداني . وكاف عند النحاس والأنصاري والأشموني .\nانظر الإيضاح : ٢ / ٩٣٤ ، والقطع : (٧٢٢) ، والمكتفى : (٥٦٦) ، والمقصد : (٣٩١) ، والمنار : (٣٩١) .",
+          "continuation": null,
+          "suggested": null,
+          "symbol_witness": null,
+          "opinions": [
+            {
+              "scholar": "ابن الأنباري",
+              "verdict": "تام",
+              "comment": null,
+              "book": "الإيضاح",
+              "book_ref": "2/934"
+            },
+            {
+              "scholar": "الداني",
+              "verdict": "تام",
+              "comment": null,
+              "book": "المكتفى",
+              "book_ref": "566"
+            },
+            {
+              "scholar": "النحاس",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "القطع",
+              "book_ref": "722"
+            },
+            {
+              "scholar": "الأنصاري",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المقصد",
+              "book_ref": "391"
+            },
+            {
+              "scholar": "الأشموني",
+              "verdict": "كاف",
+              "comment": null,
+              "book": "المنار",
+              "book_ref": "391"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ayah": 5,
+      "target_word": "قلوبهم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿قلوبهم - ٥ - ط﴾",
+      "text_page": 1014,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 6,
+      "target_word": "أحمد",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿أحمد - ٦ - ط﴾",
+      "text_page": 1014,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 7,
+      "target_word": "إلى الإسلام",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿إلى الإسلام - ٧ - ط﴾",
+      "text_page": 1014,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 11,
+      "target_word": "وأنفسكم",
+      "verdict_label": "ط",
+      "verdict": "تام",
+      "margin_ref": null,
+      "text": "﴿وأنفسكم - ١١ - ط﴾",
+      "text_page": 1014,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    },
+    {
+      "ayah": 11,
+      "target_word": "تعلمون",
+      "verdict_label": "لا",
+      "verdict": "لا يوقف",
+      "margin_ref": null,
+      "text": "﴿تعلمون - ١١ - لا﴾ لأن قوله : ﴿يغفر لكم﴾ جزم على جواب ﴿تؤمنون﴾ ، فإنه خبر بمعنى الأمر .",
+      "text_page": 1014,
+      "old_text": null,
+      "fixes": [],
+      "apparatus": []
+    }
+  ]
+}

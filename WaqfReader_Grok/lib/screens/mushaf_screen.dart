@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../data/sample_data.dart';
 import '../models/waqf_models.dart';
 import '../theme/app_theme.dart';
+import '../widgets/ayah_options_sheet.dart';
 import '../widgets/ornament_divider.dart';
 import '../widgets/stop_badge.dart';
 import '../widgets/waqf_bottom_sheet.dart';
@@ -64,9 +65,15 @@ class _ReadingBlock extends StatelessWidget {
     final children = <Widget>[];
     for (final ayah in controller.currentAyahs) {
       for (final word in ayah.words) {
-        children.add(_WordToken(word: word, controller: controller));
+        children.add(
+          _WordToken(
+            word: word,
+            ayah: ayah,
+            controller: controller,
+          ),
+        );
       }
-      children.add(_AyahMark(ayah.number));
+      children.add(_AyahMark(ayah: ayah, controller: controller));
     }
 
     return Wrap(
@@ -81,9 +88,14 @@ class _ReadingBlock extends StatelessWidget {
 }
 
 class _WordToken extends StatelessWidget {
-  const _WordToken({required this.word, required this.controller});
+  const _WordToken({
+    required this.word,
+    required this.ayah,
+    required this.controller,
+  });
 
   final AyahWord word;
+  final Ayah ayah;
   final ReaderController controller;
 
   @override
@@ -94,6 +106,7 @@ class _WordToken extends StatelessWidget {
         (stop != null && controller.isStopVisible(stop)) ? stop : null;
     final selected =
         visibleStop != null && controller.selectedStopId == visibleStop.id;
+    final activeScholar = controller.selectedScholar;
     final text = Text(
       word.text,
       textDirection: TextDirection.rtl,
@@ -108,22 +121,31 @@ class _WordToken extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       textDirection: TextDirection.rtl,
       children: [
-        DecoratedBox(
-          decoration: BoxDecoration(
-            color: selected ? AppColors.wordGlow : Colors.transparent,
-            borderRadius: BorderRadius.circular(8),
-          ),
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 2, vertical: 1),
-            child: text,
+        GestureDetector(
+          behavior: HitTestBehavior.opaque,
+          onLongPress: () => showAyahOptionsSheet(context, controller, ayah),
+          child: DecoratedBox(
+            decoration: BoxDecoration(
+              color: selected ? AppColors.wordGlow : Colors.transparent,
+              borderRadius: BorderRadius.circular(8),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 2, vertical: 1),
+              child: text,
+            ),
           ),
         ),
         if (visibleStop != null)
           StopBadge(
-            key: ValueKey<String>('stop-${visibleStop.id}'),
-            symbol: visibleStop.symbol,
+            key: ValueKey<String>(
+              'stop-${visibleStop.id}-${activeScholar ?? "all"}',
+            ),
+            symbol: visibleStop.symbolForScholar(activeScholar),
+            verdictLabel: visibleStop.verdictLabelForScholar(activeScholar),
+            isQila: visibleStop.isQilaForScholar(activeScholar),
             selected: selected,
-            semanticsLabel: 'وقف ${visibleStop.label} عند ${visibleStop.word}',
+            semanticsLabel:
+                'وقف ${visibleStop.labelForScholar(activeScholar)} عند ${visibleStop.word}',
             onTap: () {
               controller.select(visibleStop.id);
               showWaqfSheet(context, controller, visibleStop.id);
@@ -135,30 +157,37 @@ class _WordToken extends StatelessWidget {
 }
 
 class _AyahMark extends StatelessWidget {
-  const _AyahMark(this.number);
+  const _AyahMark({required this.ayah, required this.controller});
 
-  final int number;
+  final Ayah ayah;
+  final ReaderController controller;
 
   @override
   Widget build(BuildContext context) {
     return Semantics(
-      label: 'آية ${arabicDigits(number)}',
-      child: Container(
-        constraints: const BoxConstraints(minWidth: 28, minHeight: 22),
-        margin: const EdgeInsets.symmetric(horizontal: 3),
-        padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 1),
-        alignment: Alignment.center,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(11),
-          border: Border.all(color: AppColors.gold),
-        ),
-        child: Text(
-          arabicDigits(number),
-          style: AppText.ui(
-            size: 10,
-            weight: FontWeight.w700,
-            color: AppColors.gold,
-            height: 1.1,
+      button: true,
+      label: 'خيارات الآية ${arabicDigits(ayah.number)}',
+      child: InkWell(
+        onTap: () => showAyahOptionsSheet(context, controller, ayah),
+        onLongPress: () => showAyahOptionsSheet(context, controller, ayah),
+        borderRadius: BorderRadius.circular(11),
+        child: Container(
+          constraints: const BoxConstraints(minWidth: 28, minHeight: 22),
+          margin: const EdgeInsets.symmetric(horizontal: 3),
+          padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 1),
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(11),
+            border: Border.all(color: AppColors.gold),
+          ),
+          child: Text(
+            arabicDigits(ayah.number),
+            style: AppText.ui(
+              size: 10,
+              weight: FontWeight.w700,
+              color: AppColors.gold,
+              height: 1.1,
+            ),
           ),
         ),
       ),

@@ -7,7 +7,8 @@
     8
   ],
   "sourceBatch": [
-    "batch_1147_1150.apparatus_v4.raw.json"
+    "jamharah_t21761.json",
+    "qat_itinaf_s099.json"
   ],
   "sourceTag": "base",
   "ayahs": [
@@ -48,7 +49,7 @@
           "index": 4,
           "text": "زِلْزَالَهَا",
           "textImlai": "زِلۡزَالَهَا ۙ‏",
-          "stopId": null,
+          "stopId": "s99-a1-w4",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -83,7 +84,7 @@
           "index": 3,
           "text": "أَثْقَالَهَا",
           "textImlai": "اَثۡقَالَهَا ۙ‏",
-          "stopId": null,
+          "stopId": "s99-a2-w3",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -414,36 +415,33 @@
   ],
   "stops": [
     {
-      "id": "s99-a3-w4",
+      "id": "s99-a1-w4",
       "surah": 99,
-      "ayah": 3,
+      "ayah": 1,
       "wordIndex": 4,
-      "word": "لَهَا",
-      "targetWord": "مالها",
-      "verdictLabel": "ج",
-      "verdict": "جائز",
-      "label": "جائز",
-      "symbol": "jaiz",
-      "reason": "لاحتمال حذف عامل [ ﴿ إذا ﴾ ، أي : إذا ] (٣) كانت هذه الأكوان ترى ما ترى (١) ، ولإمكان جعل ﴿ يومئذ ﴾ بدلًا عن ﴿ إذا ﴾ [ لأنّهما ظرفان ] (٢) ، والتقدير : يومئذ (٣) يوم إذا زلزلت ، والعامل : ﴿ تحدث ﴾ (٤) ",
-      "textPage": 1148,
-      "marginRef": 3,
-      "fixes": [
-        {
-          "type": "page_split",
-          "basis": "page_prose",
-          "old_text": "﴿ مالها - ٣ - ج ﴾ لاحتمال حذف عامل [ ﴿ إذا ﴾ ، أي : إذا ] (٣)",
-          "new_text": "﴿ مالها - ٣ - ج ﴾ لاحتمال حذف عامل [ ﴿ إذا ﴾ ، أي : إذا ] (٣) كانت هذه الأكوان ترى ما ترى (١) ، ولإمكان جعل ﴿ يومئذ ﴾ بدلًا عن ﴿ إذا ﴾ [ لأنّهما ظرفان ] (٢) ، والتقدير : يومئذ (٣) يوم إذا زلزلت ، والعامل : ﴿ تحدث ﴾ (٤) .",
-          "info": "Clause continues on page 1149"
-        }
-      ],
+      "word": "زِلْزَالَهَا",
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
       "opinions": [
         {
-          "scholar": "السجاوندي",
-          "verdict": "جائز",
-          "verdictLabel": "ج",
-          "book": "علل الوقوف",
-          "page": "1148",
-          "comment": null
+          "scholar": "الأشموني",
+          "targetWord": "زلزالها",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "432",
+          "comment": "(لا يوقف) ولا وقف من أولها إلى أوحى لها لاتصال الكلام بعضه ببعض فلا يوقف على زلزالها للعطف ولا على أثقالها ولا على مالها لأنَّ قوله يومئذ تحدث أخبارها جواب إذا فلا يفصل بينهما بالوقف أي إذا كانت هذه الأشياء حدثت الأرض بأخبارها أي شهدت بالأعمال التي عملت عليها وإن جعل العامل في إذا مقدَّرًا خرجت عن الظرفية والشرط وصارت مفعولاً به ولا يوقف على أخبارها لأنَّ ما بعده متعلق بما قبله أي تحدث بأخبارها بوحي الله إليها"
         }
       ],
       "aiSuggestion": null,
@@ -452,7 +450,102 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1147_1150.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21761.json"
+    },
+    {
+      "id": "s99-a2-w3",
+      "surah": 99,
+      "ayah": 2,
+      "wordIndex": 3,
+      "word": "أَثْقَالَهَا",
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "الأشموني",
+          "targetWord": "أثقالها",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "432",
+          "comment": "(لا يوقف) ولا وقف من أولها إلى أوحى لها لاتصال الكلام بعضه ببعض فلا يوقف على زلزالها للعطف ولا على أثقالها ولا على مالها لأنَّ قوله يومئذ تحدث أخبارها جواب إذا فلا يفصل بينهما بالوقف أي إذا كانت هذه الأشياء حدثت الأرض بأخبارها أي شهدت بالأعمال التي عملت عليها وإن جعل العامل في إذا مقدَّرًا خرجت عن الظرفية والشرط وصارت مفعولاً به ولا يوقف على أخبارها لأنَّ ما بعده متعلق بما قبله أي تحدث بأخبارها بوحي الله إليها"
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "jamharah_t21761.json"
+    },
+    {
+      "id": "s99-a3-w4",
+      "surah": 99,
+      "ayah": 3,
+      "wordIndex": 4,
+      "word": "لَهَا",
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "targetWord": "مالها",
+          "verdict": [
+            "جائز"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "علل الوقوف",
+          "page": "3/1148-1149",
+          "comment": "(جائز) لاحتمال حذف عامل {إذا}، أي: إذا كانت هذه الأكوان ترى ما ترى، ولإمكان جعل {يومئذ} بدلاً عن {إذا} لأنهما طرفان]، والتقدير: يومئذ يوم إذا زلزلت، والعامل: {تحدث}"
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "مالها",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "432",
+          "comment": "(لا يوقف) ولا وقف من أولها إلى أوحى لها لاتصال الكلام بعضه ببعض فلا يوقف على زلزالها للعطف ولا على أثقالها ولا على مالها لأنَّ قوله يومئذ تحدث أخبارها جواب إذا فلا يفصل بينهما بالوقف أي إذا كانت هذه الأشياء حدثت الأرض بأخبارها أي شهدت بالأعمال التي عملت عليها وإن جعل العامل في إذا مقدَّرًا خرجت عن الظرفية والشرط وصارت مفعولاً به ولا يوقف على أخبارها لأنَّ ما بعده متعلق بما قبله أي تحدث بأخبارها بوحي الله إليها"
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "jamharah_t21761.json"
     },
     {
       "id": "s99-a4-w3",
@@ -460,23 +553,47 @@
       "ayah": 4,
       "wordIndex": 3,
       "word": "أَخْبَارَهَا",
-      "targetWord": "أخبارها",
-      "verdictLabel": "لا",
-      "verdict": "لا يوقف",
-      "label": "لا يوقف",
-      "symbol": "la",
-      "reason": "لتعلق الجار ",
-      "textPage": 1149,
+      "textPage": 0,
       "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "لا يوقف",
-          "verdictLabel": "لا",
+          "targetWord": "أخبارها",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1149",
-          "comment": null
+          "page": "3/1148-1149",
+          "comment": "(لا يوقف) لتعلق الجار"
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "أخبارها",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "432",
+          "comment": "(لا يوقف) ولا يوقف على أخبارها لأنَّ ما بعده متعلق بما قبله أي تحدث بأخبارها بوحي الله إليها"
         }
       ],
       "aiSuggestion": null,
@@ -485,7 +602,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1147_1150.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21761.json"
     },
     {
       "id": "s99-a5-w4",
@@ -493,23 +610,108 @@
       "ayah": 5,
       "wordIndex": 4,
       "word": "لَهَا",
-      "targetWord": "أوحى لها",
-      "verdictLabel": "ط",
-      "verdict": "تام",
-      "label": "تام",
-      "symbol": "tam",
-      "reason": "وقف السجاوندي: تام",
-      "textPage": 1149,
+      "textPage": 0,
       "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "تام",
-          "verdictLabel": "ط",
+          "targetWord": "أوحى لها",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1149",
+          "page": "3/1148-1149",
           "comment": null
+        },
+        {
+          "scholar": "ابن الأنباري",
+          "targetWord": "بأن ربك أوحى لها",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "إيضاح الوقف والابتداء",
+          "page": "2/983",
+          "comment": null
+        },
+        {
+          "scholar": "الداني",
+          "targetWord": "أوحى لها",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "المكتفى",
+          "page": "626",
+          "comment": "(تام) أي: أوحى إليها"
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "أوحى لها",
+          "verdict": [
+            "كاف",
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "ج",
+            "لا"
+          ],
+          "symbol": [
+            "jaiz",
+            "la"
+          ],
+          "isQila": [
+            false,
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "432",
+          "comment": "(كاف) إن نصب ما بعده بمقدار وليس بوقف إن جعل بدلاً مما قبله"
+        },
+        {
+          "scholar": "النحاس",
+          "targetWord": "بِأَنَّ رَبَّكَ أَوْحَىٰ لَهَا",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 5",
+          "comment": "(تام) ﴿بِأَنَّ رَبَّكَ أَوْحَىٰ لَهَا﴾ تمام وكذا"
         }
       ],
       "aiSuggestion": null,
@@ -518,7 +720,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1147_1150.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21761.json"
     },
     {
       "id": "s99-a6-w6",
@@ -526,23 +728,104 @@
       "ayah": 6,
       "wordIndex": 6,
       "word": "أَعْمَـٰلَهُمْ",
-      "targetWord": "أعمالهم",
-      "verdictLabel": "ط",
-      "verdict": "تام",
-      "label": "تام",
-      "symbol": "tam",
-      "reason": "[ لابتداء الشرط ] (٥)",
-      "textPage": 1149,
-      "marginRef": 5,
+      "textPage": 0,
+      "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "تام",
-          "verdictLabel": "ط",
+          "targetWord": "أعمالهم",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1149",
+          "page": "3/1148-1149",
+          "comment": "(تام) لابتداء الشرط]"
+        },
+        {
+          "scholar": "ابن الأنباري",
+          "targetWord": "ليروا أعمالهم",
+          "verdict": [
+            "حسن"
+          ],
+          "verdictLabel": [
+            "ز"
+          ],
+          "symbol": [
+            "mujawwaz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "إيضاح الوقف والابتداء",
+          "page": "2/983",
           "comment": null
+        },
+        {
+          "scholar": "الداني",
+          "targetWord": "ليروا أعمالهم",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "المكتفى",
+          "page": "626",
+          "comment": "(كاف) ورأس آية"
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "أعمالهم",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "432",
+          "comment": "(كاف) للابتداء بالشرط مع الفاء ومثله خيرًا يره وكذا شرًّا يره"
+        },
+        {
+          "scholar": "النحاس",
+          "targetWord": "أَعْمَالَهُمْ",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 5",
+          "comment": "(تام) وكذا ﴿أَعْمَالَهُمْ﴾ وكذا"
         }
       ],
       "aiSuggestion": null,
@@ -551,7 +834,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1147_1150.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21761.json"
     },
     {
       "id": "s99-a7-w6",
@@ -559,23 +842,104 @@
       "ayah": 7,
       "wordIndex": 6,
       "word": "يَرَهُۥ",
-      "targetWord": "خيرًا يره",
-      "verdictLabel": "ط",
-      "verdict": "تام",
-      "label": "تام",
-      "symbol": "tam",
-      "reason": "كذلك [ أيضًا ] (٧) ",
-      "textPage": 1149,
-      "marginRef": 6,
+      "textPage": 0,
+      "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "تام",
-          "verdictLabel": "ط",
+          "targetWord": "خيرًا يره",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1149",
+          "page": "3/1148-1149",
+          "comment": "(تام) كذلك [أيضًا]. ["
+        },
+        {
+          "scholar": "ابن الأنباري",
+          "targetWord": "خيرا يره",
+          "verdict": [
+            "حسن"
+          ],
+          "verdictLabel": [
+            "ز"
+          ],
+          "symbol": [
+            "mujawwaz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "إيضاح الوقف والابتداء",
+          "page": "2/983",
           "comment": null
+        },
+        {
+          "scholar": "الداني",
+          "targetWord": "خيرًا يره",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "المكتفى",
+          "page": "626",
+          "comment": null
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "خيرًا يره",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "432",
+          "comment": "(كاف) ومثله"
+        },
+        {
+          "scholar": "النحاس",
+          "targetWord": "خَيْرًا يَرَهُ",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 5",
+          "comment": "(تام) وكذا ﴿خَيْرًا يَرَهُ﴾"
         }
       ],
       "aiSuggestion": null,
@@ -584,7 +948,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1147_1150.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21761.json"
     },
     {
       "id": "s99-a8-w6",
@@ -592,30 +956,27 @@
       "ayah": 8,
       "wordIndex": 6,
       "word": "يَرَهُۥ",
-      "targetWord": "يره",
-      "verdictLabel": "ط",
-      "verdict": "تام",
-      "label": "تام",
-      "symbol": "tam",
-      "reason": "] (٨) ",
-      "textPage": 1149,
-      "marginRef": 8,
+      "textPage": 0,
+      "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "تام",
-          "verdictLabel": "ط",
+          "targetWord": "يره",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1149",
-          "comment": null
-        },
-        {
-          "scholar": "الأنصاري",
-          "verdict": "تام",
-          "verdictLabel": null,
-          "book": "المقصد",
-          "page": "432",
+          "page": "3/1148-1149",
           "comment": null
         }
       ],
@@ -625,7 +986,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1147_1150.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21761.json"
     }
   ]
 }

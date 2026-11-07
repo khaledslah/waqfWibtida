@@ -200,6 +200,8 @@ class _ReviewCard extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 6),
                 child: StopBadge(
                   symbol: stop.symbol,
+                  verdictLabel: stop.verdictLabel,
+                  isQila: stop.isQila,
                   semanticsLabel: '${stop.label} ${stop.word}',
                   core: 24,
                 ),

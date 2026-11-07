@@ -7,8 +7,8 @@
     8
   ],
   "sourceBatch": [
-    "batch_1151_1154.apparatus_v4.raw.json",
-    "batch_1155_1158.apparatus_v4.raw.json"
+    "jamharah_t21764.json",
+    "qat_itinaf_s102.json"
   ],
   "sourceTag": "base",
   "ayahs": [
@@ -29,7 +29,7 @@
           "index": 2,
           "text": "ٱلتَّكَاثُرُ",
           "textImlai": "التَّكَاثُرُۙ‏",
-          "stopId": null,
+          "stopId": "s102-a1-w2",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -79,7 +79,7 @@
           "index": 1,
           "text": "كَلَّا",
           "textImlai": "كَلَّا",
-          "stopId": null,
+          "stopId": "s102-a3-w1",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -324,7 +324,7 @@
           "index": 5,
           "text": "ٱلنَّعِيمِ",
           "textImlai": "النَّعِيۡمِ‏",
-          "stopId": null,
+          "stopId": "s102-a8-w5",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -335,28 +335,33 @@
   ],
   "stops": [
     {
-      "id": "s102-a2-w3",
+      "id": "s102-a1-w2",
       "surah": 102,
-      "ayah": 2,
-      "wordIndex": 3,
-      "word": "ٱلْمَقَابِرَ",
-      "targetWord": "المقابر",
-      "verdictLabel": "ط",
-      "verdict": "تام",
-      "label": "تام",
-      "symbol": "tam",
-      "reason": "لأن ﴿ كلا ﴾ بمعنى : [ حقًّا ، أو أَلَا ](2) ، وقد(3) يُحمل(4) على(5) الردع عن(6) التكاثر ، والتكرار دليل التوكيد للتهديد في : ﴿ سوف ﴾ ",
-      "textPage": 1154,
-      "marginRef": 2,
+      "ayah": 1,
+      "wordIndex": 2,
+      "word": "ٱلتَّكَاثُرُ",
+      "textPage": 0,
+      "marginRef": null,
       "fixes": [],
       "opinions": [
         {
-          "scholar": "السجاوندي",
-          "verdict": "تام",
-          "verdictLabel": "ط",
-          "book": "علل الوقوف",
-          "page": "1154",
-          "comment": null
+          "scholar": "الأشموني",
+          "targetWord": "التكاثر",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "433 - 434",
+          "comment": "(لا يوقف) ولا وقف من أوَّلها إلى المقابر فلا يوقف على التكاثر لأن ما بعده غاية لما قبله"
         }
       ],
       "aiSuggestion": null,
@@ -365,7 +370,182 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1151_1154.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21764.json"
+    },
+    {
+      "id": "s102-a2-w3",
+      "surah": 102,
+      "ayah": 2,
+      "wordIndex": 3,
+      "word": "ٱلْمَقَابِرَ",
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "targetWord": "المقابر",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "علل الوقوف",
+          "page": "3/1154-1155",
+          "comment": "(تام) لأن {كلا} بمعنى: [حقًا، أو إلا]، وقد يحمل على الردع عن التكاثر، والتكرار دليل التوكيد للتهديد في: {سوف}. ["
+        },
+        {
+          "scholar": "ابن الأنباري",
+          "targetWord": "حتى زرتم المقابر",
+          "verdict": [
+            "حسن"
+          ],
+          "verdictLabel": [
+            "ز"
+          ],
+          "symbol": [
+            "mujawwaz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "إيضاح الوقف والابتداء",
+          "page": "2/983- 984",
+          "comment": null
+        },
+        {
+          "scholar": "الداني",
+          "targetWord": "حتى زرتم المقابر",
+          "verdict": [
+            "كاف",
+            "تام"
+          ],
+          "verdictLabel": [
+            "ج",
+            "ط"
+          ],
+          "symbol": [
+            "jaiz",
+            "tam"
+          ],
+          "isQila": [
+            false,
+            true
+          ],
+          "book": "المكتفى",
+          "page": "627- 628",
+          "comment": "(كاف) ( كاف، وقيل: تام. ثم تبتدأ {كلا} بمعنى: ألا على التهديد والوعيد"
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "المقابر",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "433 - 434",
+          "comment": "(كاف) ولا يوقف على كلا لأنَّها صلةٌ لما بعدها بمعنى حقًا سوف تعلمون ما أنتم عليه من التكاثر بالأموال والأولاد فالخطاب الأوَّل للكفار والثاني للمؤمنين وفصل بين الأوَّل والثاني بالوقف وإلا فالثاني داخل مع الأول لاتساقه عليه وكررت للتغليظ والتخويف ووعيد بعد وعيد وجاء بثُّم إيذانًا بأنَّ تكريره أبلغ منَّ الأول في التهويل"
+        },
+        {
+          "scholar": "النحاس",
+          "targetWord": "حَتَّىٰ زُرْتُمُ الْمَقَابِرَ",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 2",
+          "comment": "(تام) ﴿حَتَّىٰ زُرْتُمُ الْمَقَابِرَ﴾ هذا التمام عند ابي حاتم والوقف عند محمد بن عيسى | (تام) التمام عند ابي حاتم والوقف عند محمد بن عيسى ﴿حَتَّىٰ زُرْتُمُ الْمَقَابِرَ﴾"
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "jamharah_t21764.json"
+    },
+    {
+      "id": "s102-a3-w1",
+      "surah": 102,
+      "ayah": 3,
+      "wordIndex": 1,
+      "word": "كَلَّا",
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "الداني",
+          "targetWord": "كلا",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            true
+          ],
+          "book": "المكتفى",
+          "page": "627- 628",
+          "comment": "(تام) وقيل: التمام: (كلا) أي: لا ينفعكم التكاثر"
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "كلا",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "433 - 434",
+          "comment": "(لا يوقف) ولا يوقف على كلا لأنَّها صلةٌ لما بعدها بمعنى حقًا سوف تعلمون ما أنتم عليه من التكاثر بالأموال والأولاد فالخطاب الأوَّل للكفار والثاني للمؤمنين وفصل بين الأوَّل والثاني بالوقف وإلا فالثاني داخل مع الأول لاتساقه عليه وكررت للتغليظ والتخويف ووعيد بعد وعيد وجاء بثُّم إيذانًا بأنَّ تكريره أبلغ منَّ الأول في التهويل"
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": false,
+      "sourceBatch": "jamharah_t21764.json"
     },
     {
       "id": "s102-a3-w3",
@@ -373,31 +553,28 @@
       "ayah": 3,
       "wordIndex": 3,
       "word": "تَعْلَمُونَ",
-      "targetWord": "تعلمون",
-      "verdictLabel": "لا",
-      "verdict": "لا يوقف",
-      "label": "لا يوقف",
-      "symbol": "la",
-      "reason": "الأولى للعطف ",
-      "textPage": 1154,
+      "textPage": 0,
       "marginRef": null,
-      "fixes": [
-        {
-          "type": "malformed_bracket",
-          "basis": "page_prose",
-          "old_text": "[ ﴿ تعلمون - 3 - ﴾ الأولى - لا - للعطف .",
-          "new_text": "[ ﴿ تعلمون - 3 - لا ﴾ الأولى للعطف .",
-          "info": "Closing bracket ﴾ placed before verdict letter 'لا'"
-        }
-      ],
+      "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "لا يوقف",
-          "verdictLabel": "لا",
+          "targetWord": "تعلمون",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1154",
-          "comment": null
+          "page": "3/1154-1155",
+          "comment": "(لا يوقف) للعطف"
         }
       ],
       "aiSuggestion": null,
@@ -406,7 +583,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1151_1154.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21764.json"
     },
     {
       "id": "s102-a4-w4",
@@ -414,31 +591,51 @@
       "ayah": 4,
       "wordIndex": 4,
       "word": "تَعْلَمُونَ",
-      "targetWord": "تعلمون",
-      "verdictLabel": "ط",
-      "verdict": "تام",
-      "label": "تام",
-      "symbol": "tam",
-      "reason": "الثانية ] (7)",
-      "textPage": 1154,
-      "marginRef": 7,
-      "fixes": [
-        {
-          "type": "malformed_bracket",
-          "basis": "page_prose",
-          "old_text": "﴿ تعلمون - 4 - الثانية - ط - ] (7)",
-          "new_text": "﴿ تعلمون - 4 - ط ﴾ الثانية ] (7)",
-          "info": "Missing closing ornate bracket ﴾ and misplaced verdict letter 'ط'"
-        }
-      ],
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "تام",
-          "verdictLabel": "ط",
+          "targetWord": "تعلمون",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1154",
+          "page": "3/1154-1155",
           "comment": null
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "تعلمون",
+          "verdict": [
+            "كاف",
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "ج",
+            "لا"
+          ],
+          "symbol": [
+            "jaiz",
+            "la"
+          ],
+          "isQila": [
+            false,
+            true
+          ],
+          "book": "منار الهدى",
+          "page": "433 - 434",
+          "comment": "(كاف) ثم كرر الثالثة لتحقيق العلم فقال كلا لو تعلمون علم اليقين وهو أكفى مما قبله وجواب لو محذوف تقديره ما ألهاكم التكاثر وجعل الحسن البصري كلا الثالثة قسمًا وابتدأ بها وقيل الوقف لو تعلمون ثم يبتدئ علم اليقين على القسم وانتصب لما حذفت الواو وجوبًا به لترون أي والله لترون الجحيم كقول امرئ القيس\nفقالت يمين الله مالك حيلة = وما أن أرى عنك الغواية تنجلي\nوقيل لا يجوز أن يكون لترون جوابًا لأنه محقق الوقوع بل الجواب محذوف تقديره لو تعلمون علمًا يقينًا ما ألهاكم التكاثر فحذف الجواب للعلم بتقدمه قرأ العامة لترون مبنيًا للفاعل وقرأ ابن عامر والكسائي لترون بضم التاء الفوقية رباعيًا متعديًا لاثنين الأول الواو والثاني الجحيم ولا يوقف على الجحيم للعطف"
         }
       ],
       "aiSuggestion": null,
@@ -447,7 +644,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1151_1154.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21764.json"
     },
     {
       "id": "s102-a5-w5",
@@ -455,31 +652,85 @@
       "ayah": 5,
       "wordIndex": 5,
       "word": "ٱلْيَقِينِ",
-      "targetWord": "علم اليقين",
-      "verdictLabel": "ط",
-      "verdict": "تام",
-      "label": "تام",
-      "symbol": "tam",
-      "reason": "لأن التقدير : لو تعلمون علم اليقين لما ألهاكم التكاثر ، وقوله : ﴿ لترون الجحيم ﴾ (1) جواب قسم محذوف ، أي : والله لترون . . ",
-      "textPage": 1154,
+      "textPage": 0,
       "marginRef": null,
-      "fixes": [
-        {
-          "type": "page_split",
-          "basis": "page_prose",
-          "old_text": "﴿ علم اليقين - 5 - ط ﴾ لأن التقدير : لو تعلمون",
-          "new_text": "﴿ علم اليقين - 5 - ط ﴾ لأن التقدير : لو تعلمون علم اليقين لما ألهاكم التكاثر ، وقوله : ﴿ لترون الجحيم ﴾ (1) جواب قسم محذوف ، أي : والله لترون . . .",
-          "info": "Clause continues onto page 1155"
-        }
-      ],
+      "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "تام",
-          "verdictLabel": "ط",
+          "targetWord": "علم اليقين",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1154",
-          "comment": null
+          "page": "3/1154-1155",
+          "comment": "(تام) لأن التقدير: لو تعلمون علم اليقين لما ألهاكم التكاثر، وقوله: {لترون الجحيم} جواب قسم محذوف، أي: والله لترون"
+        },
+        {
+          "scholar": "ابن الأنباري",
+          "targetWord": "لو تعلمون علم اليقين",
+          "verdict": [
+            "حسن"
+          ],
+          "verdictLabel": [
+            "ز"
+          ],
+          "symbol": [
+            "mujawwaz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "إيضاح الوقف والابتداء",
+          "page": "2/983- 984",
+          "comment": "(حسن) والمعنى «لو تعلمون علم اليقين ما ألهاكم التكاثر» «فحذف الجواب لمعرفة المخاطبين به»"
+        },
+        {
+          "scholar": "الداني",
+          "targetWord": "علم اليقين",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "المكتفى",
+          "page": "627- 628",
+          "comment": "(تام) والمعنى: لو تعلمون علم اليقين ما ألهاكم التكاثر، فحذف الجواب لمعرفة المخاطبين به).-"
+        },
+        {
+          "scholar": "النحاس",
+          "targetWord": "لو تعلمون علم اليقين",
+          "verdict": [
+            "جائز"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 2",
+          "comment": "(جائز) ومن الوقف ﴿لو تعلمون علم اليقين﴾ قال"
         }
       ],
       "aiSuggestion": null,
@@ -488,7 +739,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1151_1154.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21764.json"
     },
     {
       "id": "s102-a6-w2",
@@ -496,23 +747,47 @@
       "ayah": 6,
       "wordIndex": 2,
       "word": "ٱلْجَحِيمَ",
-      "targetWord": "الجحيم",
-      "verdictLabel": "لا",
-      "verdict": "لا يوقف",
-      "label": "لا يوقف",
-      "symbol": "la",
-      "reason": "للعطف ",
-      "textPage": 1155,
-      "marginRef": 2,
+      "textPage": 0,
+      "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "لا يوقف",
-          "verdictLabel": "لا",
+          "targetWord": "الجحيم",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1155",
-          "comment": null
+          "page": "3/1154-1155",
+          "comment": "(لا يوقف) للعطف"
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "الجحيم",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "433 - 434",
+          "comment": "(لا يوقف) ولا يوقف على الجحيم للعطف"
         }
       ],
       "aiSuggestion": null,
@@ -521,7 +796,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1155_1158.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21764.json"
     },
     {
       "id": "s102-a7-w4",
@@ -529,22 +804,88 @@
       "ayah": 7,
       "wordIndex": 4,
       "word": "ٱلْيَقِينِ",
-      "targetWord": "عين اليقين",
-      "verdictLabel": "لا",
-      "verdict": "لا يوقف",
-      "label": "لا يوقف",
-      "symbol": "la",
-      "reason": "كذلك ",
-      "textPage": 1155,
-      "marginRef": 3,
+      "textPage": 0,
+      "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "لا يوقف",
-          "verdictLabel": "لا",
+          "targetWord": "عين اليقين",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1155",
+          "page": "3/1154-1155",
+          "comment": "(لا يوقف) كذلك"
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "عين اليقين",
+          "verdict": [
+            "جائز",
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "ج",
+            "لا"
+          ],
+          "symbol": [
+            "jaiz",
+            "la"
+          ],
+          "isQila": [
+            false,
+            true
+          ],
+          "book": "منار الهدى",
+          "page": "433 - 434",
+          "comment": "(جائز) لاختلاف المسؤول عنه وقيل لا يجوز للعطف"
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "jamharah_t21764.json"
+    },
+    {
+      "id": "s102-a8-w5",
+      "surah": 102,
+      "ayah": 8,
+      "wordIndex": 5,
+      "word": "ٱلنَّعِيمِ",
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "الأشموني",
+          "targetWord": "آخر السورة",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "433 - 434",
           "comment": null
         }
       ],
@@ -554,7 +895,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1155_1158.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21764.json"
     }
   ]
 }

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../data/sample_data.dart';
 import '../models/waqf_models.dart';
 import '../theme/app_theme.dart';
+import '../utils/waqf_share.dart';
 import 'page_image_viewer.dart';
 import 'stop_badge.dart';
 
@@ -39,16 +40,18 @@ class WaqfBottomSheet extends StatefulWidget {
 class _WaqfBottomSheetState extends State<WaqfBottomSheet> {
   bool _aiOpen = false;
 
-  void _approve(String id) {
-    final messenger = ScaffoldMessenger.of(context);
-    Navigator.of(context).pop();
-    widget.controller.markForReview(id);
-    messenger.showSnackBar(
+  void _toggleReport(String id) {
+    final willAdd = !widget.controller.isSent(id);
+    widget.controller.toggleSent(id);
+    ScaffoldMessenger.maybeOf(context)?.showSnackBar(
       SnackBar(
         behavior: SnackBarBehavior.floating,
-        margin: const EdgeInsets.fromLTRB(16, 0, 16, 96),
+        duration: const Duration(seconds: 2),
+        margin: const EdgeInsets.fromLTRB(16, 0, 16, 32),
         content: Text(
-          'أُضيف الوقف إلى المراجعة',
+          willAdd
+              ? 'أُضيف الوقف إلى قائمة المراجعة والإبلاغ'
+              : 'أُزيل الوقف من قائمة المراجعة',
           style: AppText.ui(size: 14, color: AppColors.white),
         ),
       ),
@@ -80,33 +83,27 @@ class _WaqfBottomSheetState extends State<WaqfBottomSheet> {
               if (stop == null) return const _MissingStop();
               final sent = widget.controller.isSent(stop.id);
               final fav = widget.controller.isFavorite(stop.id);
-              final verified = widget.controller.isVerified(stop.id);
               return Column(
                 children: [
                   const _DragHandle(),
                   Expanded(
-                    child: SingleChildScrollView(
-                      padding: const EdgeInsets.fromLTRB(20, 4, 20, 8),
-                      child: _SheetBody(
-                        stop: stop,
-                        aiOpen: _aiOpen,
-                        onToggleAi: () => setState(() => _aiOpen = !_aiOpen),
-                        isVerseEnd: widget.controller.isVerseEnd(stop),
-                        favorite: fav,
-                        verified: verified,
-                        onToggleFavorite: () =>
-                            widget.controller.toggleFavorite(stop.id),
-                        onToggleVerified: () =>
-                            widget.controller.toggleVerified(stop.id),
-                        onOpenPage: _openPage,
+                    child: SelectionArea(
+                      child: SingleChildScrollView(
+                        padding: EdgeInsets.fromLTRB(20, 4, 20, 20 + bottom),
+                        child: _SheetBody(
+                          stop: stop,
+                          selectedScholar: widget.controller.selectedScholar,
+                          aiOpen: _aiOpen,
+                          onToggleAi: () => setState(() => _aiOpen = !_aiOpen),
+                          isVerseEnd: widget.controller.isVerseEnd(stop),
+                          favorite: fav,
+                          sent: sent,
+                          onToggleFavorite: () =>
+                              widget.controller.toggleFavorite(stop.id),
+                          onToggleReport: () => _toggleReport(stop.id),
+                          onOpenPage: _openPage,
+                        ),
                       ),
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.fromLTRB(20, 4, 20, 12 + bottom),
-                    child: _ApproveButton(
-                      sent: sent,
-                      onPressed: sent ? null : () => _approve(stop.id),
                     ),
                   ),
                 ],
@@ -115,6 +112,61 @@ class _WaqfBottomSheetState extends State<WaqfBottomSheet> {
           ),
         ),
       ),
+    );
+  }
+}
+
+class _StopShareMenu extends StatelessWidget {
+  const _StopShareMenu({required this.stop});
+
+  final WaqfStop stop;
+
+  @override
+  Widget build(BuildContext context) {
+    return PopupMenuButton<String>(
+      tooltip: 'خيارات الوقف (نسخ ومشاركة)',
+      icon: const Icon(Icons.share_outlined, color: AppColors.sheetMuted),
+      color: AppColors.sheetRaised,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12),
+        side: const BorderSide(color: AppColors.sheetLine),
+      ),
+      onSelected: (action) {
+        final text = formatStopText(stop);
+        if (action == 'copy') {
+          copyText(context, text, message: 'تم نسخ نص الوقف وأقوال العلماء');
+        } else if (action == 'share') {
+          shareText(context, text, subject: 'وقف: ${stop.word}');
+        }
+      },
+      itemBuilder: (context) => [
+        PopupMenuItem(
+          value: 'copy',
+          child: Row(
+            children: [
+              const Icon(Icons.copy_rounded, size: 18, color: AppColors.sheetText),
+              const SizedBox(width: 8),
+              Text(
+                'نسخ الوقف كاملاً',
+                style: AppText.ui(size: 13, color: AppColors.sheetText),
+              ),
+            ],
+          ),
+        ),
+        PopupMenuItem(
+          value: 'share',
+          child: Row(
+            children: [
+              const Icon(Icons.share_outlined, size: 18, color: AppColors.sheetText),
+              const SizedBox(width: 8),
+              Text(
+                'مشاركة الوقف',
+                style: AppText.ui(size: 13, color: AppColors.sheetText),
+              ),
+            ],
+          ),
+        ),
+      ],
     );
   }
 }
@@ -141,30 +193,36 @@ class _DragHandle extends StatelessWidget {
 class _SheetBody extends StatelessWidget {
   const _SheetBody({
     required this.stop,
+    required this.selectedScholar,
     required this.aiOpen,
     required this.onToggleAi,
     required this.isVerseEnd,
     required this.favorite,
-    required this.verified,
+    required this.sent,
     required this.onToggleFavorite,
-    required this.onToggleVerified,
+    required this.onToggleReport,
     required this.onOpenPage,
   });
 
   final WaqfStop stop;
+  final String? selectedScholar;
   final bool aiOpen;
   final VoidCallback onToggleAi;
   final bool isVerseEnd;
   final bool favorite;
-  final bool verified;
+  final bool sent;
   final VoidCallback onToggleFavorite;
-  final VoidCallback onToggleVerified;
+  final VoidCallback onToggleReport;
   final Future<void> Function(int? page) onOpenPage;
 
   @override
   Widget build(BuildContext context) {
-    final matn = stop.matnOpinions;
-    final margin = stop.marginOpinions;
+    final activeOp = stop.opinionForScholar(selectedScholar);
+    final activeSymbol = stop.symbolForScholar(selectedScholar);
+    final activeVerdictLabel = stop.verdictLabelForScholar(selectedScholar);
+    final activeIsQila = stop.isQilaForScholar(selectedScholar);
+    final activeLabel = stop.labelForScholar(selectedScholar);
+    final activeReason = stop.reasonForScholar(selectedScholar);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -172,19 +230,34 @@ class _SheetBody extends StatelessWidget {
         Row(
           children: [
             StopBadge(
-              symbol: stop.symbol,
-              semanticsLabel: '${stop.label} ${stop.word}',
+              symbol: activeSymbol,
+              verdictLabel: activeVerdictLabel,
+              isQila: activeIsQila,
+              semanticsLabel: '$activeLabel ${stop.word}',
               core: 36,
             ),
             const SizedBox(width: 8),
             Expanded(
-              child: Text(
-                stop.label,
-                style: AppText.ui(
-                  size: 18,
-                  weight: FontWeight.w700,
-                  color: const Color(0xFFE7F6EE),
-                ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    activeLabel,
+                    style: AppText.ui(
+                      size: 18,
+                      weight: FontWeight.w700,
+                      color: const Color(0xFFE7F6EE),
+                    ),
+                  ),
+                  if (activeOp != null)
+                    Text(
+                      '${activeOp.scholar} (${activeOp.book})',
+                      style: AppText.ui(
+                        size: 12,
+                        color: AppColors.sheetMuted,
+                      ),
+                    ),
+                ],
               ),
             ),
             IconButton(
@@ -196,13 +269,14 @@ class _SheetBody extends StatelessWidget {
               ),
             ),
             IconButton(
-              tooltip: verified ? 'إلغاء التحقق' : 'تحقّق',
-              onPressed: onToggleVerified,
+              tooltip: sent ? 'في قائمة المراجعة (انقر للإلغاء)' : 'إبلاغ / إضافة للمراجعة',
+              onPressed: onToggleReport,
               icon: Icon(
-                verified ? Icons.verified : Icons.verified_outlined,
-                color: verified ? AppColors.goldSoft : AppColors.sheetMuted,
+                sent ? Icons.flag_rounded : Icons.outlined_flag_rounded,
+                color: sent ? const Color(0xFFE2A44B) : AppColors.sheetMuted,
               ),
             ),
+            _StopShareMenu(stop: stop),
           ],
         ),
         const SizedBox(height: 4),
@@ -225,11 +299,13 @@ class _SheetBody extends StatelessWidget {
             if (isVerseEnd) const _SheetTag(text: 'رأس آية'),
             if (stop.inUthmaniMushaf)
               const _SheetTag(text: 'في المصحف العثماني'),
+            if (activeOp != null && activeOp.verdicts.length > 1)
+              _SheetTag(text: '${arabicDigits(activeOp.verdicts.length)} أوجه للعالم'),
           ],
         ),
         const SizedBox(height: 12),
         Text(
-          stop.reason,
+          activeReason,
           textAlign: TextAlign.start,
           style: AppText.ui(
             size: 15,
@@ -241,34 +317,16 @@ class _SheetBody extends StatelessWidget {
         const SizedBox(height: 20),
         const _SectionTitle(
           icon: Icons.menu_book_outlined,
-          title: 'رأي السجاوندي (المتن)',
+          title: 'أقوال أئمة الوقف والابتداء',
         ),
         const SizedBox(height: 8),
         _OpinionTable(
-          opinions: matn,
-          emptyText: 'لا حكم متن مسجّل.',
+          stop: stop,
+          opinions: stop.opinions,
+          emptyText: 'لا حكم مسجّل.',
           sajawandiPage: stop.textPage,
           onOpenPage: onOpenPage,
         ),
-        if (margin.isNotEmpty) ...[
-          const SizedBox(height: 16),
-          const _SectionTitle(
-            icon: Icons.notes_outlined,
-            title: 'آراء من الحواشي',
-          ),
-          const SizedBox(height: 4),
-          Text(
-            'مستخرجة من هوامش علل الوقوف المرتبطة برقم الحاشية، وليست من سطر المتن.',
-            style: AppText.ui(size: 12, color: AppColors.sheetMuted, height: 1.45),
-          ),
-          const SizedBox(height: 8),
-          _OpinionTable(
-            opinions: margin,
-            emptyText: 'لا آراء حاشية.',
-            sajawandiPage: stop.textPage,
-            onOpenPage: onOpenPage,
-          ),
-        ],
         const SizedBox(height: 12),
         _AiPanel(
           open: aiOpen,
@@ -292,12 +350,14 @@ class _SectionTitle extends StatelessWidget {
       children: [
         Icon(icon, size: 18, color: AppColors.goldSoft),
         const SizedBox(width: 8),
-        Text(
-          title,
-          style: AppText.ui(
-            size: 15,
-            weight: FontWeight.w700,
-            color: AppColors.sheetText,
+        Expanded(
+          child: Text(
+            title,
+            style: AppText.ui(
+              size: 15,
+              weight: FontWeight.w700,
+              color: AppColors.sheetText,
+            ),
           ),
         ),
       ],
@@ -307,12 +367,14 @@ class _SectionTitle extends StatelessWidget {
 
 class _OpinionTable extends StatelessWidget {
   const _OpinionTable({
+    required this.stop,
     required this.opinions,
     required this.emptyText,
     required this.sajawandiPage,
     required this.onOpenPage,
   });
 
+  final WaqfStop stop;
   final List<ScholarOpinion> opinions;
   final String emptyText;
   final int? sajawandiPage;
@@ -341,6 +403,7 @@ class _OpinionTable extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
               child: _OpinionRow(
+                stop: stop,
                 opinion: opinions[i],
                 sajawandiPage: sajawandiPage,
                 onOpenPage: onOpenPage,
@@ -355,75 +418,240 @@ class _OpinionTable extends StatelessWidget {
 
 class _OpinionRow extends StatelessWidget {
   const _OpinionRow({
+    required this.stop,
     required this.opinion,
     required this.sajawandiPage,
     required this.onOpenPage,
   });
 
+  final WaqfStop stop;
   final ScholarOpinion opinion;
   final int? sajawandiPage;
   final Future<void> Function(int? page) onOpenPage;
 
   @override
   Widget build(BuildContext context) {
-    final verdict = opinion.verdict;
-    return Row(
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Expanded(
-          flex: 3,
-          child: Text(
-            opinion.scholar,
-            textAlign: TextAlign.start,
-            style: AppText.ui(
-              size: 14,
-              weight: FontWeight.w600,
-              color: AppColors.sheetText,
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Expanded(
+              flex: 3,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    opinion.scholar,
+                    textAlign: TextAlign.start,
+                    style: AppText.ui(
+                      size: 14,
+                      weight: FontWeight.w700,
+                      color: AppColors.sheetText,
+                    ),
+                  ),
+                  if (opinion.targetWord.trim().isNotEmpty)
+                    Text(
+                      '«${opinion.targetWord}»',
+                      textAlign: TextAlign.start,
+                      style: AppText.ui(
+                        size: 11,
+                        color: AppColors.sheetMuted,
+                      ),
+                    ),
+                ],
+              ),
             ),
-          ),
-        ),
-        Expanded(
-          flex: 4,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Text(
-                verdict ?? '—',
-                textAlign: TextAlign.center,
-                style: AppText.ui(
-                  size: 14,
-                  color: verdict == null
-                      ? AppColors.sheetMuted
-                      : AppColors.sheetText,
+            Expanded(
+              flex: 5,
+              child: Wrap(
+                spacing: 6,
+                runSpacing: 6,
+                alignment: WrapAlignment.center,
+                crossAxisAlignment: WrapCrossAlignment.center,
+                children: [
+                  for (var i = 0; i < opinion.verdicts.length; i++)
+                    _VerdictFacePill(
+                      verdict: opinion.verdicts[i],
+                      verdictLabel: i < opinion.verdictLabels.length
+                          ? opinion.verdictLabels[i]
+                          : opinion.primaryVerdictLabel,
+                      symbol: i < opinion.symbols.length
+                          ? opinion.symbols[i]
+                          : opinion.primarySymbol,
+                      isQila: i < opinion.isQila.length
+                          ? opinion.isQila[i]
+                          : false,
+                    ),
+                ],
+              ),
+            ),
+            Expanded(
+              flex: 3,
+              child: Align(
+                alignment: AlignmentDirectional.centerEnd,
+                child: _PageRef(
+                  opinion: opinion,
+                  sajawandiPage: sajawandiPage,
+                  onOpenPage: onOpenPage,
                 ),
               ),
-              if (opinion.comment != null &&
-                  opinion.comment!.trim().isNotEmpty) ...[
-                const SizedBox(height: 4),
-                Text(
-                  opinion.comment!,
-                  textAlign: TextAlign.center,
-                  style: AppText.ui(
-                    size: 11,
-                    color: AppColors.sheetMuted,
-                    height: 1.35,
+            ),
+          ],
+        ),
+        if (opinion.comment != null && opinion.comment!.trim().isNotEmpty) ...[
+          const SizedBox(height: 8),
+          Text(
+            opinion.comment!,
+            textAlign: TextAlign.start,
+            style: AppText.ui(
+              size: 13,
+              color: AppColors.sheetText.withOpacity(0.9),
+              height: 1.55,
+            ),
+          ),
+        ],
+        Padding(
+          padding: const EdgeInsets.only(top: 8),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              InkWell(
+                onTap: () {
+                  final text = formatOpinionText(stop, opinion);
+                  copyText(
+                    context,
+                    text,
+                    message: 'تم نسخ قول ${opinion.scholar}',
+                  );
+                },
+                borderRadius: BorderRadius.circular(6),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 8,
+                    vertical: 4,
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const Icon(
+                        Icons.copy_rounded,
+                        size: 14,
+                        color: AppColors.sheetMuted,
+                      ),
+                      const SizedBox(width: 4),
+                      Text(
+                        'نسخ',
+                        style: AppText.ui(
+                          size: 11,
+                          color: AppColors.sheetMuted,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-              ],
+              ),
+              const SizedBox(width: 8),
+              InkWell(
+                onTap: () {
+                  final text = formatOpinionText(stop, opinion);
+                  shareText(
+                    context,
+                    text,
+                    subject: 'وقف ${stop.word} عند ${opinion.scholar}',
+                  );
+                },
+                borderRadius: BorderRadius.circular(6),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 8,
+                    vertical: 4,
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const Icon(
+                        Icons.share_outlined,
+                        size: 14,
+                        color: AppColors.sheetMuted,
+                      ),
+                      const SizedBox(width: 4),
+                      Text(
+                        'مشاركة',
+                        style: AppText.ui(
+                          size: 11,
+                          color: AppColors.sheetMuted,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ],
           ),
         ),
-        Expanded(
-          flex: 3,
-          child: Align(
-            alignment: AlignmentDirectional.centerEnd,
-            child: _PageRef(
-              opinion: opinion,
-              sajawandiPage: sajawandiPage,
-              onOpenPage: onOpenPage,
+      ],
+    );
+  }
+}
+
+class _VerdictFacePill extends StatelessWidget {
+  const _VerdictFacePill({
+    required this.verdict,
+    required this.verdictLabel,
+    required this.symbol,
+    required this.isQila,
+  });
+
+  final String verdict;
+  final String verdictLabel;
+  final StopSymbol symbol;
+  final bool isQila;
+
+  @override
+  Widget build(BuildContext context) {
+    final displayVerdict =
+        (isQila && !verdict.contains('قيل')) ? 'قيل: $verdict' : verdict;
+
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+      decoration: BoxDecoration(
+        color: AppColors.sheet,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(
+          color: isQila
+              ? AppColors.goldSoft.withOpacity(0.75)
+              : AppColors.sheetLine,
+        ),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          IgnorePointer(
+            child: StopBadge(
+              symbol: symbol,
+              verdictLabel: verdictLabel,
+              isQila: isQila,
+              semanticsLabel: displayVerdict,
+              core: 20,
             ),
           ),
-        ),
-      ],
+          const SizedBox(width: 4),
+          Flexible(
+            child: Text(
+              displayVerdict,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: AppText.ui(
+                size: 12,
+                weight: FontWeight.w600,
+                color: AppColors.sheetText,
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
@@ -443,8 +671,6 @@ class _PageRef extends StatelessWidget {
   Widget build(BuildContext context) {
     // Keep displayed book + ref as-is; PNG always opens علل الوقوف textPage.
     final pageStr = opinion.page;
-    final openPage = sajawandiPage ??
-        (opinion.fromMargin ? null : parsePageNumber(opinion.page));
 
     if (pageStr == null) {
       return Semantics(
@@ -480,20 +706,30 @@ class _PageRef extends StatelessWidget {
       );
     }
 
-    // Previous reference look: page digits + book icon; book title above.
+    final isSajawandi = opinion.scholar.contains('السجاوندي') ||
+        opinion.book.contains('علل الوقوف');
+
     final refRow = Row(
       mainAxisSize: MainAxisSize.min,
       textDirection: TextDirection.ltr,
       children: [
-        Text(
-          pageStr,
-          style: AppText.ui(size: 14, color: AppColors.sheetText),
+        Flexible(
+          child: Text(
+            pageStr,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: AppText.ui(
+              size: 14,
+              weight: isSajawandi ? FontWeight.w700 : FontWeight.w500,
+              color: isSajawandi ? AppColors.goldSoft : AppColors.sheetText,
+            ),
+          ),
         ),
         const SizedBox(width: 4),
-        const Icon(
+        Icon(
           Icons.menu_book_outlined,
           size: 16,
-          color: AppColors.sheetMuted,
+          color: isSajawandi ? AppColors.goldSoft : AppColors.sheetMuted,
         ),
       ],
     );
@@ -507,22 +743,31 @@ class _PageRef extends StatelessWidget {
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           textAlign: TextAlign.end,
-          style: AppText.ui(size: 11, color: AppColors.sheetMuted),
+          style: AppText.ui(
+            size: 11,
+            color: isSajawandi
+                ? AppColors.goldSoft.withOpacity(0.85)
+                : AppColors.sheetMuted,
+          ),
         ),
         const SizedBox(height: 2),
         refRow,
       ],
     );
 
-    if (openPage == null) {
-      return Semantics(label: '${opinion.book}، صفحة $pageStr', child: body);
-    }
-
     return Semantics(
       button: true,
-      label: 'فتح صورة صفحة علل الوقوف $openPage (${opinion.book} $pageStr)',
+      label: 'عرض صفحة ${opinion.book} $pageStr',
       child: InkWell(
-        onTap: () => onOpenPage(openPage),
+        onTap: () {
+          showScholarBookPage(
+            context,
+            scholar: opinion.scholar,
+            book: opinion.book,
+            pageStr: opinion.page,
+            sajawandiPage: sajawandiPage,
+          );
+        },
         borderRadius: BorderRadius.circular(8),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 2, vertical: 2),
@@ -606,47 +851,6 @@ class _AiPanel extends StatelessWidget {
   }
 }
 
-class _ApproveButton extends StatelessWidget {
-  const _ApproveButton({required this.sent, required this.onPressed});
-
-  final bool sent;
-  final VoidCallback? onPressed;
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      width: double.infinity,
-      height: 52,
-      child: FilledButton(
-        onPressed: onPressed,
-        style: FilledButton.styleFrom(
-          backgroundColor: AppColors.approve,
-          disabledBackgroundColor: AppColors.approve.withOpacity(0.45),
-          foregroundColor: AppColors.white,
-          disabledForegroundColor: AppColors.white,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(14),
-          ),
-        ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              sent ? 'في قائمة المراجعة' : 'موافق للمراجعة',
-              style: AppText.ui(
-                size: 16,
-                weight: FontWeight.w700,
-                color: AppColors.white,
-              ),
-            ),
-            const SizedBox(width: 8),
-            const Icon(Icons.check, size: 20),
-          ],
-        ),
-      ),
-    );
-  }
-}
 
 class _SheetTag extends StatelessWidget {
   const _SheetTag({required this.text});

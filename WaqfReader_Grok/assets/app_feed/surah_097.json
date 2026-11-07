@@ -7,7 +7,8 @@
     5
   ],
   "sourceBatch": [
-    "batch_1143_1146.apparatus_v4.raw.json"
+    "jamharah_t21759.json",
+    "qat_itinaf_s097.json"
   ],
   "sourceTag": "base",
   "ayahs": [
@@ -273,7 +274,7 @@
           "index": 9,
           "text": "أَمْرٍۢ",
           "textImlai": "اَمۡرٍ ۛۙ‏",
-          "stopId": null,
+          "stopId": "s97-a4-w9",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -344,23 +345,66 @@
       "ayah": 1,
       "wordIndex": 5,
       "word": "ٱلْقَدْرِ",
-      "targetWord": "في ليلة القدر",
-      "verdictLabel": "ج",
-      "verdict": "جائز",
-      "label": "جائز",
-      "symbol": "jaiz",
-      "reason": "للابتداء بالنفي أو الاستفهام(٢) ، وَوَجْهُ الوصل أوضح ، لاتصال المبالغة بالمُعَظَّم(٣) ",
-      "textPage": 1143,
-      "marginRef": 2,
+      "textPage": 0,
+      "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "جائز",
-          "verdictLabel": "ج",
+          "targetWord": "في ليلة القدر",
+          "verdict": [
+            "جائز"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1143",
+          "page": "3/1143-3/1145",
+          "comment": "(جائز) للابتداء بالنفي أو الاستفهام، ووجه الوصل أوضح، لاتصال المبالغة في التعظيم بالمعظم"
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "في ليلة القدر",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "431",
           "comment": null
+        },
+        {
+          "scholar": "النحاس",
+          "targetWord": "إِنَّا أَنزَلْنَاهُ فِي لَيْلَةِ الْقَدْرِ",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 1",
+          "comment": "(كاف) ﴿إِنَّا أَنزَلْنَاهُ فِي لَيْلَةِ الْقَدْرِ﴾ قطع كاف وكذا"
         }
       ],
       "aiSuggestion": null,
@@ -369,7 +413,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1143_1146.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21759.json"
     },
     {
       "id": "s97-a2-w5",
@@ -377,23 +421,104 @@
       "ayah": 2,
       "wordIndex": 5,
       "word": "ٱلْقَدْرِ",
-      "targetWord": "ما ليلة القدر",
-      "verdictLabel": "ط",
-      "verdict": "تام",
-      "label": "تام",
-      "symbol": "tam",
-      "reason": "لأن ما بعدها مبتدأ ",
-      "textPage": 1143,
+      "textPage": 0,
       "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "تام",
-          "verdictLabel": "ط",
+          "targetWord": "ما ليلة القدر",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1143",
+          "page": "3/1143-3/1145",
+          "comment": "(تام) لأن ما بعدها مبتدأ"
+        },
+        {
+          "scholar": "ابن الأنباري",
+          "targetWord": "وما أدراك ما ليلة القدر",
+          "verdict": [
+            "حسن"
+          ],
+          "verdictLabel": [
+            "ز"
+          ],
+          "symbol": [
+            "mujawwaz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "إيضاح الوقف والابتداء",
+          "page": "2/981-2/982",
           "comment": null
+        },
+        {
+          "scholar": "الداني",
+          "targetWord": "ما ليلة القدر",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "المكتفى",
+          "page": "625",
+          "comment": null
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "ما ليلة القدر",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "431",
+          "comment": null
+        },
+        {
+          "scholar": "النحاس",
+          "targetWord": "وَمَا أَدْرَاكَ مَا لَيْلَةُ الْقَدْرِ",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 1",
+          "comment": "(كاف) وكذا ﴿وَمَا أَدْرَاكَ مَا لَيْلَةُ الْقَدْرِ﴾ وكذا"
         }
       ],
       "aiSuggestion": null,
@@ -402,7 +527,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1143_1146.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21759.json"
     },
     {
       "id": "s97-a3-w6",
@@ -410,23 +535,104 @@
       "ayah": 3,
       "wordIndex": 6,
       "word": "شَهْرٍۢ",
-      "targetWord": "ألف شهر",
-      "verdictLabel": "ط",
-      "verdict": "تام",
-      "label": "تام",
-      "symbol": "tam",
-      "reason": "لأن ما بعدها مُسْتَأْنَف ",
-      "textPage": 1143,
+      "textPage": 0,
       "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "تام",
-          "verdictLabel": "ط",
+          "targetWord": "ألف شهر",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1143",
+          "page": "3/1143-3/1145",
+          "comment": "(تام) لأن ما بعدها مستأنف"
+        },
+        {
+          "scholar": "ابن الأنباري",
+          "targetWord": "خير من ألف شهر",
+          "verdict": [
+            "حسن"
+          ],
+          "verdictLabel": [
+            "ز"
+          ],
+          "symbol": [
+            "mujawwaz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "إيضاح الوقف والابتداء",
+          "page": "2/981-2/982",
+          "comment": "(حسن) أيضًا"
+        },
+        {
+          "scholar": "الداني",
+          "targetWord": "من ألف شهر",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "المكتفى",
+          "page": "625",
           "comment": null
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "شهر",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "431",
+          "comment": "(كاف) ومثله من كل أمر والمعنى تنزل الملائكة بكل أمر يكون في تلك السنة وما قيل عن ابن عباس من أنَّ الوقف سلام ويبتدئ هي على أنَّها خبر مبتدأ محذوف والإشارة بذلك إلى أنَّها ليلة السابع والعشرين لأنَّ لفظة هي سابعة وعشرون من كلم هذه السورة وكأنَّه قال ليلة القدر الموافقة في العدد لفظة هي من كلم هذه السورة لا ينبغي أن يعتقد صحته لأنَّه الغاز وتغيير لنظم أفصح الكلام وارتفع سلام خبرًا مقدمًا وهي مبتدأ مؤخرًا وسلام مبتدأ وهي فاعل به عند الأخفش لأنَّه لا يشترط الاعتماد في عمل الوصف وبعضهم يجعل الكلام تمَّ على بإذن ربهم ويعلق من كل أمر بما بعده ومنهم من قال الوقف عند من أجاز تعداد الأخبار سلام هي أي من كل أمر هي سلام حتى مطلع الفجر أي تمتد إلى طلوع الفجر"
+        },
+        {
+          "scholar": "النحاس",
+          "targetWord": "مِّنْ أَلْفِ شَهْرٍ",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 1",
+          "comment": "(كاف) وكذا ﴿مِّنْ أَلْفِ شَهْرٍ﴾ وعن نافع"
         }
       ],
       "aiSuggestion": null,
@@ -435,7 +641,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1143_1146.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21759.json"
     },
     {
       "id": "s97-a4-w6",
@@ -443,31 +649,32 @@
       "ayah": 4,
       "wordIndex": 6,
       "word": "رَبِّهِم",
-      "targetWord": "بإذن ربهم",
-      "verdictLabel": "ج",
-      "verdict": "جائز",
-      "label": "جائز",
-      "symbol": "jaiz",
-      "reason": "[ لأن الجار له وجه تعلق بمحذوف ] (٤) تقديره : هي سلام(١) ، أي : سلامة من كل أمر(٢) أي(٣) : عقوبة ، كقوله تعالى : ﴿ يحفظونه من أمر الله ﴾ (٤) ، فيوقف على : ﴿ سلام ﴾ ويبتدأ(٥) بـ : ﴿ هي ﴾ ، أي : هي(٦) ممتدة(٧) بخيرها وبركتها إلى طلوع الفجر(٨) . وقيل(٩) : يتعلق(١٠) ﴿ من ﴾ بـ : ﴿ هي ﴾ المتأخرة ، على التقديم والتأخير ، أي : هي من كل أمر - أي : عقوبة - سلامة إلى طلوع الفجر(١١) ، ولا يوقف(١٢) إِذَنْ على : ﴿ سلام ﴾ (١٣) ",
-      "textPage": 1143,
-      "marginRef": 4,
-      "fixes": [
-        {
-          "type": "page_split",
-          "basis": "page_prose",
-          "old_text": "﴿ بإذن ربهم - ٤ - ج ﴾ [ لأن الجار له وجه تعلق بمحذوف ] (٤)",
-          "new_text": "﴿ بإذن ربهم - ٤ - ج ﴾ [ لأن الجار له وجه تعلق بمحذوف ] (٤) تقديره : هي سلام(١) ، أي : سلامة من كل أمر(٢) أي(٣) : عقوبة ، كقوله تعالى : ﴿ يحفظونه من أمر الله ﴾ (٤) ، فيوقف على : ﴿ سلام ﴾ ويبتدأ(٥) بـ : ﴿ هي ﴾ ، أي : هي(٦) ممتدة(٧) بخيرها وبركتها إلى طلوع الفجر(٨) . وقيل(٩) : يتعلق(١٠) ﴿ من ﴾ بـ : ﴿ هي ﴾ المتأخرة ، على التقديم والتأخير ، أي : هي من كل أمر - أي : عقوبة - سلامة إلى طلوع الفجر(١١) ، ولا يوقف(١٢) إِذَنْ على : ﴿ سلام ﴾ (١٣) .",
-          "info": "text continues from page 1143 to page 1144"
-        }
-      ],
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "جائز",
-          "verdictLabel": "ج",
+          "targetWord": "بإذن ربهم",
+          "verdict": [
+            "جائز",
+            "تام"
+          ],
+          "verdictLabel": [
+            "ج",
+            "ط"
+          ],
+          "symbol": [
+            "jaiz",
+            "tam"
+          ],
+          "isQila": [
+            false,
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1143",
-          "comment": null
+          "page": "3/1143-3/1145",
+          "comment": "(جائز) لأن الجار له وجه تعلق بمحذوف] تقديره: هي سلام، أي: سلامة من كل أمر أي: عقوبة، كقوله تعالى: {يحفظونه من أمر الله}، فيوقف على | (تام) وعلى قوله"
         }
       ],
       "aiSuggestion": null,
@@ -476,39 +683,93 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": false,
-      "sourceBatch": "batch_1143_1146.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21759.json"
     },
     {
-      "id": "s97-a4-w6",
+      "id": "s97-a4-w9",
       "surah": 97,
       "ayah": 4,
-      "wordIndex": 6,
-      "word": "رَبِّهِم",
-      "targetWord": "بإذن ربهم",
-      "verdictLabel": "ط",
-      "verdict": "تام",
-      "label": "تام",
-      "symbol": "tam",
-      "reason": "أي : من كل(٢) واحدٍ من الملائكة سلامٌ على المؤمنين ؛ فيوقف على : ﴿ بإذن ربهم - ٤ - ط ﴾ (٣)",
-      "textPage": 1145,
-      "marginRef": 3,
-      "fixes": [
-        {
-          "type": "page_split",
-          "basis": "page_prose",
-          "old_text": "عباس [ رضي الله عنهما ] (١) : ﴿ مِنْ كُلِّ أَمْرٍ سَلَامٌ ﴾ أي : من كل(٢) واحدٍ من الملائكة سلامٌ على المؤمنين ؛ فيوقف على : ﴿ بإذن ربهم - ٤ - ط ﴾ (٣)",
-          "new_text": "وعن ابن عباس [ رضي الله عنهما ] (١) : ﴿ مِنْ كُلِّ أَمْرٍ سَلَامٌ ﴾ أي : من كل(٢) واحدٍ من الملائكة سلامٌ على المؤمنين ؛ فيوقف على : ﴿ بإذن ربهم - ٤ - ط ﴾ (٣)",
-          "info": "reasoning starts at the bottom of page 1144 (وعن ابن) and continues on page 1145"
-        }
-      ],
+      "wordIndex": 9,
+      "word": "أَمْرٍۢ",
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
       "opinions": [
         {
-          "scholar": "السجاوندي",
-          "verdict": "تام",
-          "verdictLabel": "ط",
-          "book": "علل الوقوف",
-          "page": "1145",
-          "comment": null
+          "scholar": "ابن الأنباري",
+          "targetWord": "من كل أمر",
+          "verdict": [
+            "حسن"
+          ],
+          "verdictLabel": [
+            "ز"
+          ],
+          "symbol": [
+            "mujawwaz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "إيضاح الوقف والابتداء",
+          "page": "2/981-2/982",
+          "comment": "(حسن) وقف حسن ثم تبتدئ: (سلام هي حتى مطلع الفجر) [5] فترفع «السلام» بـ(هي). وقال الفراء: حدثني أبو بكر بن عياش عن الكلبي عن أبي صالح عن ابن عباس أنه كان يقرأ: (من كل امريء. سلام). فعلى هذه القراءة الوقف على «السلام»، والمعنى (من كل امريء من الملائكة سلام على المؤمنين والمؤمنات) و«السلام» من هذه القراءة مرفوع بـ(من) و(هي) رفع بـ(حتى)"
+        },
+        {
+          "scholar": "الداني",
+          "targetWord": "من كل أمر",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "المكتفى",
+          "page": "625",
+          "comment": "(كاف) ثم يبتدأ: {سلامٌ هي} ابتداء وخبر"
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "من كل أمر",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "431",
+          "comment": "(كاف) ومثله"
+        },
+        {
+          "scholar": "النحاس",
+          "targetWord": "تنزل الملائكة والروح فيها بإذن ربهم من كل أمر",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 1",
+          "comment": "(كاف) ﴿تنزل الملائكة والروح فيها بإذن ربهم من كل أمر﴾ وهو قول الفراء، قال ثم ابتدأ"
         }
       ],
       "aiSuggestion": null,
@@ -516,8 +777,8 @@
       "inUthmaniMushaf": false,
       "uthmaniMark": null,
       "uthmaniMarkName": null,
-      "isVerseEnd": false,
-      "sourceBatch": "batch_1143_1146.apparatus_v4.raw.json"
+      "isVerseEnd": true,
+      "sourceBatch": "jamharah_t21759.json"
     },
     {
       "id": "s97-a5-w1",
@@ -525,40 +786,41 @@
       "ayah": 5,
       "wordIndex": 1,
       "word": "سَلَـٰمٌ",
-      "targetWord": "سلام",
-      "verdictLabel": "ط",
-      "verdict": "تام",
-      "label": "تام",
-      "symbol": "tam",
-      "reason": "[ و : ﴿ حتى ﴾ غاية امتداد الحفظ من تلك الآفات وتسلط الشيطان ] (٥) ",
-      "textPage": 1145,
-      "marginRef": 4,
+      "textPage": 0,
+      "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "تام",
-          "verdictLabel": "ط",
+          "targetWord": "سلام",
+          "verdict": [
+            "جائز",
+            "تام"
+          ],
+          "verdictLabel": [
+            "ج",
+            "ط"
+          ],
+          "symbol": [
+            "jaiz",
+            "tam"
+          ],
+          "isQila": [
+            false,
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1145",
-          "comment": null
-        },
-        {
-          "scholar": "ابن الأنباري",
-          "verdict": "وقف",
-          "verdictLabel": null,
-          "book": "الإيضاح",
-          "page": "2/981, 982",
-          "comment": "فعلى هذه القراءة الوقف على: ﴿السلام﴾، والمعنى: من كل امرىء من الملائكة سلام على المؤمنين والمؤمنات"
+          "page": "3/1143-3/1145",
+          "comment": "(جائز) ويبتدأ بـ: {هي}، أي: هي ممتدة بخيرها وبركتها إلى طلوع الفجر. وقيل: يتعلق {من} بـ: {هي} المتأخرة، على التقديم والتأخير، أي: هي من كل أمر- أي: عقوبة- سلامة إلى طلوع الفجر، ولا يوقف إذن على: {سلام}. وعن ابن عباس [رضي الله عنهما]: {من كل أمر سلام} أي: من كل واحد من الملائكة سلام على المؤمنين؛ فيوقف على | (تام) و: {حتى} غاية امتداد الحفظ من تلك الآفات وتسلط الشيطان]"
         }
       ],
-      "aiSuggestion": "على قراءة ابن عباس ﴿من كل امرئ سلام﴾ يوقف على ﴿سلام﴾؛ لأن المعنى: من كل امرئ من الملائكة سلام على المؤمنين والمؤمنات · الابتداء بـ ﴿هي﴾ لأنها مستأنفة مرفوعة بـ ﴿حتى﴾ والمعنى: هي ممتدة بخيرها إلى طلوع الفجر",
+      "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": false,
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": false,
-      "sourceBatch": "batch_1143_1146.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21759.json"
     }
   ]
 }

@@ -1,12 +1,15 @@
+import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
+import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../models/waqf_models.dart';
 
 const catalogAssetPath = 'assets/app_feed/catalog.json';
+const _reviewStateServerUrl = 'http://127.0.0.1:8765/api/review-state';
 
 class SurahCatalogEntry {
   const SurahCatalogEntry({
@@ -67,6 +70,31 @@ class AppFeedBundle {
   final int surah;
   final String surahName;
 
+  static List<String> _parseStringList(dynamic raw, String fallback) {
+    if (raw is List) {
+      final list = raw.map((e) => e?.toString() ?? '').where((s) => s.isNotEmpty).toList();
+      if (list.isNotEmpty) return list;
+    } else if (raw is String && raw.trim().isNotEmpty) {
+      return [raw.trim()];
+    }
+    return [fallback];
+  }
+
+  static List<bool> _parseBoolList(dynamic raw, int targetLength) {
+    final out = <bool>[];
+    if (raw is List) {
+      for (final item in raw) {
+        out.add(item == true);
+      }
+    } else if (raw is bool) {
+      out.add(raw);
+    }
+    while (out.length < targetLength) {
+      out.add(false);
+    }
+    return out;
+  }
+
   static AppFeedBundle fromJson(Map<String, dynamic> json) {
     final stopsJson = json['stops'] as List<dynamic>? ?? const [];
     final ayahsJson = json['ayahs'] as List<dynamic>? ?? const [];
@@ -77,24 +105,50 @@ class AppFeedBundle {
           id: raw['id'] as String,
           surah: raw['surah'] as int,
           ayah: raw['ayah'] as int,
+          wordIndex: raw['wordIndex'] as int? ?? 1,
           word: raw['word'] as String,
-          symbol: stopSymbolFromFeed(raw['symbol'] as String?),
-          label: raw['label'] as String? ?? 'غير محسوم',
-          reason: raw['reason'] as String? ?? '',
+          fallbackSymbol: raw['symbol'] != null
+              ? stopSymbolFromFeed(raw['symbol'] as String?)
+              : null,
+          fallbackLabel: raw['label'] as String?,
+          fallbackReason: raw['reason'] as String?,
           inUthmaniMushaf: raw['inUthmaniMushaf'] as bool? ?? false,
           isVerseEnd: raw['isVerseEnd'] as bool? ?? false,
           textPage: raw['textPage'] as int?,
           aiSuggestion: raw['aiSuggestion'] as String?,
           opinions: [
             for (final op in (raw['opinions'] as List<dynamic>? ?? const []))
-              ScholarOpinion(
-                scholar: op['scholar'] as String? ?? 'مجهول',
-                verdict: op['verdict'] as String?,
-                book: op['book'] as String? ?? 'علل الوقوف',
-                page: op['page']?.toString(),
-                comment: op['comment'] as String?,
-                fromMargin: (op['scholar'] as String?) != 'السجاوندي',
-              ),
+              () {
+                final verdicts = _parseStringList(op['verdict'], 'جائز');
+                final rawLabels = _parseStringList(op['verdictLabel'], 'ج');
+                final rawSyms = _parseStringList(op['symbol'], 'jaiz');
+                final symbols = <StopSymbol>[
+                  for (var i = 0; i < verdicts.length; i++)
+                    stopSymbolFromFeed(
+                      i < rawSyms.length ? rawSyms[i] : rawSyms.first,
+                    ),
+                ];
+                final labels = <String>[
+                  for (var i = 0; i < verdicts.length; i++)
+                    i < rawLabels.length
+                        ? rawLabels[i]
+                        : defaultVerdictLabelForSymbol(symbols[i]),
+                ];
+                final qilaFlags = _parseBoolList(op['isQila'], verdicts.length);
+                return ScholarOpinion(
+                  scholar: op['scholar'] as String? ?? 'مجهول',
+                  targetWord:
+                      op['targetWord'] as String? ?? (raw['word'] as String? ?? ''),
+                  verdicts: verdicts,
+                  verdictLabels: labels,
+                  symbols: symbols,
+                  isQila: qilaFlags,
+                  book: op['book'] as String? ?? 'علل الوقوف',
+                  page: op['page']?.toString(),
+                  comment: op['comment'] as String?,
+                  fromMargin: false,
+                );
+              }(),
           ],
         ),
     ];
@@ -147,7 +201,17 @@ class ReaderController extends ChangeNotifier {
 
   bool hideVerseEnd = true;
   bool hideUthmani = true;
+  String? selectedScholar;
   ReviewListFilter reviewFilter = ReviewListFilter.all;
+
+  static const List<String?> scholarOptions = <String?>[
+    null,
+    'السجاوندي',
+    'الأشموني',
+    'الداني',
+    'ابن الأنباري',
+    'النحاس',
+  ];
 
   ReaderLoadState loadState = ReaderLoadState.loading;
   String? loadError;
@@ -176,7 +240,6 @@ class ReaderController extends ChangeNotifier {
       await _restorePrefs();
       await _loadCatalog();
       await loadSurah(initialSurah, notify: false);
-      loadState = ReaderLoadState.ready;
     } catch (e) {
       loadError = 'تعذّر تحميل فهرس المصحف أو بيانات السورة.';
       loadState = ReaderLoadState.error;
@@ -187,6 +250,9 @@ class ReaderController extends ChangeNotifier {
   Future<void> _restorePrefs() async {
     try {
       final prefs = await SharedPreferences.getInstance();
+      sentToReview
+        ..clear()
+        ..addAll(prefs.getStringList('sentToReview') ?? const []);
       favorites
         ..clear()
         ..addAll(prefs.getStringList('favorites') ?? const []);
@@ -196,13 +262,85 @@ class ReaderController extends ChangeNotifier {
     } catch (_) {
       // Prefs optional on some platforms.
     }
+    unawaited(_pullAndPushServerReviewState());
   }
 
   Future<void> _persistPrefs() async {
     try {
       final prefs = await SharedPreferences.getInstance();
+      await prefs.setStringList('sentToReview', sentToReview.toList());
       await prefs.setStringList('favorites', favorites.toList());
       await prefs.setStringList('verified', verified.toList());
+    } catch (_) {}
+    unawaited(_syncReviewStateToServer());
+  }
+
+  Map<String, dynamic> _buildFlaggedStopDetails() {
+    final activeIds = <String>{
+      ...sentToReview,
+      ...favorites,
+      ...verified,
+    };
+    final details = <String, dynamic>{};
+    for (final stop in sampleStops) {
+      if (activeIds.contains(stop.id)) {
+        details[stop.id] = {
+          'id': stop.id,
+          'surah': stop.surah,
+          'surahName': currentSurahName,
+          'ayah': stop.ayah,
+          'wordIndex': stop.wordIndex,
+          'word': stop.word,
+          'flagged': sentToReview.contains(stop.id),
+          'favorite': favorites.contains(stop.id),
+          'verified': verified.contains(stop.id),
+        };
+      }
+    }
+    return details;
+  }
+
+  Future<void> _pullAndPushServerReviewState() async {
+    try {
+      final res = await http
+          .get(Uri.parse(_reviewStateServerUrl))
+          .timeout(const Duration(milliseconds: 1200));
+      if (res.statusCode == 200) {
+        final decoded = jsonDecode(utf8.decode(res.bodyBytes));
+        if (decoded is Map<String, dynamic>) {
+          var changed = false;
+          for (final id in (decoded['sentToReview'] as List<dynamic>? ?? const [])) {
+            if (id is String && sentToReview.add(id)) changed = true;
+          }
+          for (final id in (decoded['favorites'] as List<dynamic>? ?? const [])) {
+            if (id is String && favorites.add(id)) changed = true;
+          }
+          for (final id in (decoded['verified'] as List<dynamic>? ?? const [])) {
+            if (id is String && verified.add(id)) changed = true;
+          }
+          if (changed) {
+            notifyListeners();
+          }
+        }
+      }
+    } catch (_) {}
+    await _syncReviewStateToServer();
+  }
+
+  Future<void> _syncReviewStateToServer() async {
+    try {
+      await http
+          .post(
+            Uri.parse(_reviewStateServerUrl),
+            headers: const {'Content-Type': 'application/json; charset=utf-8'},
+            body: jsonEncode({
+              'sentToReview': sentToReview.toList(),
+              'favorites': favorites.toList(),
+              'verified': verified.toList(),
+              'flaggedDetails': _buildFlaggedStopDetails(),
+            }),
+          )
+          .timeout(const Duration(milliseconds: 1200));
     } catch (_) {}
   }
 
@@ -242,10 +380,11 @@ class ReaderController extends ChangeNotifier {
       currentSurah = bundle.surah;
       currentSurahName = bundle.surahName;
       selectedStopId = _defaultSelectedId(sampleStops);
-      // Keep favorites/verified across surahs; clear ephemeral "sent" queue only.
-      sentToReview.clear();
       loadState = ReaderLoadState.ready;
       loadError = null;
+      if (sentToReview.isNotEmpty || favorites.isNotEmpty || verified.isNotEmpty) {
+        unawaited(_syncReviewStateToServer());
+      }
     } catch (e) {
       loadError = 'تعذّر تحميل ${entry.name}.';
       loadState = ReaderLoadState.error;
@@ -269,12 +408,21 @@ class ReaderController extends ChangeNotifier {
   bool isVerseEnd(WaqfStop stop) => stop.isVerseEnd;
 
   bool isStopVisible(WaqfStop stop) {
+    if (selectedScholar != null && !stop.hasScholar(selectedScholar!)) {
+      return false;
+    }
     if (hideVerseEnd && isVerseEnd(stop)) return false;
     if (hideUthmani && stop.inUthmaniMushaf) return false;
     return true;
   }
 
   int get visibleStopCount => sampleStops.where(isStopVisible).length;
+
+  void setSelectedScholar(String? scholar) {
+    if (selectedScholar == scholar) return;
+    selectedScholar = scholar;
+    notifyListeners();
+  }
 
   void toggleHideVerseEnd() {
     hideVerseEnd = !hideVerseEnd;
@@ -299,8 +447,19 @@ class ReaderController extends ChangeNotifier {
     notifyListeners();
   }
 
-  void markForReview(String id) {
-    if (sentToReview.add(id)) notifyListeners();
+  Future<void> markForReview(String id) async {
+    if (sentToReview.add(id)) {
+      notifyListeners();
+      await _persistPrefs();
+    }
+  }
+
+  Future<void> toggleSent(String id) async {
+    if (!sentToReview.add(id)) {
+      sentToReview.remove(id);
+    }
+    notifyListeners();
+    await _persistPrefs();
   }
 
   bool isSent(String id) => sentToReview.contains(id);

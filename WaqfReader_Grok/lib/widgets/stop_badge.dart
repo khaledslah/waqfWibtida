@@ -16,7 +16,7 @@ String stopLetter(StopSymbol symbol) {
     case StopSymbol.mujawwaz:
       return 'ز';
     case StopSymbol.unsettled:
-      return '؟';
+      return 'ج';
   }
 }
 
@@ -25,6 +25,8 @@ class StopBadge extends StatelessWidget {
     super.key,
     required this.symbol,
     required this.semanticsLabel,
+    this.verdictLabel,
+    this.isQila = false,
     this.selected = false,
     this.onTap,
     this.core = 28,
@@ -32,13 +34,15 @@ class StopBadge extends StatelessWidget {
 
   final StopSymbol symbol;
   final String semanticsLabel;
+  final String? verdictLabel;
+  final bool isQila;
   final bool selected;
   final VoidCallback? onTap;
   final double core;
 
   @override
   Widget build(BuildContext context) {
-    final ringed = selected && symbol == StopSymbol.tam;
+    final ringed = selected && symbol == StopSymbol.tam && !isQila;
     final visual = ringed ? core + 18 : core + (selected ? 8 : 0);
     final target = math.max(44.0, visual);
 
@@ -104,21 +108,31 @@ class StopBadge extends StatelessWidget {
   }
 
   Widget _disc() {
-    final letter = stopLetter(symbol);
+    final rawLbl = verdictLabel?.trim();
+    final letter =
+        (rawLbl != null && rawLbl.isNotEmpty) ? rawLbl : stopLetter(symbol);
+    final dotted = isQila || symbol == StopSymbol.unsettled;
+    final fgColor = dotted ? _dottedForeground : _foreground;
     final style = AppText.ui(
       size: letter.length > 1 ? core * 0.36 : core * 0.46,
       weight: FontWeight.w700,
-      color: _foreground,
+      color: fgColor,
       height: 1,
     );
 
-    if (symbol == StopSymbol.unsettled) {
-      return SizedBox(
+    if (dotted) {
+      return Container(
         width: core,
         height: core,
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          color: _dottedFill,
+        ),
         child: CustomPaint(
-          painter: const _DashedCirclePainter(color: AppColors.gold),
-          child: Center(child: Text(letter, style: style, textAlign: TextAlign.center)),
+          painter: _DashedCirclePainter(color: _dottedBorderColor),
+          child: Center(
+            child: Text(letter, style: style, textAlign: TextAlign.center),
+          ),
         ),
       );
     }
@@ -136,6 +150,48 @@ class StopBadge extends StatelessWidget {
       ),
       child: Text(letter, style: style),
     );
+  }
+
+  Color get _dottedFill {
+    switch (symbol) {
+      case StopSymbol.tam:
+        return AppColors.badgeGreen.withOpacity(0.14);
+      case StopSymbol.la:
+        return AppColors.badgeGrey.withOpacity(0.55);
+      case StopSymbol.jaiz:
+        return AppColors.badgeAmber.withOpacity(0.32);
+      case StopSymbol.mujawwaz:
+      case StopSymbol.unsettled:
+        return AppColors.goldSoft.withOpacity(0.14);
+    }
+  }
+
+  Color get _dottedBorderColor {
+    switch (symbol) {
+      case StopSymbol.tam:
+        return AppColors.badgeGreen;
+      case StopSymbol.la:
+        return AppColors.badgeGreyText;
+      case StopSymbol.jaiz:
+        return AppColors.forestDeep;
+      case StopSymbol.mujawwaz:
+      case StopSymbol.unsettled:
+        return AppColors.gold;
+    }
+  }
+
+  Color get _dottedForeground {
+    switch (symbol) {
+      case StopSymbol.tam:
+        return AppColors.badgeGreen;
+      case StopSymbol.la:
+        return AppColors.badgeGreyText;
+      case StopSymbol.jaiz:
+        return AppColors.forestDeep;
+      case StopSymbol.mujawwaz:
+      case StopSymbol.unsettled:
+        return AppColors.gold;
+    }
   }
 
   Color get _fill {

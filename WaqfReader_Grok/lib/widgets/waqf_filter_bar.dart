@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../data/sample_data.dart';
 import '../theme/app_theme.dart';
 
-/// Toggle chips to hide verse-end stops and Uthmani-printed middle stops.
+/// Toggle chips to hide verse-end stops, Uthmani-printed middle stops, and switch the main scholar.
 class WaqfFilterBar extends StatelessWidget {
   const WaqfFilterBar({super.key, required this.controller});
 
@@ -13,6 +13,7 @@ class WaqfFilterBar extends StatelessWidget {
   Widget build(BuildContext context) {
     final visible = controller.visibleStopCount;
     final total = controller.sampleStops.length;
+    final activeScholar = controller.selectedScholar;
 
     return Material(
       color: AppColors.parchment,
@@ -53,11 +54,82 @@ class WaqfFilterBar extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 6),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  Text(
+                    'العالم الرئيسي:',
+                    style: AppText.ui(
+                      size: 11,
+                      weight: FontWeight.w700,
+                      color: AppColors.forestDeep,
+                    ),
+                  ),
+                  const SizedBox(width: 6),
+                  for (final sOpt in ReaderController.scholarOptions) ...[
+                    Padding(
+                      padding: const EdgeInsetsDirectional.only(end: 6),
+                      child: _ScholarChip(
+                        label: sOpt ?? 'الكل (الافتراضي)',
+                        selected: activeScholar == sOpt,
+                        onTap: () => controller.setSelectedScholar(sOpt),
+                      ),
+                    ),
+                  ],
+                ],
+              ),
+            ),
+            const SizedBox(height: 6),
             Text(
-              'يظهر $visible من $total · يُخفى رأس الآية ورمز المصحف العثماني الشائع',
+              'يظهر $visible من $total · العرض حسب: ${activeScholar ?? "جميع العلماء"}',
               style: AppText.ui(size: 11, color: AppColors.muted, height: 1.3),
             ),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class _ScholarChip extends StatelessWidget {
+  const _ScholarChip({
+    required this.label,
+    required this.selected,
+    required this.onTap,
+  });
+
+  final String label;
+  final bool selected;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: selected ? AppColors.forest : AppColors.white,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(14),
+        side: BorderSide(
+          color: selected ? AppColors.forest : AppColors.hairline,
+          width: 1,
+        ),
+      ),
+      child: InkWell(
+        onTap: onTap,
+        customBorder: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(14),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+          child: Text(
+            label,
+            style: AppText.ui(
+              size: 11,
+              weight: FontWeight.w700,
+              color: selected ? AppColors.white : AppColors.forestDeep,
+              height: 1.1,
+            ),
+          ),
         ),
       ),
     );

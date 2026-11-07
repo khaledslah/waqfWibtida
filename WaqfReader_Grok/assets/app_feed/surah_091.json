@@ -7,7 +7,8 @@
     15
   ],
   "sourceBatch": [
-    "batch_1131_1134.apparatus_v4.raw.json"
+    "jamharah_t21753.json",
+    "qat_itinaf_s091.json"
   ],
   "sourceTag": "base",
   "ayahs": [
@@ -433,7 +434,7 @@
           "index": 3,
           "text": "أَشْقَىٰهَا",
           "textImlai": "اَشۡقٰٮهَا  ۙ‏",
-          "stopId": null,
+          "stopId": "s91-a12-w3",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -583,7 +584,7 @@
           "index": 7,
           "text": "فَسَوَّىٰهَا",
           "textImlai": "فَسَوّٰٮهَا  ۙ‏",
-          "stopId": null,
+          "stopId": "s91-a14-w7",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -618,7 +619,7 @@
           "index": 3,
           "text": "عُقْبَـٰهَا",
           "textImlai": "عُقۡبٰهَا‏",
-          "stopId": null,
+          "stopId": "s91-a15-w3",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -629,60 +630,32 @@
   ],
   "stops": [
     {
-      "id": "s91-a10-w4",
-      "surah": 91,
-      "ayah": 10,
-      "wordIndex": 4,
-      "word": "دَسَّىٰهَا",
-      "targetWord": "دساها",
-      "verdictLabel": "ط",
-      "verdict": "تام",
-      "label": "تام",
-      "symbol": "tam",
-      "reason": "لانتساق الكلمات ، واتصال الجواب بالقسم ، وهو : ﴿ قد أفلح . . . ﴾ بإضمار اللام : أي : لقد أفلح(٢)",
-      "textPage": 1132,
-      "marginRef": 2,
-      "fixes": [],
-      "opinions": [
-        {
-          "scholar": "السجاوندي",
-          "verdict": "تام",
-          "verdictLabel": "ط",
-          "book": "علل الوقوف",
-          "page": "1132",
-          "comment": null
-        }
-      ],
-      "aiSuggestion": null,
-      "symbolWitness": null,
-      "inUthmaniMushaf": false,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
-      "isVerseEnd": true,
-      "sourceBatch": "batch_1131_1134.apparatus_v4.raw.json"
-    },
-    {
       "id": "s91-a7-w3",
       "surah": 91,
       "ayah": 7,
       "wordIndex": 3,
       "word": "سَوَّىٰهَا",
-      "targetWord": "وما سواها",
-      "verdictLabel": null,
-      "verdict": null,
-      "label": "غير محسوم",
-      "symbol": "unsettled",
-      "reason": "",
-      "textPage": 1132,
+      "textPage": 0,
       "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": null,
-          "verdictLabel": null,
+          "targetWord": "وما سواها",
+          "verdict": [
+            "جائز"
+          ],
+          "verdictLabel": [
+            "ز"
+          ],
+          "symbol": [
+            "mujawwaz"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1132",
+          "page": "3/1132",
           "comment": null
         }
       ],
@@ -692,7 +665,121 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1131_1134.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21753.json"
+    },
+    {
+      "id": "s91-a10-w4",
+      "surah": 91,
+      "ayah": 10,
+      "wordIndex": 4,
+      "word": "دَسَّىٰهَا",
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "targetWord": "دساها",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "علل الوقوف",
+          "page": "3/1132",
+          "comment": "(تام) لا وقف مطلقًا إلى قوله {دساها}: لانتساق الكلمات، واتصال الجواب بالقسم، وهو: {قد أفلح...} بإضمار اللام: أي: لقد أفلح ولضرورة انقطاع النفس على كل آية جواز، وأجوزها"
+        },
+        {
+          "scholar": "الداني",
+          "targetWord": "دساها",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "المكتفى",
+          "page": "620-621",
+          "comment": "(تام) جواب القسم: {قد أفلح من تزكى} تام أي: أشقاها | (تام) أي: أشقاها"
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "دساها",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "428",
+          "comment": "(تام) والتمام دساها وحذفت اللام من قد لطول المعاطيف على المقسم به الأوَّل وقيل الجواب محذوف تقديره قد سعد من عمل بالطاعة وشقي من عمل بالمعاصي وقيل لَيُدَمْدِمَنَّ الله عليهم أي على أهل مكة لتكذيبهم رسول الله صلى الله عليه وسلم كما دمدم على ثمود لتكذيبهم نبيَّ الله صالحًا عليه السلام وقيل لتبعثن وعلى أنه محذوف يحسن الوقف على رأس كل آية"
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "jamharah_t21753.json"
+    },
+    {
+      "id": "s91-a12-w3",
+      "surah": 91,
+      "ayah": 12,
+      "wordIndex": 3,
+      "word": "أَشْقَىٰهَا",
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "النحاس",
+          "targetWord": "إِذِ انبَعَثَ أَشْقَاهَا",
+          "verdict": [
+            "صالح"
+          ],
+          "verdictLabel": [
+            "ص"
+          ],
+          "symbol": [
+            "murakhkhas"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 12",
+          "comment": "(صالح) ﴿إِذِ انبَعَثَ أَشْقَاهَا﴾ قطع صالح وكذا آخر الايات إلى"
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "qat_itinaf_s091.json"
     },
     {
       "id": "s91-a13-w7",
@@ -700,23 +787,28 @@
       "ayah": 13,
       "wordIndex": 7,
       "word": "وَسُقْيَـٰهَا",
-      "targetWord": "سقياها",
-      "verdictLabel": "ط",
-      "verdict": "تام",
-      "label": "تام",
-      "symbol": "tam",
-      "reason": ". ووقف(٤) الضرورة قبلها جائز .[ ثم إلى الآخر ](٥) لاوقف إلا لضرورة(٦) ",
-      "textPage": 1132,
-      "marginRef": 3,
+      "textPage": 0,
+      "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "تام",
-          "verdictLabel": "ط",
+          "targetWord": "سقياها",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1132",
-          "comment": null
+          "page": "3/1132",
+          "comment": "(تام) ثم الوقف على {سقياها}: ووقف الضرورة قبلها جائز. [ثم إلى الآخر] لا وقف إلا لضرورة"
         }
       ],
       "aiSuggestion": null,
@@ -725,7 +817,110 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1131_1134.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21753.json"
+    },
+    {
+      "id": "s91-a14-w7",
+      "surah": 91,
+      "ayah": 14,
+      "wordIndex": 7,
+      "word": "فَسَوَّىٰهَا",
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "الداني",
+          "targetWord": "فسواها",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "المكتفى",
+          "page": "621",
+          "comment": "(تام) ومن قرأ (فلا يخاف عقباها) بالفاء ابتدأ بقوله: {فلا يخاف} لأن الكلام قد تم دون ذلك ثم استأنف، فقال: (فلا يخاف عقباها) أي: فلا يخاف الله عز وجل تبعة ما أنزل بهم من العذاب. ومن قرأ: {ولا يخاف} بالواو لم يبتدئ بذلك لأن الكلام يتعلق بما قبله، وذلك أن الواو في موضع الحال على أحد تقديرين: 1- إما أن تكون الحال من الله تعالى، بمعنى: فسواها غير خائف أن يعاقب عليه في ذلك. 2- وإما أن يكون الحال من (الأشقى)، بمعنى: إذ انبعث أشقاها غير خائف العاقبة على ذلك أي لهذه الحال"
+        },
+        {
+          "scholar": "النحاس",
+          "targetWord": "فَسَوَّاهَا",
+          "verdict": [
+            "تام",
+            "جائز"
+          ],
+          "verdictLabel": [
+            "ط",
+            "ج"
+          ],
+          "symbol": [
+            "tam",
+            "jaiz"
+          ],
+          "isQila": [
+            false,
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 14",
+          "comment": "(تام) ﴿فَسَوَّاهَا﴾ فإنه تمام عند أبي حاتم وخالفه إبراهيم بن محمد بن عرفه سأل من قرأ بالواو فتقديره | (جائز) أن يقف على ﴿فَسَوَّاهَا﴾ ثم يقول"
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "jamharah_t21753.json"
+    },
+    {
+      "id": "s91-a15-w3",
+      "surah": 91,
+      "ayah": 15,
+      "wordIndex": 3,
+      "word": "عُقْبَـٰهَا",
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "الأشموني",
+          "targetWord": "آخر السورة",
+          "verdict": [
+            "تام",
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "ط",
+            "لا"
+          ],
+          "symbol": [
+            "tam",
+            "la"
+          ],
+          "isQila": [
+            false,
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "428",
+          "comment": "أشقاها وسقياها وفسوَّاها وقف لمن قرأ ولا يخاف بالواو وليس بوقف لمن قرأ فلا يخاف بالفاء وهو نافع وابن عامر والباقون بالواو ورسمت في مصاحف أهل المدينة والشام بالفاء وفي غيرها بالواو فقد قرأ كل بما يوافق رسم مصحفه"
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "jamharah_t21753.json"
     }
   ]
 }

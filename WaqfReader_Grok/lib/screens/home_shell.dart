@@ -15,6 +15,7 @@ class HomeShell extends StatefulWidget {
 
 class _HomeShellState extends State<HomeShell> {
   final ReaderController _controller = ReaderController();
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
@@ -28,21 +29,40 @@ class _HomeShellState extends State<HomeShell> {
     super.dispose();
   }
 
+  void _openDrawer() {
+    _scaffoldKey.currentState?.openDrawer();
+  }
+
   @override
   Widget build(BuildContext context) {
     return ListenableBuilder(
       listenable: _controller,
       builder: (context, _) {
         return Scaffold(
+          key: _scaffoldKey,
+          drawer: IndexDrawer(
+            controller: _controller,
+            onSurahSelected: () {
+              if (_scaffoldKey.currentState?.isDrawerOpen ?? false) {
+                Navigator.of(context).pop();
+              }
+            },
+          ),
           backgroundColor: AppColors.parchment,
           body: Column(
             children: [
               SafeArea(
                 bottom: false,
-                child: _TopBar(controller: _controller),
+                child: _TopBar(
+                  controller: _controller,
+                  onOpenDrawer: _openDrawer,
+                ),
               ),
               Expanded(child: _Body(controller: _controller)),
-              _BottomNav(controller: _controller),
+              _BottomNav(
+                controller: _controller,
+                onOpenDrawer: _openDrawer,
+              ),
             ],
           ),
         );
@@ -98,9 +118,13 @@ class _Body extends StatelessWidget {
 }
 
 class _TopBar extends StatelessWidget {
-  const _TopBar({required this.controller});
+  const _TopBar({
+    required this.controller,
+    required this.onOpenDrawer,
+  });
 
   final ReaderController controller;
+  final VoidCallback onOpenDrawer;
 
   @override
   Widget build(BuildContext context) {
@@ -139,7 +163,10 @@ class _TopBar extends StatelessWidget {
                   Align(
                     alignment: AlignmentDirectional.centerStart,
                     child: controller.tab == 0
-                        ? _SurahChip(controller: controller)
+                        ? _SurahChip(
+                            controller: controller,
+                            onTap: onOpenDrawer,
+                          )
                         : const SizedBox(width: 8),
                   ),
                   Align(
@@ -157,44 +184,51 @@ class _TopBar extends StatelessWidget {
 }
 
 class _SurahChip extends StatelessWidget {
-  const _SurahChip({required this.controller});
+  const _SurahChip({
+    required this.controller,
+    required this.onTap,
+  });
 
   final ReaderController controller;
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsetsDirectional.only(start: 8),
-      child: Material(
-        color: AppColors.chipFill,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20),
-          side: const BorderSide(color: AppColors.forest, width: 1.2),
-        ),
-        child: InkWell(
-          onTap: () => controller.setTab(1),
-          customBorder: RoundedRectangleBorder(
+      child: Tooltip(
+        message: 'فتح فهرس السور',
+        child: Material(
+          color: AppColors.chipFill,
+          shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
+            side: const BorderSide(color: AppColors.forest, width: 1.2),
           ),
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                const Icon(Icons.menu_book, size: 16, color: AppColors.forest),
-                const SizedBox(width: 6),
-                Text(
-                  controller.currentSurahName.isEmpty
-                      ? '…'
-                      : controller.currentSurahName,
-                  style: AppText.ui(
-                    size: 13,
-                    weight: FontWeight.w700,
-                    color: AppColors.forest,
-                    height: 1.1,
+          child: InkWell(
+            onTap: onTap,
+            customBorder: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const Icon(Icons.menu_book, size: 16, color: AppColors.forest),
+                  const SizedBox(width: 6),
+                  Text(
+                    controller.currentSurahName.isEmpty
+                        ? '…'
+                        : controller.currentSurahName,
+                    style: AppText.ui(
+                      size: 13,
+                      weight: FontWeight.w700,
+                      color: AppColors.forest,
+                      height: 1.1,
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ),
@@ -308,9 +342,13 @@ class _OverflowMenu extends StatelessWidget {
 }
 
 class _BottomNav extends StatelessWidget {
-  const _BottomNav({required this.controller});
+  const _BottomNav({
+    required this.controller,
+    required this.onOpenDrawer,
+  });
 
   final ReaderController controller;
+  final VoidCallback onOpenDrawer;
 
   @override
   Widget build(BuildContext context) {
@@ -326,7 +364,13 @@ class _BottomNav extends StatelessWidget {
           surfaceTintColor: Colors.transparent,
           indicatorColor: AppColors.chipFill,
           selectedIndex: controller.tab,
-          onDestinationSelected: controller.setTab,
+          onDestinationSelected: (index) {
+            if (index == 1) {
+              onOpenDrawer();
+            } else {
+              controller.setTab(index);
+            }
+          },
           destinations: const [
             NavigationDestination(
               icon: Icon(Icons.menu_book_outlined),

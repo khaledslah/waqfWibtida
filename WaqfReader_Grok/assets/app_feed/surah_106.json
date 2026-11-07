@@ -7,8 +7,8 @@
     4
   ],
   "sourceBatch": [
-    "batch_1159_1162.apparatus_v4.raw.json",
-    "batch_1163_1166.apparatus_v4.raw.json"
+    "jamharah_t21768.json",
+    "qat_itinaf_s106.json"
   ],
   "sourceTag": "base",
   "ayahs": [
@@ -29,7 +29,7 @@
           "index": 2,
           "text": "قُرَيْشٍ",
           "textImlai": "قُرَيۡشٍۙ‏",
-          "stopId": null,
+          "stopId": "s106-a1-w2",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -164,7 +164,7 @@
           "index": 4,
           "text": "جُوعٍۢ",
           "textImlai": "جُوۡعٍ   ۙ",
-          "stopId": null,
+          "stopId": "s106-a4-w4",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -194,7 +194,7 @@
           "index": 7,
           "text": "خَوْفٍۭ",
           "textImlai": "خَوۡفٍ‏",
-          "stopId": null,
+          "stopId": "s106-a4-w7",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -205,28 +205,33 @@
   ],
   "stops": [
     {
-      "id": "s106-a2-w4",
+      "id": "s106-a1-w2",
       "surah": 106,
-      "ayah": 2,
-      "wordIndex": 4,
-      "word": "وَٱلصَّيْفِ",
-      "targetWord": "والصيف",
-      "verdictLabel": "ج",
-      "verdict": "جائز",
-      "label": "جائز",
-      "symbol": "jaiz",
-      "reason": "لأن تعلق اللام من : ﴿لإيلاف﴾ بالسورة الأولى ، أي : جعلهم(1) متمزقين(2) ليؤلف(3) قريشًا(4) ، أو(5) : ليؤلف قريش أمرهم وجمعهم(6) وقد قيل : المعنى : فليعبدوا رب هذا البيت(1) لإيلافه قريشًا(2) ، ولا وقف على(3) : ﴿الصيف(1)﴾ . وقد(2) قيل : خبر اللام محذوف(3) ، أي : لإيلاف قريش فعلنا ما فعلنا - مكتفيًا(4) ببيانه(5) في السورة الأولى(6) - . وقد(7) قيل : اللام لام تعجب(8) ، والمعنى(9) : أعجبوا لإيلاف قريش(10) ",
-      "textPage": 1160,
-      "marginRef": 1,
+      "ayah": 1,
+      "wordIndex": 2,
+      "word": "قُرَيْشٍ",
+      "textPage": 0,
+      "marginRef": null,
       "fixes": [],
       "opinions": [
         {
-          "scholar": "السجاوندي",
-          "verdict": "جائز",
-          "verdictLabel": "ج",
-          "book": "علل الوقوف",
-          "page": "1160",
-          "comment": null
+          "scholar": "ابن الأنباري",
+          "targetWord": "إيلاف قريش",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "إيضاح الوقف والابتداء",
+          "page": "2/985- 988",
+          "comment": "(لا يوقف) قبيح لأن «الإيلاف» الثاني مخفوض على الإتباع لـ «الإيلاف» الأول. واجتمعت القراء على (إلافهم) [2]، وروي عن أبي جعفر (ألفهم) و(إيلافهم) فمن قرأ (إيلافهم) أخذه من «آلف، يولف، إيلافا» كما قال ذو الرمة يصف ظبية: من المؤلفات الرمل أدماء حرة = شعاع الضحى في لونها يتوضح ويروى «في متنها» وقال آخر: المطعمين إذا النجوم تحيرت = والظاعنين لرحلة الإيلاف ومن قرأ (إلافهم) أخذه من «ألفت، ألف إفًا وإلافا»، وكلك من قرأ (إلفهم). وقال الفراء: يجوز أن يكون الإلف من يولفون، وأجود من ذلك أن يكون من «يألفون» ومعنى يولفون «يهيئون ويجهزون». ويجوز في العربية (لإيلاف قريش إلا فهم) بنصب الثاني على أنه مصدر لـ «الإيلاف» الأول كما تقول: العجب لدخولك دخولاً دارنا. ويجوز (إيلافهم رحلة الشتاء والصيف) بخفض «الرحلة» على أن تجعلها تابعة لـ «الإيلاف» وكأنك قلت: العجب لرحلتهم شتاء وصيفا، وقال الشاعر: زعمتم أن إخوتكم قريشًا = لهم إلف وليس لكم إلاف فجمع بين اللغتين"
         }
       ],
       "aiSuggestion": null,
@@ -235,7 +240,102 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1159_1162.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21768.json"
+    },
+    {
+      "id": "s106-a2-w4",
+      "surah": 106,
+      "ayah": 2,
+      "wordIndex": 4,
+      "word": "وَٱلصَّيْفِ",
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "targetWord": "والصيف",
+          "verdict": [
+            "جائز"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "علل الوقوف",
+          "page": "3/1160- 3/1164",
+          "comment": "(جائز) لأن تعلق اللام من: {لإيلاف} بالسورة الأولى، أي: جعلهم متمزقين ليؤلف قريشًا، أو: ليؤلف قريش أمرهم وجمعهم وقد قيل: المعنى: فليعبدوا رب هذا8 البيت لإيلافه قريشًا | (جائز) ولا وقف على {الصيف}: وقد قيل: خبر اللام محذوف، أي: لإيلاف قريش فعلنا ما فعلنا- مكتفيًا ببيانه في السورة الأولى-. وقد قيل: اللام لام تعجب، والمعنى: أعجبوا لإيلاف قريش. أبو علي: قال: لو كان كذلك متصلاً لما فصل بالتسمية بين السورتين [والأول أصح]. ["
+        },
+        {
+          "scholar": "الداني",
+          "targetWord": "والصيف",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "المكتفى",
+          "page": "629-630",
+          "comment": "(كاف) قال الفراء: اللام في قوله عز وجل: {لإيلاف قريش} متعلقة بفعل مضمر، والتقدير: اعجبوا لإيلاف قريش رحلة الشتاء والصيف وتركهم عبادة رب هذا البيت. والمعنى ذلك عند الخليل وسيبويه: فليعبدوا رب هذا البيت لإيلاف قريش، أي: ليجعلوا عبادتهم شكرًا لهذه النعمة واعترافًا بها. واللام متعلقة بقوله: {فليعبدوا}.\nوقال الأخفش: اللام متعلقة بآخر الفيل، والمعنى عنده: فعل بهم ذلك ليؤلف قريشًا. وهذا خطأ بين، وذلك أن لو كان كما قال لكان (لإيلاف قريش) بعض آيات (ألم تر) وفي إجماع المسلمين على الفصل بينهما، وأنهما سورتان دليل على خطئه. والوقف على كاف على قول الفراء، ولا تمام دون آخرها"
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "والصيف",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "434 - 435",
+          "comment": "(كاف) إن لم تتعلق لام لئلاف بقوله فليعبدوا على معنى التأخير أي فليعبدوا رب هذا البيت لئلاف قريش فعلى هذا لا يكون في هذه السورة وقف لاتصال الكلام بعضه ببعض ولا يوقف على البيت ولا على من جوع لقطع الصفة عن موصوفها في الأول وللعطف في الثاني"
+        },
+        {
+          "scholar": "النحاس",
+          "targetWord": "رِحْلَةَ الشِّتَاءِ وَالصَّيْفِ",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 2",
+          "comment": "(كاف) ﴿رِحْلَةَ الشِّتَاءِ وَالصَّيْفِ﴾ قطع كاف والتمام آخر السورة"
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "jamharah_t21768.json"
     },
     {
       "id": "s106-a3-w4",
@@ -243,31 +343,47 @@
       "ayah": 3,
       "wordIndex": 4,
       "word": "ٱلْبَيْتِ",
-      "targetWord": "البيت",
-      "verdictLabel": "لا",
-      "verdict": "لا يوقف",
-      "label": "لا يوقف",
-      "symbol": "la",
-      "reason": "",
-      "textPage": 1164,
-      "marginRef": 6,
-      "fixes": [
-        {
-          "type": "malformed_bracket",
-          "basis": "editor_policy",
-          "old_text": "[ ﴿ البيت - 3 - لا ﴾ ]",
-          "new_text": "﴿ البيت - 3 - لا ﴾",
-          "info": "قوس معقوف زائد حول قوس الوقف"
-        }
-      ],
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "لا يوقف",
-          "verdictLabel": "لا",
+          "targetWord": "البيت",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1164",
+          "page": "3/1160- 3/1164",
           "comment": null
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "البيت",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "434 - 435",
+          "comment": "(لا يوقف) ولا يوقف على البيت ولا على من جوع لقطع الصفة عن موصوفها في الأول وللعطف في الثاني"
         }
       ],
       "aiSuggestion": null,
@@ -276,7 +392,102 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1163_1166.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21768.json"
+    },
+    {
+      "id": "s106-a4-w4",
+      "surah": 106,
+      "ayah": 4,
+      "wordIndex": 4,
+      "word": "جُوعٍۢ",
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "الأشموني",
+          "targetWord": "من جوع",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "434 - 435",
+          "comment": "(لا يوقف) ولا يوقف على البيت ولا على من جوع لقطع الصفة عن موصوفها في الأول وللعطف في الثاني"
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": false,
+      "sourceBatch": "jamharah_t21768.json"
+    },
+    {
+      "id": "s106-a4-w7",
+      "surah": 106,
+      "ayah": 4,
+      "wordIndex": 7,
+      "word": "خَوْفٍۭ",
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "الأشموني",
+          "targetWord": "وآخر السورة",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "434 - 435",
+          "comment": null
+        },
+        {
+          "scholar": "النحاس",
+          "targetWord": "خَوْفٍۭ",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 2",
+          "comment": "(تام) ﴿رِحْلَةَ الشِّتَاءِ وَالصَّيْفِ﴾ قطع كاف والتمام آخر السورة."
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "jamharah_t21768.json"
     }
   ]
 }

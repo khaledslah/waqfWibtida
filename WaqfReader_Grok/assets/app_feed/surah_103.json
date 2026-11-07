@@ -7,7 +7,8 @@
     3
   ],
   "sourceBatch": [
-    "batch_1155_1158.apparatus_v4.raw.json"
+    "jamharah_t21765.json",
+    "qat_itinaf_s103.json"
   ],
   "sourceTag": "base",
   "ayahs": [
@@ -118,7 +119,7 @@
           "index": 5,
           "text": "ٱلصَّـٰلِحَـٰتِ",
           "textImlai": "عَمِلُوا",
-          "stopId": null,
+          "stopId": "s103-a3-w5",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -158,7 +159,7 @@
           "index": 9,
           "text": "بِٱلصَّبْرِ",
           "textImlai": "وَتَوَاصَوۡا بِالصَّبۡرِ‏",
-          "stopId": null,
+          "stopId": "s103-a3-w9",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -174,23 +175,51 @@
       "ayah": 2,
       "wordIndex": 4,
       "word": "خُسْرٍ",
-      "targetWord": "خسر",
-      "verdictLabel": "لا",
-      "verdict": "لا يوقف",
-      "label": "لا يوقف",
-      "symbol": "la",
-      "reason": "للاستثناء ، [ لأن الإنسان ](٢) اسم جنس(٣) [ بمعنى : الناس ](٤) ",
-      "textPage": 1156,
-      "marginRef": 2,
+      "textPage": 0,
+      "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "لا يوقف",
-          "verdictLabel": "لا",
+          "targetWord": "خسر",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1156",
-          "comment": null
+          "page": "3/1156",
+          "comment": "(لا يوقف) للاستثناء، [لأن الإنسان] اسم جنس [بمعنى: الناس]"
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "لفي خسر",
+          "verdict": [
+            "جائز",
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "ج",
+            "لا"
+          ],
+          "symbol": [
+            "jaiz",
+            "la"
+          ],
+          "isQila": [
+            false,
+            true
+          ],
+          "book": "منار الهدى",
+          "page": "434",
+          "comment": "(جائز) عند بعضهم على أن المراد بالإنسان الجنس ومثله في الجواز الصالحات وقيل لا يجوز لأنَّ التواصي بالحق والصبر قد دخل تحت الأعمال الصالحة فلا وقف فيها دون آخرها"
         }
       ],
       "aiSuggestion": null,
@@ -199,7 +228,102 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1155_1158.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21765.json"
+    },
+    {
+      "id": "s103-a3-w5",
+      "surah": 103,
+      "ayah": 3,
+      "wordIndex": 5,
+      "word": "ٱلصَّـٰلِحَـٰتِ",
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "الأشموني",
+          "targetWord": "الصالحات",
+          "verdict": [
+            "جائز"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "434",
+          "comment": "(جائز) ومثله"
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": false,
+      "sourceBatch": "jamharah_t21765.json"
+    },
+    {
+      "id": "s103-a3-w9",
+      "surah": 103,
+      "ayah": 3,
+      "wordIndex": 9,
+      "word": "بِٱلصَّبْرِ",
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "ابن الأنباري",
+          "targetWord": "بِٱلصَّبْرِ",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "إيضاح الوقف والابتداء",
+          "page": "2/984",
+          "comment": "(تام) الوقف التام فيها آخرها."
+        },
+        {
+          "scholar": "الداني",
+          "targetWord": "بِٱلصَّبْرِ",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "المكتفى",
+          "page": "628",
+          "comment": "(تام) لا وقف فيها دون آخرها لأن {إلا الذين آمنوا} استثناء من الأول، ومعنى (إن الإنسان) إن الناس. ولذلك جاز الاستثناء لأنه لا يستثنى الأكثر من الأقل."
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "jamharah_t21765.json"
     }
   ]
 }

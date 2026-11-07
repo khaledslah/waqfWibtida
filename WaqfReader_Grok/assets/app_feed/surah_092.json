@@ -7,7 +7,8 @@
     21
   ],
   "sourceBatch": [
-    "batch_1131_1134.apparatus_v4.raw.json"
+    "jamharah_t21754.json",
+    "qat_itinaf_s092.json"
   ],
   "sourceTag": "base",
   "ayahs": [
@@ -488,7 +489,7 @@
           "index": 4,
           "text": "وَٱلْأُولَىٰ",
           "textImlai": "وَالۡاُوۡلٰى‏",
-          "stopId": null,
+          "stopId": "s92-a13-w4",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -628,7 +629,7 @@
           "index": 2,
           "text": "ٱلْأَتْقَى",
           "textImlai": "الۡاَتۡقَىۙ‏",
-          "stopId": null,
+          "stopId": "s92-a17-w2",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -818,7 +819,7 @@
           "index": 2,
           "text": "يَرْضَىٰ",
           "textImlai": "يَرۡضٰى‏",
-          "stopId": null,
+          "stopId": "s92-a21-w2",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -834,23 +835,104 @@
       "ayah": 4,
       "wordIndex": 3,
       "word": "لَشَتَّىٰ",
-      "targetWord": "لشتى",
-      "verdictLabel": "ط",
-      "verdict": "تام",
-      "label": "تام",
-      "symbol": "tam",
-      "reason": "لاتصال الجواب بالقسم ",
-      "textPage": 1133,
+      "textPage": 0,
       "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "تام",
-          "verdictLabel": "ط",
+          "targetWord": "لشتى",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1133",
-          "comment": null
+          "page": "3/1133",
+          "comment": "(تام) الوقف على {لشتى}: لاتصال الجواب بالقسم. ثم"
+        },
+        {
+          "scholar": "ابن الأنباري",
+          "targetWord": "إن سعيكم لشتى",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "إيضاح الوقف والابتداء",
+          "page": "2/979",
+          "comment": "(تام) وقف التمام وهو جواب القسم"
+        },
+        {
+          "scholar": "الداني",
+          "targetWord": "إن سعيكم لشتى",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "المكتفى",
+          "page": "621 - 622",
+          "comment": "(تام) جواب القسم وهو تام"
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "إنَّ سعيكم لشتى",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "428 - 429",
+          "comment": "(تام) قال الرضي وإذا تكررت الواو بعد واو القسم كما هنا فمذهب سيبويه والخليل إنَّ المتكررة واو العطف وقال بعضهم هي واو القسم والأوَّل أجود وذلك أنَّها لو كانت للقسم لكانت بدلاً من الباء ولم تفد العطف وربط المقسم به الثاني وما بعده بالأوَّل بل يكون التقدير أقسم بالليل أقسم بالنهار أقسم بما خلق الذكر والأنثى فهذه الثلاثة كل واحد منها لابد له من جواب فيطلب ثلاثة أجوبة فإن قلنا حذف جوابان استغناء بما بقي فالحذف خلاف الأصل وإن جعلنا الواحد جوابًا للمجموع فهو خلاف الأصل أيضًا فلم يبق إلاَّ أن نقول القسم شيء واحد والمقسم به ثلاثة والقسم هو الطالب للجواب لا المقسم به فيكون جوابًا واحدًا فكأنه قال أقسم بالليل والنهار وما خلق الذكر والأنثى إن سعيكم لشتى قاله الشنواني وإنما حذف مفعولي أعطى ومفعول اتقى لأنَّ الغرض ذكر هذه الأحداث دون متعلقاتها والمعنى أعطى حق الله واتقى الله"
+        },
+        {
+          "scholar": "النحاس",
+          "targetWord": "إِنَّ سَعْيَكُمْ لَشَتَّىٰ",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 4",
+          "comment": "(تام) التمام ﴿إِنَّ سَعْيَكُمْ لَشَتَّىٰ﴾"
         }
       ],
       "aiSuggestion": null,
@@ -859,7 +941,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1131_1134.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21754.json"
     },
     {
       "id": "s92-a7-w2",
@@ -867,23 +949,108 @@
       "ayah": 7,
       "wordIndex": 2,
       "word": "لِلْيُسْرَىٰ",
-      "targetWord": "لليسرى",
-      "verdictLabel": "ط",
-      "verdict": "تام",
-      "label": "تام",
-      "symbol": "tam",
-      "reason": "لاتصال الجزاء بالشرط ،",
-      "textPage": 1133,
+      "textPage": 0,
       "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "تام",
-          "verdictLabel": "ط",
+          "targetWord": "لليسرى",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1133",
-          "comment": null
+          "page": "3/1133",
+          "comment": "(تام) لاتصال الجزاء بالشرط، ثم"
+        },
+        {
+          "scholar": "ابن الأنباري",
+          "targetWord": "فسنيسره لليسرى",
+          "verdict": [
+            "حسن"
+          ],
+          "verdictLabel": [
+            "ز"
+          ],
+          "symbol": [
+            "mujawwaz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "إيضاح الوقف والابتداء",
+          "page": "2/979",
+          "comment": "(حسن) وقف حسن"
+        },
+        {
+          "scholar": "الداني",
+          "targetWord": "لليسرى",
+          "verdict": [
+            "تام",
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ط",
+            "ج"
+          ],
+          "symbol": [
+            "tam",
+            "jaiz"
+          ],
+          "isQila": [
+            false,
+            true
+          ],
+          "book": "المكتفى",
+          "page": "621 - 622",
+          "comment": "(تام) وقيل: كاف"
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "لليسرى",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "428 - 429",
+          "comment": "(كاف) ومثله للعسرى وكذا تردَّى للابتداء بإن"
+        },
+        {
+          "scholar": "النحاس",
+          "targetWord": "فَسَنُيَسِّرُهُ لِلْيُسْرَىٰ",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 7",
+          "comment": "(كاف) ﴿فَسَنُيَسِّرُهُ لِلْيُسْرَىٰ﴾ كاف وكذا"
         }
       ],
       "aiSuggestion": null,
@@ -892,7 +1059,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1131_1134.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21754.json"
     },
     {
       "id": "s92-a10-w2",
@@ -900,23 +1067,104 @@
       "ayah": 10,
       "wordIndex": 2,
       "word": "لِلْعُسْرَىٰ",
-      "targetWord": "للعسرى",
-      "verdictLabel": "ط",
-      "verdict": "تام",
-      "label": "تام",
-      "symbol": "tam",
-      "reason": "كذلك(٥)",
-      "textPage": 1133,
-      "marginRef": 4,
+      "textPage": 0,
+      "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "تام",
-          "verdictLabel": "ط",
+          "targetWord": "للعسرى",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1133",
+          "page": "3/1133",
+          "comment": "(تام) كذلك"
+        },
+        {
+          "scholar": "ابن الأنباري",
+          "targetWord": "فسنيسره للعسرى",
+          "verdict": [
+            "حسن"
+          ],
+          "verdictLabel": [
+            "ز"
+          ],
+          "symbol": [
+            "mujawwaz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "إيضاح الوقف والابتداء",
+          "page": "2/979",
+          "comment": "(حسن) وقف حسن"
+        },
+        {
+          "scholar": "الداني",
+          "targetWord": "للعسرى",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "المكتفى",
+          "page": "621 - 622",
           "comment": null
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "للعسرى",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "428 - 429",
+          "comment": "(كاف) ومثله"
+        },
+        {
+          "scholar": "النحاس",
+          "targetWord": "لِلْعُسْرَىٰ",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 7",
+          "comment": "(كاف) وكذا ﴿لِلْعُسْرَىٰ﴾"
         }
       ],
       "aiSuggestion": null,
@@ -925,7 +1173,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1131_1134.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21754.json"
     },
     {
       "id": "s92-a11-w6",
@@ -933,23 +1181,85 @@
       "ayah": 11,
       "wordIndex": 6,
       "word": "تَرَدَّىٰٓ",
-      "targetWord": "إذا تردى",
-      "verdictLabel": "ط",
-      "verdict": "تام",
-      "label": "تام",
-      "symbol": "tam",
-      "reason": "للابتداء بـ : ﴿ إن ﴾",
-      "textPage": 1133,
+      "textPage": 0,
       "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "تام",
-          "verdictLabel": "ط",
+          "targetWord": "إذا تردى",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1133",
+          "page": "3/1133",
+          "comment": "(تام) للابتداء: بـ: {إن}"
+        },
+        {
+          "scholar": "ابن الأنباري",
+          "targetWord": "إذا تردى",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "إيضاح الوقف والابتداء",
+          "page": "2/979",
+          "comment": "(تام) والأول تام"
+        },
+        {
+          "scholar": "الداني",
+          "targetWord": "إذا تردى",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "المكتفى",
+          "page": "621 - 622",
           "comment": null
+        },
+        {
+          "scholar": "النحاس",
+          "targetWord": "إِذَا تَرَدَّىٰ",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 11",
+          "comment": "(تام) والتمام ﴿إِذَا تَرَدَّىٰ﴾ وكذا"
         }
       ],
       "aiSuggestion": null,
@@ -958,7 +1268,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1131_1134.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21754.json"
     },
     {
       "id": "s92-a12-w3",
@@ -966,22 +1276,46 @@
       "ayah": 12,
       "wordIndex": 3,
       "word": "لَلْهُدَىٰ",
-      "targetWord": "للهدى",
-      "verdictLabel": "ز",
-      "verdict": "جائز",
-      "label": "مجوَّز",
-      "symbol": "mujawwaz",
-      "reason": "والوصل لإتمام(٧) الكلام أجوز ",
-      "textPage": 1133,
-      "marginRef": 6,
+      "textPage": 0,
+      "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "جائز",
-          "verdictLabel": "ز",
+          "targetWord": "للهدى",
+          "verdict": [
+            "جائز"
+          ],
+          "verdictLabel": [
+            "ز"
+          ],
+          "symbol": [
+            "mujawwaz"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1133",
+          "page": "3/1133- 3/1134",
+          "comment": "(جائز) والوصل لإتمام الكلام أجوز"
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "للهدى",
+          "verdict": [
+            "جائز"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "429",
           "comment": null
         }
       ],
@@ -991,7 +1325,83 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1131_1134.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21754.json"
+    },
+    {
+      "id": "s92-a13-w4",
+      "surah": 92,
+      "ayah": 13,
+      "wordIndex": 4,
+      "word": "وَٱلْأُولَىٰ",
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "الداني",
+          "targetWord": "والأولى",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "المكتفى",
+          "page": "622",
+          "comment": null
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "والأولى",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "429",
+          "comment": null
+        },
+        {
+          "scholar": "النحاس",
+          "targetWord": "لَلْآخِرَةَ وَالْأُولَىٰ",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 11",
+          "comment": "(تام) وكذا ﴿لَلْآخِرَةَ وَالْأُولَىٰ﴾ وكذا"
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "jamharah_t21754.json"
     },
     {
       "id": "s92-a14-w3",
@@ -999,23 +1409,47 @@
       "ayah": 14,
       "wordIndex": 3,
       "word": "تَلَظَّىٰ",
-      "targetWord": "تلظى",
-      "verdictLabel": "ج",
-      "verdict": "جائز",
-      "label": "جائز",
-      "symbol": "jaiz",
-      "reason": "لأن ما بعدها صفة(٢) أيضًا ،[ على أن الاستئناف محتمل ](٣) ",
-      "textPage": 1134,
-      "marginRef": 1,
+      "textPage": 0,
+      "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "جائز",
-          "verdictLabel": "ج",
+          "targetWord": "تلظى",
+          "verdict": [
+            "جائز"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1134",
-          "comment": null
+          "page": "3/1133- 3/1134",
+          "comment": "(جائز) لأن ما بعدها صفة أيضًا، [على أن الاستئناف محتمل]"
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "تلظى",
+          "verdict": [
+            "جائز"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "429",
+          "comment": "(جائز) لأن ما بعده يصلح استئنافًا وصفة"
         }
       ],
       "aiSuggestion": null,
@@ -1024,7 +1458,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1131_1134.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21754.json"
     },
     {
       "id": "s92-a16-w3",
@@ -1032,23 +1466,104 @@
       "ayah": 16,
       "wordIndex": 3,
       "word": "وَتَوَلَّىٰ",
-      "targetWord": "وتولى",
-      "verdictLabel": "ط",
-      "verdict": "تام",
-      "label": "تام",
-      "symbol": "tam",
-      "reason": "وقف السجاوندي: تام",
-      "textPage": 1134,
+      "textPage": 0,
       "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "تام",
-          "verdictLabel": "ط",
+          "targetWord": "وتولى",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1134",
+          "page": "3/1133- 3/1134",
           "comment": null
+        },
+        {
+          "scholar": "ابن الأنباري",
+          "targetWord": "الذي كذب وتولى",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "إيضاح الوقف والابتداء",
+          "page": "2/979",
+          "comment": null
+        },
+        {
+          "scholar": "الداني",
+          "targetWord": "وتولى",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "المكتفى",
+          "page": "622",
+          "comment": null
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "وتولى",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "429",
+          "comment": "(تام) ولا يوقف على الأتقى لأن ما بعده صفة والصفة والموصوف كالشيء الواحد"
+        },
+        {
+          "scholar": "النحاس",
+          "targetWord": "الَّذِي كَذَّبَ وَتَوَلَّىٰ",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 11",
+          "comment": "(تام) وكذا ﴿الَّذِي كَذَّبَ وَتَوَلَّىٰ﴾"
         }
       ],
       "aiSuggestion": null,
@@ -1057,7 +1572,45 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1131_1134.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21754.json"
+    },
+    {
+      "id": "s92-a17-w2",
+      "surah": 92,
+      "ayah": 17,
+      "wordIndex": 2,
+      "word": "ٱلْأَتْقَى",
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "الأشموني",
+          "targetWord": "الأتقى",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "429",
+          "comment": "(لا يوقف) ولا يوقف على الأتقى لأن ما بعده صفة والصفة والموصوف كالشيء الواحد"
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "jamharah_t21754.json"
     },
     {
       "id": "s92-a18-w4",
@@ -1065,23 +1618,66 @@
       "ayah": 18,
       "wordIndex": 4,
       "word": "يَتَزَكَّىٰ",
-      "targetWord": "يتزكى",
-      "verdictLabel": "ج",
-      "verdict": "جائز",
-      "label": "جائز",
-      "symbol": "jaiz",
-      "reason": "لأن ما بعده استئناف(٤) أو حال ",
-      "textPage": 1134,
-      "marginRef": 4,
+      "textPage": 0,
+      "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "جائز",
-          "verdictLabel": "ج",
+          "targetWord": "يتزكى",
+          "verdict": [
+            "جائز"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1134",
-          "comment": null
+          "page": "3/1133- 3/1134",
+          "comment": "(جائز) لأن ما بعده استئناف أو حال"
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "يتزكى",
+          "verdict": [
+            "حسن"
+          ],
+          "verdictLabel": [
+            "ز"
+          ],
+          "symbol": [
+            "mujawwaz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "429",
+          "comment": "(حسن) ومثله تجزى وتجاوزه أولى"
+        },
+        {
+          "scholar": "النحاس",
+          "targetWord": "الَّذِي يُؤْتِي مَالَهُ يَتَزَكَّىٰ",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 18",
+          "comment": "(كاف) ﴿الَّذِي يُؤْتِي مَالَهُ يَتَزَكَّىٰ﴾ كاف والتمام عند ابي حاتم"
         }
       ],
       "aiSuggestion": null,
@@ -1090,7 +1686,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1131_1134.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21754.json"
     },
     {
       "id": "s92-a19-w6",
@@ -1098,23 +1694,47 @@
       "ayah": 19,
       "wordIndex": 6,
       "word": "تُجْزَىٰٓ",
-      "targetWord": "تجزى",
-      "verdictLabel": "لا",
-      "verdict": "لا يوقف",
-      "label": "لا يوقف",
-      "symbol": "la",
-      "reason": "للاستثناء(٥) ، وقد يقف(٦) مَنْ يجعله بمعنى : لكن ، ولايتضح(٧) ",
-      "textPage": 1134,
-      "marginRef": 5,
+      "textPage": 0,
+      "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "لا يوقف",
-          "verdictLabel": "لا",
+          "targetWord": "تجزى",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1134",
-          "comment": null
+          "page": "3/1133- 3/1134",
+          "comment": "(لا يوقف) للاستثناء، وقد يقف من يجعله بمعنى: لكن، ولا يتضح"
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "تجزى",
+          "verdict": [
+            "حسن"
+          ],
+          "verdictLabel": [
+            "ز"
+          ],
+          "symbol": [
+            "mujawwaz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "429",
+          "comment": "(حسن) ومثله"
         }
       ],
       "aiSuggestion": null,
@@ -1123,7 +1743,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1131_1134.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21754.json"
     },
     {
       "id": "s92-a20-w5",
@@ -1131,22 +1751,141 @@
       "ayah": 20,
       "wordIndex": 5,
       "word": "ٱلْأَعْلَىٰ",
-      "targetWord": "الأعلى",
-      "verdictLabel": "ج",
-      "verdict": "جائز",
-      "label": "جائز",
-      "symbol": "jaiz",
-      "reason": "لاختلاف الجملتين ",
-      "textPage": 1134,
+      "textPage": 0,
       "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "جائز",
-          "verdictLabel": "ج",
+          "targetWord": "الأعلى",
+          "verdict": [
+            "جائز"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1134",
+          "page": "3/1133- 3/1134",
+          "comment": "(جائز) لاختلاف الجملتين"
+        },
+        {
+          "scholar": "ابن الأنباري",
+          "targetWord": "إلا ابتغاء وجه ربه الأعلى",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "إيضاح الوقف والابتداء",
+          "page": "2/979",
+          "comment": null
+        },
+        {
+          "scholar": "الداني",
+          "targetWord": "وجه ربه الأعلى",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "المكتفى",
+          "page": "622",
+          "comment": null
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "الأعلا",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "429",
+          "comment": "(تام) ورسموا الأعلى بلا ألف كما ترى"
+        },
+        {
+          "scholar": "النحاس",
+          "targetWord": "إِلَّا ابْتِغَاءَ وَجْهِ رَبِّهِ الْأَعْلَىٰ",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 18",
+          "comment": "(تام) والتمام عند ابي حاتم ﴿إِلَّا ابْتِغَاءَ وَجْهِ رَبِّهِ الْأَعْلَىٰ﴾.. ثم آخر السورة"
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "jamharah_t21754.json"
+    },
+    {
+      "id": "s92-a21-w2",
+      "surah": 92,
+      "ayah": 21,
+      "wordIndex": 2,
+      "word": "يَرْضَىٰ",
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "الأشموني",
+          "targetWord": "آخر السورة",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "429",
           "comment": null
         }
       ],
@@ -1156,7 +1895,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1131_1134.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21754.json"
     }
   ]
 }

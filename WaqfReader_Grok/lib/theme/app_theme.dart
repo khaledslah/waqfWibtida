@@ -37,6 +37,14 @@ abstract final class AppText {
     Color color = AppColors.ink,
     double height = 1.45,
   }) {
+    if (!GoogleFonts.config.allowRuntimeFetching) {
+      return TextStyle(
+        fontSize: size,
+        fontWeight: weight,
+        color: color,
+        height: height,
+      );
+    }
     return GoogleFonts.cairo(
       fontSize: size,
       fontWeight: weight,
@@ -51,6 +59,14 @@ abstract final class AppText {
     Color color = AppColors.ink,
     double height = 1.45,
   }) {
+    if (!GoogleFonts.config.allowRuntimeFetching) {
+      return TextStyle(
+        fontSize: size,
+        fontWeight: weight,
+        color: color,
+        height: height,
+      );
+    }
     return GoogleFonts.amiriQuran(
       fontSize: size,
       fontWeight: weight,
@@ -81,10 +97,15 @@ abstract final class AppTheme {
       splashFactory: InkRipple.splashFactory,
     );
 
-    final cairo = GoogleFonts.cairoTextTheme(base.textTheme).apply(
-      bodyColor: AppColors.ink,
-      displayColor: AppColors.forestDeep,
-    );
+    final cairo = GoogleFonts.config.allowRuntimeFetching
+        ? GoogleFonts.cairoTextTheme(base.textTheme).apply(
+            bodyColor: AppColors.ink,
+            displayColor: AppColors.forestDeep,
+          )
+        : base.textTheme.apply(
+            bodyColor: AppColors.ink,
+            displayColor: AppColors.forestDeep,
+          );
 
     return base.copyWith(
       textTheme: cairo,

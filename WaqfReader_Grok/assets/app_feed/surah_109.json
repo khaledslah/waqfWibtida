@@ -7,7 +7,8 @@
     6
   ],
   "sourceBatch": [
-    "batch_1167_1170.apparatus_v4.raw.json"
+    "jamharah_t21771.json",
+    "qat_itinaf_s109.json"
   ],
   "sourceTag": "base",
   "ayahs": [
@@ -83,7 +84,7 @@
           "index": 4,
           "text": "تَعْبُدُونَ",
           "textImlai": "تَعۡبُدُوۡنَۙ‏",
-          "stopId": null,
+          "stopId": "s109-a2-w4",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -193,7 +194,7 @@
           "index": 5,
           "text": "عَبَدتُّمْ",
           "textImlai": "عَبَدۡتُّمۡۙ‏",
-          "stopId": null,
+          "stopId": "s109-a4-w5",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -293,7 +294,7 @@
           "index": 4,
           "text": "دِينِ",
           "textImlai": "دِيۡنِ‏",
-          "stopId": null,
+          "stopId": "s109-a6-w4",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -304,84 +305,131 @@
   ],
   "stops": [
     {
-      "id": "s109-a3-w5",
+      "id": "s109-a2-w4",
       "surah": 109,
-      "ayah": 3,
-      "wordIndex": 5,
-      "word": "أَعْبُدُ",
-      "targetWord": "ما أعبد",
-      "verdictLabel": "ج",
-      "verdict": "جائز",
-      "label": "جائز",
-      "symbol": "jaiz",
-      "reason": "",
-      "textPage": 1168,
-      "marginRef": 2,
+      "ayah": 2,
+      "wordIndex": 4,
+      "word": "تَعْبُدُونَ",
+      "textPage": 0,
+      "marginRef": null,
       "fixes": [],
       "opinions": [
         {
-          "scholar": "السجاوندي",
-          "verdict": "جائز",
-          "verdictLabel": "ج",
-          "book": "علل الوقوف",
-          "page": "1168",
-          "comment": null
-        },
-        {
-          "scholar": "ابن الأنباري",
-          "verdict": "حسن",
-          "verdictLabel": null,
-          "book": "الإيضاح",
-          "page": "2/989",
-          "comment": "قال: وقف حسن، وإنما كرر هذا اللفظ لمعنى التغليظ، ثم تبتدىء: ولا أنا عابد ما عبدتم"
-        },
-        {
-          "scholar": "أبو حاتم",
-          "verdict": "تام",
-          "verdictLabel": null,
-          "book": "القطع",
-          "page": "785",
-          "comment": "نقل عنه النحاس أن الوقف هنا تام لأن المعنى عنده مختلف وليس بتكرير"
-        },
-        {
-          "scholar": "النحاس",
-          "verdict": "تام",
-          "verdictLabel": null,
-          "book": "القطع",
-          "page": "785",
-          "comment": "أيد أبا حاتم على أن الوقف تام لأن المعنى عنده مختلف وليس بتكرير، وقال: والذي قاله حسن"
+          "scholar": "الأشموني",
+          "targetWord": "ما تعبدون",
+          "verdict": [
+            "جائز",
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "ج",
+            "لا"
+          ],
+          "symbol": [
+            "jaiz",
+            "la"
+          ],
+          "isQila": [
+            false,
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "436",
+          "comment": "(جائز) على استئناف ما بعده وليس بوقف إن جعل توكيدًا"
         }
       ],
-      "aiSuggestion": "الوقف على ما أعبد للفصل بين نفي العبادة في المستقبل ونفيها في الحال على توجيه أبي حاتم والنحاس، أو لكون التكرار لمعنى التغليظ عند ابن الأنباري. · الابتداء بقوله: ﴿ولا أنا عابد﴾ لبيان حكم الحال بعد الاستقبال على توجيه أبي حاتم والنحاس، ولابتداء جملة التغليظ على نص ابن الأنباري: ثم تبتدىء: ولا أنا عابد ما عبدتم.",
+      "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": false,
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1167_1170.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21771.json"
     },
     {
-      "id": "s109-a5-w5",
+      "id": "s109-a3-w5",
       "surah": 109,
-      "ayah": 5,
+      "ayah": 3,
       "wordIndex": 5,
       "word": "أَعْبُدُ",
-      "targetWord": "ما أعبد",
-      "verdictLabel": "ط",
-      "verdict": "تام",
-      "label": "تام",
-      "symbol": "tam",
-      "reason": "- ٥ - ﴿الثاني - ط] (١) ",
-      "textPage": 1169,
-      "marginRef": 1,
+      "textPage": 0,
+      "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "تام",
-          "verdictLabel": "ط",
+          "targetWord": "ما أعبد",
+          "verdict": [
+            "جائز"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1169",
+          "page": "3/1168- 1169",
+          "comment": null
+        },
+        {
+          "scholar": "ابن الأنباري",
+          "targetWord": "ولا أنتم عابدون ما أعبد",
+          "verdict": [
+            "حسن"
+          ],
+          "verdictLabel": [
+            "ز"
+          ],
+          "symbol": [
+            "mujawwaz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "إيضاح الوقف والابتداء",
+          "page": "2/989- 990",
+          "comment": "(حسن) وقف حسن ثم تبتدئ: (ولا أنا عابد ما عبدتم) [4] وإنما كرر هذا اللفظ لمعنى التغليظ كما قال: {كلا سوف تعلمون. ثم كلا سوف تعلمون} [التكاثر: 3، 4] وقال قوم: إنما كرر هذا لأن معناه «لا أعبد ما تعبدون ولا أنتم عابدون ما أعبد في هذا الوقف ولا أنا عابد ما عبدتم ولا أنتم عابدون ما أعبد فيما يستقبل». وقال آخرون: نزلت هذه السورة في قوم سبق في علم الله أنهم لا يؤمن منهم واحد، وهم المقتسمون الذين جعلوا القرآن عضين، العاص بن وائل والوليد بن المغيرة والأسود بن عبد يغوث والأسود بن المطلب وعدي بن قيس"
+        },
+        {
+          "scholar": "الداني",
+          "targetWord": "ولا أنتم عابدون ما أعبد",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "المكتفى",
+          "page": "633-634",
+          "comment": "(كاف) والمعنى في الأول على قول محمد بن يزيد: لا أعبد ما تعبدون في هذا الوقت ولا أنتم كذلك. وفي الثاني ولا أنا عابد فيما أستقبل ولا أنتم فيما تستقبلون. وقد كرر هذا اللفظ لمعنى التغليظ كما قال: {كلا سوف تعلمون * ثم كلا سوف تعلمون} وقيل: نزلت السورة في قوم سبق في علم الله أن لا يؤمنوا، وهم المقتسمون. حدثنا عبد الرحمن بن عبد الله بن خالد الفرائضي قال: حدثنا علي بن محمد بن أحمد بن نصير البغدادي قال: حدثنا أبو يزيد خالد بن النضر القرشي البصري قال: حدثنا محمد بن موسى الحرشي قال: حدثنا أبو خلف عبد الله بن عيسى قال: حدثنا داود بن أبي هند عن عكرمة عن ابن عباس: أن قريشًا دعت رسول الله صلى الله عليه وسلم أن يعطوه مالاً فيكون أغنى رجل بمكة ويزوجوه ما أراد من النساء أن يكون عقيبًا فقالوا: هذا لك يا محمد وكف عن شتم آلهتنا ولا تذكرها بسوء. فإن لم تفعل فإنا نعرض عليك خصلة واحدة وهي لنا ولك فيها صلاح. فقال: ((وما هي))؟ قالوا: تعبد آلهتنا سنة اللات والعزى، ونعبد إلهك سنة. فقال: ((حتى أنظر ما يأتيني من ربي عز وجل)) قال: فجاء الوحي من الله عز وجل من اللوح المحفوظ بـ: {قل يا أيها الكافرون * لا أعبد ما تعبدون} السورة كلها. وأنزل الله تعالى: {قل أغير الله تأمروني أعبد أيها الجاهلون} إلى قوله تعالى: {ولتكونن من الخاسرين * بل الله فاعبد وكن من الشاكرين}"
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "ما أعبد في الموضعين",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "436",
           "comment": null
         }
       ],
@@ -391,7 +439,178 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1167_1170.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21771.json"
+    },
+    {
+      "id": "s109-a4-w5",
+      "surah": 109,
+      "ayah": 4,
+      "wordIndex": 5,
+      "word": "عَبَدتُّمْ",
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "النحاس",
+          "targetWord": "وَلَا أَنَا عَابِدٌ مَّا عَبَدتُّمْ",
+          "verdict": [
+            "جائز"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 4",
+          "comment": "(جائز) الوقف ﴿وَلَا أَنَا عَابِدٌ مَّا عَبَدتُّمْ﴾ وفي هذا"
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "qat_itinaf_s109.json"
+    },
+    {
+      "id": "s109-a5-w5",
+      "surah": 109,
+      "ayah": 5,
+      "wordIndex": 5,
+      "word": "أَعْبُدُ",
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "targetWord": "ما أعبد",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "علل الوقوف",
+          "page": "3/1168- 1169",
+          "comment": null
+        },
+        {
+          "scholar": "الداني",
+          "targetWord": "ولا أنتم عابدون ما أعبد",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "المكتفى",
+          "page": "633-634",
+          "comment": "(كاف) والمعنى في الأول على قول محمد بن يزيد: لا أعبد ما تعبدون في هذا الوقت ولا أنتم كذلك. وفي الثاني ولا أنا عابد فيما أستقبل ولا أنتم فيما تستقبلون. وقد كرر هذا اللفظ لمعنى التغليظ كما قال: {كلا سوف تعلمون * ثم كلا سوف تعلمون} وقيل: نزلت السورة في قوم سبق في علم الله أن لا يؤمنوا، وهم المقتسمون. حدثنا عبد الرحمن بن عبد الله بن خالد الفرائضي قال: حدثنا علي بن محمد بن أحمد بن نصير البغدادي قال: حدثنا أبو يزيد خالد بن النضر القرشي البصري قال: حدثنا محمد بن موسى الحرشي قال: حدثنا أبو خلف عبد الله بن عيسى قال: حدثنا داود بن أبي هند عن عكرمة عن ابن عباس: أن قريشًا دعت رسول الله صلى الله عليه وسلم أن يعطوه مالاً فيكون أغنى رجل بمكة ويزوجوه ما أراد من النساء أن يكون عقيبًا فقالوا: هذا لك يا محمد وكف عن شتم آلهتنا ولا تذكرها بسوء. فإن لم تفعل فإنا نعرض عليك خصلة واحدة وهي لنا ولك فيها صلاح. فقال: ((وما هي))؟ قالوا: تعبد آلهتنا سنة اللات والعزى، ونعبد إلهك سنة. فقال: ((حتى أنظر ما يأتيني من ربي عز وجل)) قال: فجاء الوحي من الله عز وجل من اللوح المحفوظ بـ: {قل يا أيها الكافرون * لا أعبد ما تعبدون} السورة كلها. وأنزل الله تعالى: {قل أغير الله تأمروني أعبد أيها الجاهلون} إلى قوله تعالى: {ولتكونن من الخاسرين * بل الله فاعبد وكن من الشاكرين}"
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "ما أعبد في الموضعين",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "436",
+          "comment": null
+        },
+        {
+          "scholar": "النحاس",
+          "targetWord": "وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ",
+          "verdict": [
+            "جائز"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 5",
+          "comment": "(جائز) الوقف ﴿وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ﴾ في هذا الوقف ولم يسلم أحد ممن خوطب بهذا"
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "jamharah_t21771.json"
+    },
+    {
+      "id": "s109-a6-w4",
+      "surah": 109,
+      "ayah": 6,
+      "wordIndex": 4,
+      "word": "دِينِ",
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "الأشموني",
+          "targetWord": "آخر السورة",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "436",
+          "comment": null
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "jamharah_t21771.json"
     }
   ]
 }

@@ -7,7 +7,8 @@
     7
   ],
   "sourceBatch": [
-    "batch_1163_1166.apparatus_v4.raw.json"
+    "jamharah_t21769.json",
+    "qat_itinaf_s107.json"
   ],
   "sourceTag": "base",
   "ayahs": [
@@ -83,7 +84,7 @@
           "index": 3,
           "text": "يَدُعُّ",
           "textImlai": "يَدُعُّ",
-          "stopId": null,
+          "stopId": "s107-a2-w3",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -228,7 +229,7 @@
           "index": 5,
           "text": "سَاهُونَ",
           "textImlai": "سَاهُوۡنَۙ‏",
-          "stopId": null,
+          "stopId": "s107-a5-w5",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -288,7 +289,7 @@
           "index": 2,
           "text": "ٱلْمَاعُونَ",
           "textImlai": "الۡمَاعُوۡنَ‏",
-          "stopId": null,
+          "stopId": "s107-a7-w2",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -304,23 +305,47 @@
       "ayah": 1,
       "wordIndex": 4,
       "word": "بِٱلدِّينِ",
-      "targetWord": "بالدين",
-      "verdictLabel": "ط",
-      "verdict": "تام",
-      "label": "تام",
-      "symbol": "tam",
-      "reason": "لتناهي الاستفهام ، [ ومن وصل فللفاء ] (1) ، والوقف أَوْجَه ",
-      "textPage": 1166,
-      "marginRef": 1,
+      "textPage": 0,
+      "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "تام",
-          "verdictLabel": "ط",
+          "targetWord": "بالدين",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1166",
-          "comment": null
+          "page": "3/1165- 1166",
+          "comment": "(تام) لتناهي الاستفهام، [ومن وصل فللفاء]، والوقف أوجه"
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "بالدين",
+          "verdict": [
+            "حسن"
+          ],
+          "verdictLabel": [
+            "ز"
+          ],
+          "symbol": [
+            "mujawwaz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "435 - 436",
+          "comment": "(حسن) لتناهى الاستفهام وعلى أنَّ جواب الاستفهام مقدر تقديره إن لم تبصره وتعرفه فهو ذلك ومن وصل فللفاء والأول أقعد ولا يوقف على اليتيم والدَّع الدفع ومنه فذلك الذي يدع اليتيم أي يدفعه عن حقه ومنه قوله صلى الله عليه وسلم أنكم مدعون يوم القيامة مقدمة أفواهكم بالفدام وفي القاموس والفدامة والفدام بكسر الفاء شيء تشده العجم والمجوس على أفواهها عند السقي وقرئ يدع اليتيم بفتح الدال وتخفيف العين أي يتركه ويهمله وقرىء ولا يحاض من المحاضة أي لا يحض نفسه"
         }
       ],
       "aiSuggestion": null,
@@ -329,7 +354,45 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1163_1166.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21769.json"
+    },
+    {
+      "id": "s107-a2-w3",
+      "surah": 107,
+      "ayah": 2,
+      "wordIndex": 3,
+      "word": "يَدُعُّ",
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "الأشموني",
+          "targetWord": "اليتيم والدَّع الدفع ومنه فذلك الذي يدع",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "435 - 436",
+          "comment": "(لا يوقف) ولا يوقف على اليتيم والدَّع الدفع ومنه فذلك الذي يدع اليتيم أي يدفعه عن حقه ومنه قوله صلى الله عليه وسلم أنكم مدعون يوم القيامة مقدمة أفواهكم بالفدام وفي القاموس والفدامة والفدام بكسر الفاء شيء تشده العجم والمجوس على أفواهها عند السقي وقرئ يدع اليتيم بفتح الدال وتخفيف العين أي يتركه ويهمله وقرىء ولا يحاض من المحاضة أي لا يحض نفسه"
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": false,
+      "sourceBatch": "jamharah_t21769.json"
     },
     {
       "id": "s107-a2-w4",
@@ -337,23 +400,28 @@
       "ayah": 2,
       "wordIndex": 4,
       "word": "ٱلْيَتِيمَ",
-      "targetWord": "اليتيم",
-      "verdictLabel": "لا",
-      "verdict": "لا يوقف",
-      "label": "لا يوقف",
-      "symbol": "la",
-      "reason": "للعطف",
-      "textPage": 1166,
+      "textPage": 0,
       "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "لا يوقف",
-          "verdictLabel": "لا",
+          "targetWord": "اليتيم",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1166",
-          "comment": null
+          "page": "3/1165- 1166",
+          "comment": "(لا يوقف) للعطف"
         }
       ],
       "aiSuggestion": null,
@@ -362,7 +430,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1163_1166.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21769.json"
     },
     {
       "id": "s107-a3-w5",
@@ -370,63 +438,108 @@
       "ayah": 3,
       "wordIndex": 5,
       "word": "ٱلْمِسْكِينِ",
-      "targetWord": "المسكين",
-      "verdictLabel": "ط",
-      "verdict": "تام",
-      "label": "تام",
-      "symbol": "tam",
-      "reason": "لأن قوله : ﴿ فويل ﴾ مبتدأ (2) ",
-      "textPage": 1166,
-      "marginRef": 2,
+      "textPage": 0,
+      "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "تام",
-          "verdictLabel": "ط",
+          "targetWord": "المسكين",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1166",
-          "comment": null
+          "page": "3/1165- 1166",
+          "comment": "(تام) لأن قوله: {فويل} مبتدأ"
         },
         {
           "scholar": "ابن الأنباري",
-          "verdict": "تام",
-          "verdictLabel": null,
-          "book": "الإيضاح",
+          "targetWord": "ولا يحض على طعام المسكين",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "إيضاح الوقف والابتداء",
           "page": "2/988",
           "comment": null
         },
         {
           "scholar": "الداني",
-          "verdict": "تام",
-          "verdictLabel": null,
+          "targetWord": "على طعام المسكين",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "المكتفى",
-          "page": "630",
-          "comment": null
-        },
-        {
-          "scholar": "الأنصاري",
-          "verdict": "تام",
-          "verdictLabel": null,
-          "book": "المقصد",
-          "page": "435",
+          "page": "630-631",
           "comment": null
         },
         {
           "scholar": "الأشموني",
-          "verdict": "تام",
-          "verdictLabel": null,
-          "book": "المنار",
-          "page": "435",
-          "comment": null
+          "targetWord": "المسكين",
+          "verdict": [
+            "تام",
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "ط",
+            "لا"
+          ],
+          "symbol": [
+            "tam",
+            "la"
+          ],
+          "isQila": [
+            false,
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "435 - 436",
+          "comment": "(تام) والوقف على المصلين قبيح فإنَّه يوهم غير ما أراده الله تعالى وهو أن الوعيد الشديد بالويل للفريقين الطائع والعاصي والحال أنَّه لطائفة موصوفة بوصفين مذكورين بعده ومثله في القبح لا تقربوا الصلاة فإنَّه يوهم إباحة ترك الصلاة بالكلية وتقدم ما يغني عن إعادة ذلك صدر الكتاب\nساهون في محل الذين الحركات الثلاث الرفع والنصب والجر فكاف إن جعل في محل رفع خبر مبتدأ\nمحذوف وكذا إن نصب بتقدير أعنى أو أذام وليس بوقف أن جعل نعتًا أو بدلاً أو بيانًا"
         },
         {
           "scholar": "النحاس",
-          "verdict": "كاف",
-          "verdictLabel": null,
-          "book": "القطع",
-          "page": "785",
-          "comment": null
+          "targetWord": "وَلَا يَحُضُّ عَلَىٰ طَعَامِ الْمِسْكِينِ",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 3",
+          "comment": "(كاف) ﴿وَلَا يَحُضُّ عَلَىٰ طَعَامِ الْمِسْكِينِ﴾ قطع كاف والتمام آخر السورة"
         }
       ],
       "aiSuggestion": null,
@@ -435,7 +548,102 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1163_1166.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21769.json"
+    },
+    {
+      "id": "s107-a5-w5",
+      "surah": 107,
+      "ayah": 5,
+      "wordIndex": 5,
+      "word": "سَاهُونَ",
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "الداني",
+          "targetWord": "عن صلاتهم ساهون",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "المكتفى",
+          "page": "630-631",
+          "comment": "(كاف) أي: يؤخرونها عن وقتها. حدثنا علي بن موسى السكري قال: حدثنا علي بن عثمان قال: حدثنا محمد بن عبد الله قال: حدثنا جعفر بن محمد القلانسي قال: حدثنا شيبان بن فروخ قال: حدثنا عكرمة بن إبراهيم الأزدي قال: حدثنا عبد الملك بن عمير الليثي عن مصعب بن سعد عن أبيه قال: سألت رسول الله صلى الله عليه وسلم عن قوله: {الذين هم عن صلاتهم ساهون} قال: ((هم الذين يؤخرون الصلاة عن وقتها)). قال أبو عمرو رضي الله عنه: لم يرفع هذا الحديث أحد غير عكرمة بن إبراهيم. وإنما يروى موقوفًا على سعد"
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "jamharah_t21769.json"
+    },
+    {
+      "id": "s107-a7-w2",
+      "surah": 107,
+      "ayah": 7,
+      "wordIndex": 2,
+      "word": "ٱلْمَاعُونَ",
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "الأشموني",
+          "targetWord": "آخر السورة",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "435 - 436",
+          "comment": null
+        },
+        {
+          "scholar": "النحاس",
+          "targetWord": "ٱلْمَاعُونَ",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 3",
+          "comment": "(تام) ﴿وَلَا يَحُضُّ عَلَىٰ طَعَامِ الْمِسْكِينِ﴾ قطع كاف والتمام آخر السورة."
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "jamharah_t21769.json"
     }
   ]
 }

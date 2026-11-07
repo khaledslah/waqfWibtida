@@ -7,7 +7,8 @@
     8
   ],
   "sourceBatch": [
-    "batch_1135_1138.apparatus_v4.raw.json"
+    "jamharah_t21756.json",
+    "qat_itinaf_s094.json"
   ],
   "sourceTag": "base",
   "ayahs": [
@@ -278,7 +279,7 @@
           "index": 3,
           "text": "فَٱنصَبْ",
           "textImlai": "فَانۡصَبۡۙ‏",
-          "stopId": null,
+          "stopId": "s94-a7-w3",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -313,7 +314,7 @@
           "index": 3,
           "text": "فَٱرْغَب",
           "textImlai": "فَارۡغَب‏",
-          "stopId": null,
+          "stopId": "s94-a8-w3",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -324,61 +325,71 @@
   ],
   "stops": [
     {
-      "id": "s94-a4-w3",
-      "surah": 94,
-      "ayah": 4,
-      "wordIndex": 3,
-      "word": "ذِكْرَكَ",
-      "targetWord": "لك ذكرك",
-      "verdictLabel": "ط",
-      "verdict": "تام",
-      "label": "تام",
-      "symbol": "tam",
-      "reason": "لانتساق الكلمات الواقع عليها الاستفهام ،",
-      "textPage": 1136,
-      "marginRef": null,
-      "fixes": [],
-      "opinions": [
-        {
-          "scholar": "السجاوندي",
-          "verdict": "تام",
-          "verdictLabel": "ط",
-          "book": "علل الوقوف",
-          "page": "1136",
-          "comment": null
-        }
-      ],
-      "aiSuggestion": null,
-      "symbolWitness": null,
-      "inUthmaniMushaf": false,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
-      "isVerseEnd": true,
-      "sourceBatch": "batch_1135_1138.apparatus_v4.raw.json"
-    },
-    {
       "id": "s94-a1-w4",
       "surah": 94,
       "ayah": 1,
       "wordIndex": 4,
       "word": "صَدْرَكَ",
-      "targetWord": "صدرك",
-      "verdictLabel": null,
-      "verdict": null,
-      "label": "غير محسوم",
-      "symbol": "unsettled",
-      "reason": "لم يعرف أن ﴿ لم ﴾ يجعل المستقبل [بمعنى الماضي ] (3) ",
-      "textPage": 1136,
-      "marginRef": 3,
+      "textPage": 0,
+      "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": null,
-          "verdictLabel": null,
+          "targetWord": "صدرك",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1136",
-          "comment": null
+          "page": "3/1136- 3/1137",
+          "comment": "(لا يوقف) ومن وقف على {صدرك}: لم يعرف أن {لم} يجعل المستقبل [بمعنى الماضي]"
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "صدرك",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "429 - 430",
+          "comment": "(لا يوقف) ولا وقف من أولها إلى ذكرك فلا يوقف على صدرك لأنَّ ما بعده معطوف على ما قبله وداخل معه في اتساق الكلام الواقع عليه الاستفهام ومن وقف على صدرك لم يعرف إن لم يجعل المستقبل ماضيًا وهل يوقف على يسرا الأول أو الثاني فمن قال على الأول قال لا يوقف على شيء من أول السورة إلى يسرا الأول لوجود الفاء يعني في الدنيا ثم قال إن مع العسر يسرًا يعني في الآخرة لقوله في الحديث لن يغلب عسر يسرين والمراد باليسرين الفتوحات التي حصلت في حياته صلى الله عليه وسلم والثاني ما تيسر بعده زمن الخلفاء ويؤيده ما في مصحف ابن مسعود من عدم التكرار والثاني مستأنف وعليه فهما يسران والعسر منكر فالثاني هو الأول واليسر الثاني غير الأول ومن قال الوقف على يسر الثاني قال لأنَّ إذا في جوابها الفاء فتضمنت معنى الشرط ومن قال الوقف على ذكرك ثم آخر السورة فمعناه التقديم والتأخير كأنَّه قال فإذا فرغت فانصب فإنَّ مع العسر يسرًا انظر أبا العلاء الهمداني\n... ولا وقف من أولها إلى ذكرك فلا يوقف على صدرك لأنَّ ما بعده معطوف على ما قبله وداخل معه في اتساق الكلام الواقع عليه الاستفهام ومن وقف على صدرك لم يعرف إن لم يجعل المستقبل ماضيًا وهل يوقف على يسرا الأول أو الثاني فمن قال على الأول قال لا يوقف على شيء من أول السورة إلى يسرا الأول لوجود الفاء يعني في الدنيا ثم قال إن مع العسر يسرًا يعني في الآخرة لقوله في الحديث لن يغلب عسر يسرين والمراد باليسرين الفتوحات التي حصلت في حياته صلى الله عليه وسلم والثاني ما تيسر بعده زمن الخلفاء ويؤيده ما في مصحف ابن مسعود من عدم التكرار والثاني مستأنف وعليه فهما يسران والعسر منكر فالثاني هو الأول واليسر الثاني غير الأول ومن قال الوقف على يسر الثاني قال لأنَّ إذا في جوابها الفاء فتضمنت معنى الشرط ومن قال الوقف على ذكرك ثم آخر السورة فمعناه التقديم والتأخير كأنَّه قال فإذا فرغت فانصب فإنَّ مع العسر يسرًا انظر أبا العلاء الهمداني ."
+        },
+        {
+          "scholar": "النحاس",
+          "targetWord": "أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 1",
+          "comment": "(تام) التمام ﴿أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ﴾"
         }
       ],
       "aiSuggestion": null,
@@ -387,7 +398,83 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1135_1138.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21756.json"
+    },
+    {
+      "id": "s94-a4-w3",
+      "surah": 94,
+      "ayah": 4,
+      "wordIndex": 3,
+      "word": "ذِكْرَكَ",
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "targetWord": "لك ذكرك",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "علل الوقوف",
+          "page": "3/1136- 3/1137",
+          "comment": "(تام) بسم الله الرحمن الرحيم\nلا وقف مطلقًا إلى قوله {لك ذكرك}: لانتساق الكلمات الواقع عليها الاستفهام"
+        },
+        {
+          "scholar": "ابن الأنباري",
+          "targetWord": "ورفعنا لك ذكرك",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "إيضاح الوقف والابتداء",
+          "page": "2/980",
+          "comment": null
+        },
+        {
+          "scholar": "النحاس",
+          "targetWord": "وَرَفَعْنَا لَكَ ذِكْرَكَ",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 4",
+          "comment": "(تام) التمام ﴿وَرَفَعْنَا لَكَ ذِكْرَكَ﴾"
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "jamharah_t21756.json"
     },
     {
       "id": "s94-a5-w4",
@@ -395,23 +482,70 @@
       "ayah": 5,
       "wordIndex": 4,
       "word": "يُسْرًا",
-      "targetWord": "يسْرًا",
-      "verdictLabel": "لا",
-      "verdict": "لا يوقف",
-      "label": "لا يوقف",
-      "symbol": "la",
-      "reason": "[ الأول - لا ] (1) للتكرار (2) ",
-      "textPage": 1137,
-      "marginRef": 1,
+      "textPage": 0,
+      "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "لا يوقف",
-          "verdictLabel": "لا",
+          "targetWord": "يسرًا",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1137",
-          "comment": null
+          "page": "3/1136- 3/1137",
+          "comment": "(لا يوقف) ] للتكرار"
+        },
+        {
+          "scholar": "الداني",
+          "targetWord": "فإن مع العسر يسرًا",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "المكتفى",
+          "page": "622-623",
+          "comment": "(كاف) ورفعنا لك ذكرك} تام.\nحدثنا ابن فراس قال: حدثنا محمد قال: حدثنا سعيد قال: حدثنا سفيان عن ابن أبي نجيح عن مجاهد في قوله: {ورفعنا لك ذكرك} قال: لا أذكر إلا وذكرت معي أشهد أن لا إله إلا الله وأشهد أن محمدًا رسول الله الأول، كاف"
+        },
+        {
+          "scholar": "النحاس",
+          "targetWord": "يُسْرًا",
+          "verdict": [
+            "تام",
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ط",
+            "ج"
+          ],
+          "symbol": [
+            "tam",
+            "jaiz"
+          ],
+          "isQila": [
+            false,
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 5",
+          "comment": "(تام) ﴿يُسْرًا﴾ الأول قطع كاف، والثاني تمام"
         }
       ],
       "aiSuggestion": null,
@@ -420,7 +554,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1135_1138.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21756.json"
     },
     {
       "id": "s94-a6-w4",
@@ -428,23 +562,66 @@
       "ayah": 6,
       "wordIndex": 4,
       "word": "يُسْرًۭا",
-      "targetWord": "يسْرًا",
-      "verdictLabel": "ط",
-      "verdict": "تام",
-      "label": "تام",
-      "symbol": "tam",
-      "reason": "الثاني - ط ] (3) لأن ﴿ إذا ﴾ في جوابها الفاء فتضمنت (4) معنى الشرط ",
-      "textPage": 1137,
-      "marginRef": 3,
+      "textPage": 0,
+      "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "تام",
-          "verdictLabel": "ط",
+          "targetWord": "يسرا",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1137",
+          "page": "3/1136- 3/1137",
+          "comment": "(تام) لأن {إذا} في جوابها الفاء فتضمنت معنى الشرط"
+        },
+        {
+          "scholar": "ابن الأنباري",
+          "targetWord": "إن مع العسر يسرا",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "إيضاح الوقف والابتداء",
+          "page": "2/980",
           "comment": null
+        },
+        {
+          "scholar": "الداني",
+          "targetWord": "إن مع العسر يسرًا",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "المكتفى",
+          "page": "622-623",
+          "comment": "(تام) الثاني، تام"
         }
       ],
       "aiSuggestion": null,
@@ -453,7 +630,102 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1135_1138.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21756.json"
+    },
+    {
+      "id": "s94-a7-w3",
+      "surah": 94,
+      "ayah": 7,
+      "wordIndex": 3,
+      "word": "فَٱنصَبْ",
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "ابن الأنباري",
+          "targetWord": "فانصب",
+          "verdict": [
+            "حسن"
+          ],
+          "verdictLabel": [
+            "ز"
+          ],
+          "symbol": [
+            "mujawwaz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "إيضاح الوقف والابتداء",
+          "page": "2/980",
+          "comment": null
+        },
+        {
+          "scholar": "الداني",
+          "targetWord": "فانصب",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "المكتفى",
+          "page": "622-623",
+          "comment": "(كاف) والمعنى: إذا فرغت من الصلاة فانصب في الدعاء"
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "jamharah_t21756.json"
+    },
+    {
+      "id": "s94-a8-w3",
+      "surah": 94,
+      "ayah": 8,
+      "wordIndex": 3,
+      "word": "فَٱرْغَب",
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "ابن الأنباري",
+          "targetWord": "فارغب",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "إيضاح الوقف والابتداء",
+          "page": "2/980",
+          "comment": "(تام) وهو أتم من الذي قبله إذا لم تتصل به فاء"
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "jamharah_t21756.json"
     }
   ]
 }

@@ -7,7 +7,8 @@
     5
   ],
   "sourceBatch": [
-    "batch_1179_1182.apparatus_v4.raw.json"
+    "jamharah_t21775.json",
+    "qat_itinaf_s113.json"
   ],
   "sourceTag": "base",
   "ayahs": [
@@ -48,7 +49,7 @@
           "index": 4,
           "text": "ٱلْفَلَقِ",
           "textImlai": "الۡفَلَقِۙ‏",
-          "stopId": null,
+          "stopId": "s113-a1-w4",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -258,7 +259,7 @@
           "index": 5,
           "text": "حَسَدَ",
           "textImlai": "حَسَدَ‏",
-          "stopId": null,
+          "stopId": "s113-a5-w5",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -267,5 +268,139 @@
       ]
     }
   ],
-  "stops": []
+  "stops": [
+    {
+      "id": "s113-a1-w4",
+      "surah": 113,
+      "ayah": 1,
+      "wordIndex": 4,
+      "word": "ٱلْفَلَقِ",
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "النحاس",
+          "targetWord": "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 1",
+          "comment": "(كاف) ﴿قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ﴾ قطع كاف"
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "qat_itinaf_s113.json"
+    },
+    {
+      "id": "s113-a5-w5",
+      "surah": 113,
+      "ayah": 5,
+      "wordIndex": 5,
+      "word": "حَسَدَ",
+      "textPage": 0,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "targetWord": "حَسَدَ",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "علل الوقوف",
+          "page": "3/1182",
+          "comment": "(تام) ولا وقف في المعوذتين إلى آخرهما؛ لصحة العطف وانتساق الكلمات بعضها على بعض في مقول واحد"
+        },
+        {
+          "scholar": "ابن الأنباري",
+          "targetWord": "حَسَدَ",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "إيضاح الوقف والابتداء",
+          "page": "2/992",
+          "comment": "(تام) والوقف التام في سورة الإخلاص والفلق والناس آخر السورة."
+        },
+        {
+          "scholar": "الداني",
+          "targetWord": "حَسَدَ",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "المكتفى",
+          "page": "639",
+          "comment": "(تام) ليس فيها وقف كاف، والتمام في آخرها.\nقال الأخفش وأبو حاتم وابن الأنباري وابن عبد الرزاق: لا وقف في الإخلاص والمعوذتين دون آخرهن. وذلك كذلك لأن النبي صلى الله عليه وسلم أمر أن يقول ذلك كله."
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "حَسَدَ",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "437 - 438",
+          "comment": "(تام) ليس فيهما وقف دون آخرهما وإن وقفت على رأس كل آية فحسن لما روي عن النبي صلى الله عليه وسلم أنَّه كان يقف على رأس كل آية منهما"
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "jamharah_t21775.json"
+    }
+  ]
 }

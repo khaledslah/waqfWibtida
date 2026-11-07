@@ -7,7 +7,8 @@
     3
   ],
   "sourceBatch": [
-    "batch_1167_1170.apparatus_v4.raw.json"
+    "jamharah_t21770.json",
+    "qat_itinaf_s108.json"
   ],
   "sourceTag": "base",
   "ayahs": [
@@ -134,22 +135,27 @@
       "ayah": 1,
       "wordIndex": 3,
       "word": "ٱلْكَوْثَرَ",
-      "targetWord": "الكوثر",
-      "verdictLabel": "ط",
-      "verdict": "تام",
-      "label": "تام",
-      "symbol": "tam",
-      "reason": "وقف السجاوندي: تام",
-      "textPage": 1167,
+      "textPage": 0,
       "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "تام",
-          "verdictLabel": "ط",
+          "targetWord": "الكوثر",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1167",
+          "page": "3/1167",
           "comment": null
         }
       ],
@@ -159,7 +165,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1167_1170.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21770.json"
     },
     {
       "id": "s108-a2-w3",
@@ -167,23 +173,108 @@
       "ayah": 2,
       "wordIndex": 3,
       "word": "وَٱنْحَرْ",
-      "targetWord": "وانحر",
-      "verdictLabel": "ط",
-      "verdict": "تام",
-      "label": "تام",
-      "symbol": "tam",
-      "reason": "للابتداء بـ : ﴿إن﴾ ",
-      "textPage": 1167,
+      "textPage": 0,
       "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "verdict": "تام",
-          "verdictLabel": "ط",
+          "targetWord": "وانحر",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
           "book": "علل الوقوف",
-          "page": "1167",
-          "comment": null
+          "page": "3/1167",
+          "comment": "(تام) للابتداء بـ: {إن}"
+        },
+        {
+          "scholar": "ابن الأنباري",
+          "targetWord": "وانحر",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "إيضاح الوقف والابتداء",
+          "page": "2/988",
+          "comment": "(تام) الوقف آخر السورة، والوقف أيضًا على قوله تام لأن معناها الاستئناف"
+        },
+        {
+          "scholar": "الداني",
+          "targetWord": "فصل لربك وانحر",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "المكتفى",
+          "page": "631- 632",
+          "comment": "(تام) حدثنا عبد الرحمن بن عبد الله قال: حدثنا محمد بن عبد الله المالكي قال: حدثنا عبد الله بن محمد بن وهب قال: حدثنا أبو سعيد الأشج قال: حدثنا أبو أسامة قال: حدثنا إدريس الأودي عن أبي إسحاق عن أبي عبيدة عن عائشة رضي الله عنها في قوله تعالى: {إنا أعطيناك الكوثر} قال: نهر في الجنة عليه الخيام، شاطئه الدر"
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "وانحر",
+          "verdict": [
+            "جائز",
+            "تام"
+          ],
+          "verdictLabel": [
+            "ج",
+            "ط"
+          ],
+          "symbol": [
+            "jaiz",
+            "tam"
+          ],
+          "isQila": [
+            false,
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "436",
+          "comment": "(الكوثر) لم ينص عليه أحد وله حيثيتان فمن حيث الابتداء بالفاء ليس بوقف لأنَّ الفاء السببية في مقام لام العلة ولو كان بدل الفاء واو لحسن الابتداء بما بعده وذكر بعضهم الوقف على نظيره لأنهم يشترطون لصحة الوقف صحته على نظيره كما في قوله ويقولون لولا أنزل عليه آية من ربه هنا الوقف لأنَّ الأمر يبتدأ بالفاء ومثله الوقف على الغيب لله لأنَّ جواب الأمر منقطع لفظًا متصل معنى ولا بعد لأنَّ يوسم هنا بالجواز لكونه رأس آية وفيه أيضًا التفات من التكلم إلى الغيبية وذلك من مقتضيات الابتداء ومن هذه الحيثية يجوز الوقف على الكوثر والابتداء بما بعده ولو مع الفاء يقال أعطيت وأنطيت وقرأ الحسن وغيره إنَّا أنطيناك الكوثر\n(جائز) وقال أبو عمرو تام للابتداء بأن آخرها (تام)"
+        },
+        {
+          "scholar": "النحاس",
+          "targetWord": "فَصَلِّ لِرَبِّكَ وَانْحَرْ",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 2",
+          "comment": "(كاف) ﴿فَصَلِّ لِرَبِّكَ وَانْحَرْ﴾ قطع كاف والمعنى على قول محمد بن كعب إن قوما كانوا يصلون لغير الله جل وعز وينحرون فأعطاه الله جل وعز الكوثر وأمره ان يصلي له وينحر"
         }
       ],
       "aiSuggestion": null,
@@ -192,7 +283,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "batch_1167_1170.apparatus_v4.raw.json"
+      "sourceBatch": "jamharah_t21770.json"
     }
   ]
 }

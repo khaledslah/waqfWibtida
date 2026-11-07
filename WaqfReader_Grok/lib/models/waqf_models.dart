@@ -54,10 +54,29 @@ extension ReviewListFilterLabel on ReviewListFilter {
   }
 }
 
+String defaultVerdictLabelForSymbol(StopSymbol symbol) {
+  switch (symbol) {
+    case StopSymbol.tam:
+      return 'ط';
+    case StopSymbol.la:
+      return 'لا';
+    case StopSymbol.jaiz:
+      return 'ج';
+    case StopSymbol.mujawwaz:
+      return 'ز';
+    case StopSymbol.unsettled:
+      return 'ج';
+  }
+}
+
 class ScholarOpinion {
   const ScholarOpinion({
     required this.scholar,
-    required this.verdict,
+    required this.targetWord,
+    required this.verdicts,
+    required this.verdictLabels,
+    required this.symbols,
+    required this.isQila,
     required this.book,
     required this.page,
     this.comment,
@@ -65,13 +84,30 @@ class ScholarOpinion {
   });
 
   final String scholar;
-  final String? verdict;
+  final String targetWord;
+  final List<String> verdicts;
+  final List<String> verdictLabels;
+  final List<StopSymbol> symbols;
+  final List<bool> isQila;
   final String book;
   final String? page;
   final String? comment;
 
-  /// True for margin apparatus opinions (not the matn Sajawandi row).
+  /// True for secondary apparatus opinions when grouped separately.
   final bool fromMargin;
+
+  String get primaryVerdict => verdicts.isNotEmpty ? verdicts.first : 'جائز';
+
+  String get primaryVerdictLabel => verdictLabels.isNotEmpty
+      ? verdictLabels.first
+      : defaultVerdictLabelForSymbol(primarySymbol);
+
+  StopSymbol get primarySymbol =>
+      symbols.isNotEmpty ? symbols.first : StopSymbol.jaiz;
+
+  bool get primaryIsQila => isQila.isNotEmpty ? isQila.first : false;
+
+  String? get verdict => verdicts.isNotEmpty ? verdicts.join(' / ') : null;
 
   bool get isSajawandiMatn =>
       !fromMargin && (scholar == 'السجاوندي' || book.contains('علل الوقوف'));
@@ -83,10 +119,11 @@ class WaqfStop {
     required this.surah,
     required this.ayah,
     required this.word,
-    required this.symbol,
-    required this.label,
-    required this.reason,
     required this.opinions,
+    this.wordIndex = 1,
+    this.fallbackSymbol,
+    this.fallbackLabel,
+    this.fallbackReason,
     this.aiSuggestion,
     this.inUthmaniMushaf = false,
     this.isVerseEnd = false,
@@ -96,11 +133,12 @@ class WaqfStop {
   final String id;
   final int surah;
   final int ayah;
+  final int wordIndex;
   final String word;
-  final StopSymbol symbol;
-  final String label;
-  final String reason;
   final List<ScholarOpinion> opinions;
+  final StopSymbol? fallbackSymbol;
+  final String? fallbackLabel;
+  final String? fallbackReason;
   final String? aiSuggestion;
   final bool inUthmaniMushaf;
   final bool isVerseEnd;
@@ -108,11 +146,72 @@ class WaqfStop {
   /// Page in علل الوقوف (matches page_N.png).
   final int? textPage;
 
+  bool hasScholar(String scholarName) {
+    return opinions.any((o) => o.scholar == scholarName);
+  }
+
+  ScholarOpinion? opinionForScholar(String? scholarName) {
+    if (opinions.isEmpty) return null;
+    if (scholarName != null && scholarName.isNotEmpty) {
+      for (final op in opinions) {
+        if (op.scholar == scholarName) return op;
+      }
+    }
+    return opinions.first;
+  }
+
+  StopSymbol symbolForScholar(String? scholarName) {
+    final op = opinionForScholar(scholarName);
+    if (op != null) return op.primarySymbol;
+    return fallbackSymbol ?? StopSymbol.jaiz;
+  }
+
+  String verdictLabelForScholar(String? scholarName) {
+    final op = opinionForScholar(scholarName);
+    if (op != null) return op.primaryVerdictLabel;
+    return defaultVerdictLabelForSymbol(symbol);
+  }
+
+  bool isQilaForScholar(String? scholarName) {
+    final op = opinionForScholar(scholarName);
+    if (op != null) return op.primaryIsQila;
+    return false;
+  }
+
+  String labelForScholar(String? scholarName) {
+    final op = opinionForScholar(scholarName);
+    if (op != null) {
+      return op.verdicts.join(' / ');
+    }
+    return fallbackLabel ?? 'جائز';
+  }
+
+  String reasonForScholar(String? scholarName) {
+    final op = opinionForScholar(scholarName);
+    if (op != null) {
+      if (op.comment != null && op.comment!.trim().isNotEmpty) {
+        return op.comment!;
+      }
+      return 'وقف ${op.scholar} (${op.book}): ${op.verdicts.join(" / ")}';
+    }
+    return fallbackReason ?? '';
+  }
+
+  StopSymbol get symbol => symbolForScholar(null);
+
+  String get verdictLabel => verdictLabelForScholar(null);
+
+  bool get isQila => isQilaForScholar(null);
+
+  String get label => labelForScholar(null);
+
+  String get reason => reasonForScholar(null);
+
   bool get needsReview {
     if (symbol == StopSymbol.unsettled) return true;
     final suggestion = aiSuggestion;
     if (suggestion != null && suggestion.trim().isNotEmpty) return true;
-    return opinions.any((opinion) => opinion.verdict == null);
+    return opinions.isEmpty || opinions.any((opinion) => opinion.verdicts.isEmpty);
   }
 
   bool get hasAiSuggestion {
@@ -120,7 +219,8 @@ class WaqfStop {
     return suggestion != null && suggestion.trim().isNotEmpty;
   }
 
-  bool get hasNullVerdict => opinions.any((opinion) => opinion.verdict == null);
+  bool get hasNullVerdict =>
+      opinions.isEmpty || opinions.any((opinion) => opinion.verdicts.isEmpty);
 
   List<ScholarOpinion> get matnOpinions =>
       opinions.where((o) => !o.fromMargin).toList();

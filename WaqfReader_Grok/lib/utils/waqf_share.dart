@@ -31,6 +31,40 @@ String formatOpinionText(
   if (c != null && c.isNotEmpty) {
     b.writeln(c);
   }
+  for (final demo in op.demosAndMeanings) {
+    final verdictTag = (demo.isQila && !demo.verdict.contains('قيل'))
+        ? 'قيل: ${demo.verdict}'
+        : demo.verdict;
+    final attr = demo.attributedTo?.trim();
+    final header = (attr != null && attr.isNotEmpty)
+        ? '$verdictTag — $attr'
+        : verdictTag;
+    b.writeln('• بيان الوقف والابتداء ($header):');
+    final wDemo = demo.waqfDemo.trim();
+    if (wDemo.isNotEmpty) {
+      if (wDemo.startsWith('تلاوة')) {
+        b.writeln('  - $wDemo');
+      } else {
+        b.writeln('  - تلاوة الوقف: $wDemo');
+      }
+    }
+    final iDemo = demo.ibtidaDemo.trim();
+    if (iDemo.isNotEmpty) {
+      b.writeln('  - تلاوة الابتداء: $iDemo');
+    }
+    final mWaqf = demo.meaningAtWaqf.trim();
+    if (mWaqf.isNotEmpty) {
+      b.writeln('  - المعنى عند الوقف: $mWaqf');
+    }
+    final mIbtida = demo.meaningAtIbtida.trim();
+    if (mIbtida.isNotEmpty) {
+      b.writeln('  - المعنى عند الابتداء: $mIbtida');
+    }
+    final mConn = demo.meaningIfConnected.trim();
+    if (mConn.isNotEmpty) {
+      b.writeln('  - المعنى عند الوصل: $mConn');
+    }
+  }
   final ref = op.page == null ? op.book : '${op.book}: ${op.page}';
   b.write('[$ref]');
   return b.toString();

@@ -24,6 +24,14 @@ abstract final class AppColors {
   static const sheetText = Color(0xFFF6F3EA);
   static const sheetMuted = Color(0xFFD9D3C6);
   static const wordGlow = Color(0xFFF6E7C4);
+  /// Continuous wash for demo waqf segment (pause span).
+  static const demoWaqfWash = Color(0x59E8C878);
+  /// Continuous wash for demo ibtida segment (resumption span).
+  static const demoIbtidaWash = Color(0x4D8FCBB0);
+  /// Marker line for demo waqf segment.
+  static const demoWaqfMarker = Color(0xCCC4A15A);
+  /// Marker line for demo ibtida segment.
+  static const demoIbtidaMarker = Color(0xB31A5C48);
   static const hairline = Color(0xFFE4DCC8);
   static const dash = Color(0xFF4A5850);
   static const muted = Color(0xFF7A756C);

@@ -30,6 +30,8 @@ class StopBadge extends StatelessWidget {
     this.selected = false,
     this.onTap,
     this.core = 28,
+    /// Shrinks the invisible hit box so demo washes stay continuous.
+    this.compact = false,
   });
 
   final StopSymbol symbol;
@@ -39,12 +41,13 @@ class StopBadge extends StatelessWidget {
   final bool selected;
   final VoidCallback? onTap;
   final double core;
+  final bool compact;
 
   @override
   Widget build(BuildContext context) {
     final ringed = selected && symbol == StopSymbol.tam && !isQila;
     final visual = ringed ? core + 18 : core + (selected ? 8 : 0);
-    final target = math.max(44.0, visual);
+    final target = compact ? visual : math.max(44.0, visual);
 
     return Semantics(
       button: onTap != null,

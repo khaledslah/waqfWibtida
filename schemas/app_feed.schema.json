@@ -44,7 +44,7 @@
     },
     "sourceTag": {
       "type": "string",
-      "enum": ["sonnet", "antigravity", "base", "grok"],
+      "enum": ["sonnet", "antigravity", "base", "grok", "llm_grounded_v1"],
       "description": "Precedence tag of the extraction source"
     },
     "ayahs": {
@@ -123,12 +123,6 @@
           "ayah",
           "wordIndex",
           "word",
-          "targetWord",
-          "verdictLabel",
-          "verdict",
-          "label",
-          "symbol",
-          "reason",
           "textPage",
           "marginRef",
           "fixes",
@@ -192,8 +186,8 @@
             "description": "Grammatical/theological justification for the stop"
           },
           "textPage": {
-            "type": "integer",
-            "description": "Page in the printed book Ilal al-Wuquf"
+            "type": ["integer", "null"],
+            "description": "Page in the printed book Ilal al-Wuquf, or null when Al-Sajawandi has no citation"
           },
           "marginRef": {
             "type": ["integer", "null"],
@@ -217,7 +211,7 @@
           },
           "opinions": {
             "type": "array",
-            "description": "Scholarly opinions. Item 1 is always Al-Sajawandi from matn, followed by margin apparatus opinions",
+            "description": "Scholarly opinions across classical waqf imams (Al-Sajawandi, Al-Dani, Ibn al-Anbari, Al-Ashmuni, Al-Nahhas)",
             "items": {
               "type": "object",
               "required": ["scholar", "verdict", "book"],
@@ -225,19 +219,91 @@
               "properties": {
                 "scholar": {
                   "type": "string",
-                  "description": "Scholar name (e.g. أبو عبد الله السجاوندي, ابن الأنباري, الداني, النحاس, etc.)"
+                  "description": "Scholar name (e.g. السجاوندي, الداني, ابن الأنباري, الأشموني, النحاس)"
+                },
+                "targetWord": {
+                  "type": ["string", "null"],
+                  "description": "Target Quranic word for this scholar's ruling"
                 },
                 "verdict": {
-                  "type": ["string", "null"],
-                  "description": "Scholarly verdict (تام, كاف, حسن, صالح, جائز, مفهوم, لا يوقف, etc.)"
+                  "description": "Ordered list of scholarly verdicts (or legacy single verdict string/null)",
+                  "oneOf": [
+                    {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "لازم",
+                          "تام",
+                          "كاف",
+                          "حسن",
+                          "صالح",
+                          "مفهوم",
+                          "جائز",
+                          "قيل فيه وقف",
+                          "لا يوقف"
+                        ]
+                      }
+                    },
+                    {
+                      "type": ["string", "null"]
+                    }
+                  ]
                 },
                 "verdictLabel": {
-                  "type": ["string", "null"],
-                  "description": "Sajawandi symbol letter if applicable, else null"
+                  "description": "Parallel array of badge letters aligned with verdict (or legacy single string/null)",
+                  "oneOf": [
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": ["ط", "م", "ج", "ز", "ص", "لا", "ق"]
+                      }
+                    },
+                    {
+                      "type": ["string", "null"]
+                    }
+                  ]
+                },
+                "symbol": {
+                  "description": "Parallel array of UI symbol keys aligned with verdict (or legacy single string/null)",
+                  "oneOf": [
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "tam",
+                          "lazim",
+                          "jaiz",
+                          "mujawwaz",
+                          "murakhkhas",
+                          "la",
+                          "unsettled"
+                        ]
+                      }
+                    },
+                    {
+                      "type": ["string", "null"]
+                    }
+                  ]
+                },
+                "isQila": {
+                  "description": "Parallel array of booleans marking weak/quoted secondary verdicts (قيل)",
+                  "oneOf": [
+                    {
+                      "type": "array",
+                      "items": { "type": "boolean" }
+                    },
+                    {
+                      "type": "boolean"
+                    }
+                  ]
                 },
                 "book": {
                   "type": ["string", "null"],
-                  "description": "Reference source work (علل الوقوف, الإيضاح, المكتفى, المنار, etc.)"
+                  "description": "Reference source work (علل الوقوف, إيضاح الوقف والابتداء, المكتفى, منار الهدى, القطع والائتناف)"
                 },
                 "page": {
                   "type": ["string", "null"],
@@ -246,6 +312,84 @@
                 "comment": {
                   "type": ["string", "null"],
                   "description": "Commentary or qualification regarding the opinion"
+                },
+                "demosAndMeanings": {
+                  "type": ["array", "null"],
+                  "description": "Recitation/resumption demonstrations, word index spans, and semantic explanations for pause-permitting verdicts",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "verdict",
+                      "isQila",
+                      "waqfSegmentWords",
+                      "ibtidaSegmentWords",
+                      "waqfDemo",
+                      "ibtidaDemo",
+                      "meaningAtWaqf",
+                      "meaningAtIbtida",
+                      "meaningIfConnected"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                      "verdict": {
+                        "type": "string",
+                        "enum": [
+                          "لازم",
+                          "تام",
+                          "كاف",
+                          "حسن",
+                          "صالح",
+                          "مفهوم",
+                          "جائز",
+                          "قيل فيه وقف",
+                          "لا يوقف"
+                        ],
+                        "description": "The pause verdict demonstrated by this entry"
+                      },
+                      "isQila": {
+                        "type": "boolean",
+                        "description": "Whether this verdict is reported as a secondary/quoted view (قيل)"
+                      },
+                      "attributedTo": {
+                        "type": ["string", "null"],
+                        "description": "Optional earlier authority cited for this opinion (e.g. أبو حاتم السجستاني, الأخفش سعيد)"
+                      },
+                      "waqfSegmentWords": {
+                        "type": ["array", "null"],
+                        "items": { "type": "integer", "minimum": 1 },
+                        "minItems": 2,
+                        "maxItems": 2,
+                        "description": "Inclusive 1-based [startWordIndex, endWordIndex] range in the ayah for the waqf segment"
+                      },
+                      "ibtidaSegmentWords": {
+                        "type": ["array", "null"],
+                        "items": { "type": "integer", "minimum": 1 },
+                        "minItems": 2,
+                        "maxItems": 2,
+                        "description": "Inclusive 1-based [startWordIndex, endWordIndex] range in the ayah for resumption (ibtida), or null when resuming at next ayah"
+                      },
+                      "waqfDemo": {
+                        "type": "string",
+                        "description": "Formatted Quranic recitation snippet ending at the pause word"
+                      },
+                      "ibtidaDemo": {
+                        "type": "string",
+                        "description": "Formatted Quranic resumption snippet starting after the pause"
+                      },
+                      "meaningAtWaqf": {
+                        "type": "string",
+                        "description": "Explanation of the meaning when pausing at this location"
+                      },
+                      "meaningAtIbtida": {
+                        "type": "string",
+                        "description": "Explanation of the meaning when starting from the following segment"
+                      },
+                      "meaningIfConnected": {
+                        "type": "string",
+                        "description": "Explanation of the meaning or scholar preference when continuing without pausing (wasl)"
+                      }
+                    }
+                  }
                 }
               }
             }

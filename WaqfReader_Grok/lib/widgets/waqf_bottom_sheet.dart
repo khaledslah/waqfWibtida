@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../data/sample_data.dart';
 import '../models/waqf_models.dart';
 import '../theme/app_theme.dart';
+import '../utils/book_page_service.dart';
 import '../utils/waqf_share.dart';
 import 'page_image_viewer.dart';
 import 'stop_badge.dart';
@@ -10,15 +11,20 @@ import 'stop_badge.dart';
 Future<void> showWaqfSheet(
   BuildContext context,
   ReaderController controller,
-  String stopId,
-) {
+  String stopId, {
+  bool includeDemos = false,
+}) {
   return showModalBottomSheet<void>(
     context: context,
     isScrollControlled: true,
     backgroundColor: Colors.transparent,
     barrierColor: const Color(0x99000000),
     builder: (context) {
-      return WaqfBottomSheet(controller: controller, stopId: stopId);
+      return WaqfBottomSheet(
+        controller: controller,
+        stopId: stopId,
+        includeDemos: includeDemos,
+      );
     },
   );
 }
@@ -28,10 +34,14 @@ class WaqfBottomSheet extends StatefulWidget {
     super.key,
     required this.controller,
     required this.stopId,
+    this.includeDemos = false,
   });
 
   final ReaderController controller;
   final String stopId;
+
+  /// When false (normal badge tap), hide demosAndMeanings / ibtida cards.
+  final bool includeDemos;
 
   @override
   State<WaqfBottomSheet> createState() => _WaqfBottomSheetState();
@@ -91,8 +101,10 @@ class _WaqfBottomSheetState extends State<WaqfBottomSheet> {
                       child: SingleChildScrollView(
                         padding: EdgeInsets.fromLTRB(20, 4, 20, 20 + bottom),
                         child: _SheetBody(
+                          controller: widget.controller,
                           stop: stop,
                           selectedScholar: widget.controller.selectedScholar,
+                          includeDemos: widget.includeDemos,
                           aiOpen: _aiOpen,
                           onToggleAi: () => setState(() => _aiOpen = !_aiOpen),
                           isVerseEnd: widget.controller.isVerseEnd(stop),
@@ -192,8 +204,10 @@ class _DragHandle extends StatelessWidget {
 
 class _SheetBody extends StatelessWidget {
   const _SheetBody({
+    required this.controller,
     required this.stop,
     required this.selectedScholar,
+    required this.includeDemos,
     required this.aiOpen,
     required this.onToggleAi,
     required this.isVerseEnd,
@@ -204,8 +218,10 @@ class _SheetBody extends StatelessWidget {
     required this.onOpenPage,
   });
 
+  final ReaderController controller;
   final WaqfStop stop;
   final String? selectedScholar;
+  final bool includeDemos;
   final bool aiOpen;
   final VoidCallback onToggleAi;
   final bool isVerseEnd;
@@ -321,8 +337,10 @@ class _SheetBody extends StatelessWidget {
         ),
         const SizedBox(height: 8),
         _OpinionTable(
+          controller: controller,
           stop: stop,
           opinions: stop.opinions,
+          includeDemos: includeDemos,
           emptyText: 'لا حكم مسجّل.',
           sajawandiPage: stop.textPage,
           onOpenPage: onOpenPage,
@@ -367,15 +385,19 @@ class _SectionTitle extends StatelessWidget {
 
 class _OpinionTable extends StatelessWidget {
   const _OpinionTable({
+    required this.controller,
     required this.stop,
     required this.opinions,
+    required this.includeDemos,
     required this.emptyText,
     required this.sajawandiPage,
     required this.onOpenPage,
   });
 
+  final ReaderController controller;
   final WaqfStop stop;
   final List<ScholarOpinion> opinions;
+  final bool includeDemos;
   final String emptyText;
   final int? sajawandiPage;
   final Future<void> Function(int? page) onOpenPage;
@@ -403,8 +425,10 @@ class _OpinionTable extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
               child: _OpinionRow(
+                controller: controller,
                 stop: stop,
                 opinion: opinions[i],
+                includeDemos: includeDemos,
                 sajawandiPage: sajawandiPage,
                 onOpenPage: onOpenPage,
               ),
@@ -418,14 +442,18 @@ class _OpinionTable extends StatelessWidget {
 
 class _OpinionRow extends StatelessWidget {
   const _OpinionRow({
+    required this.controller,
     required this.stop,
     required this.opinion,
+    required this.includeDemos,
     required this.sajawandiPage,
     required this.onOpenPage,
   });
 
+  final ReaderController controller;
   final WaqfStop stop;
   final ScholarOpinion opinion;
+  final bool includeDemos;
   final int? sajawandiPage;
   final Future<void> Function(int? page) onOpenPage;
 
@@ -492,6 +520,8 @@ class _OpinionRow extends StatelessWidget {
               child: Align(
                 alignment: AlignmentDirectional.centerEnd,
                 child: _PageRef(
+                  surah: stop.surah,
+                  ayah: stop.ayah,
                   opinion: opinion,
                   sajawandiPage: sajawandiPage,
                   onOpenPage: onOpenPage,
@@ -511,6 +541,26 @@ class _OpinionRow extends StatelessWidget {
               height: 1.55,
             ),
           ),
+        ],
+        if (includeDemos && opinion.demosAndMeanings.isNotEmpty) ...[
+          const SizedBox(height: 10),
+          for (var d = 0; d < opinion.demosAndMeanings.length; d++) ...[
+            if (d > 0) const SizedBox(height: 8),
+            _DemoMeaningCard(
+              demo: opinion.demosAndMeanings[d],
+              selected: identical(
+                controller.activeDemoHighlight,
+                opinion.demosAndMeanings[d],
+              ),
+              onTap: () {
+                controller.select(stop.id);
+                controller.selectDemo(
+                  scholar: opinion.scholar,
+                  demoIndex: d,
+                );
+              },
+            ),
+          ],
         ],
         Padding(
           padding: const EdgeInsets.only(top: 8),
@@ -596,6 +646,151 @@ class _OpinionRow extends StatelessWidget {
   }
 }
 
+class _DemoMeaningCard extends StatelessWidget {
+  const _DemoMeaningCard({
+    required this.demo,
+    required this.selected,
+    required this.onTap,
+  });
+
+  final WaqfDemoAndMeaning demo;
+  final bool selected;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final verdictTag = (demo.isQila && !demo.verdict.contains('قيل'))
+        ? 'قيل: ${demo.verdict}'
+        : demo.verdict;
+    final attr = demo.attributedTo?.trim();
+    final title = (attr != null && attr.isNotEmpty)
+        ? 'بيان الوقف والابتداء · $verdictTag — $attr'
+        : 'بيان الوقف والابتداء · $verdictTag';
+
+    final rows = <(String, String)>[
+      if (demo.waqfDemo.trim().isNotEmpty) ('الوقف', demo.waqfDemo.trim()),
+      if (demo.ibtidaDemo.trim().isNotEmpty) ('الابتداء', demo.ibtidaDemo.trim()),
+      if (demo.meaningAtWaqf.trim().isNotEmpty)
+        ('المعنى عند الوقف', demo.meaningAtWaqf.trim()),
+      if (demo.meaningAtIbtida.trim().isNotEmpty)
+        ('المعنى عند الابتداء', demo.meaningAtIbtida.trim()),
+      if (demo.meaningIfConnected.trim().isNotEmpty)
+        ('المعنى عند الوصل', demo.meaningIfConnected.trim()),
+    ];
+
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(10),
+        child: DecoratedBox(
+          decoration: BoxDecoration(
+            color: selected
+                ? AppColors.goldSoft.withOpacity(0.12)
+                : AppColors.sheet,
+            borderRadius: BorderRadius.circular(10),
+            border: Border.all(
+              color: selected
+                  ? AppColors.goldSoft
+                  : (demo.isQila
+                      ? AppColors.goldSoft.withOpacity(0.55)
+                      : AppColors.sheetLine),
+              width: selected ? 1.4 : 1,
+            ),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(10, 8, 10, 10),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Row(
+                  children: [
+                    Expanded(
+                      child: Text(
+                        title,
+                        style: AppText.ui(
+                          size: 12,
+                          weight: FontWeight.w700,
+                          color: AppColors.goldSoft,
+                        ),
+                      ),
+                    ),
+                    if (selected) ...[
+                      const _DemoLegendDot(
+                        color: AppColors.demoWaqfMarker,
+                        label: 'وقف',
+                      ),
+                      const SizedBox(width: 6),
+                      const _DemoLegendDot(
+                        color: AppColors.demoIbtidaMarker,
+                        label: 'ابتداء',
+                      ),
+                    ],
+                  ],
+                ),
+                for (final row in rows) ...[
+                  const SizedBox(height: 6),
+                  Text(
+                    row.$1,
+                    style: AppText.ui(
+                      size: 11,
+                      weight: FontWeight.w600,
+                      color: AppColors.sheetMuted,
+                    ),
+                  ),
+                  const SizedBox(height: 2),
+                  Text(
+                    row.$2,
+                    textAlign: TextAlign.start,
+                    style: AppText.ui(
+                      size: 13,
+                      color: AppColors.sheetText,
+                      height: 1.55,
+                    ),
+                  ),
+                ],
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _DemoLegendDot extends StatelessWidget {
+  const _DemoLegendDot({required this.color, required this.label});
+
+  final Color color;
+  final String label;
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Container(
+          width: 10,
+          height: 3,
+          decoration: BoxDecoration(
+            color: color,
+            borderRadius: BorderRadius.circular(2),
+          ),
+        ),
+        const SizedBox(width: 4),
+        Text(
+          label,
+          style: AppText.ui(
+            size: 10,
+            weight: FontWeight.w600,
+            color: AppColors.sheetMuted,
+          ),
+        ),
+      ],
+    );
+  }
+}
+
 class _VerdictFacePill extends StatelessWidget {
   const _VerdictFacePill({
     required this.verdict,
@@ -658,21 +853,30 @@ class _VerdictFacePill extends StatelessWidget {
 
 class _PageRef extends StatelessWidget {
   const _PageRef({
+    required this.surah,
+    required this.ayah,
     required this.opinion,
     required this.sajawandiPage,
     required this.onOpenPage,
   });
 
+  final int surah;
+  final int ayah;
   final ScholarOpinion opinion;
   final int? sajawandiPage;
   final Future<void> Function(int? page) onOpenPage;
 
   @override
   Widget build(BuildContext context) {
-    // Keep displayed book + ref as-is; PNG always opens علل الوقوف textPage.
     final pageStr = opinion.page;
+    final bookKey =
+        bookKeyForScholar(scholar: opinion.scholar, book: opinion.book);
+    final hasBookLink = bookKey != null &&
+        (pageStr != null ||
+            (bookKey == 'sajawandi' && sajawandiPage != null) ||
+            bookKey == 'nahhas');
 
-    if (pageStr == null) {
+    if (pageStr == null && !hasBookLink) {
       return Semantics(
         label: '${opinion.book}، بدون رقم صفحة',
         child: Column(
@@ -706,8 +910,7 @@ class _PageRef extends StatelessWidget {
       );
     }
 
-    final isSajawandi = opinion.scholar.contains('السجاوندي') ||
-        opinion.book.contains('علل الوقوف');
+    final displayRef = pageStr ?? 'آية ${arabicDigits(ayah)}';
 
     final refRow = Row(
       mainAxisSize: MainAxisSize.min,
@@ -715,13 +918,13 @@ class _PageRef extends StatelessWidget {
       children: [
         Flexible(
           child: Text(
-            pageStr,
+            displayRef,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             style: AppText.ui(
               size: 14,
-              weight: isSajawandi ? FontWeight.w700 : FontWeight.w500,
-              color: isSajawandi ? AppColors.goldSoft : AppColors.sheetText,
+              weight: hasBookLink ? FontWeight.w700 : FontWeight.w500,
+              color: hasBookLink ? AppColors.goldSoft : AppColors.sheetText,
             ),
           ),
         ),
@@ -729,7 +932,7 @@ class _PageRef extends StatelessWidget {
         Icon(
           Icons.menu_book_outlined,
           size: 16,
-          color: isSajawandi ? AppColors.goldSoft : AppColors.sheetMuted,
+          color: hasBookLink ? AppColors.goldSoft : AppColors.sheetMuted,
         ),
       ],
     );
@@ -745,7 +948,7 @@ class _PageRef extends StatelessWidget {
           textAlign: TextAlign.end,
           style: AppText.ui(
             size: 11,
-            color: isSajawandi
+            color: hasBookLink
                 ? AppColors.goldSoft.withOpacity(0.85)
                 : AppColors.sheetMuted,
           ),
@@ -757,7 +960,7 @@ class _PageRef extends StatelessWidget {
 
     return Semantics(
       button: true,
-      label: 'عرض صفحة ${opinion.book} $pageStr',
+      label: 'عرض صفحة ${opinion.book} $displayRef',
       child: InkWell(
         onTap: () {
           showScholarBookPage(
@@ -766,6 +969,8 @@ class _PageRef extends StatelessWidget {
             book: opinion.book,
             pageStr: opinion.page,
             sajawandiPage: sajawandiPage,
+            surah: surah,
+            ayah: ayah,
           );
         },
         borderRadius: BorderRadius.circular(8),

@@ -69,6 +69,32 @@ String defaultVerdictLabelForSymbol(StopSymbol symbol) {
   }
 }
 
+class WaqfDemoAndMeaning {
+  const WaqfDemoAndMeaning({
+    required this.verdict,
+    required this.isQila,
+    this.attributedTo,
+    this.waqfSegmentWords,
+    this.ibtidaSegmentWords,
+    required this.waqfDemo,
+    required this.ibtidaDemo,
+    required this.meaningAtWaqf,
+    required this.meaningAtIbtida,
+    required this.meaningIfConnected,
+  });
+
+  final String verdict;
+  final bool isQila;
+  final String? attributedTo;
+  final List<int>? waqfSegmentWords;
+  final List<int>? ibtidaSegmentWords;
+  final String waqfDemo;
+  final String ibtidaDemo;
+  final String meaningAtWaqf;
+  final String meaningAtIbtida;
+  final String meaningIfConnected;
+}
+
 class ScholarOpinion {
   const ScholarOpinion({
     required this.scholar,
@@ -81,6 +107,7 @@ class ScholarOpinion {
     required this.page,
     this.comment,
     this.fromMargin = false,
+    this.demosAndMeanings = const <WaqfDemoAndMeaning>[],
   });
 
   final String scholar;
@@ -95,6 +122,8 @@ class ScholarOpinion {
 
   /// True for secondary apparatus opinions when grouped separately.
   final bool fromMargin;
+
+  final List<WaqfDemoAndMeaning> demosAndMeanings;
 
   String get primaryVerdict => verdicts.isNotEmpty ? verdicts.first : 'جائز';
 
@@ -227,13 +256,43 @@ class WaqfStop {
 
   List<ScholarOpinion> get marginOpinions =>
       opinions.where((o) => o.fromMargin).toList();
+
+  bool get hasDemosAndMeanings =>
+      opinions.any((o) => o.demosAndMeanings.isNotEmpty);
 }
 
+enum DemoSegmentRole { none, waqf, ibtida }
+
 class AyahWord {
-  const AyahWord(this.text, [this.stopId]);
+  const AyahWord(this.text, [this.stopId, this.index = 0]);
 
   final String text;
   final String? stopId;
+
+  /// 1-based word index in the ayah (matches feed `index` / demo spans).
+  final int index;
+}
+
+bool wordIndexInSpan(List<int>? span, int wordIndex) {
+  if (span == null || span.length < 2 || wordIndex < 1) return false;
+  final start = span[0];
+  final end = span[1];
+  if (start > end) return wordIndex >= end && wordIndex <= start;
+  return wordIndex >= start && wordIndex <= end;
+}
+
+DemoSegmentRole demoSegmentRoleForWord({
+  required WaqfDemoAndMeaning? demo,
+  required int wordIndex,
+}) {
+  if (demo == null) return DemoSegmentRole.none;
+  if (wordIndexInSpan(demo.waqfSegmentWords, wordIndex)) {
+    return DemoSegmentRole.waqf;
+  }
+  if (wordIndexInSpan(demo.ibtidaSegmentWords, wordIndex)) {
+    return DemoSegmentRole.ibtida;
+  }
+  return DemoSegmentRole.none;
 }
 
 class Ayah {
@@ -273,13 +332,79 @@ String arabicDigits(int value) {
   return value.toString().split('').map((digit) => map[int.parse(digit)]).join();
 }
 
-int? parsePageNumber(String? raw) {
-  if (raw == null || raw.trim().isEmpty) return null;
-  final western = raw
-      .replaceAllMapped(RegExp('[٠-٩]'), (m) {
-        const digits = '٠١٢٣٤٥٦٧٨٩';
-        return '${digits.indexOf(m.group(0)!)}';
-      })
-      .replaceAll(RegExp(r'[^0-9]'), '');
-  return int.tryParse(western);
+class BookPageRef {
+  const BookPageRef({
+    this.volume,
+    this.page,
+    this.endPage,
+    this.ayahNumber,
+  });
+
+  final int? volume;
+  final int? page;
+  final int? endPage;
+  final int? ayahNumber;
+
+  bool get isAyahRef => ayahNumber != null && page == null;
+
+  static String toWesternDigits(String input) {
+    return input.replaceAllMapped(RegExp(r'[٠-٩]'), (m) {
+      const digits = '٠١٢٣٤٥٦٧٨٩';
+      return '${digits.indexOf(m.group(0)!)}';
+    });
+  }
+
+  static BookPageRef? parse(String? raw) {
+    if (raw == null || raw.trim().isEmpty) return null;
+    final western = toWesternDigits(raw).trim();
+
+    final ayahMatch = RegExp(r'^آية\s*(\d+)').firstMatch(western);
+    if (ayahMatch != null) {
+      return BookPageRef(ayahNumber: int.tryParse(ayahMatch.group(1)!));
+    }
+
+    // Standard "vol/page..." e.g. "1/173-179", "3/853 - 3/854", "2/697_698"
+    final volPageMatch =
+        RegExp(r'^([1-9])\s*/\s*(\d+)').firstMatch(western);
+    if (volPageMatch != null) {
+      final vol = int.tryParse(volPageMatch.group(1)!);
+      final start = int.tryParse(volPageMatch.group(2)!);
+      final rest = western.substring(volPageMatch.end);
+      final trailingVolPage =
+          RegExp(r'[1-9]\s*/\s*(\d+)').firstMatch(rest);
+      final end = trailingVolPage != null
+          ? int.tryParse(trailingVolPage.group(1)!)
+          : int.tryParse(RegExp(r'(\d+)').firstMatch(rest)?.group(1) ?? '');
+      return BookPageRef(volume: vol, page: start, endPage: end);
+    }
+
+    // Reversed trailing volume, e.g. "1027-1029/3" or "753 - 2/754"
+    final firstNum = RegExp(r'(\d+)').firstMatch(western);
+    if (firstNum == null) return null;
+    final start = int.tryParse(firstNum.group(1)!);
+    final rest = western.substring(firstNum.end);
+
+    int? vol;
+    int? end;
+    final revVol = RegExp(r'/\s*([1-9])\s*$').firstMatch(rest);
+    final midVolPage =
+        RegExp(r'(?:^|[\s\-_،])([1-9])\s*/\s*(\d+)').firstMatch(rest);
+    if (midVolPage != null) {
+      vol = int.tryParse(midVolPage.group(1)!);
+      end = int.tryParse(midVolPage.group(2)!);
+    } else {
+      if (revVol != null) {
+        vol = int.tryParse(revVol.group(1)!);
+      }
+      final beforeSlash = rest.split('/').first;
+      final endMatch = RegExp(r'(\d+)').firstMatch(beforeSlash);
+      if (endMatch != null) {
+        end = int.tryParse(endMatch.group(1)!);
+      }
+    }
+
+    return BookPageRef(volume: vol, page: start, endPage: end);
+  }
 }
+
+int? parsePageNumber(String? raw) => BookPageRef.parse(raw)?.page;

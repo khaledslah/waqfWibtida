@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../data/sample_data.dart';
 import '../models/waqf_models.dart';
 import '../theme/app_theme.dart';
+import '../utils/book_page_service.dart';
 import '../widgets/ornament_divider.dart';
 import '../widgets/page_image_viewer.dart';
 import '../widgets/stop_badge.dart';
@@ -17,61 +18,124 @@ class ReviewScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final items = controller.reviewItems;
 
-    return ListView(
+    return ListView.builder(
+      key: ValueKey<String>(
+        'review-${controller.currentSurah}-${controller.reviewFilter.name}',
+      ),
       padding: const EdgeInsets.fromLTRB(16, 16, 16, 24),
-      children: [
-        Text(
-          'المراجعة',
-          style: AppText.ui(
-            size: 22,
-            weight: FontWeight.w700,
-            color: AppColors.forestDeep,
-          ),
-        ),
-        const SizedBox(height: 4),
-        Text(
-          '${controller.currentSurahName} · ${arabicDigits(items.length)} / ${arabicDigits(controller.sampleStops.length)}',
-          style: AppText.ui(size: 14, color: AppColors.muted),
-        ),
-        const SizedBox(height: 12),
-        SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Row(
+      itemCount: items.isEmpty ? 2 : items.length + 1,
+      itemBuilder: (context, index) {
+        if (index == 0) {
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              for (final filter in ReviewListFilter.values) ...[
-                _FilterChip(
-                  label: filter.labelAr,
-                  selected: controller.reviewFilter == filter,
-                  onTap: () => controller.setReviewFilter(filter),
+              Text(
+                'المراجعة',
+                style: AppText.ui(
+                  size: 22,
+                  weight: FontWeight.w700,
+                  color: AppColors.forestDeep,
                 ),
-                const SizedBox(width: 8),
-              ],
+              ),
+              const SizedBox(height: 4),
+              Text(
+                '${controller.currentSurahName} · ${arabicDigits(items.length)} / ${arabicDigits(controller.sampleStops.length)}',
+                style: AppText.ui(size: 14, color: AppColors.muted),
+              ),
+              const SizedBox(height: 12),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    for (final filter in ReviewListFilter.values) ...[
+                      _FilterChip(
+                        label: filter.labelAr,
+                        selected: controller.reviewFilter == filter,
+                        onTap: () => controller.setReviewFilter(filter),
+                      ),
+                      const SizedBox(width: 8),
+                    ],
+                  ],
+                ),
+              ),
+              const SizedBox(height: 16),
             ],
+          );
+        }
+        if (items.isEmpty) {
+          return const _EmptyReview();
+        }
+        final stop = items[index - 1];
+        final pageTarget = _resolveReviewPageTarget(
+          context,
+          stop,
+          controller.selectedScholar,
+        );
+        return Padding(
+          padding: const EdgeInsets.only(bottom: 8),
+          child: _ReviewCard(
+            stop: stop,
+            surahName: controller.currentSurahName,
+            favorite: controller.isFavorite(stop.id),
+            verified: controller.isVerified(stop.id),
+            sent: controller.isSent(stop.id),
+            onOpen: () => showWaqfSheet(context, controller, stop.id),
+            onToggleFavorite: () => controller.toggleFavorite(stop.id),
+            onToggleVerified: () => controller.toggleVerified(stop.id),
+            pageLabel: pageTarget?.label,
+            onOpenPage: pageTarget?.onTap,
           ),
-        ),
-        const SizedBox(height: 16),
-        if (items.isEmpty)
-          const _EmptyReview()
-        else
-          for (final stop in items) ...[
-            _ReviewCard(
-              stop: stop,
-              surahName: controller.currentSurahName,
-              favorite: controller.isFavorite(stop.id),
-              verified: controller.isVerified(stop.id),
-              sent: controller.isSent(stop.id),
-              onOpen: () => showWaqfSheet(context, controller, stop.id),
-              onToggleFavorite: () => controller.toggleFavorite(stop.id),
-              onToggleVerified: () => controller.toggleVerified(stop.id),
-              onOpenPage: stop.textPage == null
-                  ? null
-                  : () => showSajawandiPage(context, page: stop.textPage!),
-            ),
-            const SizedBox(height: 8),
-          ],
-      ],
+        );
+      },
     );
   }
+}
+
+({String label, VoidCallback onTap})? _resolveReviewPageTarget(
+  BuildContext context,
+  WaqfStop stop,
+  String? selectedScholar,
+) {
+  ScholarOpinion? targetOp;
+  if (selectedScholar != null && stop.hasScholar(selectedScholar)) {
+    final op = stop.opinionForScholar(selectedScholar);
+    if (op != null) {
+      final bk = bookKeyForScholar(scholar: op.scholar, book: op.book);
+      if (bk != null && (op.page != null || bk == 'nahhas')) {
+        targetOp = op;
+      }
+    }
+  }
+  if (targetOp == null && stop.textPage != null) {
+    return (
+      label: '${stop.textPage}',
+      onTap: () => showSajawandiPage(context, page: stop.textPage!),
+    );
+  }
+  if (targetOp == null) {
+    for (final op in stop.opinions) {
+      final bk = bookKeyForScholar(scholar: op.scholar, book: op.book);
+      if (bk != null && (op.page != null || bk == 'nahhas')) {
+        targetOp = op;
+        break;
+      }
+    }
+  }
+  if (targetOp == null) return null;
+  final op = targetOp;
+  final label = op.page ?? 'آية ${arabicDigits(stop.ayah)}';
+  return (
+    label: label,
+    onTap: () => showScholarBookPage(
+      context,
+      scholar: op.scholar,
+      book: op.book,
+      pageStr: op.page,
+      sajawandiPage: stop.textPage,
+      surah: stop.surah,
+      ayah: stop.ayah,
+    ),
+  );
 }
 
 class _FilterChip extends StatelessWidget {
@@ -154,6 +218,7 @@ class _ReviewCard extends StatelessWidget {
     required this.onOpen,
     required this.onToggleFavorite,
     required this.onToggleVerified,
+    required this.pageLabel,
     required this.onOpenPage,
   });
 
@@ -165,6 +230,7 @@ class _ReviewCard extends StatelessWidget {
   final VoidCallback onOpen;
   final VoidCallback onToggleFavorite;
   final VoidCallback onToggleVerified;
+  final String? pageLabel;
   final VoidCallback? onOpenPage;
 
   @override
@@ -282,9 +348,9 @@ class _ReviewCard extends StatelessWidget {
                             ),
                           ),
                         ),
-                        if (stop.textPage != null)
+                        if (pageLabel != null)
                           _PageButton(
-                            page: stop.textPage!,
+                            label: pageLabel!,
                             onTap: onOpenPage,
                           ),
                       ],
@@ -322,9 +388,9 @@ class _ReviewCard extends StatelessWidget {
 }
 
 class _PageButton extends StatelessWidget {
-  const _PageButton({required this.page, required this.onTap});
+  const _PageButton({required this.label, required this.onTap});
 
-  final int page;
+  final String label;
   final VoidCallback? onTap;
 
   @override
@@ -338,9 +404,14 @@ class _PageButton extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           textDirection: TextDirection.ltr,
           children: [
-            Text(
-              '$page',
-              style: AppText.ui(size: 14, color: AppColors.ink),
+            ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 96),
+              child: Text(
+                label,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: AppText.ui(size: 13, color: AppColors.ink),
+              ),
             ),
             const SizedBox(width: 4),
             const Icon(

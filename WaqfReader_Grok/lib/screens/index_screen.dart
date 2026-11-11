@@ -79,22 +79,21 @@ class _IndexScreenState extends State<IndexScreen> {
     ReaderController controller,
     SurahIndexEntry surah,
   ) async {
+    final messenger = ScaffoldMessenger.maybeOf(context);
     // Close sidebar drawer immediately when surah is chosen
-    if (Navigator.of(context).canPop()) {
+    if (widget.onSurahSelected != null) {
+      widget.onSurahSelected!.call();
+    } else if (Navigator.of(context).canPop()) {
       Navigator.of(context).pop();
     }
-    widget.onSurahSelected?.call();
 
+    controller.setTab(0);
     if (surah.number == controller.currentSurah) {
-      controller.setTab(0);
       return;
     }
     await controller.loadSurah(surah.number);
-    if (!context.mounted) return;
-    if (controller.loadState == ReaderLoadState.ready) {
-      controller.setTab(0);
-    } else {
-      ScaffoldMessenger.of(context).showSnackBar(
+    if (controller.loadState != ReaderLoadState.ready) {
+      messenger?.showSnackBar(
         SnackBar(content: Text(controller.loadError ?? 'تعذّر فتح السورة')),
       );
     }

@@ -1,0 +1,1983 @@
+{
+  "surah": 11,
+  "ayahRange": [
+    36,
+    48
+  ],
+  "boundaryFlags": {
+    "expandedLookbehindAyah": 34,
+    "expandedLookaheadAyah": 49,
+    "inheritedFromPrev": "في أول المقطع عند ابن الأنباري: «(يريد أن يغويكم) [34] حسن أيضًا. وكذلك (إلا من قد آمن) [36]. (بأعيننا ووحينا) [37]» عطفًا في الحكم (حسن) على آية 34. وعند النحاس في آخر آية 34: «ثم القطع على رؤوس الآيات حسن إلى ﴿مَن قَدْ آمَنَ﴾ فإنه كاف».",
+    "extendedIntoNext": "في آخر المقطع عند الداني: «{ممن معك} كاف. وكذا رؤوس الآي بعد، وآخر كل قصة تمام» فيشمل رأس الآية 48 (أليم: كاف) ويمتد إلى رأس الآية 49 (للمتقين: تام لانتهاء قصة نوح) وما بعدها. وعند النحاس في مدخل آية 48: «﴿ثُمَّ يَمَسُّهُم مِّنَّا عَذَابٌ أَلِيمٌ﴾ قطع تام وكذا ﴿فَاصْبِرْ إِنَّ الْعَاقِبَةَ لِلْمُتَّقِينَ﴾ [49]» حيث لا يوجد مدخل مستقل للآية 49 عند النحاس.",
+    "outOfRangeStopsEmitted": [
+      {
+        "ayah": 49,
+        "wordIndex": 19,
+        "targetWord": "لِلْمُتَّقِينَ",
+        "scholar": "النحاس"
+      }
+    ]
+  },
+  "extractions": [
+    {
+      "ayah": 36,
+      "wordIndex": 12,
+      "targetWord": "ءَامَنَ",
+      "scholar": "ابن الأنباري",
+      "book": "إيضاح الوقف والابتداء",
+      "page": "2/712",
+      "verdicts": [
+        "حسن"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "(يريد أن يغويكم) حسن أيضًا. وكذلك (إلا من قد آمن)."
+    },
+    {
+      "ayah": 36,
+      "wordIndex": 12,
+      "targetWord": "ءَامَنَ",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "315 - 316",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "{إلا من قد آمن} كاف، ومثله {بأعيننا ووحينا}."
+    },
+    {
+      "ayah": 36,
+      "wordIndex": 12,
+      "targetWord": "ءَامَنَ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "185",
+      "verdicts": [
+        "لا يوقف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "من قد آمن ليس بوقف لمكان الفاء"
+    },
+    {
+      "ayah": 36,
+      "wordIndex": 12,
+      "targetWord": "ءَامَنَ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 36",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "﴿مَن قَدْ آمَنَ﴾ فإنه كاف"
+    },
+    {
+      "ayah": 36,
+      "wordIndex": 17,
+      "targetWord": "يَفْعَلُونَ",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/584",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "ج",
+      "typoDetected": null,
+      "comment": "للآية، والوصل أجوز للعطف."
+    },
+    {
+      "ayah": 36,
+      "wordIndex": 17,
+      "targetWord": "يَفْعَلُونَ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "185",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "يفعلون (كاف)"
+    },
+    {
+      "ayah": 36,
+      "wordIndex": 17,
+      "targetWord": "يَفْعَلُونَ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 36",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "﴿فَلَا تَبْتَئِسْ بِمَا كَانُوا يَفْعَلُونَ﴾ قطع كاف على قول من جعل الأمر بمعنى خلاف معنى النهي"
+    },
+    {
+      "ayah": 37,
+      "wordIndex": 4,
+      "targetWord": "وَوَحْيِنَا",
+      "scholar": "ابن الأنباري",
+      "book": "إيضاح الوقف والابتداء",
+      "page": "2/712",
+      "verdicts": [
+        "حسن"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "(يريد أن يغويكم) حسن أيضًا. وكذلك (إلا من قد آمن). (بأعيننا ووحينا)."
+    },
+    {
+      "ayah": 37,
+      "wordIndex": 4,
+      "targetWord": "وَوَحْيِنَا",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "315 - 316",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "{إلا من قد آمن} كاف، ومثله {بأعيننا ووحينا}."
+    },
+    {
+      "ayah": 37,
+      "wordIndex": 4,
+      "targetWord": "وَوَحْيِنَا",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "185",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "ووحينا (جائز)"
+    },
+    {
+      "ayah": 37,
+      "wordIndex": 4,
+      "targetWord": "وَوَحْيِنَا",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 36",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "﴿فَلَا تَبْتَئِسْ بِمَا كَانُوا يَفْعَلُونَ﴾ قطع كاف على قول من جعل الأمر بمعنى خلاف معنى النهي كذا ﴿بِأَعْيُنِنَا وَوَحْيِنَا﴾"
+    },
+    {
+      "ayah": 37,
+      "wordIndex": 9,
+      "targetWord": "ظَلَمُوٓا۟",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/584",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "ج",
+      "typoDetected": null,
+      "comment": "للابتداء بإن على أنها كالتعليل لما قبلها."
+    },
+    {
+      "ayah": 37,
+      "wordIndex": 9,
+      "targetWord": "ظَلَمُوٓا۟",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "185",
+      "verdicts": [
+        "حسن"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "ظلموا (حسن) على استئناف ما بعده لأنَّ إن كالتعليل لما قبلها"
+    },
+    {
+      "ayah": 37,
+      "wordIndex": 11,
+      "targetWord": "مُّغْرَقُونَ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "185",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "مغرقون (كاف)"
+    },
+    {
+      "ayah": 37,
+      "wordIndex": 11,
+      "targetWord": "مُّغْرَقُونَ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 36",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "﴿فَلَا تَبْتَئِسْ بِمَا كَانُوا يَفْعَلُونَ﴾ قطع كاف على قول من جعل الأمر بمعنى خلاف معنى النهي كذا ﴿بِأَعْيُنِنَا وَوَحْيِنَا﴾ وكذا ﴿وَلَا تُخَاطِبْنِي فِي الَّذِينَ ظَلَمُوا إِنَّهُم مُّغْرَقُونَ﴾"
+    },
+    {
+      "ayah": 38,
+      "wordIndex": 10,
+      "targetWord": "مِنْهُ",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/584",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "ط",
+      "typoDetected": null,
+      "comment": "{سخروا منه}"
+    },
+    {
+      "ayah": 38,
+      "wordIndex": 10,
+      "targetWord": "مِنْهُ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "185",
+      "verdicts": [
+        "حسن",
+        "كاف"
+      ],
+      "isQila": [
+        false,
+        true
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "سخروا منه (حسن) وقيل كاف لأنَّه جواب كلما وقوله قال مستأنف على تقدير سؤال سائل"
+    },
+    {
+      "ayah": 38,
+      "wordIndex": 10,
+      "targetWord": "مِنْهُ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 38",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "﴿وَكُلَّمَا مَرَّ عَلَيْهِ مَلَأٌ مِّن قَوْمِهِ سَخِرُوا مِنْهُ﴾ قطع كاف"
+    },
+    {
+      "ayah": 38,
+      "wordIndex": 19,
+      "targetWord": "تَسْخَرُونَ",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "315 - 316",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "{كما تسخرون} كاف، ثم تبتدئ بالتهدد."
+    },
+    {
+      "ayah": 38,
+      "wordIndex": 19,
+      "targetWord": "تَسْخَرُونَ",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/584",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "ط",
+      "typoDetected": null,
+      "comment": "{تسخرون}"
+    },
+    {
+      "ayah": 38,
+      "wordIndex": 19,
+      "targetWord": "تَسْخَرُونَ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "185",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "كما تسخرون (كاف)"
+    },
+    {
+      "ayah": 38,
+      "wordIndex": 19,
+      "targetWord": "تَسْخَرُونَ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 38",
+      "verdicts": [
+        "صالح"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "﴿كَمَا تَسْخَرُونَ﴾ قطع صالح والتمام يحل عليه عذاب مقيم،"
+    },
+    {
+      "ayah": 39,
+      "wordIndex": 2,
+      "targetWord": "تَعْلَمُونَ",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "315 - 316",
+      "verdicts": [
+        "حسن",
+        "كاف"
+      ],
+      "isQila": [
+        false,
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "وأجاز الفراء أن تكون (من) في قوله: (من يأتيه) في موضع رفع بالابتداء، والخبر (يخزيه). فعلى هذا يحسن الوقف على قوله: {فسوف تعلمون} ويكفي."
+    },
+    {
+      "ayah": 39,
+      "wordIndex": 2,
+      "targetWord": "تَعْلَمُونَ",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/584",
+      "verdicts": [
+        "لا يوقف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "لا",
+      "typoDetected": null,
+      "comment": "لأن مفعولها جملة الاستفهام."
+    },
+    {
+      "ayah": 39,
+      "wordIndex": 2,
+      "targetWord": "تَعْلَمُونَ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "185",
+      "verdicts": [
+        "كاف",
+        "لا يوقف"
+      ],
+      "isQila": [
+        false,
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "كما تسخرون (كاف) ومثله فسوف تعلمون لأنَّ فسوف للتهديد فيبدأ بها الكلام لأنَّها لتأكيد الواقع إن جعلت من في محل رفع بالابتداء والخبر يخزيه وليس بوقف لمن جعلها في موضع نصب مفعولاً لقوله تعلمون وليست رأس آية لتعلق ما بعدها بما قبلها ولا يفصل بين العامل والمعمول بالوقف"
+    },
+    {
+      "ayah": 39,
+      "wordIndex": 10,
+      "targetWord": "مُّقِيمٌ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "185",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "مقيم (كاف) لأنَّ حتى للابتداء إذا كان بعدها إذا"
+    },
+    {
+      "ayah": 39,
+      "wordIndex": 10,
+      "targetWord": "مُّقِيمٌ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 38",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "﴿كَمَا تَسْخَرُونَ﴾ قطع صالح والتمام يحل عليه عذاب مقيم،"
+    },
+    {
+      "ayah": 40,
+      "wordIndex": 6,
+      "targetWord": "ٱلتَّنُّورُ",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/584",
+      "verdicts": [
+        "لا يوقف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "لا",
+      "typoDetected": null,
+      "comment": "لأن {قلنا} جواب {إذا}."
+    },
+    {
+      "ayah": 40,
+      "wordIndex": 6,
+      "targetWord": "ٱلتَّنُّورُ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "185",
+      "verdicts": [
+        "لا يوقف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "التنور ليس بوقف لأنَّ قلنا جواب إذا"
+    },
+    {
+      "ayah": 40,
+      "wordIndex": 6,
+      "targetWord": "ٱلتَّنُّورُ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 40",
+      "verdicts": [
+        "لا يوقف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "﴿وَفَارَ التَّنُّورُ﴾ ليس بقطع كاف لأن بعده جواب إذا."
+    },
+    {
+      "ayah": 40,
+      "wordIndex": 13,
+      "targetWord": "ٱثْنَيْنِ",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "315 - 316",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "{من كل زوجين اثنين} كاف."
+    },
+    {
+      "ayah": 40,
+      "wordIndex": 13,
+      "targetWord": "ٱثْنَيْنِ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "185",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "زوجين اثنين (جائز) ثم يبتديء وأهلك أي وأهلك الله من الهلاك جميع الخلائق إلاَّ من سبق عليه القول فما بعد الاستثناء خارج مما قبله يعني إبليس ومن آمن قاله أبو العلاء الهمداني"
+    },
+    {
+      "ayah": 40,
+      "wordIndex": 14,
+      "targetWord": "وَأَهْلَكَ",
+      "scholar": "ابن الأنباري",
+      "book": "إيضاح الوقف والابتداء",
+      "page": "2/712",
+      "verdicts": [
+        "قيل فيه وقف",
+        "لا يوقف"
+      ],
+      "isQila": [
+        true,
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "(من كل زوجين اثنين وأهلك) قال السجستاني: هو وقف. قال أبو بكر: وليس يوقف لأن الاستثناء قد جاء بعده"
+    },
+    {
+      "ayah": 40,
+      "wordIndex": 14,
+      "targetWord": "وَأَهْلَكَ",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "315 - 316",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "{من كل زوجين اثنين} كاف. و(أهلك) أكفى منه"
+    },
+    {
+      "ayah": 40,
+      "wordIndex": 14,
+      "targetWord": "وَأَهْلَكَ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "185",
+      "verdicts": [
+        "لا يوقف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "وأهلك ليس بوقف لأنَّ الوقف يشعر بأنَّه أمر بحمل جميع أهله وتعلق الاستثناء أيضًا يوجب عدم الوقف"
+    },
+    {
+      "ayah": 40,
+      "wordIndex": 14,
+      "targetWord": "وَأَهْلَكَ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 40",
+      "verdicts": [
+        "قيل فيه وقف",
+        "تام",
+        "لا يوقف"
+      ],
+      "isQila": [
+        true,
+        true,
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "قال أبو حاتم ﴿وَأَهْلَكَ﴾ وقف، وقال أحمد بن موسى ﴿قُلْنَا احْمِلْ فِيهَا مِن كُلٍّ زَوْجَيْنِ اثْنَيْنِ وَأَهْلَكَ﴾ هذا تمام الكلام، قال أبو جعفر: وهذا غلط لأن بعده استثناء."
+    },
+    {
+      "ayah": 40,
+      "wordIndex": 21,
+      "targetWord": "ءَامَنَ",
+      "scholar": "ابن الأنباري",
+      "book": "إيضاح الوقف والابتداء",
+      "page": "2/712",
+      "verdicts": [
+        "حسن"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "(إلا من سبق عليه القول ومن آمن) وقف حسن."
+    },
+    {
+      "ayah": 40,
+      "wordIndex": 21,
+      "targetWord": "ءَامَنَ",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "315 - 316",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "{من كل زوجين اثنين} كاف. و(أهلك) أكفى منه {ومن آمن} أكفى منهما."
+    },
+    {
+      "ayah": 40,
+      "wordIndex": 21,
+      "targetWord": "ءَامَنَ",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/584",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "ط",
+      "typoDetected": null,
+      "comment": "{ومن آمن}"
+    },
+    {
+      "ayah": 40,
+      "wordIndex": 21,
+      "targetWord": "ءَامَنَ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "185",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "ومن آمن (تام) اتفاقًا للابتداء بالنفي وأيضًا من مفعول به عطف على مفعول احمل"
+    },
+    {
+      "ayah": 40,
+      "wordIndex": 21,
+      "targetWord": "ءَامَنَ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 40",
+      "verdicts": [
+        "كاف",
+        "تام"
+      ],
+      "isQila": [
+        false,
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "قال يعقوب: ومن الوقف ﴿إِلَّا مَن سَبَقَ عَلَيْهِ الْقَوْلُ وَمَنْ آمَنَ﴾ فهذا الكافي من الوقف، قال أبو جعفر: وهذا تمام عند نافع، وقال أحمد بن جعفر رحمه الله (ومن آمن) تم حمل معه امرأته سوى التي هلكت وثلاثة بنين وثمانين إنسانًا"
+    },
+    {
+      "ayah": 40,
+      "wordIndex": 26,
+      "targetWord": "قَلِيلٌۭ",
+      "scholar": "ابن الأنباري",
+      "book": "إيضاح الوقف والابتداء",
+      "page": "2/712",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "(وما آمن معه إلا قليل) تام."
+    },
+    {
+      "ayah": 40,
+      "wordIndex": 26,
+      "targetWord": "قَلِيلٌۭ",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "315 - 316",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "{إلا قليل} تام."
+    },
+    {
+      "ayah": 40,
+      "wordIndex": 26,
+      "targetWord": "قَلِيلٌۭ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "185",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "إلاَّ قليل (أتم)"
+    },
+    {
+      "ayah": 40,
+      "wordIndex": 26,
+      "targetWord": "قَلِيلٌۭ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 40",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "﴿وَمَا آمَنَ مَعَهُ إِلَّا قَلِيلٌ﴾ قطع تام"
+    },
+    {
+      "ayah": 41,
+      "wordIndex": 7,
+      "targetWord": "وَمُرْسَىٰهَآ",
+      "scholar": "ابن الأنباري",
+      "book": "إيضاح الوقف والابتداء",
+      "page": "2/712 - 713",
+      "verdicts": [
+        "حسن"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "(مجراها ومرساها) حسن"
+    },
+    {
+      "ayah": 41,
+      "wordIndex": 7,
+      "targetWord": "وَمُرْسَىٰهَآ",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "316",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "{ومرساها} كاف."
+    },
+    {
+      "ayah": 41,
+      "wordIndex": 7,
+      "targetWord": "وَمُرْسَىٰهَآ",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/584",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "ط",
+      "typoDetected": null,
+      "comment": "{ومرساها}"
+    },
+    {
+      "ayah": 41,
+      "wordIndex": 7,
+      "targetWord": "وَمُرْسَىٰهَآ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "185 - 186",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "ومرساها (كاف) ومثله رحيم وكذا كالجبال"
+    },
+    {
+      "ayah": 41,
+      "wordIndex": 7,
+      "targetWord": "وَمُرْسَىٰهَآ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 41",
+      "verdicts": [
+        "صالح"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "﴿وَقَالَ ارْكَبُوا فِيهَا بِسْمِ اللَّهِ مَجْرَاهَا وَمُرْسَاهَا﴾ قطع صالح. قال الضحاك: كان نوح صلى الله عليه وسلم إذا أراد أن يجري بالسفينة قال بسم الله فجرت، وإذا أراد أن يرسي قال بسم الله فأرست،"
+    },
+    {
+      "ayah": 41,
+      "wordIndex": 11,
+      "targetWord": "رَّحِيمٌۭ",
+      "scholar": "ابن الأنباري",
+      "book": "إيضاح الوقف والابتداء",
+      "page": "2/712 - 713",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "(لغفور رحيم) تام."
+    },
+    {
+      "ayah": 41,
+      "wordIndex": 11,
+      "targetWord": "رَّحِيمٌۭ",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "316",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "(رحيم) تام."
+    },
+    {
+      "ayah": 41,
+      "wordIndex": 11,
+      "targetWord": "رَّحِيمٌۭ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "185 - 186",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "ومرساها (كاف) ومثله رحيم وكذا كالجبال"
+    },
+    {
+      "ayah": 41,
+      "wordIndex": 11,
+      "targetWord": "رَّحِيمٌۭ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 41",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "﴿إِنَّ رَبِّي لَغَفُورٌ رَّحِيمٌ﴾ قطع كاف وكذا ﴿وَهِيَ تَجْرِي بِهِمْ فِي مَوْجٍ كَالْجِبَالِ﴾"
+    },
+    {
+      "ayah": 42,
+      "wordIndex": 6,
+      "targetWord": "كَٱلْجِبَالِ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "185 - 186",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "ومرساها (كاف) ومثله رحيم وكذا كالجبال"
+    },
+    {
+      "ayah": 42,
+      "wordIndex": 6,
+      "targetWord": "كَٱلْجِبَالِ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 41",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "﴿إِنَّ رَبِّي لَغَفُورٌ رَّحِيمٌ﴾ قطع كاف وكذا ﴿وَهِيَ تَجْرِي بِهِمْ فِي مَوْجٍ كَالْجِبَالِ﴾"
+    },
+    {
+      "ayah": 42,
+      "wordIndex": 12,
+      "targetWord": "مَعْزِلٍۢ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "185 - 186",
+      "verdicts": [
+        "حسن",
+        "لا يوقف"
+      ],
+      "isQila": [
+        false,
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "في معزل (حسن) إن جعل ما بعده على إضمار قول وليس بوقف إن جعل متصلاً بنادى ومعنى في معزل أي من جانب من دين أبيه وقيل من السفينة"
+    },
+    {
+      "ayah": 42,
+      "wordIndex": 19,
+      "targetWord": "ٱلْكَـٰفِرِينَ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "185 - 186",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "مع الكافرين (كاف)"
+    },
+    {
+      "ayah": 42,
+      "wordIndex": 19,
+      "targetWord": "ٱلْكَـٰفِرِينَ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 42",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "والتمام ﴿وَلَا تَكُن مَّعَ الْكَافِرِينَ﴾."
+    },
+    {
+      "ayah": 43,
+      "wordIndex": 7,
+      "targetWord": "ٱلْمَآءِ",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/584",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "ط",
+      "typoDetected": null,
+      "comment": "{من الماء}"
+    },
+    {
+      "ayah": 43,
+      "wordIndex": 7,
+      "targetWord": "ٱلْمَآءِ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "185 - 186",
+      "verdicts": [
+        "حسن"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "من الماء (حسن)"
+    },
+    {
+      "ayah": 43,
+      "wordIndex": 14,
+      "targetWord": "ٱللَّهِ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "185 - 186",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": {
+        "raw": "لكن من رحمة الله معصوم",
+        "corrected": "لكن من رحمه الله معصوم",
+        "reason": "تصحيف (من رحمه الله) بالتاء المربوطة إلى (رحمة)، والمراد الموصول وصلته كما في عبارة النحاس"
+      },
+      "comment": "من أمر الله (جائز) على أنَّ الاستثناء منقطع أي لكن من رحمه الله معصوم والصحيح أنَّه متصل"
+    },
+    {
+      "ayah": 43,
+      "wordIndex": 14,
+      "targetWord": "ٱللَّهِ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 43",
+      "verdicts": [
+        "كاف",
+        "تام",
+        "لا يوقف"
+      ],
+      "isQila": [
+        true,
+        true,
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": {
+        "raw": "قال أحمد بن جعفر (قال لا عاصم اليوم من أمر الله) ثم قال أبو جعفر",
+        "corrected": "قال أحمد بن جعفر (قال لا عاصم اليوم من أمر الله) تم، قال أبو جعفر",
+        "reason": "تصحيف كلمة (تم) وهو مصطلح أحمد بن جعفر اليزيدي في الوقف التام إلى (ثم)، بدليل افتقار مقول قول أحمد بن جعفر إلى الخبر وتعقيب النحاس عليه بقوله: (وهذا ليس بتمام ولا كاف)"
+      },
+      "comment": "قال: ومن الوقف ﴿لَا عَاصِمَ الْيَوْمَ مِنْ أَمْرِ اللَّهِ﴾ فهذا الوقف الكافي، قال أحمد بن جعفر (قال لا عاصم اليوم من أمر الله) تم، قال أبو جعفر: وهذا ليس بتمام ولا كاف لأن بعده استثناء وللعلماء فيه ثلاثة أقوال ذكر يعقوب منها اثنين أحدهما أن يكون عاصم بمعنى معصوم مثل ﴿مَّاءٍ دَافِقٍ﴾ أي لا يعصم اليوم من الغرق إلا من رحمه الله فهو على هذا استند بالأول، والثاني لا عاصم اليوم من أمر الله لكن من رحمه الله فإنه يعصم، والاستثناء المنقطع لا يتم الكلام على ما قبله لأنه لا بد أن يكون الثاني فيه سبب، والقول الثالث أن المعنى لا يعصم اليوم ولا ننجي من الغرق إلا من رحم أي إلا الله كما تقول لا يخلصنا مما نحن فيه إلا الله فهذا أيضًا أشد اتصالاً بما قبله وهو اختيار محمد بن جرير في المعنى."
+    },
+    {
+      "ayah": 43,
+      "wordIndex": 17,
+      "targetWord": "رَّحِمَ",
+      "scholar": "ابن الأنباري",
+      "book": "إيضاح الوقف والابتداء",
+      "page": "2/712 - 713",
+      "verdicts": [
+        "حسن"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "(إلا من رحم) حسن."
+    },
+    {
+      "ayah": 43,
+      "wordIndex": 17,
+      "targetWord": "رَّحِمَ",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "316",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "{إلا من رحم} كاف. ومثله {ويا سماء أقلعي}."
+    },
+    {
+      "ayah": 43,
+      "wordIndex": 17,
+      "targetWord": "رَّحِمَ",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/584",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "ج",
+      "typoDetected": null,
+      "comment": "لاتفاق الجملتين مع اختلاف القائل."
+    },
+    {
+      "ayah": 43,
+      "wordIndex": 17,
+      "targetWord": "رَّحِمَ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "185 - 186",
+      "verdicts": [
+        "حسن",
+        "كاف"
+      ],
+      "isQila": [
+        false,
+        true
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "والوقف على من رحم (حسن) وقال أبو عمرو كاف وخبر لا محذوف أي لا عاصم موجود ولا يجوز أن يكون الخبر اليوم لأنَّ ظرف الزمان لا يكون خبرًا عن الجثة ويجوز أن يكون الفاعل بمعنى المفعول والمفعول بمعنى الفاعل كقوله من ماء دافق أي مدفوق وعيشة راضية أي مرضية"
+    },
+    {
+      "ayah": 43,
+      "wordIndex": 17,
+      "targetWord": "رَّحِمَ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 43",
+      "verdicts": [
+        "تام",
+        "كاف"
+      ],
+      "isQila": [
+        false,
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "قال يعقوب: الاستقصاء يعني في الوقف إلا من رحم،"
+    },
+    {
+      "ayah": 43,
+      "wordIndex": 23,
+      "targetWord": "ٱلْمُغْرَقِينَ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "185 - 186",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "من المغرقين (كاف) وكذا أقلعي"
+    },
+    {
+      "ayah": 44,
+      "wordIndex": 4,
+      "targetWord": "مَآءَكِ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 43",
+      "verdicts": [
+        "لا يوقف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "والوقف الكافي عند أبي حاتم بعد هذا ﴿وَاسْتَوَتْ عَلَى الْجُودِيِّ﴾ وقد غلط في هذا لأن ﴿وَقِيلَ﴾ معطوف على ما قبله ولو جاز الوقف على (الجودي) على أنه كاف لكان هكذا ﴿وَقِيلَ يَا أَرْضُ ابْلَعِي مَاءَكِ﴾ وكذا ﴿أَقْلِعِي﴾ وكذا ﴿وَغِيضَ الْمَاءُ﴾ وكذا ﴿وَقُضِيَ الْأَمْرُ﴾ لأن بعض الكلام معطوف على بعض."
+    },
+    {
+      "ayah": 44,
+      "wordIndex": 6,
+      "targetWord": "أَقْلِعِى",
+      "scholar": "ابن الأنباري",
+      "book": "إيضاح الوقف والابتداء",
+      "page": "2/712 - 713",
+      "verdicts": [
+        "حسن"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "(إلا من رحم) حسن. ومثله: (يا سماء أقلعي)"
+    },
+    {
+      "ayah": 44,
+      "wordIndex": 6,
+      "targetWord": "أَقْلِعِى",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "316",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "{إلا من رحم} كاف. ومثله {ويا سماء أقلعي}."
+    },
+    {
+      "ayah": 44,
+      "wordIndex": 6,
+      "targetWord": "أَقْلِعِى",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "185 - 186",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "من المغرقين (كاف) وكذا أقلعي"
+    },
+    {
+      "ayah": 44,
+      "wordIndex": 6,
+      "targetWord": "أَقْلِعِى",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 43",
+      "verdicts": [
+        "لا يوقف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "والوقف الكافي عند أبي حاتم بعد هذا ﴿وَاسْتَوَتْ عَلَى الْجُودِيِّ﴾ وقد غلط في هذا لأن ﴿وَقِيلَ﴾ معطوف على ما قبله ولو جاز الوقف على (الجودي) على أنه كاف لكان هكذا ﴿وَقِيلَ يَا أَرْضُ ابْلَعِي مَاءَكِ﴾ وكذا ﴿أَقْلِعِي﴾ وكذا ﴿وَغِيضَ الْمَاءُ﴾ وكذا ﴿وَقُضِيَ الْأَمْرُ﴾ لأن بعض الكلام معطوف على بعض."
+    },
+    {
+      "ayah": 44,
+      "wordIndex": 8,
+      "targetWord": "ٱلْمَآءُ",
+      "scholar": "ابن الأنباري",
+      "book": "إيضاح الوقف والابتداء",
+      "page": "2/712 - 713",
+      "verdicts": [
+        "لا يوقف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "قال السجستاني: (واستوت على الجودي) وقف كاف. وهذا غلط لأن قوله: (وقيل بعدا) نسق على (غيض الماء). ولو حسن الوقف على (الجودي) على ما ذكر لحسن الوقف على (الماء) وعلى (الأمر)."
+    },
+    {
+      "ayah": 44,
+      "wordIndex": 8,
+      "targetWord": "ٱلْمَآءُ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "185 - 186",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "وغيض الماء (جائز) ومثله الأمر"
+    },
+    {
+      "ayah": 44,
+      "wordIndex": 8,
+      "targetWord": "ٱلْمَآءُ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 43",
+      "verdicts": [
+        "لا يوقف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "والوقف الكافي عند أبي حاتم بعد هذا ﴿وَاسْتَوَتْ عَلَى الْجُودِيِّ﴾ وقد غلط في هذا لأن ﴿وَقِيلَ﴾ معطوف على ما قبله ولو جاز الوقف على (الجودي) على أنه كاف لكان هكذا ﴿وَقِيلَ يَا أَرْضُ ابْلَعِي مَاءَكِ﴾ وكذا ﴿أَقْلِعِي﴾ وكذا ﴿وَغِيضَ الْمَاءُ﴾ وكذا ﴿وَقُضِيَ الْأَمْرُ﴾ لأن بعض الكلام معطوف على بعض."
+    },
+    {
+      "ayah": 44,
+      "wordIndex": 10,
+      "targetWord": "ٱلْأَمْرُ",
+      "scholar": "ابن الأنباري",
+      "book": "إيضاح الوقف والابتداء",
+      "page": "2/712 - 713",
+      "verdicts": [
+        "لا يوقف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "قال السجستاني: (واستوت على الجودي) وقف كاف. وهذا غلط لأن قوله: (وقيل بعدا) نسق على (غيض الماء). ولو حسن الوقف على (الجودي) على ما ذكر لحسن الوقف على (الماء) وعلى (الأمر)."
+    },
+    {
+      "ayah": 44,
+      "wordIndex": 10,
+      "targetWord": "ٱلْأَمْرُ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "185 - 186",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "وغيض الماء (جائز) ومثله الأمر"
+    },
+    {
+      "ayah": 44,
+      "wordIndex": 10,
+      "targetWord": "ٱلْأَمْرُ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 43",
+      "verdicts": [
+        "لا يوقف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "والوقف الكافي عند أبي حاتم بعد هذا ﴿وَاسْتَوَتْ عَلَى الْجُودِيِّ﴾ وقد غلط في هذا لأن ﴿وَقِيلَ﴾ معطوف على ما قبله ولو جاز الوقف على (الجودي) على أنه كاف لكان هكذا ﴿وَقِيلَ يَا أَرْضُ ابْلَعِي مَاءَكِ﴾ وكذا ﴿أَقْلِعِي﴾ وكذا ﴿وَغِيضَ الْمَاءُ﴾ وكذا ﴿وَقُضِيَ الْأَمْرُ﴾ لأن بعض الكلام معطوف على بعض."
+    },
+    {
+      "ayah": 44,
+      "wordIndex": 13,
+      "targetWord": "ٱلْجُودِىِّ",
+      "scholar": "ابن الأنباري",
+      "book": "إيضاح الوقف والابتداء",
+      "page": "2/712 - 713",
+      "verdicts": [
+        "كاف",
+        "لا يوقف"
+      ],
+      "isQila": [
+        true,
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "قال السجستاني: (واستوت على الجودي) وقف كاف. وهذا غلط لأن قوله: (وقيل بعدا) نسق على (غيض الماء). ولو حسن الوقف على (الجودي) على ما ذكر لحسن الوقف على (الماء) وعلى (الأمر)."
+    },
+    {
+      "ayah": 44,
+      "wordIndex": 13,
+      "targetWord": "ٱلْجُودِىِّ",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "316",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "{على الجودي} كاف، لأن قوله: {وقيل بعدًا للقوم الظالمين} من قول نوح والمؤمنين."
+    },
+    {
+      "ayah": 44,
+      "wordIndex": 13,
+      "targetWord": "ٱلْجُودِىِّ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "185 - 186",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "واستوت على الجودي (كاف) والواو بعده للاستئناف لا للعطف لأنَّه فرغ من صفة الماء وجفافه"
+    },
+    {
+      "ayah": 44,
+      "wordIndex": 13,
+      "targetWord": "ٱلْجُودِىِّ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 43",
+      "verdicts": [
+        "كاف",
+        "لا يوقف"
+      ],
+      "isQila": [
+        true,
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "والوقف الكافي عند أبي حاتم بعد هذا ﴿وَاسْتَوَتْ عَلَى الْجُودِيِّ﴾ وقد غلط في هذا لأن ﴿وَقِيلَ﴾ معطوف على ما قبله ولو جاز الوقف على (الجودي) على أنه كاف لكان هكذا ﴿وَقِيلَ يَا أَرْضُ ابْلَعِي مَاءَكِ﴾ وكذا ﴿أَقْلِعِي﴾ وكذا ﴿وَغِيضَ الْمَاءُ﴾ وكذا ﴿وَقُضِيَ الْأَمْرُ﴾ لأن بعض الكلام معطوف على بعض."
+    },
+    {
+      "ayah": 44,
+      "wordIndex": 17,
+      "targetWord": "ٱلظَّـٰلِمِينَ",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "316",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "(الظالمين) تام."
+    },
+    {
+      "ayah": 44,
+      "wordIndex": 17,
+      "targetWord": "ٱلظَّـٰلِمِينَ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "185 - 186",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "الظالمين (تام)"
+    },
+    {
+      "ayah": 45,
+      "wordIndex": 9,
+      "targetWord": "أَهْلِى",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "186",
+      "verdicts": [
+        "حسن"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "من أهلي (حسن)"
+    },
+    {
+      "ayah": 45,
+      "wordIndex": 12,
+      "targetWord": "ٱلْحَقُّ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "186",
+      "verdicts": [
+        "حسن"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "من أهلي (حسن) وإنَّ وعدك الحق (أحسن) مما قبله"
+    },
+    {
+      "ayah": 45,
+      "wordIndex": 15,
+      "targetWord": "ٱلْحَـٰكِمِينَ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "186",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "الحاكمين (كاف)،"
+    },
+    {
+      "ayah": 46,
+      "wordIndex": 6,
+      "targetWord": "أَهْلِكَ",
+      "scholar": "ابن الأنباري",
+      "book": "إيضاح الوقف والابتداء",
+      "page": "2/713 - 714",
+      "verdicts": [
+        "لا يوقف",
+        "قيل فيه وقف"
+      ],
+      "isQila": [
+        false,
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "(إنه عمل غير صالح) قرأ النبي صلى الله عليه وسلم، وابن عباس وعروة بن الزبير وعكرمة والكسائي: (إنه عمل غير صالح) بكسر الميم وفتح اللام، وكان ابن مسعود والشعبي والحسن وأبو جعفر وشيبة ونافع وابن كثير وعاصم والأعمش وأبو عمرو وحمزة يقرؤون: (إنه عمل غير صالح) بفتح الميم وضم اللام. فمن قرأ: (إنه عمل غير صالح) لم يقف على (ليس من أهلك) لأن الهاء الثانية تعود على الهاء الأولى. ومن قرأ: (إنه عمل غير صالح) وقف على (ليس من أهلك) لأن الهاء تعود على السؤال فانقطعت مما قبلها كأنه قال: «إن سؤالك إياي ما ليس لك به علم عمل غير صالح». قال أبو بكر: وقد أجاز بعض أهل العربية إعادة الهاء في (إنه) على «الابن» و(عمل) و(غير) مرفوعان. وقال: المعنى عندي «إن ابنك ذو عمل غير صالح» فحذف «ذو» وقام: (عمل) مقامه كما قالت العرب: عبد الله إقبال وإدبار. وهم يريدون عبد الله ذو إقبال وإدبار. ومثله: «يومنا مطر وريح» يعني به «ذو مطر وريح». فمن بنى على هذا القول ألحق هذه القراءة بقراءة من قرأ: (إنه عمل غير صالح) في الوقف ولم يجعل بينهما فرقًا."
+    },
+    {
+      "ayah": 46,
+      "wordIndex": 6,
+      "targetWord": "أَهْلِكَ",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "316 -317",
+      "verdicts": [
+        "لا يوقف",
+        "حسن"
+      ],
+      "isQila": [
+        false,
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "ومن قرأ (إنه عمِل غير صالح) بكسر الميم وفتح اللام لم يبتدئ بذلك ولم يقف على ما قبله لأن المراد ابن نوح عليه السلام. ومن قرأ: (إنه عمل غير صالح) بفتح الميم ورفع اللام وتنوينها ورفع الراء فله تقديران: أحدهما أن يراد ابن نوح كالأول بتقدير: إنه ذو عمل غير صالح. فعلى هذا أيضًا لا يوقف على ما قبله ولا يبتدأ به. والثاني أن يراد السؤال بتقدير: إن سؤالك إياي أن أنجي كافرًا عمل غير صالح. وهو تقدير أبي عمرو بن العلاء وغيره. فعلى هذا يحسن الوقف على ما قبله والابتداء به لأنه منقطع مما قبله."
+    },
+    {
+      "ayah": 46,
+      "wordIndex": 6,
+      "targetWord": "أَهْلِكَ",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/584 - 585",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "ج",
+      "typoDetected": null,
+      "comment": "لأن {إن} تصلح لتعليل ما قبلها."
+    },
+    {
+      "ayah": 46,
+      "wordIndex": 6,
+      "targetWord": "أَهْلِكَ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "186",
+      "verdicts": [
+        "كاف",
+        "حسن",
+        "لا يوقف"
+      ],
+      "isQila": [
+        false,
+        false,
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "وكذا ليس من أهلك (كاف) على قراءة من قرأ إنَّه عمل غير صالح برفع عمل وتنوينه وفتح الميم وبها قرأ ابن كثير ونافع وعاصم وأبو عمرو وحمزة وابن عامر وذلك على أنَّ الضمير في إنَّه الثاني يعود إلى السؤال كأنَّه قال سؤالك يا نوح إياي أن أنجيه كافرًا ما ليس لك به علم عمل غير صالح فعلى هذا يحسن الوقف على من أهلك ويحسن الابتداء بما بعده لأنَّه منقطع مما قبله وليس بوقف على أنَّ الضمير في إنه عائد على ابن نوح والتقدير إنَّ ابنك ذو عمل غير صالح فحذف ذو وأقيم عمل مقامه كما تقول عبد الله إقبال وإدبار أي ذو إقبال وإدبار وليس بوقف أيضًا على قراءة الكسائي إنَّه عمل غير صالح بالفعل الماضي بكسر الميم وفتح اللام ونصب غير نعتًا لمصدر محذوف تقديره إنَّه عمل عملاً غير صالح فلا يوقف على من أهلك لأنَّ الضمير في إنَّه الثاني يعود على الضمير في إنَّه ليس من أهلك الأول فبعض الكلام متصل ببعضه فوصله بما قبله أولى لأنَّه مع ما قبله كلام واحد وهذا غاية في بيان هذا الوقف ولله الحمد"
+    },
+    {
+      "ayah": 46,
+      "wordIndex": 6,
+      "targetWord": "أَهْلِكَ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 43",
+      "verdicts": [
+        "تام",
+        "لا يوقف",
+        "صالح"
+      ],
+      "isQila": [
+        true,
+        false,
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": {
+        "raw": "قال أحمد بن جعفر ﴿إِنَّهُ لَيْسَ مِنْ أَهْلِكَ﴾ ثم قال أبو جعفر",
+        "corrected": "قال أحمد بن جعفر ﴿إِنَّهُ لَيْسَ مِنْ أَهْلِكَ﴾ تم، قال أبو جعفر",
+        "reason": "تصحيف كلمة (تم) وهو مصطلح أحمد بن جعفر اليزيدي في الوقف التام إلى (ثم)"
+      },
+      "comment": "قال أحمد بن جعفر ﴿إِنَّهُ لَيْسَ مِنْ أَهْلِكَ﴾ تم، قال أبو جعفر: من قرأ ﴿إِنَّهُ عَمَلٌ غَيْرُ صَالِحٍ﴾ لم يقف على من أهلك لأن الهاء التي في أنه عمل غير صالح تعود على الضمير الذي في أنه ليس من أهلك فبعض الكلام متصل ببعض وهذه قراءة شاذة خارجة عن الجماعة قرأ بها الكسائي وهي تروى عن عكرمة ومن أعجب الأشياء حجة من زعم أنها قراءة النبي صلى الله عليه وسلم والحديث لا يصح لأنه من رواية شهر بن حوشب عن أم سلمه ولا نعلم أن شهرًا لقى أم سلمه، ومنهم من يقول عن شهر عن أسماء بنت يزيد عن أم سلمه ولا نعرف أسماء بنت يزيد، ومن قرأ أنه عمل غير صالح صلح أن يقف على أنه ليس من أهلك وهذه قراءة ابن مسعود والحسن والشعبي وأبي عمرو وابن كثير وأبي جعفر وشيبة ونافع والأعمش وعاصم وحمزة، وقال أحمد بن جعفر: أي سؤالك إياي عمل غير صالح،"
+    },
+    {
+      "ayah": 46,
+      "wordIndex": 10,
+      "targetWord": "صَـٰلِحٍۢ",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/584 - 585",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "ز",
+      "typoDetected": null,
+      "comment": "[والوصل أحسن، لأن الفاء للتعقيب]."
+    },
+    {
+      "ayah": 46,
+      "wordIndex": 17,
+      "targetWord": "عِلْمٌ",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/584 - 585",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "ط",
+      "typoDetected": null,
+      "comment": "[{به علم}]."
+    },
+    {
+      "ayah": 46,
+      "wordIndex": 17,
+      "targetWord": "عِلْمٌ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "186",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "ما ليس لك به علم (كاف) على استئناف ما بعده ومثله الجاهلين"
+    },
+    {
+      "ayah": 46,
+      "wordIndex": 23,
+      "targetWord": "ٱلْجَـٰهِلِينَ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "186",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "ما ليس لك به علم (كاف) على استئناف ما بعده ومثله الجاهلين"
+    },
+    {
+      "ayah": 46,
+      "wordIndex": 23,
+      "targetWord": "ٱلْجَـٰهِلِينَ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 46",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "﴿إِنِّي أَعِظُكَ أَن تَكُونَ مِنَ الْجَاهِلِينَ﴾ قطع كاف وكذا ﴿وَإِلَّا تَغْفِرْ لِي وَتَرْحَمْنِي أَكُن مِّنَ الْخَاسِرِينَ﴾."
+    },
+    {
+      "ayah": 47,
+      "wordIndex": 12,
+      "targetWord": "عِلْمٌۭ",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/584 - 585",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "ط",
+      "typoDetected": null,
+      "comment": "{به علم}"
+    },
+    {
+      "ayah": 47,
+      "wordIndex": 12,
+      "targetWord": "عِلْمٌۭ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "186",
+      "verdicts": [
+        "حسن"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "به علم (حسن) للابتداء بالشرط"
+    },
+    {
+      "ayah": 47,
+      "wordIndex": 19,
+      "targetWord": "ٱلْخَـٰسِرِينَ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "186",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "من الخاسرين (كاف) ومثله ممن معك"
+    },
+    {
+      "ayah": 47,
+      "wordIndex": 19,
+      "targetWord": "ٱلْخَـٰسِرِينَ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 46",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "﴿إِنِّي أَعِظُكَ أَن تَكُونَ مِنَ الْجَاهِلِينَ﴾ قطع كاف وكذا ﴿وَإِلَّا تَغْفِرْ لِي وَتَرْحَمْنِي أَكُن مِّنَ الْخَاسِرِينَ﴾."
+    },
+    {
+      "ayah": 48,
+      "wordIndex": 11,
+      "targetWord": "مَّعَكَ",
+      "scholar": "ابن الأنباري",
+      "book": "إيضاح الوقف والابتداء",
+      "page": "2/713 - 714",
+      "verdicts": [
+        "حسن"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "(وعلى أمم ممن معك) حسن."
+    },
+    {
+      "ayah": 48,
+      "wordIndex": 11,
+      "targetWord": "مَّعَكَ",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "316 -317",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "{ممن معك} كاف."
+    },
+    {
+      "ayah": 48,
+      "wordIndex": 11,
+      "targetWord": "مَّعَكَ",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/584 - 585",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "ط",
+      "typoDetected": null,
+      "comment": "{معك}"
+    },
+    {
+      "ayah": 48,
+      "wordIndex": 11,
+      "targetWord": "مَّعَكَ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "186",
+      "verdicts": [
+        "كاف",
+        "تام"
+      ],
+      "isQila": [
+        false,
+        true
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "من الخاسرين (كاف) ومثله ممن معك وقيل تام لأنَّ وأمم مبتدأ محذوف الصفة وهي المسوّغة للابتداء بالنكرة أي وأمم منهم أو مبتدأ ولا تقدر صفة والخبر سنمتعهم في التقديرين والمسوغ التفصيل"
+    },
+    {
+      "ayah": 48,
+      "wordIndex": 11,
+      "targetWord": "مَّعَكَ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 48",
+      "verdicts": [
+        "قيل فيه وقف",
+        "تام"
+      ],
+      "isQila": [
+        true,
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "قال يعقوب: ومن الوقف ﴿وَبَرَكَاتٍ عَلَيْكَ وَعَلَىٰ أُمَمٍ مِّمَّن مَّعَكَ﴾ ثم قال الله جل وعز ﴿وَأُمَمٌ سَنُمَتِّعُهُمْ﴾ وقال الأخفش: وعلى أمم ممن معك: تمام، وهو قول أبي حاتم"
+    },
+    {
+      "ayah": 48,
+      "wordIndex": 18,
+      "targetWord": "أَلِيمٌۭ",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "316 -317",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "{ممن معك} كاف. وكذا رؤوس الآي بعد، وآخر كل قصة تمام."
+    },
+    {
+      "ayah": 48,
+      "wordIndex": 18,
+      "targetWord": "أَلِيمٌۭ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "186",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "أليم (تام)"
+    },
+    {
+      "ayah": 48,
+      "wordIndex": 18,
+      "targetWord": "أَلِيمٌۭ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 48",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "﴿ثُمَّ يَمَسُّهُم مِّنَّا عَذَابٌ أَلِيمٌ﴾ قطع تام وكذا ﴿فَاصْبِرْ إِنَّ الْعَاقِبَةَ لِلْمُتَّقِينَ﴾."
+    },
+    {
+      "ayah": 49,
+      "wordIndex": 19,
+      "targetWord": "لِلْمُتَّقِينَ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 48",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "﴿ثُمَّ يَمَسُّهُم مِّنَّا عَذَابٌ أَلِيمٌ﴾ قطع تام وكذا ﴿فَاصْبِرْ إِنَّ الْعَاقِبَةَ لِلْمُتَّقِينَ﴾."
+    }
+  ]
+}

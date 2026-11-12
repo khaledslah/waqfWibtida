@@ -37,7 +37,7 @@ QUOTAS_LIVE_FILE = SCRATCH / "quotas_live.json"
 LEDGER_FILE = SCRATCH / "surah_telemetry_ledger.json"
 
 # Observed qpEbW deduction per 4 Argon High turn:
-# 120 credits per turn (= 5% of the 2,400 5h burst pool, or 0.248% of the 48,384 macro pool)
+# 120 credits per turn (= 5% of the 2,400 5h-reset pool, or 0.248% of the 48,384 weekly pool)
 CREDITS_PER_ARGON_HIGH_TURN = 120
 BURST_POOL_LIMIT = 2400
 MACRO_POOL_LIMIT = 48384
@@ -95,9 +95,12 @@ def fmt_iso_to_12h(ts_str: str | None, include_seconds: bool = True, include_dat
     return s
 
 
+FREE_POOL_LIMIT = 12096
+
+
 def explain_plan_limit(limit: int | None, argon_high_ok: bool | None) -> dict[str, str]:
     """Explain what Google's qpEbW plan limit number means for this account."""
-    if argon_high_ok is False or limit == 12096:
+    if argon_high_ok is False or limit == FREE_POOL_LIMIT:
         return {
             "bucket_type": "Free / Auto Pool (12,096)",
             "short_label": "Free/Auto pool (no 4 Argon High)",
@@ -106,24 +109,24 @@ def explain_plan_limit(limit: int | None, argon_high_ok: bool | None) -> dict[st
                 "This account does not have active Pro / 4 Argon High access in the model picker."
             ),
         }
-    if limit == 2400:
+    if limit == BURST_POOL_LIMIT:
         return {
-            "bucket_type": "5h Rolling Burst Cap (2,400)",
-            "short_label": "5h burst window (~20 Argon High turns @ 120 cr/turn)",
+            "bucket_type": "5h Reset Burst Cap (2,400)",
+            "short_label": "5h reset (~20 Argon High turns @ 120 cr/turn)",
             "explanation": (
-                "2,400 is Google AI Pro's short (~5-hour) rolling burst cap. "
-                "Each 4 Argon High turn uses 120 credits (5% of 2,400 = ~20 turns per burst window). "
-                "Google's qpEbW RPC automatically reports whichever bucket (2,400 burst vs 48,384 macro) "
+                "2,400 = 5-hour rolling reset burst cap. "
+                "Each 4 Argon High turn uses 120 credits (~20 turns per 5h window). "
+                "Google's qpEbW RPC reports whichever bucket (2,400 5h vs 48,384 weekly) "
                 "has the higher % used right now."
             ),
         }
-    if limit == 48384:
+    if limit == MACRO_POOL_LIMIT:
         return {
-            "bucket_type": "Multi-Day Pro Macro Pool (48,384)",
-            "short_label": "Multi-day Pro pool (~403 Argon High turns @ 120 cr/turn)",
+            "bucket_type": "Weekly Pro Pool (48,384)",
+            "short_label": "Weekly pool (~403 Argon High turns @ 120 cr/turn)",
             "explanation": (
-                "48,384 is Google AI Pro's multi-day macro credit pool (~403 Argon High turns at 120 credits/turn). "
-                "It is shown when the short 2,400 burst window is freshly reset (0% used) so the macro pool "
+                "48,384 = weekly Pro credit pool (~403 Argon High turns at 120 credits/turn). "
+                "Shown when the 5h burst window is freshly reset (0% used) so the weekly pool "
                 "has the higher % used."
             ),
         }
@@ -132,6 +135,190 @@ def explain_plan_limit(limit: int | None, argon_high_ok: bool | None) -> dict[st
         "short_label": "Pro/Thinking credit pool",
         "explanation": "Server-reported credit pool from Google's qpEbW usage RPC (~120 credits per 4 Argon High turn).",
     }
+
+
+def _pool_snapshot(
+    *,
+    key: str,
+    label: str,
+    limit: int,
+    remaining: int | None,
+    used_pct: float | None = None,
+    left_pct: float | None = None,
+    reset_in_s: int | None = None,
+    reset_in_human: str | None = None,
+    reset_at: str | None = None,
+    reset_at_12h: str | None = None,
+    last_seen_at: str | None = None,
+    binding: bool = False,
+    known: bool = False,
+) -> dict[str, Any]:
+    if remaining is not None and limit > 0:
+        if used_pct is None:
+            used_pct = round(100.0 * (limit - remaining) / limit, 1)
+        if left_pct is None:
+            left_pct = round(100.0 * remaining / limit, 1)
+        known = True
+    return {
+        "key": key,
+        "label": label,
+        "limit": limit,
+        "remaining": remaining,
+        "used_pct": used_pct,
+        "left_pct": left_pct,
+        "reset_in_s": reset_in_s,
+        "reset_in_human": reset_in_human,
+        "reset_at": reset_at,
+        "reset_at_12h": reset_at_12h,
+        "lastSeenAt": last_seen_at,
+        "binding": binding,
+        "known": known,
+    }
+
+
+def merge_quota_pools(entry: dict[str, Any], prev_pools: dict[str, Any] | None = None) -> dict[str, Any]:
+    """Keep both Pro pools (5h + weekly) per account.
+
+    qpEbW returns only the currently binding bucket. We cache the last-seen
+    reading for each pool so the dashboard can always show both.
+    """
+    prev_pools = prev_pools if isinstance(prev_pools, dict) else {}
+    argon_ok = entry.get("argon_high_ok")
+    rem = entry.get("remaining")
+    lim = entry.get("limit")
+    try:
+        rem_i = int(rem) if rem is not None else None
+    except (TypeError, ValueError):
+        rem_i = None
+    try:
+        lim_i = int(lim) if lim is not None else None
+    except (TypeError, ValueError):
+        lim_i = None
+
+    seen_at = entry.get("lastSeenAt")
+    used_pct = entry.get("used_pct")
+    left_pct = entry.get("left_pct")
+    reset_in_s = entry.get("reset_in_s")
+    reset_in_human = entry.get("reset_in_human")
+    reset_at = entry.get("reset_at")
+    reset_at_12h = entry.get("reset_at_12h")
+
+    def _keep(key: str, label: str, default_limit: int) -> dict[str, Any]:
+        prev = prev_pools.get(key) if isinstance(prev_pools.get(key), dict) else {}
+        return _pool_snapshot(
+            key=key,
+            label=label,
+            limit=int(prev.get("limit") or default_limit),
+            remaining=prev.get("remaining"),
+            used_pct=prev.get("used_pct"),
+            left_pct=prev.get("left_pct"),
+            reset_in_s=prev.get("reset_in_s"),
+            reset_in_human=prev.get("reset_in_human"),
+            reset_at=prev.get("reset_at"),
+            reset_at_12h=prev.get("reset_at_12h"),
+            last_seen_at=prev.get("lastSeenAt"),
+            binding=False,
+            known=bool(prev.get("known") and prev.get("remaining") is not None),
+        )
+
+    if argon_ok is False or lim_i == FREE_POOL_LIMIT:
+        free = _pool_snapshot(
+            key="free",
+            label="Free / Auto",
+            limit=FREE_POOL_LIMIT,
+            remaining=rem_i,
+            used_pct=float(used_pct) if used_pct is not None else None,
+            left_pct=float(left_pct) if left_pct is not None else None,
+            reset_in_s=reset_in_s,
+            reset_in_human=reset_in_human,
+            reset_at=reset_at,
+            reset_at_12h=reset_at_12h,
+            last_seen_at=seen_at,
+            binding=True,
+            known=rem_i is not None,
+        )
+        return {"free": free}
+
+    burst = _keep("burst_5h", "5h reset", BURST_POOL_LIMIT)
+    weekly = _keep("weekly", "Weekly", MACRO_POOL_LIMIT)
+
+    # Seed weekly from a prior start_remaining if it looked like the macro pool.
+    if not weekly.get("known"):
+        try:
+            start_rem = int(entry.get("start_remaining")) if entry.get("start_remaining") is not None else None
+        except (TypeError, ValueError):
+            start_rem = None
+        if start_rem is not None and start_rem > BURST_POOL_LIMIT:
+            weekly = _pool_snapshot(
+                key="weekly",
+                label="Weekly",
+                limit=MACRO_POOL_LIMIT,
+                remaining=min(start_rem, MACRO_POOL_LIMIT),
+                last_seen_at=seen_at,
+                binding=False,
+                known=True,
+            )
+
+    binding_key = None
+    if lim_i == BURST_POOL_LIMIT:
+        binding_key = "burst_5h"
+        burst = _pool_snapshot(
+            key="burst_5h",
+            label="5h reset",
+            limit=BURST_POOL_LIMIT,
+            remaining=rem_i,
+            used_pct=float(used_pct) if used_pct is not None else None,
+            left_pct=float(left_pct) if left_pct is not None else None,
+            reset_in_s=reset_in_s,
+            reset_in_human=reset_in_human,
+            reset_at=reset_at,
+            reset_at_12h=reset_at_12h,
+            last_seen_at=seen_at,
+            binding=True,
+            known=rem_i is not None,
+        )
+    elif lim_i == MACRO_POOL_LIMIT:
+        binding_key = "weekly"
+        weekly = _pool_snapshot(
+            key="weekly",
+            label="Weekly",
+            limit=MACRO_POOL_LIMIT,
+            remaining=rem_i,
+            used_pct=float(used_pct) if used_pct is not None else None,
+            left_pct=float(left_pct) if left_pct is not None else None,
+            reset_in_s=reset_in_s,
+            reset_in_human=reset_in_human,
+            reset_at=reset_at,
+            reset_at_12h=reset_at_12h,
+            last_seen_at=seen_at,
+            binding=True,
+            known=rem_i is not None,
+        )
+    elif lim_i is not None and rem_i is not None:
+        # Unknown Pro limit — still keep both standard pools and mark current as other.
+        other = _pool_snapshot(
+            key="other",
+            label=f"Plan ({lim_i})",
+            limit=lim_i,
+            remaining=rem_i,
+            used_pct=float(used_pct) if used_pct is not None else None,
+            left_pct=float(left_pct) if left_pct is not None else None,
+            reset_in_s=reset_in_s,
+            reset_in_human=reset_in_human,
+            reset_at=reset_at,
+            reset_at_12h=reset_at_12h,
+            last_seen_at=seen_at,
+            binding=True,
+            known=True,
+        )
+        out = {"burst_5h": burst, "weekly": weekly, "other": other}
+        out["burst_5h"]["binding"] = False
+        out["weekly"]["binding"] = False
+        return out
+
+    burst["binding"] = binding_key == "burst_5h"
+    weekly["binding"] = binding_key == "weekly"
+    return {"burst_5h": burst, "weekly": weekly}
 
 
 def discover_surah_batches(surah: int) -> list[tuple[str, int, int]]:
@@ -296,8 +483,12 @@ def compute_batch_telemetry(bid: str, steps: list[dict[str, Any]], status_entry:
     }
 
 
-def build_all_surahs_ledger() -> dict[str, Any]:
-    """Build and persist the telemetry/quota/token/cost ledger for all Surahs in turns.jsonl."""
+def build_all_surahs_ledger(surahs: list[int] | None = None) -> dict[str, Any]:
+    """Build and persist the telemetry/quota/token/cost ledger for Surahs in turns/status.
+
+    Optional `surahs` limits which Surah numbers are rebuilt (used by the live runner
+    after each batch finishes). When omitted, all known Surahs are included.
+    """
     turns: list[dict[str, Any]] = []
     if TURNS_FILE.exists():
         for line in TURNS_FILE.read_text(encoding="utf-8", errors="replace").splitlines():
@@ -320,14 +511,27 @@ def build_all_surahs_ledger() -> dict[str, Any]:
                 except Exception:
                     pass
 
-    surahs_seen = sorted(
-        {
-            int(m.group(1))
-            for t in turns
-            if (m := re.match(r"^s(\d{3})_", str(t.get("batch") or "")))
-        }
-        | {6}
-    )
+    surahs_from_turns = {
+        int(m.group(1))
+        for t in turns
+        if (m := re.match(r"^s(\d{3})_", str(t.get("batch") or "")))
+    }
+    surahs_from_status: set[int] = set()
+    for st_file in SCRATCH.glob("surah*_parallel_status.json"):
+        m = re.match(r"^surah(\d+)_parallel_status\.json$", st_file.name)
+        if m:
+            surahs_from_status.add(int(m.group(1)))
+            continue
+        try:
+            doc = json.loads(st_file.read_text(encoding="utf-8-sig"))
+            if isinstance(doc, dict) and doc.get("surah") is not None:
+                surahs_from_status.add(int(doc["surah"]))
+        except Exception:
+            pass
+    surahs_seen = sorted(surahs_from_turns | surahs_from_status | {6})
+    filter_only = surahs is not None
+    if filter_only:
+        surahs_seen = sorted({int(s) for s in surahs})
 
     surah_ledgers: dict[str, Any] = {}
     for s_num in surahs_seen:
@@ -340,7 +544,20 @@ def build_all_surahs_ledger() -> dict[str, Any]:
                 by_batch.setdefault(b, []).append(t)
 
         status_path = SCRATCH / f"surah{s_num}_parallel_status.json"
-        status_data = json.loads(status_path.read_text(encoding="utf-8-sig")) if status_path.exists() else {}
+        status_doc = json.loads(status_path.read_text(encoding="utf-8-sig")) if status_path.exists() else {}
+        if isinstance(status_doc, dict) and isinstance(status_doc.get("batches"), dict):
+            status_data = status_doc["batches"]
+        elif isinstance(status_doc, dict):
+            # Legacy flat map (batch-id keys only) — ignore metadata keys.
+            status_data = {
+                k: v
+                for k, v in status_doc.items()
+                if isinstance(v, dict) and re.match(rf"^s{s_num:03d}_", k)
+            }
+        else:
+            status_data = {}
+        for bid in status_data:
+            by_batch.setdefault(bid, [])
 
         batch_summaries: dict[str, Any] = {}
         account_groups: dict[str, dict[str, Any]] = {}
@@ -356,6 +573,8 @@ def build_all_surahs_ledger() -> dict[str, Any]:
 
         for bid in sorted(by_batch.keys()):
             st = status_data.get(bid, {}) if isinstance(status_data, dict) else {}
+            if not isinstance(st, dict):
+                st = {}
             ev = done_events.get(bid, {})
             steps = by_batch[bid]
             telem = compute_batch_telemetry(bid, steps, st)
@@ -486,6 +705,17 @@ def build_all_surahs_ledger() -> dict[str, Any]:
                 pass
 
     now_iso = datetime.now().astimezone().isoformat(timespec="seconds")
+    merged_surahs = dict(surah_ledgers)
+    if filter_only and LEDGER_FILE.exists():
+        try:
+            prev = json.loads(LEDGER_FILE.read_text(encoding="utf-8-sig"))
+            prev_map = prev.get("surahs") if isinstance(prev, dict) else {}
+            if isinstance(prev_map, dict):
+                merged = dict(prev_map)
+                merged.update(surah_ledgers)
+                merged_surahs = merged
+        except Exception:
+            pass
     payload = {
         "recordedAt": now_iso,
         "recordedAt_12h": fmt_iso_to_12h(now_iso, include_date=True),
@@ -496,7 +726,7 @@ def build_all_surahs_ledger() -> dict[str, Any]:
             "output_and_thinking_per_1m_usd": PRICE_OUTPUT_THINK_PER_M,
             "credits_per_argon_high_turn": CREDITS_PER_ARGON_HIGH_TURN,
         },
-        "surahs": surah_ledgers,
+        "surahs": merged_surahs,
     }
     LEDGER_FILE.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return payload
@@ -517,7 +747,7 @@ if __name__ == "__main__":
             f"  Batches: {s_data['batches_done']}/{s_data['batches_total']} done | "
             f"Stops: {s_data['extractions_total']:,} | Demos: {s_data['demos_total']:,}\n"
             f"  Quota Used: {s_data['quota_credits_used']:,} credits "
-            f"({s_data['quota_burst_windows_equiv']}x 2400-burst windows / {s_data['quota_macro_pct_equiv']}% of 48,384 macro pool)\n"
+            f"({s_data['quota_burst_windows_equiv']}x 2400 5h-reset windows / {s_data['quota_macro_pct_equiv']}% of 48,384 weekly pool)\n"
             f"  Estimated Tokens: {s_data['total_tokens']:,} total "
             f"(new_in={s_data['new_input_tokens']:,}, ctx_in={s_data['context_input_tokens']:,}, "
             f"think={s_data['thinking_tokens']:,}, out={s_data['output_tokens']:,})\n"

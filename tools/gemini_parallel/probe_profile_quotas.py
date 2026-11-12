@@ -97,20 +97,30 @@ def init_client_from_disk(client: GeminiClient) -> None:
 
 
 def get_busy_profiles() -> set[str]:
-    """Return profiles currently executing step_a or step_b in surah6_parallel_status.json."""
+    """Return profiles currently executing step_a or step_b in any surah*_parallel_status.json or quotas_live.json."""
     busy: set[str] = set()
-    if not STATUS_FILE.exists():
-        return busy
-    try:
-        data = json.loads(STATUS_FILE.read_text(encoding="utf-8-sig"))
-        if isinstance(data, dict):
-            for entry in data.values():
-                if isinstance(entry, dict) and entry.get("stage") in ("step_a", "step_b"):
-                    prof = entry.get("profile")
-                    if prof:
-                        busy.add(str(prof))
-    except Exception:
-        pass
+    for sf in SCRATCH.glob("surah*_parallel_status.json"):
+        try:
+            data = json.loads(sf.read_text(encoding="utf-8-sig"))
+            if isinstance(data, dict):
+                batches = data.get("batches", data) if isinstance(data.get("batches"), dict) else data
+                for entry in batches.values():
+                    if isinstance(entry, dict) and entry.get("stage") in ("step_a", "step_b"):
+                        prof = entry.get("profile")
+                        if prof:
+                            busy.add(str(prof))
+        except Exception:
+            pass
+    if QUOTAS_LIVE_FILE.exists():
+        try:
+            qdata = json.loads(QUOTAS_LIVE_FILE.read_text(encoding="utf-8-sig"))
+            for p_name, p_entry in (qdata.get("profiles") or {}).items():
+                if isinstance(p_entry, dict) and (
+                    p_entry.get("status") == "active_busy" or p_entry.get("active_batches")
+                ):
+                    busy.add(str(p_name))
+        except Exception:
+            pass
     return busy
 
 
@@ -430,6 +440,13 @@ def save_quotas_live(results: list[dict[str, Any]]) -> None:
             merged["reset_at_12h"] = fmt_iso_to_12h(merged.get("reset_at"), include_seconds=False)
         if merged.get("limit") is not None:
             merged["plan_limit_info"] = explain_plan_limit(merged.get("limit"), merged.get("argon_high_ok"))
+        try:
+            from surah_telemetry_ledger import merge_quota_pools
+
+            prev_pools = prev.get("pools") if isinstance(prev.get("pools"), dict) else {}
+            merged["pools"] = merge_quota_pools(merged, prev_pools)
+        except Exception:
+            pass
         prof_map[p] = merged
     now_dt = datetime.now().astimezone()
     payload = {

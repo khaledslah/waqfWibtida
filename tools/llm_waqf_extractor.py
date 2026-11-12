@@ -18,8 +18,11 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import sys
+import tempfile
+import time
 import unicodedata
 from pathlib import Path
 from typing import Any
@@ -371,8 +374,34 @@ def _load_boundary_ledger() -> dict[str, Any]:
 
 
 def _save_boundary_ledger(ledger: dict[str, Any]) -> None:
+    """Atomically rewrite the shared ledger (safe under parallel Surah workers)."""
     PROTOTYPE_DIR.mkdir(parents=True, exist_ok=True)
-    BOUNDARY_LEDGER_PATH.write_text(json.dumps(ledger, ensure_ascii=False, indent=2), encoding="utf-8")
+    payload = json.dumps(ledger, ensure_ascii=False, indent=2)
+    last_exc: Exception | None = None
+    for attempt in range(8):
+        tmp_path: Path | None = None
+        try:
+            fd, tmp_name = tempfile.mkstemp(
+                prefix="boundary_ledger.",
+                suffix=".tmp",
+                dir=str(PROTOTYPE_DIR),
+            )
+            tmp_path = Path(tmp_name)
+            with os.fdopen(fd, "w", encoding="utf-8", newline="\n") as fh:
+                fh.write(payload)
+                fh.flush()
+                os.fsync(fh.fileno())
+            os.replace(tmp_path, BOUNDARY_LEDGER_PATH)
+            return
+        except Exception as exc:
+            last_exc = exc
+            if tmp_path is not None:
+                try:
+                    tmp_path.unlink(missing_ok=True)
+                except Exception:
+                    pass
+            time.sleep(0.05 * (attempt + 1))
+    raise OSError(f"failed to save boundary ledger after retries: {last_exc}")
 
 
 def validate_and_compare(
@@ -529,7 +558,11 @@ def validate_and_compare(
     ledger["crossBoundaryOpinions"] = [
         r for r in ledger.get("crossBoundaryOpinions", []) if r.get("fromBatch") != batch_id
     ] + out_of_range_records
-    _save_boundary_ledger(ledger)
+    try:
+        _save_boundary_ledger(ledger)
+    except Exception as exc:
+        # Validation already finished; a busy shared ledger must not fail the batch.
+        print(f"WARNING: boundary_ledger save soft-failed ({type(exc).__name__}: {exc})")
 
     # Compare against regex feed for start_ayah..end_ayah
     regex_stops = {

@@ -4,7 +4,7 @@
 Features:
 - Generalized for any Surah (`?surah=6`, `?surah=5`, `?surah=4`, `?surah=3`, etc.)
 - 12-hour AM/PM time formatting everywhere (live clock, reset times, step timestamps)
-- Displays all 5 accounts (default, qoun, abod, smallbusiness, niyyah) with:
+- Displays all 5 accounts (default, qoun, abod, smallbusiness, quyn) with:
   - Dynamic Pro / 4 Argon High capability badge (detected from Chrome mode picker)
   - Plan Limit bucket explanation (2,400 = 5h reset vs 48,384 = weekly pool vs 12,096 = Free/Auto Pool)
   - Live Thinking/Pro remaining / plan limit credits & % of plan used
@@ -61,7 +61,7 @@ def _log_file_for(surah: int) -> Path:
             return alt
     return preferred
 
-ALL_PROFILES = ["default", "qoun", "abod", "smallbusiness", "niyyah"]
+ALL_PROFILES = ["default", "qoun", "abod", "smallbusiness", "quyn"]
 
 _state_lock = threading.Lock()
 _quota_state: dict[str, Any] = {
@@ -405,7 +405,7 @@ def _build_batch_gantt(surah: int, batches: list[dict[str, Any]]) -> dict[str, A
             }
         )
 
-    lane_order = [p for p in ("qoun", "abod", "smallbusiness", "niyyah", "default") if p in by_prof]
+    lane_order = [p for p in ("qoun", "abod", "smallbusiness", "quyn", "default") if p in by_prof]
     lane_order += [p for p in sorted(by_prof) if p not in lane_order]
 
     lanes: list[dict[str, Any]] = []
@@ -1399,7 +1399,7 @@ INDEX_HTML = r"""<!doctype html>
   <header>
     <div>
       <h1 id="main-title">Waqf &amp; Ibtida — Surah 6 (الأنعام) Parallel Argon High Dashboard</h1>
-      <div class="sub">5-Account Dynamic Pool (<code>default</code> · <code>qoun</code> · <code>abod</code> · <code>smallbusiness</code> · <code>niyyah</code>) · 12-Hour AM/PM Clock · Quota, Tokens &amp; Cost Ledger</div>
+      <div class="sub">5-Account Dynamic Pool (<code>default</code> · <code>qoun</code> · <code>abod</code> · <code>smallbusiness</code> · <code>quyn</code>) · 12-Hour AM/PM Clock · Quota, Tokens &amp; Cost Ledger</div>
     </div>
     <div style="display:flex;gap:8px;align-items:center;">
       <span class="pill" id="runner-pill"><span class="dot"></span> <span id="clock">Loading…</span></span>
@@ -1430,7 +1430,8 @@ INDEX_HTML = r"""<!doctype html>
     • Each Google AI Pro account has <strong>two concurrent rolling quota buckets</strong>, and Google's RPC automatically returns whichever bucket currently has the <strong>higher % used</strong>:<br/>
     &nbsp;&nbsp;1. <strong><code>2,400</code> = 5-hour reset</strong> (~20 Argon High turns @ 120 credits/turn).<br/>
     &nbsp;&nbsp;2. <strong><code>48,384</code> = weekly Pro pool</strong> (~403 Argon High turns @ 120 credits/turn).<br/>
-    Each Pro account card always shows <strong>both</strong> pools. Google's RPC returns only the currently binding bucket; the other is the last-seen cached reading (or — until first seen).<br/>
+    Each Pro account card always shows <strong>both</strong> pools. Google's RPC returns only the currently binding bucket's credits; the other is the last-seen cached reading (or — until first seen).<br/>
+    The RPC <strong>reset timer is always the 5-hour clock</strong> (even when the binding credits are the weekly 48,384 pool) — weekly has no countdown ring.<br/>
     &nbsp;&nbsp;3. <strong><code>12,096</code> = Free / Auto Tier Pool</strong> (seen on <code>default</code>, which dynamically tested as lacking <code>4 Argon High</code> in the Chrome mode picker).
   </div>
 
@@ -1541,7 +1542,7 @@ const GANTT_PROFILE_COLORS = {
   qoun: '#3b82f6',
   abod: '#a855f7',
   smallbusiness: '#22c55e',
-  niyyah: '#f59e0b',
+  quyn: '#f59e0b',
   default: '#94a3b8',
   unassigned: '#64748b',
 };
@@ -1723,7 +1724,7 @@ function renderBatches(data) {
     if (!byAcc[key]) byAcc[key] = [];
     byAcc[key].push(b);
   }
-  const order = ['qoun', 'abod', 'smallbusiness', 'niyyah', 'default', 'unassigned'];
+  const order = ['qoun', 'abod', 'smallbusiness', 'quyn', 'default', 'unassigned'];
   const keys = [...order.filter(k => byAcc[k]), ...Object.keys(byAcc).filter(k => !order.includes(k))];
 
   container.innerHTML = keys.map(prof => {
@@ -1953,6 +1954,9 @@ function render(data) {
         bind: !!pool.binding,
         small: false,
       });
+      // Reset timer from qpEbW is always the 5h window — never show it on weekly.
+      const showTime = (k === 'burst_5h' || k === 'free' || k === '_binding');
+      if (!showTime) return creditRing;
       const timeRing = ringHtml({
         cls: 'time',
         pct: timeKnown && !elapsed ? timePct : 0,

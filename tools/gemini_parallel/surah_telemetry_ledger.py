@@ -126,8 +126,8 @@ def explain_plan_limit(limit: int | None, argon_high_ok: bool | None) -> dict[st
             "short_label": "Weekly pool (~403 Argon High turns @ 120 cr/turn)",
             "explanation": (
                 "48,384 = weekly Pro credit pool (~403 Argon High turns at 120 credits/turn). "
-                "Shown when the 5h burst window is freshly reset (0% used) so the weekly pool "
-                "has the higher % used."
+                "Shown when the weekly pool has the higher % used. The RPC reset timer is still "
+                "the 5-hour window clock — Google does not return a weekly countdown here."
             ),
         }
     return {
@@ -179,8 +179,12 @@ def _pool_snapshot(
 def merge_quota_pools(entry: dict[str, Any], prev_pools: dict[str, Any] | None = None) -> dict[str, Any]:
     """Keep both Pro pools (5h + weekly) per account.
 
-    qpEbW returns only the currently binding bucket. We cache the last-seen
-    reading for each pool so the dashboard can always show both.
+    qpEbW returns only the currently binding bucket's credits. We cache the
+    last-seen reading for each pool so the dashboard can always show both.
+
+    Important: the RPC reset timer is always the 5-hour window clock, even when
+    the binding credit pair is the weekly 48,384 pool. Never attach reset_* to
+    the weekly pool.
     """
     prev_pools = prev_pools if isinstance(prev_pools, dict) else {}
     argon_ok = entry.get("argon_high_ok")
@@ -202,8 +206,9 @@ def merge_quota_pools(entry: dict[str, Any], prev_pools: dict[str, Any] | None =
     reset_in_human = entry.get("reset_in_human")
     reset_at = entry.get("reset_at")
     reset_at_12h = entry.get("reset_at_12h")
+    has_reset = reset_at is not None or reset_in_s is not None
 
-    def _keep(key: str, label: str, default_limit: int) -> dict[str, Any]:
+    def _keep(key: str, label: str, default_limit: int, *, keep_reset: bool) -> dict[str, Any]:
         prev = prev_pools.get(key) if isinstance(prev_pools.get(key), dict) else {}
         return _pool_snapshot(
             key=key,
@@ -212,13 +217,33 @@ def merge_quota_pools(entry: dict[str, Any], prev_pools: dict[str, Any] | None =
             remaining=prev.get("remaining"),
             used_pct=prev.get("used_pct"),
             left_pct=prev.get("left_pct"),
-            reset_in_s=prev.get("reset_in_s"),
-            reset_in_human=prev.get("reset_in_human"),
-            reset_at=prev.get("reset_at"),
-            reset_at_12h=prev.get("reset_at_12h"),
+            reset_in_s=prev.get("reset_in_s") if keep_reset else None,
+            reset_in_human=prev.get("reset_in_human") if keep_reset else None,
+            reset_at=prev.get("reset_at") if keep_reset else None,
+            reset_at_12h=prev.get("reset_at_12h") if keep_reset else None,
             last_seen_at=prev.get("lastSeenAt"),
             binding=False,
             known=bool(prev.get("known") and prev.get("remaining") is not None),
+        )
+
+    def _with_rpc_reset(pool: dict[str, Any]) -> dict[str, Any]:
+        """Stamp the live RPC 5h timer onto the 5h pool (credits unchanged)."""
+        if not has_reset:
+            return pool
+        return _pool_snapshot(
+            key=str(pool.get("key") or "burst_5h"),
+            label=str(pool.get("label") or "5h reset"),
+            limit=int(pool.get("limit") or BURST_POOL_LIMIT),
+            remaining=pool.get("remaining"),
+            used_pct=pool.get("used_pct"),
+            left_pct=pool.get("left_pct"),
+            reset_in_s=reset_in_s,
+            reset_in_human=reset_in_human,
+            reset_at=reset_at,
+            reset_at_12h=reset_at_12h,
+            last_seen_at=pool.get("lastSeenAt") or seen_at,
+            binding=bool(pool.get("binding")),
+            known=bool(pool.get("known") and pool.get("remaining") is not None),
         )
 
     if argon_ok is False or lim_i == FREE_POOL_LIMIT:
@@ -239,8 +264,8 @@ def merge_quota_pools(entry: dict[str, Any], prev_pools: dict[str, Any] | None =
         )
         return {"free": free}
 
-    burst = _keep("burst_5h", "5h reset", BURST_POOL_LIMIT)
-    weekly = _keep("weekly", "Weekly", MACRO_POOL_LIMIT)
+    burst = _keep("burst_5h", "5h reset", BURST_POOL_LIMIT, keep_reset=True)
+    weekly = _keep("weekly", "Weekly", MACRO_POOL_LIMIT, keep_reset=False)
 
     # Seed weekly from a prior start_remaining if it looked like the macro pool.
     if not weekly.get("known"):
@@ -279,6 +304,7 @@ def merge_quota_pools(entry: dict[str, Any], prev_pools: dict[str, Any] | None =
         )
     elif lim_i == MACRO_POOL_LIMIT:
         binding_key = "weekly"
+        # Credits belong to weekly; timer still belongs to the 5h pool.
         weekly = _pool_snapshot(
             key="weekly",
             label="Weekly",
@@ -286,16 +312,18 @@ def merge_quota_pools(entry: dict[str, Any], prev_pools: dict[str, Any] | None =
             remaining=rem_i,
             used_pct=float(used_pct) if used_pct is not None else None,
             left_pct=float(left_pct) if left_pct is not None else None,
-            reset_in_s=reset_in_s,
-            reset_in_human=reset_in_human,
-            reset_at=reset_at,
-            reset_at_12h=reset_at_12h,
+            reset_in_s=None,
+            reset_in_human=None,
+            reset_at=None,
+            reset_at_12h=None,
             last_seen_at=seen_at,
             binding=True,
             known=rem_i is not None,
         )
+        burst = _with_rpc_reset(burst)
     elif lim_i is not None and rem_i is not None:
         # Unknown Pro limit — still keep both standard pools and mark current as other.
+        # Timer stays on the 5h pool; do not invent a weekly countdown.
         other = _pool_snapshot(
             key="other",
             label=f"Plan ({lim_i})",
@@ -303,21 +331,31 @@ def merge_quota_pools(entry: dict[str, Any], prev_pools: dict[str, Any] | None =
             remaining=rem_i,
             used_pct=float(used_pct) if used_pct is not None else None,
             left_pct=float(left_pct) if left_pct is not None else None,
-            reset_in_s=reset_in_s,
-            reset_in_human=reset_in_human,
-            reset_at=reset_at,
-            reset_at_12h=reset_at_12h,
+            reset_in_s=None,
+            reset_in_human=None,
+            reset_at=None,
+            reset_at_12h=None,
             last_seen_at=seen_at,
             binding=True,
             known=True,
         )
+        burst = _with_rpc_reset(burst)
         out = {"burst_5h": burst, "weekly": weekly, "other": other}
         out["burst_5h"]["binding"] = False
         out["weekly"]["binding"] = False
         return out
+    else:
+        # No live binding credits this tick — still refresh the 5h timer from RPC.
+        burst = _with_rpc_reset(burst)
 
     burst["binding"] = binding_key == "burst_5h"
     weekly["binding"] = binding_key == "weekly"
+    # Belt-and-suspenders: weekly must never carry a reset clock.
+    weekly["reset_in_s"] = None
+    weekly["reset_in_human"] = None
+    weekly["reset_at"] = None
+    weekly["reset_at_12h"] = None
+    weekly.pop("reset_elapsed", None)
     return {"burst_5h": burst, "weekly": weekly}
 
 

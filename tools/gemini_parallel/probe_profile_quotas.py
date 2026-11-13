@@ -39,7 +39,7 @@ from gemini_web_mcp_cli.services.limits import LimitsService
 SCRATCH = Path(__file__).resolve().parent
 QUOTAS_LIVE_FILE = SCRATCH / "quotas_live.json"
 STATUS_FILE = SCRATCH / "surah6_parallel_status.json"
-DEFAULT_PROFILES = ["default", "qoun", "abod", "smallbusiness", "niyyah"]
+DEFAULT_PROFILES = ["default", "qoun", "abod", "smallbusiness", "quyn"]
 DAEMON_START_LOCK = asyncio.Lock()
 
 PASSIVE_PICKER_CHECK_JS = """
@@ -174,12 +174,14 @@ async def ensure_profile_chrome_and_cookies(
     from gemini_web_mcp_cli.core.daemon_idle import start_on_demand
 
     async with DAEMON_START_LOCK:
-        await asyncio.to_thread(
-            start_on_demand,
-            client.auth_manager.resolved_profile_name,
-            client.auth_manager.state.chrome_profile_path,
-        )
-    port = find_profile_daemon_port(profile, client)
+        port = find_profile_daemon_port(profile, client)
+        if not port or not await asyncio.to_thread(_try_extract, port):
+            await asyncio.to_thread(
+                start_on_demand,
+                client.auth_manager.resolved_profile_name,
+                client.auth_manager.state.chrome_profile_path,
+            )
+            port = find_profile_daemon_port(profile, client)
     if port and await asyncio.to_thread(_try_extract, port):
         return port
     return port

@@ -5,7 +5,7 @@ import asyncio
 import json
 import sys
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Any
 
@@ -72,7 +72,7 @@ BATCH_RANGE_MAP: dict[str, tuple[int, int]] = {bid: (a, b) for bid, a, b in REMA
 
 # All candidate profiles — dynamic preflight check at worker startup automatically
 # detects whether each account has active Pro / 4 Argon High access and quota.
-DEFAULT_PROFILES_4: list[str] = ["default", "qoun", "abod", "smallbusiness", "niyyah"]
+DEFAULT_PROFILES_4: list[str] = ["default", "qoun", "abod", "smallbusiness", "quyn"]
 
 STATUS_LOCK = asyncio.Lock()
 VALIDATE_LOCK = asyncio.Lock()
@@ -87,6 +87,18 @@ FAILED_ON: dict[str, set[str]] = {}
 LAST_END: dict[str, float] = {}
 STEP_A_SECONDS: dict[str, float] = {}
 ALIVE_WORKERS: set[str] = set()
+ALIVE_SLOTS: set[str] = set()
+ACTIVE_BATCHES_BY_PROFILE: dict[str, list[str]] = {}
+OVERLAPPED_BATCHES: set[str] = set()
+RETIRED_PROFILES: set[str] = set()
+# Recoverable low-quota retires only: wait until reset_at, then unretire.
+RETIRED_UNTIL: dict[str, datetime] = {}
+RETIRED_REASON: dict[str, str] = {}
+RECOVERABLE_RETIRE_REASONS = frozenset({"low_quota", "initial_quota", "usage_limit"})
+ACCOUNT_INIT_LOCKS: dict[str, asyncio.Lock] = {}
+ACCOUNT_INIT_CACHE: dict[str, dict[str, Any]] = {}
+CHATS_PER_ACCOUNT: int = 2
+EST_CREDITS_PER_INFLIGHT_BATCH: int = 360
 
 
 def configure_surah(surah: int) -> None:
@@ -121,9 +133,13 @@ def _fmt_turn_timing(t: dict[str, Any]) -> str:
     parts: list[str] = []
     if cap:
         ct = float(cap.get("total_s") or 0.0)
+        lw = float(cap.get("lock_wait_s") or 0.0)
         cr = int(cap.get("retries") or 0)
         cw = float(cap.get("wasted_retry_s") or 0.0)
-        sub = [f"nav={cap.get('nav_wait_s', 0):.1f}", f"pick={cap.get('picker_s', 0):.1f}"]
+        sub: list[str] = []
+        if lw >= 0.1:
+            sub.append(f"lock={lw:.1f}")
+        sub.extend([f"nav={cap.get('nav_wait_s', 0):.1f}", f"pick={cap.get('picker_s', 0):.1f}"])
         if cr or cw:
             sub.append(f"r{cr}:waste={cw:.1f}")
         parts.append(f"cap={ct:.1f}s({','.join(sub)})")
@@ -205,13 +221,23 @@ async def update_quota_live(profile: str, **fields: Any) -> None:
         if rem is not None and (start_rem is None or int(start_rem) < int(rem)):
             start_rem = int(rem)
         now_dt = datetime.now().astimezone()
+        active_b = list(ACTIVE_BATCHES_BY_PROFILE.get(profile, []))
         merged = {
             **prev,
             "profile": profile,
             **{k: v for k, v in fields.items() if v is not None or k not in prev},
+            "active_batches": active_b,
+            "active_slots": len(active_b),
+            "max_slots": CHATS_PER_ACCOUNT,
             "lastSeenAt": now_dt.isoformat(timespec="seconds"),
             "lastSeenAt_12h": fmt_12h(now_dt),
         }
+        if active_b:
+            merged["current_batch"] = ", ".join(active_b)
+            if merged.get("status") == "ready_pro":
+                merged["status"] = "active_busy"
+        elif "current_batch" in fields and fields["current_batch"] is None:
+            merged["current_batch"] = None
         if start_rem is not None:
             merged["start_remaining"] = start_rem
         if merged.get("reset_at") and not merged.get("reset_at_12h"):
@@ -775,6 +801,13 @@ def _is_chunk1_no_fallback_error(exc: BaseException) -> bool:
     return False
 
 
+def _is_usage_limit_error(exc: BaseException) -> bool:
+    for cur in _iter_exception_causes(exc):
+        if isinstance(cur, UsageLimitExceeded) or type(cur).__name__ == "UsageLimitExceeded":
+            return True
+    return False
+
+
 def _is_terminal_worker_error(exc: BaseException) -> bool:
     """True when the profile/worker cannot continue running."""
     for cur in _iter_exception_causes(exc):
@@ -788,6 +821,167 @@ def _is_terminal_worker_error(exc: BaseException) -> bool:
         ):
             return True
     return False
+
+
+def _parse_reset_at(reset_at: Any) -> datetime | None:
+    if reset_at is None or reset_at == "":
+        return None
+    if isinstance(reset_at, datetime):
+        return reset_at if reset_at.tzinfo else reset_at.astimezone()
+    try:
+        dt = datetime.fromisoformat(str(reset_at))
+        return dt if dt.tzinfo else dt.astimezone()
+    except Exception:
+        return None
+
+
+def mark_recoverable_quota_retire(
+    profile: str,
+    reset_at: Any,
+    *,
+    reason: str = "low_quota",
+) -> datetime | None:
+    """Mark profile retired for quota; store when the 5h reset clock says to retry."""
+    RETIRED_PROFILES.add(profile)
+    RETIRED_REASON[profile] = reason
+    dt = _parse_reset_at(reset_at)
+    now = datetime.now().astimezone()
+    if dt is None:
+        return RETIRED_UNTIL.get(profile)
+    if dt <= now:
+        dt = now + timedelta(seconds=60)
+    prev = RETIRED_UNTIL.get(profile)
+    # Keep the soonest future wake if we already scheduled one.
+    if prev is not None and now < prev < dt:
+        return prev
+    RETIRED_UNTIL[profile] = dt
+    return dt
+
+
+def clear_profile_retire(profile: str) -> None:
+    RETIRED_PROFILES.discard(profile)
+    RETIRED_UNTIL.pop(profile, None)
+    RETIRED_REASON.pop(profile, None)
+
+
+def is_recoverable_retire(profile: str) -> bool:
+    return profile in RETIRED_PROFILES and RETIRED_REASON.get(profile) in RECOVERABLE_RETIRE_REASONS
+
+
+async def await_quota_unretire(
+    *,
+    profile: str,
+    slot_tag: str,
+    slot_idx: int,
+    client: GeminiClient,
+    required_for_slot: int,
+) -> bool:
+    """Sleep until reset_at, re-check qpEbW, and unretire if credits recovered.
+
+    Returns True if this slot should resume picking batches.
+    """
+    import probe_profile_quotas as pq
+
+    while is_recoverable_retire(profile):
+        until = RETIRED_UNTIL.get(profile)
+        now = datetime.now().astimezone()
+        if until is None:
+            log(
+                f"[{slot_tag}] Quota-retired without reset_at; cannot auto-unretire — staying retired."
+            )
+            return False
+
+        wake_at = until + timedelta(seconds=5.0 * max(0, slot_idx - 1))
+        wait_s = (wake_at - now).total_seconds()
+        if wait_s > 0:
+            log(
+                f"[{slot_tag}] Quota-retired until {until.strftime('%I:%M %p')} "
+                f"(waiting {pq.fmt_duration(int(wait_s))} then recheck); batches stay in shared pool."
+            )
+            while wait_s > 0 and is_recoverable_retire(profile):
+                chunk = min(wait_s, 30.0)
+                await asyncio.sleep(chunk)
+                wait_s -= chunk
+
+        if not is_recoverable_retire(profile):
+            # Another path cleared or permanently retired this profile.
+            return profile not in RETIRED_PROFILES
+
+        if slot_idx == 1:
+            q = await get_pro_quota_rich(client)
+            rem = q.get("remaining")
+            lim = q.get("limit")
+            reset_h = q.get("reset_in_human") or "—"
+            lim_s = lim if lim is not None else "?"
+            await update_quota_live(
+                profile,
+                status="low_quota_recheck",
+                remaining=rem,
+                limit=lim,
+                used_pct=q.get("used_pct"),
+                left_pct=q.get("left_pct"),
+                reset_in_s=q.get("reset_in_s"),
+                reset_in_human=reset_h,
+                reset_at=q.get("reset_at"),
+                name=q.get("name") or "Thinking/Pro",
+            )
+            if rem is not None and int(rem) >= required_for_slot:
+                clear_profile_retire(profile)
+                ACCOUNT_INIT_CACHE.pop(profile, None)
+                log(
+                    f"[{slot_tag}] Quota refreshed (remaining={rem}/{lim_s} reset_in={reset_h}); "
+                    "unretired — rejoining shared pool."
+                )
+                await update_quota_live(
+                    profile,
+                    status="ready_pro",
+                    remaining=rem,
+                    limit=lim,
+                    used_pct=q.get("used_pct"),
+                    left_pct=q.get("left_pct"),
+                    reset_in_s=q.get("reset_in_s"),
+                    reset_in_human=reset_h,
+                    reset_at=q.get("reset_at"),
+                    name=q.get("name") or "Thinking/Pro",
+                )
+                return True
+
+            new_until = mark_recoverable_quota_retire(
+                profile, q.get("reset_at"), reason=RETIRED_REASON.get(profile) or "low_quota"
+            )
+            if new_until is None or new_until <= datetime.now().astimezone():
+                # Still low and no future reset — poll again in 60s.
+                RETIRED_UNTIL[profile] = datetime.now().astimezone() + timedelta(seconds=60)
+                new_until = RETIRED_UNTIL[profile]
+            log(
+                f"[{slot_tag}] Still low after reset check (remaining={rem}/{lim_s} "
+                f"< {required_for_slot}); next wake {new_until.strftime('%I:%M %p')}."
+            )
+            continue
+
+        # Follower slots: wait for slot #1 to clear retirement, then confirm own threshold.
+        if profile not in RETIRED_PROFILES:
+            await asyncio.sleep(2.5 * max(0, slot_idx - 1))
+            q = await get_pro_quota_rich(client)
+            rem = q.get("remaining")
+            lim_s = q.get("limit") if q.get("limit") is not None else "?"
+            if rem is not None and int(rem) >= required_for_slot:
+                log(
+                    f"[{slot_tag}] Account unretired by slot #1; "
+                    f"remaining={rem}/{lim_s} meets slot need {required_for_slot} — resuming."
+                )
+                return True
+            log(
+                f"[{slot_tag}] Account unretired but remaining={rem}/{lim_s} "
+                f"< {required_for_slot} for this slot; waiting for more headroom."
+            )
+            # Soft wait without re-retiring the whole account.
+            await asyncio.sleep(30.0)
+            continue
+
+        await asyncio.sleep(5.0)
+
+    return profile not in RETIRED_PROFILES
 
 
 def _is_no_standalone_retry_error(exc: BaseException) -> bool:
@@ -1194,9 +1388,14 @@ async def process_batch(
 
     dt_b = round(time.monotonic() - t_batch0, 2)
     tot_wasted = round(bstats["wasted_fail_s"] + bstats["wasted_sleep_s"] + bstats["capture_wasted_s"], 2)
-    # Compute token & cost estimates from turns.jsonl for this batch
-    telem_map = compute_surah_turn_ledger(SURAH_NUM)
-    bt = telem_map.get(batch_id) or {}
+    # Compute token & cost estimates from turns.jsonl for this batch.
+    # Telemetry must never fail a finished extraction — fall back to turn counts.
+    try:
+        telem_map = compute_surah_turn_ledger(SURAH_NUM)
+        bt = telem_map.get(batch_id) or {}
+    except Exception as telem_exc:
+        log(f"[{profile}][{batch_id}] telemetry refresh soft-failed: {type(telem_exc).__name__}: {telem_exc}")
+        bt = {}
     est_quota_cr = int(bt.get("quota_credits_used") or ((bstats["turns_ok"] + bstats["turns_fail"]) * CREDITS_PER_ARGON_HIGH_TURN))
     est_tokens = int(bt.get("total_tokens") or 0)
     est_cost = float(bt.get("cost_usd") or 0.0)
@@ -1270,15 +1469,19 @@ async def init_client_with_retry(profile: str, stagger_s: float) -> tuple[Gemini
             async with DAEMON_START_LOCK:
                 daemon_wait_s = round(time.monotonic() - t_d0, 3)
                 t_d1 = time.monotonic()
-                if client.auth_manager.state.chrome_profile_path:
+                port = pq.find_profile_daemon_port(profile, client)
+                if not port and client.auth_manager.state.chrome_profile_path:
                     await asyncio.to_thread(
                         start_on_demand,
                         client.auth_manager.resolved_profile_name,
                         client.auth_manager.state.chrome_profile_path,
                     )
+                    port = pq.find_profile_daemon_port(profile, client)
                 daemon_start_s = round(time.monotonic() - t_d1, 3)
 
-            port = pq.find_profile_daemon_port(profile, client)
+            if not port and client.auth_manager.state.chrome_profile_path:
+                port = await pq.ensure_profile_chrome_and_cookies(profile, client, allow_launch=True)
+
             cap_info: dict[str, Any] = {
                 "argon_high_ok": None,
                 "tier": "unknown",
@@ -1382,6 +1585,58 @@ async def get_pro_remaining(client: GeminiClient) -> tuple[int | None, float]:
     return rem, dt
 
 
+async def init_account_slot(
+    profile: str,
+    account_idx: int,
+    slot_idx: int,
+) -> tuple[GeminiClient, dict[str, Any], dict[str, Any]]:
+    """Initialize an account once and return an isolated GeminiClient for each concurrent chat slot."""
+    import probe_profile_quotas as pq
+
+    lock = ACCOUNT_INIT_LOCKS.setdefault(profile, asyncio.Lock())
+    async with lock:
+        cached = ACCOUNT_INIT_CACHE.get(profile)
+        if cached is None:
+            base_client, launch_info = await init_client_with_retry(profile, stagger_s=account_idx * 0.8)
+            q0 = await get_pro_quota_rich(base_client)
+            cached = {
+                "base_client": base_client,
+                "launch_info": launch_info,
+                "q0": q0,
+                "slot1_claimed": slot_idx == 1,
+            }
+            ACCOUNT_INIT_CACHE[profile] = cached
+            if slot_idx == 1:
+                return base_client, launch_info, q0
+
+        base_client = cached["base_client"]
+        launch_info = dict(cached["launch_info"])
+        q0 = dict(cached["q0"])
+        if slot_idx == 1 and not cached.get("slot1_claimed"):
+            cached["slot1_claimed"] = True
+            return base_client, launch_info, q0
+
+        slot_client = GeminiClient(profile_name=profile, timeout=750.0)
+        pq.init_client_from_disk(slot_client)
+        slot_client._browser_cookies = getattr(base_client, "_browser_cookies", None)
+        slot_client._raw_browser_cookies = getattr(base_client, "_raw_browser_cookies", None)
+        slot_client._browser_access_token = getattr(base_client, "_browser_access_token", None)
+        return slot_client, launch_info, q0
+
+
+async def safe_close_slot_client(client: GeminiClient | None) -> None:
+    """Close HTTP transports on a slot client without shutting down the shared persistent Chrome daemon."""
+    if client is None:
+        return
+    try:
+        if getattr(client, "_token_factory", None) is not None:
+            client._token_factory._we_launched = False
+            client._token_factory._process = None
+        await client.close()
+    except Exception:
+        pass
+
+
 async def queue_worker(
     worker_idx: int,
     profile: str,
@@ -1393,6 +1648,8 @@ async def queue_worker(
     mw_cache: dict[int, dict[int, int]],
     min_quota_remaining: int = 220,
     max_batches: int | None = None,
+    slot_idx: int = 1,
+    chats_per_account: int = 2,
 ) -> None:
     global IN_FLIGHT_BATCHES
     client: GeminiClient | None = None
@@ -1401,18 +1658,20 @@ async def queue_worker(
     t_worker0 = time.monotonic()
     quota_total_s = 0.0
     idle_wait_s = 0.0
-    with logger.contextualize(profile=profile):
+    slot_tag = f"{profile}#{slot_idx}" if chats_per_account > 1 else profile
+    with logger.contextualize(profile=slot_tag):
         try:
             ALIVE_WORKERS.add(profile)
+            ALIVE_SLOTS.add(slot_tag)
             try:
-                client, launch_info = await init_client_with_retry(profile, stagger_s=worker_idx * 0.8)
+                client, launch_info, q0 = await init_account_slot(profile, worker_idx, slot_idx)
                 cap_info = launch_info.get("cap_info") or {}
                 argon_ok = cap_info.get("argon_high_ok")
-                q0 = await get_pro_quota_rich(client)
                 rem0, lim0, qname0, q0_s = q0["remaining"], q0["limit"], q0["name"], q0["elapsed_s"]
                 reset0_human = q0.get("reset_in_human") or "—"
                 reset0_at = q0.get("reset_at")
-                quota_total_s += q0_s
+                if slot_idx == 1:
+                    quota_total_s += q0_s
                 launch_total_s = round(time.monotonic() - t_worker0, 3)
                 qlabel = qname0 or "Thinking/Pro"
                 lim_s = lim0 if lim0 is not None else "?"
@@ -1423,38 +1682,115 @@ async def queue_worker(
                     else (f"NON-PRO({cap_info.get('picker_result')})" if argon_ok is False else "tier=unknown")
                 )
                 log(
-                    f"[{profile}] Worker ready in {launch_total_s:.2f}s "
-                    f"(stagger={launch_info['stagger_s']:.1f}s init={launch_info['client_init_s']:.2f}s "
-                    f"daemon={launch_info['daemon_start_s']:.2f}s lockWait={launch_info['daemon_lock_wait_s']:.2f}s "
-                    f"quota={q0_s:.2f}s tier={tier_str}) {qlabel} remaining={rem0}/{lim_s}{reset_str} max_batches={max_batches}"
+                    f"[{slot_tag}] Worker slot {slot_idx}/{chats_per_account} ready in {launch_total_s:.2f}s "
+                    f"(port={launch_info.get('port')} tier={tier_str}) {qlabel} remaining={rem0}/{lim_s}{reset_str}"
                 )
-                await record_event(
-                    "worker_launch",
-                    surah=SURAH_NUM,
-                    profile=profile,
-                    stagger_s=launch_info["stagger_s"],
-                    client_init_s=launch_info["client_init_s"],
-                    client_init_detail=launch_info["client_init_detail"],
-                    daemon_lock_wait_s=launch_info["daemon_lock_wait_s"],
-                    daemon_start_s=launch_info["daemon_start_s"],
-                    quota_s=q0_s,
-                    total_s=launch_total_s,
-                    remaining=rem0,
-                    limit=lim0,
-                    reset_in_s=q0.get("reset_in_s"),
-                    reset_at=reset0_at,
-                    quota_name=qname0,
-                    argon_high_ok=argon_ok,
-                    picker_result=cap_info.get("picker_result"),
-                )
+                if slot_idx == 1:
+                    await record_event(
+                        "worker_launch",
+                        surah=SURAH_NUM,
+                        profile=profile,
+                        chats_per_account=chats_per_account,
+                        stagger_s=launch_info["stagger_s"],
+                        client_init_s=launch_info["client_init_s"],
+                        client_init_detail=launch_info["client_init_detail"],
+                        daemon_lock_wait_s=launch_info["daemon_lock_wait_s"],
+                        daemon_start_s=launch_info["daemon_start_s"],
+                        quota_s=q0_s,
+                        total_s=launch_total_s,
+                        remaining=rem0,
+                        limit=lim0,
+                        reset_in_s=q0.get("reset_in_s"),
+                        reset_at=reset0_at,
+                        quota_name=qname0,
+                        argon_high_ok=argon_ok,
+                        picker_result=cap_info.get("picker_result"),
+                    )
 
                 if argon_ok is False:
+                    RETIRED_PROFILES.add(profile)
+                    if slot_idx == 1:
+                        await update_quota_live(
+                            profile,
+                            email=client.auth_manager.state.email,
+                            status="non_pro_downgraded",
+                            argon_high_ok=False,
+                            tier=cap_info.get("tier"),
+                            picker_result=cap_info.get("picker_result"),
+                            picker_label=cap_info.get("picker_label"),
+                            remaining=rem0,
+                            limit=lim0,
+                            used_pct=q0.get("used_pct"),
+                            left_pct=q0.get("left_pct"),
+                            reset_in_s=q0.get("reset_in_s"),
+                            reset_in_human=reset0_human,
+                            reset_at=reset0_at,
+                            name=qlabel,
+                        )
+                        log(
+                            f"[{slot_tag}] Dynamic tier check: account does NOT have 4 Argon High / Pro access "
+                            f"(picker={cap_info.get('picker_result')}, label={cap_info.get('picker_label')!r}); "
+                            "retiring cleanly before picking any batch."
+                        )
+                    return
+
+                required_for_slot = min_quota_remaining + ((slot_idx - 1) * EST_CREDITS_PER_INFLIGHT_BATCH)
+                while rem0 is not None and rem0 < required_for_slot:
+                    if slot_idx == 1:
+                        mark_recoverable_quota_retire(
+                            profile, reset0_at, reason="initial_quota"
+                        )
+                        await update_quota_live(
+                            profile,
+                            email=client.auth_manager.state.email,
+                            status="low_quota",
+                            argon_high_ok=argon_ok,
+                            tier=cap_info.get("tier"),
+                            picker_result=cap_info.get("picker_result"),
+                            picker_label=cap_info.get("picker_label"),
+                            remaining=rem0,
+                            limit=lim0,
+                            used_pct=q0.get("used_pct"),
+                            left_pct=q0.get("left_pct"),
+                            reset_in_s=q0.get("reset_in_s"),
+                            reset_in_human=reset0_human,
+                            reset_at=reset0_at,
+                            name=qlabel,
+                        )
+                    elif not is_recoverable_retire(profile):
+                        # Slot #1 may not have marked yet; park this slot on the same reset clock.
+                        mark_recoverable_quota_retire(
+                            profile, reset0_at, reason="initial_quota"
+                        )
+                    log(
+                        f"[{slot_tag}] Initial quota (remaining={rem0}/{lim_s}{reset_str} < {required_for_slot} needed for slot #{slot_idx}); "
+                        "parking until 5h reset, then auto-unretire."
+                    )
+                    resumed = await await_quota_unretire(
+                        profile=profile,
+                        slot_tag=slot_tag,
+                        slot_idx=slot_idx,
+                        client=client,
+                        required_for_slot=required_for_slot,
+                    )
+                    if not resumed:
+                        return
+                    q0 = await get_pro_quota_rich(client)
+                    rem0, lim0, qname0, q0_s = q0["remaining"], q0["limit"], q0["name"], q0["elapsed_s"]
+                    reset0_human = q0.get("reset_in_human") or "—"
+                    reset0_at = q0.get("reset_at")
+                    quota_total_s += q0_s
+                    qlabel = qname0 or "Thinking/Pro"
+                    lim_s = lim0 if lim0 is not None else "?"
+                    reset_str = f" reset_in={reset0_human}" if reset0_human != "—" else ""
+
+                if slot_idx == 1:
                     await update_quota_live(
                         profile,
                         email=client.auth_manager.state.email,
-                        status="non_pro_downgraded",
-                        argon_high_ok=False,
-                        tier=cap_info.get("tier"),
+                        status="ready_pro",
+                        argon_high_ok=True if argon_ok is None else argon_ok,
+                        tier=cap_info.get("tier") or "pro_argon_high",
                         picker_result=cap_info.get("picker_result"),
                         picker_label=cap_info.get("picker_label"),
                         remaining=rem0,
@@ -1466,58 +1802,26 @@ async def queue_worker(
                         reset_at=reset0_at,
                         name=qlabel,
                     )
-                    log(
-                        f"[{profile}] Dynamic tier check: account does NOT have 4 Argon High / Pro access "
-                        f"(picker={cap_info.get('picker_result')}, label={cap_info.get('picker_label')!r}); "
-                        "retiring cleanly before picking any batch."
-                    )
-                    return
-
-                if rem0 is not None and rem0 < min_quota_remaining:
-                    await update_quota_live(
-                        profile,
-                        email=client.auth_manager.state.email,
-                        status="low_quota",
-                        argon_high_ok=argon_ok,
-                        tier=cap_info.get("tier"),
-                        picker_result=cap_info.get("picker_result"),
-                        picker_label=cap_info.get("picker_label"),
-                        remaining=rem0,
-                        limit=lim0,
-                        used_pct=q0.get("used_pct"),
-                        left_pct=q0.get("left_pct"),
-                        reset_in_s=q0.get("reset_in_s"),
-                        reset_in_human=reset0_human,
-                        reset_at=reset0_at,
-                        name=qlabel,
-                    )
-                    log(
-                        f"[{profile}] Initial quota low (remaining={rem0}/{lim_s}{reset_str} < {min_quota_remaining}); "
-                        "retiring cleanly."
-                    )
-                    return
-
-                await update_quota_live(
-                    profile,
-                    email=client.auth_manager.state.email,
-                    status="ready_pro",
-                    argon_high_ok=True if argon_ok is None else argon_ok,
-                    tier=cap_info.get("tier") or "pro_argon_high",
-                    picker_result=cap_info.get("picker_result"),
-                    picker_label=cap_info.get("picker_label"),
-                    remaining=rem0,
-                    limit=lim0,
-                    used_pct=q0.get("used_pct"),
-                    left_pct=q0.get("left_pct"),
-                    reset_in_s=q0.get("reset_in_s"),
-                    reset_in_human=reset0_human,
-                    reset_at=reset0_at,
-                    name=qlabel,
-                )
+                else:
+                    # Stagger slot #2+ slightly so slot #1 acquires profile_lock(profile) first
+                    await asyncio.sleep(2.5 * (slot_idx - 1))
 
                 while True:
+                    if profile in RETIRED_PROFILES:
+                        if is_recoverable_retire(profile):
+                            resumed = await await_quota_unretire(
+                                profile=profile,
+                                slot_tag=slot_tag,
+                                slot_idx=slot_idx,
+                                client=client,
+                                required_for_slot=required_for_slot,
+                            )
+                            if resumed:
+                                continue
+                        log(f"[{slot_tag}] Account {profile} is marked retired; exiting slot #{slot_idx} cleanly.")
+                        break
                     if max_batches is not None and done_count >= max_batches:
-                        log(f"[{profile}] Reached max_batches={max_batches}; retiring cleanly.")
+                        log(f"[{slot_tag}] Reached max_batches={max_batches}; retiring cleanly.")
                         break
 
                     bid: str | None = None
@@ -1559,12 +1863,20 @@ async def queue_worker(
                         break
 
                     IN_FLIGHT_BATCHES += 1
+                    registered_active = False
                     try:
                         q_now = await get_pro_quota_rich(client)
                         rem, lim, qname, q_s = q_now["remaining"], q_now["limit"], q_now["name"], q_now["elapsed_s"]
                         reset_h = q_now.get("reset_in_human") or "—"
                         quota_total_s += q_s
-                        if rem is not None and rem < min_quota_remaining:
+                        sibling_batches = list(ACTIVE_BATCHES_BY_PROFILE.get(profile, []))
+                        reserved_for_siblings = len(sibling_batches) * EST_CREDITS_PER_INFLIGHT_BATCH
+                        effective_rem = (int(rem) - reserved_for_siblings) if rem is not None else None
+
+                        if rem is not None and int(rem) < min_quota_remaining:
+                            mark_recoverable_quota_retire(
+                                profile, q_now.get("reset_at"), reason="low_quota"
+                            )
                             lim_s = lim if lim is not None else "?"
                             qlabel = qname or "Thinking/Pro"
                             await update_quota_live(
@@ -1580,16 +1892,34 @@ async def queue_worker(
                                 name=qlabel,
                             )
                             log(
-                                f"[{profile}] Quota low ({qlabel} remaining={rem}/{lim_s} reset_in={reset_h} < {min_quota_remaining}); "
-                                f"returning {bid} to shared pool & retiring cleanly."
+                                f"[{slot_tag}] Quota low ({qlabel} remaining={rem}/{lim_s} reset_in={reset_h} < {min_quota_remaining}); "
+                                f"returning {bid} to shared pool & parking until 5h reset (auto-unretire)."
+                            )
+                            shared_queue.put_nowait(bid)
+                            # `continue` runs try/finally (decr IN_FLIGHT), then top-of-loop await_quota_unretire.
+                            continue
+
+                        if effective_rem is not None and effective_rem < min_quota_remaining:
+                            lim_s = lim if lim is not None else "?"
+                            log(
+                                f"[{slot_tag}] Quota remaining={rem}/{lim_s} has {reserved_for_siblings}cr reserved for sibling batch(es) "
+                                f"{sibling_batches} (effective_rem={effective_rem} < {min_quota_remaining}); returning {bid} to shared pool & retiring slot #{slot_idx}."
                             )
                             shared_queue.put_nowait(bid)
                             break
 
+                        active_list = ACTIVE_BATCHES_BY_PROFILE.setdefault(profile, [])
+                        if bid not in active_list:
+                            active_list.append(bid)
+                        registered_active = True
+                        if len(active_list) > 1:
+                            for ab in active_list:
+                                OVERLAPPED_BATCHES.add(ab)
+
                         await update_quota_live(
                             profile,
                             status="active_busy",
-                            current_batch=bid,
+                            current_batch=", ".join(active_list),
                             remaining=rem,
                             limit=lim,
                             used_pct=q_now.get("used_pct"),
@@ -1600,31 +1930,44 @@ async def queue_worker(
                             name=qname or "Thinking/Pro",
                         )
                         start_ay, end_ay = BATCH_RANGE_MAP[bid]
-                        rem_log = f" (remaining={rem}/{lim} reset_in={reset_h})" if rem is not None else ""
-                        log(f"[{profile}] Picked up {bid} ({start_ay}..{end_ay}){rem_log}")
+                        sib_str = f" [concurrent with {sibling_batches}]" if sibling_batches else ""
+                        rem_log = f" (remaining={rem}/{lim} reset_in={reset_h}){sib_str}" if rem is not None else sib_str
+                        log(f"[{slot_tag}] Picked up {bid} ({start_ay}..{end_ay}){rem_log}")
                         prog_before = PROGRESS.get(bid, 0)
                         ok, info = await process_batch(profile, client, bid, start_ay, end_ay, wl_cache, mw_cache)
+                        if len(ACTIVE_BATCHES_BY_PROFILE.get(profile, [])) > 1:
+                            for ab in ACTIVE_BATCHES_BY_PROFILE.get(profile, []):
+                                OVERLAPPED_BATCHES.add(ab)
+                        if registered_active and bid in ACTIVE_BATCHES_BY_PROFILE.get(profile, []):
+                            ACTIVE_BATCHES_BY_PROFILE[profile].remove(bid)
+                            registered_active = False
                         q_after = await get_pro_quota_rich(client)
                         quota_total_s += q_after["elapsed_s"]
-                        measured_delta: int | None = None
+                        window_delta: int | None = None
                         if (
                             rem is not None
                             and q_after.get("remaining") is not None
                             and lim == q_after.get("limit")
                             and int(rem) >= int(q_after["remaining"])
                         ):
-                            measured_delta = int(rem) - int(q_after["remaining"])
+                            window_delta = int(rem) - int(q_after["remaining"])
+                        was_overlapped = bid in OVERLAPPED_BATCHES
+                        measured_delta = None if was_overlapped else window_delta
                         await update_status(
                             bid,
+                            worker_slot=slot_tag,
+                            concurrent_same_account=was_overlapped,
                             quota_before=rem,
                             quota_after=q_after.get("remaining"),
                             quota_limit=q_after.get("limit") or lim,
                             quota_measured_delta=measured_delta,
+                            quota_shared_window_delta=window_delta if was_overlapped else None,
                         )
+                        still_active = list(ACTIVE_BATCHES_BY_PROFILE.get(profile, []))
                         await update_quota_live(
                             profile,
-                            status="ready_pro",
-                            current_batch=None,
+                            status="active_busy" if still_active else "ready_pro",
+                            current_batch=", ".join(still_active) if still_active else None,
                             remaining=q_after["remaining"],
                             limit=q_after["limit"],
                             used_pct=q_after.get("used_pct"),
@@ -1641,12 +1984,12 @@ async def queue_worker(
                             # Soft failure (incomplete Step B / validate) used to park the
                             # batch forever. Requeue like the exception path so another
                             # profile can finish it.
-                            log(f"[{profile}][{bid}] SOFT FAIL: {info}")
+                            log(f"[{slot_tag}][{bid}] SOFT FAIL: {info}")
                             FAILED_ON.setdefault(bid, set()).add(profile)
                             prog_after = PROGRESS.get(bid, 0)
                             if prog_after > prog_before:
                                 log(
-                                    f"[{profile}][{bid}] Progress made (turns {prog_before}->{prog_after}); "
+                                    f"[{slot_tag}][{bid}] Progress made (turns {prog_before}->{prog_after}); "
                                     f"requeueing {bid} without incrementing requeue/faults "
                                     f"(requeue={requeue_counts.get(bid, 0)}/2, faults={faults})"
                                 )
@@ -1655,7 +1998,7 @@ async def queue_worker(
                                 requeue_counts[bid] = requeue_counts.get(bid, 0) + 1
                                 if requeue_counts[bid] <= 2:
                                     log(
-                                        f"[{profile}][{bid}] Requeueing {bid} "
+                                        f"[{slot_tag}][{bid}] Requeueing {bid} "
                                         f"(attempt {requeue_counts[bid]}/2) to shared pool after soft fail"
                                     )
                                     shared_queue.put_nowait(bid)
@@ -1663,14 +2006,41 @@ async def queue_worker(
                                     results[bid] = (False, f"parked after 2 requeues: {info}")
                                 faults += 1
                                 if faults >= 2:
-                                    log(f"[{profile}] Quarantining worker after {faults} faults.")
+                                    log(f"[{slot_tag}] Quarantining worker slot after {faults} faults.")
                                     break
                     except Exception as exc:
+                        if registered_active and bid in ACTIVE_BATCHES_BY_PROFILE.get(profile, []):
+                            ACTIVE_BATCHES_BY_PROFILE[profile].remove(bid)
+                            registered_active = False
                         if _is_terminal_worker_error(exc):
-                            # Account/worker-level failure (HighDowngradeError, AuthError,
-                            # UsageLimitExceeded, or /sorry/ TokenFactoryError) must NEVER
-                            # increment requeue_counts[bid] or park the batch!
+                            # Account/worker-level failure must NEVER increment requeue_counts[bid].
                             FAILED_ON.setdefault(bid, set()).add(profile)
+                            shared_queue.put_nowait(bid)
+                            if _is_usage_limit_error(exc):
+                                # Hard Google quota error — recoverable after the 5h reset clock.
+                                q_lim = await get_pro_quota_rich(client)
+                                mark_recoverable_quota_retire(
+                                    profile, q_lim.get("reset_at"), reason="usage_limit"
+                                )
+                                await update_quota_live(
+                                    profile,
+                                    status="retired_UsageLimitExceeded",
+                                    current_batch=None,
+                                    remaining=q_lim.get("remaining"),
+                                    limit=q_lim.get("limit"),
+                                    reset_in_s=q_lim.get("reset_in_s"),
+                                    reset_in_human=q_lim.get("reset_in_human"),
+                                    reset_at=q_lim.get("reset_at"),
+                                    last_error=f"{type(exc).__name__}: {str(exc)[:140]}",
+                                )
+                                log(
+                                    f"[{slot_tag}][{bid}] WORKER PARK ({type(exc).__name__}: {exc}); "
+                                    f"returning {bid} to shared pool; will auto-unretire after reset."
+                                )
+                                continue
+                            RETIRED_PROFILES.add(profile)
+                            RETIRED_REASON[profile] = type(exc).__name__
+                            RETIRED_UNTIL.pop(profile, None)
                             await update_quota_live(
                                 profile,
                                 status=f"retired_{type(exc).__name__}",
@@ -1678,51 +2048,53 @@ async def queue_worker(
                                 last_error=f"{type(exc).__name__}: {str(exc)[:140]}",
                             )
                             log(
-                                f"[{profile}][{bid}] WORKER RETIRE ({type(exc).__name__}: {exc}); "
+                                f"[{slot_tag}][{bid}] WORKER RETIRE ({type(exc).__name__}: {exc}); "
                                 f"returning {bid} to shared pool (without penalizing batch) & retiring {profile}!"
                             )
-                            shared_queue.put_nowait(bid)
                             break
-                        log(f"[{profile}][{bid}] UNHANDLED ERROR: {type(exc).__name__}: {exc}")
-                        await update_status(batch_id=bid, profile=profile, stage="error", error=f"{type(exc).__name__}: {exc}")
+                        log(f"[{slot_tag}][{bid}] UNHANDLED ERROR: {type(exc).__name__}: {exc}")
+                        await update_status(batch_id=bid, profile=profile, worker_slot=slot_tag, stage="error", error=f"{type(exc).__name__}: {exc}")
                         FAILED_ON.setdefault(bid, set()).add(profile)
                         prog_after = PROGRESS.get(bid, 0)
                         if prog_after > prog_before:
                             log(
-                                f"[{profile}][{bid}] Progress made (turns {prog_before}->{prog_after}); "
+                                f"[{slot_tag}][{bid}] Progress made (turns {prog_before}->{prog_after}); "
                                 f"requeueing {bid} without incrementing requeue/faults (requeue={requeue_counts.get(bid, 0)}/2, faults={faults})"
                             )
                             shared_queue.put_nowait(bid)
                         else:
                             requeue_counts[bid] = requeue_counts.get(bid, 0) + 1
                             if requeue_counts[bid] <= 2:
-                                log(f"[{profile}][{bid}] Requeueing {bid} (attempt {requeue_counts[bid]}/2) to shared pool")
+                                log(f"[{slot_tag}][{bid}] Requeueing {bid} (attempt {requeue_counts[bid]}/2) to shared pool")
                                 shared_queue.put_nowait(bid)
                             else:
                                 results[bid] = (False, f"parked after 2 requeues: {exc}")
                             faults += 1
                             if faults >= 2:
-                                log(f"[{profile}] Quarantining worker after {faults} faults.")
+                                log(f"[{slot_tag}] Quarantining worker slot after {faults} faults.")
                                 break
                     finally:
+                        if registered_active and bid and bid in ACTIVE_BATCHES_BY_PROFILE.get(profile, []):
+                            ACTIVE_BATCHES_BY_PROFILE[profile].remove(bid)
                         IN_FLIGHT_BATCHES -= 1
             finally:
-                ALIVE_WORKERS.discard(profile)
+                ALIVE_SLOTS.discard(slot_tag)
+                if not any(s == profile or s.startswith(f"{profile}#") for s in ALIVE_SLOTS):
+                    ALIVE_WORKERS.discard(profile)
         except Exception as init_exc:
-            log(f"[{profile}] Worker failed during init: {init_exc}")
+            log(f"[{slot_tag}] Worker failed during init: {init_exc}")
             await update_quota_live(profile, status="init_error", last_error=str(init_exc)[:140])
         finally:
             worker_total_s = round(time.monotonic() - t_worker0, 2)
             log(
-                f"[{profile}] Worker exiting after {worker_total_s/60:.1f}m "
+                f"[{slot_tag}] Worker slot exiting after {worker_total_s/60:.1f}m "
                 f"(batches={done_count}, faults={faults}, quota_checks={quota_total_s:.1f}s, idle_wait={idle_wait_s:.1f}s)"
             )
             await record_event(
-                "worker_exit", surah=SURAH_NUM, profile=profile, total_s=worker_total_s,
+                "worker_exit", surah=SURAH_NUM, profile=profile, slot=slot_tag, total_s=worker_total_s,
                 batches=done_count, faults=faults, quota_s=round(quota_total_s, 2), idle_wait_s=round(idle_wait_s, 1),
             )
-            if client is not None:
-                await client.close()
+            await safe_close_slot_client(client)
 
 
 def _batch_input_size(batch_id: str) -> int:
@@ -1733,8 +2105,14 @@ def _batch_input_size(batch_id: str) -> int:
         return 0
 
 
-async def run_queue(profiles: list[str], target_batches: list[str] | None = None, surah: int | None = None) -> int:
-    global IN_FLIGHT_BATCHES
+async def run_queue(
+    profiles: list[str],
+    target_batches: list[str] | None = None,
+    surah: int | None = None,
+    chats_per_account: int = 2,
+) -> int:
+    global IN_FLIGHT_BATCHES, CHATS_PER_ACCOUNT
+    CHATS_PER_ACCOUNT = max(1, int(chats_per_account))
     if surah is not None:
         configure_surah(surah)
     elif target_batches:
@@ -1749,6 +2127,14 @@ async def run_queue(profiles: list[str], target_batches: list[str] | None = None
     LAST_END.clear()
     STEP_A_SECONDS.clear()
     ALIVE_WORKERS.clear()
+    ALIVE_SLOTS.clear()
+    ACTIVE_BATCHES_BY_PROFILE.clear()
+    OVERLAPPED_BATCHES.clear()
+    RETIRED_PROFILES.clear()
+    RETIRED_UNTIL.clear()
+    RETIRED_REASON.clear()
+    ACCOUNT_INIT_LOCKS.clear()
+    ACCOUNT_INIT_CACHE.clear()
 
     t0 = time.monotonic()
     t_wl0 = time.monotonic()
@@ -1774,27 +2160,33 @@ async def run_queue(profiles: list[str], target_batches: list[str] | None = None
         shared_q.put_nowait(b)
 
     ordered_summary = [f"{b}({_batch_input_size(b)}B)" for b in all_batches]
+    total_slots = len(profiles) * CHATS_PER_ACCOUNT
     log(
-        f"Starting Surah {SURAH_NUM} ({SURAH_NAME_AR}) parallel Argon High extraction across {len(profiles)} profiles {profiles} "
+        f"Starting Surah {SURAH_NUM} ({SURAH_NAME_AR}) parallel Argon High extraction across {len(profiles)} accounts {profiles} "
+        f"× {CHATS_PER_ACCOUNT} chat(s)/account ({total_slots} total concurrent worker slots) "
         f"for {len(all_batches)} batches (largest first: {', '.join(ordered_summary)}; lookups loaded in {lookup_load_s:.2f}s)"
     )
     results: dict[str, tuple[bool, str]] = {}
     ALIVE_WORKERS.update(profiles)
-    coros = [
-        queue_worker(
-            idx,
-            prof,
-            None,
-            shared_q,
-            requeue_counts,
-            results,
-            wl_cache,
-            mw_cache,
-            min_quota_remaining=240,
-            max_batches=None,
-        )
-        for idx, prof in enumerate(profiles)
-    ]
+    coros = []
+    for idx, prof in enumerate(profiles):
+        for slot_idx in range(1, CHATS_PER_ACCOUNT + 1):
+            coros.append(
+                queue_worker(
+                    idx,
+                    prof,
+                    None,
+                    shared_q,
+                    requeue_counts,
+                    results,
+                    wl_cache,
+                    mw_cache,
+                    min_quota_remaining=240,
+                    max_batches=None,
+                    slot_idx=slot_idx,
+                    chats_per_account=CHATS_PER_ACCOUNT,
+                )
+            )
 
     await asyncio.gather(*coros)
     # Mark any unpicked batches as failed
@@ -1818,7 +2210,7 @@ async def run_queue(profiles: list[str], target_batches: list[str] | None = None
         tot_q, tot_tok, tot_cost = 0, 0, 0.0
     await record_event(
         "run_done", surah=SURAH_NUM, wall_s=round(dt, 2), lookup_load_s=lookup_load_s,
-        ok=ok_cnt, total=len(all_batches), profiles=profiles,
+        ok=ok_cnt, total=len(all_batches), profiles=profiles, chats_per_account=CHATS_PER_ACCOUNT,
         quota_credits_used=tot_q, total_tokens=tot_tok, estimated_cost_usd=tot_cost,
     )
     log(
@@ -1846,6 +2238,12 @@ def parse_args() -> argparse.Namespace:
         help="Comma-separated list of candidate profiles (dynamic Argon High check filters non-Pro accounts)",
     )
     p.add_argument(
+        "--chats-per-account",
+        type=int,
+        default=2,
+        help="Number of simultaneous chat worker slots per account (default: 2 -> 4 Pro accounts × 2 = 8 parallel chats)",
+    )
+    p.add_argument(
         "--batches",
         default="",
         help="Optional comma-separated subset of batch IDs",
@@ -1857,4 +2255,13 @@ if __name__ == "__main__":
     args = parse_args()
     profs = [x.strip() for x in args.profiles.split(",") if x.strip()]
     batches = [x.strip() for x in args.batches.split(",") if x.strip()] or None
-    raise SystemExit(asyncio.run(run_queue(profs, batches, surah=args.surah)))
+    raise SystemExit(
+        asyncio.run(
+            run_queue(
+                profs,
+                batches,
+                surah=args.surah,
+                chats_per_account=args.chats_per_account,
+            )
+        )
+    )

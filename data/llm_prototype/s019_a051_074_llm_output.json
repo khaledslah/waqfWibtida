@@ -1,0 +1,4056 @@
+{
+  "surah": 19,
+  "ayahRange": [
+    51,
+    74
+  ],
+  "boundaryFlags": {
+    "expandedLookbehindAyah": 47,
+    "expandedLookaheadAyah": 76,
+    "inheritedFromPrev": "امتد حكم الداني من المقطع السابق (آية 47: «{سلامٌ عليك} كاف. وكذا رؤوس الآي») ليشمل رؤوس الآيات من 51 إلى 57 حتى قوله في آية 58: «{واجتبينا} كاف. {وبكيًا} تام»، كما عطف ابن الأنباري موضع (وممن هدينا واجتبينا) [58] على موضع (وأبصر يوم يأتوننا) [38].",
+    "extendedIntoNext": "اشتمل المقطع المشترك (73-76) على أحكام للآيتين 75 و76 خارج النطاق المطلوب (51-74)، ومنها عطف الداني {اهتدوا هدى} [76] و{مردا} [76] على {له سميًا} [65]، وعطف الأشموني {مدا} [75] على {نديا} [73]، بالإضافة إلى مواضع السجاوندي وابن الأنباري والأشموني المستقلة في الآيتين 75 و76.",
+    "outOfRangeStopsEmitted": []
+  },
+  "extractions": [
+    {
+      "ayah": 51,
+      "wordIndex": 4,
+      "targetWord": "مُوسَىٰٓ",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/684",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "ز",
+      "typoDetected": {
+        "raw": "بأن",
+        "corrected": "بإن",
+        "reason": "تصحيف مطبعي في همزة (إن) المكسورة للابتداء في قوله تعالى (إنه كان مخلصا)"
+      },
+      "comment": "للابتداء بإن، مع أن المراد في الذكر: إخلاص موسى [عليه السلام].",
+      "demosAndMeanings": [
+        {
+          "verdict": "جائز",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            4
+          ],
+          "ibtidaSegmentWords": [
+            5,
+            10
+          ],
+          "waqfDemo": "تلاوة: ﴿ وَٱذْكُرْ فِى ٱلْكِتَـٰبِ مُوسَىٰٓ ﴾ [قف على: مُوسَىٰ]",
+          "ibtidaDemo": "﴿ إِنَّهُۥ كَانَ مُخْلَصًۭا وَكَانَ رَسُولًۭا نَّبِيًّۭا ﴾ [قف على: نَّبِيًّا]",
+          "meaningAtWaqf": "الأمر بذكر قصة موسى عليه السلام في القرآن، وتمت جملة الفعل والفاعل والمفعول به لفظاً.",
+          "meaningAtIbtida": "الابتداء بجملة مستأنفة مكسورة الهمزة ﴿إِنَّهُۥ كَانَ مُخْلَصًۭا﴾ لبيان صفته وثناء الله عليه.",
+          "meaningIfConnected": "الوصل أرجح عند السجاوندي (رمز «ز»)؛ لأن المراد بالذكر هو ذكر إخلاص موسى عليه السلام على تقدير بدل الاشتمال."
+        }
+      ]
+    },
+    {
+      "ayah": 51,
+      "wordIndex": 4,
+      "targetWord": "مُوسَىٰٓ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "238-239",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "للابتداء بإن ومثله مخلصا",
+      "demosAndMeanings": [
+        {
+          "verdict": "جائز",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            4
+          ],
+          "ibtidaSegmentWords": [
+            5,
+            10
+          ],
+          "waqfDemo": "تلاوة: ﴿ وَٱذْكُرْ فِى ٱلْكِتَـٰبِ مُوسَىٰٓ ﴾ [قف على: مُوسَىٰ]",
+          "ibtidaDemo": "﴿ إِنَّهُۥ كَانَ مُخْلَصًۭا وَكَانَ رَسُولًۭا نَّبِيًّۭا ﴾ [قف على: نَّبِيًّا]",
+          "meaningAtWaqf": "اكتمال جملة الأمر بذكر موسى عليه السلام في الكتاب.",
+          "meaningAtIbtida": "استئناف بياني وتعليلي بـ﴿إِنَّهُۥ﴾ المكسورة الهمزة لبيان حاله وشمائله.",
+          "meaningIfConnected": "عند الوصل تتصل الجملة ببيان الوجه الذي يُذكر به موسى عليه السلام وهو إخلاصه ورسالته."
+        }
+      ]
+    },
+    {
+      "ayah": 51,
+      "wordIndex": 7,
+      "targetWord": "مُخْلَصًۭا",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "238-239",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "موسى جائز للابتداء بإن ومثله مخلصا",
+      "demosAndMeanings": [
+        {
+          "verdict": "جائز",
+          "isQila": false,
+          "waqfSegmentWords": [
+            5,
+            7
+          ],
+          "ibtidaSegmentWords": [
+            8,
+            10
+          ],
+          "waqfDemo": "تلاوة: ﴿ إِنَّهُۥ كَانَ مُخْلَصًۭا ﴾ [قف على: مُخْلَصًا]",
+          "ibtidaDemo": "﴿ وَكَانَ رَسُولًۭا نَّبِيًّۭا ﴾ [قف على: نَّبِيًّا]",
+          "meaningAtWaqf": "تمام الإخبار عن اصطفاء الله لموسى عليه السلام وإخلاصه.",
+          "meaningAtIbtida": "الابتداء بجملة معطوفة تخبر عن جمع الله له بين الرسالة والنبوة.",
+          "meaningIfConnected": "الوصل يجمع بين صفتي الإخلاص والرسالة في سياق ثناء متصل."
+        }
+      ]
+    },
+    {
+      "ayah": 51,
+      "wordIndex": 10,
+      "targetWord": "نَّبِيًّۭا",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "376",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "{سلامٌ عليك} كاف. وكذا رؤوس الآي.",
+      "demosAndMeanings": [
+        {
+          "verdict": "كاف",
+          "isQila": false,
+          "waqfSegmentWords": [
+            5,
+            10
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ إِنَّهُۥ كَانَ مُخْلَصًۭا وَكَانَ رَسُولًۭا نَّبِيًّۭا ﴾ [قف على: نَّبِيًّا]",
+          "ibtidaDemo": "﴿ وَنَـٰدَيْنَـٰهُ مِن جَانِبِ ٱلطُّورِ ٱلْأَيْمَنِ وَقَرَّبْنَـٰهُ نَجِيًّۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "استقلال الكلام لفظاً بتمام الثناء على موسى عليه السلام بالإخلاص والرسالة والنبوة عند رأس الآية.",
+          "meaningAtIbtida": "الابتداء بجملة خبرية جديدة تذكر تكليم الله له وتقريبه من جانب الطور الأيمن.",
+          "meaningIfConnected": "الاتصال المعنوي قائم لتعلق الجمل كلها بقصة موسى عليه السلام وعطف بعضها على بعض."
+        }
+      ]
+    },
+    {
+      "ayah": 51,
+      "wordIndex": 10,
+      "targetWord": "نَّبِيًّۭا",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "238-239",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "نبيا كاف",
+      "demosAndMeanings": [
+        {
+          "verdict": "كاف",
+          "isQila": false,
+          "waqfSegmentWords": [
+            8,
+            10
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ وَكَانَ رَسُولًۭا نَّبِيًّۭا ﴾ [قف على: نَّبِيًّا]",
+          "ibtidaDemo": "﴿ وَنَـٰدَيْنَـٰهُ مِن جَانِبِ ٱلطُّورِ ٱلْأَيْمَنِ وَقَرَّبْنَـٰهُ نَجِيًّۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام الجملة الواصفة لموسى عليه السلام بالرسالة والنبوة على رأس الآية.",
+          "meaningAtIbtida": "الانتقال إلى الإخبار عن مناداة الله له ومناجاته.",
+          "meaningIfConnected": "الوصل يعطف إنعام الله عليه بالنداء والتقريب على وصفه بالرسالة والنبوة."
+        }
+      ]
+    },
+    {
+      "ayah": 51,
+      "wordIndex": 10,
+      "targetWord": "نَّبِيًّۭا",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 51",
+      "verdicts": [
+        "صالح"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "﴿وَكَانَ رَسُولًا نَّبِيًّا﴾ قطع صالح وكذا ﴿وَقَرَّبْنَاهُ نَجِيًّا﴾",
+      "demosAndMeanings": [
+        {
+          "verdict": "صالح",
+          "isQila": false,
+          "waqfSegmentWords": [
+            8,
+            10
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ وَكَانَ رَسُولًۭا نَّبِيًّۭا ﴾ [قف على: نَّبِيًّا]",
+          "ibtidaDemo": "﴿ وَنَـٰدَيْنَـٰهُ مِن جَانِبِ ٱلطُّورِ ٱلْأَيْمَنِ وَقَرَّبْنَـٰهُ نَجِيًّۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "انقضاء الجملة الخبرية عند فاصلة الآية مما يصلح معه القطع.",
+          "meaningAtIbtida": "الابتداء بجملة معطوفة تذكر مناداة الله لموسى عليه السلام.",
+          "meaningIfConnected": "الكلام متصل في المعنى والنسق لأن القصة لم تنقضِ بعد، والتمام عند انتهاء قصته في ﴿هَـٰرُونَ نَبِيًّۭا﴾."
+        }
+      ]
+    },
+    {
+      "ayah": 52,
+      "wordIndex": 5,
+      "targetWord": "ٱلْأَيْمَنِ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "238-239",
+      "verdicts": [
+        "حسن"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "الأيمن حسن ومثله نجيا",
+      "demosAndMeanings": [
+        {
+          "verdict": "حسن",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            5
+          ],
+          "ibtidaSegmentWords": [
+            6,
+            7
+          ],
+          "waqfDemo": "تلاوة: ﴿ وَنَـٰدَيْنَـٰهُ مِن جَانِبِ ٱلطُّورِ ٱلْأَيْمَنِ ﴾ [قف على: ٱلْأَيْمَنْ]",
+          "ibtidaDemo": "﴿ وَقَرَّبْنَـٰهُ نَجِيًّۭا ﴾ [قف على: نَجِيًّا]",
+          "meaningAtWaqf": "تمام الإخبار بمناداة الله لموسى عليه السلام من ناحية جبل الطور اليمنى.",
+          "meaningAtIbtida": "الابتداء بجملة معطوفة تفيد تقريب موسى عليه السلام مناجياً ربه.",
+          "meaningIfConnected": "الوصل أولى لشدة الترابط بين المناداة والتقريب للمناجاة في موقف واحد."
+        }
+      ]
+    },
+    {
+      "ayah": 52,
+      "wordIndex": 7,
+      "targetWord": "نَجِيًّۭا",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "376",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "{سلامٌ عليك} كاف. وكذا رؤوس الآي.",
+      "demosAndMeanings": [
+        {
+          "verdict": "كاف",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            7
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ وَنَـٰدَيْنَـٰهُ مِن جَانِبِ ٱلطُّورِ ٱلْأَيْمَنِ وَقَرَّبْنَـٰهُ نَجِيًّۭا ﴾ [قف على: نَجِيًّا]",
+          "ibtidaDemo": "﴿ وَوَهَبْنَا لَهُۥ مِن رَّحْمَتِنَآ أَخَاهُ هَـٰرُونَ نَبِيًّۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام الكلام لفظاً في بيان كرامة المناداة والمناجاة لموسى عليه السلام عند رأس الآية.",
+          "meaningAtIbtida": "الابتداء بذكر نعمة أخرى وهي إجابة سؤله بهبة أخيه هارون نبياً يشد أزره.",
+          "meaningIfConnected": "الاتصال المعنوي باقٍ لتتابع تعداد النعم الإلهية على موسى عليه السلام."
+        }
+      ]
+    },
+    {
+      "ayah": 52,
+      "wordIndex": 7,
+      "targetWord": "نَجِيًّۭا",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "238-239",
+      "verdicts": [
+        "حسن"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "الأيمن حسن ومثله نجيا",
+      "demosAndMeanings": [
+        {
+          "verdict": "حسن",
+          "isQila": false,
+          "waqfSegmentWords": [
+            6,
+            7
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ وَقَرَّبْنَـٰهُ نَجِيًّۭا ﴾ [قف على: نَجِيًّا]",
+          "ibtidaDemo": "﴿ وَوَهَبْنَا لَهُۥ مِن رَّحْمَتِنَآ أَخَاهُ هَـٰرُونَ نَبِيًّۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "إفادة معنى تام في نفسه بذكر تقريب موسى عليه السلام مناجياً مع موافقة رأس الآية.",
+          "meaningAtIbtida": "الابتداء بجملة معطوفة تذكر هبة النبوة لأخيه هارون عليه السلام.",
+          "meaningIfConnected": "تتعلق الجملة بما بعدها عطفاً في نسق المنن الممنوحة لموسى عليه السلام."
+        }
+      ]
+    },
+    {
+      "ayah": 52,
+      "wordIndex": 7,
+      "targetWord": "نَجِيًّۭا",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 51",
+      "verdicts": [
+        "صالح"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "﴿وَكَانَ رَسُولًا نَّبِيًّا﴾ قطع صالح وكذا ﴿وَقَرَّبْنَاهُ نَجِيًّا﴾",
+      "demosAndMeanings": [
+        {
+          "verdict": "صالح",
+          "isQila": false,
+          "waqfSegmentWords": [
+            6,
+            7
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ وَقَرَّبْنَـٰهُ نَجِيًّۭا ﴾ [قف على: نَجِيًّا]",
+          "ibtidaDemo": "﴿ وَوَهَبْنَا لَهُۥ مِن رَّحْمَتِنَآ أَخَاهُ هَـٰرُونَ نَبِيًّۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "صلاحية الوقف لتمام الجملة الفعلية وكونه رأس آية.",
+          "meaningAtIbtida": "الابتداء ببقية أخبار موسى عليه السلام في إشراك أخيه هارون في النبوة.",
+          "meaningIfConnected": "الوصل يربط جمل القصة المتعاطفة حتى يتم الكلام بانتهاء ذكر موسى وهارون عليهما السلام."
+        }
+      ]
+    },
+    {
+      "ayah": 53,
+      "wordIndex": 7,
+      "targetWord": "نَبِيًّۭا",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "376",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "{سلامٌ عليك} كاف. وكذا رؤوس الآي.",
+      "demosAndMeanings": [
+        {
+          "verdict": "كاف",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            7
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ وَوَهَبْنَا لَهُۥ مِن رَّحْمَتِنَآ أَخَاهُ هَـٰرُونَ نَبِيًّۭا ﴾ [قف على: نَبِيًّا]",
+          "ibtidaDemo": "﴿ وَٱذْكُرْ فِى ٱلْكِتَـٰبِ إِسْمَـٰعِيلَ ﴾ [الآية التالية]",
+          "meaningAtWaqf": "انقضاء خبر موسى وأخيه هارون عليهما السلام على رأس الآية.",
+          "meaningAtIbtida": "الانتقال إلى قصة إسماعيل عليه السلام في سياق تعداد الأنبياء المذكورين في السورة.",
+          "meaningIfConnected": "ترابط القصص في المعنى العام لاشتراكها في غرض التذكير بأنبياء الله تحت عطف ﴿وَٱذْكُرْ﴾."
+        }
+      ]
+    },
+    {
+      "ayah": 53,
+      "wordIndex": 7,
+      "targetWord": "نَبِيًّۭا",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "238-239",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "نبيا تام",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            7
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ وَوَهَبْنَا لَهُۥ مِن رَّحْمَتِنَآ أَخَاهُ هَـٰرُونَ نَبِيًّۭا ﴾ [قف على: نَبِيًّا]",
+          "ibtidaDemo": "﴿ وَٱذْكُرْ فِى ٱلْكِتَـٰبِ إِسْمَـٰعِيلَ ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام قصة موسى عليه السلام وانقطاعها لفظاً ومعنى عن القصة التالية.",
+          "meaningAtIbtida": "الشروع في قصة جديدة مستقلة وهي قصة إسماعيل عليه السلام.",
+          "meaningIfConnected": "الوقف أولى لتمام القصة الأولى واستقلال الثانية عنها."
+        }
+      ]
+    },
+    {
+      "ayah": 53,
+      "wordIndex": 7,
+      "targetWord": "نَبِيًّۭا",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 53",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "والتمام ﴿وَوَهَبْنَا لَهُ مِن رَّحْمَتِنَا أَخَاهُ هَارُونَ نَبِيًّا﴾.",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            7
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ وَوَهَبْنَا لَهُۥ مِن رَّحْمَتِنَآ أَخَاهُ هَـٰرُونَ نَبِيًّۭا ﴾ [قف على: نَبِيًّا]",
+          "ibtidaDemo": "﴿ وَٱذْكُرْ فِى ٱلْكِتَـٰبِ إِسْمَـٰعِيلَ ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام الكلام بانتهاء أخبار موسى عليه السلام وما خصه الله به.",
+          "meaningAtIbtida": "ائتناف كلام جديد في الأمر بذكر إسماعيل عليه السلام.",
+          "meaningIfConnected": "القطع هنا هو التمام لانفصال قصة موسى عن قصة إسماعيل عليهما السلام."
+        }
+      ]
+    },
+    {
+      "ayah": 54,
+      "wordIndex": 4,
+      "targetWord": "إِسْمَـٰعِيلَ",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/684",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "ز",
+      "typoDetected": null,
+      "comment": "كذلك، للابتداء بإن، مع أن المراد في الذكر: إخلاص موسى [عليه السلام].",
+      "demosAndMeanings": [
+        {
+          "verdict": "جائز",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            4
+          ],
+          "ibtidaSegmentWords": [
+            5,
+            11
+          ],
+          "waqfDemo": "تلاوة: ﴿ وَٱذْكُرْ فِى ٱلْكِتَـٰبِ إِسْمَـٰعِيلَ ﴾ [قف على: إِسْمَـٰعِيلْ]",
+          "ibtidaDemo": "﴿ إِنَّهُۥ كَانَ صَادِقَ ٱلْوَعْدِ وَكَانَ رَسُولًۭا نَّبِيًّۭا ﴾ [قف على: نَّبِيًّا]",
+          "meaningAtWaqf": "تمام جملة الأمر بذكر إسماعيل عليه السلام في الكتاب.",
+          "meaningAtIbtida": "الابتداء بـ﴿إِنَّهُۥ﴾ على الاستئناف البياني لذكر خصلته الحميدة وهي صدق الوعد.",
+          "meaningIfConnected": "الوصل أولى عند السجاوندي (رمز «ز») لأن المقصود بالذكر هو ذكر صدق وعده ورسالته."
+        }
+      ]
+    },
+    {
+      "ayah": 54,
+      "wordIndex": 4,
+      "targetWord": "إِسْمَـٰعِيلَ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "238-239",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "إسماعيل جائز ومثله صادق الوعد",
+      "demosAndMeanings": [
+        {
+          "verdict": "جائز",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            4
+          ],
+          "ibtidaSegmentWords": [
+            5,
+            11
+          ],
+          "waqfDemo": "تلاوة: ﴿ وَٱذْكُرْ فِى ٱلْكِتَـٰبِ إِسْمَـٰعِيلَ ﴾ [قف على: إِسْمَـٰعِيلْ]",
+          "ibtidaDemo": "﴿ إِنَّهُۥ كَانَ صَادِقَ ٱلْوَعْدِ وَكَانَ رَسُولًۭا نَّبِيًّۭا ﴾ [قف على: نَّبِيًّا]",
+          "meaningAtWaqf": "اكتمال جملة الأمر بذكر إسماعيل عليه السلام.",
+          "meaningAtIbtida": "الابتداء بجملة ﴿إِنَّهُۥ كَانَ صَادِقَ ٱلْوَعْدِ﴾ استئنافاً للثناء عليه.",
+          "meaningIfConnected": "عند الوصل يتبين أن المأمور بذكره هو اتصافه بصدق الوعد والرسالة."
+        }
+      ]
+    },
+    {
+      "ayah": 54,
+      "wordIndex": 8,
+      "targetWord": "ٱلْوَعْدِ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "238-239",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "إسماعيل جائز ومثله صادق الوعد",
+      "demosAndMeanings": [
+        {
+          "verdict": "جائز",
+          "isQila": false,
+          "waqfSegmentWords": [
+            5,
+            8
+          ],
+          "ibtidaSegmentWords": [
+            9,
+            11
+          ],
+          "waqfDemo": "تلاوة: ﴿ إِنَّهُۥ كَانَ صَادِقَ ٱلْوَعْدِ ﴾ [قف على: ٱلْوَعْدْ]",
+          "ibtidaDemo": "﴿ وَكَانَ رَسُولًۭا نَّبِيًّۭا ﴾ [قف على: نَّبِيًّا]",
+          "meaningAtWaqf": "تمام الجملة الخبرية المثبتة لصدق الوعد لإسماعيل عليه السلام.",
+          "meaningAtIbtida": "الابتداء بجملة معطوفة تذكر مقامه في الرسالة والنبوة.",
+          "meaningIfConnected": "الوصل يجمع بين أوصافه الخُلقية ومقامه النبوي في سياق واحد."
+        }
+      ]
+    },
+    {
+      "ayah": 54,
+      "wordIndex": 11,
+      "targetWord": "نَّبِيًّۭا",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "376",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "{سلامٌ عليك} كاف. وكذا رؤوس الآي.",
+      "demosAndMeanings": [
+        {
+          "verdict": "كاف",
+          "isQila": false,
+          "waqfSegmentWords": [
+            5,
+            11
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ إِنَّهُۥ كَانَ صَادِقَ ٱلْوَعْدِ وَكَانَ رَسُولًۭا نَّبِيًّۭا ﴾ [قف على: نَّبِيًّا]",
+          "ibtidaDemo": "﴿ وَكَانَ يَأْمُرُ أَهْلَهُۥ بِٱلصَّلَوٰةِ وَٱلزَّكَوٰةِ وَكَانَ عِندَ رَبِّهِۦ مَرْضِيًّۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "استغناء الكلام لفظاً بتمام صفات الصدق والرسالة والنبوة لإسماعيل عليه السلام عند رأس الآية.",
+          "meaningAtIbtida": "الابتداء بذكر هديه العملي في أمر أهله بالصلاة والزكاة.",
+          "meaningIfConnected": "المعنى متصل لأن الآية التالية من تمام الثناء على إسماعيل عليه السلام."
+        }
+      ]
+    },
+    {
+      "ayah": 54,
+      "wordIndex": 11,
+      "targetWord": "نَّبِيًّۭا",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/684",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "ج",
+      "typoDetected": null,
+      "comment": "لرأس الآية على صدق [اتصال العطف].",
+      "demosAndMeanings": [
+        {
+          "verdict": "جائز",
+          "isQila": false,
+          "waqfSegmentWords": [
+            9,
+            11
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ وَكَانَ رَسُولًۭا نَّبِيًّۭا ﴾ [قف على: نَّبِيًّا]",
+          "ibtidaDemo": "﴿ وَكَانَ يَأْمُرُ أَهْلَهُۥ بِٱلصَّلَوٰةِ وَٱلزَّكَوٰةِ وَكَانَ عِندَ رَبِّهِۦ مَرْضِيًّۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "جواز الوقف لموافقة رأس الآية وتمام الجملة الواصفة له بالرسالة والنبوة.",
+          "meaningAtIbtida": "الابتداء بالجملة المعطوفة في وصف أمره أهله بالصلاة والزكاة.",
+          "meaningIfConnected": "تجاذب الطرفين بين مراعاة فاصلة الآية وبين قوة اتصال العطف في أوصاف إسماعيل عليه السلام."
+        }
+      ]
+    },
+    {
+      "ayah": 54,
+      "wordIndex": 11,
+      "targetWord": "نَّبِيًّۭا",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "238-239",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "نبيا كاف",
+      "demosAndMeanings": [
+        {
+          "verdict": "كاف",
+          "isQila": false,
+          "waqfSegmentWords": [
+            9,
+            11
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ وَكَانَ رَسُولًۭا نَّبِيًّۭا ﴾ [قف على: نَّبِيًّا]",
+          "ibtidaDemo": "﴿ وَكَانَ يَأْمُرُ أَهْلَهُۥ بِٱلصَّلَوٰةِ وَٱلزَّكَوٰةِ وَكَانَ عِندَ رَبِّهِۦ مَرْضِيًّۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "كفاية الوقف لانقضاء الجملة عند رأس الآية.",
+          "meaningAtIbtida": "الابتداء بجملة معطوفة تذكر عنايته بأهله وأمرهم بالعبادة.",
+          "meaningIfConnected": "يتصل ما بعده بما قبله في تعداد مناقب إسماعيل عليه السلام."
+        }
+      ]
+    },
+    {
+      "ayah": 54,
+      "wordIndex": 11,
+      "targetWord": "نَّبِيًّۭا",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 54",
+      "verdicts": [
+        "صالح"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "﴿وَكَانَ رَسُولًا نَّبِيًّا﴾ قطع صالح",
+      "demosAndMeanings": [
+        {
+          "verdict": "صالح",
+          "isQila": false,
+          "waqfSegmentWords": [
+            9,
+            11
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ وَكَانَ رَسُولًۭا نَّبِيًّۭا ﴾ [قف على: نَّبِيًّا]",
+          "ibtidaDemo": "﴿ وَكَانَ يَأْمُرُ أَهْلَهُۥ بِٱلصَّلَوٰةِ وَٱلزَّكَوٰةِ وَكَانَ عِندَ رَبِّهِۦ مَرْضِيًّۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "صلاحية القطع على رأس الآية لاستقلال الجملة في الإعراب.",
+          "meaningAtIbtida": "الابتداء ببقية أوصاف إسماعيل عليه السلام.",
+          "meaningIfConnected": "ليس بتام لاتصال العطف وبقاء القصة إلى تمامها في قوله ﴿مَرْضِيًّۭا﴾."
+        }
+      ]
+    },
+    {
+      "ayah": 55,
+      "wordIndex": 5,
+      "targetWord": "وَٱلزَّكَوٰةِ",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/684",
+      "verdicts": [
+        "حسن"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "ص",
+      "typoDetected": null,
+      "comment": "{والزكاة- 55- ص}.",
+      "demosAndMeanings": [
+        {
+          "verdict": "حسن",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            5
+          ],
+          "ibtidaSegmentWords": [
+            6,
+            9
+          ],
+          "waqfDemo": "تلاوة: ﴿ وَكَانَ يَأْمُرُ أَهْلَهُۥ بِٱلصَّلَوٰةِ وَٱلزَّكَوٰةِ ﴾ [قف على: وَٱلزَّكَوٰةْ]",
+          "ibtidaDemo": "﴿ وَكَانَ عِندَ رَبِّهِۦ مَرْضِيًّۭا ﴾ [قف على: مَرْضِيًّا]",
+          "meaningAtWaqf": "تمام الإخبار عن أمره أهله بإقام الصلاة وإيتاء الزكاة.",
+          "meaningAtIbtida": "الابتداء ببيان منزلته عند ربه وأنه كان مرضياً.",
+          "meaningIfConnected": "الوصل أرجح (لأن رمز «ص» مرخص ضرورة لانقطاع النفس لعطف الجملة الثانية على الأولى)."
+        }
+      ]
+    },
+    {
+      "ayah": 55,
+      "wordIndex": 5,
+      "targetWord": "وَٱلزَّكَوٰةِ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "238-239",
+      "verdicts": [
+        "حسن"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "بالصلاة والزكاة حسن",
+      "demosAndMeanings": [
+        {
+          "verdict": "حسن",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            5
+          ],
+          "ibtidaSegmentWords": [
+            6,
+            9
+          ],
+          "waqfDemo": "تلاوة: ﴿ وَكَانَ يَأْمُرُ أَهْلَهُۥ بِٱلصَّلَوٰةِ وَٱلزَّكَوٰةِ ﴾ [قف على: وَٱلزَّكَوٰةْ]",
+          "ibtidaDemo": "﴿ وَكَانَ عِندَ رَبِّهِۦ مَرْضِيًّۭا ﴾ [قف على: مَرْضِيًّا]",
+          "meaningAtWaqf": "إفادة معنى تام في بيان دعوته أهله إلى الصلاة والزكاة.",
+          "meaningAtIbtida": "الابتداء بجملة معطوفة تذكر رضوان الله عليه.",
+          "meaningIfConnected": "الوصل أولى لشدة ارتباط الجزاء بالعمل وعطف الجملتين."
+        }
+      ]
+    },
+    {
+      "ayah": 55,
+      "wordIndex": 9,
+      "targetWord": "مَرْضِيًّۭا",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "376",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "{سلامٌ عليك} كاف. وكذا رؤوس الآي.",
+      "demosAndMeanings": [
+        {
+          "verdict": "كاف",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            9
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ وَكَانَ يَأْمُرُ أَهْلَهُۥ بِٱلصَّلَوٰةِ وَٱلزَّكَوٰةِ وَكَانَ عِندَ رَبِّهِۦ مَرْضِيًّۭا ﴾ [قف على: مَرْضِيًّا]",
+          "ibtidaDemo": "﴿ وَٱذْكُرْ فِى ٱلْكِتَـٰبِ إِدْرِيسَ ﴾ [الآية التالية]",
+          "meaningAtWaqf": "انقضاء الثناء على إسماعيل عليه السلام عند رأس الآية.",
+          "meaningAtIbtida": "الانتقال إلى الأمر بذكر إدريس عليه السلام.",
+          "meaningIfConnected": "الاتصال المعنوي العام في سرد قصص الأنبياء المعطوف بعضها على بعض."
+        }
+      ]
+    },
+    {
+      "ayah": 55,
+      "wordIndex": 9,
+      "targetWord": "مَرْضِيًّۭا",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "238-239",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "مرضيا تام",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "waqfSegmentWords": [
+            6,
+            9
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ وَكَانَ عِندَ رَبِّهِۦ مَرْضِيًّۭا ﴾ [قف على: مَرْضِيًّا]",
+          "ibtidaDemo": "﴿ وَٱذْكُرْ فِى ٱلْكِتَـٰبِ إِدْرِيسَ ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام قصة إسماعيل عليه السلام وانقطاعها عما بعدها لفظاً ومعنى.",
+          "meaningAtIbtida": "الابتداء بقصة جديدة مستقلة تخص إدريس عليه السلام.",
+          "meaningIfConnected": "الوقف التام أولى لانتهاء القصة الأولى واستئناف قصة أخرى."
+        }
+      ]
+    },
+    {
+      "ayah": 55,
+      "wordIndex": 9,
+      "targetWord": "مَرْضِيًّۭا",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 55",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "والتمام ﴿وَكَانَ عِندَ رَبِّهِ مَرْضِيًّا﴾.",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "waqfSegmentWords": [
+            6,
+            9
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ وَكَانَ عِندَ رَبِّهِۦ مَرْضِيًّۭا ﴾ [قف على: مَرْضِيًّا]",
+          "ibtidaDemo": "﴿ وَٱذْكُرْ فِى ٱلْكِتَـٰبِ إِدْرِيسَ ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام الكلام بانتهاء ذكر إسماعيل عليه السلام.",
+          "meaningAtIbtida": "ائتناف قصة إدريس عليه السلام.",
+          "meaningIfConnected": "القطع هنا تام لانفصال القصة عن القصة التي تليها."
+        }
+      ]
+    },
+    {
+      "ayah": 56,
+      "wordIndex": 4,
+      "targetWord": "إِدْرِيسَ",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/684-685",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "ز",
+      "typoDetected": null,
+      "comment": "لما ذكر في قوله: «موسى».",
+      "demosAndMeanings": [
+        {
+          "verdict": "جائز",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            4
+          ],
+          "ibtidaSegmentWords": [
+            5,
+            8
+          ],
+          "waqfDemo": "تلاوة: ﴿ وَٱذْكُرْ فِى ٱلْكِتَـٰبِ إِدْرِيسَ ﴾ [قف على: إِدْرِيسْ]",
+          "ibtidaDemo": "﴿ إِنَّهُۥ كَانَ صِدِّيقًۭا نَّبِيًّۭا ﴾ [قف على: نَّبِيًّا]",
+          "meaningAtWaqf": "تمام جملة الأمر بذكر إدريس عليه السلام في الكتاب.",
+          "meaningAtIbtida": "الابتداء بـ﴿إِنَّهُۥ﴾ المكسورة الهمزة استئنافاً للثناء عليه بالصديقية والنبوة.",
+          "meaningIfConnected": "الوصل أولى عند السجاوندي (رمز «ز») كما في قوله ﴿مُوسَىٰٓ﴾ لأن المراد بالذكر هو ذكر صديقيته ونبوته."
+        }
+      ]
+    },
+    {
+      "ayah": 56,
+      "wordIndex": 4,
+      "targetWord": "إِدْرِيسَ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "إدريس جائز",
+      "demosAndMeanings": [
+        {
+          "verdict": "جائز",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            4
+          ],
+          "ibtidaSegmentWords": [
+            5,
+            8
+          ],
+          "waqfDemo": "تلاوة: ﴿ وَٱذْكُرْ فِى ٱلْكِتَـٰبِ إِدْرِيسَ ﴾ [قف على: إِدْرِيسْ]",
+          "ibtidaDemo": "﴿ إِنَّهُۥ كَانَ صِدِّيقًۭا نَّبِيًّۭا ﴾ [قف على: نَّبِيًّا]",
+          "meaningAtWaqf": "اكتمال جملة الأمر بذكر إدريس عليه السلام.",
+          "meaningAtIbtida": "الابتداء بجملة مكسورة الهمزة تبيّن صفته ومنزلته.",
+          "meaningIfConnected": "عند الوصل تتصل جملة الثناء بالمأمور بذكره."
+        }
+      ]
+    },
+    {
+      "ayah": 56,
+      "wordIndex": 8,
+      "targetWord": "نَّبِيًّۭا",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "376",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "{سلامٌ عليك} كاف. وكذا رؤوس الآي.",
+      "demosAndMeanings": [
+        {
+          "verdict": "كاف",
+          "isQila": false,
+          "waqfSegmentWords": [
+            5,
+            8
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ إِنَّهُۥ كَانَ صِدِّيقًۭا نَّبِيًّۭا ﴾ [قف على: نَّبِيًّا]",
+          "ibtidaDemo": "﴿ وَرَفَعْنَـٰهُ مَكَانًا عَلِيًّا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "كفاية الوقف لتمام الجملة الخبرية عند رأس الآية.",
+          "meaningAtIbtida": "الابتداء بجملة معطوفة تذكر رفعة مكانة إدريس عليه السلام.",
+          "meaningIfConnected": "الاتصال المعنوي قائم لأن الآية التالية من تمام خبر إدريس عليه السلام."
+        }
+      ]
+    },
+    {
+      "ayah": 56,
+      "wordIndex": 8,
+      "targetWord": "نَّبِيًّۭا",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/684-685",
+      "verdicts": [
+        "لا يوقف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "لا",
+      "typoDetected": null,
+      "comment": "قد قيل لا يوقف للعطف.",
+      "demosAndMeanings": null
+    },
+    {
+      "ayah": 56,
+      "wordIndex": 8,
+      "targetWord": "نَّبِيًّۭا",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "نبيا كاف ومثله عليا",
+      "demosAndMeanings": [
+        {
+          "verdict": "كاف",
+          "isQila": false,
+          "waqfSegmentWords": [
+            5,
+            8
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ إِنَّهُۥ كَانَ صِدِّيقًۭا نَّبِيًّۭا ﴾ [قف على: نَّبِيًّا]",
+          "ibtidaDemo": "﴿ وَرَفَعْنَـٰهُ مَكَانًا عَلِيًّا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "استقلال الجملة لفظاً في وصف إدريس عليه السلام بالصديقية والنبوة على رأس الآية.",
+          "meaningAtIbtida": "الابتداء بذكر تشريف الله له برفعه مكاناً علياً.",
+          "meaningIfConnected": "يتصل ما بعده بما قبله عطفاً في بيان مناقب إدريس عليه السلام."
+        }
+      ]
+    },
+    {
+      "ayah": 56,
+      "wordIndex": 8,
+      "targetWord": "نَّبِيًّۭا",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 56",
+      "verdicts": [
+        "صالح"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "﴿إِنَّهُ كَانَ صِدِّيقًا نَّبِيًّا﴾ قطع صالح",
+      "demosAndMeanings": [
+        {
+          "verdict": "صالح",
+          "isQila": false,
+          "waqfSegmentWords": [
+            5,
+            8
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ إِنَّهُۥ كَانَ صِدِّيقًۭا نَّبِيًّۭا ﴾ [قف على: نَّبِيًّا]",
+          "ibtidaDemo": "﴿ وَرَفَعْنَـٰهُ مَكَانًا عَلِيًّا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "صلاحية القطع لانقضاء الجملة وموافقة رأس الآية.",
+          "meaningAtIbtida": "الابتداء بالجملة المعطوفة في رفع مكانه.",
+          "meaningIfConnected": "الوصل يكمل القصة حتى يبلغ التمام في قوله ﴿مَكَانًا عَلِيًّا﴾."
+        }
+      ]
+    },
+    {
+      "ayah": 57,
+      "wordIndex": 3,
+      "targetWord": "عَلِيًّا",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "376",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "{سلامٌ عليك} كاف. وكذا رؤوس الآي.",
+      "demosAndMeanings": [
+        {
+          "verdict": "كاف",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            3
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ وَرَفَعْنَـٰهُ مَكَانًا عَلِيًّا ﴾ [قف على: عَلِيًّا]",
+          "ibtidaDemo": "﴿ أُو۟لَـٰٓئِكَ ٱلَّذِينَ أَنْعَمَ ٱللَّهُ عَلَيْهِم مِّنَ ٱلنَّبِيِّـۧنَ ﴾ [الآية التالية]",
+          "meaningAtWaqf": "انقضاء قصة إدريس عليه السلام عند رأس الآية.",
+          "meaningAtIbtida": "الابتداء بالإشارة الجامعة ﴿أُو۟لَـٰٓئِكَ﴾ إلى جميع الأنبياء المذكورين في السورة.",
+          "meaningIfConnected": "ترابط المعنى بعود اسم الإشارة ﴿أُو۟لَـٰٓئِكَ﴾ على إدريس ومن ذُكر قبله من الأنبياء."
+        }
+      ]
+    },
+    {
+      "ayah": 57,
+      "wordIndex": 3,
+      "targetWord": "عَلِيًّا",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "نبيا كاف ومثله عليا",
+      "demosAndMeanings": [
+        {
+          "verdict": "كاف",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            3
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ وَرَفَعْنَـٰهُ مَكَانًا عَلِيًّا ﴾ [قف على: عَلِيًّا]",
+          "ibtidaDemo": "﴿ أُو۟لَـٰٓئِكَ ٱلَّذِينَ أَنْعَمَ ٱللَّهُ عَلَيْهِم مِّنَ ٱلنَّبِيِّـۧنَ ﴾ [الآية التالية]",
+          "meaningAtWaqf": "استغناء الجملة لفظاً بتمام خبر إدريس عليه السلام على رأس الآية.",
+          "meaningAtIbtida": "الابتداء بجملة اسمية تجمع الثناء على هؤلاء الأنبياء المنعم عليهم.",
+          "meaningIfConnected": "الاتصال المعنوي قائم لرجوع الإشارة في ﴿أُو۟لَـٰٓئِكَ﴾ إلى الأنبياء المتقدم ذكرهم."
+        }
+      ]
+    },
+    {
+      "ayah": 57,
+      "wordIndex": 3,
+      "targetWord": "عَلِيًّا",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 57",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "والتمام ﴿وَرَفَعْنَاهُ مَكَانًا عَلِيًّا﴾",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            3
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ وَرَفَعْنَـٰهُ مَكَانًا عَلِيًّا ﴾ [قف على: عَلِيًّا]",
+          "ibtidaDemo": "﴿ أُو۟لَـٰٓئِكَ ٱلَّذِينَ أَنْعَمَ ٱللَّهُ عَلَيْهِم مِّنَ ٱلنَّبِيِّـۧنَ ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام الكلام بانتهاء قصة إدريس عليه السلام وختم القصص المفردة للأنبياء.",
+          "meaningAtIbtida": "ائتناف جملة اسمية مستقلة ﴿أُو۟لَـٰٓئِكَ ٱلَّذِينَ أَنْعَمَ ٱللَّهُ عَلَيْهِم﴾ للثناء العام عليهم.",
+          "meaningIfConnected": "القطع تام عند النحاس لانفصال التفصيل القصصي عن الإجمال الختامي بعده."
+        }
+      ]
+    },
+    {
+      "ayah": 58,
+      "wordIndex": 10,
+      "targetWord": "ءَادَمَ",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/684-685",
+      "verdicts": [
+        "جائز",
+        "لا يوقف"
+      ],
+      "isQila": [
+        true,
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "ومن وقف على: «ذرية آدم»، أو على: «إسرائيل» فوجهه كذلك في التقدير، ولكن الأصح أن الكل عطف على: «ذرية آدم»، والوقف على قوله: {واجتبينا- 58- ط} لئلا يحتاج إلى الحذف، وليرجع ثناء السجود والبكاء إلى الكل",
+      "demosAndMeanings": [
+        {
+          "verdict": "جائز",
+          "isQila": true,
+          "waqfSegmentWords": [
+            1,
+            10
+          ],
+          "ibtidaSegmentWords": [
+            11,
+            29
+          ],
+          "waqfDemo": "تلاوة: ﴿ أُو۟لَـٰٓئِكَ ٱلَّذِينَ أَنْعَمَ ٱللَّهُ عَلَيْهِم مِّنَ ٱلنَّبِيِّـۧنَ مِن ذُرِّيَّةِ ءَادَمَ ﴾ [قف على: ءَادَمْ]",
+          "ibtidaDemo": "﴿ وَمِمَّنْ حَمَلْنَا مَعَ نُوحٍۢ وَمِن ذُرِّيَّةِ إِبْرَٰهِيمَ وَإِسْرَٰٓءِيلَ وَمِمَّنْ هَدَيْنَا وَٱجْتَبَيْنَآ إِذَا تُتْلَىٰ عَلَيْهِمْ ءَايَـٰتُ ٱلرَّحْمَـٰنِ خَرُّوا۟ سُجَّدًۭا وَبُكِيًّۭا ﴾ [قف على: وَبُكِيًّا]",
+          "meaningAtWaqf": "تمام الإخبار عن كون أولئك الأنبياء المنعم عليهم من ذرية آدم عليه السلام.",
+          "meaningAtIbtida": "الابتداء بـ﴿وَمِمَّنْ حَمَلْنَا مَعَ نُوحٍۢ﴾ على تقدير خبر لمبتدأ محذوف أو مبتدأ خبره ما بعده (أي: ومنهم قوم إذا تتلى عليهم آيات الرحمن خروا سجداً).",
+          "meaningIfConnected": "الوصل هو الأصح عند السجاوندي حتى يكون الكل عطفاً على ﴿ذُرِّيَّةِ ءَادَمَ﴾ دون حاجة إلى إضمار أو حذف، وليرجع ثناء السجود والبكاء إلى الجميع."
+        }
+      ]
+    },
+    {
+      "ayah": 58,
+      "wordIndex": 14,
+      "targetWord": "نُوحٍۢ",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/684-685",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "ز",
+      "typoDetected": null,
+      "comment": "على تقدير: ومن ذرية إبراهيم، وما بعده قوم إذا تتلى عليهم، ومن وقف على: «ذرية آدم»، أو على: «إسرائيل» فوجهه كذلك في التقدير، ولكن الأصح أن الكل عطف على: «ذرية آدم»، والوقف على قوله: {واجتبينا- 58- ط} لئلا يحتاج إلى الحذف، وليرجع ثناء السجود والبكاء إلى الكل",
+      "demosAndMeanings": [
+        {
+          "verdict": "جائز",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            14
+          ],
+          "ibtidaSegmentWords": [
+            15,
+            29
+          ],
+          "waqfDemo": "تلاوة: ﴿ أُو۟لَـٰٓئِكَ ٱلَّذِينَ أَنْعَمَ ٱللَّهُ عَلَيْهِم مِّنَ ٱلنَّبِيِّـۧنَ مِن ذُرِّيَّةِ ءَادَمَ وَمِمَّنْ حَمَلْنَا مَعَ نُوحٍۢ ﴾ [قف على: نُوحْ]",
+          "ibtidaDemo": "﴿ وَمِن ذُرِّيَّةِ إِبْرَٰهِيمَ وَإِسْرَٰٓءِيلَ وَمِمَّنْ هَدَيْنَا وَٱجْتَبَيْنَآ إِذَا تُتْلَىٰ عَلَيْهِمْ ءَايَـٰتُ ٱلرَّحْمَـٰنِ خَرُّوا۟ سُجَّدًۭا وَبُكِيًّۭا ﴾ [قف على: وَبُكِيًّا]",
+          "meaningAtWaqf": "انقضاء بيان نسب المتقدمين إلى ذرية آدم ومن حُمل مع نوح عليه السلام.",
+          "meaningAtIbtida": "الابتداء بـ﴿وَمِن ذُرِّيَّةِ إِبْرَٰهِيمَ﴾ على تقدير: ومن ذرية إبراهيم وما بعده قومٌ إذا تتلى عليهم آيات الرحمن خروا سجداً.",
+          "meaningIfConnected": "الوصل أرجح وأصح عند السجاوندي (رمز «ز») ليكون الكل معطوفاً على ﴿ذُرِّيَّةِ ءَادَمَ﴾ إلى قوله ﴿وَٱجْتَبَيْنَآ﴾ فلا يحتاج إلى تقدير محذوف ويشمل ثناء الخشوع الكل."
+        }
+      ]
+    },
+    {
+      "ayah": 58,
+      "wordIndex": 14,
+      "targetWord": "نُوحٍۢ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "مع نوح جائز",
+      "demosAndMeanings": [
+        {
+          "verdict": "جائز",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            14
+          ],
+          "ibtidaSegmentWords": [
+            15,
+            29
+          ],
+          "waqfDemo": "تلاوة: ﴿ أُو۟لَـٰٓئِكَ ٱلَّذِينَ أَنْعَمَ ٱللَّهُ عَلَيْهِم مِّنَ ٱلنَّبِيِّـۧنَ مِن ذُرِّيَّةِ ءَادَمَ وَمِمَّنْ حَمَلْنَا مَعَ نُوحٍۢ ﴾ [قف على: نُوحْ]",
+          "ibtidaDemo": "﴿ وَمِن ذُرِّيَّةِ إِبْرَٰهِيمَ وَإِسْرَٰٓءِيلَ وَمِمَّنْ هَدَيْنَا وَٱجْتَبَيْنَآ إِذَا تُتْلَىٰ عَلَيْهِمْ ءَايَـٰتُ ٱلرَّحْمَـٰنِ خَرُّوا۟ سُجَّدًۭا وَبُكِيًّۭا ﴾ [قف على: وَبُكِيًّا]",
+          "meaningAtWaqf": "تمام الإخبار عن المتقدمين بأنهم من ذرية آدم وممن حُمل مع نوح عليه السلام.",
+          "meaningAtIbtida": "الابتداء بـ﴿وَمِن ذُرِّيَّةِ إِبْرَٰهِيمَ﴾ خبرٌ مقدم لمبتدأ مضمر موصوف بـ﴿إِذَا تُتْلَىٰ﴾.",
+          "meaningIfConnected": "عند الوصل تتعاطف الجار والمجرورات كلها بياناً لـ﴿ٱلَّذِينَ أَنْعَمَ ٱللَّهُ عَلَيْهِم﴾ إلى قوله ﴿وَٱجْتَبَيْنَآ﴾."
+        }
+      ]
+    },
+    {
+      "ayah": 58,
+      "wordIndex": 18,
+      "targetWord": "وَإِسْرَٰٓءِيلَ",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/684-685",
+      "verdicts": [
+        "جائز",
+        "لا يوقف"
+      ],
+      "isQila": [
+        true,
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "ومن وقف على: «ذرية آدم»، أو على: «إسرائيل» فوجهه كذلك في التقدير، ولكن الأصح أن الكل عطف على: «ذرية آدم»، والوقف على قوله: {واجتبينا- 58- ط} لئلا يحتاج إلى الحذف، وليرجع ثناء السجود والبكاء إلى الكل",
+      "demosAndMeanings": [
+        {
+          "verdict": "جائز",
+          "isQila": true,
+          "waqfSegmentWords": [
+            1,
+            18
+          ],
+          "ibtidaSegmentWords": [
+            19,
+            29
+          ],
+          "waqfDemo": "تلاوة: ﴿ أُو۟لَـٰٓئِكَ ٱلَّذِينَ أَنْعَمَ ٱللَّهُ عَلَيْهِم مِّنَ ٱلنَّبِيِّـۧنَ مِن ذُرِّيَّةِ ءَادَمَ وَمِمَّنْ حَمَلْنَا مَعَ نُوحٍۢ وَمِن ذُرِّيَّةِ إِبْرَٰهِيمَ وَإِسْرَٰٓءِيلَ ﴾ [قف على: وَإِسْرَٰٓءِيلْ]",
+          "ibtidaDemo": "﴿ وَمِمَّنْ هَدَيْنَا وَٱجْتَبَيْنَآ إِذَا تُتْلَىٰ عَلَيْهِمْ ءَايَـٰتُ ٱلرَّحْمَـٰنِ خَرُّوا۟ سُجَّدًۭا وَبُكِيًّۭا ﴾ [قف على: وَبُكِيًّا]",
+          "meaningAtWaqf": "تمام بيان أنساب الأنبياء المنعم عليهم إلى ذرية إبراهيم وإسرائيل عليهما السلام.",
+          "meaningAtIbtida": "الابتداء بـ﴿وَمِمَّنْ هَدَيْنَا وَٱجْتَبَيْنَآ﴾ على تقدير: وممن هدينا واجتبينا قومٌ إذا تتلى عليهم آيات الرحمن خروا سجداً وبكياً.",
+          "meaningIfConnected": "الوصل هو الأصح عند السجاوندي لعطف الجميع على ﴿ذُرِّيَّةِ ءَادَمَ﴾ والوقف على ﴿وَٱجْتَبَيْنَآ﴾ لئلا يُحتاج إلى الحذف وليرجع ثناء السجود والبكاء إلى الكل."
+        }
+      ]
+    },
+    {
+      "ayah": 58,
+      "wordIndex": 21,
+      "targetWord": "وَٱجْتَبَيْنَآ",
+      "scholar": "ابن الأنباري",
+      "book": "إيضاح الوقف والابتداء",
+      "page": "2/765",
+      "verdicts": [
+        "حسن"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "(وأبصر يوم يأتوننا) [38] وقف حسن. ومثله: ...(ممن هدينا واجتبينا) [58]",
+      "demosAndMeanings": [
+        {
+          "verdict": "حسن",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            21
+          ],
+          "ibtidaSegmentWords": [
+            22,
+            29
+          ],
+          "waqfDemo": "تلاوة: ﴿ أُو۟لَـٰٓئِكَ ٱلَّذِينَ أَنْعَمَ ٱللَّهُ عَلَيْهِم مِّنَ ٱلنَّبِيِّـۧنَ مِن ذُرِّيَّةِ ءَادَمَ وَمِمَّنْ حَمَلْنَا مَعَ نُوحٍۢ وَمِن ذُرِّيَّةِ إِبْرَٰهِيمَ وَإِسْرَٰٓءِيلَ وَمِمَّنْ هَدَيْنَا وَٱجْتَبَيْنَآ ﴾ [قف على: وَٱجْتَبَيْنَا]",
+          "ibtidaDemo": "﴿ إِذَا تُتْلَىٰ عَلَيْهِمْ ءَايَـٰتُ ٱلرَّحْمَـٰنِ خَرُّوا۟ سُجَّدًۭا وَبُكِيًّۭا ﴾ [قف على: وَبُكِيًّا]",
+          "meaningAtWaqf": "تمام جملة المبتدأ والخبر وتوابعها من البيان والعطف في تعداد الأنبياء المصطفين.",
+          "meaningAtIbtida": "الابتداء بجملة الشرط ﴿إِذَا تُتْلَىٰ عَلَيْهِمْ﴾ استئنافاً لبيان حال خشوعهم وبكائهم عند سماع آيات الله.",
+          "meaningIfConnected": "الاتصال قائم لأن جملة ﴿إِذَا تُتْلَىٰ عَلَيْهِمْ...﴾ في موضع خبر ثانٍ لـ﴿أُو۟لَـٰٓئِكَ﴾ أو حال من الضمير في ﴿عَلَيْهِم﴾."
+        }
+      ]
+    },
+    {
+      "ayah": 58,
+      "wordIndex": 21,
+      "targetWord": "وَٱجْتَبَيْنَآ",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "376",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "{واجتبينا} كاف.",
+      "demosAndMeanings": [
+        {
+          "verdict": "كاف",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            21
+          ],
+          "ibtidaSegmentWords": [
+            22,
+            29
+          ],
+          "waqfDemo": "تلاوة: ﴿ أُو۟لَـٰٓئِكَ ٱلَّذِينَ أَنْعَمَ ٱللَّهُ عَلَيْهِم مِّنَ ٱلنَّبِيِّـۧنَ مِن ذُرِّيَّةِ ءَادَمَ وَمِمَّنْ حَمَلْنَا مَعَ نُوحٍۢ وَمِن ذُرِّيَّةِ إِبْرَٰهِيمَ وَإِسْرَٰٓءِيلَ وَمِمَّنْ هَدَيْنَا وَٱجْتَبَيْنَآ ﴾ [قف على: وَٱجْتَبَيْنَا]",
+          "ibtidaDemo": "﴿ إِذَا تُتْلَىٰ عَلَيْهِمْ ءَايَـٰتُ ٱلرَّحْمَـٰنِ خَرُّوا۟ سُجَّدًۭا وَبُكِيًّۭا ﴾ [قف على: وَبُكِيًّا]",
+          "meaningAtWaqf": "تمام الإخبار عن الأنبياء المنعم عليهم وبيان أنسابهم واصطفاء الله لهم.",
+          "meaningAtIbtida": "الابتداء بالجملة الشرطية ﴿إِذَا تُتْلَىٰ عَلَيْهِمْ﴾ استئنافاً لبيان حال خشوعهم عند سماع آيات الرحمن.",
+          "meaningIfConnected": "الاتصال المعنوي قائم لأن الجملة الشرطية تبين حال أولئك الأنبياء المصطفين أو تقع خبراً ثانياً عنهم."
+        }
+      ]
+    },
+    {
+      "ayah": 58,
+      "wordIndex": 21,
+      "targetWord": "وَٱجْتَبَيْنَآ",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/684-685",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "ط",
+      "typoDetected": null,
+      "comment": "لئلا يحتاج إلى الحذف، وليرجع ثناء السجود والبكاء إلى الكل",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            21
+          ],
+          "ibtidaSegmentWords": [
+            22,
+            29
+          ],
+          "waqfDemo": "تلاوة: ﴿ أُو۟لَـٰٓئِكَ ٱلَّذِينَ أَنْعَمَ ٱللَّهُ عَلَيْهِم مِّنَ ٱلنَّبِيِّـۧنَ مِن ذُرِّيَّةِ ءَادَمَ وَمِمَّنْ حَمَلْنَا مَعَ نُوحٍۢ وَمِن ذُرِّيَّةِ إِبْرَٰهِيمَ وَإِسْرَٰٓءِيلَ وَمِمَّنْ هَدَيْنَا وَٱجْتَبَيْنَآ ﴾ [قف على: وَٱجْتَبَيْنَا]",
+          "ibtidaDemo": "﴿ إِذَا تُتْلَىٰ عَلَيْهِمْ ءَايَـٰتُ ٱلرَّحْمَـٰنِ خَرُّوا۟ سُجَّدًۭا وَبُكِيًّۭا ﴾ [قف على: وَبُكِيًّا]",
+          "meaningAtWaqf": "انتهاء عطف جميع الأصناف المنعم عليهم على ﴿ذُرِّيَّةِ ءَادَمَ﴾ دون حاجة إلى تقدير محذوف.",
+          "meaningAtIbtida": "الابتداء بـ﴿إِذَا تُتْلَىٰ عَلَيْهِمْ﴾ ليرجع الثناء بالسجود والبكاء إلى جميع المذكورين قبلها.",
+          "meaningIfConnected": "الوقف هنا هو الأصح عند السجاوندي دفعاً لتوهم اختصاص السجود والبكاء ببعض المعطوفات دون بعض."
+        }
+      ]
+    },
+    {
+      "ayah": 58,
+      "wordIndex": 21,
+      "targetWord": "وَٱجْتَبَيْنَآ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "واجتبينا كاف",
+      "demosAndMeanings": [
+        {
+          "verdict": "كاف",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            21
+          ],
+          "ibtidaSegmentWords": [
+            22,
+            29
+          ],
+          "waqfDemo": "تلاوة: ﴿ أُو۟لَـٰٓئِكَ ٱلَّذِينَ أَنْعَمَ ٱللَّهُ عَلَيْهِم مِّنَ ٱلنَّبِيِّـۧنَ مِن ذُرِّيَّةِ ءَادَمَ وَمِمَّنْ حَمَلْنَا مَعَ نُوحٍۢ وَمِن ذُرِّيَّةِ إِبْرَٰهِيمَ وَإِسْرَٰٓءِيلَ وَمِمَّنْ هَدَيْنَا وَٱجْتَبَيْنَآ ﴾ [قف على: وَٱجْتَبَيْنَا]",
+          "ibtidaDemo": "﴿ إِذَا تُتْلَىٰ عَلَيْهِمْ ءَايَـٰتُ ٱلرَّحْمَـٰنِ خَرُّوا۟ سُجَّدًۭا وَبُكِيًّۭا ﴾ [قف على: وَبُكِيًّا]",
+          "meaningAtWaqf": "كفاية الوقف لاستيفاء الجملة الاسمية وبيان المنعم عليهم من ذريات الأنبياء.",
+          "meaningAtIbtida": "الابتداء بذكر صفتهم الخاشعة عند تلاوة آيات الرحمن عليهم.",
+          "meaningIfConnected": "تتصل الجملة الشرطية بما قبلها اتصال الوصف أو الخبر الثاني بالمبتدأ."
+        }
+      ]
+    },
+    {
+      "ayah": 58,
+      "wordIndex": 21,
+      "targetWord": "وَٱجْتَبَيْنَآ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 57",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "والتمام بعده عند أبي حاتم ﴿وَمِمَّنْ هَدَيْنَا وَاجْتَبَيْنَا﴾ وعند غيره ﴿خَرُّوا سُجَّدًا وَبُكِيًّا﴾",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "attributedTo": "أبو حاتم السجستاني",
+          "waqfSegmentWords": [
+            1,
+            21
+          ],
+          "ibtidaSegmentWords": [
+            22,
+            29
+          ],
+          "waqfDemo": "تلاوة: ﴿ أُو۟لَـٰٓئِكَ ٱلَّذِينَ أَنْعَمَ ٱللَّهُ عَلَيْهِم مِّنَ ٱلنَّبِيِّـۧنَ مِن ذُرِّيَّةِ ءَادَمَ وَمِمَّنْ حَمَلْنَا مَعَ نُوحٍۢ وَمِن ذُرِّيَّةِ إِبْرَٰهِيمَ وَإِسْرَٰٓءِيلَ وَمِمَّنْ هَدَيْنَا وَٱجْتَبَيْنَآ ﴾ [قف على: وَٱجْتَبَيْنَا]",
+          "ibtidaDemo": "﴿ إِذَا تُتْلَىٰ عَلَيْهِمْ ءَايَـٰتُ ٱلرَّحْمَـٰنِ خَرُّوا۟ سُجَّدًۭا وَبُكِيًّۭا ﴾ [قف على: وَبُكِيًّا]",
+          "meaningAtWaqf": "تمام الجملة الاسمية الكبرى ﴿أُو۟لَـٰٓئِكَ ٱلَّذِينَ أَنْعَمَ ٱللَّهُ عَلَيْهِم...﴾ وما عُطف عليها.",
+          "meaningAtIbtida": "ائتناف جملة شرطية جديدة تصف حالهم عند تلاوة الآيات.",
+          "meaningIfConnected": "عند غير أبي حاتم يتصل الكلام؛ لأن قوله ﴿إِذَا تُتْلَىٰ﴾ من تمام الإخبار عنهم، ويكون التمام عند قوله ﴿وَبُكِيًّۭا﴾."
+        }
+      ]
+    },
+    {
+      "ayah": 58,
+      "wordIndex": 29,
+      "targetWord": "وَبُكِيًّۭا",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "376",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "{وبكيًا} تام.",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "waqfSegmentWords": [
+            22,
+            29
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ إِذَا تُتْلَىٰ عَلَيْهِمْ ءَايَـٰتُ ٱلرَّحْمَـٰنِ خَرُّوا۟ سُجَّدًۭا وَبُكِيًّۭا ﴾ [قف على: وَبُكِيًّا]",
+          "ibtidaDemo": "﴿ فَخَلَفَ مِنۢ بَعْدِهِمْ خَلْفٌ أَضَاعُوا۟ ٱلصَّلَوٰةَ وَٱتَّبَعُوا۟ ٱلشَّهَوَٰتِ ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام الثناء على الأنبياء المنعم عليهم وبيان خشوعهم وبكائهم عند سماع آيات الله.",
+          "meaningAtIbtida": "الانتقال إلى ذكر الخَلْف المفرطين الذين جاؤوا من بعدهم فأضاعوا الصلاة واتبعوا الشهوات.",
+          "meaningIfConnected": "الوقف تام لانقضاء أخبار الأنبياء الأبرار والانتقال إلى ذكر حال المخالفين لهم."
+        }
+      ]
+    },
+    {
+      "ayah": 58,
+      "wordIndex": 29,
+      "targetWord": "وَبُكِيًّۭا",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "وبكيا كاف",
+      "demosAndMeanings": [
+        {
+          "verdict": "كاف",
+          "isQila": false,
+          "waqfSegmentWords": [
+            22,
+            29
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ إِذَا تُتْلَىٰ عَلَيْهِمْ ءَايَـٰتُ ٱلرَّحْمَـٰنِ خَرُّوا۟ سُجَّدًۭا وَبُكِيًّۭا ﴾ [قف على: وَبُكِيًّا]",
+          "ibtidaDemo": "﴿ فَخَلَفَ مِنۢ بَعْدِهِمْ خَلْفٌ أَضَاعُوا۟ ٱلصَّلَوٰةَ وَٱتَّبَعُوا۟ ٱلشَّهَوَٰتِ ﴾ [الآية التالية]",
+          "meaningAtWaqf": "استقلال الكلام لفظاً بانتهاء وصف حال الأنبياء الخاشعين عند رأس الآية.",
+          "meaningAtIbtida": "الابتداء ببيان حال من خَلَف من بعدهم على خلاف هديهم.",
+          "meaningIfConnected": "الاتصال المعنوي قائم لارتباط الفاء والضمير في ﴿مِنۢ بَعْدِهِمْ﴾ بالأنبياء المذكورين قبلها."
+        }
+      ]
+    },
+    {
+      "ayah": 58,
+      "wordIndex": 29,
+      "targetWord": "وَبُكِيًّۭا",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 57",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "والتمام بعده عند أبي حاتم ﴿وَمِمَّنْ هَدَيْنَا وَاجْتَبَيْنَا﴾ وعند غيره ﴿خَرُّوا سُجَّدًا وَبُكِيًّا﴾",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "waqfSegmentWords": [
+            22,
+            29
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ إِذَا تُتْلَىٰ عَلَيْهِمْ ءَايَـٰتُ ٱلرَّحْمَـٰنِ خَرُّوا۟ سُجَّدًۭا وَبُكِيًّۭا ﴾ [قف على: وَبُكِيًّا]",
+          "ibtidaDemo": "﴿ فَخَلَفَ مِنۢ بَعْدِهِمْ خَلْفٌ أَضَاعُوا۟ ٱلصَّلَوٰةَ وَٱتَّبَعُوا۟ ٱلشَّهَوَٰتِ ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام الكلام بانتهاء جملة الشرط وجوابها في وصف خشوع الأنبياء وسجودهم.",
+          "meaningAtIbtida": "ائتناف خبر جديد عمن خلف من بعدهم ممن أضاعوا الصلاة.",
+          "meaningIfConnected": "القطع تام لانفصال قصة الأنبياء المهتدين عن خبر الخلف الضالين."
+        }
+      ]
+    },
+    {
+      "ayah": 59,
+      "wordIndex": 8,
+      "targetWord": "ٱلشَّهَوَٰتِ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "للابتداء بالتهديد",
+      "demosAndMeanings": [
+        {
+          "verdict": "جائز",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            8
+          ],
+          "ibtidaSegmentWords": [
+            9,
+            11
+          ],
+          "waqfDemo": "تلاوة: ﴿ فَخَلَفَ مِنۢ بَعْدِهِمْ خَلْفٌ أَضَاعُوا۟ ٱلصَّلَوٰةَ وَٱتَّبَعُوا۟ ٱلشَّهَوَٰتِ ﴾ [قف على: ٱلشَّهَوَٰتْ]",
+          "ibtidaDemo": "﴿ فَسَوْفَ يَلْقَوْنَ غَيًّا ﴾ [قف على: غَيًّا]",
+          "meaningAtWaqf": "تمام الإخبار عن الخلف ووصفهم بإضاعة الصلاة واتباع الشهوات.",
+          "meaningAtIbtida": "الابتداء بجملة الوعيد والتهديد المترتبة على صنيعهم ﴿فَسَوْفَ يَلْقَوْنَ غَيًّا﴾.",
+          "meaningIfConnected": "الوصل يربط السبب (إضاعة الصلاة واتباع الشهوات) بمسببه وعقوبته (لقاء الغي)."
+        }
+      ]
+    },
+    {
+      "ayah": 59,
+      "wordIndex": 11,
+      "targetWord": "غَيًّا",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/685-686",
+      "verdicts": [
+        "لا يوقف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "لا",
+      "typoDetected": null,
+      "comment": "للاستثناء.",
+      "demosAndMeanings": null
+    },
+    {
+      "ayah": 59,
+      "wordIndex": 11,
+      "targetWord": "غَيًّا",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "لكونه رأس آية قال عبد الله بن عمرو الغيّ واد في جهنم",
+      "demosAndMeanings": [
+        {
+          "verdict": "جائز",
+          "isQila": false,
+          "waqfSegmentWords": [
+            9,
+            11
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ فَسَوْفَ يَلْقَوْنَ غَيًّا ﴾ [قف على: غَيًّا]",
+          "ibtidaDemo": "﴿ إِلَّا مَن تَابَ وَءَامَنَ وَعَمِلَ صَـٰلِحًۭا فَأُو۟لَـٰٓئِكَ يَدْخُلُونَ ٱلْجَنَّةَ وَلَا يُظْلَمُونَ شَيْـًۭٔا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام جملة الوعيد وموافقة رأس الآية.",
+          "meaningAtIbtida": "الابتداء بالاستثناء المنقطع أو المتصل ﴿إِلَّا مَن تَابَ﴾ لبيان نجاة التائبين.",
+          "meaningIfConnected": "الوصل يربط المستثنى بالمستثنى منه، وجاز الوقف مراعاة لسنة الفاصلة القرآنية."
+        }
+      ]
+    },
+    {
+      "ayah": 59,
+      "wordIndex": 11,
+      "targetWord": "غَيًّا",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 59",
+      "verdicts": [
+        "لا يوقف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "﴿فَسَوْفَ يَلْقَوْنَ غَيًّا﴾ ليس بقطع كاف، لأن بعده استثناء",
+      "demosAndMeanings": null
+    },
+    {
+      "ayah": 60,
+      "wordIndex": 9,
+      "targetWord": "ٱلْجَنَّةَ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "لا يوقف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "يدخلون الجنة الأولى وصله وما بعده إلى بالغيب فلا يوقف على شيئًا لأنّ جنات عدن بدل من الجنة",
+      "demosAndMeanings": null
+    },
+    {
+      "ayah": 60,
+      "wordIndex": 12,
+      "targetWord": "شَيْـًۭٔا",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/685-686",
+      "verdicts": [
+        "لا يوقف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "لا",
+      "typoDetected": null,
+      "comment": "لأن «جنات» بدل من قوله: «الجنة».",
+      "demosAndMeanings": null
+    },
+    {
+      "ayah": 60,
+      "wordIndex": 12,
+      "targetWord": "شَيْـًۭٔا",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "لا يوقف",
+        "حسن"
+      ],
+      "isQila": [
+        false,
+        true
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "يدخلون الجنة الأولى وصله وما بعده إلى بالغيب فلا يوقف على شيئًا لأنّ جنات عدن بدل من الجنة وإن نصب جنات بفعل مقدر حسن الوقف على شيئًا وكذا يحسن الوقف عليه على قراءة من قرأ جنات بالرفع على إضمار مبتدأ محذوف تقديره تلك جنات عدن وبها قرأ أبو حيوة والحسن وعيسى بن عمرو الأعمش وقرأ العامة بكسر التاء",
+      "demosAndMeanings": [
+        {
+          "verdict": "حسن",
+          "isQila": true,
+          "waqfSegmentWords": [
+            7,
+            12
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ فَأُو۟لَـٰٓئِكَ يَدْخُلُونَ ٱلْجَنَّةَ وَلَا يُظْلَمُونَ شَيْـًۭٔا ﴾ [قف على: شَيْـًٔا]",
+          "ibtidaDemo": "﴿ جَنَّـٰتِ عَدْنٍ ٱلَّتِى وَعَدَ ٱلرَّحْمَـٰنُ عِبَادَهُۥ بِٱلْغَيْبِ ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام الوعد بدخول الجنة ونفي الظلم عنهم عند رأس الآية.",
+          "meaningAtIbtida": "الابتداء بـ﴿جَنَّـٰتِ عَدْنٍ﴾ على تقدير فعل ناصب محذوف (أعني جناتِ عدن) أو على قراءة الرفع خبرَ مبتدأ مضمر (تلك جناتُ عدن).",
+          "meaningIfConnected": "الأولى الوصل على قراءة الجمهور بجعل ﴿جَنَّـٰتِ عَدْنٍ﴾ بدلاً من ﴿ٱلْجَنَّةَ﴾، فلا يفصل بين البدل والمبدل منه."
+        }
+      ]
+    },
+    {
+      "ayah": 60,
+      "wordIndex": 12,
+      "targetWord": "شَيْـًۭٔا",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 60",
+      "verdicts": [
+        "لا يوقف",
+        "كاف"
+      ],
+      "isQila": [
+        false,
+        true
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "﴿فَأُولَٰئِكَ يَدْخُلُونَ الْجَنَّةَ وَلَا يُظْلَمُونَ شَيْئًا﴾ ليس بقطع كاف، لأن ﴿جَنَّاتِ عَدْنٍ﴾ بدل من الجنة إلا أن أبا إسحاق أجاز الرفع فعلى قوله يكفي الوقف على قول من رفع",
+      "demosAndMeanings": [
+        {
+          "verdict": "كاف",
+          "isQila": true,
+          "attributedTo": "أبو إسحاق الزجاج",
+          "waqfSegmentWords": [
+            7,
+            12
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ فَأُو۟لَـٰٓئِكَ يَدْخُلُونَ ٱلْجَنَّةَ وَلَا يُظْلَمُونَ شَيْـًۭٔا ﴾ [قف على: شَيْـًٔا]",
+          "ibtidaDemo": "﴿ جَنَّـٰتِ عَدْنٍ ٱلَّتِى وَعَدَ ٱلرَّحْمَـٰنُ عِبَادَهُۥ بِٱلْغَيْبِ ﴾ [الآية التالية]",
+          "meaningAtWaqf": "استقلال جملة الجزاء بدخول الجنة وعدم نقصان أجورهم شيئاً.",
+          "meaningAtIbtida": "الابتداء بـ﴿جَنَّـٰتُ عَدْنٍ﴾ على قراءة من قرأ بالرفع خبراً لمبتدأ مضمر، كما أجازه أبو إسحاق الزجاج.",
+          "meaningIfConnected": "على قراءة العامة بنصب/جر ﴿جَنَّـٰتِ عَدْنٍ﴾ على البدل من ﴿ٱلْجَنَّةَ﴾ ليس بقطع كافٍ لتعلق البدل بالمبدل منه."
+        }
+      ]
+    },
+    {
+      "ayah": 61,
+      "wordIndex": 7,
+      "targetWord": "بِٱلْغَيْبِ",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/685-686",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "ط",
+      "typoDetected": null,
+      "comment": "{بالغيب- 61- ط}.",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            7
+          ],
+          "ibtidaSegmentWords": [
+            8,
+            11
+          ],
+          "waqfDemo": "تلاوة: ﴿ جَنَّـٰتِ عَدْنٍ ٱلَّتِى وَعَدَ ٱلرَّحْمَـٰنُ عِبَادَهُۥ بِٱلْغَيْبِ ﴾ [قف على: بِٱلْغَيْبْ]",
+          "ibtidaDemo": "﴿ إِنَّهُۥ كَانَ وَعْدُهُۥ مَأْتِيًّۭا ﴾ [قف على: مَأْتِيًّا]",
+          "meaningAtWaqf": "تمام البدل وصلته في وصف جنات عدن الموعودة لعباد الرحمن بالغيب.",
+          "meaningAtIbtida": "الابتداء بجملة مستأنفة مكسورة الهمزة ﴿إِنَّهُۥ كَانَ وَعْدُهُۥ مَأْتِيًّۭا﴾ لتأكيد تحقق الوعد الإلهي.",
+          "meaningIfConnected": "الوقف تام لاستقلال الجملة التأكيدية لفظاً عن جملة الموصول قبلها."
+        }
+      ]
+    },
+    {
+      "ayah": 61,
+      "wordIndex": 7,
+      "targetWord": "بِٱلْغَيْبِ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "حسن"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "بالغيب حسن",
+      "demosAndMeanings": [
+        {
+          "verdict": "حسن",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            7
+          ],
+          "ibtidaSegmentWords": [
+            8,
+            11
+          ],
+          "waqfDemo": "تلاوة: ﴿ جَنَّـٰتِ عَدْنٍ ٱلَّتِى وَعَدَ ٱلرَّحْمَـٰنُ عِبَادَهُۥ بِٱلْغَيْبِ ﴾ [قف على: بِٱلْغَيْبْ]",
+          "ibtidaDemo": "﴿ إِنَّهُۥ كَانَ وَعْدُهُۥ مَأْتِيًّۭا ﴾ [قف على: مَأْتِيًّا]",
+          "meaningAtWaqf": "انتهاء وصف جنات عدن بأنها موعودة لعباد الرحمن بالغيب.",
+          "meaningAtIbtida": "الابتداء بجملة التعليل والتأكيد لصدق وعد الله وأنه آتٍ لا محالة.",
+          "meaningIfConnected": "تتعلق الجملة الثانية بالأولى من جهة المعنى لعود الضمير في ﴿وَعْدُهُۥ﴾ إلى ما دل عليه ﴿وَعَدَ ٱلرَّحْمَـٰنُ﴾."
+        }
+      ]
+    },
+    {
+      "ayah": 61,
+      "wordIndex": 7,
+      "targetWord": "بِٱلْغَيْبِ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 61",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "﴿الَّتِي وَعَدَ الرَّحْمَٰنُ عِبَادَهُ بِالْغَيْبِ﴾ قطع كاف",
+      "demosAndMeanings": [
+        {
+          "verdict": "كاف",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            7
+          ],
+          "ibtidaSegmentWords": [
+            8,
+            11
+          ],
+          "waqfDemo": "تلاوة: ﴿ جَنَّـٰتِ عَدْنٍ ٱلَّتِى وَعَدَ ٱلرَّحْمَـٰنُ عِبَادَهُۥ بِٱلْغَيْبِ ﴾ [قف على: بِٱلْغَيْبْ]",
+          "ibtidaDemo": "﴿ إِنَّهُۥ كَانَ وَعْدُهُۥ مَأْتِيًّۭا ﴾ [قف على: مَأْتِيًّا]",
+          "meaningAtWaqf": "كفاية القطع لانقضاء صلة الموصول واستغناء الكلام لفظاً.",
+          "meaningAtIbtida": "الابتداء بجملة مؤكدة بـ(إن) لبيان حتمية إتيان وعد الله.",
+          "meaningIfConnected": "الكلام متصل في المعنى إلى تمام الآية."
+        }
+      ]
+    },
+    {
+      "ayah": 61,
+      "wordIndex": 11,
+      "targetWord": "مَأْتِيًّۭا",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "مأتيا كاف",
+      "demosAndMeanings": [
+        {
+          "verdict": "كاف",
+          "isQila": false,
+          "waqfSegmentWords": [
+            8,
+            11
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ إِنَّهُۥ كَانَ وَعْدُهُۥ مَأْتِيًّۭا ﴾ [قف على: مَأْتِيًّا]",
+          "ibtidaDemo": "﴿ لَّا يَسْمَعُونَ فِيهَا لَغْوًا إِلَّا سَلَـٰمًۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام جملة التأكيد بكون وعد الله مأتياً عند رأس الآية.",
+          "meaningAtIbtida": "الابتداء ببيان نعيم أهل الجنة وما يسمعونه فيها من السلام.",
+          "meaningIfConnected": "الاتصال المعنوي قائم لعود الضمائر في ﴿يَسْمَعُونَ فِيهَا﴾ على التائبين والجنات المتقدم ذكرها."
+        }
+      ]
+    },
+    {
+      "ayah": 61,
+      "wordIndex": 11,
+      "targetWord": "مَأْتِيًّۭا",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 61",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "والتمام ﴿إِنَّهُ كَانَ وَعْدُهُ مَأْتِيًّا﴾ على أن يبتدئ الخبر بعده.",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "waqfSegmentWords": [
+            8,
+            11
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ إِنَّهُۥ كَانَ وَعْدُهُۥ مَأْتِيًّۭا ﴾ [قف على: مَأْتِيًّا]",
+          "ibtidaDemo": "﴿ لَّا يَسْمَعُونَ فِيهَا لَغْوًا إِلَّا سَلَـٰمًۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام الجملة الاعتراضية المؤكدة لتحقق الوعد الإلهي عند رأس الآية.",
+          "meaningAtIbtida": "ائتناف خبر جديد مستقل في وصف حال أهل الجنة ونعيمهم.",
+          "meaningIfConnected": "حكم النحاس بالتمام على أن يبتدأ الخبر بعده مستأنفاً."
+        }
+      ]
+    },
+    {
+      "ayah": 62,
+      "wordIndex": 6,
+      "targetWord": "سَلَـٰمًۭا",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/685-686",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "ط",
+      "typoDetected": null,
+      "comment": "{إلا سلاما- 62- ط}.",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            6
+          ],
+          "ibtidaSegmentWords": [
+            7,
+            11
+          ],
+          "waqfDemo": "تلاوة: ﴿ لَّا يَسْمَعُونَ فِيهَا لَغْوًا إِلَّا سَلَـٰمًۭا ﴾ [قف على: سَلَـٰمًا]",
+          "ibtidaDemo": "﴿ وَلَهُمْ رِزْقُهُمْ فِيهَا بُكْرَةًۭ وَعَشِيًّۭا ﴾ [قف على: وَعَشِيًّا]",
+          "meaningAtWaqf": "تمام الإخبار بنفي سماع اللغو في الجنة وإثبات سماع السلام خاصة.",
+          "meaningAtIbtida": "الابتداء بجملة اسمية مستقلة تخبر عن دوام رزقهم فيها بكرة وعشياً.",
+          "meaningIfConnected": "الوقف تام لاستقلال الجملة الاسمية الثانية عن الجملة الفعلية الأولى."
+        }
+      ]
+    },
+    {
+      "ayah": 62,
+      "wordIndex": 6,
+      "targetWord": "سَلَـٰمًۭا",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "استثناء منقطع لأنَّ سلام الملائكة ليس من جنس اللغو فهو من وادي قوله: ولا عيب فيهم غير أنَّ سيوفهم = بهن فلول من قراع الكتائب، يعني إن وجد فيهم عيب فهو هذا وهذا لا يعده أحد عيبًا فانتفى عنهم العيب بدليله",
+      "demosAndMeanings": [
+        {
+          "verdict": "جائز",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            6
+          ],
+          "ibtidaSegmentWords": [
+            7,
+            11
+          ],
+          "waqfDemo": "تلاوة: ﴿ لَّا يَسْمَعُونَ فِيهَا لَغْوًا إِلَّا سَلَـٰمًۭا ﴾ [قف على: سَلَـٰمًا]",
+          "ibtidaDemo": "﴿ وَلَهُمْ رِزْقُهُمْ فِيهَا بُكْرَةًۭ وَعَشِيًّۭا ﴾ [قف على: وَعَشِيًّا]",
+          "meaningAtWaqf": "انتهاء جملة الاستثناء المنقطع المثبتة لسماع سلام الملائكة وتنزيه الجنة عن اللغو.",
+          "meaningAtIbtida": "الابتداء بجملة معطوفة تذكر تتابع أرزاقهم في الجنة.",
+          "meaningIfConnected": "الوصل يجمع بين النعيم المعنوي (سماع السلام) والنعيم الحسي (تتابع الرزق)."
+        }
+      ]
+    },
+    {
+      "ayah": 62,
+      "wordIndex": 11,
+      "targetWord": "وَعَشِيًّۭا",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "وعشيا كاف",
+      "demosAndMeanings": [
+        {
+          "verdict": "كاف",
+          "isQila": false,
+          "waqfSegmentWords": [
+            7,
+            11
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ وَلَهُمْ رِزْقُهُمْ فِيهَا بُكْرَةًۭ وَعَشِيًّۭا ﴾ [قف على: وَعَشِيًّا]",
+          "ibtidaDemo": "﴿ تِلْكَ ٱلْجَنَّةُ ٱلَّتِى نُورِثُ مِنْ عِبَادِنَا مَن كَانَ تَقِيًّۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام الإخبار عن رزق أهل الجنة عند رأس الآية.",
+          "meaningAtIbtida": "الابتداء بالإشارة التعظيمية ﴿تِلْكَ ٱلْجَنَّةُ﴾ لبيان استحقاق المتقين لها.",
+          "meaningIfConnected": "الاتصال المعنوي قائم لرجوع اسم الإشارة ﴿تِلْكَ﴾ إلى الجنة الموصوفة قبلها."
+        }
+      ]
+    },
+    {
+      "ayah": 62,
+      "wordIndex": 11,
+      "targetWord": "وَعَشِيًّۭا",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 61",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "ثم القطع على رؤوس الآيات كاف إلى ﴿لَهُ مَا بَيْنَ أَيْدِينَا وَمَا خَلْفَنَا وَمَا بَيْنَ ذَٰلِكَ﴾",
+      "demosAndMeanings": [
+        {
+          "verdict": "كاف",
+          "isQila": false,
+          "waqfSegmentWords": [
+            7,
+            11
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ وَلَهُمْ رِزْقُهُمْ فِيهَا بُكْرَةًۭ وَعَشِيًّۭا ﴾ [قف على: وَعَشِيًّا]",
+          "ibtidaDemo": "﴿ تِلْكَ ٱلْجَنَّةُ ٱلَّتِى نُورِثُ مِنْ عِبَادِنَا مَن كَانَ تَقِيًّۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "كفاية القطع على رأس الآية لتمام الجملة الخبرية.",
+          "meaningAtIbtida": "الابتداء بجملة اسمية تشير إلى الجنة وتوريثها للمتقين.",
+          "meaningIfConnected": "يتصل المعنى بما بعده لاتحاد سياق وصف الجنة وأهلها."
+        }
+      ]
+    },
+    {
+      "ayah": 63,
+      "wordIndex": 9,
+      "targetWord": "تَقِيًّۭا",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "376",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "{وبكيًا} تام. ومثله {من كان تقيًا}",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            9
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ تِلْكَ ٱلْجَنَّةُ ٱلَّتِى نُورِثُ مِنْ عِبَادِنَا مَن كَانَ تَقِيًّۭا ﴾ [قف على: تَقِيًّا]",
+          "ibtidaDemo": "﴿ وَمَا نَتَنَزَّلُ إِلَّا بِأَمْرِ رَبِّكَ ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام الكلام في وصف الجنة ووعد المتقين بميراثها.",
+          "meaningAtIbtida": "الابتداء بحكاية قول جبريل عليه السلام (أو الملائكة) للنبي صلى الله عليه وسلم: ﴿وَمَا نَتَنَزَّلُ إِلَّا بِأَمْرِ رَبِّكَ﴾.",
+          "meaningIfConnected": "الوقف تام لانقطاع سياق وصف الجنة والانتقال إلى غرض ومقول جديد."
+        }
+      ]
+    },
+    {
+      "ayah": 63,
+      "wordIndex": 9,
+      "targetWord": "تَقِيًّۭا",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "تقيا تام",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            9
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ تِلْكَ ٱلْجَنَّةُ ٱلَّتِى نُورِثُ مِنْ عِبَادِنَا مَن كَانَ تَقِيًّۭا ﴾ [قف على: تَقِيًّا]",
+          "ibtidaDemo": "﴿ وَمَا نَتَنَزَّلُ إِلَّا بِأَمْرِ رَبِّكَ ﴾ [الآية التالية]",
+          "meaningAtWaqf": "انقضاء الكلام في شأن الجنة وأهلها الأتقياء لفظاً ومعنى.",
+          "meaningAtIbtida": "الشروع في كلام مستأنف يحكي قول جبريل عليه السلام عند إبطاء الوحي.",
+          "meaningIfConnected": "الوقف التام أولى لعدم التعلق اللفظي أو المعنوي بين الآيتين."
+        }
+      ]
+    },
+    {
+      "ayah": 63,
+      "wordIndex": 9,
+      "targetWord": "تَقِيًّۭا",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 61",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "ثم القطع على رؤوس الآيات كاف إلى ﴿لَهُ مَا بَيْنَ أَيْدِينَا وَمَا خَلْفَنَا وَمَا بَيْنَ ذَٰلِكَ﴾",
+      "demosAndMeanings": [
+        {
+          "verdict": "كاف",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            9
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ تِلْكَ ٱلْجَنَّةُ ٱلَّتِى نُورِثُ مِنْ عِبَادِنَا مَن كَانَ تَقِيًّۭا ﴾ [قف على: تَقِيًّا]",
+          "ibtidaDemo": "﴿ وَمَا نَتَنَزَّلُ إِلَّا بِأَمْرِ رَبِّكَ ﴾ [الآية التالية]",
+          "meaningAtWaqf": "كفاية القطع على رأس الآية لاستقلال الجملة الاسمية لفظاً.",
+          "meaningAtIbtida": "الابتداء بقول الملائكة أو جبريل عليه السلام: ﴿وَمَا نَتَنَزَّلُ إِلَّا بِأَمْرِ رَبِّكَ﴾.",
+          "meaningIfConnected": "أدرجه النحاس ضمن رؤوس الآيات الكافية التي ينتهي التمام فيها عند قوله ﴿وَمَا بَيْنَ ذَٰلِكَ﴾."
+        }
+      ]
+    },
+    {
+      "ayah": 64,
+      "wordIndex": 5,
+      "targetWord": "رَبِّكَ",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/686",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "ج",
+      "typoDetected": null,
+      "comment": "لاختلاف الجملتين.",
+      "demosAndMeanings": [
+        {
+          "verdict": "جائز",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            5
+          ],
+          "ibtidaSegmentWords": [
+            6,
+            14
+          ],
+          "waqfDemo": "تلاوة: ﴿ وَمَا نَتَنَزَّلُ إِلَّا بِأَمْرِ رَبِّكَ ﴾ [قف على: رَبِّكْ]",
+          "ibtidaDemo": "﴿ لَهُۥ مَا بَيْنَ أَيْدِينَا وَمَا خَلْفَنَا وَمَا بَيْنَ ذَٰلِكَ ﴾ [قف على: ذَٰلِكْ]",
+          "meaningAtWaqf": "تمام الجملة الفعلية المنفية المستثنى منها في بيان أن تنزّل الملائكة إنما يكون بأمر الله.",
+          "meaningAtIbtida": "الابتداء بجملة اسمية ﴿لَهُۥ مَا بَيْنَ أَيْدِينَا...﴾ لبيان إحاطة ملك الله وعلمه بالزمان والمكان.",
+          "meaningIfConnected": "جاز الوقف والوصل لاختلاف الجملتين بين الفعلية والاسمية مع اتحاد السياق."
+        }
+      ]
+    },
+    {
+      "ayah": 64,
+      "wordIndex": 5,
+      "targetWord": "رَبِّكَ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "حسن"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "ربك حسن ومثله ما بين ذلك",
+      "demosAndMeanings": [
+        {
+          "verdict": "حسن",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            5
+          ],
+          "ibtidaSegmentWords": [
+            6,
+            14
+          ],
+          "waqfDemo": "تلاوة: ﴿ وَمَا نَتَنَزَّلُ إِلَّا بِأَمْرِ رَبِّكَ ﴾ [قف على: رَبِّكْ]",
+          "ibtidaDemo": "﴿ لَهُۥ مَا بَيْنَ أَيْدِينَا وَمَا خَلْفَنَا وَمَا بَيْنَ ذَٰلِكَ ﴾ [قف على: ذَٰلِكْ]",
+          "meaningAtWaqf": "إفادة معنى تام في اختصاص تنزل الوحي بأمر الله تعالى.",
+          "meaningAtIbtida": "الابتداء ببيان شمول ملك الله لما بين أيديهم وما خلفهم وما بين ذلك.",
+          "meaningIfConnected": "تتعلق الجملة الثانية بالأولى تعليلاً لعدم تنزلهم إلا بأمره سبحانه."
+        }
+      ]
+    },
+    {
+      "ayah": 64,
+      "wordIndex": 14,
+      "targetWord": "ذَٰلِكَ",
+      "scholar": "ابن الأنباري",
+      "book": "إيضاح الوقف والابتداء",
+      "page": "2/765",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "(له ما بين أيدينا وما خلفنا وما بين ذلك) [64] وقف التمام.",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "waqfSegmentWords": [
+            6,
+            14
+          ],
+          "ibtidaSegmentWords": [
+            15,
+            18
+          ],
+          "waqfDemo": "تلاوة: ﴿ لَهُۥ مَا بَيْنَ أَيْدِينَا وَمَا خَلْفَنَا وَمَا بَيْنَ ذَٰلِكَ ﴾ [قف على: ذَٰلِكْ]",
+          "ibtidaDemo": "﴿ وَمَا كَانَ رَبُّكَ نَسِيًّۭا ﴾ [قف على: نَسِيًّا]",
+          "meaningAtWaqf": "تمام الإخبار عن ملك الله وعلمه المحيط بما مضى وما يستقبل وما بينهما.",
+          "meaningAtIbtida": "الابتداء بجملة تنزيهية مستقلة تخاطب النبي صلى الله عليه وسلم: ﴿وَمَا كَانَ رَبُّكَ نَسِيًّۭا﴾.",
+          "meaningIfConnected": "الوقف تام لانقضاء الجملة الاسمية وابتداء جملة نفي النسيان عن الله عز وجل."
+        }
+      ]
+    },
+    {
+      "ayah": 64,
+      "wordIndex": 14,
+      "targetWord": "ذَٰلِكَ",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "376",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "{وبكيًا} تام. ومثله {من كان تقيًا} ومثله {ما بين ذلك}.",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "waqfSegmentWords": [
+            6,
+            14
+          ],
+          "ibtidaSegmentWords": [
+            15,
+            18
+          ],
+          "waqfDemo": "تلاوة: ﴿ لَهُۥ مَا بَيْنَ أَيْدِينَا وَمَا خَلْفَنَا وَمَا بَيْنَ ذَٰلِكَ ﴾ [قف على: ذَٰلِكْ]",
+          "ibtidaDemo": "﴿ وَمَا كَانَ رَبُّكَ نَسِيًّۭا ﴾ [قف على: نَسِيًّا]",
+          "meaningAtWaqf": "تمام كلام الملائكة في بيان اختصاص الله بملك الزمان والمكان.",
+          "meaningAtIbtida": "الابتداء بتنزيه الله تعالى عن النسيان تثبيتاً لقلب النبي صلى الله عليه وسلم.",
+          "meaningIfConnected": "الوقف تام لاستقلال جملة التنزيه عما قبلها."
+        }
+      ]
+    },
+    {
+      "ayah": 64,
+      "wordIndex": 14,
+      "targetWord": "ذَٰلِكَ",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/686",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "ج",
+      "typoDetected": null,
+      "comment": "لأن قوله: «وما كان» معطوف على «وما نتنزل»، مع وقوع العارض.",
+      "demosAndMeanings": [
+        {
+          "verdict": "جائز",
+          "isQila": false,
+          "waqfSegmentWords": [
+            6,
+            14
+          ],
+          "ibtidaSegmentWords": [
+            15,
+            18
+          ],
+          "waqfDemo": "تلاوة: ﴿ لَهُۥ مَا بَيْنَ أَيْدِينَا وَمَا خَلْفَنَا وَمَا بَيْنَ ذَٰلِكَ ﴾ [قف على: ذَٰلِكْ]",
+          "ibtidaDemo": "﴿ وَمَا كَانَ رَبُّكَ نَسِيًّۭا ﴾ [قف على: نَسِيًّا]",
+          "meaningAtWaqf": "انقضاء الجملة الاسمية المعترضة في بيان سعة ملك الله وعلمه.",
+          "meaningAtIbtida": "الابتداء بـ﴿وَمَا كَانَ رَبُّكَ نَسِيًّۭا﴾ بعد تمام الجملة المعترضة.",
+          "meaningIfConnected": "الوصل مراعى من جهة عطف ﴿وَمَا كَانَ﴾ على ﴿وَمَا نَتَنَزَّلُ﴾، والوقف جائز لوقوع الجملة الاسمية عارضاً فاصلاً بينهما."
+        }
+      ]
+    },
+    {
+      "ayah": 64,
+      "wordIndex": 14,
+      "targetWord": "ذَٰلِكَ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "حسن"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "ربك حسن ومثله ما بين ذلك",
+      "demosAndMeanings": [
+        {
+          "verdict": "حسن",
+          "isQila": false,
+          "waqfSegmentWords": [
+            6,
+            14
+          ],
+          "ibtidaSegmentWords": [
+            15,
+            18
+          ],
+          "waqfDemo": "تلاوة: ﴿ لَهُۥ مَا بَيْنَ أَيْدِينَا وَمَا خَلْفَنَا وَمَا بَيْنَ ذَٰلِكَ ﴾ [قف على: ذَٰلِكْ]",
+          "ibtidaDemo": "﴿ وَمَا كَانَ رَبُّكَ نَسِيًّۭا ﴾ [قف على: نَسِيًّا]",
+          "meaningAtWaqf": "تمام الإخبار عن إحاطة ملك الله بما بين أيديهم وما خلفهم وما بين ذلك.",
+          "meaningAtIbtida": "الابتداء بجملة نفي النسيان عن الرب جل وعلا.",
+          "meaningIfConnected": "يتصل ما بعده بما قبله عطفاً على ﴿وَمَا نَتَنَزَّلُ﴾ من كلام جبريل عليه السلام."
+        }
+      ]
+    },
+    {
+      "ayah": 64,
+      "wordIndex": 14,
+      "targetWord": "ذَٰلِكَ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 64",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "﴿لَهُ مَا بَيْنَ أَيْدِينَا وَمَا خَلْفَنَا وَمَا بَيْنَ ذَٰلِكَ﴾ فإنه تمام عند الأخفش وأبي حاتم",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "attributedTo": "الأخفش وأبو حاتم السجستاني",
+          "waqfSegmentWords": [
+            6,
+            14
+          ],
+          "ibtidaSegmentWords": [
+            15,
+            18
+          ],
+          "waqfDemo": "تلاوة: ﴿ لَهُۥ مَا بَيْنَ أَيْدِينَا وَمَا خَلْفَنَا وَمَا بَيْنَ ذَٰلِكَ ﴾ [قف على: ذَٰلِكْ]",
+          "ibtidaDemo": "﴿ وَمَا كَانَ رَبُّكَ نَسِيًّۭا ﴾ [قف على: نَسِيًّا]",
+          "meaningAtWaqf": "تمام الجملة الخبرية في إحاطة ملك الله بالأمور كلها.",
+          "meaningAtIbtida": "ائتناف قوله ﴿وَمَا كَانَ رَبُّكَ نَسِيًّۭا﴾ وما يتصل به من قوله ﴿رَّبُّ ٱلسَّمَـٰوَٰتِ﴾.",
+          "meaningIfConnected": "القطع هنا تام عند الأخفش وأبي حاتم لاستقلال ما بعده عنه."
+        }
+      ]
+    },
+    {
+      "ayah": 64,
+      "wordIndex": 18,
+      "targetWord": "نَسِيًّۭا",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/686",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "ج",
+      "typoDetected": null,
+      "comment": "لأن قوله: «رب السماوات» خبر مبتدأ محذوف، أي: هو رب، أو بدل: «ربك»، والوقف أجوز للآية.",
+      "demosAndMeanings": [
+        {
+          "verdict": "جائز",
+          "isQila": false,
+          "waqfSegmentWords": [
+            15,
+            18
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ وَمَا كَانَ رَبُّكَ نَسِيًّۭا ﴾ [قف على: نَسِيًّا]",
+          "ibtidaDemo": "﴿ رَّبُّ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ وَمَا بَيْنَهُمَا فَٱعْبُدْهُ وَٱصْطَبِرْ لِعِبَـٰدَتِهِۦ ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام جملة تنزيه الله عن النسيان مع موافقة رأس الآية.",
+          "meaningAtIbtida": "الابتداء بـ﴿رَّبُّ ٱلسَّمَـٰوَٰتِ﴾ على أنه خبر لمبتدأ محذوف تقديره: (هو ربُّ السماوات).",
+          "meaningIfConnected": "يُراعى الوصل على وجه كون ﴿رَّبُّ﴾ بدلاً من ﴿رَبُّكَ﴾، غير أن الوقف أجوز لمراعاة فاصلة الآية."
+        }
+      ]
+    },
+    {
+      "ayah": 64,
+      "wordIndex": 18,
+      "targetWord": "نَسِيًّۭا",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "تام",
+        "جائز"
+      ],
+      "isQila": [
+        false,
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": {
+        "raw": "وجاوز",
+        "corrected": "وجائز",
+        "reason": "تصحيف مطبعي في لفظ الحكم (وجائز)"
+      },
+      "comment": "إن جعل رب خبر مبتدأ محذوف أي ذلك رب وجائز إن جعل بدلاً من ربك وجائز إن تعلق به ذلك لأنَّه رأس آية",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "waqfSegmentWords": [
+            15,
+            18
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ وَمَا كَانَ رَبُّكَ نَسِيًّۭا ﴾ [قف على: نَسِيًّا]",
+          "ibtidaDemo": "﴿ رَّبُّ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ وَمَا بَيْنَهُمَا فَٱعْبُدْهُ وَٱصْطَبِرْ لِعِبَـٰدَتِهِۦ ﴾ [الآية التالية]",
+          "meaningAtWaqf": "انقضاء الجملة واستقلالها التام عند رأس الآية.",
+          "meaningAtIbtida": "الابتداء بـ﴿رَّبُّ ٱلسَّمَـٰوَٰتِ﴾ على القطع والاستئناف خبراً لمبتدأ محذوف تقديره: (ذلك ربُّ السماوات).",
+          "meaningIfConnected": "يكون الوقف تاماً على تقدير القطع إلى الرفع بالابتداء دون التبعية الإعرابية."
+        },
+        {
+          "verdict": "جائز",
+          "isQila": false,
+          "waqfSegmentWords": [
+            15,
+            18
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ وَمَا كَانَ رَبُّكَ نَسِيًّۭا ﴾ [قف على: نَسِيًّا]",
+          "ibtidaDemo": "﴿ رَّبُّ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ وَمَا بَيْنَهُمَا فَٱعْبُدْهُ وَٱصْطَبِرْ لِعِبَـٰدَتِهِۦ ﴾ [الآية التالية]",
+          "meaningAtWaqf": "الوقف على رأس الآية مع قيام التعلق الإعرابي بما بعده.",
+          "meaningAtIbtida": "الابتداء بـ﴿رَّبُّ ٱلسَّمَـٰوَٰتِ﴾ بعد الفاصلة.",
+          "meaningIfConnected": "وجه الجواز أنه وإن جُعل ﴿رَّبُّ﴾ بدلاً من ﴿رَبُّكَ﴾ وتعلّق به، فقد سوّغ الوقفَ كونُه رأس آية."
+        }
+      ]
+    },
+    {
+      "ayah": 64,
+      "wordIndex": 18,
+      "targetWord": "نَسِيًّۭا",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 64",
+      "verdicts": [
+        "لا يوقف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "﴿وَمَا كَانَ رَبُّكَ نَسِيًّا﴾ ليس بكاف لأن ﴿رب السموات والأرض﴾ بدل من قولك رب",
+      "demosAndMeanings": null
+    },
+    {
+      "ayah": 65,
+      "wordIndex": 5,
+      "targetWord": "بَيْنَهُمَا",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "وما بينهما كاف ومثله لعبادته",
+      "demosAndMeanings": [
+        {
+          "verdict": "كاف",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            5
+          ],
+          "ibtidaSegmentWords": [
+            6,
+            8
+          ],
+          "waqfDemo": "تلاوة: ﴿ رَّبُّ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ وَمَا بَيْنَهُمَا ﴾ [قف على: بَيْنَهُمَا]",
+          "ibtidaDemo": "﴿ فَٱعْبُدْهُ وَٱصْطَبِرْ لِعِبَـٰدَتِهِۦ ﴾ [قف على: لِعِبَـٰدَتِهْ]",
+          "meaningAtWaqf": "تمام الإخبار بربوبية الله الشاملة للسماوات والأرض وما بينهما.",
+          "meaningAtIbtida": "الابتداء بالأمر المترتب على ربوبيته سبحانه: ﴿فَٱعْبُدْهُ وَٱصْطَبِرْ لِعِبَـٰدَتِهِۦ﴾.",
+          "meaningIfConnected": "الاتصال المعنوي واللفظي قائم بفاء التفريع التي رتبت الأمر بالعبادة على إثبات الربوبية."
+        }
+      ]
+    },
+    {
+      "ayah": 65,
+      "wordIndex": 8,
+      "targetWord": "لِعِبَـٰدَتِهِۦ",
+      "scholar": "ابن الأنباري",
+      "book": "إيضاح الوقف والابتداء",
+      "page": "2/765",
+      "verdicts": [
+        "حسن"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "(واصطبر لعبادته) [65] وقف حسن.",
+      "demosAndMeanings": [
+        {
+          "verdict": "حسن",
+          "isQila": false,
+          "waqfSegmentWords": [
+            6,
+            8
+          ],
+          "ibtidaSegmentWords": [
+            9,
+            12
+          ],
+          "waqfDemo": "تلاوة: ﴿ فَٱعْبُدْهُ وَٱصْطَبِرْ لِعِبَـٰدَتِهِۦ ﴾ [قف على: لِعِبَـٰدَتِهْ]",
+          "ibtidaDemo": "﴿ هَلْ تَعْلَمُ لَهُۥ سَمِيًّۭا ﴾ [قف على: سَمِيًّا]",
+          "meaningAtWaqf": "تمام جملتي الأمر بعبادة الله والاصطبار عليها.",
+          "meaningAtIbtida": "الابتداء بالاستفهام التقريري النافي للمثيل والشبيه: ﴿هَلْ تَعْلَمُ لَهُۥ سَمِيًّۭا﴾.",
+          "meaningIfConnected": "يتصل ما بعده بما قبله من جهة المعنى لعود الضمير في ﴿لَهُۥ﴾ إلى الله تعالى وتعليل الأمر بعبادته بتفرده عن النظير."
+        }
+      ]
+    },
+    {
+      "ayah": 65,
+      "wordIndex": 8,
+      "targetWord": "لِعِبَـٰدَتِهِۦ",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "376",
+      "verdicts": [
+        "كاف",
+        "تام"
+      ],
+      "isQila": [
+        false,
+        true
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "{لعبادته} كاف. وقيل: تام.",
+      "demosAndMeanings": [
+        {
+          "verdict": "كاف",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            8
+          ],
+          "ibtidaSegmentWords": [
+            9,
+            12
+          ],
+          "waqfDemo": "تلاوة: ﴿ رَّبُّ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ وَمَا بَيْنَهُمَا فَٱعْبُدْهُ وَٱصْطَبِرْ لِعِبَـٰدَتِهِۦ ﴾ [قف على: لِعِبَـٰدَتِهْ]",
+          "ibtidaDemo": "﴿ هَلْ تَعْلَمُ لَهُۥ سَمِيًّۭا ﴾ [قف على: سَمِيًّا]",
+          "meaningAtWaqf": "كفاية الوقف لاستقلال جملة الأمر بالعبادة والاصطبار عليها لفظاً.",
+          "meaningAtIbtida": "الابتداء بجملة الاستفهام ﴿هَلْ تَعْلَمُ لَهُۥ سَمِيًّۭا﴾ لتقرير وحدانيته وتنزيهه عن المثل.",
+          "meaningIfConnected": "الترابط المعنوي قائم لعود الضمير في ﴿لَهُۥ﴾ على الرب المأمور بعبادته."
+        },
+        {
+          "verdict": "تام",
+          "isQila": true,
+          "waqfSegmentWords": [
+            1,
+            8
+          ],
+          "ibtidaSegmentWords": [
+            9,
+            12
+          ],
+          "waqfDemo": "تلاوة: ﴿ رَّبُّ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ وَمَا بَيْنَهُمَا فَٱعْبُدْهُ وَٱصْطَبِرْ لِعِبَـٰدَتِهِۦ ﴾ [قف على: لِعِبَـٰدَتِهْ]",
+          "ibtidaDemo": "﴿ هَلْ تَعْلَمُ لَهُۥ سَمِيًّۭا ﴾ [قف على: سَمِيًّا]",
+          "meaningAtWaqf": "تمام الكلام بانتهاء أسلوب الخبر والأمر.",
+          "meaningAtIbtida": "استئناف أسلوب الاستفهام الإنكاري ﴿هَلْ تَعْلَمُ لَهُۥ سَمِيًّۭا﴾.",
+          "meaningIfConnected": "قيل بالتمام لاختلاف أسلوب الجملتين بين الأمر والاستفهام."
+        }
+      ]
+    },
+    {
+      "ayah": 65,
+      "wordIndex": 8,
+      "targetWord": "لِعِبَـٰدَتِهِۦ",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/686",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "ط",
+      "typoDetected": null,
+      "comment": "{لعبادته- 65- ط}.",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            8
+          ],
+          "ibtidaSegmentWords": [
+            9,
+            12
+          ],
+          "waqfDemo": "تلاوة: ﴿ رَّبُّ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ وَمَا بَيْنَهُمَا فَٱعْبُدْهُ وَٱصْطَبِرْ لِعِبَـٰدَتِهِۦ ﴾ [قف على: لِعِبَـٰدَتِهْ]",
+          "ibtidaDemo": "﴿ هَلْ تَعْلَمُ لَهُۥ سَمِيًّۭا ﴾ [قف على: سَمِيًّا]",
+          "meaningAtWaqf": "انقضاء جملة الأمر بالعبادة والاصطبار عليها.",
+          "meaningAtIbtida": "الابتداء باستفهام مستأنف ينفي وجود سميّ أو نظير لله عز وجل.",
+          "meaningIfConnected": "الوقف تام عند السجاوندي للعدول من صيغة الأمر إلى صيغة الاستفهام."
+        }
+      ]
+    },
+    {
+      "ayah": 65,
+      "wordIndex": 8,
+      "targetWord": "لِعِبَـٰدَتِهِۦ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "وما بينهما كاف ومثله لعبادته",
+      "demosAndMeanings": [
+        {
+          "verdict": "كاف",
+          "isQila": false,
+          "waqfSegmentWords": [
+            6,
+            8
+          ],
+          "ibtidaSegmentWords": [
+            9,
+            12
+          ],
+          "waqfDemo": "تلاوة: ﴿ فَٱعْبُدْهُ وَٱصْطَبِرْ لِعِبَـٰدَتِهِۦ ﴾ [قف على: لِعِبَـٰدَتِهْ]",
+          "ibtidaDemo": "﴿ هَلْ تَعْلَمُ لَهُۥ سَمِيًّۭا ﴾ [قف على: سَمِيًّا]",
+          "meaningAtWaqf": "استقلال جملة الأمر بالعبادة والاصطبار عليها في اللفظ والإعراب.",
+          "meaningAtIbtida": "الابتداء بالجملة الاستفهامية النافية للشبيه والمثيل.",
+          "meaningIfConnected": "يتصل المعنى لأن نفي الشبيه تعليل لاستحقاقه سبحانه العبادة وحده."
+        }
+      ]
+    },
+    {
+      "ayah": 65,
+      "wordIndex": 8,
+      "targetWord": "لِعِبَـٰدَتِهِۦ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 64",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "والتمام عند أبي حاتم ﴿فَاعْبُدْهُ وَاصْطَبِرْ لِعِبَادَتِهِ﴾ وعند غيره ﴿هَلْ تَعْلَمُ لَهُ سَمِيًّا﴾",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "attributedTo": "أبو حاتم السجستاني",
+          "waqfSegmentWords": [
+            6,
+            8
+          ],
+          "ibtidaSegmentWords": [
+            9,
+            12
+          ],
+          "waqfDemo": "تلاوة: ﴿ فَٱعْبُدْهُ وَٱصْطَبِرْ لِعِبَـٰدَتِهِۦ ﴾ [قف على: لِعِبَـٰدَتِهْ]",
+          "ibtidaDemo": "﴿ هَلْ تَعْلَمُ لَهُۥ سَمِيًّۭا ﴾ [قف على: سَمِيًّا]",
+          "meaningAtWaqf": "تمام جملة الأمر بالعبادة والاصطبار عليها.",
+          "meaningAtIbtida": "ائتناف الاستفهام في قوله ﴿هَلْ تَعْلَمُ لَهُۥ سَمِيًّۭا﴾.",
+          "meaningIfConnected": "عند غير أبي حاتم يتصل الكلام لاتحاد السياق في توحيد الله، ويكون التمام عند آخر الآية ﴿هَلْ تَعْلَمُ لَهُۥ سَمِيًّۭا﴾."
+        }
+      ]
+    },
+    {
+      "ayah": 65,
+      "wordIndex": 12,
+      "targetWord": "سَمِيًّۭا",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "376",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "{له سميًا} تام.",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "waqfSegmentWords": [
+            9,
+            12
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ هَلْ تَعْلَمُ لَهُۥ سَمِيًّۭا ﴾ [قف على: سَمِيًّا]",
+          "ibtidaDemo": "﴿ وَيَقُولُ ٱلْإِنسَـٰنُ أَءِذَا مَا مِتُّ لَسَوْفَ أُخْرَجُ حَيًّا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام الكلام في تقرير تفرد الله تعالى بالربوبية والكمال ونفي المماثل والنظير عنه.",
+          "meaningAtIbtida": "الابتداء بحكاية مقولة الإنسان المنكر للبعث بعد الموت.",
+          "meaningIfConnected": "الوقف تام لانقضاء غرض التوحيد والتنزيه والانتقال إلى الرد على منكري البعث."
+        }
+      ]
+    },
+    {
+      "ayah": 65,
+      "wordIndex": 12,
+      "targetWord": "سَمِيًّۭا",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "سميا تام",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "waqfSegmentWords": [
+            9,
+            12
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ هَلْ تَعْلَمُ لَهُۥ سَمِيًّۭا ﴾ [قف على: سَمِيًّا]",
+          "ibtidaDemo": "﴿ وَيَقُولُ ٱلْإِنسَـٰنُ أَءِذَا مَا مِتُّ لَسَوْفَ أُخْرَجُ حَيًّا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "استقلال جملة الاستفهام الإنكاري النافي للشبيه والنظير عن الله تعالى عند رأس الآية.",
+          "meaningAtIbtida": "الشروع في سياق جديد يحكي استبعاد الكافر للبعث والنشور.",
+          "meaningIfConnected": "الوقف تام لعدم التعلق اللفظي أو المعنوي بين خاتمة آية التوحيد ومطلع آية إنكار البعث."
+        }
+      ]
+    },
+    {
+      "ayah": 65,
+      "wordIndex": 12,
+      "targetWord": "سَمِيًّۭا",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 64",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "والتمام عند أبي حاتم ﴿فَاعْبُدْهُ وَاصْطَبِرْ لِعِبَادَتِهِ﴾ وعند غيره ﴿هَلْ تَعْلَمُ لَهُ سَمِيًّا﴾",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "waqfSegmentWords": [
+            9,
+            12
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ هَلْ تَعْلَمُ لَهُۥ سَمِيًّۭا ﴾ [قف على: سَمِيًّا]",
+          "ibtidaDemo": "﴿ وَيَقُولُ ٱلْإِنسَـٰنُ أَءِذَا مَا مِتُّ لَسَوْفَ أُخْرَجُ حَيًّا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام الكلام بانتهاء الخطاب للنبي صلى الله عليه وسلم في شأن ربوبية الله وتفرده عن السميّ.",
+          "meaningAtIbtida": "ائتناف خبر مستأنف في حكاية قول الإنسان المنكر للبعث.",
+          "meaningIfConnected": "القطع تام لانفصال المعنى وانتهاء السياق الأول."
+        }
+      ]
+    },
+    {
+      "ayah": 66,
+      "wordIndex": 5,
+      "targetWord": "مِتُّ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "لا يوقف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "ليس بوقف لفصله بين القول والمقول وهما كشيء واحد",
+      "demosAndMeanings": null
+    },
+    {
+      "ayah": 66,
+      "wordIndex": 8,
+      "targetWord": "حَيًّا",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "حيا تام",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            8
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ وَيَقُولُ ٱلْإِنسَـٰنُ أَءِذَا مَا مِتُّ لَسَوْفَ أُخْرَجُ حَيًّا ﴾ [قف على: حَيًّا]",
+          "ibtidaDemo": "﴿ أَوَلَا يَذْكُرُ ٱلْإِنسَـٰنُ أَنَّا خَلَقْنَـٰهُ مِن قَبْلُ وَلَمْ يَكُ شَيْـًۭٔا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام مقول الإنسان المنكر للبعث وانقضاء جملته عند رأس الآية.",
+          "meaningAtIbtida": "الابتداء بالرد الإلهي الحاسم بطريق الاستفهام التوبيخي التقريري ﴿أَوَلَا يَذْكُرُ ٱلْإِنسَـٰنُ﴾.",
+          "meaningIfConnected": "الوقف تام لانتهاء حكاية قول الكافر وابتداء الاحتجاج الإلهي عليه."
+        }
+      ]
+    },
+    {
+      "ayah": 66,
+      "wordIndex": 8,
+      "targetWord": "حَيًّا",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 66",
+      "verdicts": [
+        "صالح"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "﴿لَسَوْفَ أُخْرَجُ حَيًّا﴾ ليس بتمام لأن بعده واو عطف دخلت ألف الاستفهام ولكنه صالح",
+      "demosAndMeanings": [
+        {
+          "verdict": "صالح",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            8
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ وَيَقُولُ ٱلْإِنسَـٰنُ أَءِذَا مَا مِتُّ لَسَوْفَ أُخْرَجُ حَيًّا ﴾ [قف على: حَيًّا]",
+          "ibtidaDemo": "﴿ أَوَلَا يَذْكُرُ ٱلْإِنسَـٰنُ أَنَّا خَلَقْنَـٰهُ مِن قَبْلُ وَلَمْ يَكُ شَيْـًۭٔا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "صلاحية القطع لانقضاء الجملة المحكية وموافقة فاصلة الآية.",
+          "meaningAtIbtida": "الابتداء بالاستفهام الإنكاري المعطوف بالواو التي دخلت عليها همزة الاستفهام.",
+          "meaningIfConnected": "ليس بتمام عند النحاس لمجيء واو العطف بعد همزة الاستفهام في ﴿أَوَلَا يَذْكُرُ﴾، فيتصل الكلام إلى تمام الحجة في ﴿وَلَمْ يَكُ شَيْـًۭٔا﴾."
+        }
+      ]
+    },
+    {
+      "ayah": 67,
+      "wordIndex": 7,
+      "targetWord": "قَبْلُ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "لا يوقف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "لا يحسن الوقف عليه لأنَّ ولم يك شيئًا معطوف على ما قبله",
+      "demosAndMeanings": null
+    },
+    {
+      "ayah": 67,
+      "wordIndex": 10,
+      "targetWord": "شَيْـًۭٔا",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "حسن",
+        "تام"
+      ],
+      "isQila": [
+        false,
+        true
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "ولم يك شيئًا حسن وقيل تام",
+      "demosAndMeanings": [
+        {
+          "verdict": "حسن",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            10
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ أَوَلَا يَذْكُرُ ٱلْإِنسَـٰنُ أَنَّا خَلَقْنَـٰهُ مِن قَبْلُ وَلَمْ يَكُ شَيْـًۭٔا ﴾ [قف على: شَيْـًٔا]",
+          "ibtidaDemo": "﴿ فَوَرَبِّكَ لَنَحْشُرَنَّهُمْ وَٱلشَّيَـٰطِينَ ثُمَّ لَنُحْضِرَنَّهُمْ حَوْلَ جَهَنَّمَ جِثِيًّۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "إفادة معنى تام بإقامة الحجة على إمكان البعث بالنشأة الأولى من العدم عند رأس الآية.",
+          "meaningAtIbtida": "الابتداء بالقسم الإلهي المؤكد لوقوع الحشر والجزاء ﴿فَوَرَبِّكَ لَنَحْشُرَنَّهُمْ﴾.",
+          "meaningIfConnected": "يتعلق ما بعده بما قبله لارتباط الفاء في ﴿فَوَرَبِّكَ﴾ بما تقدم من إنكارهم وإقامة الحجة عليهم."
+        },
+        {
+          "verdict": "تام",
+          "isQila": true,
+          "waqfSegmentWords": [
+            1,
+            10
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ أَوَلَا يَذْكُرُ ٱلْإِنسَـٰنُ أَنَّا خَلَقْنَـٰهُ مِن قَبْلُ وَلَمْ يَكُ شَيْـًۭٔا ﴾ [قف على: شَيْـًٔا]",
+          "ibtidaDemo": "﴿ فَوَرَبِّكَ لَنَحْشُرَنَّهُمْ وَٱلشَّيَـٰطِينَ ثُمَّ لَنُحْضِرَنَّهُمْ حَوْلَ جَهَنَّمَ جِثِيًّۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام الحجة العقلية في الرد على منكر البعث واستقلالها عند رأس الآية.",
+          "meaningAtIbtida": "استئناف أسلوب القسم والوعيد بحشرهم مع الشياطين.",
+          "meaningIfConnected": "قيل بالتمام لانتهاء أسلوب المحاجّة الاستفهامية والانتقال إلى أسلوب القسم والوعيد."
+        }
+      ]
+    },
+    {
+      "ayah": 67,
+      "wordIndex": 10,
+      "targetWord": "شَيْـًۭٔا",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 67",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "والتمام ﴿وَلَمْ يَكُ شَيْئًا﴾.",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            10
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ أَوَلَا يَذْكُرُ ٱلْإِنسَـٰنُ أَنَّا خَلَقْنَـٰهُ مِن قَبْلُ وَلَمْ يَكُ شَيْـًۭٔا ﴾ [قف على: شَيْـًٔا]",
+          "ibtidaDemo": "﴿ فَوَرَبِّكَ لَنَحْشُرَنَّهُمْ وَٱلشَّيَـٰطِينَ ثُمَّ لَنُحْضِرَنَّهُمْ حَوْلَ جَهَنَّمَ جِثِيًّۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام الكلام بانتهاء الاستدلال بالخلق الأول على البعث.",
+          "meaningAtIbtida": "ائتناف القسم الإلهي على حشر المنكرين وقرنائهم من الشياطين.",
+          "meaningIfConnected": "القطع تام لانقضاء جملة الاستفهام التقريري واستقلال جملة القسم بعدها."
+        }
+      ]
+    },
+    {
+      "ayah": 68,
+      "wordIndex": 3,
+      "targetWord": "وَٱلشَّيَـٰطِينَ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "والشياطين جائز ومثله جثيا",
+      "demosAndMeanings": [
+        {
+          "verdict": "جائز",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            3
+          ],
+          "ibtidaSegmentWords": [
+            4,
+            8
+          ],
+          "waqfDemo": "تلاوة: ﴿ فَوَرَبِّكَ لَنَحْشُرَنَّهُمْ وَٱلشَّيَـٰطِينَ ﴾ [قف على: وَٱلشَّيَـٰطِينْ]",
+          "ibtidaDemo": "﴿ ثُمَّ لَنُحْضِرَنَّهُمْ حَوْلَ جَهَنَّمَ جِثِيًّۭا ﴾ [قف على: جِثِيًّا]",
+          "meaningAtWaqf": "تمام جملة القسم وجوابه الأول في حشر الكفار مع الشياطين.",
+          "meaningAtIbtida": "الابتداء بالجملة المعطوفة بـ(ثم) المثبتة لإحضارهم حول جهنم جاثين على الركب.",
+          "meaningIfConnected": "الوصل يجمع بين جوابي القسم المتعاطفين بـ(ثم) الدالة على التراخي والترتيب."
+        }
+      ]
+    },
+    {
+      "ayah": 68,
+      "wordIndex": 3,
+      "targetWord": "وَٱلشَّيَـٰطِينَ",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 67",
+      "verdicts": [
+        "صالح",
+        "تام"
+      ],
+      "isQila": [
+        false,
+        true
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "وقال أبو عبد الله: ﴿فَوَرَبِّكَ لَنَحْشُرَنَّهُمْ وَالشَّيَاطِينَ﴾ تم الكلام، وخولف في هذا، لأن ﴿لَنُحْضِرَنَّهُمْ﴾ معطوف على (لنحشرنهم) إلا أنه صالح فجعله عطف جملة على جملة.",
+      "demosAndMeanings": [
+        {
+          "verdict": "صالح",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            3
+          ],
+          "ibtidaSegmentWords": [
+            4,
+            8
+          ],
+          "waqfDemo": "تلاوة: ﴿ فَوَرَبِّكَ لَنَحْشُرَنَّهُمْ وَٱلشَّيَـٰطِينَ ﴾ [قف على: وَٱلشَّيَـٰطِينْ]",
+          "ibtidaDemo": "﴿ ثُمَّ لَنُحْضِرَنَّهُمْ حَوْلَ جَهَنَّمَ جِثِيًّۭا ﴾ [قف على: جِثِيًّا]",
+          "meaningAtWaqf": "صلاحية القطع لانقضاء الجملة القسمية الأولى على اعتبار عطف جملة على جملة.",
+          "meaningAtIbtida": "الابتداء بجملة ﴿ثُمَّ لَنُحْضِرَنَّهُمْ﴾ المعطوفة في نسق أهوال القيامة.",
+          "meaningIfConnected": "ليس بتام عند الجمهور لأن ﴿لَنُحْضِرَنَّهُمْ﴾ معطوف على ﴿لَنَحْشُرَنَّهُمْ﴾ في جواب القسم."
+        },
+        {
+          "verdict": "تام",
+          "isQila": true,
+          "attributedTo": "أبو عبد الله",
+          "waqfSegmentWords": [
+            1,
+            3
+          ],
+          "ibtidaSegmentWords": [
+            4,
+            8
+          ],
+          "waqfDemo": "تلاوة: ﴿ فَوَرَبِّكَ لَنَحْشُرَنَّهُمْ وَٱلشَّيَـٰطِينَ ﴾ [قف على: وَٱلشَّيَـٰطِينْ]",
+          "ibtidaDemo": "﴿ ثُمَّ لَنُحْضِرَنَّهُمْ حَوْلَ جَهَنَّمَ جِثِيًّۭا ﴾ [قف على: جِثِيًّا]",
+          "meaningAtWaqf": "تمام الكلام باستيفاء القسم وجوابه في تحقيق الحشر.",
+          "meaningAtIbtida": "استئناف جملة قسمية ثانية معطوفة بـ(ثم) في إحضارهم حول جهنم.",
+          "meaningIfConnected": "عدّه أبو عبد الله تاماً لاكتفاء القسم بجوابه الأول، وخُولف في ذلك لأجل العطف."
+        }
+      ]
+    },
+    {
+      "ayah": 68,
+      "wordIndex": 8,
+      "targetWord": "جِثِيًّۭا",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/686-687",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "ج",
+      "typoDetected": null,
+      "comment": "للآية مع العطف واتصال المعنى.",
+      "demosAndMeanings": [
+        {
+          "verdict": "جائز",
+          "isQila": false,
+          "waqfSegmentWords": [
+            4,
+            8
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ ثُمَّ لَنُحْضِرَنَّهُمْ حَوْلَ جَهَنَّمَ جِثِيًّۭا ﴾ [قف على: جِثِيًّا]",
+          "ibtidaDemo": "﴿ ثُمَّ لَنَنزِعَنَّ مِن كُلِّ شِيعَةٍ أَيُّهُمْ أَشَدُّ عَلَى ٱلرَّحْمَـٰنِ عِتِيًّۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام الإخبار عن إحضارهم حول جهنم جاثين مع موافقة رأس الآية.",
+          "meaningAtIbtida": "الابتداء بالجملة المعطوفة بـ(ثم) في نزع أشدهم عتواً وتمرداً من كل طائفة.",
+          "meaningIfConnected": "تجاذب الوقف والوصل؛ فالوقف لمراعاة فاصلة الآية، والوصل للعطف واتصال المعنى في أطوار الجزاء."
+        }
+      ]
+    },
+    {
+      "ayah": 68,
+      "wordIndex": 8,
+      "targetWord": "جِثِيًّۭا",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "والشياطين جائز ومثله جثيا",
+      "demosAndMeanings": [
+        {
+          "verdict": "جائز",
+          "isQila": false,
+          "waqfSegmentWords": [
+            4,
+            8
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ ثُمَّ لَنُحْضِرَنَّهُمْ حَوْلَ جَهَنَّمَ جِثِيًّۭا ﴾ [قف على: جِثِيًّا]",
+          "ibtidaDemo": "﴿ ثُمَّ لَنَنزِعَنَّ مِن كُلِّ شِيعَةٍ أَيُّهُمْ أَشَدُّ عَلَى ٱلرَّحْمَـٰنِ عِتِيًّۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "انقضاء الجملة الثانية من جواب القسم عند رأس الآية.",
+          "meaningAtIbtida": "الابتداء ببيان المرحلة التالية وهي تمييز أئمة الكفر ونزعهم للعذاب.",
+          "meaningIfConnected": "الاتصال قائم بالعطف بـ(ثم) بين جمل جواب القسم المتتابعة."
+        }
+      ]
+    },
+    {
+      "ayah": 68,
+      "wordIndex": 8,
+      "targetWord": "جِثِيًّۭا",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 67",
+      "verdicts": [
+        "صالح"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "وكذا رؤوس الآيات بعده إلى ﴿وَّنَذَرُ الظَّالِمِينَ فِيهَا جِثِيًّا﴾",
+      "demosAndMeanings": [
+        {
+          "verdict": "صالح",
+          "isQila": false,
+          "waqfSegmentWords": [
+            4,
+            8
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ ثُمَّ لَنُحْضِرَنَّهُمْ حَوْلَ جَهَنَّمَ جِثِيًّۭا ﴾ [قف على: جِثِيًّا]",
+          "ibtidaDemo": "﴿ ثُمَّ لَنَنزِعَنَّ مِن كُلِّ شِيعَةٍ أَيُّهُمْ أَشَدُّ عَلَى ٱلرَّحْمَـٰنِ عِتِيًّۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "صلاحية القطع على رأس الآية لتمام الجملة في نفسها.",
+          "meaningAtIbtida": "الابتداء بالجملة المعطوفة في نزع أشدهم عتياً من كل شيعة.",
+          "meaningIfConnected": "الكلام متصل بالعطف إلى تمام المشهد في قوله تعالى ﴿وَّنَذَرُ ٱلظَّـٰلِمِينَ فِيهَا جِثِيًّۭا﴾."
+        }
+      ]
+    },
+    {
+      "ayah": 69,
+      "wordIndex": 5,
+      "targetWord": "شِيعَةٍ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "لا يوقف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "ليس بوقف لأنَّ موضع أي نصب وإن كانت في اللفظ مرفوعة وسأل سيبويه الخليل بن أحمد عنها فقال هي مرفوعة على الحكاية بمنزلة قول الأخطل: ولقد أبيت من الفتاة بمنزل = فأبيت لا حرج ولا محروم، كأنه قال الذي يقال لا هو حرج ولا محروم وكأنه في الآية قال من كل شيعة الذي يقال أيهم أشد ومن قرأ أيهم بالنصب لا يسوغ له الوقف على شيعة على حالة من الأحوال",
+      "demosAndMeanings": null
+    },
+    {
+      "ayah": 69,
+      "wordIndex": 10,
+      "targetWord": "عِتِيًّۭا",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/686-687",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "ج",
+      "typoDetected": null,
+      "comment": "كذلك، للآية مع العطف واتصال المعنى.",
+      "demosAndMeanings": [
+        {
+          "verdict": "جائز",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            10
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ ثُمَّ لَنَنزِعَنَّ مِن كُلِّ شِيعَةٍ أَيُّهُمْ أَشَدُّ عَلَى ٱلرَّحْمَـٰنِ عِتِيًّۭا ﴾ [قف على: عِتِيًّا]",
+          "ibtidaDemo": "﴿ ثُمَّ لَنَحْنُ أَعْلَمُ بِٱلَّذِينَ هُمْ أَوْلَىٰ بِهَا صِلِيًّۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام الجملة في بيان نزع رؤوس الضلالة وأشدهم تمرداً عند رأس الآية.",
+          "meaningAtIbtida": "الابتداء بإثبات إحاطة علم الله بأولى الطوائف بصلي النار ودخولها.",
+          "meaningIfConnected": "جاز الوقف لكونه رأس آية، وروعي الوصل للعطف بـ(ثم) واتصال المعنى."
+        }
+      ]
+    },
+    {
+      "ayah": 69,
+      "wordIndex": 10,
+      "targetWord": "عِتِيًّۭا",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "عتيا جائز ومثله صليا لأنهما رأسا آية",
+      "demosAndMeanings": [
+        {
+          "verdict": "جائز",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            10
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ ثُمَّ لَنَنزِعَنَّ مِن كُلِّ شِيعَةٍ أَيُّهُمْ أَشَدُّ عَلَى ٱلرَّحْمَـٰنِ عِتِيًّۭا ﴾ [قف على: عِتِيًّا]",
+          "ibtidaDemo": "﴿ ثُمَّ لَنَحْنُ أَعْلَمُ بِٱلَّذِينَ هُمْ أَوْلَىٰ بِهَا صِلِيًّۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "انقضاء جملة الوعيد بنزع أشدهم عتواً مع موافقة رأس الآية.",
+          "meaningAtIbtida": "الابتداء بجملة ﴿ثُمَّ لَنَحْنُ أَعْلَمُ﴾ لبيان كمال علمه سبحانه بمستحقي العذاب.",
+          "meaningIfConnected": "الاتصال قائم بالعطف بـ(ثم) وترابط أخبار الموقف يوم القيامة."
+        }
+      ]
+    },
+    {
+      "ayah": 69,
+      "wordIndex": 10,
+      "targetWord": "عِتِيًّۭا",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 67",
+      "verdicts": [
+        "صالح"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "وكذا رؤوس الآيات بعده إلى ﴿وَّنَذَرُ الظَّالِمِينَ فِيهَا جِثِيًّا﴾",
+      "demosAndMeanings": [
+        {
+          "verdict": "صالح",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            10
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ ثُمَّ لَنَنزِعَنَّ مِن كُلِّ شِيعَةٍ أَيُّهُمْ أَشَدُّ عَلَى ٱلرَّحْمَـٰنِ عِتِيًّۭا ﴾ [قف على: عِتِيًّا]",
+          "ibtidaDemo": "﴿ ثُمَّ لَنَحْنُ أَعْلَمُ بِٱلَّذِينَ هُمْ أَوْلَىٰ بِهَا صِلِيًّۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "صلاحية القطع على رأس الآية لاستقلال الجملة المعطوفة في تركيبها.",
+          "meaningAtIbtida": "الابتداء بالجملة الاسمية المعطوفة بـ(ثم) والمؤكدة باللام.",
+          "meaningIfConnected": "ينتظم الكلام في سلك العطف المتتابع حتى يبلغ التمام في آخر الآية (72)."
+        }
+      ]
+    },
+    {
+      "ayah": 70,
+      "wordIndex": 8,
+      "targetWord": "صِلِيًّۭا",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "376",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "{له سميًا} تام. ومثله {صليًا} ومثله {جثيًا}",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            8
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ ثُمَّ لَنَحْنُ أَعْلَمُ بِٱلَّذِينَ هُمْ أَوْلَىٰ بِهَا صِلِيًّۭا ﴾ [قف على: صِلِيًّا]",
+          "ibtidaDemo": "﴿ وَإِن مِّنكُمْ إِلَّا وَارِدُهَا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام الكلام فيوعيد الكافرين المنكرين للبعث وبيان علم الله بأولاهم بصلي جهنم.",
+          "meaningAtIbtida": "الانتقال من الغيبة إلى خطاب الخلق كافة بقوله ﴿وَإِن مِّنكُمْ إِلَّا وَارِدُهَا﴾.",
+          "meaningIfConnected": "الوقف تام لانقضاء الجمل المعطوفة على جواب القسم والعدول من الغيبة إلى الخطاب العام."
+        }
+      ]
+    },
+    {
+      "ayah": 70,
+      "wordIndex": 8,
+      "targetWord": "صِلِيًّۭا",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "عتيا جائز ومثله صليا لأنهما رأسا آية",
+      "demosAndMeanings": [
+        {
+          "verdict": "جائز",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            8
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ ثُمَّ لَنَحْنُ أَعْلَمُ بِٱلَّذِينَ هُمْ أَوْلَىٰ بِهَا صِلِيًّۭا ﴾ [قف على: صِلِيًّا]",
+          "ibtidaDemo": "﴿ وَإِن مِّنكُمْ إِلَّا وَارِدُهَا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام الجملة الخبرية المؤكدة لعلم الله بأولى الناس بصلي النار مع موافقة رأس الآية.",
+          "meaningAtIbtida": "الابتداء بالجملة المعطوفة ﴿وَإِن مِّنكُمْ إِلَّا وَارِدُهَا﴾ في تقرير حتمية الورود.",
+          "meaningIfConnected": "الاتصال المعنوي قائم لعود الضمير في ﴿وَارِدُهَا﴾ على جهنم المذكورة وعطف الجملة بالواو."
+        }
+      ]
+    },
+    {
+      "ayah": 70,
+      "wordIndex": 8,
+      "targetWord": "صِلِيًّۭا",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 67",
+      "verdicts": [
+        "صالح"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "وكذا رؤوس الآيات بعده إلى ﴿وَّنَذَرُ الظَّالِمِينَ فِيهَا جِثِيًّا﴾",
+      "demosAndMeanings": [
+        {
+          "verdict": "صالح",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            8
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ ثُمَّ لَنَحْنُ أَعْلَمُ بِٱلَّذِينَ هُمْ أَوْلَىٰ بِهَا صِلِيًّۭا ﴾ [قف على: صِلِيًّا]",
+          "ibtidaDemo": "﴿ وَإِن مِّنكُمْ إِلَّا وَارِدُهَا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "صلاحية القطع على رأس الآية لاستقلال الجملة الاسمية في لفظها.",
+          "meaningAtIbtida": "الابتداء ببيان ورود الجميع على النار.",
+          "meaningIfConnected": "يتصل الكلام في سياق أحوال الآخرة والورود والنجاة إلى تمامه في نهاية الآية (72)."
+        }
+      ]
+    },
+    {
+      "ayah": 71,
+      "wordIndex": 4,
+      "targetWord": "وَارِدُهَا",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/686-687",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "ج",
+      "typoDetected": {
+        "raw": "وأردها",
+        "corrected": "واردها",
+        "reason": "تصحيف مطبعي بوضع همزة على الألف في الكلمة القرآنية (واردها)"
+      },
+      "comment": "لانقطاع النظم مع اتصال المعنى.",
+      "demosAndMeanings": [
+        {
+          "verdict": "جائز",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            4
+          ],
+          "ibtidaSegmentWords": [
+            5,
+            9
+          ],
+          "waqfDemo": "تلاوة: ﴿ وَإِن مِّنكُمْ إِلَّا وَارِدُهَا ﴾ [قف على: وَارِدُهَا]",
+          "ibtidaDemo": "﴿ كَانَ عَلَىٰ رَبِّكَ حَتْمًۭا مَّقْضِيًّۭا ﴾ [قف على: مَّقْضِيًّا]",
+          "meaningAtWaqf": "تمام جملة الحصر المثبتة لورود الجميع.",
+          "meaningAtIbtida": "الابتداء بجملة ﴿كَانَ عَلَىٰ رَبِّكَ حَتْمًۭا مَّقْضِيًّۭا﴾ لبيان أن هذا الورود قضاءٌ مبرم واجب الوقوع.",
+          "meaningIfConnected": "جاز الوقف لانقطاع النظم باستئناف الجملة الفعلية، وحسن الوصل لاتصال المعنى لأن اسم (كان) ضمير يعود على الورود المفهوم من ﴿وَارِدُهَا﴾."
+        }
+      ]
+    },
+    {
+      "ayah": 71,
+      "wordIndex": 4,
+      "targetWord": "وَارِدُهَا",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "واردها كاف",
+      "demosAndMeanings": [
+        {
+          "verdict": "كاف",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            4
+          ],
+          "ibtidaSegmentWords": [
+            5,
+            9
+          ],
+          "waqfDemo": "تلاوة: ﴿ وَإِن مِّنكُمْ إِلَّا وَارِدُهَا ﴾ [قف على: وَارِدُهَا]",
+          "ibtidaDemo": "﴿ كَانَ عَلَىٰ رَبِّكَ حَتْمًۭا مَّقْضِيًّۭا ﴾ [قف على: مَّقْضِيًّا]",
+          "meaningAtWaqf": "استقلال جملة الحصر لفظاً في إثبات الورود على الجميع.",
+          "meaningAtIbtida": "الابتداء ببيان كون ذلك الورود قضاءً محتوماً عند الله.",
+          "meaningIfConnected": "الاتصال المعنوي قائم لعود الضمير المستتر في ﴿كَانَ﴾ على مصدر الفعل المأخوذ من ﴿وَارِدُهَا﴾."
+        }
+      ]
+    },
+    {
+      "ayah": 71,
+      "wordIndex": 9,
+      "targetWord": "مَّقْضِيًّۭا",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/686-687",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "ج",
+      "typoDetected": null,
+      "comment": "لأن «ثم» لترتيب الأخبار، ولكن يحسن الوصل [تقريبا للنجاة] من الورود.",
+      "demosAndMeanings": [
+        {
+          "verdict": "جائز",
+          "isQila": false,
+          "waqfSegmentWords": [
+            5,
+            9
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ كَانَ عَلَىٰ رَبِّكَ حَتْمًۭا مَّقْضِيًّۭا ﴾ [قف على: مَّقْضِيًّا]",
+          "ibtidaDemo": "﴿ ثُمَّ نُنَجِّى ٱلَّذِينَ ٱتَّقَوا۟ وَّنَذَرُ ٱلظَّـٰلِمِينَ فِيهَا جِثِيًّۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام الإخبار عن حتمية قضاء الورود عند رأس الآية.",
+          "meaningAtIbtida": "الابتداء بـ﴿ثُمَّ نُنَجِّى ٱلَّذِينَ ٱتَّقَوا۟﴾ لبيان عاقبة المتقين والظالمين بعد الورود.",
+          "meaningIfConnected": "جاز الوقف لمراعاة الفاصلة ولأن (ثم) لترتيب الأخبار، ويحسن الوصل تعجيلاً للبشرى وتقريباً للنجاة من الورود."
+        }
+      ]
+    },
+    {
+      "ayah": 71,
+      "wordIndex": 9,
+      "targetWord": "مَّقْضِيًّۭا",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239",
+      "verdicts": [
+        "جائز"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "ومقضيا جائز",
+      "demosAndMeanings": [
+        {
+          "verdict": "جائز",
+          "isQila": false,
+          "waqfSegmentWords": [
+            5,
+            9
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ كَانَ عَلَىٰ رَبِّكَ حَتْمًۭا مَّقْضِيًّۭا ﴾ [قف على: مَّقْضِيًّا]",
+          "ibtidaDemo": "﴿ ثُمَّ نُنَجِّى ٱلَّذِينَ ٱتَّقَوا۟ وَّنَذَرُ ٱلظَّـٰلِمِينَ فِيهَا جِثِيًّۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "انقضاء الجملة المؤكدة لحتمية الورود على رأس الآية.",
+          "meaningAtIbtida": "الابتداء بالجملة المعطوفة بـ(ثم) في بيان تنجية المتقين وترك الظالمين فيها.",
+          "meaningIfConnected": "تتعلق الآية التالية بما قبلها عطفاً ومعنى لبيان مآل الواردين."
+        }
+      ]
+    },
+    {
+      "ayah": 71,
+      "wordIndex": 9,
+      "targetWord": "مَّقْضِيًّۭا",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 67",
+      "verdicts": [
+        "صالح"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "وكذا رؤوس الآيات بعده إلى ﴿وَّنَذَرُ الظَّالِمِينَ فِيهَا جِثِيًّا﴾",
+      "demosAndMeanings": [
+        {
+          "verdict": "صالح",
+          "isQila": false,
+          "waqfSegmentWords": [
+            5,
+            9
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ كَانَ عَلَىٰ رَبِّكَ حَتْمًۭا مَّقْضِيًّۭا ﴾ [قف على: مَّقْضِيًّا]",
+          "ibtidaDemo": "﴿ ثُمَّ نُنَجِّى ٱلَّذِينَ ٱتَّقَوا۟ وَّنَذَرُ ٱلظَّـٰلِمِينَ فِيهَا جِثِيًّۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "صلاحية القطع على رأس الآية لتمام الجملة الخبرية.",
+          "meaningAtIbtida": "الابتداء ببيان نجاة المتقين وهلاك الظالمين.",
+          "meaningIfConnected": "يتصل الكلام بالعطف حتى يتم المعنى بذكر التفريق بين الفريقين في قوله ﴿جِثِيًّۭا﴾."
+        }
+      ]
+    },
+    {
+      "ayah": 72,
+      "wordIndex": 8,
+      "targetWord": "جِثِيًّۭا",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "376",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "{له سميًا} تام. ومثله {صليًا} ومثله {جثيًا}",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            8
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ ثُمَّ نُنَجِّى ٱلَّذِينَ ٱتَّقَوا۟ وَّنَذَرُ ٱلظَّـٰلِمِينَ فِيهَا جِثِيًّۭا ﴾ [قف على: جِثِيًّا]",
+          "ibtidaDemo": "﴿ وَإِذَا تُتْلَىٰ عَلَيْهِمْ ءَايَـٰتُنَا بَيِّنَـٰتٍۢ قَالَ ٱلَّذِينَ كَفَرُوا۟ لِلَّذِينَ ءَامَنُوٓا۟ أَىُّ ٱلْفَرِيقَيْنِ خَيْرٌۭ مَّقَامًۭا وَأَحْسَنُ نَدِيًّۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام الكلام في وصف مشاهد الحشر والورود وتنجية المتقين وترك الظالمين في جهنم.",
+          "meaningAtIbtida": "الابتداء بسياق جديد يحكي اغترار الكفار في الدنيا وتفاخرهم بالمقام والندي عند تلاوة الآيات.",
+          "meaningIfConnected": "الوقف تام لانقضاء مشاهد الآخرة والانتقال إلى حكاية شبهة أخرى من شبهات الكفار في الدنيا."
+        }
+      ]
+    },
+    {
+      "ayah": 72,
+      "wordIndex": 8,
+      "targetWord": "جِثِيًّۭا",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239-240",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "جثيا تام ولا وقف إلى قوله نديا",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            8
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ ثُمَّ نُنَجِّى ٱلَّذِينَ ٱتَّقَوا۟ وَّنَذَرُ ٱلظَّـٰلِمِينَ فِيهَا جِثِيًّۭا ﴾ [قف على: جِثِيًّا]",
+          "ibtidaDemo": "﴿ وَإِذَا تُتْلَىٰ عَلَيْهِمْ ءَايَـٰتُنَا بَيِّنَـٰتٍۢ قَالَ ٱلَّذِينَ كَفَرُوا۟ لِلَّذِينَ ءَامَنُوٓا۟ أَىُّ ٱلْفَرِيقَيْنِ خَيْرٌۭ مَّقَامًۭا وَأَحْسَنُ نَدِيًّۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "انقضاء الكلام في شأن الحشر والورود وبيان مآل المتقين والظالمين لفظاً ومعنى.",
+          "meaningAtIbtida": "الشروع في جملة شرطية مستأنفة تحكي مقالة الذين كفروا للذين آمنوا.",
+          "meaningIfConnected": "الوقف التام أولى لاستقلال القصتين واختلاف الغرضين."
+        }
+      ]
+    },
+    {
+      "ayah": 72,
+      "wordIndex": 8,
+      "targetWord": "جِثِيًّۭا",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 72",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "﴿وَّنَذَرُ الظَّالِمِينَ فِيهَا جِثِيًّا﴾ فإنه قطع تام وكذا ﴿وَأَحْسَنُ نَدِيًّا﴾ وكذا ﴿هُمْ أَحْسَنُ أَثَاثًا وَرِئْيًا﴾.",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            8
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ ثُمَّ نُنَجِّى ٱلَّذِينَ ٱتَّقَوا۟ وَّنَذَرُ ٱلظَّـٰلِمِينَ فِيهَا جِثِيًّۭا ﴾ [قف على: جِثِيًّا]",
+          "ibtidaDemo": "﴿ وَإِذَا تُتْلَىٰ عَلَيْهِمْ ءَايَـٰتُنَا بَيِّنَـٰتٍۢ قَالَ ٱلَّذِينَ كَفَرُوا۟ لِلَّذِينَ ءَامَنُوٓا۟ أَىُّ ٱلْفَرِيقَيْنِ خَيْرٌۭ مَّقَامًۭا وَأَحْسَنُ نَدِيًّۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام السياق المتصل من أول القسم بالحشر إلى استقرار الفريقين.",
+          "meaningAtIbtida": "ائتناف خبر جديد عن حال الكفار عند سماع الآيات البينات.",
+          "meaningIfConnected": "القطع تام عند النحاس لانتهاء الجمل المتعاطفة في وصف أحوال القيامة."
+        }
+      ]
+    },
+    {
+      "ayah": 73,
+      "wordIndex": 5,
+      "targetWord": "بَيِّنَـٰتٍۢ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239-240",
+      "verdicts": [
+        "لا يوقف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "ولا وقف إلى قوله نديا فلا يوقف على بينات لأن قال جواب إذا ولا على الذين آمنوا لأنَّ ما بعده مقول قال",
+      "demosAndMeanings": null
+    },
+    {
+      "ayah": 73,
+      "wordIndex": 10,
+      "targetWord": "ءَامَنُوٓا۟",
+      "scholar": "السجاوندي",
+      "book": "علل الوقوف",
+      "page": "2/687",
+      "verdicts": [
+        "لا يوقف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": "لا",
+      "typoDetected": null,
+      "comment": "لأن ما بعدها مفعول «قال».",
+      "demosAndMeanings": null
+    },
+    {
+      "ayah": 73,
+      "wordIndex": 10,
+      "targetWord": "ءَامَنُوٓا۟",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239-240",
+      "verdicts": [
+        "لا يوقف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "ولا وقف إلى قوله نديا فلا يوقف على بينات لأن قال جواب إذا ولا على الذين آمنوا لأنَّ ما بعده مقول قال",
+      "demosAndMeanings": null
+    },
+    {
+      "ayah": 73,
+      "wordIndex": 16,
+      "targetWord": "نَدِيًّۭا",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "376",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "{له سميًا} تام. ومثله ... {نديًا} ومثله {ورئيًا}",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            16
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ وَإِذَا تُتْلَىٰ عَلَيْهِمْ ءَايَـٰتُنَا بَيِّنَـٰتٍۢ قَالَ ٱلَّذِينَ كَفَرُوا۟ لِلَّذِينَ ءَامَنُوٓا۟ أَىُّ ٱلْفَرِيقَيْنِ خَيْرٌۭ مَّقَامًۭا وَأَحْسَنُ نَدِيًّۭا ﴾ [قف على: نَدِيًّا]",
+          "ibtidaDemo": "﴿ وَكَمْ أَهْلَكْنَا قَبْلَهُم مِّن قَرْنٍ هُمْ أَحْسَنُ أَثَـٰثًۭا وَرِءْيًۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام الجملة الشرطية وجوابها ومقول القول في حكاية تفاخر الكفار على المؤمنين.",
+          "meaningAtIbtida": "الابتداء بالرد الإلهي والاعتبار بإهلاك القرون السابقة الذين كانوا أحسن منهم أثاثاً ومنظراً.",
+          "meaningIfConnected": "الوقف تام لانتهاء مقولة الكفار واستئناف الرد الإلهي عليهم."
+        }
+      ]
+    },
+    {
+      "ayah": 73,
+      "wordIndex": 16,
+      "targetWord": "نَدِيًّۭا",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239-240",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "نديا كاف ومثله من قرن وكذا ورئيا",
+      "demosAndMeanings": [
+        {
+          "verdict": "كاف",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            16
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ وَإِذَا تُتْلَىٰ عَلَيْهِمْ ءَايَـٰتُنَا بَيِّنَـٰتٍۢ قَالَ ٱلَّذِينَ كَفَرُوا۟ لِلَّذِينَ ءَامَنُوٓا۟ أَىُّ ٱلْفَرِيقَيْنِ خَيْرٌۭ مَّقَامًۭا وَأَحْسَنُ نَدِيًّۭا ﴾ [قف على: نَدِيًّا]",
+          "ibtidaDemo": "﴿ وَكَمْ أَهْلَكْنَا قَبْلَهُم مِّن قَرْنٍ هُمْ أَحْسَنُ أَثَـٰثًۭا وَرِءْيًۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "استقلال الكلام لفظاً بتمام الشرط وجوابه ومقول الكفار عند رأس الآية.",
+          "meaningAtIbtida": "الابتداء بجملة الرد والوعيد ﴿وَكَمْ أَهْلَكْنَا قَبْلَهُم مِّن قَرْنٍ﴾.",
+          "meaningIfConnected": "الاتصال المعنوي قائم لعود الضمير في ﴿قَبْلَهُم﴾ على الذين كفروا وكون الآية ردّاً على تفاخرهم."
+        }
+      ]
+    },
+    {
+      "ayah": 73,
+      "wordIndex": 16,
+      "targetWord": "نَدِيًّۭا",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 72",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "﴿وَّنَذَرُ الظَّالِمِينَ فِيهَا جِثِيًّا﴾ فإنه قطع تام وكذا ﴿وَأَحْسَنُ نَدِيًّا﴾ وكذا ﴿هُمْ أَحْسَنُ أَثَاثًا وَرِئْيًا﴾.",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            16
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ وَإِذَا تُتْلَىٰ عَلَيْهِمْ ءَايَـٰتُنَا بَيِّنَـٰتٍۢ قَالَ ٱلَّذِينَ كَفَرُوا۟ لِلَّذِينَ ءَامَنُوٓا۟ أَىُّ ٱلْفَرِيقَيْنِ خَيْرٌۭ مَّقَامًۭا وَأَحْسَنُ نَدِيًّۭا ﴾ [قف على: نَدِيًّا]",
+          "ibtidaDemo": "﴿ وَكَمْ أَهْلَكْنَا قَبْلَهُم مِّن قَرْنٍ هُمْ أَحْسَنُ أَثَـٰثًۭا وَرِءْيًۭا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام الكلام بانتهاء حكاية قول الكافرين عند تلاوة الآيات.",
+          "meaningAtIbtida": "ائتناف كلام مستأنف من الله عز وجل في تخويفهم بمصارع القرون الخالية.",
+          "meaningIfConnected": "القطع تام لانفصال كلام الله عز وجل في الرد عن مقولة الكفار المحكية."
+        }
+      ]
+    },
+    {
+      "ayah": 74,
+      "wordIndex": 5,
+      "targetWord": "قَرْنٍ",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239-240",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "نديا كاف ومثله من قرن وكذا ورئيا",
+      "demosAndMeanings": [
+        {
+          "verdict": "كاف",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            5
+          ],
+          "ibtidaSegmentWords": [
+            6,
+            9
+          ],
+          "waqfDemo": "تلاوة: ﴿ وَكَمْ أَهْلَكْنَا قَبْلَهُم مِّن قَرْنٍ ﴾ [قف على: قَرْنْ]",
+          "ibtidaDemo": "﴿ هُمْ أَحْسَنُ أَثَـٰثًۭا وَرِءْيًۭا ﴾ [قف على: وَرِءْيًا]",
+          "meaningAtWaqf": "تمام الجملة الخبرية المفيدة لكثرة من أهلك الله قبلهم من الأمم الماضية.",
+          "meaningAtIbtida": "الابتداء بالجملة الاسمية ﴿هُمْ أَحْسَنُ أَثَـٰثًۭا وَرِءْيًۭا﴾ استئنافاً لبيان تفوق أولئك الهالكين في المتاع والمنظر.",
+          "meaningIfConnected": "تتعلق الجملة الاسمية بما قبلها على أنها في موضع الصفة لـ﴿قَرْنٍ﴾ على المعنى، أو حال."
+        }
+      ]
+    },
+    {
+      "ayah": 74,
+      "wordIndex": 9,
+      "targetWord": "وَرِءْيًۭا",
+      "scholar": "الداني",
+      "book": "المكتفى",
+      "page": "376",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "{له سميًا} تام. ومثله ... {نديًا} ومثله {ورئيًا}",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            9
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ وَكَمْ أَهْلَكْنَا قَبْلَهُم مِّن قَرْنٍ هُمْ أَحْسَنُ أَثَـٰثًۭا وَرِءْيًۭا ﴾ [قف على: وَرِءْيًا]",
+          "ibtidaDemo": "﴿ قُلْ مَن كَانَ فِى ٱلضَّلَـٰلَةِ فَلْيَمْدُدْ لَهُ ٱلرَّحْمَـٰنُ مَدًّا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام الاعتبار والرد بإهلاك القرون السابقة ذات الأثاث والمنظر البهيج.",
+          "meaningAtIbtida": "الابتداء بأمر النبي صلى الله عليه وسلم أن يقول لهم: ﴿قُلْ مَن كَانَ فِى ٱلضَّلَـٰلَةِ...﴾.",
+          "meaningIfConnected": "الوقف تام لانقضاء الجملة الخبرية والانتقال إلى أسلوب الأمر والشرط في الآية التالية."
+        }
+      ]
+    },
+    {
+      "ayah": 74,
+      "wordIndex": 9,
+      "targetWord": "وَرِءْيًۭا",
+      "scholar": "الأشموني",
+      "book": "منار الهدى",
+      "page": "239-240",
+      "verdicts": [
+        "كاف"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "نديا كاف ومثله من قرن وكذا ورئيا",
+      "demosAndMeanings": [
+        {
+          "verdict": "كاف",
+          "isQila": false,
+          "waqfSegmentWords": [
+            6,
+            9
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ هُمْ أَحْسَنُ أَثَـٰثًۭا وَرِءْيًۭا ﴾ [قف على: وَرِءْيًا]",
+          "ibtidaDemo": "﴿ قُلْ مَن كَانَ فِى ٱلضَّلَـٰلَةِ فَلْيَمْدُدْ لَهُ ٱلرَّحْمَـٰنُ مَدًّا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "استقلال الكلام لفظاً بانتهاء وصف القرون المهلكة عند رأس الآية.",
+          "meaningAtIbtida": "الابتداء بأمر الرسول صلى الله عليه وسلم ببيان سنة الإملاء والاستدراج لأهل الضلالة.",
+          "meaningIfConnected": "الاتصال المعنوي قائم لارتباط الأمر في ﴿قُلْ﴾ بالرد على نفس الفريق المغترّ بالدنيا."
+        }
+      ]
+    },
+    {
+      "ayah": 74,
+      "wordIndex": 9,
+      "targetWord": "وَرِءْيًۭا",
+      "scholar": "النحاس",
+      "book": "القطع والائتناف",
+      "page": "آية 72",
+      "verdicts": [
+        "تام"
+      ],
+      "isQila": [
+        false
+      ],
+      "sajawandiSymbol": null,
+      "typoDetected": null,
+      "comment": "﴿وَّنَذَرُ الظَّالِمِينَ فِيهَا جِثِيًّا﴾ فإنه قطع تام وكذا ﴿وَأَحْسَنُ نَدِيًّا﴾ وكذا ﴿هُمْ أَحْسَنُ أَثَاثًا وَرِئْيًا﴾.",
+      "demosAndMeanings": [
+        {
+          "verdict": "تام",
+          "isQila": false,
+          "waqfSegmentWords": [
+            1,
+            9
+          ],
+          "ibtidaSegmentWords": null,
+          "waqfDemo": "تلاوة: ﴿ وَكَمْ أَهْلَكْنَا قَبْلَهُم مِّن قَرْنٍ هُمْ أَحْسَنُ أَثَـٰثًۭا وَرِءْيًۭا ﴾ [قف على: وَرِءْيًا]",
+          "ibtidaDemo": "﴿ قُلْ مَن كَانَ فِى ٱلضَّلَـٰلَةِ فَلْيَمْدُدْ لَهُ ٱلرَّحْمَـٰنُ مَدًّا ﴾ [الآية التالية]",
+          "meaningAtWaqf": "تمام الكلام بانتهاء الإخبار عن إهلاك القرون الماضية ووصف حالهم.",
+          "meaningAtIbtida": "ائتناف جملة الأمر للنبي صلى الله عليه وسلم في قوله ﴿قُلْ مَن كَانَ فِى ٱلضَّلَـٰلَةِ﴾.",
+          "meaningIfConnected": "القطع تام لانفصال جملة الإخبار عن القرون الماضية عن جملة الأمر بعدها."
+        }
+      ]
+    }
+  ]
+}

@@ -12,7 +12,7 @@ Future<void> _pumpUntilReady(WidgetTester tester) async {
       () => Future<void>.delayed(const Duration(milliseconds: 20)),
     );
     await tester.pump(const Duration(milliseconds: 50));
-    if (find.text('إخفاء رؤوس الآي').evaluate().isNotEmpty) {
+    if (find.textContaining('رؤوس الآي').evaluate().isNotEmpty) {
       await tester.pump();
       return;
     }
@@ -39,8 +39,8 @@ void main() {
     expect(find.text('سورة الفاتحة'), findsWidgets);
     expect(find.byType(IndexDrawer), findsNothing);
 
-    // 1. Open sidebar via top bar Surah chip
-    await tester.tap(find.byTooltip('فتح فهرس السور'));
+    // 1. Open sidebar via top bar Surah chip (tooltip: عرض وقوف …)
+    await tester.tap(find.byTooltip('عرض وقوف سورة الفاتحة'));
     await tester.pump();
     await tester.pump(const Duration(milliseconds: 300));
 
@@ -66,8 +66,8 @@ void main() {
     // 4. Verify the chosen Surah is now active in the Mushaf screen
     expect(find.text('سورة البقرة'), findsWidgets);
 
-    // 5. Open sidebar again via bottom nav 'فهرس'
-    await tester.tap(find.text('فهرس'));
+    // 5. Open sidebar again via top surah control
+    await tester.tap(find.byTooltip('عرض وقوف سورة البقرة'));
     await tester.pump();
     await tester.pump(const Duration(milliseconds: 300));
 

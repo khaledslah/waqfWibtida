@@ -1,9 +1,9 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 
 import '../data/sample_data.dart';
 import '../theme/app_theme.dart';
 
-/// Toggle chips to hide verse-end stops, Uthmani-printed middle stops, and switch the main scholar.
+/// 1.1.1+3 underline filter theme, with clear إظهار / إخفاء labels.
 class WaqfFilterBar extends StatelessWidget {
   const WaqfFilterBar({super.key, required this.controller});
 
@@ -14,6 +14,9 @@ class WaqfFilterBar extends StatelessWidget {
     final visible = controller.visibleStopCount;
     final total = controller.sampleStops.length;
     final activeScholar = controller.selectedScholar;
+    final scholarLabel = activeScholar ?? 'الكل';
+    final menuValue =
+        activeScholar ?? ReaderController.scholarAllSentinel;
 
     return Material(
       color: AppColors.parchment,
@@ -22,62 +25,101 @@ class WaqfFilterBar extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: [
-                  _FilterChip(
-                    label: 'إخفاء رؤوس الآي',
+            Row(
+              children: [
+                Expanded(
+                  child: _FilterToggle(
+                    label: controller.hideVerseEnd
+                        ? 'إظهار رؤوس الآي'
+                        : 'إخفاء رؤوس الآي',
                     selected: controller.hideVerseEnd,
-                    onTap: controller.toggleHideVerseEnd,
                     semanticsLabel: controller.hideVerseEnd
-                        ? 'إخفاء وقوف رؤوس الآيات مفعّل'
-                        : 'إخفاء وقوف رؤوس الآيات متوقف',
+                        ? 'إظهار وقوف رؤوس الآيات'
+                        : 'إخفاء وقوف رؤوس الآيات',
+                    onTap: controller.toggleHideVerseEnd,
                   ),
-                  const SizedBox(width: 8),
-                  _FilterChip(
-                    label: 'إخفاء وقف المصحف',
+                ),
+                const SizedBox(width: 8),
+                Expanded(
+                  child: _FilterToggle(
+                    label: controller.hideUthmani
+                        ? 'إظهار وقف المصحف'
+                        : 'إخفاء وقف المصحف',
                     selected: controller.hideUthmani,
-                    onTap: controller.toggleHideUthmani,
                     semanticsLabel: controller.hideUthmani
-                        ? 'إخفاء الوقوف الموجودة في المصحف العثماني مفعّل'
-                        : 'إخفاء الوقوف الموجودة في المصحف العثماني متوقف',
+                        ? 'إظهار الوقوف الموجودة في المصحف العثماني'
+                        : 'إخفاء الوقوف الموجودة في المصحف العثماني',
+                    onTap: controller.toggleHideUthmani,
                   ),
-                  const SizedBox(width: 8),
-                  _FilterChip(
-                    label: 'الكل',
-                    selected: !controller.hideVerseEnd && !controller.hideUthmani,
-                    onTap: controller.showAllStops,
-                    semanticsLabel: 'إظهار كل الوقوف',
-                  ),
-                ],
-              ),
+                ),
+              ],
             ),
-            const SizedBox(height: 6),
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: [
-                  Text(
-                    'العالم الرئيسي:',
-                    style: AppText.ui(
-                      size: 11,
-                      weight: FontWeight.w700,
-                      color: AppColors.forestDeep,
-                    ),
-                  ),
-                  const SizedBox(width: 6),
-                  for (final sOpt in ReaderController.scholarOptions) ...[
-                    Padding(
-                      padding: const EdgeInsetsDirectional.only(end: 6),
-                      child: _ScholarChip(
-                        label: sOpt ?? 'الكل (الافتراضي)',
-                        selected: activeScholar == sOpt,
-                        onTap: () => controller.setSelectedScholar(sOpt),
+            const SizedBox(height: 8),
+            PopupMenuButton<String>(
+              tooltip: 'اختيار العالم الرئيسي',
+              initialValue: menuValue,
+              onSelected: controller.setSelectedScholarFromMenu,
+              itemBuilder: (context) {
+                return [
+                  for (final sOpt in ReaderController.scholarOptions)
+                    PopupMenuItem<String>(
+                      value: sOpt ?? ReaderController.scholarAllSentinel,
+                      child: Text(
+                        sOpt ?? 'الكل (الافتراضي)',
+                        style: AppText.ui(
+                          size: 14,
+                          weight: (sOpt == activeScholar) ||
+                                  (sOpt == null && activeScholar == null)
+                              ? FontWeight.w700
+                              : FontWeight.w500,
+                          color: AppColors.forestDeep,
+                        ),
                       ),
                     ),
+                ];
+              },
+              child: Container(
+                constraints: const BoxConstraints(minHeight: 44),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+                decoration: BoxDecoration(
+                  border: Border(
+                    bottom: BorderSide(
+                      color: AppColors.forest.withOpacity(0.35),
+                      width: 1,
+                    ),
+                  ),
+                ),
+                child: Row(
+                  children: [
+                    Text(
+                      'العالم:',
+                      style: AppText.ui(
+                        size: 13,
+                        weight: FontWeight.w700,
+                        color: AppColors.forestDeep,
+                      ),
+                    ),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: Text(
+                        scholarLabel,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: AppText.ui(
+                          size: 13,
+                          weight: FontWeight.w600,
+                          color: AppColors.ink,
+                        ),
+                      ),
+                    ),
+                    const Icon(
+                      Icons.expand_more,
+                      size: 20,
+                      color: AppColors.muted,
+                    ),
                   ],
-                ],
+                ),
               ),
             ),
             const SizedBox(height: 6),
@@ -92,52 +134,8 @@ class WaqfFilterBar extends StatelessWidget {
   }
 }
 
-class _ScholarChip extends StatelessWidget {
-  const _ScholarChip({
-    required this.label,
-    required this.selected,
-    required this.onTap,
-  });
-
-  final String label;
-  final bool selected;
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    return Material(
-      color: selected ? AppColors.forest : AppColors.white,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(14),
-        side: BorderSide(
-          color: selected ? AppColors.forest : AppColors.hairline,
-          width: 1,
-        ),
-      ),
-      child: InkWell(
-        onTap: onTap,
-        customBorder: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(14),
-        ),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-          child: Text(
-            label,
-            style: AppText.ui(
-              size: 11,
-              weight: FontWeight.w700,
-              color: selected ? AppColors.white : AppColors.forestDeep,
-              height: 1.1,
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class _FilterChip extends StatelessWidget {
-  const _FilterChip({
+class _FilterToggle extends StatelessWidget {
+  const _FilterToggle({
     required this.label,
     required this.selected,
     required this.onTap,
@@ -153,39 +151,44 @@ class _FilterChip extends StatelessWidget {
   Widget build(BuildContext context) {
     return Semantics(
       button: true,
+      toggled: selected,
       label: semanticsLabel,
       child: Material(
-        color: selected ? AppColors.chipFill : AppColors.white,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(18),
-          side: BorderSide(
-            color: selected ? AppColors.forest : AppColors.hairline,
-            width: selected ? 1.4 : 1,
-          ),
-        ),
+        color: Colors.transparent,
         child: InkWell(
           onTap: onTap,
-          customBorder: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(18),
-          ),
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+          child: Container(
+            constraints: const BoxConstraints(minHeight: 44),
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              border: Border(
+                bottom: BorderSide(
+                  color: selected ? AppColors.forest : AppColors.hairline,
+                  width: selected ? 2 : 1,
+                ),
+              ),
+            ),
             child: Row(
-              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(
-                  selected ? Icons.check_circle : Icons.circle_outlined,
-                  size: 16,
+                  selected ? Icons.visibility_off_outlined : Icons.visibility_outlined,
+                  size: 18,
                   color: selected ? AppColors.forest : AppColors.muted,
                 ),
-                const SizedBox(width: 6),
-                Text(
-                  label,
-                  style: AppText.ui(
-                    size: 12,
-                    weight: FontWeight.w700,
-                    color: selected ? AppColors.forest : AppColors.muted,
-                    height: 1.1,
+                const SizedBox(width: 4),
+                Flexible(
+                  child: Text(
+                    label,
+                    textAlign: TextAlign.center,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: AppText.ui(
+                      size: 12,
+                      weight: selected ? FontWeight.w700 : FontWeight.w500,
+                      color: selected ? AppColors.forest : AppColors.muted,
+                      height: 1.1,
+                    ),
                   ),
                 ),
               ],

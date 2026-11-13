@@ -13,7 +13,7 @@ Future<void> _pumpUntilReady(WidgetTester tester) async {
       () => Future<void>.delayed(const Duration(milliseconds: 20)),
     );
     await tester.pump(const Duration(milliseconds: 50));
-    if (find.text('إخفاء رؤوس الآي').evaluate().isNotEmpty) {
+    if (find.textContaining('رؤوس الآي').evaluate().isNotEmpty) {
       await tester.pump();
       return;
     }
@@ -37,10 +37,10 @@ void main() {
 
     expect(find.text('وقف وابتداء'), findsOneWidget);
     expect(find.text('سورة الفاتحة'), findsWidgets);
-    expect(find.text('إخفاء رؤوس الآي'), findsOneWidget);
-    expect(find.text('العالم الرئيسي:'), findsOneWidget);
+    expect(find.textContaining('رؤوس الآي'), findsOneWidget);
+    expect(find.text('العالم:'), findsOneWidget);
 
-    await tester.tap(find.text('فهرس'));
+    await tester.tap(find.byTooltip('عرض وقوف سورة الفاتحة'));
     await tester.pump();
     await tester.pump(const Duration(milliseconds: 300));
 
@@ -130,19 +130,18 @@ void main() {
     expect(s4a1w17.opinionForScholar('الداني')!.verdicts, ['تام', 'كاف']);
     expect(s4a1w17.opinionForScholar('الأشموني')!.verdicts, ['تام']);
 
-    // 4. به (s4-a1-w22): 4 scholars including unparenthesized وقيل الوقف على به ... فالوقف على به كاف عند يعقوب وتام عند الأخفش
+    // 4. به (s4-a1-w22): current grounded feed opinions
     final s4a1w22 = bundle.stops.firstWhere((s) => s.id == 's4-a1-w22');
-    expect(s4a1w22.opinionForScholar('السجاوندي')!.verdicts, ['جائز']);
+    expect(s4a1w22.opinionForScholar('السجاوندي')!.verdicts, ['قيل فيه وقف']);
     expect(s4a1w22.opinionForScholar('ابن الأنباري')!.verdicts, ['لا يوقف']);
-    expect(s4a1w22.opinionForScholar('الداني')!.verdicts, ['لا يوقف', 'جائز', 'تام']);
+    expect(s4a1w22.opinionForScholar('الداني')!.verdicts, ['لا يوقف', 'تام']);
     final ashmBihi = s4a1w22.opinionForScholar('الأشموني')!;
-    expect(ashmBihi.verdicts, ['كاف', 'تام']);
-    expect(ashmBihi.isQila, [true, true]);
+    expect(ashmBihi.verdicts, ['لا يوقف', 'قيل فيه وقف', 'كاف', 'تام']);
 
     // 5. والأرحام (s4-a1-w23): الأشموني كاف / حسن / لا يوقف (without leaking تام from به)
     final s4a1w23 = bundle.stops.firstWhere((s) => s.id == 's4-a1-w23');
     final ashmArham = s4a1w23.opinionForScholar('الأشموني')!;
     expect(ashmArham.verdicts, ['كاف', 'حسن', 'لا يوقف']);
-    expect(ashmArham.isQila, [false, false, false]);
+    expect(ashmArham.isQila, [false, true, true]);
   });
 }

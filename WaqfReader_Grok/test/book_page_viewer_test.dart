@@ -386,7 +386,7 @@ void main() {
             () => Future<void>.delayed(const Duration(milliseconds: 20)),
           );
           await tester.pump(const Duration(milliseconds: 50));
-          if (find.text('إخفاء رؤوس الآي').evaluate().isNotEmpty) {
+          if (find.textContaining('رؤوس الآي').evaluate().isNotEmpty) {
             await tester.pump();
             loaded = true;
             break;
@@ -401,13 +401,18 @@ void main() {
           fail('Not loaded; found texts: $texts, spinners: ${find.byType(CircularProgressIndicator).evaluate().length}');
         }
 
-        // Turn off 'إخفاء رؤوس الآي' so verse-end stop on s1-a1-w4 (الرحيم) is visible
-        await tester.tap(find.text('إخفاء رؤوس الآي'));
+        // Turn off hide so verse-end stop on s1-a1-w4 (الرحيم) is visible
+        await tester.tap(find.textContaining('رؤوس الآي'));
         await tester.pumpAndSettle();
 
-        // Tap first stop badge on الفاتحة (s1-a1-w4 has ابن الأنباري 1/474, الداني 155, الأشموني 28)
-        final firstBadge = find.byType(InkResponse).first;
-        await tester.tap(firstBadge);
+        // Open ayah options → stop sheet (badge tap now opens fixed dock)
+        final ayahMark = find.bySemanticsLabel(RegExp(r'خيارات الآية'));
+        expect(ayahMark, findsWidgets);
+        await tester.tap(ayahMark.first);
+        await tester.pump();
+        await tester.pump(const Duration(milliseconds: 300));
+        // First listed stop on ayah 1 includes ابن الأنباري 1/474
+        await tester.tap(find.byType(ListTile).first);
         await tester.pump();
         await tester.pump(const Duration(milliseconds: 400));
 

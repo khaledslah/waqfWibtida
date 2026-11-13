@@ -17,6 +17,8 @@ Future<void> showWaqfSheet(
   return showModalBottomSheet<void>(
     context: context,
     isScrollControlled: true,
+    isDismissible: true,
+    enableDrag: true,
     backgroundColor: Colors.transparent,
     barrierColor: const Color(0x99000000),
     builder: (context) {
@@ -48,8 +50,6 @@ class WaqfBottomSheet extends StatefulWidget {
 }
 
 class _WaqfBottomSheetState extends State<WaqfBottomSheet> {
-  bool _aiOpen = false;
-
   void _toggleReport(String id) {
     final willAdd = !widget.controller.isSent(id);
     widget.controller.toggleSent(id);
@@ -73,75 +73,105 @@ class _WaqfBottomSheetState extends State<WaqfBottomSheet> {
     await showSajawandiPage(context, page: page);
   }
 
+  void _dismiss() {
+    if (Navigator.of(context).canPop()) {
+      Navigator.of(context).pop();
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.sizeOf(context).height * 0.72;
     final bottom = MediaQuery.paddingOf(context).bottom;
 
-    return Align(
-      alignment: Alignment.bottomCenter,
-      child: Material(
-        color: AppColors.sheet,
-        borderRadius: const BorderRadius.vertical(top: Radius.circular(28)),
-        clipBehavior: Clip.antiAlias,
-        child: SizedBox(
-          height: height,
-          child: ListenableBuilder(
-            listenable: widget.controller,
-            builder: (context, _) {
-              final stop = widget.controller.stopById(widget.stopId);
-              if (stop == null) return const _MissingStop();
-              final sent = widget.controller.isSent(stop.id);
-              final fav = widget.controller.isFavorite(stop.id);
-              return Column(
-                children: [
-                  const _DragHandle(),
-                  Expanded(
-                    child: SelectionArea(
-                      child: SingleChildScrollView(
-                        padding: EdgeInsets.fromLTRB(20, 4, 20, 20 + bottom),
-                        child: _SheetBody(
-                          controller: widget.controller,
-                          stop: stop,
-                          selectedScholar: widget.controller.selectedScholar,
-                          includeDemos: widget.includeDemos,
-                          aiOpen: _aiOpen,
-                          onToggleAi: () => setState(() => _aiOpen = !_aiOpen),
-                          isVerseEnd: widget.controller.isVerseEnd(stop),
-                          favorite: fav,
-                          sent: sent,
-                          onToggleFavorite: () =>
-                              widget.controller.toggleFavorite(stop.id),
-                          onToggleReport: () => _toggleReport(stop.id),
-                          onOpenPage: _openPage,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              );
-            },
+    // Align expands to fill the modal; absorb empty space so outside taps
+    // and Android back (PopScope) reliably dismiss.
+    return PopScope(
+      canPop: true,
+      child: Stack(
+        children: [
+          Positioned.fill(
+            child: GestureDetector(
+              behavior: HitTestBehavior.opaque,
+              onTap: _dismiss,
+              child: const ColoredBox(color: Colors.transparent),
+            ),
           ),
-        ),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Material(
+              color: AppColors.sheet,
+              borderRadius:
+                  const BorderRadius.vertical(top: Radius.circular(28)),
+              clipBehavior: Clip.antiAlias,
+              child: SizedBox(
+                height: height,
+                child: ListenableBuilder(
+                  listenable: widget.controller,
+                  builder: (context, _) {
+                    final stop = widget.controller.stopById(widget.stopId);
+                    if (stop == null) return const _MissingStop();
+                    final sent = widget.controller.isSent(stop.id);
+                    final fav = widget.controller.isFavorite(stop.id);
+                    return Column(
+                      children: [
+                        const _DragHandle(),
+                        Expanded(
+                          child: SelectionArea(
+                            child: SingleChildScrollView(
+                              padding: EdgeInsets.fromLTRB(
+                                20,
+                                4,
+                                20,
+                                20 + bottom,
+                              ),
+                              child: WaqfStopSheetBody(
+                                controller: widget.controller,
+                                stop: stop,
+                                selectedScholar:
+                                    widget.controller.selectedScholar,
+                                includeDemos: widget.includeDemos,
+                                isVerseEnd:
+                                    widget.controller.isVerseEnd(stop),
+                                favorite: fav,
+                                sent: sent,
+                                onToggleFavorite: () => widget.controller
+                                    .toggleFavorite(stop.id),
+                                onToggleReport: () => _toggleReport(stop.id),
+                                onOpenPage: _openPage,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    );
+                  },
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
 }
 
-class _StopShareMenu extends StatelessWidget {
-  const _StopShareMenu({required this.stop});
+/// Favorite-row share control (copy / share) — shared by أقوال and معاني.
+class WaqfStopShareMenu extends StatelessWidget {
+  const WaqfStopShareMenu({super.key, required this.stop, required this.tone});
 
   final WaqfStop stop;
+  final DockTone tone;
 
   @override
   Widget build(BuildContext context) {
     return PopupMenuButton<String>(
       tooltip: 'خيارات الوقف (نسخ ومشاركة)',
-      icon: const Icon(Icons.share_outlined, color: AppColors.sheetMuted),
-      color: AppColors.sheetRaised,
+      icon: Icon(Icons.share_outlined, color: tone.muted),
+      color: tone.raised,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12),
-        side: const BorderSide(color: AppColors.sheetLine),
+        side: BorderSide(color: tone.line),
       ),
       onSelected: (action) {
         final text = formatStopText(stop);
@@ -156,11 +186,11 @@ class _StopShareMenu extends StatelessWidget {
           value: 'copy',
           child: Row(
             children: [
-              const Icon(Icons.copy_rounded, size: 18, color: AppColors.sheetText),
+              Icon(Icons.copy_rounded, size: 18, color: tone.text),
               const SizedBox(width: 8),
               Text(
                 'نسخ الوقف كاملاً',
-                style: AppText.ui(size: 13, color: AppColors.sheetText),
+                style: AppText.ui(size: 13, color: tone.text),
               ),
             ],
           ),
@@ -169,11 +199,11 @@ class _StopShareMenu extends StatelessWidget {
           value: 'share',
           child: Row(
             children: [
-              const Icon(Icons.share_outlined, size: 18, color: AppColors.sheetText),
+              Icon(Icons.share_outlined, size: 18, color: tone.text),
               const SizedBox(width: 8),
               Text(
                 'مشاركة الوقف',
-                style: AppText.ui(size: 13, color: AppColors.sheetText),
+                style: AppText.ui(size: 13, color: tone.text),
               ),
             ],
           ),
@@ -202,37 +232,40 @@ class _DragHandle extends StatelessWidget {
   }
 }
 
-class _SheetBody extends StatelessWidget {
-  const _SheetBody({
+/// Shared opinions sheet content (pages, share, flags) for modal + dock.
+class WaqfStopSheetBody extends StatelessWidget {
+  const WaqfStopSheetBody({
+    super.key,
     required this.controller,
     required this.stop,
     required this.selectedScholar,
     required this.includeDemos,
-    required this.aiOpen,
-    required this.onToggleAi,
     required this.isVerseEnd,
     required this.favorite,
     required this.sent,
     required this.onToggleFavorite,
     required this.onToggleReport,
     required this.onOpenPage,
+    this.showAiSection = true,
+    this.dark = true,
   });
 
   final ReaderController controller;
   final WaqfStop stop;
   final String? selectedScholar;
   final bool includeDemos;
-  final bool aiOpen;
-  final VoidCallback onToggleAi;
   final bool isVerseEnd;
   final bool favorite;
   final bool sent;
   final VoidCallback onToggleFavorite;
   final VoidCallback onToggleReport;
   final Future<void> Function(int? page) onOpenPage;
+  final bool showAiSection;
+  final bool dark;
 
   @override
   Widget build(BuildContext context) {
+    final tone = DockTone.of(dark);
     final activeOp = stop.opinionForScholar(selectedScholar);
     final activeSymbol = stop.symbolForScholar(selectedScholar);
     final activeVerdictLabel = stop.verdictLabelForScholar(selectedScholar);
@@ -262,7 +295,9 @@ class _SheetBody extends StatelessWidget {
                     style: AppText.ui(
                       size: 18,
                       weight: FontWeight.w700,
-                      color: const Color(0xFFE7F6EE),
+                      color: dark
+                          ? const Color(0xFFE7F6EE)
+                          : AppColors.forestDeep,
                     ),
                   ),
                   if (activeOp != null)
@@ -270,7 +305,7 @@ class _SheetBody extends StatelessWidget {
                       '${activeOp.scholar} (${activeOp.book})',
                       style: AppText.ui(
                         size: 12,
-                        color: AppColors.sheetMuted,
+                        color: tone.muted,
                       ),
                     ),
                 ],
@@ -281,7 +316,7 @@ class _SheetBody extends StatelessWidget {
               onPressed: onToggleFavorite,
               icon: Icon(
                 favorite ? Icons.favorite : Icons.favorite_border,
-                color: favorite ? const Color(0xFFE8A0A0) : AppColors.sheetMuted,
+                color: favorite ? const Color(0xFFE8A0A0) : tone.muted,
               ),
             ),
             IconButton(
@@ -289,10 +324,10 @@ class _SheetBody extends StatelessWidget {
               onPressed: onToggleReport,
               icon: Icon(
                 sent ? Icons.flag_rounded : Icons.outlined_flag_rounded,
-                color: sent ? const Color(0xFFE2A44B) : AppColors.sheetMuted,
+                color: sent ? const Color(0xFFE2A44B) : tone.muted,
               ),
             ),
-            _StopShareMenu(stop: stop),
+            WaqfStopShareMenu(stop: stop, tone: tone),
           ],
         ),
         const SizedBox(height: 4),
@@ -302,7 +337,7 @@ class _SheetBody extends StatelessWidget {
           style: AppText.quran(
             size: 40,
             weight: FontWeight.w700,
-            color: AppColors.white,
+            color: tone.quran,
             height: 1.3,
           ),
         ),
@@ -312,11 +347,14 @@ class _SheetBody extends StatelessWidget {
           runSpacing: 6,
           crossAxisAlignment: WrapCrossAlignment.center,
           children: [
-            if (isVerseEnd) const _SheetTag(text: 'رأس آية'),
+            if (isVerseEnd) _SheetTag(text: 'رأس آية', tone: tone),
             if (stop.inUthmaniMushaf)
-              const _SheetTag(text: 'في المصحف العثماني'),
+              _SheetTag(text: 'في المصحف العثماني', tone: tone),
             if (activeOp != null && activeOp.verdicts.length > 1)
-              _SheetTag(text: '${arabicDigits(activeOp.verdicts.length)} أوجه للعالم'),
+              _SheetTag(
+                text: '${arabicDigits(activeOp.verdicts.length)} أوجه للعالم',
+                tone: tone,
+              ),
           ],
         ),
         const SizedBox(height: 12),
@@ -326,14 +364,15 @@ class _SheetBody extends StatelessWidget {
           style: AppText.ui(
             size: 15,
             weight: FontWeight.w500,
-            color: AppColors.sheetText,
+            color: tone.text,
             height: 1.75,
           ),
         ),
         const SizedBox(height: 20),
-        const _SectionTitle(
+        _SectionTitle(
           icon: Icons.menu_book_outlined,
           title: 'أقوال أئمة الوقف والابتداء',
+          tone: tone,
         ),
         const SizedBox(height: 8),
         _OpinionTable(
@@ -344,29 +383,128 @@ class _SheetBody extends StatelessWidget {
           emptyText: 'لا حكم مسجّل.',
           sajawandiPage: stop.textPage,
           onOpenPage: onOpenPage,
+          tone: tone,
         ),
-        const SizedBox(height: 12),
-        _AiPanel(
-          open: aiOpen,
-          suggestion: stop.aiSuggestion,
-          onToggle: onToggleAi,
-        ),
+        if (showAiSection) ...[
+          const SizedBox(height: 16),
+          _AiDemoMeaningsSection(
+            controller: controller,
+            stop: stop,
+            selectedScholar: selectedScholar,
+          ),
+        ],
       ],
     );
   }
 }
 
+/// Embeddable scrollable opinions panel (same content as the modal sheet).
+class WaqfStopSheetPanel extends StatefulWidget {
+  const WaqfStopSheetPanel({
+    super.key,
+    required this.controller,
+    required this.stopId,
+    this.includeDemos = false,
+    this.showAiSection = false,
+    this.dark = true,
+  });
+
+  final ReaderController controller;
+  final String stopId;
+  final bool includeDemos;
+  final bool showAiSection;
+  final bool dark;
+
+  @override
+  State<WaqfStopSheetPanel> createState() => _WaqfStopSheetPanelState();
+}
+
+class _WaqfStopSheetPanelState extends State<WaqfStopSheetPanel> {
+  void _toggleReport(String id) {
+    final willAdd = !widget.controller.isSent(id);
+    widget.controller.toggleSent(id);
+    ScaffoldMessenger.maybeOf(context)?.showSnackBar(
+      SnackBar(
+        behavior: SnackBarBehavior.floating,
+        duration: const Duration(seconds: 2),
+        margin: const EdgeInsets.fromLTRB(16, 0, 16, 32),
+        content: Text(
+          willAdd
+              ? 'أُضيف الوقف إلى قائمة المراجعة والإبلاغ'
+              : 'أُزيل الوقف من قائمة المراجعة',
+          style: AppText.ui(size: 14, color: AppColors.white),
+        ),
+      ),
+    );
+  }
+
+  Future<void> _openPage(int? page) async {
+    if (page == null) return;
+    await showSajawandiPage(context, page: page);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final bottom = MediaQuery.paddingOf(context).bottom;
+    final tone = DockTone.of(widget.dark);
+    return Material(
+      color: tone.bg,
+      child: ListenableBuilder(
+        listenable: widget.controller,
+        builder: (context, _) {
+          final stop = widget.controller.stopById(widget.stopId);
+          if (stop == null) {
+            return Center(
+              child: Text(
+                'الوقف غير موجود',
+                style: AppText.ui(size: 14, color: tone.muted),
+              ),
+            );
+          }
+          final sent = widget.controller.isSent(stop.id);
+          final fav = widget.controller.isFavorite(stop.id);
+          return SelectionArea(
+            child: SingleChildScrollView(
+              padding: EdgeInsets.fromLTRB(16, 8, 16, 16 + bottom),
+              child: WaqfStopSheetBody(
+                controller: widget.controller,
+                stop: stop,
+                selectedScholar: widget.controller.selectedScholar,
+                includeDemos: widget.includeDemos,
+                isVerseEnd: widget.controller.isVerseEnd(stop),
+                favorite: fav,
+                sent: sent,
+                onToggleFavorite: () =>
+                    widget.controller.toggleFavorite(stop.id),
+                onToggleReport: () => _toggleReport(stop.id),
+                onOpenPage: _openPage,
+                showAiSection: widget.showAiSection,
+                dark: widget.dark,
+              ),
+            ),
+          );
+        },
+      ),
+    );
+  }
+}
+
 class _SectionTitle extends StatelessWidget {
-  const _SectionTitle({required this.icon, required this.title});
+  const _SectionTitle({
+    required this.icon,
+    required this.title,
+    required this.tone,
+  });
 
   final IconData icon;
   final String title;
+  final DockTone tone;
 
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Icon(icon, size: 18, color: AppColors.goldSoft),
+        Icon(icon, size: 18, color: tone.accent),
         const SizedBox(width: 8),
         Expanded(
           child: Text(
@@ -374,7 +512,7 @@ class _SectionTitle extends StatelessWidget {
             style: AppText.ui(
               size: 15,
               weight: FontWeight.w700,
-              color: AppColors.sheetText,
+              color: tone.text,
             ),
           ),
         ),
@@ -392,6 +530,7 @@ class _OpinionTable extends StatelessWidget {
     required this.emptyText,
     required this.sajawandiPage,
     required this.onOpenPage,
+    required this.tone,
   });
 
   final ReaderController controller;
@@ -401,27 +540,27 @@ class _OpinionTable extends StatelessWidget {
   final String emptyText;
   final int? sajawandiPage;
   final Future<void> Function(int? page) onOpenPage;
+  final DockTone tone;
 
   @override
   Widget build(BuildContext context) {
     if (opinions.isEmpty) {
       return Text(
         emptyText,
-        style: AppText.ui(size: 14, color: AppColors.sheetMuted),
+        style: AppText.ui(size: 14, color: tone.muted),
       );
     }
 
     return DecoratedBox(
       decoration: BoxDecoration(
-        color: AppColors.sheetRaised,
+        color: tone.raised,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: AppColors.sheetLine),
+        border: Border.all(color: tone.line),
       ),
       child: Column(
         children: [
           for (var i = 0; i < opinions.length; i++) ...[
-            if (i > 0)
-              const Divider(height: 1, thickness: 1, color: AppColors.sheetLine),
+            if (i > 0) Divider(height: 1, thickness: 1, color: tone.line),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
               child: _OpinionRow(
@@ -431,6 +570,7 @@ class _OpinionTable extends StatelessWidget {
                 includeDemos: includeDemos,
                 sajawandiPage: sajawandiPage,
                 onOpenPage: onOpenPage,
+                tone: tone,
               ),
             ),
           ],
@@ -448,6 +588,7 @@ class _OpinionRow extends StatelessWidget {
     required this.includeDemos,
     required this.sajawandiPage,
     required this.onOpenPage,
+    required this.tone,
   });
 
   final ReaderController controller;
@@ -456,6 +597,7 @@ class _OpinionRow extends StatelessWidget {
   final bool includeDemos;
   final int? sajawandiPage;
   final Future<void> Function(int? page) onOpenPage;
+  final DockTone tone;
 
   @override
   Widget build(BuildContext context) {
@@ -476,7 +618,7 @@ class _OpinionRow extends StatelessWidget {
                     style: AppText.ui(
                       size: 14,
                       weight: FontWeight.w700,
-                      color: AppColors.sheetText,
+                      color: tone.text,
                     ),
                   ),
                   if (opinion.targetWord.trim().isNotEmpty)
@@ -485,7 +627,7 @@ class _OpinionRow extends StatelessWidget {
                       textAlign: TextAlign.start,
                       style: AppText.ui(
                         size: 11,
-                        color: AppColors.sheetMuted,
+                        color: tone.muted,
                       ),
                     ),
                 ],
@@ -511,6 +653,7 @@ class _OpinionRow extends StatelessWidget {
                       isQila: i < opinion.isQila.length
                           ? opinion.isQila[i]
                           : false,
+                      tone: tone,
                     ),
                 ],
               ),
@@ -525,6 +668,7 @@ class _OpinionRow extends StatelessWidget {
                   opinion: opinion,
                   sajawandiPage: sajawandiPage,
                   onOpenPage: onOpenPage,
+                  tone: tone,
                 ),
               ),
             ),
@@ -537,7 +681,7 @@ class _OpinionRow extends StatelessWidget {
             textAlign: TextAlign.start,
             style: AppText.ui(
               size: 13,
-              color: AppColors.sheetText.withOpacity(0.9),
+              color: tone.text.withOpacity(0.9),
               height: 1.55,
             ),
           ),
@@ -585,17 +729,17 @@ class _OpinionRow extends StatelessWidget {
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      const Icon(
+                      Icon(
                         Icons.copy_rounded,
                         size: 14,
-                        color: AppColors.sheetMuted,
+                        color: tone.dark ? AppColors.goldSoft : tone.muted,
                       ),
                       const SizedBox(width: 4),
                       Text(
                         'نسخ',
                         style: AppText.ui(
                           size: 11,
-                          color: AppColors.sheetMuted,
+                          color: tone.dark ? AppColors.goldSoft : tone.muted,
                         ),
                       ),
                     ],
@@ -621,17 +765,17 @@ class _OpinionRow extends StatelessWidget {
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      const Icon(
+                      Icon(
                         Icons.share_outlined,
                         size: 14,
-                        color: AppColors.sheetMuted,
+                        color: tone.dark ? AppColors.goldSoft : tone.muted,
                       ),
                       const SizedBox(width: 4),
                       Text(
                         'مشاركة',
                         style: AppText.ui(
                           size: 11,
-                          color: AppColors.sheetMuted,
+                          color: tone.dark ? AppColors.goldSoft : tone.muted,
                         ),
                       ),
                     ],
@@ -797,12 +941,14 @@ class _VerdictFacePill extends StatelessWidget {
     required this.verdictLabel,
     required this.symbol,
     required this.isQila,
+    required this.tone,
   });
 
   final String verdict;
   final String verdictLabel;
   final StopSymbol symbol;
   final bool isQila;
+  final DockTone tone;
 
   @override
   Widget build(BuildContext context) {
@@ -812,12 +958,10 @@ class _VerdictFacePill extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
       decoration: BoxDecoration(
-        color: AppColors.sheet,
+        color: tone.bg,
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: isQila
-              ? AppColors.goldSoft.withOpacity(0.75)
-              : AppColors.sheetLine,
+          color: isQila ? tone.accent.withOpacity(0.75) : tone.line,
         ),
       ),
       child: Row(
@@ -841,7 +985,7 @@ class _VerdictFacePill extends StatelessWidget {
               style: AppText.ui(
                 size: 12,
                 weight: FontWeight.w600,
-                color: AppColors.sheetText,
+                color: tone.text,
               ),
             ),
           ),
@@ -858,6 +1002,7 @@ class _PageRef extends StatelessWidget {
     required this.opinion,
     required this.sajawandiPage,
     required this.onOpenPage,
+    required this.tone,
   });
 
   final int surah;
@@ -865,6 +1010,7 @@ class _PageRef extends StatelessWidget {
   final ScholarOpinion opinion;
   final int? sajawandiPage;
   final Future<void> Function(int? page) onOpenPage;
+  final DockTone tone;
 
   @override
   Widget build(BuildContext context) {
@@ -887,20 +1033,20 @@ class _PageRef extends StatelessWidget {
               opinion.book,
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
-              style: AppText.ui(size: 11, color: AppColors.sheetMuted),
+              style: AppText.ui(size: 11, color: tone.muted),
             ),
             const SizedBox(height: 2),
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 2),
               decoration: BoxDecoration(
-                color: AppColors.dash,
+                color: tone.dark ? AppColors.dash : AppColors.hairline,
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Text(
                 '−',
                 style: AppText.ui(
                   size: 14,
-                  color: AppColors.sheetMuted,
+                  color: tone.muted,
                   height: 1.2,
                 ),
               ),
@@ -911,6 +1057,8 @@ class _PageRef extends StatelessWidget {
     }
 
     final displayRef = pageStr ?? 'آية ${arabicDigits(ayah)}';
+    // Light: muted (synced with نسخ/مشاركة). Dark: gold.
+    final linkColor = tone.dark ? AppColors.goldSoft : tone.muted;
 
     final refRow = Row(
       mainAxisSize: MainAxisSize.min,
@@ -924,7 +1072,7 @@ class _PageRef extends StatelessWidget {
             style: AppText.ui(
               size: 14,
               weight: hasBookLink ? FontWeight.w700 : FontWeight.w500,
-              color: hasBookLink ? AppColors.goldSoft : AppColors.sheetText,
+              color: hasBookLink ? linkColor : tone.text,
             ),
           ),
         ),
@@ -932,7 +1080,7 @@ class _PageRef extends StatelessWidget {
         Icon(
           Icons.menu_book_outlined,
           size: 16,
-          color: hasBookLink ? AppColors.goldSoft : AppColors.sheetMuted,
+          color: hasBookLink ? linkColor : tone.muted,
         ),
       ],
     );
@@ -949,8 +1097,8 @@ class _PageRef extends StatelessWidget {
           style: AppText.ui(
             size: 11,
             color: hasBookLink
-                ? AppColors.goldSoft.withOpacity(0.85)
-                : AppColors.sheetMuted,
+                ? (tone.dark ? linkColor.withOpacity(0.85) : tone.muted)
+                : tone.muted,
           ),
         ),
         const SizedBox(height: 2),
@@ -983,100 +1131,105 @@ class _PageRef extends StatelessWidget {
   }
 }
 
-class _AiPanel extends StatelessWidget {
-  const _AiPanel({
-    required this.open,
-    required this.suggestion,
-    required this.onToggle,
+/// Always-visible AI-inferred waqf meanings (full demo cards).
+class _AiDemoMeaningsSection extends StatelessWidget {
+  const _AiDemoMeaningsSection({
+    required this.controller,
+    required this.stop,
+    required this.selectedScholar,
   });
 
-  final bool open;
-  final String? suggestion;
-  final VoidCallback onToggle;
+  final ReaderController controller;
+  final WaqfStop stop;
+  final String? selectedScholar;
+
+  List<(ScholarOpinion, int, WaqfDemoAndMeaning)> _entries() {
+    final out = <(ScholarOpinion, int, WaqfDemoAndMeaning)>[];
+    ScholarOpinion? preferred;
+    if (selectedScholar != null && selectedScholar!.isNotEmpty) {
+      final op = stop.opinionForScholar(selectedScholar);
+      if (op != null && op.demosAndMeanings.isNotEmpty) preferred = op;
+    }
+    final opinions = preferred != null
+        ? <ScholarOpinion>[preferred]
+        : stop.opinions.where((o) => o.demosAndMeanings.isNotEmpty).toList();
+    for (final op in opinions) {
+      for (var d = 0; d < op.demosAndMeanings.length; d++) {
+        out.add((op, d, op.demosAndMeanings[d]));
+      }
+    }
+    return out;
+  }
 
   @override
   Widget build(BuildContext context) {
-    return DecoratedBox(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: AppColors.sheetLine),
-      ),
-      child: Column(
-        children: [
-          InkWell(
-            onTap: onToggle,
-            borderRadius: BorderRadius.circular(12),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
-              child: Row(
-                children: [
-                  const Icon(
-                    Icons.auto_awesome,
-                    size: 18,
-                    color: AppColors.goldSoft,
-                  ),
-                  const SizedBox(width: 8),
-                  Expanded(
-                    child: Text(
-                      'مقترحات AI',
-                      textAlign: TextAlign.start,
-                      style: AppText.ui(
-                        size: 15,
-                        weight: FontWeight.w600,
-                        color: AppColors.sheetText,
-                      ),
-                    ),
-                  ),
-                  Icon(
-                    open ? Icons.expand_less : Icons.expand_more,
-                    color: AppColors.sheetMuted,
-                  ),
-                ],
-              ),
+    final entries = _entries();
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        const _SectionTitle(
+          icon: Icons.auto_awesome,
+          title: 'معاني وقف (مستنتجة AI)',
+          tone: DockTone.darkSheet,
+        ),
+        const SizedBox(height: 8),
+        if (entries.isEmpty)
+          Text(
+            'لا معاني مقترحة لهذا الوقف.',
+            textAlign: TextAlign.start,
+            style: AppText.ui(
+              size: 14,
+              color: AppColors.sheetMuted,
+              height: 1.5,
             ),
-          ),
-          if (open)
-            Padding(
-              padding: const EdgeInsets.fromLTRB(12, 0, 12, 14),
-              child: Text(
-                (suggestion == null || suggestion!.trim().isEmpty)
-                    ? 'لا مقترح آليًا لهذه العلامة.'
-                    : suggestion!,
-                textAlign: TextAlign.start,
-                style: AppText.ui(
-                  size: 14,
-                  color: AppColors.sheetText,
-                  height: 1.7,
-                ),
-              ),
+          )
+        else
+          for (var i = 0; i < entries.length; i++) ...[
+            if (i > 0) const SizedBox(height: 8),
+            _DemoMeaningCard(
+              demo: entries[i].$3,
+              selected: controller.demoHighlightActive &&
+                  controller.selectedStopId == stop.id &&
+                  identical(
+                    controller.activeDemoHighlight,
+                    entries[i].$3,
+                  ),
+              onTap: () {
+                controller.activateDemoHighlight(
+                  stop.id,
+                  scholar: entries[i].$1.scholar,
+                  demoIndex: entries[i].$2,
+                );
+              },
             ),
-        ],
-      ),
+          ],
+      ],
     );
   }
 }
 
 
 class _SheetTag extends StatelessWidget {
-  const _SheetTag({required this.text});
+  const _SheetTag({required this.text, required this.tone});
 
   final String text;
+  final DockTone tone;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
       decoration: BoxDecoration(
-        color: AppColors.sheetRaised,
+        color: tone.raised,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: AppColors.goldSoft.withOpacity(0.55)),
+        border: Border.all(color: tone.accent.withOpacity(0.55)),
       ),
       child: Text(
         text,
         style: AppText.ui(
           size: 11,
           weight: FontWeight.w700,
-          color: AppColors.goldSoft,
+          color: tone.accent,
           height: 1.1,
         ),
       ),

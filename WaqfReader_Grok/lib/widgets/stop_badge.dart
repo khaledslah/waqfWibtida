@@ -29,9 +29,11 @@ class StopBadge extends StatelessWidget {
     this.isQila = false,
     this.selected = false,
     this.onTap,
+    this.onLongPress,
     this.core = 28,
     /// Shrinks the invisible hit box so demo washes stay continuous.
     this.compact = false,
+    this.hasDemoCue = false,
   });
 
   final StopSymbol symbol;
@@ -40,28 +42,54 @@ class StopBadge extends StatelessWidget {
   final bool isQila;
   final bool selected;
   final VoidCallback? onTap;
+  final VoidCallback? onLongPress;
   final double core;
   final bool compact;
+  /// Non-interactive gold tip when demos/meanings exist.
+  final bool hasDemoCue;
 
   @override
   Widget build(BuildContext context) {
     final ringed = selected && symbol == StopSymbol.tam && !isQila;
-    final visual = ringed ? core + 18 : core + (selected ? 8 : 0);
-    final target = compact ? visual : math.max(44.0, visual);
+    // Fixed slot size so selection/highlight never shifts mushaf word positions.
+    final slot = compact ? core : math.max(44.0, core);
 
     return Semantics(
-      button: onTap != null,
+      button: onTap != null || onLongPress != null,
       label: semanticsLabel,
       child: InkResponse(
         onTap: onTap,
-        radius: target / 2,
+        onLongPress: onLongPress,
+        radius: slot / 2,
         customBorder: const CircleBorder(),
         containedInkWell: true,
         highlightShape: BoxShape.circle,
         child: SizedBox(
-          width: target,
-          height: target,
-          child: Center(child: _visual(ringed)),
+          width: slot,
+          height: slot,
+          child: Stack(
+            clipBehavior: Clip.none,
+            alignment: Alignment.center,
+            children: [
+              Center(child: _visual(ringed)),
+              if (hasDemoCue)
+                Positioned(
+                  top: compact ? 2 : 4,
+                  left: compact ? 2 : 4,
+                  child: IgnorePointer(
+                    child: Container(
+                      width: 7,
+                      height: 7,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: AppColors.goldSoft,
+                        border: Border.all(color: AppColors.parchment, width: 1),
+                      ),
+                    ),
+                  ),
+                ),
+            ],
+          ),
         ),
       ),
     );

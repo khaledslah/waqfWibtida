@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 import '../data/sample_data.dart';
 import '../models/waqf_models.dart';
 import '../theme/app_theme.dart';
+import 'waqf_bottom_sheet.dart';
 
-/// Resolves the active demo opinion for a stop (for ؟ highlight + meanings box).
+/// Resolves the active demo opinion for a stop (for highlight + meanings box).
 ScholarOpinion? demoOpinionForStop(WaqfStop stop, String? preferredScholar) {
   if (preferredScholar != null && preferredScholar.isNotEmpty) {
     final op = stop.opinionForScholar(preferredScholar);
@@ -21,9 +22,13 @@ class DemoMeaningsBox extends StatefulWidget {
   const DemoMeaningsBox({
     super.key,
     required this.controller,
+    this.showClose = true,
+    this.dark = false,
   });
 
   final ReaderController controller;
+  final bool showClose;
+  final bool dark;
 
   @override
   State<DemoMeaningsBox> createState() => _DemoMeaningsBoxState();
@@ -42,6 +47,24 @@ class _DemoMeaningsBoxState extends State<DemoMeaningsBox> {
     }
   }
 
+  void _toggleReport(String id) {
+    final willAdd = !widget.controller.isSent(id);
+    widget.controller.toggleSent(id);
+    ScaffoldMessenger.maybeOf(context)?.showSnackBar(
+      SnackBar(
+        behavior: SnackBarBehavior.floating,
+        duration: const Duration(seconds: 2),
+        margin: const EdgeInsets.fromLTRB(16, 0, 16, 32),
+        content: Text(
+          willAdd
+              ? 'أُضيف الوقف إلى قائمة المراجعة والإبلاغ'
+              : 'أُزيل الوقف من قائمة المراجعة',
+          style: AppText.ui(size: 14, color: AppColors.white),
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     if (!widget.controller.demoHighlightActive) {
@@ -58,95 +81,150 @@ class _DemoMeaningsBoxState extends State<DemoMeaningsBox> {
       return const SizedBox.shrink();
     }
 
+    final maxH = MediaQuery.sizeOf(context).height * 0.38;
+    final flat = widget.controller.demoNavFlatIndex;
+    final total = widget.controller.demoNavTotalCount;
+    final tone = DockTone.of(widget.dark);
+    final border = widget.dark ? AppColors.goldSoft : AppColors.gold;
+    final fav = widget.controller.isFavorite(stop.id);
+    final sent = widget.controller.isSent(stop.id);
+
     return Padding(
       padding: const EdgeInsets.fromLTRB(4, 10, 4, 4),
       child: CustomPaint(
-        painter: const _DottedRoundRectPainter(
-          color: AppColors.gold,
+        painter: _DottedRoundRectPainter(
+          color: border,
           radius: 10,
           strokeWidth: 1.2,
           dash: 4,
           gap: 3,
         ),
-        child: Container(
-          width: double.infinity,
-          padding: const EdgeInsets.fromLTRB(12, 10, 12, 10),
-          decoration: BoxDecoration(
-            color: AppColors.parchment.withOpacity(0.96),
-            borderRadius: BorderRadius.circular(10),
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Row(
+        child: ConstrainedBox(
+          constraints: BoxConstraints(maxHeight: maxH),
+          child: Container(
+            width: double.infinity,
+            padding: const EdgeInsets.fromLTRB(12, 10, 12, 10),
+            decoration: BoxDecoration(
+              color: tone.bg.withOpacity(0.96),
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: SingleChildScrollView(
+              physics: const ClampingScrollPhysics(),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Expanded(
-                    child: Text(
-                      '«${stop.word}»',
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          '«${stop.word}»',
+                          style: AppText.ui(
+                            size: 12,
+                            weight: FontWeight.w700,
+                            color: tone.quran,
+                          ),
+                        ),
+                      ),
+                      IconButton(
+                        tooltip: fav ? 'إزالة من المفضلة' : 'إضافة للمفضلة',
+                        onPressed: () =>
+                            widget.controller.toggleFavorite(stop.id),
+                        icon: Icon(
+                          fav ? Icons.favorite : Icons.favorite_border,
+                          color: fav
+                              ? const Color(0xFFE8A0A0)
+                              : tone.muted,
+                        ),
+                      ),
+                      IconButton(
+                        tooltip: sent
+                            ? 'في قائمة المراجعة (انقر للإلغاء)'
+                            : 'إبلاغ / إضافة للمراجعة',
+                        onPressed: () => _toggleReport(stop.id),
+                        icon: Icon(
+                          sent
+                              ? Icons.flag_rounded
+                              : Icons.outlined_flag_rounded,
+                          color: sent
+                              ? const Color(0xFFE2A44B)
+                              : tone.muted,
+                        ),
+                      ),
+                      WaqfStopShareMenu(stop: stop, tone: tone),
+                      if (widget.showClose)
+                        IconButton(
+                          tooltip: 'إغلاق',
+                          onPressed: () {
+                            if (widget.controller.stopDockOpen) {
+                              widget.controller.closeStopDock();
+                            } else {
+                              widget.controller.clearDemoHighlight();
+                            }
+                          },
+                          icon: Icon(Icons.close, color: tone.muted),
+                        ),
+                    ],
+                  ),
+                  if (total > 1) ...[
+                    const SizedBox(height: 4),
+                    Text(
+                      '${arabicDigits(flat)} / ${arabicDigits(total)}',
+                      textAlign: TextAlign.start,
                       style: AppText.ui(
                         size: 12,
-                        weight: FontWeight.w700,
-                        color: AppColors.forestDeep,
+                        weight: FontWeight.w600,
+                        color: tone.muted,
                       ),
                     ),
-                  ),
-                  InkWell(
-                    onTap: widget.controller.clearDemoHighlight,
-                    borderRadius: BorderRadius.circular(12),
-                    child: const Padding(
-                      padding: EdgeInsets.all(4),
-                      child: Icon(
-                        Icons.close,
-                        size: 16,
-                        color: AppColors.muted,
-                      ),
+                  ],
+                  if (meaningWaqf.isNotEmpty) ...[
+                    const SizedBox(height: 8),
+                    _MeaningLine(
+                      swatch: AppColors.demoWaqfMarker,
+                      label: 'المعنى عند الوقف',
+                      body: meaningWaqf,
+                      expanded: _expanded,
+                      tone: tone,
                     ),
-                  ),
-                ],
-              ),
-              if (meaningWaqf.isNotEmpty) ...[
-                const SizedBox(height: 8),
-                _MeaningLine(
-                  swatch: AppColors.demoWaqfMarker,
-                  label: 'المعنى عند الوقف',
-                  body: meaningWaqf,
-                  expanded: _expanded,
-                ),
-              ],
-              if (meaningIbtida.isNotEmpty) ...[
-                const SizedBox(height: 8),
-                _MeaningLine(
-                  swatch: AppColors.demoIbtidaMarker,
-                  label: 'المعنى عند الابتداء',
-                  body: meaningIbtida,
-                  expanded: _expanded,
-                ),
-              ],
-              if (_needsExpand(meaningWaqf) || _needsExpand(meaningIbtida)) ...[
-                const SizedBox(height: 6),
-                Align(
-                  alignment: AlignmentDirectional.centerStart,
-                  child: InkWell(
-                    onTap: () => setState(() => _expanded = !_expanded),
-                    borderRadius: BorderRadius.circular(8),
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 4,
-                        vertical: 2,
-                      ),
-                      child: Text(
-                        _expanded ? 'أقل' : 'المزيد',
-                        style: AppText.ui(
-                          size: 12,
-                          weight: FontWeight.w700,
-                          color: AppColors.forest,
+                  ],
+                  if (meaningIbtida.isNotEmpty) ...[
+                    const SizedBox(height: 8),
+                    _MeaningLine(
+                      swatch: AppColors.demoIbtidaMarker,
+                      label: 'المعنى عند الابتداء',
+                      body: meaningIbtida,
+                      expanded: _expanded,
+                      tone: tone,
+                    ),
+                  ],
+                  if (_needsExpand(meaningWaqf) ||
+                      _needsExpand(meaningIbtida)) ...[
+                    const SizedBox(height: 6),
+                    Align(
+                      alignment: AlignmentDirectional.centerStart,
+                      child: InkWell(
+                        onTap: () => setState(() => _expanded = !_expanded),
+                        borderRadius: BorderRadius.circular(8),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 4,
+                            vertical: 8,
+                          ),
+                          child: Text(
+                            _expanded ? 'أقل' : 'المزيد',
+                            style: AppText.ui(
+                              size: 12,
+                              weight: FontWeight.w700,
+                              color: tone.accent,
+                            ),
+                          ),
                         ),
                       ),
                     ),
-                  ),
-                ),
-              ],
-            ],
+                  ],
+                ],
+              ),
+            ),
           ),
         ),
       ),
@@ -154,7 +232,6 @@ class _DemoMeaningsBoxState extends State<DemoMeaningsBox> {
   }
 
   bool _needsExpand(String text) {
-    // Rough mobile cutoff for ~2 lines of Arabic UI text.
     return text.trim().length > 70;
   }
 }
@@ -165,12 +242,14 @@ class _MeaningLine extends StatelessWidget {
     required this.label,
     required this.body,
     required this.expanded,
+    required this.tone,
   });
 
   final Color swatch;
   final String label;
   final String body;
   final bool expanded;
+  final DockTone tone;
 
   @override
   Widget build(BuildContext context) {
@@ -193,7 +272,7 @@ class _MeaningLine extends StatelessWidget {
               style: AppText.ui(
                 size: 11,
                 weight: FontWeight.w700,
-                color: AppColors.muted,
+                color: tone.muted,
               ),
             ),
           ],
@@ -202,11 +281,12 @@ class _MeaningLine extends StatelessWidget {
         Text(
           body,
           textAlign: TextAlign.start,
+          softWrap: true,
           maxLines: expanded ? null : 2,
           overflow: expanded ? TextOverflow.visible : TextOverflow.ellipsis,
           style: AppText.ui(
             size: 13,
-            color: AppColors.ink,
+            color: tone.text,
             height: 1.5,
           ),
         ),

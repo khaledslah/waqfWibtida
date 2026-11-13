@@ -38,6 +38,53 @@ abstract final class AppColors {
   static const amberWash = Color(0xFFF8EFD6);
 }
 
+/// Shared palette for dock / sheet / bottom nav (معاني light vs أقوال dark).
+class DockTone {
+  const DockTone({
+    required this.bg,
+    required this.raised,
+    required this.line,
+    required this.text,
+    required this.muted,
+    required this.accent,
+    required this.quran,
+    required this.dark,
+  });
+
+  final Color bg;
+  final Color raised;
+  final Color line;
+  final Color text;
+  final Color muted;
+  final Color accent;
+  final Color quran;
+  final bool dark;
+
+  static const light = DockTone(
+    bg: AppColors.parchment,
+    raised: AppColors.white,
+    line: AppColors.hairline,
+    text: AppColors.ink,
+    muted: AppColors.muted,
+    accent: AppColors.forest,
+    quran: AppColors.forestDeep,
+    dark: false,
+  );
+
+  static const darkSheet = DockTone(
+    bg: AppColors.sheet,
+    raised: AppColors.sheetRaised,
+    line: AppColors.sheetLine,
+    text: AppColors.sheetText,
+    muted: AppColors.sheetMuted,
+    accent: AppColors.goldSoft,
+    quran: AppColors.white,
+    dark: true,
+  );
+
+  static DockTone of(bool dark) => dark ? darkSheet : light;
+}
+
 abstract final class AppText {
   static TextStyle ui({
     double size = 16,

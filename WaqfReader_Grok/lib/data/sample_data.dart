@@ -332,6 +332,17 @@ class ReaderController extends ChangeNotifier {
   String? selectedScholar;
   ReviewListFilter reviewFilter = ReviewListFilter.all;
 
+  /// Fixed bottom stop panel (معاني / أقوال).
+  bool stopDockOpen = false;
+
+  /// 0 = معاني (demo), 1 = أقوال.
+  int stopDockTab = 0;
+
+  /// Dock + bottom nav shared theme. Light by default; only flips via toggle.
+  bool panelDark = false;
+
+  static const String scholarAllSentinel = '__all__';
+
   static const List<String?> scholarOptions = <String?>[
     null,
     'السجاوندي',
@@ -656,6 +667,127 @@ class ReaderController extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// Popup menus cannot use null values reliably — map sentinel ↔ null.
+  void setSelectedScholarFromMenu(String value) {
+    setSelectedScholar(value == scholarAllSentinel ? null : value);
+  }
+
+  /// Opens the dock. Default tab when opening from closed is الأقوال (1).
+  /// If the dock is already open on another stop, keeps the current tab.
+  void openStopDock(String stopId, {int? tab}) {
+    final stop = stopById(stopId);
+    if (stop == null) return;
+
+    // Same stop while dock open → toggle closed.
+    if (stopDockOpen && selectedStopId == stopId) {
+      closeStopDock();
+      return;
+    }
+
+    // Dock already open on a different stop → keep tab choice.
+    if (stopDockOpen) {
+      navigateStopDock(stopId);
+      return;
+    }
+
+    // Fresh open: caller tab or default الأقوال.
+    _showStopInDock(stop, tab: (tab ?? 1).clamp(0, 1));
+  }
+
+  /// Move dock to another stop without toggle-close behavior; keeps tab.
+  void navigateStopDock(String stopId) {
+    final stop = stopById(stopId);
+    if (stop == null) return;
+    _showStopInDock(stop, tab: stopDockTab);
+  }
+
+  void _showStopInDock(WaqfStop stop, {required int tab}) {
+    selectedStopId = stop.id;
+    stopDockOpen = true;
+    var t = tab.clamp(0, 1);
+    if (!stop.hasDemosAndMeanings) t = 1;
+    stopDockTab = t;
+    selectedDemoIndex = 0;
+    _ensureDemoHighlightForDock(stop);
+    notifyListeners();
+  }
+
+  List<WaqfStop> get visibleStops {
+    return sampleStops.where(isStopVisible).toList(growable: false);
+  }
+
+  /// Next/prev visible waqf in the dock. [delta] > 0 = next. Returns false at ends.
+  bool stepVisibleStop(int delta) {
+    if (!stopDockOpen || delta == 0) return false;
+    final stops = visibleStops;
+    if (stops.isEmpty) return false;
+    final id = selectedStopId;
+    var idx = id == null ? -1 : stops.indexWhere((s) => s.id == id);
+    if (idx < 0) idx = 0;
+    final next = idx + (delta > 0 ? 1 : -1);
+    if (next < 0 || next >= stops.length) return false;
+    navigateStopDock(stops[next].id);
+    return true;
+  }
+
+  void _ensureDemoHighlightForDock(WaqfStop stop) {
+    if (!stop.hasDemosAndMeanings) {
+      demoHighlightActive = false;
+      selectedDemoScholar = null;
+      selectedDemoIndex = null;
+      return;
+    }
+    ScholarOpinion? op;
+    if (selectedScholar != null && selectedScholar!.isNotEmpty) {
+      final preferred = stop.opinionForScholar(selectedScholar);
+      if (preferred != null && preferred.demosAndMeanings.isNotEmpty) {
+        op = preferred;
+      }
+    }
+    if (op == null) {
+      for (final o in stop.opinions) {
+        if (o.demosAndMeanings.isNotEmpty) {
+          op = o;
+          break;
+        }
+      }
+    }
+    demoHighlightActive = true;
+    selectedDemoScholar = op?.scholar;
+    selectedDemoIndex ??= 0;
+  }
+
+  void setStopDockTab(int tab) {
+    final t = tab.clamp(0, 1);
+    if (!stopDockOpen) return;
+    if (stopDockTab == t) return;
+    stopDockTab = t;
+    // Keep mushaf highlight while the dock stays open.
+    final id = selectedStopId;
+    final stop = id == null ? null : stopById(id);
+    if (stop != null) _ensureDemoHighlightForDock(stop);
+    notifyListeners();
+  }
+
+  void togglePanelTheme() {
+    panelDark = !panelDark;
+    notifyListeners();
+  }
+
+  void closeStopDock() {
+    if (!stopDockOpen &&
+        !demoHighlightActive &&
+        selectedDemoScholar == null &&
+        selectedDemoIndex == null) {
+      return;
+    }
+    stopDockOpen = false;
+    demoHighlightActive = false;
+    selectedDemoScholar = null;
+    selectedDemoIndex = null;
+    notifyListeners();
+  }
+
   void toggleHideVerseEnd() {
     hideVerseEnd = !hideVerseEnd;
     _cachedVisibleStopCount = null;
@@ -678,10 +810,11 @@ class ReaderController extends ChangeNotifier {
 
   void select(String id) {
     selectedStopId = id;
-    // Normal badge tap: select stop but do not paint demo spans.
+    // Modal sheet path: select stop, close dock, no demo spans.
     demoHighlightActive = false;
     selectedDemoScholar = null;
     selectedDemoIndex = null;
+    stopDockOpen = false;
     notifyListeners();
   }
 
@@ -718,6 +851,122 @@ class ReaderController extends ChangeNotifier {
     selectedDemoScholar = scholar;
     selectedDemoIndex = demoIndex;
     notifyListeners();
+  }
+
+  /// Visible stops that have demos, in mushaf reading order (ayah, word).
+  List<WaqfStop> get demoNavStops {
+    final out = <WaqfStop>[];
+    for (final s in sampleStops) {
+      if (!isStopVisible(s) || !s.hasDemosAndMeanings) continue;
+      out.add(s);
+    }
+    out.sort((a, b) {
+      final byAyah = a.ayah.compareTo(b.ayah);
+      if (byAyah != 0) return byAyah;
+      return a.wordIndex.compareTo(b.wordIndex);
+    });
+    return out;
+  }
+
+  ScholarOpinion? _demoOpinionFor(WaqfStop stop) {
+    final preferred = selectedDemoScholar ?? selectedScholar;
+    if (preferred != null && preferred.isNotEmpty) {
+      final op = stop.opinionForScholar(preferred);
+      if (op != null && op.demosAndMeanings.isNotEmpty) return op;
+    }
+    for (final op in stop.opinions) {
+      if (op.demosAndMeanings.isNotEmpty) return op;
+    }
+    return null;
+  }
+
+  /// Current position among swipeable demos: (stopIndex, demoIndex), or null.
+  (int, int)? get demoNavPosition {
+    if (!demoHighlightActive || selectedStopId == null) return null;
+    final stops = demoNavStops;
+    final stopIdx = stops.indexWhere((s) => s.id == selectedStopId);
+    if (stopIdx < 0) return null;
+    final op = _demoOpinionFor(stops[stopIdx]);
+    if (op == null || op.demosAndMeanings.isEmpty) return null;
+    final demoIdx =
+        (selectedDemoIndex ?? 0).clamp(0, op.demosAndMeanings.length - 1);
+    return (stopIdx, demoIdx);
+  }
+
+  /// Total flat demo count for the «١ / ن» indicator.
+  int get demoNavTotalCount {
+    var n = 0;
+    for (final s in demoNavStops) {
+      final op = _demoOpinionFor(s);
+      if (op != null) n += op.demosAndMeanings.length;
+    }
+    return n;
+  }
+
+  /// 1-based flat index of the active demo, or 0 if none.
+  int get demoNavFlatIndex {
+    final pos = demoNavPosition;
+    if (pos == null) return 0;
+    final stops = demoNavStops;
+    var flat = 0;
+    for (var i = 0; i < pos.$1; i++) {
+      final op = _demoOpinionFor(stops[i]);
+      if (op != null) flat += op.demosAndMeanings.length;
+    }
+    return flat + pos.$2 + 1;
+  }
+
+  /// Step to next/prev demo. Cycles demos on the same stop first, then adjacent stops.
+  /// [delta] > 0 = next in reading order; < 0 = previous. Returns false at ends.
+  bool stepDemo(int delta) {
+    if (delta == 0 || !demoHighlightActive) return false;
+    final stops = demoNavStops;
+    if (stops.isEmpty) return false;
+
+    final pos = demoNavPosition;
+    if (pos == null) {
+      final first = stops.first;
+      final op = _demoOpinionFor(first);
+      if (op == null) return false;
+      activateDemoHighlight(first.id, scholar: op.scholar, demoIndex: 0);
+      return true;
+    }
+
+    var stopIdx = pos.$1;
+    var demoIdx = pos.$2;
+    final step = delta > 0 ? 1 : -1;
+    var remaining = delta.abs();
+
+    while (remaining > 0) {
+      final op = _demoOpinionFor(stops[stopIdx]);
+      final demoCount = op?.demosAndMeanings.length ?? 0;
+      final nextDemo = demoIdx + step;
+      if (nextDemo >= 0 && nextDemo < demoCount) {
+        demoIdx = nextDemo;
+        remaining -= 1;
+        continue;
+      }
+      final nextStop = stopIdx + step;
+      if (nextStop < 0 || nextStop >= stops.length) {
+        return false;
+      }
+      stopIdx = nextStop;
+      final nextOp = _demoOpinionFor(stops[stopIdx]);
+      final nextCount = nextOp?.demosAndMeanings.length ?? 0;
+      if (nextCount == 0) return false;
+      demoIdx = step > 0 ? 0 : nextCount - 1;
+      remaining -= 1;
+    }
+
+    final target = stops[stopIdx];
+    final targetOp = _demoOpinionFor(target);
+    if (targetOp == null) return false;
+    activateDemoHighlight(
+      target.id,
+      scholar: targetOp.scholar,
+      demoIndex: demoIdx,
+    );
+    return true;
   }
 
   /// Active demo used for mushaf span highlighting for the selected stop.

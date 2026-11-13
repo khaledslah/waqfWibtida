@@ -12,7 +12,7 @@ Future<void> _pumpUntilReady(WidgetTester tester) async {
       () => Future<void>.delayed(const Duration(milliseconds: 20)),
     );
     await tester.pump(const Duration(milliseconds: 50));
-    if (find.text('إخفاء رؤوس الآي').evaluate().isNotEmpty) {
+    if (find.textContaining('رؤوس الآي').evaluate().isNotEmpty) {
       await tester.pump();
       return;
     }
@@ -35,9 +35,13 @@ void main() {
 
     await _pumpUntilReady(tester);
 
-    // Find any StopBadge in Surah Al-Fatiha
-    final badge = find.byType(InkResponse).first;
-    await tester.tap(badge);
+    // Full WaqfBottomSheet opens from ayah options → stop (badge opens dock)
+    final ayahMark = find.bySemanticsLabel(RegExp(r'خيارات الآية'));
+    expect(ayahMark, findsWidgets);
+    await tester.tap(ayahMark.first);
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 300));
+    await tester.tap(find.byType(ListTile).first);
     await tester.pump();
     await tester.pump(const Duration(milliseconds: 400));
 

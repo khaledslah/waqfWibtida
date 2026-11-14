@@ -341,6 +341,20 @@ class ReaderController extends ChangeNotifier {
   /// Dock + bottom nav shared theme. Light by default; only flips via toggle.
   bool panelDark = false;
 
+  /// Session-only: show center swipe coaching once per app start.
+  bool swipeHintAvailable = true;
+
+  /// Returns true if a swipe-hint overlay should play (once per app start).
+  bool consumeSwipeHint() {
+    if (!swipeHintAvailable) return false;
+    swipeHintAvailable = false;
+    return true;
+  }
+
+  void dismissSwipeHint() {
+    swipeHintAvailable = false;
+  }
+
   static const String scholarAllSentinel = '__all__';
 
   static const List<String?> scholarOptions = <String?>[

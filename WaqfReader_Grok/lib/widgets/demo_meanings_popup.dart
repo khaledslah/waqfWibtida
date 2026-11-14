@@ -47,24 +47,6 @@ class _DemoMeaningsBoxState extends State<DemoMeaningsBox> {
     }
   }
 
-  void _toggleReport(String id) {
-    final willAdd = !widget.controller.isSent(id);
-    widget.controller.toggleSent(id);
-    ScaffoldMessenger.maybeOf(context)?.showSnackBar(
-      SnackBar(
-        behavior: SnackBarBehavior.floating,
-        duration: const Duration(seconds: 2),
-        margin: const EdgeInsets.fromLTRB(16, 0, 16, 32),
-        content: Text(
-          willAdd
-              ? 'أُضيف الوقف إلى قائمة المراجعة والإبلاغ'
-              : 'أُزيل الوقف من قائمة المراجعة',
-          style: AppText.ui(size: 14, color: AppColors.white),
-        ),
-      ),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     if (!widget.controller.demoHighlightActive) {
@@ -82,8 +64,6 @@ class _DemoMeaningsBoxState extends State<DemoMeaningsBox> {
     }
 
     final maxH = MediaQuery.sizeOf(context).height * 0.38;
-    final flat = widget.controller.demoNavFlatIndex;
-    final total = widget.controller.demoNavTotalCount;
     final tone = DockTone.of(widget.dark);
     final border = widget.dark ? AppColors.goldSoft : AppColors.gold;
     final fav = widget.controller.isFavorite(stop.id);
@@ -140,7 +120,11 @@ class _DemoMeaningsBoxState extends State<DemoMeaningsBox> {
                         tooltip: sent
                             ? 'في قائمة المراجعة (انقر للإلغاء)'
                             : 'إبلاغ / إضافة للمراجعة',
-                        onPressed: () => _toggleReport(stop.id),
+                        onPressed: () => confirmAndToggleStopReport(
+                          context,
+                          widget.controller,
+                          stop.id,
+                        ),
                         icon: Icon(
                           sent
                               ? Icons.flag_rounded
@@ -150,7 +134,11 @@ class _DemoMeaningsBoxState extends State<DemoMeaningsBox> {
                               : tone.muted,
                         ),
                       ),
-                      WaqfStopShareMenu(stop: stop, tone: tone),
+                      WaqfStopShareMenu(
+                        controller: widget.controller,
+                        stop: stop,
+                        tone: tone,
+                      ),
                       if (widget.showClose)
                         IconButton(
                           tooltip: 'إغلاق',
@@ -165,18 +153,6 @@ class _DemoMeaningsBoxState extends State<DemoMeaningsBox> {
                         ),
                     ],
                   ),
-                  if (total > 1) ...[
-                    const SizedBox(height: 4),
-                    Text(
-                      '${arabicDigits(flat)} / ${arabicDigits(total)}',
-                      textAlign: TextAlign.start,
-                      style: AppText.ui(
-                        size: 12,
-                        weight: FontWeight.w600,
-                        color: tone.muted,
-                      ),
-                    ),
-                  ],
                   if (meaningWaqf.isNotEmpty) ...[
                     const SizedBox(height: 8),
                     _MeaningLine(

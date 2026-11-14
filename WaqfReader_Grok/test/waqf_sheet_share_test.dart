@@ -53,7 +53,7 @@ void main() {
     expect(find.text('مشاركة'), findsWidgets);
 
     // Verify stop share menu button exists
-    final shareMenuBtn = find.byTooltip('خيارات الوقف (نسخ ومشاركة)');
+    final shareMenuBtn = find.byTooltip('مشاركة الوقف');
     expect(shareMenuBtn, findsOneWidget);
 
     // Verify report flag button is on top, and verify button is NOT on WaqfBottomSheet
@@ -65,10 +65,20 @@ void main() {
     expect(find.text('موافق للمراجعة'), findsNothing);
     expect(find.text('في قائمة المراجعة'), findsNothing);
 
-    // Tap report flag to add to review
+    // Tap report flag -> shows confirmation dialog; cancelling leaves state unchanged
     await tester.tap(reportFlagBtn);
-    await tester.pump();
-    await tester.pump(const Duration(milliseconds: 300));
+    await tester.pumpAndSettle();
+    expect(find.text('تأكيد إرسال الإبلاغ'), findsOneWidget);
+
+    await tester.tap(find.text('إلغاء'));
+    await tester.pumpAndSettle();
+    expect(find.byTooltip('إبلاغ / إضافة للمراجعة'), findsOneWidget);
+
+    // Tap report flag again -> confirm sending adds to review
+    await tester.tap(reportFlagBtn);
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('تأكيد الإرسال'));
+    await tester.pumpAndSettle();
 
     expect(find.byTooltip('في قائمة المراجعة (انقر للإلغاء)'), findsOneWidget);
 

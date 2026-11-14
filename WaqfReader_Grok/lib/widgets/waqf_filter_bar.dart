@@ -3,7 +3,7 @@
 import '../data/sample_data.dart';
 import '../theme/app_theme.dart';
 
-/// 1.1.1+3 underline filter theme, with clear إظهار / إخفاء labels.
+/// Underline filters with scholar picker on the same row.
 class WaqfFilterBar extends StatelessWidget {
   const WaqfFilterBar({super.key, required this.controller});
 
@@ -28,6 +28,7 @@ class WaqfFilterBar extends StatelessWidget {
             Row(
               children: [
                 Expanded(
+                  flex: 5,
                   child: _FilterToggle(
                     label: controller.hideVerseEnd
                         ? 'إظهار رؤوس الآي'
@@ -39,8 +40,9 @@ class WaqfFilterBar extends StatelessWidget {
                     onTap: controller.toggleHideVerseEnd,
                   ),
                 ),
-                const SizedBox(width: 8),
+                const SizedBox(width: 6),
                 Expanded(
+                  flex: 5,
                   child: _FilterToggle(
                     label: controller.hideUthmani
                         ? 'إظهار وقف المصحف'
@@ -52,75 +54,73 @@ class WaqfFilterBar extends StatelessWidget {
                     onTap: controller.toggleHideUthmani,
                   ),
                 ),
-              ],
-            ),
-            const SizedBox(height: 8),
-            PopupMenuButton<String>(
-              tooltip: 'اختيار العالم الرئيسي',
-              initialValue: menuValue,
-              onSelected: controller.setSelectedScholarFromMenu,
-              itemBuilder: (context) {
-                return [
-                  for (final sOpt in ReaderController.scholarOptions)
-                    PopupMenuItem<String>(
-                      value: sOpt ?? ReaderController.scholarAllSentinel,
-                      child: Text(
-                        sOpt ?? 'الكل (الافتراضي)',
-                        style: AppText.ui(
-                          size: 14,
-                          weight: (sOpt == activeScholar) ||
-                                  (sOpt == null && activeScholar == null)
-                              ? FontWeight.w700
-                              : FontWeight.w500,
-                          color: AppColors.forestDeep,
+                const SizedBox(width: 6),
+                Expanded(
+                  flex: 4,
+                  child: PopupMenuButton<String>(
+                    tooltip: 'اختيار العالم الرئيسي',
+                    initialValue: menuValue,
+                    onSelected: controller.setSelectedScholarFromMenu,
+                    itemBuilder: (context) {
+                      return [
+                        for (final sOpt in ReaderController.scholarOptions)
+                          PopupMenuItem<String>(
+                            value:
+                                sOpt ?? ReaderController.scholarAllSentinel,
+                            child: Text(
+                              sOpt ?? 'الكل (الافتراضي)',
+                              style: AppText.ui(
+                                size: 14,
+                                weight: (sOpt == activeScholar) ||
+                                        (sOpt == null &&
+                                            activeScholar == null)
+                                    ? FontWeight.w700
+                                    : FontWeight.w500,
+                                color: AppColors.forestDeep,
+                              ),
+                            ),
+                          ),
+                      ];
+                    },
+                    child: Container(
+                      constraints: const BoxConstraints(minHeight: 44),
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                        border: Border(
+                          bottom: BorderSide(
+                            color: AppColors.forest.withOpacity(0.35),
+                            width: 1,
+                          ),
                         ),
                       ),
-                    ),
-                ];
-              },
-              child: Container(
-                constraints: const BoxConstraints(minHeight: 44),
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
-                decoration: BoxDecoration(
-                  border: Border(
-                    bottom: BorderSide(
-                      color: AppColors.forest.withOpacity(0.35),
-                      width: 1,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Flexible(
+                            child: Text(
+                              scholarLabel,
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              textAlign: TextAlign.center,
+                              style: AppText.ui(
+                                size: 12,
+                                weight: FontWeight.w700,
+                                color: AppColors.forestDeep,
+                                height: 1.1,
+                              ),
+                            ),
+                          ),
+                          const Icon(
+                            Icons.expand_more,
+                            size: 18,
+                            color: AppColors.muted,
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
-                child: Row(
-                  children: [
-                    Text(
-                      'العالم:',
-                      style: AppText.ui(
-                        size: 13,
-                        weight: FontWeight.w700,
-                        color: AppColors.forestDeep,
-                      ),
-                    ),
-                    const SizedBox(width: 8),
-                    Expanded(
-                      child: Text(
-                        scholarLabel,
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: AppText.ui(
-                          size: 13,
-                          weight: FontWeight.w600,
-                          color: AppColors.ink,
-                        ),
-                      ),
-                    ),
-                    const Icon(
-                      Icons.expand_more,
-                      size: 20,
-                      color: AppColors.muted,
-                    ),
-                  ],
-                ),
-              ),
+              ],
             ),
             const SizedBox(height: 6),
             Text(
@@ -172,11 +172,13 @@ class _FilterToggle extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(
-                  selected ? Icons.visibility_off_outlined : Icons.visibility_outlined,
-                  size: 18,
+                  selected
+                      ? Icons.visibility_off_outlined
+                      : Icons.visibility_outlined,
+                  size: 16,
                   color: selected ? AppColors.forest : AppColors.muted,
                 ),
-                const SizedBox(width: 4),
+                const SizedBox(width: 3),
                 Flexible(
                   child: Text(
                     label,
@@ -184,7 +186,7 @@ class _FilterToggle extends StatelessWidget {
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: AppText.ui(
-                      size: 12,
+                      size: 11,
                       weight: selected ? FontWeight.w700 : FontWeight.w500,
                       color: selected ? AppColors.forest : AppColors.muted,
                       height: 1.1,

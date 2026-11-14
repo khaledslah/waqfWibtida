@@ -136,7 +136,7 @@ class _TopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Equal Expanded sides keep the app title optically centered.
+    // Surah name gets the width; title floats centered and yields when names are long.
     return Material(
       color: AppColors.parchment,
       elevation: 0,
@@ -144,37 +144,42 @@ class _TopBar extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
         child: SizedBox(
           height: 48,
-          child: Row(
+          child: Stack(
+            alignment: Alignment.center,
             children: [
-              Expanded(
-                child: controller.tab == 0
-                    ? Align(
-                        alignment: AlignmentDirectional.centerStart,
-                        child: _SurahChip(
-                          controller: controller,
-                          onTap: onOpenDrawer,
-                        ),
-                      )
-                    : const SizedBox.shrink(),
-              ),
-              FittedBox(
-                fit: BoxFit.scaleDown,
-                child: Text(
-                  'وقف وابتداء',
-                  maxLines: 1,
-                  style: AppText.ui(
-                    size: 20,
-                    weight: FontWeight.w800,
-                    color: AppColors.forestDeep,
-                    height: 1.2,
+              IgnorePointer(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 72),
+                  child: FittedBox(
+                    fit: BoxFit.scaleDown,
+                    child: Text(
+                      'وقف وابتداء',
+                      maxLines: 1,
+                      style: AppText.ui(
+                        size: 18,
+                        weight: FontWeight.w800,
+                        color: AppColors.forestDeep.withOpacity(0.88),
+                        height: 1.2,
+                      ),
+                    ),
                   ),
                 ),
               ),
-              Expanded(
-                child: Align(
-                  alignment: AlignmentDirectional.centerEnd,
-                  child: _OverflowMenu(controller: controller),
-                ),
+              Row(
+                children: [
+                  Expanded(
+                    child: controller.tab == 0
+                        ? Align(
+                            alignment: AlignmentDirectional.centerStart,
+                            child: _SurahChip(
+                              controller: controller,
+                              onTap: onOpenDrawer,
+                            ),
+                          )
+                        : const SizedBox.shrink(),
+                  ),
+                  _OverflowMenu(controller: controller),
+                ],
               ),
             ],
           ),
@@ -195,12 +200,10 @@ class _SurahChip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final name = controller.currentSurahName.isEmpty
+    final raw = controller.currentSurahName;
+    final name = raw.isEmpty
         ? '…'
-        : controller.currentSurahName;
-    // Drawer opens from the start edge — chevron points toward that edge.
-    final rtl = Directionality.of(context) == TextDirection.rtl;
-    final sideChevron = rtl ? Icons.chevron_right : Icons.chevron_left;
+        : raw.replaceFirst(RegExp(r'^سورة\s*'), '');
 
     return Padding(
       padding: const EdgeInsetsDirectional.only(start: 4),
@@ -212,21 +215,14 @@ class _SurahChip extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
             child: Row(
-              mainAxisSize: MainAxisSize.min,
               children: [
-                Icon(
-                  sideChevron,
-                  size: 20,
-                  color: AppColors.forestDeep,
-                ),
-                const SizedBox(width: 4),
                 const Icon(
-                  Icons.menu_book_outlined,
+                  Icons.menu_book,
                   size: 18,
                   color: AppColors.forestDeep,
                 ),
                 const SizedBox(width: 6),
-                Flexible(
+                Expanded(
                   child: Text(
                     name,
                     maxLines: 1,

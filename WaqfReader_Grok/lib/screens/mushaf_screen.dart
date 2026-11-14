@@ -20,7 +20,8 @@ class MushafScreen extends StatefulWidget {
 
 class _MushafScreenState extends State<MushafScreen> {
   final Map<int, GlobalKey> _ayahKeys = <int, GlobalKey>{};
-  String? _lastScrolledDemoKey;
+  final ScrollController _scrollController = ScrollController();
+  String? _lastScrolledFocusKey;
 
   ReaderController get controller => widget.controller;
 
@@ -45,32 +46,82 @@ class _MushafScreenState extends State<MushafScreen> {
   @override
   void dispose() {
     controller.removeListener(_onControllerChanged);
+    _scrollController.dispose();
     super.dispose();
   }
 
   void _onControllerChanged() {
-    if (!controller.stopDockOpen || !controller.demoHighlightActive) {
-      _lastScrolledDemoKey = null;
+    final id = controller.selectedStopId;
+    if (!controller.stopDockOpen || id == null) {
+      _lastScrolledFocusKey = null;
       return;
     }
-    final id = controller.selectedStopId;
-    final idx = controller.selectedDemoIndex ?? 0;
-    final key = '$id#$idx';
-    if (key == _lastScrolledDemoKey) return;
-    _lastScrolledDemoKey = key;
+    final idx = controller.demoHighlightActive
+        ? (controller.selectedDemoIndex ?? 0)
+        : -1;
+    final key = '${controller.currentSurah}:$id#$idx';
+    if (key == _lastScrolledFocusKey) return;
+    _lastScrolledFocusKey = key;
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (!mounted) return;
-      final stop = id == null ? null : controller.stopById(id);
+      final stop = controller.stopById(id);
       if (stop == null) return;
-      final ctx = _ayahKey(stop.ayah).currentContext;
-      if (ctx == null) return;
-      // Keep highlighted ayah in the upper part of the list, above the dock.
+      _ensureAyahFocused(stop.ayah, key);
+    });
+  }
+
+  void _ensureAyahFocused(
+    int targetAyah,
+    String expectedKey, {
+    int hops = 0,
+  }) {
+    if (!mounted ||
+        !controller.stopDockOpen ||
+        _lastScrolledFocusKey != expectedKey) {
+      return;
+    }
+    final ctx = _ayahKey(targetAyah).currentContext;
+    if (ctx != null) {
+      // Keep focused ayah in the upper part of the list, above the dock.
       Scrollable.ensureVisible(
         ctx,
         alignment: 0.08,
         duration: const Duration(milliseconds: 280),
         curve: Curves.easeOutCubic,
       );
+      return;
+    }
+    if (hops >= 10 || !_scrollController.hasClients) return;
+
+    final chunks = controller.currentAyahChunks;
+    final targetChunk = chunks.indexWhere(
+      (c) => c.any((a) => a.number == targetAyah),
+    );
+    if (targetChunk < 0 || chunks.isEmpty) return;
+
+    final pos = _scrollController.position;
+    final mountedAyahs = _ayahKeys.entries
+        .where((e) => e.value.currentContext != null)
+        .map((e) => e.key)
+        .toList()
+      ..sort();
+
+    final double nextOffset;
+    if (mountedAyahs.isEmpty ||
+        (hops == 0 && (targetAyah - mountedAyahs.last).abs() > 16 &&
+            (targetAyah - mountedAyahs.first).abs() > 16)) {
+      nextOffset = (pos.maxScrollExtent * (targetChunk / chunks.length))
+          .clamp(pos.minScrollExtent, pos.maxScrollExtent);
+    } else {
+      final step = (pos.viewportDimension * 0.8 + 400).clamp(300.0, 900.0);
+      nextOffset = (targetAyah > mountedAyahs.last
+              ? pos.pixels + step
+              : pos.pixels - step)
+          .clamp(pos.minScrollExtent, pos.maxScrollExtent);
+    }
+    if ((nextOffset - pos.pixels).abs() < 1) return;
+    _scrollController.jumpTo(nextOffset);
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _ensureAyahFocused(targetAyah, expectedKey, hops: hops + 1);
     });
   }
 
@@ -87,6 +138,7 @@ class _MushafScreenState extends State<MushafScreen> {
               ? const _EmptyReading()
               : ListView.builder(
                   key: ValueKey<int>(controller.currentSurah),
+                  controller: _scrollController,
                   padding: EdgeInsets.fromLTRB(12, 8, 12, dockOpen ? 24 : 12),
                   cacheExtent: 600,
                   itemCount: chunks.length,

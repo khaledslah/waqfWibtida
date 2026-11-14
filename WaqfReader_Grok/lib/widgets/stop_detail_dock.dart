@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../data/sample_data.dart';
+import '../models/waqf_models.dart';
 import '../theme/app_theme.dart';
 import 'demo_meanings_popup.dart';
 import 'waqf_bottom_sheet.dart';
@@ -17,11 +18,71 @@ class StopDetailDock extends StatefulWidget {
   State<StopDetailDock> createState() => _StopDetailDockState();
 }
 
-class _StopDetailDockState extends State<StopDetailDock> {
+class _StopDetailDockState extends State<StopDetailDock>
+    with SingleTickerProviderStateMixin {
   Offset? _origin;
   int? _pointer;
+  bool _showSwipeHint = false;
+  late final AnimationController _hintCtrl;
+  late final Animation<double> _hintFade;
+  late final Animation<Offset> _hintSlide;
 
   ReaderController get controller => widget.controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _hintCtrl = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 1400),
+    );
+    _hintFade = CurvedAnimation(
+      parent: _hintCtrl,
+      curve: const Interval(0.0, 0.2, curve: Curves.easeOut),
+      reverseCurve: const Interval(0.0, 0.35, curve: Curves.easeIn),
+    );
+    _hintSlide = Tween<Offset>(
+      begin: const Offset(0.18, 0),
+      end: const Offset(-0.18, 0),
+    ).animate(CurvedAnimation(parent: _hintCtrl, curve: Curves.easeInOut));
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => _maybePlayHint());
+  }
+
+  @override
+  void didUpdateWidget(covariant StopDetailDock oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (!oldWidget.controller.stopDockOpen && controller.stopDockOpen) {
+      WidgetsBinding.instance.addPostFrameCallback((_) => _maybePlayHint());
+    }
+  }
+
+  void _maybePlayHint() {
+    if (!mounted || !controller.stopDockOpen) return;
+    if (!controller.consumeSwipeHint()) return;
+    setState(() => _showSwipeHint = true);
+    _hintCtrl.forward(from: 0).then((_) async {
+      if (!mounted || !_showSwipeHint) return;
+      await Future<void>.delayed(const Duration(milliseconds: 280));
+      if (!mounted || !_showSwipeHint) return;
+      await _hintCtrl.reverse();
+      if (mounted) setState(() => _showSwipeHint = false);
+    });
+  }
+
+  void _stopHintNow() {
+    controller.dismissSwipeHint();
+    if (!_showSwipeHint) return;
+    _hintCtrl.stop();
+    _hintCtrl.value = 0;
+    setState(() => _showSwipeHint = false);
+  }
+
+  @override
+  void dispose() {
+    _hintCtrl.dispose();
+    super.dispose();
+  }
 
   void _onPointerDown(PointerDownEvent e) {
     _origin = e.position;
@@ -35,12 +96,12 @@ class _StopDetailDockState extends State<StopDetailDock> {
     _origin = null;
     _pointer = null;
 
-    // Need a clear horizontal swipe; ignore mostly-vertical scrolls.
     const threshold = 48.0;
     if (dx.abs() < threshold) return;
     if (dx.abs() <= dy.abs()) return;
 
-    // RTL: swipe left→right (dx > 0) = next waqf.
+    _stopHintNow();
+
     final goNext = dx > 0;
     final moved = controller.stepVisibleStop(goNext ? 1 : -1);
     if (moved) {
@@ -65,7 +126,7 @@ class _StopDetailDockState extends State<StopDetailDock> {
     if (stop == null) return const SizedBox.shrink();
 
     final bottom = MediaQuery.paddingOf(context).bottom;
-    final maxH = MediaQuery.sizeOf(context).height * 0.48;
+    final maxH = MediaQuery.sizeOf(context).height * 0.34;
     final hasDemos = stop.hasDemosAndMeanings;
     final tab = hasDemos ? controller.stopDockTab : 1;
     final dark = controller.panelDark;
@@ -74,7 +135,11 @@ class _StopDetailDockState extends State<StopDetailDock> {
     final accent = dark ? AppColors.goldSoft : AppColors.forest;
     final line = dark ? AppColors.sheetLine : AppColors.hairline;
 
-    // Listener sits above scrollables so swipe works anywhere without a tiny strip.
+    final visible = controller.visibleStops;
+    final waqfIndex = visible.indexWhere((s) => s.id == stop.id);
+    final waqfPos = waqfIndex >= 0 ? waqfIndex + 1 : 0;
+    final waqfTotal = visible.length;
+
     return Material(
       color: bg,
       elevation: 6,
@@ -85,89 +150,115 @@ class _StopDetailDockState extends State<StopDetailDock> {
         onPointerCancel: _onPointerCancel,
         child: ConstrainedBox(
           constraints: BoxConstraints(maxHeight: maxH),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
+          child: Stack(
             children: [
-              Padding(
-                padding: const EdgeInsets.fromLTRB(12, 8, 4, 0),
-                child: Row(
-                  children: [
-                    // RTL: first child sits on the right → الأقوال on the right.
-                    Expanded(
-                      child: _DockTab(
-                        label: 'الأقوال',
-                        selected: tab == 1,
-                        enabled: true,
-                        dark: dark,
-                        onTap: () => controller.setStopDockTab(1),
-                      ),
+              Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(8, 8, 4, 4),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: _DockTab(
+                            label: 'آراء العلماء',
+                            selected: tab == 1,
+                            enabled: true,
+                            dark: dark,
+                            onTap: () => controller.setStopDockTab(1),
+                          ),
+                        ),
+                        const SizedBox(width: 8),
+                        Expanded(
+                          child: _DockTab(
+                            label: 'المعاني',
+                            selected: tab == 0,
+                            enabled: hasDemos,
+                            dark: dark,
+                            onTap: hasDemos
+                                ? () => controller.setStopDockTab(0)
+                                : null,
+                          ),
+                        ),
+                        if (waqfTotal > 0)
+                          Padding(
+                            padding: const EdgeInsetsDirectional.only(
+                              start: 6,
+                              end: 2,
+                            ),
+                            child: Text(
+                              '${arabicDigits(waqfPos)} / ${arabicDigits(waqfTotal)}',
+                              textAlign: TextAlign.center,
+                              style: AppText.ui(
+                                size: 12,
+                                weight: FontWeight.w700,
+                                color: muted,
+                                height: 1.1,
+                              ),
+                            ),
+                          ),
+                        IconButton(
+                          tooltip: dark ? 'سمة فاتحة' : 'سمة داكنة',
+                          onPressed: controller.togglePanelTheme,
+                          icon: Icon(
+                            dark
+                                ? Icons.light_mode_outlined
+                                : Icons.dark_mode_outlined,
+                            color: accent,
+                          ),
+                        ),
+                        IconButton(
+                          tooltip: 'إغلاق',
+                          onPressed: controller.closeStopDock,
+                          icon: Icon(Icons.close, color: muted),
+                        ),
+                      ],
                     ),
-                    const SizedBox(width: 8),
-                    Expanded(
-                      child: _DockTab(
-                        label: 'المعاني',
-                        selected: tab == 0,
-                        enabled: hasDemos,
-                        dark: dark,
-                        onTap: hasDemos
-                            ? () => controller.setStopDockTab(0)
-                            : null,
-                      ),
-                    ),
-                    IconButton(
-                      tooltip: dark ? 'سمة فاتحة' : 'سمة داكنة',
-                      onPressed: controller.togglePanelTheme,
-                      icon: Icon(
-                        dark
-                            ? Icons.light_mode_outlined
-                            : Icons.dark_mode_outlined,
-                        color: accent,
-                      ),
-                    ),
-                    IconButton(
-                      tooltip: 'إغلاق',
-                      onPressed: controller.closeStopDock,
-                      icon: Icon(Icons.close, color: muted),
-                    ),
-                  ],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(bottom: 4),
-                child: Tooltip(
-                  message: 'اسحب للتنقل بين الوقوف',
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Icon(Icons.chevron_left, size: 16, color: muted),
-                      Icon(Icons.swipe, size: 18, color: muted),
-                      Icon(Icons.chevron_right, size: 16, color: muted),
-                    ],
                   ),
-                ),
-              ),
-              Divider(height: 1, thickness: 1, color: line),
-              Flexible(
-                child: tab == 0 && hasDemos
-                    ? ListView(
-                        padding: EdgeInsets.only(bottom: bottom + 4),
-                        children: [
-                          DemoMeaningsBox(
+                  Divider(height: 1, thickness: 1, color: line),
+                  Flexible(
+                    child: tab == 0 && hasDemos
+                        ? ListView(
+                            padding: EdgeInsets.only(bottom: bottom + 4),
+                            children: [
+                              DemoMeaningsBox(
+                                controller: controller,
+                                showClose: false,
+                                dark: dark,
+                              ),
+                            ],
+                          )
+                        : WaqfStopSheetPanel(
                             controller: controller,
-                            showClose: false,
+                            stopId: stop.id,
+                            includeDemos: false,
+                            showAiSection: false,
                             dark: dark,
                           ),
-                        ],
-                      )
-                    : WaqfStopSheetPanel(
-                        controller: controller,
-                        stopId: stop.id,
-                        includeDemos: false,
-                        showAiSection: false,
-                        dark: dark,
-                      ),
+                  ),
+                ],
               ),
+              if (_showSwipeHint)
+                Positioned.fill(
+                  child: IgnorePointer(
+                    child: FadeTransition(
+                      opacity: _hintFade,
+                      child: ColoredBox(
+                        color: bg.withOpacity(0.55),
+                        child: Center(
+                          child: SlideTransition(
+                            position: _hintSlide,
+                            child: Icon(
+                              Icons.swipe,
+                              size: 52,
+                              color: accent.withOpacity(0.9),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
             ],
           ),
         ),

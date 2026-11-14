@@ -31,6 +31,79 @@ Future<void> showWaqfSheet(
   );
 }
 
+/// Confirms with the user before submitting or cancelling a stop report.
+Future<void> confirmAndToggleStopReport(
+  BuildContext context,
+  ReaderController controller,
+  String stopId,
+) async {
+  final willAdd = !controller.isSent(stopId);
+  final stop = controller.stopById(stopId);
+  final stopLabel = stop == null
+      ? ''
+      : '\n﴿${stop.word}﴾ — ${controller.currentSurahName}، آية ${arabicDigits(stop.ayah)}';
+
+  final confirmed = await showDialog<bool>(
+    context: context,
+    builder: (dialogContext) => Directionality(
+      textDirection: TextDirection.rtl,
+      child: AlertDialog(
+        title: Text(
+          willAdd ? 'تأكيد إرسال الإبلاغ' : 'تأكيد إلغاء الإبلاغ',
+          style: AppText.ui(
+            size: 17,
+            weight: FontWeight.w700,
+            color: AppColors.forestDeep,
+          ),
+        ),
+        content: Text(
+          willAdd
+              ? 'هل تريد إرسال هذا الموضع للمراجعة والإبلاغ؟$stopLabel'
+              : 'هل تريد إزالة هذا الموضع من قائمة المراجعة والإبلاغ؟$stopLabel',
+          style: AppText.ui(size: 14, color: AppColors.ink),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(dialogContext).pop(false),
+            child: Text(
+              'إلغاء',
+              style: AppText.ui(size: 14, color: AppColors.muted),
+            ),
+          ),
+          FilledButton(
+            onPressed: () => Navigator.of(dialogContext).pop(true),
+            child: Text(
+              willAdd ? 'تأكيد الإرسال' : 'تأكيد الإزالة',
+              style: AppText.ui(
+                size: 14,
+                weight: FontWeight.w700,
+                color: AppColors.white,
+              ),
+            ),
+          ),
+        ],
+      ),
+    ),
+  );
+
+  if (confirmed != true || !context.mounted) return;
+  await controller.toggleSent(stopId);
+  if (!context.mounted) return;
+  ScaffoldMessenger.maybeOf(context)?.showSnackBar(
+    SnackBar(
+      behavior: SnackBarBehavior.floating,
+      duration: const Duration(seconds: 2),
+      margin: const EdgeInsets.fromLTRB(16, 0, 16, 32),
+      content: Text(
+        willAdd
+            ? 'أُضيف الوقف إلى قائمة المراجعة والإبلاغ'
+            : 'أُزيل الوقف من قائمة المراجعة',
+        style: AppText.ui(size: 14, color: AppColors.white),
+      ),
+    ),
+  );
+}
+
 class WaqfBottomSheet extends StatefulWidget {
   const WaqfBottomSheet({
     super.key,
@@ -50,24 +123,6 @@ class WaqfBottomSheet extends StatefulWidget {
 }
 
 class _WaqfBottomSheetState extends State<WaqfBottomSheet> {
-  void _toggleReport(String id) {
-    final willAdd = !widget.controller.isSent(id);
-    widget.controller.toggleSent(id);
-    ScaffoldMessenger.maybeOf(context)?.showSnackBar(
-      SnackBar(
-        behavior: SnackBarBehavior.floating,
-        duration: const Duration(seconds: 2),
-        margin: const EdgeInsets.fromLTRB(16, 0, 16, 32),
-        content: Text(
-          willAdd
-              ? 'أُضيف الوقف إلى قائمة المراجعة والإبلاغ'
-              : 'أُزيل الوقف من قائمة المراجعة',
-          style: AppText.ui(size: 14, color: AppColors.white),
-        ),
-      ),
-    );
-  }
-
   Future<void> _openPage(int? page) async {
     if (page == null) return;
     await showSajawandiPage(context, page: page);
@@ -137,7 +192,12 @@ class _WaqfBottomSheetState extends State<WaqfBottomSheet> {
                                 sent: sent,
                                 onToggleFavorite: () => widget.controller
                                     .toggleFavorite(stop.id),
-                                onToggleReport: () => _toggleReport(stop.id),
+                                onToggleReport: () =>
+                                    confirmAndToggleStopReport(
+                                      context,
+                                      widget.controller,
+                                      stop.id,
+                                    ),
                                 onOpenPage: _openPage,
                               ),
                             ),
@@ -156,56 +216,66 @@ class _WaqfBottomSheetState extends State<WaqfBottomSheet> {
   }
 }
 
-/// Favorite-row share control (copy / share) — shared by أقوال and معاني.
+/// Stop share menu: أقوال / معاني / الكل (no copy in the list).
 class WaqfStopShareMenu extends StatelessWidget {
-  const WaqfStopShareMenu({super.key, required this.stop, required this.tone});
+  const WaqfStopShareMenu({
+    super.key,
+    required this.controller,
+    required this.stop,
+    required this.tone,
+  });
 
+  final ReaderController controller;
   final WaqfStop stop;
   final DockTone tone;
 
+  void _share(BuildContext context, StopShareMode mode) {
+    final text = formatStopShare(
+      stop,
+      mode: mode,
+      ayah: ayahForStop(controller, stop),
+      surahName: controller.currentSurahName,
+      highlightDemo: shareHighlightDemo(controller, stop),
+    );
+    shareText(context, text, subject: 'وقف: ${stop.word}');
+  }
+
   @override
   Widget build(BuildContext context) {
-    return PopupMenuButton<String>(
-      tooltip: 'خيارات الوقف (نسخ ومشاركة)',
+    final hasMeanings = stop.hasDemosAndMeanings;
+    return PopupMenuButton<StopShareMode>(
+      tooltip: 'مشاركة الوقف',
       icon: Icon(Icons.share_outlined, color: tone.muted),
       color: tone.raised,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12),
         side: BorderSide(color: tone.line),
       ),
-      onSelected: (action) {
-        final text = formatStopText(stop);
-        if (action == 'copy') {
-          copyText(context, text, message: 'تم نسخ نص الوقف وأقوال العلماء');
-        } else if (action == 'share') {
-          shareText(context, text, subject: 'وقف: ${stop.word}');
-        }
-      },
+      onSelected: (mode) => _share(context, mode),
       itemBuilder: (context) => [
         PopupMenuItem(
-          value: 'copy',
-          child: Row(
-            children: [
-              Icon(Icons.copy_rounded, size: 18, color: tone.text),
-              const SizedBox(width: 8),
-              Text(
-                'نسخ الوقف كاملاً',
-                style: AppText.ui(size: 13, color: tone.text),
-              ),
-            ],
+          value: StopShareMode.opinions,
+          child: Text(
+            'آراء العلماء',
+            style: AppText.ui(size: 13, color: tone.text),
           ),
         ),
         PopupMenuItem(
-          value: 'share',
-          child: Row(
-            children: [
-              Icon(Icons.share_outlined, size: 18, color: tone.text),
-              const SizedBox(width: 8),
-              Text(
-                'مشاركة الوقف',
-                style: AppText.ui(size: 13, color: tone.text),
-              ),
-            ],
+          value: StopShareMode.meanings,
+          enabled: hasMeanings,
+          child: Text(
+            'المعاني',
+            style: AppText.ui(
+              size: 13,
+              color: hasMeanings ? tone.text : tone.muted,
+            ),
+          ),
+        ),
+        PopupMenuItem(
+          value: StopShareMode.all,
+          child: Text(
+            'الكل',
+            style: AppText.ui(size: 13, color: tone.text),
           ),
         ),
       ],
@@ -327,7 +397,11 @@ class WaqfStopSheetBody extends StatelessWidget {
                 color: sent ? const Color(0xFFE2A44B) : tone.muted,
               ),
             ),
-            WaqfStopShareMenu(stop: stop, tone: tone),
+            WaqfStopShareMenu(
+              controller: controller,
+              stop: stop,
+              tone: tone,
+            ),
           ],
         ),
         const SizedBox(height: 4),
@@ -420,24 +494,6 @@ class WaqfStopSheetPanel extends StatefulWidget {
 }
 
 class _WaqfStopSheetPanelState extends State<WaqfStopSheetPanel> {
-  void _toggleReport(String id) {
-    final willAdd = !widget.controller.isSent(id);
-    widget.controller.toggleSent(id);
-    ScaffoldMessenger.maybeOf(context)?.showSnackBar(
-      SnackBar(
-        behavior: SnackBarBehavior.floating,
-        duration: const Duration(seconds: 2),
-        margin: const EdgeInsets.fromLTRB(16, 0, 16, 32),
-        content: Text(
-          willAdd
-              ? 'أُضيف الوقف إلى قائمة المراجعة والإبلاغ'
-              : 'أُزيل الوقف من قائمة المراجعة',
-          style: AppText.ui(size: 14, color: AppColors.white),
-        ),
-      ),
-    );
-  }
-
   Future<void> _openPage(int? page) async {
     if (page == null) return;
     await showSajawandiPage(context, page: page);
@@ -476,7 +532,11 @@ class _WaqfStopSheetPanelState extends State<WaqfStopSheetPanel> {
                 sent: sent,
                 onToggleFavorite: () =>
                     widget.controller.toggleFavorite(stop.id),
-                onToggleReport: () => _toggleReport(stop.id),
+                onToggleReport: () => confirmAndToggleStopReport(
+                  context,
+                  widget.controller,
+                  stop.id,
+                ),
                 onOpenPage: _openPage,
                 showAiSection: widget.showAiSection,
                 dark: widget.dark,
@@ -713,7 +773,11 @@ class _OpinionRow extends StatelessWidget {
             children: [
               InkWell(
                 onTap: () {
-                  final text = formatOpinionText(stop, opinion);
+                  final text = formatOpinionText(
+                    stop,
+                    opinion,
+                    surahName: controller.currentSurahName,
+                  );
                   copyText(
                     context,
                     text,
@@ -749,7 +813,11 @@ class _OpinionRow extends StatelessWidget {
               const SizedBox(width: 8),
               InkWell(
                 onTap: () {
-                  final text = formatOpinionText(stop, opinion);
+                  final text = formatOpinionText(
+                    stop,
+                    opinion,
+                    surahName: controller.currentSurahName,
+                  );
                   shareText(
                     context,
                     text,

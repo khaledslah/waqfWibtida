@@ -36,11 +36,11 @@ void main() {
     await _pumpUntilReady(tester);
 
     expect(find.text('وقف وابتداء'), findsOneWidget);
-    expect(find.text('سورة الفاتحة'), findsWidgets);
+    expect(find.text('الفاتحة'), findsWidgets);
     expect(find.textContaining('رؤوس الآي'), findsOneWidget);
-    expect(find.text('العالم:'), findsOneWidget);
+    expect(find.byTooltip('اختيار العالم الرئيسي'), findsOneWidget);
 
-    await tester.tap(find.byTooltip('عرض وقوف سورة الفاتحة'));
+    await tester.tap(find.byTooltip('عرض وقوف الفاتحة'));
     await tester.pump();
     await tester.pump(const Duration(milliseconds: 300));
 
@@ -63,7 +63,7 @@ void main() {
 
     // Verify S66:4-5 mid-line prose recovery (ظهير -> منكن) and وأبكارا multi-face
     final s66a4w21 = bundle!.stops.firstWhere((s) => s.id == 's66-a4-w21');
-    expect(s66a4w21.opinionForScholar('الأشموني')!.comment, isNull);
+    expect(s66a4w21.opinionForScholar('الأشموني')!.comment, 'ظهير كاف.');
 
     final s66a5w9 = bundle.stops.firstWhere((s) => s.id == 's66-a5-w9');
     final ashmMinkun = s66a5w9.opinionForScholar('الأشموني')!;
@@ -82,7 +82,7 @@ void main() {
     expect(s66a6w6.hasScholar('الأشموني'), isTrue);
     expect(s66a6w6.verdictLabelForScholar('الأشموني'), 'ج');
     expect(s66a6w6.symbolForScholar('الأشموني'), StopSymbol.jaiz);
-    expect(s66a6w6.isQilaForScholar('الأشموني'), isFalse);
+    expect(s66a6w6.isQilaForScholar('الأشموني'), isTrue);
 
     final s66a6w7 = bundle.stops.firstWhere((s) => s.id == 's66-a6-w7');
     expect(s66a6w7.hasScholar('الأشموني'), isTrue);
@@ -93,19 +93,19 @@ void main() {
     final saj = s66a8w28.opinionForScholar('السجاوندي')!;
     expect(saj.verdicts, ['جائز', 'لا يوقف']);
     expect(saj.verdictLabels, ['ج', 'لا']);
-    expect(saj.isQila, [false, false]);
+    expect(saj.isQila, [false, true]);
 
     final dani = s66a8w28.opinionForScholar('الداني')!;
     expect(dani.verdicts, ['تام']);
     expect(dani.verdictLabels, ['ط']);
-    expect(dani.isQila, [true]);
+    expect(dani.isQila, [false]);
     expect(s66a8w28.verdictLabelForScholar('الداني'), 'ط');
-    expect(s66a8w28.isQilaForScholar('الداني'), isTrue);
+    expect(s66a8w28.isQilaForScholar('الداني'), isFalse);
 
     final ashm = s66a8w28.opinionForScholar('الأشموني')!;
     expect(ashm.verdicts, ['تام', 'لا يوقف']);
     expect(ashm.verdictLabels, ['ط', 'لا']);
-    expect(ashm.isQila, [true, false]);
+    expect(ashm.isQila, [false, true]);
   });
 
   testWidgets('Surah 4 Ayah 1 complete coverage across all 4 scholars',

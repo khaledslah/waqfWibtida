@@ -19,7 +19,7 @@
           "index": 1,
           "text": "وَٱلضُّحَىٰ",
           "textImlai": "وَالضُّحٰىۙ‏",
-          "stopId": null,
+          "stopId": "s93-a1-w1",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -470,18 +470,18 @@
   ],
   "stops": [
     {
-      "id": "s93-a2-w3",
+      "id": "s93-a1-w1",
       "surah": 93,
-      "ayah": 2,
-      "wordIndex": 3,
-      "word": "سَجَىٰ",
+      "ayah": 1,
+      "wordIndex": 1,
+      "word": "وَٱلضُّحَىٰ",
       "textPage": null,
       "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "الأشموني",
-          "targetWord": "سجى",
+          "targetWord": "وَٱلضُّحَىٰ",
           "verdict": [
             "لا يوقف"
           ],
@@ -496,7 +496,8 @@
           ],
           "book": "منار الهدى",
           "page": "429",
-          "comment": "ولا وقف من أولها إلى قلى فلا يوقف على سجى لأن ما بعده جواب القسم ولا يفصل بين القسم وجوابه بالوقف"
+          "comment": "ولا وقف من أولها إلى قلى فلا يوقف على سجى لأن ما بعده جواب القسم ولا يفصل بين القسم وجوابه بالوقف",
+          "demosAndMeanings": null
         }
       ],
       "aiSuggestion": null,
@@ -505,7 +506,46 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "jamharah_t21755.json"
+      "sourceBatch": "llm_grounded_v1"
+    },
+    {
+      "id": "s93-a2-w3",
+      "surah": 93,
+      "ayah": 2,
+      "wordIndex": 3,
+      "word": "سَجَىٰ",
+      "textPage": null,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "الأشموني",
+          "targetWord": "سَجَىٰ",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "429",
+          "comment": "ولا وقف من أولها إلى قلى فلا يوقف على سجى لأن ما بعده جواب القسم ولا يفصل بين القسم وجوابه بالوقف",
+          "demosAndMeanings": null
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "llm_grounded_v1"
     },
     {
       "id": "s93-a3-w5",
@@ -519,7 +559,7 @@
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "targetWord": "وما قلى",
+          "targetWord": "قَلَىٰ",
           "verdict": [
             "تام"
           ],
@@ -534,11 +574,27 @@
           ],
           "book": "علل الوقوف",
           "page": "3/1135",
-          "comment": "الوقف على {وما قلى}: لجواب القسم"
+          "comment": "الوقف على: {وما قلى} لجواب القسم.",
+          "demosAndMeanings": [
+            {
+              "verdict": "تام",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                5
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ ﴾ [قف على: قَلَىٰ]",
+              "ibtidaDemo": "﴿ وَلَلْـَٔاخِرَةُ خَيْرٌۭ لَّكَ مِنَ ٱلْأُولَىٰ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "تمام المعنى المقصود من جواب القسم في ردّ مقالة المشركين.",
+              "meaningAtIbtida": "ابتداء وعد وبشارة مستقلة بأن ما ادّخره الله له في الآخرة خير من الدنيا.",
+              "meaningIfConnected": "الوقف تام على رأس الآية لتمام جواب القسم واستقلال ما بعده."
+            }
+          ]
         },
         {
           "scholar": "ابن الأنباري",
-          "targetWord": "ما ودعك ربك وما قلى",
+          "targetWord": "قَلَىٰ",
           "verdict": [
             "تام"
           ],
@@ -553,11 +609,27 @@
           ],
           "book": "إيضاح الوقف والابتداء",
           "page": "2/979",
-          "comment": "(ما ودعك ربك وما قلى) [3]  وقف التمام وهو جواب القسم"
+          "comment": "(ما ودعك ربك وما قلى) وقف التمام وهو جواب القسم.",
+          "demosAndMeanings": [
+            {
+              "verdict": "تام",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                5
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ ﴾ [قف على: قَلَىٰ]",
+              "ibtidaDemo": "﴿ وَلَلْـَٔاخِرَةُ خَيْرٌۭ لَّكَ مِنَ ٱلْأُولَىٰ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "تمام جواب القسم بنفي التوديع والترك ونفي القِلى (وهو البغض) عن النبي صلى الله عليه وسلم.",
+              "meaningAtIbtida": "ابتداء جملة مستأنفة مؤكدة باللام تفيد تفضيل الدار الآخرة على الدنيا له صلى الله عليه وسلم.",
+              "meaningIfConnected": "الوقف تام وراس آية؛ لاستقلال جواب القسم لفظاً ومعنى عما بعده."
+            }
+          ]
         },
         {
           "scholar": "الداني",
-          "targetWord": "ما ودعك ربك وما قلى",
+          "targetWord": "قَلَىٰ",
           "verdict": [
             "تام"
           ],
@@ -572,30 +644,62 @@
           ],
           "book": "المكتفى",
           "page": "622",
-          "comment": "جواب القسم {ما ودعك ربك وما قلى}  وهو تام"
+          "comment": "جواب القسم: {ما ودعك ربك وما قلى} وهو تام.",
+          "demosAndMeanings": [
+            {
+              "verdict": "تام",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                5
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ ﴾ [قف على: قَلَىٰ]",
+              "ibtidaDemo": "﴿ وَلَلْـَٔاخِرَةُ خَيْرٌۭ لَّكَ مِنَ ٱلْأُولَىٰ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "انقضاء جملة جواب القسم بنفي الترك والإبغاض من الله تعالى لنبيه صلى الله عليه وسلم.",
+              "meaningAtIbtida": "استئناف إخبار جديد مؤكد بلام الابتداء بكون الآخرة خيراً له من الأولى.",
+              "meaningIfConnected": "الوقف تام وراس آية؛ لانقطاع الجملة الثانية عن الأولى إعرابياً."
+            }
+          ]
         },
         {
           "scholar": "الأشموني",
-          "targetWord": "قلى",
+          "targetWord": "قَلَىٰ",
           "verdict": [
             "حسن"
           ],
           "verdictLabel": [
-            "ز"
+            "ص"
           ],
           "symbol": [
-            "mujawwaz"
+            "murakhkhas"
           ],
           "isQila": [
             false
           ],
           "book": "منار الهدى",
           "page": "429",
-          "comment": null
+          "comment": "ولا وقف من أولها إلى قلى فلا يوقف على سجى لأن ما بعده جواب القسم ولا يفصل بين القسم وجوابه بالوقف، قلى حسن.",
+          "demosAndMeanings": [
+            {
+              "verdict": "حسن",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                5
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ ﴾ [قف على: قَلَىٰ]",
+              "ibtidaDemo": "﴿ وَلَلْـَٔاخِرَةُ خَيْرٌۭ لَّكَ مِنَ ٱلْأُولَىٰ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "إفادة نفي الترك والبغض في جواب القسم، وهو كلام مفيد في ذاته.",
+              "meaningAtIbtida": "الابتداء بجملة معطوفة على جواب القسم أو مشاركة له في التعلق بالقسم.",
+              "meaningIfConnected": "عُدّ حسناً مراعاةً لوجه عطف ﴿وَلَلْـَٔاخِرَةُ﴾ على جواب القسم، والوقف والابتداء كلاهما سائغ لكونه رأس آية."
+            }
+          ]
         },
         {
           "scholar": "النحاس",
-          "targetWord": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ",
+          "targetWord": "قَلَىٰ",
           "verdict": [
             "تام"
           ],
@@ -609,8 +713,24 @@
             false
           ],
           "book": "القطع والائتناف",
-          "page": "808",
-          "comment": "التمام ﴿مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ﴾"
+          "page": "آية 3",
+          "comment": "التمام ﴿مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ﴾.",
+          "demosAndMeanings": [
+            {
+              "verdict": "تام",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                5
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ ﴾ [قف على: قَلَىٰ]",
+              "ibtidaDemo": "﴿ وَلَلْـَٔاخِرَةُ خَيْرٌۭ لَّكَ مِنَ ٱلْأُولَىٰ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "تمام جملة جواب القسم المنفية واستغناؤها عما بعدها.",
+              "meaningAtIbtida": "ابتداء جملة اسمية مؤكدة باللام في بيان فضل الآخرة على الأولى.",
+              "meaningIfConnected": "الوقف تام وراس آية؛ لانتهاء جواب القسم واستئناف الجملة الاسمية بعده."
+            }
+          ]
         }
       ],
       "aiSuggestion": null,
@@ -619,7 +739,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "jamharah_t21755.json"
+      "sourceBatch": "llm_grounded_v1"
     },
     {
       "id": "s93-a4-w5",
@@ -633,7 +753,7 @@
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "targetWord": "من",
+          "targetWord": "ٱلْأُولَىٰ",
           "verdict": [
             "تام"
           ],
@@ -648,11 +768,27 @@
           ],
           "book": "علل الوقوف",
           "page": "3/1135",
-          "comment": "للام الابتداء و: {سوف}"
+          "comment": "{من الأولى} للام الابتداء و: {سوف}.",
+          "demosAndMeanings": [
+            {
+              "verdict": "تام",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                5
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ وَلَلْـَٔاخِرَةُ خَيْرٌۭ لَّكَ مِنَ ٱلْأُولَىٰ ﴾ [قف على: ٱلْأُولَىٰ]",
+              "ibtidaDemo": "﴿ وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰٓ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "تمام المعنى في المفاضلة بين الدارين للنبي صلى الله عليه وسلم.",
+              "meaningAtIbtida": "ابتداء بشارة مستقلة بالعطاء الإلهي في المستقبل حتى يرضى.",
+              "meaningIfConnected": "الوقف تام على رأس الآية لاستقلال كل بشارة بلفظها وتركيبها."
+            }
+          ]
         },
         {
           "scholar": "ابن الأنباري",
-          "targetWord": "من الأولى",
+          "targetWord": "ٱلْأُولَىٰ",
           "verdict": [
             "تام"
           ],
@@ -667,11 +803,27 @@
           ],
           "book": "إيضاح الوقف والابتداء",
           "page": "2/979",
-          "comment": "ومثله: (من الأولى) [4]"
+          "comment": "(ما ودعك ربك وما قلى) وقف التمام وهو جواب القسم. ومثله: (من الأولى).",
+          "demosAndMeanings": [
+            {
+              "verdict": "تام",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                5
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ وَلَلْـَٔاخِرَةُ خَيْرٌۭ لَّكَ مِنَ ٱلْأُولَىٰ ﴾ [قف على: ٱلْأُولَىٰ]",
+              "ibtidaDemo": "﴿ وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰٓ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "تمام الإخبار بتفضيل الدار الآخرة على الدار الأولى للنبي صلى الله عليه وسلم.",
+              "meaningAtIbtida": "ابتداء جملة مستأنفة مؤكدة باللام في الوعد بالعطاء الجزيل المؤدي إلى الرضا.",
+              "meaningIfConnected": "الوقف تام وراس آية؛ لاستقلال الجملة الاسمية التفضيلية عن جملة الوعد بعدها."
+            }
+          ]
         },
         {
           "scholar": "الداني",
-          "targetWord": "من الأولى",
+          "targetWord": "ٱلْأُولَىٰ",
           "verdict": [
             "تام"
           ],
@@ -686,11 +838,27 @@
           ],
           "book": "المكتفى",
           "page": "622",
-          "comment": "ومثله {من الأولى}. {فترضى}  أتم منهما"
+          "comment": "جواب القسم: {ما ودعك ربك وما قلى} وهو تام. ومثله {من الأولى}.",
+          "demosAndMeanings": [
+            {
+              "verdict": "تام",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                5
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ وَلَلْـَٔاخِرَةُ خَيْرٌۭ لَّكَ مِنَ ٱلْأُولَىٰ ﴾ [قف على: ٱلْأُولَىٰ]",
+              "ibtidaDemo": "﴿ وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰٓ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "اكتمال المبتدأ والخبر ومتعلقاتهما في بيان خيرية الآخرة.",
+              "meaningAtIbtida": "استئناف وعد جديد مؤكد بلام الابتداء وحرف الاستقبال ﴿وَلَسَوْفَ﴾.",
+              "meaningIfConnected": "الوقف تام وراس آية؛ لعدم التعلق الإعرابي بين الجملتين."
+            }
+          ]
         },
         {
           "scholar": "الأشموني",
-          "targetWord": "من",
+          "targetWord": "ٱلْأُولَىٰ",
           "verdict": [
             "كاف"
           ],
@@ -705,7 +873,23 @@
           ],
           "book": "منار الهدى",
           "page": "429",
-          "comment": "للابتداء بِـ ولسوف"
+          "comment": "من الأولى كاف للابتداء بِـ ولسوف",
+          "demosAndMeanings": [
+            {
+              "verdict": "كاف",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                5
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ وَلَلْـَٔاخِرَةُ خَيْرٌۭ لَّكَ مِنَ ٱلْأُولَىٰ ﴾ [قف على: ٱلْأُولَىٰ]",
+              "ibtidaDemo": "﴿ وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰٓ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "تمام الجملة الاسمية في تفضيل الآخرة على الدنيا له صلى الله عليه وسلم.",
+              "meaningAtIbtida": "ابتداء جملة مرتبطة بما قبلها معنىً في سياق البشارات الإلهية للنبي صلى الله عليه وسلم.",
+              "meaningIfConnected": "الوقف كافٍ وراس آية؛ للاستغناء اللفظي مع اتصال المعنى في تعداد كرامات الله لنبيه."
+            }
+          ]
         }
       ],
       "aiSuggestion": null,
@@ -714,7 +898,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "jamharah_t21755.json"
+      "sourceBatch": "llm_grounded_v1"
     },
     {
       "id": "s93-a5-w4",
@@ -728,7 +912,7 @@
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "targetWord": "فترضى",
+          "targetWord": "فَتَرْضَىٰٓ",
           "verdict": [
             "تام"
           ],
@@ -743,11 +927,27 @@
           ],
           "book": "علل الوقوف",
           "page": "3/1135",
-          "comment": "لابتداء الاستفهام"
+          "comment": "{فترضى} لابتداء الاستفهام.",
+          "demosAndMeanings": [
+            {
+              "verdict": "تام",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                4
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰٓ ﴾ [قف على: فَتَرْضَىٰ]",
+              "ibtidaDemo": "﴿ أَلَمْ يَجِدْكَ يَتِيمًۭا فَـَٔاوَىٰ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "تمام البشارة بالعطاء المستقبلي الكامل.",
+              "meaningAtIbtida": "ابتداء احتجاج وتذكير بأحواله السابقة وكيف تداركه الله بلطفه.",
+              "meaningIfConnected": "الوقف تام على رأس الآية لانتهاء الخبر والابتداء بالاستفهام."
+            }
+          ]
         },
         {
           "scholar": "ابن الأنباري",
-          "targetWord": "فترضى",
+          "targetWord": "فَتَرْضَىٰٓ",
           "verdict": [
             "تام"
           ],
@@ -762,11 +962,27 @@
           ],
           "book": "إيضاح الوقف والابتداء",
           "page": "2/979",
-          "comment": "(فترضى) [5]"
+          "comment": "(ما ودعك ربك وما قلى) وقف التمام وهو جواب القسم. ومثله: (من الأولى). (فترضى)",
+          "demosAndMeanings": [
+            {
+              "verdict": "تام",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                4
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰٓ ﴾ [قف على: فَتَرْضَىٰ]",
+              "ibtidaDemo": "﴿ أَلَمْ يَجِدْكَ يَتِيمًۭا فَـَٔاوَىٰ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "انقضاء الوعد الإلهي بالعطاء والرضا وانتهاء أسلوب الإخبار.",
+              "meaningAtIbtida": "ابتداء أسلوب جديد بصيغة الاستفهام التقريري لتذكيره بسابق نعم الله عليه.",
+              "meaningIfConnected": "الوقف تام وراس آية؛ لانقطاع الكلام انتقالاً من الوعد المستقبلي إلى التقرير بالنعم الماضية."
+            }
+          ]
         },
         {
           "scholar": "الداني",
-          "targetWord": "فترضى",
+          "targetWord": "فَتَرْضَىٰٓ",
           "verdict": [
             "تام"
           ],
@@ -781,11 +997,27 @@
           ],
           "book": "المكتفى",
           "page": "622",
-          "comment": "ومثله {من الأولى}. {فترضى}  أتم منهما"
+          "comment": "جواب القسم: {ما ودعك ربك وما قلى} وهو تام. ومثله {من الأولى}. {فترضى} أتم منهما..",
+          "demosAndMeanings": [
+            {
+              "verdict": "تام",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                4
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰٓ ﴾ [قف على: فَتَرْضَىٰ]",
+              "ibtidaDemo": "﴿ أَلَمْ يَجِدْكَ يَتِيمًۭا فَـَٔاوَىٰ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "تمام جملة الوعد بالعطاء وما يترتب عليه من الرضا.",
+              "meaningAtIbtida": "استئناف جملة استفهامية للتقرير والامتنان بإيوائه يتيماً.",
+              "meaningIfConnected": "الوقف تام وراس آية؛ لاختلاف الجملتين خبراً واستفهاماً."
+            }
+          ]
         },
         {
           "scholar": "الأشموني",
-          "targetWord": "فترضى",
+          "targetWord": "فَتَرْضَىٰٓ",
           "verdict": [
             "تام"
           ],
@@ -800,11 +1032,27 @@
           ],
           "book": "منار الهدى",
           "page": "429",
-          "comment": "قال الأخفش لأنَّ القسم وقع على أربعة أشياء اثنين منفيين وهما توديعه وقلاه واثنين مثبتين مؤكدين وهما كون الآخرة خيرا له من الدنيا وإنه سوف يعطيه ما يرضيه"
+          "comment": "فترضى تام قال الأخفش لأنَّ القسم وقع على أربعة أشياء اثنين منفيين وهما توديعه وقلاه واثنين مثبتين مؤكدين وهما كون الآخرة خيرا له من الدنيا وإنه سوف يعطيه ما يرضيه.",
+          "demosAndMeanings": [
+            {
+              "verdict": "تام",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                4
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰٓ ﴾ [قف على: فَتَرْضَىٰ]",
+              "ibtidaDemo": "﴿ أَلَمْ يَجِدْكَ يَتِيمًۭا فَـَٔاوَىٰ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "انقضاء سياق القسم وجوابه وما تفرع عنه من وعود.",
+              "meaningAtIbtida": "ابتداء كلام مستأنف مصدرٍ بهمزة الاستفهام التقريري في تعداد المنن.",
+              "meaningIfConnected": "الوقف تام وراس آية؛ لعدم التعلق اللفظي أو المعنوي المباشر بين الخبر والاستفهام."
+            }
+          ]
         },
         {
           "scholar": "النحاس",
-          "targetWord": "فَتَرْضَىٰ",
+          "targetWord": "فَتَرْضَىٰٓ",
           "verdict": [
             "تام"
           ],
@@ -818,8 +1066,24 @@
             false
           ],
           "book": "القطع والائتناف",
-          "page": "808",
-          "comment": "وأتم منه ﴿فَتَرْضَىٰ﴾ وكذا ﴿فَأَغْنَىٰ﴾ ثم آخر السورة"
+          "page": "آية 3",
+          "comment": "التمام ﴿مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ﴾ وأتم منه ﴿فَتَرْضَىٰ﴾.",
+          "demosAndMeanings": [
+            {
+              "verdict": "تام",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                4
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰٓ ﴾ [قف على: فَتَرْضَىٰ]",
+              "ibtidaDemo": "﴿ أَلَمْ يَجِدْكَ يَتِيمًۭا فَـَٔاوَىٰ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "تمام الكلام في الوعد بما يعطيه الله لنبيه صلى الله عليه وسلم.",
+              "meaningAtIbtida": "استئناف استفهام تقريري مستقل في لفظه وإعرابه.",
+              "meaningIfConnected": "الوقف تام وراس آية؛ لانقطاع ما بعده عما قبله في الإعراب."
+            }
+          ]
         }
       ],
       "aiSuggestion": null,
@@ -828,7 +1092,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "jamharah_t21755.json"
+      "sourceBatch": "llm_grounded_v1"
     },
     {
       "id": "s93-a6-w4",
@@ -842,7 +1106,7 @@
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "targetWord": "فآوى",
+          "targetWord": "فَـَٔاوَىٰ",
           "verdict": [
             "حسن"
           ],
@@ -857,11 +1121,27 @@
           ],
           "book": "علل الوقوف",
           "page": "3/1135",
-          "comment": null
+          "comment": "{فآوى}، [{فهدى} كذلك] قد يحسن الوقف لتعديد النعم.",
+          "demosAndMeanings": [
+            {
+              "verdict": "حسن",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                4
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ أَلَمْ يَجِدْكَ يَتِيمًۭا فَـَٔاوَىٰ ﴾ [قف على: فَـَٔاوَىٰ]",
+              "ibtidaDemo": "﴿ وَوَجَدَكَ ضَآلًّۭا فَهَدَىٰ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "تمام النعمة الأولى بالتقرير بأنه وجده يتيماً فآواه.",
+              "meaningAtIbtida": "الابتداء بذكر النعمة الثانية المعطوفة على معنى التقرير الأول.",
+              "meaningIfConnected": "الوقف حسن لكونه رأس آية، ووجه حسنه أن ﴿وَوَجَدَكَ﴾ معطوف في المعنى على ﴿أَلَمْ يَجِدْكَ﴾."
+            }
+          ]
         },
         {
           "scholar": "الأشموني",
-          "targetWord": "فآوى",
+          "targetWord": "فَـَٔاوَىٰ",
           "verdict": [
             "جائز"
           ],
@@ -876,7 +1156,23 @@
           ],
           "book": "منار الهدى",
           "page": "429",
-          "comment": "ومثله فهدى لتعداد النعم"
+          "comment": "فآوى جائز ومثله فهدى لتعداد النعم",
+          "demosAndMeanings": [
+            {
+              "verdict": "جائز",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                4
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ أَلَمْ يَجِدْكَ يَتِيمًۭا فَـَٔاوَىٰ ﴾ [قف على: فَـَٔاوَىٰ]",
+              "ibtidaDemo": "﴿ وَوَجَدَكَ ضَآلًّۭا فَهَدَىٰ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "إفادة التقرير بنعمة الإيواء بعد اليُتم.",
+              "meaningAtIbtida": "الابتداء بجملة معطوفة داخلة في حيز التقرير بالمنن السابقة.",
+              "meaningIfConnected": "الوقف جائز وراس آية؛ لتجاذب الطرفين بين استقلال الجملة في ظاهرها وعطفها على سياق الاستفهام التقريري."
+            }
+          ]
         }
       ],
       "aiSuggestion": null,
@@ -885,7 +1181,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "jamharah_t21755.json"
+      "sourceBatch": "llm_grounded_v1"
     },
     {
       "id": "s93-a7-w3",
@@ -899,7 +1195,7 @@
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "targetWord": "فهدى",
+          "targetWord": "فَهَدَىٰ",
           "verdict": [
             "حسن"
           ],
@@ -914,11 +1210,27 @@
           ],
           "book": "علل الوقوف",
           "page": "3/1135",
-          "comment": "كذلك قد يحسن الوقف لتعديد النعم"
+          "comment": "{فآوى}، [{فهدى} كذلك] قد يحسن الوقف لتعديد النعم.",
+          "demosAndMeanings": [
+            {
+              "verdict": "حسن",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                3
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ وَوَجَدَكَ ضَآلًّۭا فَهَدَىٰ ﴾ [قف على: فَهَدَىٰ]",
+              "ibtidaDemo": "﴿ وَوَجَدَكَ عَآئِلًۭا فَأَغْنَىٰ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "تمام ذكر النعمة الثانية وهي الهداية والتوفيق.",
+              "meaningAtIbtida": "الابتداء بذكر النعمة الثالثة المعطوفة عليها وهي الإغناء بعد الفقر.",
+              "meaningIfConnected": "الوقف حسن لأنه رأس آية، مع اتصال الجملتين بالعطف في سياق التقرير الواحد."
+            }
+          ]
         },
         {
           "scholar": "الأشموني",
-          "targetWord": "فهدى",
+          "targetWord": "فَهَدَىٰ",
           "verdict": [
             "جائز"
           ],
@@ -933,7 +1245,23 @@
           ],
           "book": "منار الهدى",
           "page": "429",
-          "comment": "ومثله فهدى لتعداد النعم"
+          "comment": "فآوى جائز ومثله فهدى لتعداد النعم",
+          "demosAndMeanings": [
+            {
+              "verdict": "جائز",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                3
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ وَوَجَدَكَ ضَآلًّۭا فَهَدَىٰ ﴾ [قف على: فَهَدَىٰ]",
+              "ibtidaDemo": "﴿ وَوَجَدَكَ عَآئِلًۭا فَأَغْنَىٰ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "اكتمال جملة الامتنان بالهداية.",
+              "meaningAtIbtida": "الابتداء بالجملة المعطوفة في الامتنان بالإغناء بعد العيلة.",
+              "meaningIfConnected": "الوقف جائز وراس آية؛ لكون الجملة تامة في أركانها ومعطوفة في سياق التقرير."
+            }
+          ]
         }
       ],
       "aiSuggestion": null,
@@ -942,7 +1270,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "jamharah_t21755.json"
+      "sourceBatch": "llm_grounded_v1"
     },
     {
       "id": "s93-a8-w3",
@@ -956,7 +1284,7 @@
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "targetWord": "فأغنى",
+          "targetWord": "فَأَغْنَىٰ",
           "verdict": [
             "تام"
           ],
@@ -971,11 +1299,27 @@
           ],
           "book": "علل الوقوف",
           "page": "3/1135",
-          "comment": "لأن {أما} يتضمن معنى الشرط"
+          "comment": "{فأغنى} لأن {أما} يتضمن معنى الشرط.",
+          "demosAndMeanings": [
+            {
+              "verdict": "تام",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                3
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ وَوَجَدَكَ عَآئِلًۭا فَأَغْنَىٰ ﴾ [قف على: فَأَغْنَىٰ]",
+              "ibtidaDemo": "﴿ فَأَمَّا ٱلْيَتِيمَ فَلَا تَقْهَرْ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "اكتمال تعداد المنن الإلهية الثلاث.",
+              "meaningAtIbtida": "الابتداء بتفصيل الوظائف الأخلاقية المقابلة لكل منة من المنن السابقة.",
+              "meaningIfConnected": "الوقف تام على رأس الآية لتمام جمل الامتنان والشروع في الأحكام."
+            }
+          ]
         },
         {
           "scholar": "ابن الأنباري",
-          "targetWord": "فأغنى",
+          "targetWord": "فَأَغْنَىٰ",
           "verdict": [
             "تام"
           ],
@@ -990,11 +1334,27 @@
           ],
           "book": "إيضاح الوقف والابتداء",
           "page": "2/979",
-          "comment": "(فأغنى) [8]"
+          "comment": "(ما ودعك ربك وما قلى) وقف التمام وهو جواب القسم. ومثله: (من الأولى). (فترضى) (فأغنى)",
+          "demosAndMeanings": [
+            {
+              "verdict": "تام",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                3
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ وَوَجَدَكَ عَآئِلًۭا فَأَغْنَىٰ ﴾ [قف على: فَأَغْنَىٰ]",
+              "ibtidaDemo": "﴿ فَأَمَّا ٱلْيَتِيمَ فَلَا تَقْهَرْ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "انتهاء تعداد النعم الثلاث في سياق التقرير والامتنان.",
+              "meaningAtIbtida": "ابتداء سياق التكليف والوصايا العملية المترتبة على تلك النعم.",
+              "meaningIfConnected": "الوقف تام وراس آية؛ لانقضاء الإخبار بالنعم والانتقال إلى الأمر والنهي."
+            }
+          ]
         },
         {
           "scholar": "الداني",
-          "targetWord": "فأغنى",
+          "targetWord": "فَأَغْنَىٰ",
           "verdict": [
             "تام"
           ],
@@ -1009,11 +1369,27 @@
           ],
           "book": "المكتفى",
           "page": "622",
-          "comment": null
+          "comment": "{فأغنى} تام.",
+          "demosAndMeanings": [
+            {
+              "verdict": "تام",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                3
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ وَوَجَدَكَ عَآئِلًۭا فَأَغْنَىٰ ﴾ [قف على: فَأَغْنَىٰ]",
+              "ibtidaDemo": "﴿ فَأَمَّا ٱلْيَتِيمَ فَلَا تَقْهَرْ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "تمام الجمل الداخلة تحت التقرير بنعم الله على نبيه صلى الله عليه وسلم.",
+              "meaningAtIbtida": "استئناف جملة شرطية تفصيلية مصدرة بـ﴿فَأَمَّا﴾ لبيان شكر تلك النعم.",
+              "meaningIfConnected": "الوقف تام وراس آية؛ لانقطاع نظم الإخبار والابتداء بأسلوب التفصيل والنهي."
+            }
+          ]
         },
         {
           "scholar": "الأشموني",
-          "targetWord": "فأغنى",
+          "targetWord": "فَأَغْنَىٰ",
           "verdict": [
             "كاف"
           ],
@@ -1028,7 +1404,23 @@
           ],
           "book": "منار الهدى",
           "page": "429",
-          "comment": null
+          "comment": "فأغنى كاف",
+          "demosAndMeanings": [
+            {
+              "verdict": "كاف",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                3
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ وَوَجَدَكَ عَآئِلًۭا فَأَغْنَىٰ ﴾ [قف على: فَأَغْنَىٰ]",
+              "ibtidaDemo": "﴿ فَأَمَّا ٱلْيَتِيمَ فَلَا تَقْهَرْ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "تمام الكلام في التذكير بنعمة الإغناء بعد الفقر.",
+              "meaningAtIbtida": "الابتداء بما تفرع عن النعم السابقة بفاء الفصيحة أو التفريع ﴿فَأَمَّا ٱلْيَتِيمَ﴾.",
+              "meaningIfConnected": "الوقف كافٍ وراس آية؛ للاستقلال الإعرابي مع قوة الترابط المعنوي على طريقة اللف والنشر المرتب."
+            }
+          ]
         },
         {
           "scholar": "النحاس",
@@ -1046,8 +1438,24 @@
             false
           ],
           "book": "القطع والائتناف",
-          "page": "808",
-          "comment": "وأتم منه ﴿فَتَرْضَىٰ﴾ وكذا ﴿فَأَغْنَىٰ﴾ ثم آخر السورة"
+          "page": "آية 3",
+          "comment": "التمام ﴿مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ﴾ وأتم منه ﴿فَتَرْضَىٰ﴾ وكذا ﴿فَأَغْنَىٰ﴾.",
+          "demosAndMeanings": [
+            {
+              "verdict": "تام",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                3
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ وَوَجَدَكَ عَآئِلًۭا فَأَغْنَىٰ ﴾ [قف على: فَأَغْنَىٰ]",
+              "ibtidaDemo": "﴿ فَأَمَّا ٱلْيَتِيمَ فَلَا تَقْهَرْ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "تمام الجمل المعطوفة في سياق التقرير بالنعم.",
+              "meaningAtIbtida": "ابتداء كلام مستأنف بالتفصيل والنهي عن قهر اليتيم.",
+              "meaningIfConnected": "الوقف تام وراس آية؛ لاستغناء الجملة عما بعدها إعراباً."
+            }
+          ]
         }
       ],
       "aiSuggestion": null,
@@ -1056,7 +1464,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "jamharah_t21755.json"
+      "sourceBatch": "llm_grounded_v1"
     },
     {
       "id": "s93-a9-w4",
@@ -1070,7 +1478,7 @@
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "targetWord": "فلا تقهر",
+          "targetWord": "تَقْهَرْ",
           "verdict": [
             "تام"
           ],
@@ -1085,11 +1493,27 @@
           ],
           "book": "علل الوقوف",
           "page": "3/1135",
-          "comment": "لابتداء [شرط آخر]"
+          "comment": "{فلا تقهر} لابتداء [شرط آخر]، {فلا تنهر} كذلك.",
+          "demosAndMeanings": [
+            {
+              "verdict": "تام",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                4
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ فَأَمَّا ٱلْيَتِيمَ فَلَا تَقْهَرْ ﴾ [قف على: تَقْهَرْ]",
+              "ibtidaDemo": "﴿ وَأَمَّا ٱلسَّآئِلَ فَلَا تَنْهَرْ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "تمام الجملة التفصيلية الأولى ووفاء ﴿أَمَّا﴾ بجوابها المقترن بالفاء.",
+              "meaningAtIbtida": "ابتداء جملة تفصيلية ثانية مستقلة بأداتها وجوابها في النهي عن نهر السائل.",
+              "meaningIfConnected": "الوقف تام على رأس الآية لاستكمال أركان الجملة الشرطية التفصيلية."
+            }
+          ]
         },
         {
           "scholar": "الأشموني",
-          "targetWord": "تقهر",
+          "targetWord": "تَقْهَرْ",
           "verdict": [
             "جائز"
           ],
@@ -1104,7 +1528,23 @@
           ],
           "book": "منار الهدى",
           "page": "429",
-          "comment": "ومثله فلا تنهر"
+          "comment": "تقهر جائز ومثله فلا تنهر",
+          "demosAndMeanings": [
+            {
+              "verdict": "جائز",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                4
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ فَأَمَّا ٱلْيَتِيمَ فَلَا تَقْهَرْ ﴾ [قف على: تَقْهَرْ]",
+              "ibtidaDemo": "﴿ وَأَمَّا ٱلسَّآئِلَ فَلَا تَنْهَرْ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "تمام الوصية الأولى المتعلقة باليتيم.",
+              "meaningAtIbtida": "الابتداء بالوصية الثانية المعطوفة عليها في قسيم التفصيل ﴿وَأَمَّا ٱلسَّآئِلَ﴾.",
+              "meaningIfConnected": "الوقف جائز وراس آية؛ لاستقلال الجملة بجوابها مع ارتباط أقسام ﴿أَمَّا﴾ التفصيلية ببعضها."
+            }
+          ]
         }
       ],
       "aiSuggestion": null,
@@ -1113,7 +1553,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "jamharah_t21755.json"
+      "sourceBatch": "llm_grounded_v1"
     },
     {
       "id": "s93-a10-w4",
@@ -1127,7 +1567,7 @@
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "targetWord": "فلا تنهر",
+          "targetWord": "تَنْهَرْ",
           "verdict": [
             "تام"
           ],
@@ -1142,11 +1582,27 @@
           ],
           "book": "علل الوقوف",
           "page": "3/1135",
-          "comment": "كذلك"
+          "comment": "{فلا تقهر} لابتداء [شرط آخر]، {فلا تنهر} كذلك.",
+          "demosAndMeanings": [
+            {
+              "verdict": "تام",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                4
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ وَأَمَّا ٱلسَّآئِلَ فَلَا تَنْهَرْ ﴾ [قف على: تَنْهَرْ]",
+              "ibtidaDemo": "﴿ وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "تمام الجملة التفصيلية الثانية في النهي عن زجر السائل.",
+              "meaningAtIbtida": "ابتداء الجملة التفصيلية الثالثة في الأمر بالتحدث بنعمة الله.",
+              "meaningIfConnected": "الوقف تام على رأس الآية لاستقلال كل قسم من أقسام التفصيل بشرطه وجوابه."
+            }
+          ]
         },
         {
           "scholar": "الأشموني",
-          "targetWord": "فلا تنهر",
+          "targetWord": "تَنْهَرْ",
           "verdict": [
             "جائز"
           ],
@@ -1161,7 +1617,23 @@
           ],
           "book": "منار الهدى",
           "page": "429",
-          "comment": "ومثله فلا تنهر"
+          "comment": "تقهر جائز ومثله فلا تنهر",
+          "demosAndMeanings": [
+            {
+              "verdict": "جائز",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                4
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ وَأَمَّا ٱلسَّآئِلَ فَلَا تَنْهَرْ ﴾ [قف على: تَنْهَرْ]",
+              "ibtidaDemo": "﴿ وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "اكتمال الوصية الثانية برفق معاملة السائل.",
+              "meaningAtIbtida": "الابتداء بالوصية الثالثة المعطوفة عليها في إظهار نعمة الله والتحدث بها.",
+              "meaningIfConnected": "الوقف جائز وراس آية؛ لتمام الجملة في نفسها مع تعاطف جمل التفصيل الثلاث."
+            }
+          ]
         }
       ],
       "aiSuggestion": null,
@@ -1170,7 +1642,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "jamharah_t21755.json"
+      "sourceBatch": "llm_grounded_v1"
     },
     {
       "id": "s93-a11-w4",
@@ -1184,7 +1656,7 @@
       "opinions": [
         {
           "scholar": "الأشموني",
-          "targetWord": "آخر السورة",
+          "targetWord": "فَحَدِّثْ",
           "verdict": [
             "تام"
           ],
@@ -1199,7 +1671,58 @@
           ],
           "book": "منار الهدى",
           "page": "429",
-          "comment": null
+          "comment": "آخر السورة تام",
+          "demosAndMeanings": [
+            {
+              "verdict": "تام",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                4
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ ﴾ [قف على: فَحَدِّثْ]",
+              "ibtidaDemo": "[نهاية السورة]",
+              "meaningAtWaqf": "تمام الوصية الثالثة بالأمر بالتحدث بنعمة الله وبها تختتم السورة.",
+              "meaningAtIbtida": "انتهاء السورة الكريمة ولا تعلق لها بما بعدها.",
+              "meaningIfConnected": "الوقف تام قطعاً لانتهاء السورة وتمام المعنى."
+            }
+          ]
+        },
+        {
+          "scholar": "النحاس",
+          "targetWord": "فَحَدِّثْ",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 3",
+          "comment": "التمام ﴿مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ﴾ وأتم منه ﴿فَتَرْضَىٰ﴾ وكذا ﴿فَأَغْنَىٰ﴾ ثم آخر السورة..",
+          "demosAndMeanings": [
+            {
+              "verdict": "تام",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                4
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ ﴾ [قف على: فَحَدِّثْ]",
+              "ibtidaDemo": "[نهاية السورة]",
+              "meaningAtWaqf": "اكتمال الكلام في الأمر بشكر النعمة والتحدث بها وختام السورة.",
+              "meaningAtIbtida": "انقضاء السورة بالكلية.",
+              "meaningIfConnected": "الوقف تام لتمام السورة وانقطاع الكلام."
+            }
+          ]
         }
       ],
       "aiSuggestion": null,
@@ -1208,7 +1731,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "jamharah_t21755.json"
+      "sourceBatch": "llm_grounded_v1"
     }
   ]
 }

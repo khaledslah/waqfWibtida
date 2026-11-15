@@ -8,8 +8,10 @@ in WaqfReader_Grok/assets/app_feed and build/flutter_assets/assets/app_feed.
 from __future__ import annotations
 
 import json
+import os
 import re
 import sys
+import time
 from pathlib import Path
 
 sys.stdout.reconfigure(encoding="utf-8")
@@ -18,6 +20,23 @@ ROOT = Path(r"d:\AI_Projects\waqfWibtida2")
 FEED_DIR = ROOT / "WaqfReader_Grok" / "assets" / "app_feed"
 BUILD_FEED_DIR = ROOT / "WaqfReader_Grok" / "build" / "flutter_assets" / "assets" / "app_feed"
 BASE_FEED_DIR = Path(r"D:\AI_Projects\jamharah_waqf_scraper\app_workspace\data\base_app_feed")
+
+
+def _write_text_safe(path: Path, content: str) -> None:
+    """Write via a sibling temp file with brief retries for transient Windows Errno 22 locks."""
+    tmp = path.with_name(f"{path.name}.tmp")
+    for attempt in range(1, 6):
+        try:
+            with open(tmp, "w", encoding="utf-8", newline="\n") as fh:
+                fh.write(content)
+            os.replace(tmp, path)
+            return
+        except OSError as exc:
+            if tmp.exists():
+                tmp.unlink(missing_ok=True)
+            if attempt >= 5 or (exc.errno not in (22, 13) and not isinstance(exc, PermissionError)):
+                raise
+            time.sleep(0.5 * attempt)
 
 
 def parse_sajawandi_page(raw: str | None) -> int | None:
@@ -108,14 +127,14 @@ def main() -> None:
         if surah_modified:
             updated_surahs += 1
             text_out = json.dumps(sd, ensure_ascii=False, indent=2)
-            surah_path.write_text(text_out, encoding="utf-8")
+            _write_text_safe(surah_path, text_out)
             if BUILD_FEED_DIR.exists():
-                (BUILD_FEED_DIR / f"surah_{s:03d}.json").write_text(text_out, encoding="utf-8")
+                _write_text_safe(BUILD_FEED_DIR / f"surah_{s:03d}.json", text_out)
 
     cat_out = json.dumps(catalog, ensure_ascii=False, indent=2) + "\n"
-    catalog_path.write_text(cat_out, encoding="utf-8")
+    _write_text_safe(catalog_path, cat_out)
     if BUILD_FEED_DIR.exists():
-        (BUILD_FEED_DIR / "catalog.json").write_text(cat_out, encoding="utf-8")
+        _write_text_safe(BUILD_FEED_DIR / "catalog.json", cat_out)
 
     print(
         f"Done! Updated textPage on {updated_surahs} surah files "

@@ -179,7 +179,7 @@
           "index": 3,
           "text": "تَعْلَمُونَ",
           "textImlai": "تَعۡلَمُوۡنَ",
-          "stopId": null,
+          "stopId": "s102-a5-w3",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -346,7 +346,7 @@
       "opinions": [
         {
           "scholar": "الأشموني",
-          "targetWord": "التكاثر",
+          "targetWord": "ٱلتَّكَاثُرُ",
           "verdict": [
             "لا يوقف"
           ],
@@ -361,7 +361,8 @@
           ],
           "book": "منار الهدى",
           "page": "433 - 434",
-          "comment": "ولا وقف من أوَّلها إلى المقابر فلا يوقف على التكاثر لأن ما بعده غاية لما قبله"
+          "comment": "لا وقف من أولها إلى المقابر فلا يوقف على التكاثر لأن ما بعده غاية لما قبله.",
+          "demosAndMeanings": null
         }
       ],
       "aiSuggestion": null,
@@ -370,7 +371,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "jamharah_t21764.json"
+      "sourceBatch": "llm_grounded_v1"
     },
     {
       "id": "s102-a2-w3",
@@ -384,7 +385,7 @@
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "targetWord": "المقابر",
+          "targetWord": "ٱلْمَقَابِرَ",
           "verdict": [
             "تام"
           ],
@@ -399,30 +400,62 @@
           ],
           "book": "علل الوقوف",
           "page": "3/1154-1155",
-          "comment": "لأن {كلا} بمعنى: [حقًا، أو إلا]، وقد يحمل على الردع عن التكاثر، والتكرار دليل التوكيد للتهديد في: {سوف}. ["
+          "comment": "لأن {كلا} بمعنى: [حقًا، أو ألا]، وقد يحمل على الردع عن التكاثر، والتكرار دليل التوكيد للتهديد في: {سوف}.",
+          "demosAndMeanings": [
+            {
+              "verdict": "تام",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                3
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ حَتَّىٰ زُرْتُمُ ٱلْمَقَابِرَ ﴾ [قف على: ٱلْمَقَابِرْ]",
+              "ibtidaDemo": "﴿ كَلَّا سَوْفَ تَعْلَمُونَ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "تمام الجملة الفعلية وغايتها في وصف انشغالهم بالتكاثر حتى الموت، وهو رأس آية.",
+              "meaningAtIbtida": "استئناف الزجر والوعيد بقوله ﴿كَلَّا سَوْفَ تَعْلَمُونَ﴾.",
+              "meaningIfConnected": "الوقف أولى لتمام المعنى وانتقال الأسلوب من الإخبار عن حالهم إلى ردعهم وتهديدهم."
+            }
+          ]
         },
         {
           "scholar": "ابن الأنباري",
-          "targetWord": "حتى زرتم المقابر",
+          "targetWord": "ٱلْمَقَابِرَ",
           "verdict": [
             "حسن"
           ],
           "verdictLabel": [
-            "ز"
+            "ص"
           ],
           "symbol": [
-            "mujawwaz"
+            "murakhkhas"
           ],
           "isQila": [
             false
           ],
           "book": "إيضاح الوقف والابتداء",
           "page": "2/983- 984",
-          "comment": null
+          "comment": "الوقف على (حتى زرتم المقابر) حسن.",
+          "demosAndMeanings": [
+            {
+              "verdict": "حسن",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                3
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ حَتَّىٰ زُرْتُمُ ٱلْمَقَابِرَ ﴾ [قف على: ٱلْمَقَابِرْ]",
+              "ibtidaDemo": "﴿ كَلَّا سَوْفَ تَعْلَمُونَ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "تمام الإخبار عن تماديهم في الانشغال بالتكاثر والتفاخر إلى غاية الموت ودفنهم في القبور، وهو رأس آية.",
+              "meaningAtIbtida": "الابتداء بالردع والزجر عن ذلك التكاثر مع الوعيد بمعرفة عاقبته.",
+              "meaningIfConnected": "الوصل يربط الجملة الخبرية بما بعدها من الردع والوعيد المترتب عليها، والوقف حسن لتمام الجملة وكونه رأس آية."
+            }
+          ]
         },
         {
           "scholar": "الداني",
-          "targetWord": "حتى زرتم المقابر",
+          "targetWord": "ٱلْمَقَابِرَ",
           "verdict": [
             "كاف",
             "تام"
@@ -441,11 +474,41 @@
           ],
           "book": "المكتفى",
           "page": "627- 628",
-          "comment": "( {حتى زرتم المقابر}  كاف، وقيل: تام. ثم تبتدأ {كلا} بمعنى: ألا على التهديد والوعيد"
+          "comment": "كاف، وقيل: تام. ثم تبتدأ {كلا} بمعنى: ألا على التهديد والوعيد.",
+          "demosAndMeanings": [
+            {
+              "verdict": "كاف",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                3
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ حَتَّىٰ زُرْتُمُ ٱلْمَقَابِرَ ﴾ [قف على: ٱلْمَقَابِرْ]",
+              "ibtidaDemo": "﴿ كَلَّا سَوْفَ تَعْلَمُونَ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "انقضاء الكلام لفظاً بانتهاء غاية إلهائهم بالتكاثر، وهو رأس آية.",
+              "meaningAtIbtida": "استئناف زجرٍ وردعٍ لهم عما ألهاهم مع تهديدهم بعاقبة أمرهم.",
+              "meaningIfConnected": "تعلّق ما بعده به من جهة المعنى؛ لأن الردع بـ﴿كَلَّا﴾ راجعٌ إلى ما تقدّم من التكاثر والتفاخر."
+            },
+            {
+              "verdict": "تام",
+              "isQila": true,
+              "waqfSegmentWords": [
+                1,
+                3
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ حَتَّىٰ زُرْتُمُ ٱلْمَقَابِرَ ﴾ [قف على: ٱلْمَقَابِرْ]",
+              "ibtidaDemo": "﴿ كَلَّا سَوْفَ تَعْلَمُونَ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "كمال الإخبار عن حالهم في الدنيا وانقضاء الغاية، وكونه رأس آية.",
+              "meaningAtIbtida": "ابتداء كلامٍ مستأنفٍ مستقلٍّ في الوعيد والتهديد.",
+              "meaningIfConnected": "عند القائل بالتمام لا تعلّق لما بعده بما قبله، فيُكتفى بالوقف على رأس الآية."
+            }
+          ]
         },
         {
           "scholar": "الأشموني",
-          "targetWord": "المقابر",
+          "targetWord": "ٱلْمَقَابِرَ",
           "verdict": [
             "كاف"
           ],
@@ -460,11 +523,27 @@
           ],
           "book": "منار الهدى",
           "page": "433 - 434",
-          "comment": "ولا يوقف على كلا لأنَّها صلةٌ لما بعدها بمعنى حقًا سوف تعلمون ما أنتم عليه من التكاثر بالأموال والأولاد فالخطاب الأوَّل للكفار والثاني للمؤمنين وفصل بين الأوَّل والثاني بالوقف وإلا فالثاني داخل مع الأول لاتساقه عليه وكررت للتغليظ والتخويف ووعيد بعد وعيد وجاء بثُّم إيذانًا بأنَّ تكريره أبلغ منَّ الأول في التهويل"
+          "comment": "المقابر كاف، ولا يوقف على كلا لأنها صلة لما بعدها بمعنى حقا سوف تعلمون ما أنتم عليه من التكاثر بالأموال والأولاد.",
+          "demosAndMeanings": [
+            {
+              "verdict": "كاف",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                3
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ حَتَّىٰ زُرْتُمُ ٱلْمَقَابِرَ ﴾ [قف على: ٱلْمَقَابِرْ]",
+              "ibtidaDemo": "﴿ كَلَّا سَوْفَ تَعْلَمُونَ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "استقلال الكلام لفظاً ببيان غاية إلهائهم بالتكاثر، مع كونه رأس آية.",
+              "meaningAtIbtida": "الابتداء بحرف الردع والزجر وما يتلوه من الوعيد الشديد.",
+              "meaningIfConnected": "تعلّق ما بعده بما قبله معنويٌّ؛ لأن الزجر بـ﴿كَلَّا﴾ إنما هو ردٌّ وتوبيخٌ على ما سبق من التكاثر."
+            }
+          ]
         },
         {
           "scholar": "النحاس",
-          "targetWord": "حَتَّىٰ زُرْتُمُ الْمَقَابِرَ",
+          "targetWord": "ٱلْمَقَابِرَ",
           "verdict": [
             "تام"
           ],
@@ -478,8 +557,24 @@
             false
           ],
           "book": "القطع والائتناف",
-          "page": "817",
-          "comment": "﴿حَتَّىٰ زُرْتُمُ الْمَقَابِرَ﴾ هذا التمام عند ابي حاتم والوقف عند محمد بن عيسى ﴿حَتَّىٰ زُرْتُمُ الْمَقَابِرَ﴾ ﴿كَلَّا﴾ والمعنى عنده لا ينفعكم التكاثر"
+          "page": "آية 2",
+          "comment": "﴿حَتَّىٰ زُرْتُمُ الْمَقَابِرَ﴾ هذا التمام عند أبي حاتم.",
+          "demosAndMeanings": [
+            {
+              "verdict": "تام",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                3
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ حَتَّىٰ زُرْتُمُ ٱلْمَقَابِرَ ﴾ [قف على: ٱلْمَقَابِرْ]",
+              "ibtidaDemo": "﴿ كَلَّا سَوْفَ تَعْلَمُونَ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "انقضاء الخبر عن تفاخرهم وتكاثرهم إلى حين موتهم، وهو رأس آية.",
+              "meaningAtIbtida": "الابتداء بالردع بـ﴿كَلَّا﴾ أو باستئناف الوعيد بقوله ﴿كَلَّا سَوْفَ تَعْلَمُونَ﴾.",
+              "meaningIfConnected": "الوقف أتمّ لانقطاع الخبر الأول واستئناف الوعيد بعده."
+            }
+          ]
         }
       ],
       "aiSuggestion": null,
@@ -488,7 +583,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "jamharah_t21764.json"
+      "sourceBatch": "llm_grounded_v1"
     },
     {
       "id": "s102-a3-w1",
@@ -502,7 +597,7 @@
       "opinions": [
         {
           "scholar": "الداني",
-          "targetWord": "كلا",
+          "targetWord": "كَلَّا",
           "verdict": [
             "تام"
           ],
@@ -517,11 +612,30 @@
           ],
           "book": "المكتفى",
           "page": "627- 628",
-          "comment": "وقيل: التمام: (كلا)  أي: لا ينفعكم التكاثر"
+          "comment": "وقيل: التمام: (كلا) أي: لا ينفعكم التكاثر.",
+          "demosAndMeanings": [
+            {
+              "verdict": "تام",
+              "isQila": true,
+              "waqfSegmentWords": [
+                1,
+                1
+              ],
+              "ibtidaSegmentWords": [
+                2,
+                3
+              ],
+              "waqfDemo": "تلاوة: ﴿ كَلَّا ﴾ [قف على: كَلَّا]",
+              "ibtidaDemo": "﴿ سَوْفَ تَعْلَمُونَ ﴾ [قف على: تَعْلَمُونْ]",
+              "meaningAtWaqf": "ردعٌ وزجرٌ عمّا تقدّم من التكاثر والتفاخر بالأموال والأولاد، بمعنى: ليس الأمر كما زعمتم فارتدعوا.",
+              "meaningAtIbtida": "استئناف وعيدٍ مستقلٍّ بأنهم سيعلمون عاقبة تفريطهم.",
+              "meaningIfConnected": "عند الوصل تكون ﴿كَلَّا﴾ بمعنى (حقّاً) أو (ألا) الاستفتاحية متّصلةً بقوله ﴿سَوْفَ تَعْلَمُونَ﴾."
+            }
+          ]
         },
         {
           "scholar": "الأشموني",
-          "targetWord": "كلا",
+          "targetWord": "كَلَّا",
           "verdict": [
             "لا يوقف"
           ],
@@ -536,186 +650,12 @@
           ],
           "book": "منار الهدى",
           "page": "433 - 434",
-          "comment": "ولا يوقف على كلا لأنَّها صلةٌ لما بعدها بمعنى حقًا سوف تعلمون ما أنتم عليه من التكاثر بالأموال والأولاد فالخطاب الأوَّل للكفار والثاني للمؤمنين وفصل بين الأوَّل والثاني بالوقف وإلا فالثاني داخل مع الأول لاتساقه عليه وكررت للتغليظ والتخويف ووعيد بعد وعيد وجاء بثُّم إيذانًا بأنَّ تكريره أبلغ منَّ الأول في التهويل"
-        }
-      ],
-      "aiSuggestion": null,
-      "symbolWitness": null,
-      "inUthmaniMushaf": false,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
-      "isVerseEnd": false,
-      "sourceBatch": "jamharah_t21764.json"
-    },
-    {
-      "id": "s102-a3-w3",
-      "surah": 102,
-      "ayah": 3,
-      "wordIndex": 3,
-      "word": "تَعْلَمُونَ",
-      "textPage": 1154,
-      "marginRef": null,
-      "fixes": [],
-      "opinions": [
-        {
-          "scholar": "السجاوندي",
-          "targetWord": "تعلمون",
-          "verdict": [
-            "لا يوقف"
-          ],
-          "verdictLabel": [
-            "لا"
-          ],
-          "symbol": [
-            "la"
-          ],
-          "isQila": [
-            false
-          ],
-          "book": "علل الوقوف",
-          "page": "3/1154-1155",
-          "comment": "للعطف"
-        }
-      ],
-      "aiSuggestion": null,
-      "symbolWitness": null,
-      "inUthmaniMushaf": false,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
-      "isVerseEnd": true,
-      "sourceBatch": "jamharah_t21764.json"
-    },
-    {
-      "id": "s102-a4-w4",
-      "surah": 102,
-      "ayah": 4,
-      "wordIndex": 4,
-      "word": "تَعْلَمُونَ",
-      "textPage": 1154,
-      "marginRef": null,
-      "fixes": [],
-      "opinions": [
-        {
-          "scholar": "السجاوندي",
-          "targetWord": "تعلمون",
-          "verdict": [
-            "تام"
-          ],
-          "verdictLabel": [
-            "ط"
-          ],
-          "symbol": [
-            "tam"
-          ],
-          "isQila": [
-            false
-          ],
-          "book": "علل الوقوف",
-          "page": "3/1154-1155",
-          "comment": null
-        },
-        {
-          "scholar": "الأشموني",
-          "targetWord": "تعلمون",
-          "verdict": [
-            "كاف",
-            "لا يوقف"
-          ],
-          "verdictLabel": [
-            "ج",
-            "لا"
-          ],
-          "symbol": [
-            "jaiz",
-            "la"
-          ],
-          "isQila": [
-            false,
-            true
-          ],
-          "book": "منار الهدى",
-          "page": "433 - 434",
-          "comment": "ثم كرر الثالثة لتحقيق العلم فقال كلا لو تعلمون علم اليقين وهو أكفى مما قبله وجواب لو محذوف تقديره ما ألهاكم التكاثر وجعل الحسن البصري كلا الثالثة قسمًا وابتدأ بها وقيل الوقف لو تعلمون ثم يبتدئ علم اليقين على القسم وانتصب لما حذفت الواو وجوبًا به لترون أي والله لترون الجحيم كقول امرئ القيس\nفقالت يمين الله مالك حيلة = وما أن أرى عنك الغواية تنجلي\nوقيل لا يجوز أن يكون لترون جوابًا لأنه محقق الوقوع بل الجواب محذوف تقديره لو تعلمون علمًا يقينًا ما ألهاكم التكاثر فحذف الجواب للعلم بتقدمه قرأ العامة لترون مبنيًا للفاعل وقرأ ابن عامر والكسائي لترون بضم التاء الفوقية رباعيًا متعديًا لاثنين الأول الواو والثاني الجحيم"
-        }
-      ],
-      "aiSuggestion": null,
-      "symbolWitness": null,
-      "inUthmaniMushaf": false,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
-      "isVerseEnd": true,
-      "sourceBatch": "jamharah_t21764.json"
-    },
-    {
-      "id": "s102-a5-w5",
-      "surah": 102,
-      "ayah": 5,
-      "wordIndex": 5,
-      "word": "ٱلْيَقِينِ",
-      "textPage": 1154,
-      "marginRef": null,
-      "fixes": [],
-      "opinions": [
-        {
-          "scholar": "السجاوندي",
-          "targetWord": "علم اليقين",
-          "verdict": [
-            "تام"
-          ],
-          "verdictLabel": [
-            "ط"
-          ],
-          "symbol": [
-            "tam"
-          ],
-          "isQila": [
-            false
-          ],
-          "book": "علل الوقوف",
-          "page": "3/1154-1155",
-          "comment": "لأن التقدير: لو تعلمون علم اليقين لما ألهاكم التكاثر، وقوله: {لترون الجحيم} جواب قسم محذوف، أي: والله لترون"
-        },
-        {
-          "scholar": "ابن الأنباري",
-          "targetWord": "لو تعلمون علم اليقين",
-          "verdict": [
-            "حسن"
-          ],
-          "verdictLabel": [
-            "ز"
-          ],
-          "symbol": [
-            "mujawwaz"
-          ],
-          "isQila": [
-            false
-          ],
-          "book": "إيضاح الوقف والابتداء",
-          "page": "2/983- 984",
-          "comment": "ومثله: (لو تعلمون علم اليقين) [5]  والمعنى «لو تعلمون علم اليقين ما ألهاكم التكاثر» «فحذف الجواب لمعرفة المخاطبين به»"
-        },
-        {
-          "scholar": "الداني",
-          "targetWord": "علم اليقين",
-          "verdict": [
-            "تام"
-          ],
-          "verdictLabel": [
-            "ط"
-          ],
-          "symbol": [
-            "tam"
-          ],
-          "isQila": [
-            false
-          ],
-          "book": "المكتفى",
-          "page": "627- 628",
-          "comment": "ومثله {علم اليقين}  والمعنى: لو تعلمون علم اليقين ما ألهاكم التكاثر، فحذف الجواب لمعرفة المخاطبين به)"
+          "comment": "لا يوقف على كلا لأنها صلة لما بعدها بمعنى حقا سوف تعلمون ما أنتم عليه من التكاثر بالأموال والأولاد.",
+          "demosAndMeanings": null
         },
         {
           "scholar": "النحاس",
-          "targetWord": "لو تعلمون علم اليقين",
+          "targetWord": "كَلَّا",
           "verdict": [
             "جائز"
           ],
@@ -729,8 +669,27 @@
             false
           ],
           "book": "القطع والائتناف",
-          "page": "817",
-          "comment": "قال أبو حاتم: ومن الوقف ﴿لو تعلمون علم اليقين﴾ قال ﴿ثُمَّ لَتَرَوُنَّهَا عَيْنَ الْيَقِينِ﴾"
+          "page": "آية 2",
+          "comment": "والوقف عند محمد بن عيسى ﴿حَتَّىٰ زُرْتُمُ الْمَقَابِرَ﴾ ﴿كَلَّا﴾ والمعنى عنده لا ينفعكم التكاثر.",
+          "demosAndMeanings": [
+            {
+              "verdict": "جائز",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                1
+              ],
+              "ibtidaSegmentWords": [
+                2,
+                3
+              ],
+              "waqfDemo": "تلاوة: ﴿ كَلَّا ﴾ [قف على: كَلَّا]",
+              "ibtidaDemo": "﴿ سَوْفَ تَعْلَمُونَ ﴾ [قف على: تَعْلَمُونْ]",
+              "meaningAtWaqf": "الردّ والتكذيب لما كانوا عليه، بمعنى: ليس الأمر كما ذكرتم من التكاثر.",
+              "meaningAtIbtida": "الابتداء بالوعيد المستأنف ﴿سَوْفَ تَعْلَمُونَ﴾.",
+              "meaningIfConnected": "الوصل هو المختار عند النحاس على جعل ﴿كَلَّا﴾ صلةً لليمين أو بمعنى (حقّاً سوف تعلمون)."
+            }
+          ]
         }
       ],
       "aiSuggestion": null,
@@ -738,22 +697,22 @@
       "inUthmaniMushaf": false,
       "uthmaniMark": null,
       "uthmaniMarkName": null,
-      "isVerseEnd": true,
-      "sourceBatch": "jamharah_t21764.json"
+      "isVerseEnd": false,
+      "sourceBatch": "llm_grounded_v1"
     },
     {
-      "id": "s102-a6-w2",
+      "id": "s102-a3-w3",
       "surah": 102,
-      "ayah": 6,
-      "wordIndex": 2,
-      "word": "ٱلْجَحِيمَ",
+      "ayah": 3,
+      "wordIndex": 3,
+      "word": "تَعْلَمُونَ",
       "textPage": 1154,
       "marginRef": null,
       "fixes": [],
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "targetWord": "الجحيم",
+          "targetWord": "تَعْلَمُونَ",
           "verdict": [
             "لا يوقف"
           ],
@@ -768,11 +727,430 @@
           ],
           "book": "علل الوقوف",
           "page": "3/1154-1155",
-          "comment": "للعطف"
+          "comment": "للعطف.",
+          "demosAndMeanings": null
         },
         {
           "scholar": "الأشموني",
-          "targetWord": "الجحيم",
+          "targetWord": "تَعْلَمُونَ",
+          "verdict": [
+            "جائز",
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "ج",
+            "لا"
+          ],
+          "symbol": [
+            "jaiz",
+            "la"
+          ],
+          "isQila": [
+            false,
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "433 - 434",
+          "comment": "فالخطاب الأول للكفار والثاني للمؤمنين وفصل بين الأول والثاني بالوقف، وإلا فالثاني داخل مع الأول لاتساقه عليه وكررت للتغليظ والتخويف ووعيد بعد وعيد وجاء بثم إيذانا بأن تكريره أبلغ من الأول في التهويل.",
+          "demosAndMeanings": [
+            {
+              "verdict": "جائز",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                3
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ كَلَّا سَوْفَ تَعْلَمُونَ ﴾ [قف على: تَعْلَمُونْ]",
+              "ibtidaDemo": "﴿ ثُمَّ كَلَّا سَوْفَ تَعْلَمُونَ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "تمام جملة الوعيد الأول، وهو رأس آية.",
+              "meaningAtIbtida": "الابتداء بجملة الوعيد الثاني المؤكِّدة للأولى والمرتّبة عليها بـ﴿ثُمَّ﴾.",
+              "meaningIfConnected": "الوصل يبرز العطف بـ﴿ثُمَّ﴾ لتأكيد الوعيد وتغليظه، والوقف سائغٌ لكونه رأس آية."
+            }
+          ]
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "llm_grounded_v1"
+    },
+    {
+      "id": "s102-a4-w4",
+      "surah": 102,
+      "ayah": 4,
+      "wordIndex": 4,
+      "word": "تَعْلَمُونَ",
+      "textPage": 1154,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "targetWord": "تَعْلَمُونَ",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "علل الوقوف",
+          "page": "3/1154-1155",
+          "comment": "وقف تام على {تعلمون} الثانية.",
+          "demosAndMeanings": [
+            {
+              "verdict": "تام",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                4
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ ثُمَّ كَلَّا سَوْفَ تَعْلَمُونَ ﴾ [قف على: تَعْلَمُونْ]",
+              "ibtidaDemo": "﴿ كَلَّا لَوْ تَعْلَمُونَ عِلْمَ ٱلْيَقِينِ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "تمام التوكيد اللفظي والمعنوي في الوعيد، وهو رأس آية.",
+              "meaningAtIbtida": "استئناف ردعٍ جديد مقترنٍ بشرطٍ لبيان أنهم لو علموا الأمر حقَّ اليقين لما ألهاهم التكاثر.",
+              "meaningIfConnected": "الوقف أولى لانقضاء جملتي الوعيد المتعاطفتين والانتقال إلى أسلوب الشرط."
+            }
+          ]
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "تَعْلَمُونَ",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "433 - 434",
+          "comment": "تعلمون الثاني كاف، ثم كرر الثالثة لتحقيق العلم، وجعل الحسن البصري كلا الثالثة قسما وابتدأ بها.",
+          "demosAndMeanings": [
+            {
+              "verdict": "كاف",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                4
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ ثُمَّ كَلَّا سَوْفَ تَعْلَمُونَ ﴾ [قف على: تَعْلَمُونْ]",
+              "ibtidaDemo": "﴿ كَلَّا لَوْ تَعْلَمُونَ عِلْمَ ٱلْيَقِينِ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "استقلال جملة الوعيد الثاني المؤكِّدة لما قبلها، مع كونه رأس آية.",
+              "meaningAtIbtida": "الابتداء بـ﴿كَلَّا لَوْ تَعْلَمُونَ﴾ على الاستئناف البياني والتوبيخي.",
+              "meaningIfConnected": "الاتصال المعنوي قائمٌ لتعلّق الجمل جميعاً ببيان سوء عاقبة التكاثر، مع استقلال كل جملةٍ لفظاً."
+            }
+          ]
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "llm_grounded_v1"
+    },
+    {
+      "id": "s102-a5-w3",
+      "surah": 102,
+      "ayah": 5,
+      "wordIndex": 3,
+      "word": "تَعْلَمُونَ",
+      "textPage": null,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "الأشموني",
+          "targetWord": "تَعْلَمُونَ",
+          "verdict": [
+            "قيل فيه وقف"
+          ],
+          "verdictLabel": [
+            "ق"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            true
+          ],
+          "book": "منار الهدى",
+          "page": "433 - 434",
+          "comment": "وقيل الوقف لو تعلمون ثم يبتدئ علم اليقين على القسم وانتصب لما حذفت الواو وجوبا به لترون أي والله لترون الجحيم كقول امرئ القيس: فقالت يمين الله مالك حيلة = وما أن أرى عنك الغواية تنجلي.",
+          "demosAndMeanings": [
+            {
+              "verdict": "قيل فيه وقف",
+              "isQila": true,
+              "waqfSegmentWords": [
+                1,
+                3
+              ],
+              "ibtidaSegmentWords": [
+                4,
+                5
+              ],
+              "waqfDemo": "تلاوة: ﴿ كَلَّا لَوْ تَعْلَمُونَ ﴾ [قف على: تَعْلَمُونْ]",
+              "ibtidaDemo": "﴿ عِلْمَ ٱلْيَقِينِ ﴾ [قف على: ٱلْيَقِينْ]",
+              "meaningAtWaqf": "تقديرُ تمام الشرط وجوابه المحذوف عند من حكى الوقف هنا؛ أي: لو تعلمون حقيقة الأمر ما ألهاكم التكاثر.",
+              "meaningAtIbtida": "إضمار فعلٍ ينصب ﴿عِلْمَ ٱلْيَقِينِ﴾ على التقدير المحكيّ، وهو تكلّفٌ ضعيف.",
+              "meaningIfConnected": "الوصل هو المتعيّن؛ لأن ﴿عِلْمَ ٱلْيَقِينِ﴾ مصدرٌ مؤكِّدٌ لـ﴿تَعْلَمُونَ﴾ (مفعول مطلق) فلا يُفصل بين الفعل ومصدره."
+            }
+          ]
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": false,
+      "sourceBatch": "llm_grounded_v1"
+    },
+    {
+      "id": "s102-a5-w5",
+      "surah": 102,
+      "ayah": 5,
+      "wordIndex": 5,
+      "word": "ٱلْيَقِينِ",
+      "textPage": 1154,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "targetWord": "ٱلْيَقِينِ",
+          "verdict": [
+            "تام"
+          ],
+          "verdictLabel": [
+            "ط"
+          ],
+          "symbol": [
+            "tam"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "علل الوقوف",
+          "page": "3/1154-1155",
+          "comment": "لأن التقدير: لو تعلمون علم اليقين لما ألهاكم التكاثر، وقوله: {لترون الجحيم} جواب قسم محذوف، أي: والله لترون...",
+          "demosAndMeanings": [
+            {
+              "verdict": "تام",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                5
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ كَلَّا لَوْ تَعْلَمُونَ عِلْمَ ٱلْيَقِينِ ﴾ [قف على: ٱلْيَقِينْ]",
+              "ibtidaDemo": "﴿ لَتَرَوُنَّ ٱلْجَحِيمَ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "تمام الكلام على تقدير حذف جواب ﴿لَوْ﴾ للتهويل ودلالة السياق عليه، وهو رأس آية.",
+              "meaningAtIbtida": "استئناف القسم المضمر وجوابه المقطوع بوقوعه: ﴿لَتَرَوُنَّ ٱلْجَحِيمَ﴾.",
+              "meaningIfConnected": "الوقف لازمٌ في المعنى لفصل الشرط الامتناعي عن الوعيد القسميّ المحقَّق الوقوع."
+            }
+          ]
+        },
+        {
+          "scholar": "ابن الأنباري",
+          "targetWord": "ٱلْيَقِينِ",
+          "verdict": [
+            "حسن"
+          ],
+          "verdictLabel": [
+            "ص"
+          ],
+          "symbol": [
+            "murakhkhas"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "إيضاح الوقف والابتداء",
+          "page": "2/983- 984",
+          "comment": "ومثله: (لو تعلمون علم اليقين) والمعنى «لو تعلمون علم اليقين ما ألهاكم التكاثر» «فحذف الجواب لمعرفة المخاطبين به».",
+          "demosAndMeanings": [
+            {
+              "verdict": "حسن",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                5
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ كَلَّا لَوْ تَعْلَمُونَ عِلْمَ ٱلْيَقِينِ ﴾ [قف على: ٱلْيَقِينْ]",
+              "ibtidaDemo": "﴿ لَتَرَوُنَّ ٱلْجَحِيمَ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "تمام جملة الشرط مع الاستغناء عن جواب ﴿لَوْ﴾ لدلالة أول السورة عليه، أي: لو تعلمون علم اليقين ما ألهاكم التكاثر، وهو رأس آية.",
+              "meaningAtIbtida": "الابتداء بجواب قسمٍ مضمرٍ مستأنفٍ: (واللهِ لترونّ الجحيم).",
+              "meaningIfConnected": "الوقف يبيّن أن ﴿لَتَرَوُنَّ ٱلْجَحِيمَ﴾ جوابُ قسمٍ لا جوابُ ﴿لَوْ﴾؛ لأن رؤيتهم الجحيم واقعةٌ لا محالة."
+            }
+          ]
+        },
+        {
+          "scholar": "الداني",
+          "targetWord": "ٱلْيَقِينِ",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "المكتفى",
+          "page": "627- 628",
+          "comment": "ومثله {علم اليقين} والمعنى: لو تعلمون علم اليقين ما ألهاكم التكاثر، فحذف الجواب لمعرفة المخاطبين به.",
+          "demosAndMeanings": [
+            {
+              "verdict": "كاف",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                5
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ كَلَّا لَوْ تَعْلَمُونَ عِلْمَ ٱلْيَقِينِ ﴾ [قف على: ٱلْيَقِينْ]",
+              "ibtidaDemo": "﴿ لَتَرَوُنَّ ٱلْجَحِيمَ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "انقضاء الشرط بتقدير جوابه المحذوف (لشُغِلتُم به عن التكاثر)، وكونه رأس آية.",
+              "meaningAtIbtida": "الابتداء بجواب قسمٍ محذوفٍ غير متصلٍ إعرابياً بشرط ﴿لَوْ﴾.",
+              "meaningIfConnected": "تعلّق ما بعده به معنويٌّ من حيث سياق الوعيد، والوقف كافٍ لئلا يُتوهم أن ﴿لَتَرَوُنَّ﴾ جوابُ ﴿لَوْ﴾ فينتفي وقوع الرؤية."
+            }
+          ]
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "ٱلْيَقِينِ",
+          "verdict": [
+            "كاف"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "433 - 434",
+          "comment": "ثم كرر الثالثة لتحقيق العلم فقال كلا لو تعلمون علم اليقين وهو أكفى مما قبله وجواب لو محذوف تقديره ما ألهاكم التكاثر، وقيل لا يجوز أن يكون لترون جوابا لأنه محقق الوقوع بل الجواب محذوف تقديره لو تعلمون علما يقينا ما ألهاكم التكاثر فحذف الجواب للعلم بتقدمه.",
+          "demosAndMeanings": [
+            {
+              "verdict": "كاف",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                5
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ كَلَّا لَوْ تَعْلَمُونَ عِلْمَ ٱلْيَقِينِ ﴾ [قف على: ٱلْيَقِينْ]",
+              "ibtidaDemo": "﴿ لَتَرَوُنَّ ٱلْجَحِيمَ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "استقلال جملة الشرط بتقدير جوابها المحذوف (ما ألهاكم التكاثر)، مع كونه رأس آية.",
+              "meaningAtIbtida": "الابتداء بجملة القسم المقدَّر وجوابه ﴿لَتَرَوُنَّ ٱلْجَحِيمَ﴾.",
+              "meaningIfConnected": "تعلّق ما بعده به من جهة المعنى لبيان ما يؤولون إليه، مع استقلاله الإعرابي لكونه جواب قسمٍ لا جواب ﴿لَوْ﴾."
+            }
+          ]
+        },
+        {
+          "scholar": "النحاس",
+          "targetWord": "ٱلْيَقِينِ",
+          "verdict": [
+            "جائز"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 2",
+          "comment": "قال أبو حاتم: ومن الوقف ﴿لو تعلمون علم اليقين﴾.",
+          "demosAndMeanings": [
+            {
+              "verdict": "جائز",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                5
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ كَلَّا لَوْ تَعْلَمُونَ عِلْمَ ٱلْيَقِينِ ﴾ [قف على: ٱلْيَقِينْ]",
+              "ibtidaDemo": "﴿ لَتَرَوُنَّ ٱلْجَحِيمَ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "تمام الشرط وجوابه المضمر الدالّ عليه أول الكلام (لَما ألهاكم التكاثر)، وهو رأس آية.",
+              "meaningAtIbtida": "الابتداء باليمين المقدَّرة وجوابها ﴿لَتَرَوُنَّ ٱلْجَحِيمَ﴾.",
+              "meaningIfConnected": "جواز الوقف والوصل مع استقلال الجملة الثانية بالقسم المضمر."
+            }
+          ]
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "llm_grounded_v1"
+    },
+    {
+      "id": "s102-a6-w2",
+      "surah": 102,
+      "ayah": 6,
+      "wordIndex": 2,
+      "word": "ٱلْجَحِيمَ",
+      "textPage": 1154,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "targetWord": "ٱلْجَحِيمَ",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "علل الوقوف",
+          "page": "3/1154-1155",
+          "comment": "للعطف.",
+          "demosAndMeanings": null
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "ٱلْجَحِيمَ",
           "verdict": [
             "لا يوقف"
           ],
@@ -787,7 +1165,8 @@
           ],
           "book": "منار الهدى",
           "page": "433 - 434",
-          "comment": "ولا يوقف على الجحيم للعطف"
+          "comment": "قرأ العامة لترون مبنيا للفاعل وقرأ ابن عامر والكسائي لترون بضم التاء الفوقية رباعيا متعديا لاثنين الأول الواو والثاني الجحيم ولا يوقف على الجحيم للعطف.",
+          "demosAndMeanings": null
         }
       ],
       "aiSuggestion": null,
@@ -796,7 +1175,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "jamharah_t21764.json"
+      "sourceBatch": "llm_grounded_v1"
     },
     {
       "id": "s102-a7-w4",
@@ -810,7 +1189,7 @@
       "opinions": [
         {
           "scholar": "السجاوندي",
-          "targetWord": "عين اليقين",
+          "targetWord": "ٱلْيَقِينِ",
           "verdict": [
             "لا يوقف"
           ],
@@ -825,11 +1204,12 @@
           ],
           "book": "علل الوقوف",
           "page": "3/1154-1155",
-          "comment": "كذلك"
+          "comment": "كذلك للعطف.",
+          "demosAndMeanings": null
         },
         {
           "scholar": "الأشموني",
-          "targetWord": "عين اليقين",
+          "targetWord": "ٱلْيَقِينِ",
           "verdict": [
             "جائز",
             "لا يوقف"
@@ -848,7 +1228,58 @@
           ],
           "book": "منار الهدى",
           "page": "433 - 434",
-          "comment": "لاختلاف المسؤول عنه وقيل لا يجوز للعطف"
+          "comment": "عين اليقين جائز لاختلاف المسؤول عنه وقيل لا يجوز للعطف.",
+          "demosAndMeanings": [
+            {
+              "verdict": "جائز",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                4
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ ثُمَّ لَتَرَوُنَّهَا عَيْنَ ٱلْيَقِينِ ﴾ [قف على: ٱلْيَقِينْ]",
+              "ibtidaDemo": "﴿ ثُمَّ لَتُسْـَٔلُنَّ يَوْمَئِذٍ عَنِ ٱلنَّعِيمِ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "انقضاء الإخبار المؤكَّد عن معاينة الجحيم يقيناً، وهو رأس آية.",
+              "meaningAtIbtida": "الابتداء بالجملة المعطوفة بـ﴿ثُمَّ﴾ للإخبار عن سؤالهم يومئذٍ عن النعيم.",
+              "meaningIfConnected": "الوصل يراعي عطف جملة القسم على ما قبلها بـ﴿ثُمَّ﴾، والوقف سائغٌ لكونه رأس آية."
+            }
+          ]
+        },
+        {
+          "scholar": "النحاس",
+          "targetWord": "ٱلْيَقِينِ",
+          "verdict": [
+            "جائز"
+          ],
+          "verdictLabel": [
+            "ج"
+          ],
+          "symbol": [
+            "jaiz"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "القطع والائتناف",
+          "page": "آية 2",
+          "comment": "قال أبو حاتم: ومن الوقف ﴿ثُمَّ لَتَرَوُنَّهَا عَيْنَ الْيَقِينِ﴾.",
+          "demosAndMeanings": [
+            {
+              "verdict": "جائز",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                4
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ ثُمَّ لَتَرَوُنَّهَا عَيْنَ ٱلْيَقِينِ ﴾ [قف على: ٱلْيَقِينْ]",
+              "ibtidaDemo": "﴿ ثُمَّ لَتُسْـَٔلُنَّ يَوْمَئِذٍ عَنِ ٱلنَّعِيمِ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "تمام الجملة المؤكِّدة لرؤية الجحيم عياناً، ولكونه رأس آية.",
+              "meaningAtIbtida": "الابتداء ببيان ما يعقب ذلك من السؤال عن النعيم يوم القيامة.",
+              "meaningIfConnected": "الوصل يصل المعطوف بـ﴿ثُمَّ﴾ بالمعطوف عليه، والوقف جائزٌ لتمام الجملة والفصل بين الآيتين."
+            }
+          ]
         }
       ],
       "aiSuggestion": null,
@@ -857,7 +1288,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "jamharah_t21764.json"
+      "sourceBatch": "llm_grounded_v1"
     },
     {
       "id": "s102-a8-w5",
@@ -871,7 +1302,7 @@
       "opinions": [
         {
           "scholar": "الأشموني",
-          "targetWord": "آخر السورة",
+          "targetWord": "ٱلنَّعِيمِ",
           "verdict": [
             "تام"
           ],
@@ -886,7 +1317,23 @@
           ],
           "book": "منار الهدى",
           "page": "433 - 434",
-          "comment": null
+          "comment": "آخر السورة تام.",
+          "demosAndMeanings": [
+            {
+              "verdict": "تام",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                5
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ ثُمَّ لَتُسْـَٔلُنَّ يَوْمَئِذٍ عَنِ ٱلنَّعِيمِ ﴾ [قف على: ٱلنَّعِيمْ]",
+              "ibtidaDemo": "﴿ وَٱلْعَصْرِ ﴾ [سورة العصر]",
+              "meaningAtWaqf": "تمام الكلام لفظاً ومعنى بانقضاء الوعيد وختام سورة التكاثر.",
+              "meaningAtIbtida": "الابتداء بالسورة التالية بعد البسملة.",
+              "meaningIfConnected": "الوقف تامٌّ لانقضاء السورة الكريمة وعدم تعلّقها بما بعدها لفظاً ولا معنى."
+            }
+          ]
         }
       ],
       "aiSuggestion": null,
@@ -895,7 +1342,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "jamharah_t21764.json"
+      "sourceBatch": "llm_grounded_v1"
     }
   ]
 }

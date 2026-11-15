@@ -94,7 +94,7 @@
           "index": 4,
           "text": "خَلَقَ",
           "textImlai": "خَلَقَۙ‏",
-          "stopId": null,
+          "stopId": "s113-a2-w4",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -149,7 +149,7 @@
           "index": 5,
           "text": "وَقَبَ",
           "textImlai": "وَقَبَۙ‏",
-          "stopId": null,
+          "stopId": "s113-a3-w5",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -204,7 +204,7 @@
           "index": 5,
           "text": "ٱلْعُقَدِ",
           "textImlai": "الۡعُقَدِۙ‏",
-          "stopId": null,
+          "stopId": "s113-a4-w5",
           "inUthmaniMushaf": false,
           "uthmaniMark": null,
           "uthmaniMarkName": null,
@@ -275,13 +275,33 @@
       "ayah": 1,
       "wordIndex": 4,
       "word": "ٱلْفَلَقِ",
-      "textPage": null,
+      "textPage": 1182,
       "marginRef": null,
       "fixes": [],
       "opinions": [
         {
+          "scholar": "السجاوندي",
+          "targetWord": "ٱلْفَلَقِ",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "علل الوقوف",
+          "page": "3/1182",
+          "comment": "ولا وقف في المعوذتين إلى آخرهما؛ لصحة العطف وانتساق الكلمات بعضها على بعض في مقول واحد.",
+          "demosAndMeanings": null
+        },
+        {
           "scholar": "النحاس",
-          "targetWord": "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ",
+          "targetWord": "ٱلْفَلَقِ",
           "verdict": [
             "كاف"
           ],
@@ -295,8 +315,83 @@
             false
           ],
           "book": "القطع والائتناف",
-          "page": "828",
-          "comment": null
+          "page": "آية 1",
+          "comment": "﴿قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ﴾ قطع كاف.",
+          "demosAndMeanings": [
+            {
+              "verdict": "كاف",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                4
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ ﴾ [قف على: ٱلْفَلَقْ]",
+              "ibtidaDemo": "﴿ مِن شَرِّ مَا خَلَقَ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "تمام جملة الأمر بالاستعاذة بربّ الصبح (أو الخلق كله)، فأفادت معنى مفهوماً في ذاتها مع كونها رأس آية.",
+              "meaningAtIbtida": "الابتداء ببيان المستعاذ منه على تقدير: أعوذ به من شر ما خلق.",
+              "meaningIfConnected": "الوصل يبيّن تعلق الجار والمجرور ﴿مِن شَرِّ﴾ بفعل الاستعاذة ﴿أَعُوذُ﴾، والوقف كافٍ لكونه رأس آية مع التعلق المعنوي."
+            }
+          ]
+        },
+        {
+          "scholar": "الداني",
+          "targetWord": "ٱلْفَلَقِ",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "المكتفى",
+          "page": "639",
+          "comment": "ليس فيها وقف كاف، والتمام في آخرها. قال الأخفش وأبو حاتم وابن الأنباري وابن عبد الرزاق: لا وقف في الإخلاص والمعوذتين دون آخرهن. وذلك كذلك لأن النبي صلى الله عليه وسلم أمر أن يقول ذلك كله.",
+          "demosAndMeanings": null
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "ٱلْفَلَقِ",
+          "verdict": [
+            "لا يوقف",
+            "حسن"
+          ],
+          "verdictLabel": [
+            "لا",
+            "ص"
+          ],
+          "symbol": [
+            "la",
+            "murakhkhas"
+          ],
+          "isQila": [
+            false,
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "437 - 438",
+          "comment": "ليس فيهما وقف دون آخرهما وإن وقفت على رأس كل آية فحسن لما روي عن النبي صلى الله عليه وسلم أنَّه كان يقف على رأس كل آية منهما",
+          "demosAndMeanings": [
+            {
+              "verdict": "حسن",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                4
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ ﴾ [قف على: ٱلْفَلَقْ]",
+              "ibtidaDemo": "﴿ مِن شَرِّ مَا خَلَقَ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "إفادة معنى الاستعاذة برب الفلق، والوقف عليه حسن لكونه رأس آية اتباعاً للسنة المروية في الوقف على فواصلها.",
+              "meaningAtIbtida": "الشروع في تفصيل المستعاذ منه بعد استقرار أصل الاستعاذة في الآية الأولى.",
+              "meaningIfConnected": "الوصل يظهر التعلق اللفظي بين الجار والمجرور ﴿مِن شَرِّ﴾ والفعل ﴿أَعُوذُ﴾ ضمن مقول القول الواحد."
+            }
+          ]
         }
       ],
       "aiSuggestion": null,
@@ -305,7 +400,301 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "qat_itinaf_s113.json"
+      "sourceBatch": "llm_grounded_v1"
+    },
+    {
+      "id": "s113-a2-w4",
+      "surah": 113,
+      "ayah": 2,
+      "wordIndex": 4,
+      "word": "خَلَقَ",
+      "textPage": 1182,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "targetWord": "خَلَقَ",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "علل الوقوف",
+          "page": "3/1182",
+          "comment": "ولا وقف في المعوذتين إلى آخرهما؛ لصحة العطف وانتساق الكلمات بعضها على بعض في مقول واحد.",
+          "demosAndMeanings": null
+        },
+        {
+          "scholar": "الداني",
+          "targetWord": "خَلَقَ",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "المكتفى",
+          "page": "639",
+          "comment": "ليس فيها وقف كاف، والتمام في آخرها. قال الأخفش وأبو حاتم وابن الأنباري وابن عبد الرزاق: لا وقف في الإخلاص والمعوذتين دون آخرهن. وذلك كذلك لأن النبي صلى الله عليه وسلم أمر أن يقول ذلك كله.",
+          "demosAndMeanings": null
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "خَلَقَ",
+          "verdict": [
+            "لا يوقف",
+            "حسن"
+          ],
+          "verdictLabel": [
+            "لا",
+            "ص"
+          ],
+          "symbol": [
+            "la",
+            "murakhkhas"
+          ],
+          "isQila": [
+            false,
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "437 - 438",
+          "comment": "ليس فيهما وقف دون آخرهما وإن وقفت على رأس كل آية فحسن لما روي عن النبي صلى الله عليه وسلم أنَّه كان يقف على رأس كل آية منهما",
+          "demosAndMeanings": [
+            {
+              "verdict": "حسن",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                4
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ مِن شَرِّ مَا خَلَقَ ﴾ [قف على: خَلَقْ]",
+              "ibtidaDemo": "﴿ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "تمام ذكر المستعاذ منه الأول على سبيل العموم وهو شر جميع المخلوقات ذات الشر، ويحسُن الوقف عليه لكونه رأس آية.",
+              "meaningAtIbtida": "الابتداء بمعطوف يخصّ بعض الشرور بالذكر بعد التعميم لشدة خطره، وهو شر الليل إذا دخل وأظلم.",
+              "meaningIfConnected": "الوصل يربط المعطوف بالمعطوف عليه في سياق مقول واحد متعلق بفعل الاستعاذة."
+            }
+          ]
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "llm_grounded_v1"
+    },
+    {
+      "id": "s113-a3-w5",
+      "surah": 113,
+      "ayah": 3,
+      "wordIndex": 5,
+      "word": "وَقَبَ",
+      "textPage": 1182,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "targetWord": "وَقَبَ",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "علل الوقوف",
+          "page": "3/1182",
+          "comment": "ولا وقف في المعوذتين إلى آخرهما؛ لصحة العطف وانتساق الكلمات بعضها على بعض في مقول واحد.",
+          "demosAndMeanings": null
+        },
+        {
+          "scholar": "الداني",
+          "targetWord": "وَقَبَ",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "المكتفى",
+          "page": "639",
+          "comment": "ليس فيها وقف كاف، والتمام في آخرها. قال الأخفش وأبو حاتم وابن الأنباري وابن عبد الرزاق: لا وقف في الإخلاص والمعوذتين دون آخرهن. وذلك كذلك لأن النبي صلى الله عليه وسلم أمر أن يقول ذلك كله.",
+          "demosAndMeanings": null
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "وَقَبَ",
+          "verdict": [
+            "لا يوقف",
+            "حسن"
+          ],
+          "verdictLabel": [
+            "لا",
+            "ص"
+          ],
+          "symbol": [
+            "la",
+            "murakhkhas"
+          ],
+          "isQila": [
+            false,
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "437 - 438",
+          "comment": "ليس فيهما وقف دون آخرهما وإن وقفت على رأس كل آية فحسن لما روي عن النبي صلى الله عليه وسلم أنَّه كان يقف على رأس كل آية منهما",
+          "demosAndMeanings": [
+            {
+              "verdict": "حسن",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                5
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ ﴾ [قف على: وَقَبْ]",
+              "ibtidaDemo": "﴿ وَمِن شَرِّ ٱلنَّفَّـٰثَـٰتِ فِى ٱلْعُقَدِ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "انقضاء المستعاذ منه الثاني المقيد بظرف دخول الليل وإظلامه، والوقف عليه حسن لموافقة رأس الآية.",
+              "meaningAtIbtida": "الابتداء بالمعطوف الثالث من المستعاذ منه وهو شر السواحر اللاتي ينفثن في عقد الخيوط.",
+              "meaningIfConnected": "الوصل يُجري نسق العطف متصلاً على ما قبله في جملة المقول."
+            }
+          ]
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "llm_grounded_v1"
+    },
+    {
+      "id": "s113-a4-w5",
+      "surah": 113,
+      "ayah": 4,
+      "wordIndex": 5,
+      "word": "ٱلْعُقَدِ",
+      "textPage": 1182,
+      "marginRef": null,
+      "fixes": [],
+      "opinions": [
+        {
+          "scholar": "السجاوندي",
+          "targetWord": "ٱلْعُقَدِ",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "علل الوقوف",
+          "page": "3/1182",
+          "comment": "ولا وقف في المعوذتين إلى آخرهما؛ لصحة العطف وانتساق الكلمات بعضها على بعض في مقول واحد.",
+          "demosAndMeanings": null
+        },
+        {
+          "scholar": "الداني",
+          "targetWord": "ٱلْعُقَدِ",
+          "verdict": [
+            "لا يوقف"
+          ],
+          "verdictLabel": [
+            "لا"
+          ],
+          "symbol": [
+            "la"
+          ],
+          "isQila": [
+            false
+          ],
+          "book": "المكتفى",
+          "page": "639",
+          "comment": "ليس فيها وقف كاف، والتمام في آخرها. قال الأخفش وأبو حاتم وابن الأنباري وابن عبد الرزاق: لا وقف في الإخلاص والمعوذتين دون آخرهن. وذلك كذلك لأن النبي صلى الله عليه وسلم أمر أن يقول ذلك كله.",
+          "demosAndMeanings": null
+        },
+        {
+          "scholar": "الأشموني",
+          "targetWord": "ٱلْعُقَدِ",
+          "verdict": [
+            "لا يوقف",
+            "حسن"
+          ],
+          "verdictLabel": [
+            "لا",
+            "ص"
+          ],
+          "symbol": [
+            "la",
+            "murakhkhas"
+          ],
+          "isQila": [
+            false,
+            false
+          ],
+          "book": "منار الهدى",
+          "page": "437 - 438",
+          "comment": "ليس فيهما وقف دون آخرهما وإن وقفت على رأس كل آية فحسن لما روي عن النبي صلى الله عليه وسلم أنَّه كان يقف على رأس كل آية منهما",
+          "demosAndMeanings": [
+            {
+              "verdict": "حسن",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                5
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ وَمِن شَرِّ ٱلنَّفَّـٰثَـٰتِ فِى ٱلْعُقَدِ ﴾ [قف على: ٱلْعُقَدْ]",
+              "ibtidaDemo": "﴿ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "تمام ذكر المستعاذ منه الثالث المتعلق بشر النفث في العقد، ويحسن الوقف عليه لرأس الآية.",
+              "meaningAtIbtida": "الابتداء بالمعطوف الرابع والأخير وهو الاستعاذة من شر الحاسد حين يظهر حسده ويعمل بمقتضاه.",
+              "meaningIfConnected": "الوصل يجمع المعطوفات كلها في نسق واحد متعلق بقوله ﴿أَعُوذُ﴾."
+            }
+          ]
+        }
+      ],
+      "aiSuggestion": null,
+      "symbolWitness": null,
+      "inUthmaniMushaf": false,
+      "uthmaniMark": null,
+      "uthmaniMarkName": null,
+      "isVerseEnd": true,
+      "sourceBatch": "llm_grounded_v1"
     },
     {
       "id": "s113-a5-w5",
@@ -334,7 +723,23 @@
           ],
           "book": "علل الوقوف",
           "page": "3/1182",
-          "comment": "ولا وقف في المعوذتين إلى آخرهما؛ لصحة العطف وانتساق الكلمات بعضها على بعض في مقول واحد"
+          "comment": "ولا وقف في المعوذتين إلى آخرهما؛ لصحة العطف وانتساق الكلمات بعضها على بعض في مقول واحد.",
+          "demosAndMeanings": [
+            {
+              "verdict": "تام",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                5
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ ﴾ [قف على: حَسَدْ]",
+              "ibtidaDemo": "﴿ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "انقضاء المعطوفات المنتسقة في مقول واحد بختام السورة، فتمّ الكلام لفظاً ومعنىً.",
+              "meaningAtIbtida": "استئناف سورة الناس بمقول جديد مستقل عما قبله.",
+              "meaningIfConnected": "يتعيّن تمام الوقف لانتهاء العطف وختام السورة."
+            }
+          ]
         },
         {
           "scholar": "ابن الأنباري",
@@ -353,7 +758,23 @@
           ],
           "book": "إيضاح الوقف والابتداء",
           "page": "2/992",
-          "comment": "والوقف التام في سورة الإخلاص والفلق والناس آخر السورة"
+          "comment": "والوقف التام في سورة الإخلاص والفلق والناس آخر السورة.",
+          "demosAndMeanings": [
+            {
+              "verdict": "تام",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                5
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ ﴾ [قف على: حَسَدْ]",
+              "ibtidaDemo": "﴿ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "التمام المطلق بانقضاء السورة واستيفاء جميع المستعاذ منه في مقول القول.",
+              "meaningAtIbtida": "الابتداء بسورة الناس المستقلة بلفظها وأمرها الجديد بالاستعاذة.",
+              "meaningIfConnected": "الوقف هو الأصل التام لانتهاء السورة وانقطاع التعلق اللفظي عما بعدها."
+            }
+          ]
         },
         {
           "scholar": "الداني",
@@ -372,26 +793,76 @@
           ],
           "book": "المكتفى",
           "page": "639",
-          "comment": "ليس فيها وقف كاف، والتمام في آخرها.\nقال الأخفش وأبو حاتم وابن الأنباري وابن عبد الرزاق: لا وقف في الإخلاص والمعوذتين دون آخرهن. وذلك كذلك لأن النبي صلى الله عليه وسلم أمر أن يقول ذلك كله"
+          "comment": "ليس فيها وقف كاف، والتمام في آخرها. قال الأخفش وأبو حاتم وابن الأنباري وابن عبد الرزاق: لا وقف في الإخلاص والمعوذتين دون آخرهن. وذلك كذلك لأن النبي صلى الله عليه وسلم أمر أن يقول ذلك كله.",
+          "demosAndMeanings": [
+            {
+              "verdict": "تام",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                5
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ ﴾ [قف على: حَسَدْ]",
+              "ibtidaDemo": "﴿ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "تمام الكلام بانتهاء السورة وكمال جملة المقول المأمور بقوله كله.",
+              "meaningAtIbtida": "الابتداء بسورة أخرى مستقلة في مبناها وإعرابها.",
+              "meaningIfConnected": "الوقف تام لانقضاء نظم السورة وتمام المعنى المراد منها."
+            }
+          ]
         },
         {
           "scholar": "الأشموني",
           "targetWord": "حَسَدَ",
           "verdict": [
-            "تام"
+            "تام",
+            "حسن"
           ],
           "verdictLabel": [
-            "ط"
+            "ط",
+            "ص"
           ],
           "symbol": [
-            "tam"
+            "tam",
+            "murakhkhas"
           ],
           "isQila": [
+            false,
             false
           ],
           "book": "منار الهدى",
           "page": "437 - 438",
-          "comment": "ليس فيهما وقف دون آخرهما وإن وقفت على رأس كل آية فحسن لما روي عن النبي صلى الله عليه وسلم أنَّه كان يقف على رأس كل آية منهما"
+          "comment": "ليس فيهما وقف دون آخرهما وإن وقفت على رأس كل آية فحسن لما روي عن النبي صلى الله عليه وسلم أنَّه كان يقف على رأس كل آية منهما",
+          "demosAndMeanings": [
+            {
+              "verdict": "تام",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                5
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ ﴾ [قف على: حَسَدْ]",
+              "ibtidaDemo": "﴿ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "تمام المقول واستيفاء أركان الاستعاذة بانتهاء آخر السورة.",
+              "meaningAtIbtida": "الابتداء بسورة الناس المستقلة لفظاً وحكماً.",
+              "meaningIfConnected": "الوقف تام لبلوغ آخر السورة وانقضاء التعلق."
+            },
+            {
+              "verdict": "حسن",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                5
+              ],
+              "ibtidaSegmentWords": null,
+              "waqfDemo": "تلاوة: ﴿ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ ﴾ [قف على: حَسَدْ]",
+              "ibtidaDemo": "﴿ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ ﴾ [الآية التالية]",
+              "meaningAtWaqf": "حُسن الوقف لكونه رأس آية جرياً على سنة الوقف على رؤوس آي المعوذتين.",
+              "meaningAtIbtida": "الابتداء بالسورة التالية بعد الوقف على الفاصلة القرآنية.",
+              "meaningIfConnected": "يجتمع في هذا الموضع وصف التمام لكونه آخر السورة ووصف الحسن لكونه رأس آية."
+            }
+          ]
         }
       ],
       "aiSuggestion": null,
@@ -400,7 +871,7 @@
       "uthmaniMark": null,
       "uthmaniMarkName": null,
       "isVerseEnd": true,
-      "sourceBatch": "jamharah_t21775.json"
+      "sourceBatch": "llm_grounded_v1"
     }
   ]
 }

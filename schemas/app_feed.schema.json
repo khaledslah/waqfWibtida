@@ -313,6 +313,15 @@
                   "type": ["string", "null"],
                   "description": "Commentary or qualification regarding the opinion"
                 },
+                "qiraatBasis": {
+                  "type": ["string", "null"],
+                  "enum": ["non_hafs_only", "varies_by_qiraat", "hafs_and_others", null],
+                  "description": "Whether this opinion relies on a non-Hafs qiraah or varies across qiraat"
+                },
+                "qiraatNote": {
+                  "type": ["string", "null"],
+                  "description": "Brief Arabic explanation of the qiraat difference when qiraatBasis is set"
+                },
                 "demosAndMeanings": {
                   "type": ["array", "null"],
                   "description": "Recitation/resumption demonstrations, word index spans, and semantic explanations for pause-permitting verdicts",
@@ -361,12 +370,32 @@
                         "maxItems": 2,
                         "description": "Inclusive 1-based [startWordIndex, endWordIndex] range in the ayah for the waqf segment"
                       },
+                      "waqfStartAyah": {
+                        "type": ["integer", "null"],
+                        "minimum": 1,
+                        "description": "Optional starting ayah number when the waqf demo spans across ayahs"
+                      },
+                      "waqfEndAyah": {
+                        "type": ["integer", "null"],
+                        "minimum": 1,
+                        "description": "Optional ending ayah number when the waqf demo spans across ayahs"
+                      },
                       "ibtidaSegmentWords": {
                         "type": ["array", "null"],
                         "items": { "type": "integer", "minimum": 1 },
                         "minItems": 2,
                         "maxItems": 2,
                         "description": "Inclusive 1-based [startWordIndex, endWordIndex] range in the ayah for resumption (ibtida), or null when resuming at next ayah"
+                      },
+                      "ibtidaStartAyah": {
+                        "type": ["integer", "null"],
+                        "minimum": 1,
+                        "description": "Optional starting ayah number when the ibtida demo starts in another ayah"
+                      },
+                      "ibtidaEndAyah": {
+                        "type": ["integer", "null"],
+                        "minimum": 1,
+                        "description": "Optional ending ayah number when the ibtida demo spans across ayahs"
                       },
                       "waqfDemo": {
                         "type": "string",

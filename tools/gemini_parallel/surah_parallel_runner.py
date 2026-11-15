@@ -30,6 +30,7 @@ from surah_telemetry_ledger import (  # noqa: E402
     explain_plan_limit,
     fmt_12h,
     fmt_iso_to_12h,
+    merge_quota_pools,
 )
 from loguru import logger  # noqa: E402
 from gemini_web_mcp_cli.core.client import GeminiClient  # noqa: E402
@@ -81,6 +82,7 @@ DEFAULT_PROFILES_4: list[str] = ["default", "niyyah", "abod", "smallbusiness", "
 API_PROFILES: frozenset[str] = frozenset({"coarena"})
 COARENA_MIN_USD_LEFT: float = 0.25
 COARENA_STEP_B_ONLY: bool = True
+BACKFILL_MISSING_DEMOS: bool = False
 
 
 def _is_api_profile(profile: str) -> bool:
@@ -711,10 +713,52 @@ async def update_quota_live(profile: str, **fields: Any) -> None:
             merged["last_error"] = ""
         if start_rem is not None:
             merged["start_remaining"] = start_rem
-        if merged.get("reset_at") and not merged.get("reset_at_12h"):
+        if merged.get("reset_at"):
             merged["reset_at_12h"] = fmt_iso_to_12h(merged.get("reset_at"), include_seconds=False)
-        if merged.get("limit") is not None:
-            merged["plan_limit_info"] = explain_plan_limit(merged.get("limit"), merged.get("argon_high_ok"))
+        if fields.get("remaining") is not None:
+            merged["remaining_stale"] = False
+        elif merged.get("reset_at"):
+            try:
+                if datetime.fromisoformat(str(merged["reset_at"])).astimezone() <= now_dt:
+                    merged["remaining_stale"] = True
+            except Exception:
+                pass
+        if not fields.get("usage_page") and merged.get("blocking_reset_at"):
+            try:
+                if datetime.fromisoformat(str(merged["blocking_reset_at"])).astimezone() <= now_dt:
+                    merged.pop("blocking_reset_at", None)
+                    merged.pop("blocking_reset_in_s", None)
+                    merged.pop("blocking_pool", None)
+            except Exception:
+                pass
+        if merged.get("tier") == "coarena_api" or _is_api_profile(profile):
+            merged.pop("pools", None)
+            merged.pop("plan_limit_info", None)
+        else:
+            if merged.get("limit") is not None:
+                merged["plan_limit_info"] = explain_plan_limit(merged.get("limit"), merged.get("argon_high_ok"))
+            prev_pools = prev.get("pools") if isinstance(prev.get("pools"), dict) else {}
+            merged["pools"] = merge_quota_pools(merged, prev_pools)
+            up = fields.get("usage_page") if isinstance(fields.get("usage_page"), dict) else {}
+            up_pools = up.get("pools") if isinstance(up.get("pools"), dict) else {}
+            if up.get("ok") and up_pools:
+                base_pools = merged.get("pools") if isinstance(merged.get("pools"), dict) else {}
+                for pk in ("burst_5h", "weekly"):
+                    src = up_pools.get(pk)
+                    if not isinstance(src, dict):
+                        continue
+                    prev_p = base_pools.get(pk) if isinstance(base_pools.get(pk), dict) else {}
+                    base_pools[pk] = {
+                        **prev_p,
+                        **{k: v for k, v in src.items() if v is not None},
+                        "known": True,
+                        "source": "usage_page",
+                    }
+                merged["pools"] = base_pools
+                if up.get("blocking_reset_at") and int(up.get("blocking_reset_in_s") or 0) > 0:
+                    merged["blocking_pool"] = up.get("blocking_pool")
+                    merged["blocking_reset_at"] = up.get("blocking_reset_at")
+                    merged["blocking_reset_in_s"] = up.get("blocking_reset_in_s")
         prof_map[profile] = merged
         payload = {
             "updatedAt": now_dt.isoformat(timespec="seconds"),
@@ -767,6 +811,8 @@ def build_step_a_prompt(batch_id: str, start_ayah: int, end_ayah: int, input_tex
         '      "isQila": [false],\n'
         '      "sajawandiSymbol": null,\n'
         '      "typoDetected": null,\n'
+        '      "qiraatBasis": null,\n'
+        '      "qiraatNote": null,\n'
         '      "comment": "النص العلمي الكامل للإمام دون وضع الحكم بين قوسين في البداية."\n'
         "    }\n"
         "  ]\n"
@@ -778,9 +824,10 @@ def build_step_a_prompt(batch_id: str, start_ayah: int, end_ayah: int, input_tex
         "   - انتبه لتكرار الكلمة داخل الآية الواحدة وحدد الفهرس المقصود من السياق وترتيب الآيات.\n"
         "   - لا تفرد موضعًا مستقلًا لمجرد ذكر قراءة أخرى في فعل وسط الكلام إذا كان الوقف واحدًا على آخر الجملة، ولا تستخرج شواهد السور الأخرى.\n"
         "   - لا تغفل المواضع الضمنية غير الموضوعة بين أقواس أو المعطوفة بـ`ومثله` / `وكذا` / `والتقدير` أو المذكورة في تذييلات رؤوس الآيات (`والوقف على رؤوس الآي...`).\n"
-        "2. **توحيد الموضع والترتيب (`verdicts`, `isQila`)**:\n"
+        "2. **توحيد الموضع والترتيب (`verdicts`, `isQila`) وبيان القراءات (`qiraatBasis`, `qiraatNote`)**:\n"
         "   - القيم المسموحة فقط في `verdicts`: `[\"لازم\", \"تام\", \"كاف\", \"حسن\", \"صالح\", \"جائز\", \"قيل فيه وقف\", \"لا يوقف\"]`.\n"
         "   - لا تكرر نفس الرباعي `(surah, ayah, wordIndex, scholar)`؛ بل اجمع كل الأوجه المذكورة لذلك الإمام في هذا الموضع داخل `verdicts` و`isQila` بنفس الطول (`true` للوجه الثانوي/التمريض أو `قيل` و`false` للمختار).\n"
+        "   - **تصنيف القراءات (`qiraatBasis`, `qiraatNote`)**: اجعل كلاهما `null` في الوقوف المعتادة التي لا تتعلق باختلاف قراءة. وإذا تضمّن كلام الإمام اختلاف قراءة فصنّفه بدقة: `\"non_hafs_only\"` (الوقف خاص بقراءة غير حفص ولا يثبت على حفص)، `\"varies_by_qiraat\"` (يتغير الحكم بين حفص وغيره)، أو `\"hafs_and_others\"` (ذكر قراءة أخرى لكن الوقف ثابت على حفص والقراءتين)، وضع تلخيصًا موجزًا في `qiraatNote` (مثل `\"على قراءة نافع وابن كثير\"`).\n"
         "   - **قاعدة السجاوندي الصارمة**: ضع الرمز الأصلي في `sajawandiSymbol` (`\"م\"`, `\"ط\"`, `\"ج\"`, `\"ز\"`, `\"ص\"`, `\"لا\"`, `\"ق\"`) لمداخل السجاوندي فقط (و`null` لغيره)، والتزم حرفيًا بالتحويل:\n"
         '     `"م"` ← `"لازم"`, `"ط"` ← `"تام"`, `"ج"` ← `"جائز"`, `"ز"` ← `"جائز"`, `"ص"` ← `"حسن"` (مرخص ضرورة؛ لا تستخدم `"صالح"` لرمز `"ص"` أبدًا!), `"لا"` ← `"لا يوقف"`, `"ق"` ← `"قيل فيه وقف"`.\n'
         "3. **التعليق العلمي (`comment`) والتصحيفات (`typoDetected`)**:\n"
@@ -843,6 +890,32 @@ def collect_permissive_items(
     return permissive
 
 
+def _collect_words_ctx(ays: set[str], input_data: dict[str, Any]) -> dict[str, str]:
+    words_ctx: dict[str, str] = {}
+    compact = input_data.get("ayahWordsCompact", {})
+    bctx = input_data.get("boundaryContext", {})
+    for ay in sorted(ays, key=int):
+        ay_n = int(ay)
+        prv = str(ay_n - 1)
+        if ay_n > 1:
+            if prv in compact and prv not in words_ctx:
+                words_ctx[prv] = compact[prv]
+            elif prv in bctx.get("prevWordsCompact", {}) and f"{prv}_prev" not in words_ctx:
+                words_ctx[f"{prv}_prev"] = bctx["prevWordsCompact"][prv]
+        if ay in compact:
+            words_ctx[ay] = compact[ay]
+        elif ay in bctx.get("nextWordsCompact", {}):
+            words_ctx[ay] = bctx["nextWordsCompact"][ay]
+        elif ay in bctx.get("prevWordsCompact", {}):
+            words_ctx[ay] = bctx["prevWordsCompact"][ay]
+        nxt = str(ay_n + 1)
+        if nxt in compact:
+            words_ctx[nxt] = compact[nxt]
+        elif nxt in bctx.get("nextWordsCompact", {}):
+            words_ctx[f"{nxt}_next"] = bctx["nextWordsCompact"][nxt]
+    return words_ctx
+
+
 def build_step_b_chunk_prompt(
     batch_id: str,
     chunk: list[dict[str, Any]],
@@ -850,15 +923,7 @@ def build_step_b_chunk_prompt(
     chunk_label: str = "",
 ) -> str:
     ays = {str(it["ayah"]) for it in chunk}
-    words_ctx: dict[str, str] = {}
-    for ay in sorted(ays, key=int):
-        if ay in input_data.get("ayahWordsCompact", {}):
-            words_ctx[ay] = input_data["ayahWordsCompact"][ay]
-        nxt = str(int(ay) + 1)
-        if nxt in input_data.get("ayahWordsCompact", {}):
-            words_ctx[nxt] = input_data["ayahWordsCompact"][nxt]
-        elif nxt in input_data.get("boundaryContext", {}).get("nextWordsCompact", {}):
-            words_ctx[f"{nxt}_next"] = input_data["boundaryContext"]["nextWordsCompact"][nxt]
+    words_ctx = _collect_words_ctx(ays, input_data)
 
     list_json = json.dumps(chunk, ensure_ascii=False, separators=(",", ":"))
     words_json = json.dumps(words_ctx, ensure_ascii=False, indent=2)
@@ -871,9 +936,11 @@ def build_step_b_chunk_prompt(
         "  - `verdict` (string): الحكم الموضَّح مطابقًا لـ`verdicts`.\n"
         "  - `isQila` (boolean): `true` أو `false` مطابقًا للموضع.\n"
         "  - `attributedTo` (string اختياري عند وجود قائل منقول عنه مثل السجستاني أو الأخفش).\n"
-        "  - `waqfSegmentWords`: `[startWordIndex, endWordIndex]` (1-based في نفس الآية؛ يجب أن يكون `1 <= startWordIndex <= endWordIndex` و`endWordIndex == wordIndex` بالضبط!).\n"
-        "  - `ibtidaSegmentWords`: `[startWordIndex, endWordIndex]` في نفس الآية للابتداء بعد الوقف (بحيث يكون `startWordIndex == wordIndex + 1` و`endWordIndex <= عدد كلمات الآية`)، أو `null` إذا كان `wordIndex` هو `[رأس آية]` والابتداء من الآية التالية.\n"
-        "  - `waqfDemo`: نص التلاوة حتى كلمة الوقف بصيغة `تلاوة: ﴿ ... ﴾ [قف على: ...]`.\n"
+        "  - `waqfSegmentWords`: `[startWordIndex, endWordIndex]` (`endWordIndex == wordIndex` بالضبط!). في الوضع المعتاد ضمن نفس الآية (`1 <= startWordIndex <= wordIndex`). **وإذا نص كلام العالم صراحة على أن الجملة الموقوف عليها تبدأ من الآية السابقة** (مثل تعلق `﴿مِنْ أَجْلِ ذَٰلِكَ﴾` في الآية 32 بـ`﴿فَأَصْبَحَ مِنَ النَّادِمِينَ﴾` في الآية 31)، فأضف `\"waqfStartAyah\"` برقم الآية السابقة واجعل `waqfSegmentWords[0]` رقم كلمة البدء في الآية السابقة و`waqfSegmentWords[1] == wordIndex` في الآية الحالية.\n"
+        "  - `waqfStartAyah` (int اختياري — يُكتب **فقط** إذا بدأ مقطع الوقف في الآية السابقة `ayah - 1`).\n"
+        "  - `ibtidaSegmentWords`: `[startWordIndex, endWordIndex]` للابتداء بعد الوقف (`startWordIndex == wordIndex + 1` ضمن الآية؛ **وإذا امتد الابتداء صراحة للآية التالية** فأضف `\"ibtidaEndAyah\"` برقم الآية التالية واجعل `endWordIndex` فيها)، أو `null` إذا كان `wordIndex` هو `[رأس آية]` (أو أضف `\"ibtidaStartAyah\": ayah + 1` و`\"ibtidaEndAyah\": ayah + 1` و`[1, end]` إن احتيج لتظليل مطلع الآية التالية).\n"
+        "  - `ibtidaStartAyah` / `ibtidaEndAyah` (int اختياري — يُكتبان **فقط** عند تجاوز نطاق الابتداء إلى الآية التالية).\n"
+        "  - `waqfDemo`: نص التلاوة حتى كلمة الوقف بصيغة `تلاوة: ﴿ ... ﴾ [قف على: ...]` (ويشمل مطلع المقطع من الآية السابقة عند استخدام `waqfStartAyah`).\n"
         "  - `ibtidaDemo`: نص الابتداء بعد الوقف بصيغة `﴿ ... ﴾ [قف على: ...]` (أو مطلع الآية التالية `[الآية التالية]` عند رأس الآية).\n"
         "  - `meaningAtWaqf`: بيان المعنى عند الوقف.\n"
         "  - `meaningAtIbtida`: بيان المعنى عند الابتداء بما بعده.\n"
@@ -913,15 +980,7 @@ def build_step_b_repair_prompt(
     fix_items: list[dict[str, Any]], input_data: dict[str, Any], is_missing_only: bool
 ) -> str:
     ays = {str(it["ayah"]) for it in fix_items}
-    words_ctx: dict[str, str] = {}
-    for ay in sorted(ays, key=int):
-        if ay in input_data.get("ayahWordsCompact", {}):
-            words_ctx[ay] = input_data["ayahWordsCompact"][ay]
-        nxt = str(int(ay) + 1)
-        if nxt in input_data.get("ayahWordsCompact", {}):
-            words_ctx[nxt] = input_data["ayahWordsCompact"][nxt]
-        elif nxt in input_data.get("boundaryContext", {}).get("nextWordsCompact", {}):
-            words_ctx[f"{nxt}_next"] = input_data["boundaryContext"]["nextWordsCompact"][nxt]
+    words_ctx = _collect_words_ctx(ays, input_data)
 
     compact_items = [{k: v for k, v in it.items() if k != "previous"} for it in fix_items]
     header = (
@@ -932,11 +991,11 @@ def build_step_b_repair_prompt(
     return (
         f"{header}\n"
         "قواعد صارمة:\n"
-        "- `waqfSegmentWords`: `[start, wordIndex]` (ينتهي عند `wordIndex`).\n"
-        "- `ibtidaSegmentWords`: `[wordIndex + 1, end]` ضمن كلمات الآية في الجدول، أو `null` **فقط** عندما يكون الوقف على `[رأس آية]` (آخر كلمة في الآية).\n"
+        "- `waqfSegmentWords`: `[start, wordIndex]` (ينتهي عند `wordIndex` في الآية الحالية؛ وإذا بدأ المقطع في الآية السابقة `ayah - 1` فأضف `waqfStartAyah`).\n"
+        "- `ibtidaSegmentWords`: `[wordIndex + 1, end]` ضمن كلمات الآية (أو مع `ibtidaEndAyah` عند الامتداد للآية التالية)، أو `null` **فقط** عندما يكون الوقف على `[رأس آية]` (آخر كلمة في الآية) ما لم يُحدد `ibtidaStartAyah` / `ibtidaEndAyah` للآية التالية.\n"
         "- **مهم جدًا عند `[رأس آية]`**: اجعل `ibtidaSegmentWords` فقط `null`، أما `ibtidaDemo` و`meaningAtIbtida` **فممنوع وضع `null` أو نص فارغ فيهما مطلقًا**! في `ibtidaDemo` اكتب مطلع الآية التالية من جدول الكلمات بصيغة `﴿ مطلع الآية التالية ... ﴾ [قف على: ...]` (أو `[الآية التالية]`)، وفي `meaningAtIbtida` اشرح معنى الابتداء بأول الآية التالية.\n"
         "- عنصر واحد لكل حكم غير `\"لا يوقف\"` في `verdicts` بالترتيب نفسه.\n"
-        "- الحقول المسموحة فقط داخل `demosAndMeanings`: `verdict`, `isQila`, `attributedTo` (اختياري), `waqfSegmentWords`, `ibtidaSegmentWords`, `waqfDemo` (بصيغة `تلاوة: ﴿ ... ﴾ [قف على: ...]`), `ibtidaDemo` (نص غير فارغ دائمًا), `meaningAtWaqf` (نص غير فارغ), `meaningAtIbtida` (نص غير فارغ دائمًا), `meaningIfConnected` (نص غير فارغ).\n\n"
+        "- الحقول المسموحة فقط داخل `demosAndMeanings`: `verdict`, `isQila`, `attributedTo` (اختياري), `waqfSegmentWords`, `waqfStartAyah` (اختياري), `waqfEndAyah` (اختياري), `ibtidaSegmentWords`, `ibtidaStartAyah` (اختياري), `ibtidaEndAyah` (اختياري), `waqfDemo` (بصيغة `تلاوة: ﴿ ... ﴾ [قف على: ...]`), `ibtidaDemo` (نص غير فارغ دائمًا), `meaningAtWaqf` (نص غير فارغ), `meaningAtIbtida` (نص غير فارغ دائمًا), `meaningIfConnected` (نص غير فارغ).\n\n"
         f"جدول الكلمات الدقيقة:\n```json\n{json.dumps(words_ctx, ensure_ascii=False, indent=2)}\n```\n\n"
         f"أخرج مصفوفة JSON واحدة فقط داخل كتلة كود ```json لهذه الـ {len(compact_items)} فقط (كل عنصر يحوي `ayah`, `wordIndex`, `scholar`, `demosAndMeanings`):\n"
         f"```json\n{json.dumps(compact_items, ensure_ascii=False, indent=2)}\n```\n"
@@ -1625,6 +1684,7 @@ async def await_quota_unretire(
                     reset_in_s=q.get("reset_in_s"),
                     reset_in_human=reset_h,
                     reset_at=q.get("reset_at"),
+                    usage_page=q.get("usage_page"),
                     api_credits=q.get("api_credits"),
                     name=q.get("name") or "Thinking/Pro",
                 )
@@ -1660,6 +1720,7 @@ async def await_quota_unretire(
                         reset_in_s=q.get("reset_in_s"),
                         reset_in_human=reset_h,
                         reset_at=q.get("reset_at"),
+                        usage_page=q.get("usage_page"),
                         api_credits=q.get("api_credits"),
                         name=q.get("name") or "Thinking/Pro",
                     )
@@ -1805,17 +1866,39 @@ async def process_batch(
         "step_b_s": 0.0,
     }
     final_out = u.PROTO / f"{batch_id}_llm_output.json"
+    existing_for_backfill: dict[str, Any] | None = None
     if final_out.exists():
         t_v0 = time.monotonic()
         async with VALIDATE_LOCK:
             ok, msg = u.validate_candidate_file(batch_id, start_ayah, end_ayah, final_out, apply_to_feed=False, surah=s_num)
         bstats["validate_s"] += time.monotonic() - t_v0
         if ok:
-            dt_b = round(time.monotonic() - t_batch0, 3)
-            log(f"[{profile}][{batch_id}] SKIP already complete & valid in {dt_b:.2f}s: {final_out.name}")
-            await update_status(batch_id, profile=profile, stage="done_cached", valid=True, total_s=dt_b)
-            await record_event("batch_done", surah=s_num, batch=batch_id, profile=profile, ok=True, cached=True, total_s=dt_b)
-            return True, "cached"
+            if BACKFILL_MISSING_DEMOS:
+                try:
+                    cand_exist = json.loads(final_out.read_text(encoding="utf-8"))
+                    miss_b, brok_b, _ = u.validate_step_b(
+                        cand_exist, cand_exist, wl_cache, mw_cache, default_surah=s_num
+                    )
+                    if miss_b or brok_b:
+                        existing_for_backfill = cand_exist
+                        log(
+                            f"[{profile}][{batch_id}] Backfill Step B from existing {final_out.name} "
+                            f"(missing={len(miss_b)}, broken={len(brok_b)})"
+                        )
+                    else:
+                        dt_b = round(time.monotonic() - t_batch0, 3)
+                        log(f"[{profile}][{batch_id}] SKIP demos already complete in {dt_b:.2f}s: {final_out.name}")
+                        await update_status(batch_id, profile=profile, stage="done_cached", valid=True, total_s=dt_b)
+                        await record_event("batch_done", surah=s_num, batch=batch_id, profile=profile, ok=True, cached=True, total_s=dt_b)
+                        return True, "cached"
+                except Exception as exc:
+                    log(f"[{profile}][{batch_id}] Backfill check failed, falling back to normal path: {exc}")
+            else:
+                dt_b = round(time.monotonic() - t_batch0, 3)
+                log(f"[{profile}][{batch_id}] SKIP already complete & valid in {dt_b:.2f}s: {final_out.name}")
+                await update_status(batch_id, profile=profile, stage="done_cached", valid=True, total_s=dt_b)
+                await record_event("batch_done", surah=s_num, batch=batch_id, profile=profile, ok=True, cached=True, total_s=dt_b)
+                return True, "cached"
 
     inp_path = u.PROTO / f"{batch_id}_input.json"
     input_text = inp_path.read_text(encoding="utf-8")
@@ -1823,10 +1906,10 @@ async def process_batch(
 
     chat = _make_chat(profile, client)
     ext_path = SCRATCH / f"{batch_id}_extract_only.json"
-    ext_data: dict[str, Any] | None = None
+    ext_data: dict[str, Any] | None = existing_for_backfill
     step_a_from_chat = False
 
-    if ext_path.exists():
+    if ext_data is None and ext_path.exists():
         try:
             cand = json.loads(ext_path.read_text(encoding="utf-8"))
             t_v0 = time.monotonic()
@@ -1955,6 +2038,11 @@ async def process_batch(
             collected_items = json.loads(demos_cache_path.read_text(encoding="utf-8"))
         except Exception:
             collected_items = []
+    elif existing_for_backfill is not None:
+        collected_items = [
+            e for e in existing_for_backfill.get("extractions", [])
+            if isinstance(e, dict) and e.get("demosAndMeanings")
+        ]
 
     t_v0 = time.monotonic()
     miss, brok, valid_map = u.validate_step_b(ext_data, collected_items, wl_cache, mw_cache, default_surah=s_num)
@@ -2262,6 +2350,12 @@ async def init_client_with_retry(profile: str, stagger_s: float) -> tuple[Gemini
                 cap_info = await asyncio.to_thread(
                     pq.check_picker_capability_sync, profile, client, port, True
                 )
+                if cap_info.get("picker_result") in ("unauthenticated", "no_picker"):
+                    await asyncio.sleep(2.5)
+                    await pq.ensure_profile_chrome_and_cookies(profile, client, allow_launch=False)
+                    cap_info = await asyncio.to_thread(
+                        pq.check_picker_capability_sync, profile, client, port, True
+                    )
             launch_info: dict[str, Any] = {
                 "stagger_s": round(stagger_s, 3),
                 "client_init_s": client_init_s,
@@ -2298,6 +2392,12 @@ async def get_pro_quota_rich(client: Any, *, force: bool = False) -> dict[str, A
         or "default"
     )
     await pace_google_action(prof_name, "quota")
+
+    if force:
+        try:
+            await pq.ensure_profile_chrome_and_cookies(prof_name, client, allow_launch=False)
+        except Exception:
+            pass
 
     # Best-effort live model catalog (sJBwce) so Hydrogen/Carbon hashes stay fresh.
     try:
@@ -2362,7 +2462,8 @@ async def get_pro_quota_rich(client: Any, *, force: bool = False) -> dict[str, A
         usage = await asyncio.wait_for(fetch_usage_page_pools(client), timeout=35.0)
         out["usage_page"] = usage
         if usage.get("ok"):
-            if usage.get("blocking_reset_at"):
+            blk_s = usage.get("blocking_reset_in_s")
+            if usage.get("blocking_reset_at") and (blk_s is None or int(blk_s) > 0):
                 out["reset_at"] = usage.get("blocking_reset_at")
                 out["reset_in_s"] = usage.get("blocking_reset_in_s")
                 out["reset_in_human"] = pq.fmt_duration(usage.get("blocking_reset_in_s"))
@@ -2513,13 +2614,22 @@ async def queue_worker(
                 qlabel = qname0 or "Thinking/Pro"
                 lim_s = lim0 if lim0 is not None else "?"
                 reset_str = f" reset_in={reset0_human}" if reset0_human != "—" else ""
+                tier_val = cap_info.get("tier")
                 tier_str = (
                     ("API(Step B / demos only)" if COARENA_STEP_B_ONLY else "API(4 Argon High)")
                     if _is_api_profile(profile)
                     else (
                         "PRO(4 Argon High)"
                         if argon_ok is True
-                        else (f"NON-PRO({cap_info.get('picker_result')})" if argon_ok is False else "tier=unknown")
+                        else (
+                            "SESSION-EXPIRED(unauthenticated)"
+                            if tier_val == "unauthenticated"
+                            else (
+                                f"NON-PRO({cap_info.get('picker_result')})"
+                                if (argon_ok is False and tier_val == "non_pro_downgraded")
+                                else f"tier={tier_val or 'unknown'}"
+                            )
+                        )
                     )
                 )
                 log(
@@ -2548,7 +2658,26 @@ async def queue_worker(
                         picker_result=cap_info.get("picker_result"),
                     )
 
-                if argon_ok is False and cap_info.get("picker_result") != "no_picker":
+                if tier_val == "unauthenticated" and rem0 is None:
+                    RETIRED_PROFILES.add(profile)
+                    if slot_idx == 1:
+                        await update_quota_live(
+                            profile,
+                            email=client.auth_manager.state.email,
+                            status="session_expired",
+                            argon_high_ok=None,
+                            tier="unauthenticated",
+                            picker_result="unauthenticated",
+                            picker_label=cap_info.get("picker_label"),
+                            last_error=f"Session expired — Run 'gemcli login --profile {profile}'",
+                        )
+                        log(
+                            f"[{slot_tag}] Browser session expired (unauthenticated); "
+                            f"run 'gemcli login --profile {profile}' — retiring cleanly without false Non-Pro flag."
+                        )
+                    return
+
+                if argon_ok is False and tier_val == "non_pro_downgraded":
                     RETIRED_PROFILES.add(profile)
                     if slot_idx == 1:
                         await update_quota_live(
@@ -2556,7 +2685,7 @@ async def queue_worker(
                             email=client.auth_manager.state.email,
                             status="non_pro_downgraded",
                             argon_high_ok=False,
-                            tier=cap_info.get("tier"),
+                            tier=tier_val,
                             picker_result=cap_info.get("picker_result"),
                             picker_label=cap_info.get("picker_label"),
                             remaining=rem0,
@@ -2566,6 +2695,7 @@ async def queue_worker(
                             reset_in_s=q0.get("reset_in_s"),
                             reset_in_human=reset0_human,
                             reset_at=reset0_at,
+                            usage_page=q0.get("usage_page"),
                             name=qlabel,
                         )
                         log(
@@ -2588,7 +2718,7 @@ async def queue_worker(
                             email=client.auth_manager.state.email,
                             status="low_quota",
                             argon_high_ok=argon_ok,
-                            tier=cap_info.get("tier"),
+                            tier=tier_val,
                             picker_result=cap_info.get("picker_result"),
                             picker_label=cap_info.get("picker_label"),
                             remaining=rem0,
@@ -2598,6 +2728,7 @@ async def queue_worker(
                             reset_in_s=q0.get("reset_in_s"),
                             reset_in_human=reset0_human,
                             reset_at=reset0_at,
+                            usage_page=q0.get("usage_page"),
                             api_credits=q0.get("api_credits"),
                             name=qlabel,
                         )
@@ -2653,6 +2784,7 @@ async def queue_worker(
                         reset_in_s=q0.get("reset_in_s"),
                         reset_in_human=reset0_human,
                         reset_at=reset0_at,
+                        usage_page=q0.get("usage_page"),
                         api_credits=q0.get("api_credits"),
                         name=qlabel,
                     )
@@ -2810,6 +2942,7 @@ async def queue_worker(
                             reset_in_s=q_now.get("reset_in_s"),
                             reset_in_human=reset_h,
                             reset_at=q_now.get("reset_at"),
+                            usage_page=q_now.get("usage_page"),
                             api_credits=q_now.get("api_credits"),
                             name=qname or "Thinking/Pro",
                         )
@@ -2859,6 +2992,7 @@ async def queue_worker(
                             reset_in_s=q_after.get("reset_in_s"),
                             reset_in_human=q_after.get("reset_in_human"),
                             reset_at=q_after.get("reset_at"),
+                            usage_page=q_after.get("usage_page"),
                             api_credits=q_after.get("api_credits"),
                         )
                         if ok:
@@ -3250,8 +3384,8 @@ def parse_args() -> argparse.Namespace:
     p.add_argument(
         "--surah",
         type=int,
-        default=6,
-        help="Surah number (1..114, default: 6). Ignored when --from-surah is set.",
+        default=None,
+        help="Surah number (1..114, default: 6 unless --from-surah or --batches is set).",
     )
     p.add_argument("--from-surah", type=int, default=None, help="Shared-pool mode: first Surah")
     p.add_argument("--to-surah", type=int, default=None, help="Shared-pool mode: last Surah (default=from-surah)")
@@ -3272,6 +3406,11 @@ def parse_args() -> argparse.Namespace:
         help="Optional comma-separated subset of batch IDs",
     )
     p.add_argument(
+        "--backfill-demos",
+        action="store_true",
+        help="Re-run Step B only on existing *_llm_output.json batches that have missing/broken demosAndMeanings.",
+    )
+    p.add_argument(
         "--coarena-effort",
         default="high",
         help="Reasoning effort for coarena API worker (locked to high only)",
@@ -3284,18 +3423,20 @@ if __name__ == "__main__":
     if args.coarena_effort and str(args.coarena_effort).strip().lower() != "high":
         raise SystemExit(f"Invalid --coarena-effort={args.coarena_effort!r}: coarena is locked to 'high' only")
     cb.EFFORT_OVERRIDE = "high"
+    BACKFILL_MISSING_DEMOS = bool(args.backfill_demos)
     profs = [x.strip() for x in args.profiles.split(",") if x.strip()]
     batches = [x.strip() for x in args.batches.split(",") if x.strip()] or None
     surah_list = None
     if args.from_surah is not None:
         to_s = args.to_surah if args.to_surah is not None else args.from_surah
         surah_list = list(range(int(args.from_surah), int(to_s) + 1))
+    effective_surah = args.surah if args.surah is not None else (None if batches else 6)
     raise SystemExit(
         asyncio.run(
             run_queue(
                 profs,
                 batches,
-                surah=args.surah,
+                surah=effective_surah,
                 chats_per_account=args.chats_per_account,
                 surah_list=surah_list,
             )

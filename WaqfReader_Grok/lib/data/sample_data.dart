@@ -111,6 +111,11 @@ class AppFeedBundle {
     return out;
   }
 
+  static int? _parsePositiveInt(dynamic raw) {
+    final v = raw is int ? raw : int.tryParse('$raw');
+    return (v != null && v > 0) ? v : null;
+  }
+
   static List<int>? _parseWordSpan(dynamic raw) {
     if (raw is! List || raw.length < 2) return null;
     final start = raw[0] is int ? raw[0] as int : int.tryParse('${raw[0]}');
@@ -135,7 +140,11 @@ class AppFeedBundle {
           attributedTo:
               (attrRaw != null && attrRaw.isNotEmpty) ? attrRaw : null,
           waqfSegmentWords: _parseWordSpan(map['waqfSegmentWords']),
+          waqfStartAyah: _parsePositiveInt(map['waqfStartAyah']),
+          waqfEndAyah: _parsePositiveInt(map['waqfEndAyah']),
           ibtidaSegmentWords: _parseWordSpan(map['ibtidaSegmentWords']),
+          ibtidaStartAyah: _parsePositiveInt(map['ibtidaStartAyah']),
+          ibtidaEndAyah: _parsePositiveInt(map['ibtidaEndAyah']),
           waqfDemo: map['waqfDemo']?.toString() ?? '',
           ibtidaDemo: map['ibtidaDemo']?.toString() ?? '',
           meaningAtWaqf: map['meaningAtWaqf']?.toString() ?? '',
@@ -214,6 +223,8 @@ class AppFeedBundle {
                 ];
                 final qilaFlags =
                     _parseBoolList(op['isQila'], verdicts.length);
+                final qbRaw = op['qiraatBasis']?.toString().trim();
+                final qnRaw = op['qiraatNote']?.toString().trim();
                 return ScholarOpinion(
                   scholar: op['scholar'] as String? ?? 'مجهول',
                   targetWord: op['targetWord'] as String? ??
@@ -226,6 +237,10 @@ class AppFeedBundle {
                   page: op['page']?.toString(),
                   comment: op['comment'] as String?,
                   fromMargin: false,
+                  qiraatBasis:
+                      (qbRaw != null && qbRaw.isNotEmpty) ? qbRaw : null,
+                  qiraatNote:
+                      (qnRaw != null && qnRaw.isNotEmpty) ? qnRaw : null,
                   demosAndMeanings:
                       _parseDemosAndMeanings(op['demosAndMeanings']),
                 );
@@ -1015,10 +1030,16 @@ class ReaderController extends ChangeNotifier {
     required int wordIndex,
   }) {
     final stop = selectedStopId == null ? null : stopById(selectedStopId!);
-    if (stop == null || stop.ayah != ayahNumber) return DemoSegmentRole.none;
+    final demo = activeDemoHighlight;
+    if (stop == null || demo == null) return DemoSegmentRole.none;
+    if (stop.ayah != ayahNumber && !demo.spansOtherAyahs(stop.ayah)) {
+      return DemoSegmentRole.none;
+    }
     return demoSegmentRoleForWord(
-      demo: activeDemoHighlight,
+      demo: demo,
       wordIndex: wordIndex,
+      ayahNumber: ayahNumber,
+      stopAyah: stop.ayah,
     );
   }
 

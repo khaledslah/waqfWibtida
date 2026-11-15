@@ -68,6 +68,10 @@ class _DemoMeaningsBoxState extends State<DemoMeaningsBox> {
     final border = widget.dark ? AppColors.goldSoft : AppColors.gold;
     final fav = widget.controller.isFavorite(stop.id);
     final sent = widget.controller.isSent(stop.id);
+    final activeOp = demoOpinionForStop(
+      stop,
+      widget.controller.selectedDemoScholar ?? widget.controller.selectedScholar,
+    );
 
     return Padding(
       padding: const EdgeInsets.fromLTRB(4, 10, 4, 4),
@@ -153,6 +157,10 @@ class _DemoMeaningsBoxState extends State<DemoMeaningsBox> {
                         ),
                     ],
                   ),
+                  if (activeOp != null && activeOp.hasQiraatInfo) ...[
+                    const SizedBox(height: 6),
+                    QiraatBadge(opinion: activeOp, tone: tone),
+                  ],
                   if (meaningWaqf.isNotEmpty) ...[
                     const SizedBox(height: 8),
                     _MeaningLine(

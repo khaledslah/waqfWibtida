@@ -285,17 +285,31 @@ def _validate_and_normalize_demos(
         if v_norm not in ALLOWED_VERDICTS:
             validation_errors.append(f"Unknown demosAndMeanings verdict {v_raw!r} at {stop_id} ({scholar})")
             continue
-        for span_key in ("waqfSegmentWords", "ibtidaSegmentWords"):
+        stop_ay = int(stop_id.split("-a")[1].split("-w")[0]) if "-a" in stop_id and "-w" in stop_id else None
+        for span_key, sa_key, ea_key in (
+            ("waqfSegmentWords", "waqfStartAyah", "waqfEndAyah"),
+            ("ibtidaSegmentWords", "ibtidaStartAyah", "ibtidaEndAyah"),
+        ):
             sp = d.get(span_key)
+            sa = d.get(sa_key)
+            ea = d.get(ea_key)
+            for ak, av in ((sa_key, sa), (ea_key, ea)):
+                if av is not None and (not isinstance(av, int) or av < 1):
+                    validation_errors.append(f"Invalid {ak}={av!r} at {stop_id} ({scholar})")
             if sp is not None:
+                eff_sa = sa if isinstance(sa, int) else (stop_ay if stop_ay is not None else 1)
+                eff_ea = ea if isinstance(ea, int) else (stop_ay if stop_ay is not None else eff_sa)
+                if span_key == "ibtidaSegmentWords" and ea is None:
+                    eff_ea = eff_sa
                 if (
                     not isinstance(sp, list)
                     or len(sp) != 2
                     or not all(isinstance(n, int) and n >= 1 for n in sp)
-                    or sp[0] > sp[1]
+                    or eff_sa > eff_ea
+                    or (eff_sa == eff_ea and sp[0] > sp[1])
                 ):
                     validation_errors.append(
-                        f"Invalid {span_key}={sp!r} at {stop_id} ({scholar})"
+                        f"Invalid {span_key}={sp!r} (ayahs {eff_sa}..{eff_ea}) at {stop_id} ({scholar})"
                     )
         missing_txt = [k for k in req_str if not isinstance(d.get(k), str) or not d[k].strip()]
         if missing_txt:
@@ -310,7 +324,15 @@ def _validate_and_normalize_demos(
         if d.get("attributedTo"):
             entry["attributedTo"] = str(d["attributedTo"]).strip()
         entry["waqfSegmentWords"] = d.get("waqfSegmentWords")
+        if isinstance(d.get("waqfStartAyah"), int) and d["waqfStartAyah"] > 0:
+            entry["waqfStartAyah"] = d["waqfStartAyah"]
+        if isinstance(d.get("waqfEndAyah"), int) and d["waqfEndAyah"] > 0:
+            entry["waqfEndAyah"] = d["waqfEndAyah"]
         entry["ibtidaSegmentWords"] = d.get("ibtidaSegmentWords")
+        if isinstance(d.get("ibtidaStartAyah"), int) and d["ibtidaStartAyah"] > 0:
+            entry["ibtidaStartAyah"] = d["ibtidaStartAyah"]
+        if isinstance(d.get("ibtidaEndAyah"), int) and d["ibtidaEndAyah"] > 0:
+            entry["ibtidaEndAyah"] = d["ibtidaEndAyah"]
         for k in req_str:
             entry[k] = d[k].strip()
         cleaned.append(entry)
@@ -336,6 +358,10 @@ def _merge_opinion_into_stop(stop_obj: dict[str, Any], op_obj: dict[str, Any]) -
                 existing_op["isQila"].append(q_i)
         if not existing_op.get("page") and op_obj.get("page"):
             existing_op["page"] = op_obj["page"]
+        if op_obj.get("qiraatBasis"):
+            existing_op["qiraatBasis"] = op_obj["qiraatBasis"]
+        if op_obj.get("qiraatNote"):
+            existing_op["qiraatNote"] = op_obj["qiraatNote"]
         if op_obj.get("comment"):
             prev_c = existing_op.get("comment") or ""
             if not prev_c:
@@ -488,6 +514,18 @@ def validate_and_compare(
             "page": page,
             "comment": (item.get("comment") or "").strip() or None,
         }
+        raw_qb = item.get("qiraatBasis")
+        if isinstance(raw_qb, str) and raw_qb.strip():
+            qb = raw_qb.strip()
+            if qb not in {"non_hafs_only", "varies_by_qiraat", "hafs_and_others"}:
+                validation_errors.append(
+                    f"Opinion for {scholar} on {stop_id} has invalid qiraatBasis {qb!r}"
+                )
+            else:
+                op_obj["qiraatBasis"] = qb
+        raw_qn = item.get("qiraatNote")
+        if isinstance(raw_qn, str) and raw_qn.strip():
+            op_obj["qiraatNote"] = raw_qn.strip()
         if "demosAndMeanings" in item:
             op_obj["demosAndMeanings"] = _validate_and_normalize_demos(
                 item.get("demosAndMeanings"), stop_id, scholar, validation_errors

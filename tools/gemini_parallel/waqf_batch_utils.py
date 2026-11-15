@@ -33,7 +33,11 @@ ALLOWED_DEMO_KEYS = {
     "isQila",
     "attributedTo",
     "waqfSegmentWords",
+    "waqfStartAyah",
+    "waqfEndAyah",
     "ibtidaSegmentWords",
+    "ibtidaStartAyah",
+    "ibtidaEndAyah",
     "waqfDemo",
     "ibtidaDemo",
     "meaningAtWaqf",
@@ -244,6 +248,13 @@ def validate_step_a(
         if e.get("typoDetected") is not None and not isinstance(e.get("typoDetected"), dict):
             errors.append(f"typoDetected must be null or object at {k}")
 
+        qb = e.get("qiraatBasis")
+        if qb is not None and qb not in {"non_hafs_only", "varies_by_qiraat", "hafs_and_others"}:
+            errors.append(f"Invalid qiraatBasis={qb!r} at {k}")
+        qn = e.get("qiraatNote")
+        if qn is not None and not isinstance(qn, str):
+            errors.append(f"qiraatNote must be null or string at {k}")
+
     # Coverage sanity check against source Nahhas entries
     for ne in input_data.get("nahhasEntries", []):
         ay = ne.get("ayah")
@@ -349,31 +360,72 @@ def validate_step_b(
                 reasons.append(f"item[{idx_d}] isQila must be boolean")
 
             ws = d.get("waqfSegmentWords")
+            w_sa = d.get("waqfStartAyah")
+            w_ea = d.get("waqfEndAyah")
             ib = d.get("ibtidaSegmentWords")
+            ib_sa = d.get("ibtidaStartAyah")
+            ib_ea = d.get("ibtidaEndAyah")
+
+            for ak, av in (
+                ("waqfStartAyah", w_sa),
+                ("waqfEndAyah", w_ea),
+                ("ibtidaStartAyah", ib_sa),
+                ("ibtidaEndAyah", ib_ea),
+            ):
+                if av is not None and (not isinstance(av, int) or av < 1):
+                    reasons.append(f"item[{idx_d}] bad {ak}={av!r}")
+
+            eff_w_ea = w_ea if isinstance(w_ea, int) else ay
+            eff_w_sa = w_sa if isinstance(w_sa, int) else eff_w_ea
+            mw_w_sa = mw_cache[s_num].get(eff_w_sa, 0)
+            mw_w_ea = mw_cache[s_num].get(eff_w_ea, 0)
             if (
                 not isinstance(ws, list)
                 or len(ws) != 2
                 or not all(isinstance(n, int) for n in ws)
+                or eff_w_sa > eff_w_ea
+                or eff_w_ea != ay
                 or ws[0] < 1
-                or ws[0] > ws[1]
+                or ws[0] > mw_w_sa
                 or ws[1] != wi
-                or ws[1] > mw
+                or ws[1] > mw_w_ea
+                or (eff_w_sa == eff_w_ea and ws[0] > ws[1])
             ):
-                reasons.append(f"item[{idx_d}] bad waqfSegmentWords={ws!r} (expected [<= {wi}, {wi}], mw={mw})")
+                reasons.append(
+                    f"item[{idx_d}] bad waqfSegmentWords={ws!r} "
+                    f"(startAyah={eff_w_sa} mw={mw_w_sa}, endAyah={eff_w_ea} wi={wi})"
+                )
 
-            if is_end:
-                if ib is not None:
-                    reasons.append(f"item[{idx_d}] verse-end word wi={wi} must have ibtidaSegmentWords=null, got {ib!r}")
+            if is_end and ib is None:
+                if ib_sa is not None or ib_ea is not None:
+                    reasons.append(
+                        f"item[{idx_d}] ibtidaStartAyah/EndAyah set without ibtidaSegmentWords"
+                    )
+            elif ib is None:
+                reasons.append(
+                    f"item[{idx_d}] non-verse-end wi={wi} must provide ibtidaSegmentWords"
+                )
             else:
+                eff_ib_sa = ib_sa if isinstance(ib_sa, int) else ay
+                eff_ib_ea = ib_ea if isinstance(ib_ea, int) else eff_ib_sa
+                mw_ib_sa = mw_cache[s_num].get(eff_ib_sa, 0)
+                mw_ib_ea = mw_cache[s_num].get(eff_ib_ea, 0)
+                exp_ib0 = 1 if is_end and eff_ib_sa > ay else (wi + 1 if eff_ib_sa == ay else -1)
                 if (
                     not isinstance(ib, list)
                     or len(ib) != 2
                     or not all(isinstance(n, int) for n in ib)
-                    or ib[0] != wi + 1
-                    or ib[0] > ib[1]
-                    or ib[1] > mw
+                    or eff_ib_sa > eff_ib_ea
+                    or ib[0] != exp_ib0
+                    or ib[0] > mw_ib_sa
+                    or ib[1] < 1
+                    or ib[1] > mw_ib_ea
+                    or (eff_ib_sa == eff_ib_ea and ib[0] > ib[1])
                 ):
-                    reasons.append(f"item[{idx_d}] bad ibtidaSegmentWords={ib!r} (expected [{wi + 1}, <= {mw}], mw={mw})")
+                    reasons.append(
+                        f"item[{idx_d}] bad ibtidaSegmentWords={ib!r} "
+                        f"(startAyah={eff_ib_sa} exp0={exp_ib0}, endAyah={eff_ib_ea} mw={mw_ib_ea})"
+                    )
 
             for rk in REQUIRED_DEMO_STR_KEYS:
                 val = d.get(rk)
@@ -388,7 +440,16 @@ def validate_step_b(
                 if isinstance(d.get("attributedTo"), str) and d["attributedTo"].strip():
                     obj["attributedTo"] = d["attributedTo"].strip()
                 obj["waqfSegmentWords"] = ws
+                if isinstance(w_sa, int) and w_sa != ay:
+                    obj["waqfStartAyah"] = w_sa
+                if isinstance(w_ea, int) and w_ea != ay:
+                    obj["waqfEndAyah"] = w_ea
                 obj["ibtidaSegmentWords"] = ib
+                if ib is not None:
+                    if isinstance(ib_sa, int) and ib_sa != ay:
+                        obj["ibtidaStartAyah"] = ib_sa
+                    if isinstance(ib_ea, int) and ib_ea != ay:
+                        obj["ibtidaEndAyah"] = ib_ea
                 for rk in REQUIRED_DEMO_STR_KEYS:
                     obj[rk] = d[rk].strip()
                 cleaned_dm.append(obj)

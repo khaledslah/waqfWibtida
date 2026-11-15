@@ -36,11 +36,11 @@ void main() {
     await _pumpUntilReady(tester);
 
     // Initial state: Mushaf screen showing Al-Fatiha
-    expect(find.text('سورة الفاتحة'), findsWidgets);
+    expect(find.text('الفاتحة'), findsWidgets);
     expect(find.byType(IndexDrawer), findsNothing);
 
     // 1. Open sidebar via top bar Surah chip (tooltip: عرض وقوف …)
-    await tester.tap(find.byTooltip('عرض وقوف سورة الفاتحة'));
+    await tester.tap(find.byTooltip('عرض وقوف الفاتحة'));
     await tester.pump();
     await tester.pump(const Duration(milliseconds: 300));
 
@@ -64,10 +64,10 @@ void main() {
     expect(find.byType(IndexDrawer), findsNothing);
 
     // 4. Verify the chosen Surah is now active in the Mushaf screen
-    expect(find.text('سورة البقرة'), findsWidgets);
+    expect(find.text('البقرة'), findsWidgets);
 
     // 5. Open sidebar again via top surah control
-    await tester.tap(find.byTooltip('عرض وقوف سورة البقرة'));
+    await tester.tap(find.byTooltip('عرض وقوف البقرة'));
     await tester.pump();
     await tester.pump(const Duration(milliseconds: 300));
 

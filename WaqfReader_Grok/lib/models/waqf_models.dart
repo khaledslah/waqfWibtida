@@ -75,7 +75,11 @@ class WaqfDemoAndMeaning {
     required this.isQila,
     this.attributedTo,
     this.waqfSegmentWords,
+    this.waqfStartAyah,
+    this.waqfEndAyah,
     this.ibtidaSegmentWords,
+    this.ibtidaStartAyah,
+    this.ibtidaEndAyah,
     required this.waqfDemo,
     required this.ibtidaDemo,
     required this.meaningAtWaqf,
@@ -87,12 +91,63 @@ class WaqfDemoAndMeaning {
   final bool isQila;
   final String? attributedTo;
   final List<int>? waqfSegmentWords;
+  final int? waqfStartAyah;
+  final int? waqfEndAyah;
   final List<int>? ibtidaSegmentWords;
+  final int? ibtidaStartAyah;
+  final int? ibtidaEndAyah;
   final String waqfDemo;
   final String ibtidaDemo;
   final String meaningAtWaqf;
   final String meaningAtIbtida;
   final String meaningIfConnected;
+
+  int resolvedWaqfEndAyah(int stopAyah) => waqfEndAyah ?? stopAyah;
+  int resolvedWaqfStartAyah(int stopAyah) =>
+      waqfStartAyah ?? resolvedWaqfEndAyah(stopAyah);
+
+  int resolvedIbtidaStartAyah(int stopAyah) => ibtidaStartAyah ?? stopAyah;
+  int resolvedIbtidaEndAyah(int stopAyah) =>
+      ibtidaEndAyah ?? resolvedIbtidaStartAyah(stopAyah);
+
+  bool spansOtherAyahs(int stopAyah) {
+    final hasWaqf = waqfSegmentWords != null && waqfSegmentWords!.length >= 2;
+    if (hasWaqf &&
+        (resolvedWaqfStartAyah(stopAyah) != stopAyah ||
+            resolvedWaqfEndAyah(stopAyah) != stopAyah)) {
+      return true;
+    }
+    final hasIbtida =
+        ibtidaSegmentWords != null && ibtidaSegmentWords!.length >= 2;
+    if (hasIbtida &&
+        (resolvedIbtidaStartAyah(stopAyah) != stopAyah ||
+            resolvedIbtidaEndAyah(stopAyah) != stopAyah)) {
+      return true;
+    }
+    return false;
+  }
+
+  (int minAyah, int maxAyah) ayahExtent(int stopAyah) {
+    var minA = stopAyah;
+    var maxA = stopAyah;
+    if (waqfSegmentWords != null && waqfSegmentWords!.length >= 2) {
+      final ws = resolvedWaqfStartAyah(stopAyah);
+      final we = resolvedWaqfEndAyah(stopAyah);
+      if (ws < minA) minA = ws;
+      if (we < minA) minA = we;
+      if (ws > maxA) maxA = ws;
+      if (we > maxA) maxA = we;
+    }
+    if (ibtidaSegmentWords != null && ibtidaSegmentWords!.length >= 2) {
+      final isA = resolvedIbtidaStartAyah(stopAyah);
+      final ie = resolvedIbtidaEndAyah(stopAyah);
+      if (isA < minA) minA = isA;
+      if (ie < minA) minA = ie;
+      if (isA > maxA) maxA = isA;
+      if (ie > maxA) maxA = ie;
+    }
+    return (minA, maxA);
+  }
 }
 
 class ScholarOpinion {
@@ -107,6 +162,8 @@ class ScholarOpinion {
     required this.page,
     this.comment,
     this.fromMargin = false,
+    this.qiraatBasis,
+    this.qiraatNote,
     this.demosAndMeanings = const <WaqfDemoAndMeaning>[],
   });
 
@@ -123,7 +180,36 @@ class ScholarOpinion {
   /// True for secondary apparatus opinions when grouped separately.
   final bool fromMargin;
 
+  /// Optional Qira'at classification:
+  /// - `non_hafs_only`: ruling relies on a non-Hafs Qira'ah
+  /// - `varies_by_qiraat`: ruling differs across Qira'at
+  /// - `hafs_and_others`: mentions another Qira'ah; stop holds on Hafs
+  final String? qiraatBasis;
+  final String? qiraatNote;
+
   final List<WaqfDemoAndMeaning> demosAndMeanings;
+
+  bool get hasQiraatInfo =>
+      (qiraatBasis != null && qiraatBasis!.isNotEmpty) ||
+      (qiraatNote != null && qiraatNote!.isNotEmpty);
+
+  bool get isQiraatDependent =>
+      qiraatBasis == 'non_hafs_only' || qiraatBasis == 'varies_by_qiraat';
+
+  String? get qiraatBadgeLabel {
+    switch (qiraatBasis) {
+      case 'non_hafs_only':
+        return 'على قراءة أخرى';
+      case 'varies_by_qiraat':
+        return 'يختلف باختلاف القراءات';
+      case 'hafs_and_others':
+        return 'موافق لحفص (مع ذكر قراءة)';
+      default:
+        return (qiraatNote != null && qiraatNote!.isNotEmpty)
+            ? 'قراءة قرآنية'
+            : null;
+    }
+  }
 
   String get primaryVerdict => verdicts.isNotEmpty ? verdicts.first : 'جائز';
 
@@ -273,23 +359,67 @@ class AyahWord {
   final int index;
 }
 
-bool wordIndexInSpan(List<int>? span, int wordIndex) {
-  if (span == null || span.length < 2 || wordIndex < 1) return false;
-  final start = span[0];
-  final end = span[1];
-  if (start > end) return wordIndex >= end && wordIndex <= start;
-  return wordIndex >= start && wordIndex <= end;
+int compareWordCoord(int ayahA, int wordA, int ayahB, int wordB) {
+  if (ayahA != ayahB) return ayahA.compareTo(ayahB);
+  return wordA.compareTo(wordB);
 }
+
+bool wordInAyahSpan({
+  required List<int>? span,
+  required int wordIndex,
+  int? ayahNumber,
+  int? startAyah,
+  int? endAyah,
+}) {
+  if (span == null || span.length < 2 || wordIndex < 1) return false;
+  final sWord = span[0];
+  final eWord = span[1];
+  if (ayahNumber == null || startAyah == null || endAyah == null) {
+    return sWord > eWord
+        ? (wordIndex >= eWord && wordIndex <= sWord)
+        : (wordIndex >= sWord && wordIndex <= eWord);
+  }
+  if (startAyah == endAyah) {
+    if (ayahNumber != startAyah) return false;
+    return sWord > eWord
+        ? (wordIndex >= eWord && wordIndex <= sWord)
+        : (wordIndex >= sWord && wordIndex <= eWord);
+  }
+  final reversed = compareWordCoord(startAyah, sWord, endAyah, eWord) > 0;
+  final loA = reversed ? endAyah : startAyah;
+  final loW = reversed ? eWord : sWord;
+  final hiA = reversed ? startAyah : endAyah;
+  final hiW = reversed ? sWord : eWord;
+  return compareWordCoord(ayahNumber, wordIndex, loA, loW) >= 0 &&
+      compareWordCoord(ayahNumber, wordIndex, hiA, hiW) <= 0;
+}
+
+bool wordIndexInSpan(List<int>? span, int wordIndex) =>
+    wordInAyahSpan(span: span, wordIndex: wordIndex);
 
 DemoSegmentRole demoSegmentRoleForWord({
   required WaqfDemoAndMeaning? demo,
   required int wordIndex,
+  int? ayahNumber,
+  int? stopAyah,
 }) {
   if (demo == null) return DemoSegmentRole.none;
-  if (wordIndexInSpan(demo.waqfSegmentWords, wordIndex)) {
+  if (wordInAyahSpan(
+    span: demo.waqfSegmentWords,
+    wordIndex: wordIndex,
+    ayahNumber: ayahNumber,
+    startAyah: stopAyah == null ? null : demo.resolvedWaqfStartAyah(stopAyah),
+    endAyah: stopAyah == null ? null : demo.resolvedWaqfEndAyah(stopAyah),
+  )) {
     return DemoSegmentRole.waqf;
   }
-  if (wordIndexInSpan(demo.ibtidaSegmentWords, wordIndex)) {
+  if (wordInAyahSpan(
+    span: demo.ibtidaSegmentWords,
+    wordIndex: wordIndex,
+    ayahNumber: ayahNumber,
+    startAyah: stopAyah == null ? null : demo.resolvedIbtidaStartAyah(stopAyah),
+    endAyah: stopAyah == null ? null : demo.resolvedIbtidaEndAyah(stopAyah),
+  )) {
     return DemoSegmentRole.ibtida;
   }
   return DemoSegmentRole.none;

@@ -21345,158 +21345,1685 @@
         "extendedIntoNext": null,
         "outOfRangeStopsEmitted": []
       }
+    },
+    "s070_a001_044": {
+      "surah": 70,
+      "ayahRange": [
+        1,
+        44
+      ],
+      "llmFile": "s070_a001_044_llm_output.json",
+      "inRangeStopsCount": 46,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 9,
+      "typosDetected": [
+        {
+          "stopId": "s70-a7-w2",
+          "scholar": "النحاس",
+          "typoDetected": {
+            "raw": "لأن ﴿يَوْمٍ﴾ ليس منصوبا بما قبله والتقدير عند النحويين أجدر",
+            "corrected": "لأن ﴿يَوْمَ﴾ ليس منصوبا بما قبله والتقدير عند النحويين اذكر",
+            "reason": "ضبط (يوم) بالكسر خطأ مطبعي والصواب الفتح، وتصحيف (اذكر) أو (احذر) إلى (أجدر)."
+          }
+        },
+        {
+          "stopId": "s70-a15-w1",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "ثم ابتدأ أنَّها لظى",
+            "corrected": "ثم ابتدأ إنَّها لظى",
+            "reason": "خطأ مطبعي بفتح همزة (إنها) وهي مكسورة في الآية."
+          }
+        },
+        {
+          "stopId": "s70-a15-w3",
+          "scholar": "الداني",
+          "typoDetected": {
+            "raw": "خبر متبدأ",
+            "corrected": "خبر مبتدأ",
+            "reason": "خطأ مطبعي بتقديم التاء على الباء في كلمة (مبتدأ)."
+          }
+        },
+        {
+          "stopId": "s70-a15-w3",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "في أنَّها للقصة ... خبرًا ثانيًا لأن",
+            "corrected": "في إنَّها للقصة ... خبرًا ثانيًا لإنَّ",
+            "reason": "خطأ مطبعي بفتح همزة (إنها) و(لإن)."
+          }
+        },
+        {
+          "stopId": "s70-a15-w3",
+          "scholar": "النحاس",
+          "typoDetected": {
+            "raw": "فعلى هذا كله لا يقف على أنها لظى",
+            "corrected": "فعلى هذا كله لا يقف على إنها لظى",
+            "reason": "خطأ مطبعي بفتح همزة (إنها) وهي مكسورة في الآية."
+          }
+        },
+        {
+          "stopId": "s70-a36-w1",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "ابن الجوزي",
+            "corrected": "ابن الجزري",
+            "reason": "تصحيف مطبعي لاسم الإمام ابن الجزري صاحب النشر."
+          }
+        },
+        {
+          "stopId": "s70-a38-w8",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "على معنى إلا",
+            "corrected": "على معنى ألا",
+            "reason": "خطأ مطبعي بكسر همزة (ألا) الاستفتاحية."
+          }
+        },
+        {
+          "stopId": "s70-a39-w1",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "على معنى إلا",
+            "corrected": "على معنى ألا",
+            "reason": "خطأ مطبعي بكسر همزة (ألا) الاستفتاحية."
+          }
+        },
+        {
+          "stopId": "s70-a43-w9",
+          "scholar": "السجاوندي",
+          "typoDetected": {
+            "raw": "الضمي",
+            "corrected": "الضمير",
+            "reason": "سقط حرف الراء مطبعيا من كلمة (الضمير)."
+          }
+        }
+      ],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s074_a001_056": {
+      "surah": 74,
+      "ayahRange": [
+        1,
+        56
+      ],
+      "llmFile": "s074_a001_056_llm_output.json",
+      "inRangeStopsCount": 64,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 14,
+      "typosDetected": [
+        {
+          "stopId": "s74-a11-w4",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "إلى شهود أفلا يوقف على وحيد العطف",
+            "corrected": "إلى شهودًا فلا يوقف على وحيدًا لعطف",
+            "reason": "تصحيف مطبعي في الكلمات القرآنية وحرف الجر"
+          }
+        },
+        {
+          "stopId": "s74-a12-w4",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "إلى شهود أفلا يوقف على وحيد العطف",
+            "corrected": "إلى شهودًا فلا يوقف على وحيدًا لعطف",
+            "reason": "تصحيف مطبعي في الكلمات القرآنية وحرف الجر"
+          }
+        },
+        {
+          "stopId": "s74-a15-w4",
+          "scholar": "النحاس",
+          "typoDetected": {
+            "raw": "بمعنى إلا",
+            "corrected": "بمعنى ألا",
+            "reason": "تصحيف مطبعي في حرف الاستفتاح (ألا)"
+          }
+        },
+        {
+          "stopId": "s74-a16-w1",
+          "scholar": "النحاس",
+          "typoDetected": {
+            "raw": "بمعنى إلا",
+            "corrected": "بمعنى ألا",
+            "reason": "تصحيف مطبعي في حرف الاستفتاح (ألا)"
+          }
+        },
+        {
+          "stopId": "s74-a25-w5",
+          "scholar": "السجاوندي",
+          "typoDetected": {
+            "raw": "{قول البشر- 25- }",
+            "corrected": "{قول البشر- 25- ط}",
+            "reason": "سقوط رمز الوقف المطلق (ط) بعد رقم الآية مع التصريح بلفظ الوقف المطلق قبله"
+          }
+        },
+        {
+          "stopId": "s74-a32-w1",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "على معنى إلاَّ بالتخفيف",
+            "corrected": "على معنى ألا بالتخفيف",
+            "reason": "تصحيف مطبعي في حرف التنبيه والاستفتاح (ألا)"
+          }
+        },
+        {
+          "stopId": "s74-a34-w3",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "إذ أسفر ليس بوقف ... الأعلى جهة الاشتراك",
+            "corrected": "إذا أسفر ليس بوقف ... إلا على جهة الاشتراك",
+            "reason": "تصحيف مطبعي في لفظ الآية الكريمة وفي أداة الاستثناء وحرف الجر"
+          }
+        },
+        {
+          "stopId": "s74-a43-w5",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "قالوا لم تك من المصلين",
+            "corrected": "قالوا لم نك من المصلين",
+            "reason": "تصحيف مطبعي في الفعل (نك) بالنون"
+          }
+        },
+        {
+          "stopId": "s74-a44-w4",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "قالوا لم تك من المصلين",
+            "corrected": "قالوا لم نك من المصلين",
+            "reason": "تصحيف مطبعي في الفعل (نك) بالنون"
+          }
+        },
+        {
+          "stopId": "s74-a45-w4",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "قالوا لم تك من المصلين",
+            "corrected": "قالوا لم نك من المصلين",
+            "reason": "تصحيف مطبعي في الفعل (نك) بالنون"
+          }
+        },
+        {
+          "stopId": "s74-a46-w4",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "قالوا لم تك من المصلين",
+            "corrected": "قالوا لم نك من المصلين",
+            "reason": "تصحيف مطبعي في الفعل (نك) بالنون"
+          }
+        },
+        {
+          "stopId": "s74-a52-w9",
+          "scholar": "النحاس",
+          "typoDetected": {
+            "raw": "ويكون المعنى إلا",
+            "corrected": "ويكون المعنى ألا",
+            "reason": "تصحيف مطبعي في حرف التنبيه والاستفتاح (ألا)"
+          }
+        },
+        {
+          "stopId": "s74-a53-w1",
+          "scholar": "النحاس",
+          "typoDetected": {
+            "raw": "ويكون المعنى إلا",
+            "corrected": "ويكون المعنى ألا",
+            "reason": "تصحيف مطبعي في حرف التنبيه والاستفتاح (ألا)"
+          }
+        },
+        {
+          "stopId": "s74-a53-w5",
+          "scholar": "النحاس",
+          "typoDetected": {
+            "raw": "ويكون المعنى إلا",
+            "corrected": "ويكون المعنى ألا",
+            "reason": "تصحيف مطبعي في حرف التنبيه والاستفتاح (ألا)"
+          }
+        }
+      ],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s075_a001_040": {
+      "surah": 75,
+      "ayahRange": [
+        1,
+        40
+      ],
+      "llmFile": "s075_a001_040_llm_output.json",
+      "inRangeStopsCount": 42,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 11,
+      "typosDetected": [
+        {
+          "stopId": "s75-a4-w1",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "وقال أبو عمر والوقف على بلى كاف",
+            "corrected": "وقال أبو عمرو الوقف على بلى كاف",
+            "reason": "انفصال واو (عمرو) في الطباعة والتصاقها بكلمة (الوقف)، والمقصود أبو عمرو الداني"
+          }
+        },
+        {
+          "stopId": "s75-a12-w4",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "ومثله وآخر",
+            "corrected": "ومثله وأخر",
+            "reason": "تصحيف مطبعي في الكلمة القرآنية (وَأَخَّرَ) فكتبت بالمد (وآخر)"
+          }
+        },
+        {
+          "stopId": "s75-a13-w6",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "ومثله وآخر",
+            "corrected": "ومثله وأخر",
+            "reason": "تصحيف مطبعي في الكلمة القرآنية (وَأَخَّرَ) فكتبت بالمد (وآخر)"
+          }
+        },
+        {
+          "stopId": "s75-a15-w3",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "ومثله وآخر",
+            "corrected": "ومثله وأخر",
+            "reason": "تصحيف مطبعي في الكلمة القرآنية (وَأَخَّرَ) فكتبت بالمد (وآخر)"
+          }
+        },
+        {
+          "stopId": "s75-a16-w6",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "ومثله وآخر",
+            "corrected": "ومثله وأخر",
+            "reason": "تصحيف مطبعي في الكلمة القرآنية (وَأَخَّرَ) فكتبت بالمد (وآخر)"
+          }
+        },
+        {
+          "stopId": "s75-a17-w4",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "ومثله وآخر",
+            "corrected": "ومثله وأخر",
+            "reason": "تصحيف مطبعي في الكلمة القرآنية (وَأَخَّرَ) فكتبت بالمد (وآخر)"
+          }
+        },
+        {
+          "stopId": "s75-a17-w4",
+          "scholar": "النحاس",
+          "typoDetected": {
+            "raw": "والتمام تم",
+            "corrected": "والتمام ﴿ثُمَّ إِنَّ عَلَيْنَا بَيَانَهُ﴾",
+            "reason": "تصحيف مطبعي في كلمة (ثم) إلى (تم) مع انشطار بقية الآية 19 في المدخل التالي"
+          }
+        },
+        {
+          "stopId": "s75-a18-w4",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "ومثله وآخر",
+            "corrected": "ومثله وأخر",
+            "reason": "تصحيف مطبعي في الكلمة القرآنية (وَأَخَّرَ) فكتبت بالمد (وآخر)"
+          }
+        },
+        {
+          "stopId": "s75-a19-w4",
+          "scholar": "النحاس",
+          "typoDetected": {
+            "raw": "والتمام تم / ﴿إِنَّ عَلَيْنَا بَيَانَهُ﴾",
+            "corrected": "والتمام ﴿ثُمَّ إِنَّ عَلَيْنَا بَيَانَهُ﴾",
+            "reason": "انشطار جملة الحكم بين مدخل الآية 17 ومدخل الآية 19 مع تصحيف (ثم) إلى (تم)"
+          }
+        },
+        {
+          "stopId": "s75-a37-w6",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "لمن من قرأ بالتحتية",
+            "corrected": "لأن من قرأ بالتحتية",
+            "reason": "تصحيف مطبعي في حرف التعليل (لأن) فكتب (لمن)"
+          }
+        },
+        {
+          "stopId": "s75-a38-w5",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "لمن من قرأ بالتحتية",
+            "corrected": "لأن من قرأ بالتحتية",
+            "reason": "تصحيف مطبعي في حرف التعليل (لأن) فكتب (لمن)"
+          }
+        }
+      ],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s076_a001_031": {
+      "surah": 76,
+      "ayahRange": [
+        1,
+        31
+      ],
+      "llmFile": "s076_a001_031_llm_output.json",
+      "inRangeStopsCount": 51,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 8,
+      "typosDetected": [
+        {
+          "stopId": "s76-a2-w6",
+          "scholar": "ابن الأنباري",
+          "typoDetected": {
+            "raw": "(فجعلناه سمعيا بصيرا) ولـ (نبتليه)",
+            "corrected": "(فجعلناه سميعا بصيرا) لنبتليه",
+            "reason": "تصحيف مطبعي في الكلمة القرآنية (سميعا) وفي (لنبتليه)"
+          }
+        },
+        {
+          "stopId": "s76-a2-w7",
+          "scholar": "ابن الأنباري",
+          "typoDetected": {
+            "raw": "(فجعلناه سمعيا بصيرا) ولـ (نبتليه)",
+            "corrected": "(فجعلناه سميعا بصيرا) لنبتليه",
+            "reason": "تصحيف مطبعي في الكلمة القرآنية (سميعا) وفي (لنبتليه)"
+          }
+        },
+        {
+          "stopId": "s76-a5-w8",
+          "scholar": "السجاوندي",
+          "typoDetected": {
+            "raw": "من عي",
+            "corrected": "من عين",
+            "reason": "سقط مطبعي لحرف النون في كلمة (عين)"
+          }
+        },
+        {
+          "stopId": "s76-a13-w10",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "حنة",
+            "corrected": "جنة",
+            "reason": "تصحيف مطبعي في كلمة (جنة)"
+          }
+        },
+        {
+          "stopId": "s76-a16-w5",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "ومثله كانت قوارير (كاف) ... كما قدورها ... على قد رويّ",
+            "corrected": "ومثله كانت قوارير. تقديرًا (كاف) ... كما قدروها ... على قدر ريّ",
+            "reason": "سقط مطبعي لرأس الموضع (تقديرًا) قبل حكمه وتفسيره، وتصحيف في (قدروها) و(قدر ريّ)"
+          }
+        },
+        {
+          "stopId": "s76-a20-w7",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "حسبتم",
+            "corrected": "حسبتهم",
+            "reason": "سقط مطبعي لحرف الهاء في الكلمة القرآنية (حسبتهم)"
+          }
+        },
+        {
+          "stopId": "s76-a28-w4",
+          "scholar": "السجاوندي",
+          "typoDetected": {
+            "raw": "لابتدءا الشرط، مت الفاء",
+            "corrected": "لابتداء الشرط، مع الفاء",
+            "reason": "تصحيف مطبعي في (لابتداء) و(مع)"
+          }
+        },
+        {
+          "stopId": "s76-a29-w3",
+          "scholar": "السجاوندي",
+          "typoDetected": {
+            "raw": "لابتدءا الشرط، مت الفاء",
+            "corrected": "لابتداء الشرط، مع الفاء",
+            "reason": "تصحيف مطبعي في (لابتداء) و(مع)"
+          }
+        }
+      ],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s077_a001_050": {
+      "surah": 77,
+      "ayahRange": [
+        1,
+        50
+      ],
+      "llmFile": "s077_a001_050_llm_output.json",
+      "inRangeStopsCount": 51,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 6,
+      "typosDetected": [
+        {
+          "stopId": "s77-a12-w3",
+          "scholar": "ابن الأنباري",
+          "typoDetected": {
+            "raw": "لم يحسن الوقف على قوله: (ليوم الفصل) [13]",
+            "corrected": "لم يحسن الوقف على قوله: (لأي يوم أجلت) [12]",
+            "reason": "تصحيف في المطبوع؛ لأن جعل اللام الثانية في (ليوم الفصل) توكيدًا للأولى في (لأي يوم) يمنع الفصل بين المؤكَّد وتوكيده بالوقف على (أجلت) كما نقل الأشموني نص عبارته بلفظ: (لم يحسن الوقف على أجلت)."
+          }
+        },
+        {
+          "stopId": "s77-a14-w5",
+          "scholar": "النحاس",
+          "typoDetected": {
+            "raw": "﴿وَمَا أَدْرَاكَ مَا يَوْمُ الْفَصْلِ﴾",
+            "corrected": "﴿وَمَا أَدْرَاكَ مَا يَوْمُ الْفَصْلِ﴾ قطع تام",
+            "reason": "سقط لفظ الحكم من النص المقسوم بدليل تعقيبه مباشرة في المدخل التالي بقوله: (قال غيره التمام ﴿وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ﴾)."
+          }
+        },
+        {
+          "stopId": "s77-a20-w5",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "قلا يوقف",
+            "corrected": "فلا يوقف",
+            "reason": "تصحيف مطبعي في حرف الفاء."
+          }
+        },
+        {
+          "stopId": "s77-a21-w4",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "قلا يوقف",
+            "corrected": "فلا يوقف",
+            "reason": "تصحيف مطبعي في حرف الفاء."
+          }
+        },
+        {
+          "stopId": "s77-a22-w3",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "قلا يوقف",
+            "corrected": "فلا يوقف",
+            "reason": "تصحيف مطبعي في حرف الفاء."
+          }
+        },
+        {
+          "stopId": "s77-a36-w4",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "لقال فيعتذرون",
+            "corrected": "لقال فيعتذروا",
+            "reason": "تصحيف مطبعي في تعليل الأشموني؛ لأن المضارع بعد فاء السببية الواقعة في جواب النفي يُنصب بحذف النون (فيعتذروا)."
+          }
+        }
+      ],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s079_a001_046": {
+      "surah": 79,
+      "ayahRange": [
+        1,
+        46
+      ],
+      "llmFile": "s079_a001_046_llm_output.json",
+      "inRangeStopsCount": 42,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 9,
+      "typosDetected": [
+        {
+          "stopId": "s79-a5-w2",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "لتعيثن ... والسائحات ... محذورًا ... هوان ... أزادواني",
+            "corrected": "لتبعثن ... والسابحات ... محذوفًا ... هو إن ... أراد وإني",
+            "reason": "تصحيفات مطبعية في نص التعليل والكلمة القرآنية (والسابحات)."
+          }
+        },
+        {
+          "stopId": "s79-a15-w4",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "إذا",
+            "corrected": "إذ",
+            "reason": "تصحيف مطبعي في الكلمة القرآنية، والصواب (إذ) كما في الآية {إذ ناداه ربه}."
+          }
+        },
+        {
+          "stopId": "s79-a27-w5",
+          "scholar": "ابن الأنباري",
+          "typoDetected": {
+            "raw": "فع سمكها",
+            "corrected": "رفع سمكها",
+            "reason": "سقط حرف الراء مطبعيًا من الكلمة القرآنية (رفع)."
+          }
+        },
+        {
+          "stopId": "s79-a27-w5",
+          "scholar": "النحاس",
+          "typoDetected": {
+            "raw": "﴿أأنتم أشد خلقا أم السماء بناها﴾ ونجد أبي حاتم وقف",
+            "corrected": "﴿أأنتم أشد خلقا أم السماء﴾ وعند أبي حاتم وقف",
+            "reason": "إقحام كلمة (بناها) في نهاية الشاهد القرآني وتصحيف (وعند) إلى (ونجد)؛ ومحل الوقف عند الأخفش وأحمد بن موسى وأبي حاتم هو (أم السماء) كما صرح به النحاس في إعراب القرآن وسائر أئمة الوقف."
+          }
+        },
+        {
+          "stopId": "s79-a27-w6",
+          "scholar": "ابن الأنباري",
+          "typoDetected": {
+            "raw": "فع سمكها",
+            "corrected": "رفع سمكها",
+            "reason": "سقط حرف الراء مطبعيًا من الكلمة القرآنية (رفع)."
+          }
+        },
+        {
+          "stopId": "s79-a31-w4",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "الحبال",
+            "corrected": "الجبال",
+            "reason": "تصحيف مطبعي بالحاء المهملة، والصواب بالجيم (الجبال) موافقة للآية الكريمة."
+          }
+        },
+        {
+          "stopId": "s79-a32-w2",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "وأرساها",
+            "corrected": "أرساها",
+            "reason": "زيادة الواو مطبعيًا في الكلمة القرآنية، ونص الآية {والجبال أرساها}."
+          }
+        },
+        {
+          "stopId": "s79-a34-w4",
+          "scholar": "السجاوندي",
+          "typoDetected": {
+            "raw": "{يرى}ن أي",
+            "corrected": "{يرى}، أي",
+            "reason": "تصحيف مطبعي بوضع حرف النون بدل الفاصلة بعد {يرى}."
+          }
+        },
+        {
+          "stopId": "s79-a45-w5",
+          "scholar": "السجاوندي",
+          "typoDetected": {
+            "raw": "يرونا",
+            "corrected": "يرونها",
+            "reason": "سقطت الهاء مطبعيًا من الكلمة القرآنية (يرونها)."
+          }
+        }
+      ],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s082_a001_019": {
+      "surah": 82,
+      "ayahRange": [
+        1,
+        19
+      ],
+      "llmFile": "s082_a001_019_llm_output.json",
+      "inRangeStopsCount": 22,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 0,
+      "typosDetected": [],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s080_a001_042": {
+      "surah": 80,
+      "ayahRange": [
+        1,
+        42
+      ],
+      "llmFile": "s080_a001_042_llm_output.json",
+      "inRangeStopsCount": 36,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 8,
+      "typosDetected": [
+        {
+          "stopId": "s80-a1-w2",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "في الأعمال ... تقديره الآن جاءه",
+            "corrected": "في الإعمال ... تقديره أأن جاءه",
+            "reason": "تصحيف مطبعي في المصطلح النحوي (الإعمال) وفي تقدير الاستفهام الإنكاري (أأن جاءه)"
+          }
+        },
+        {
+          "stopId": "s80-a10-w3",
+          "scholar": "السجاوندي",
+          "typoDetected": {
+            "raw": "التهلي",
+            "corrected": "التلهي",
+            "reason": "تصحيف مطبعي بتقديم الهاء على اللام في المصدر (التلهي) من الفعل (تلهى)"
+          }
+        },
+        {
+          "stopId": "s80-a12-w3",
+          "scholar": "السجاوندي",
+          "typoDetected": {
+            "raw": "بل التقدي:",
+            "corrected": "بل التقدير:",
+            "reason": "سقط مطبعي لحرف الراء في كلمة (التقدير)"
+          }
+        },
+        {
+          "stopId": "s80-a13-w3",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "معنرضة",
+            "corrected": "معترضة",
+            "reason": "تصحيف مطبعي بحرف النون بدل التاء في كلمة (معترضة)"
+          }
+        },
+        {
+          "stopId": "s80-a22-w4",
+          "scholar": "السجاوندي",
+          "typoDetected": {
+            "raw": "وهو بعد",
+            "corrected": "وهو بعيد",
+            "reason": "تصحيف مطبعي في كلمة (بعيد) بسقوط الياء"
+          }
+        },
+        {
+          "stopId": "s80-a24-w4",
+          "scholar": "ابن الأنباري",
+          "typoDetected": {
+            "raw": "أني صببنا",
+            "corrected": "أنى صببنا",
+            "reason": "تصحيف مطبعي بنقط الياء في (أنى) الممالة بمعنى أين"
+          }
+        },
+        {
+          "stopId": "s80-a37-w6",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "يعينه",
+            "corrected": "يعنيه",
+            "reason": "تصحيف مطبعي بتقديم الياء على النون؛ بدليل قوله: بفتح الياء والعين المهملة من قولهم عناني الأمر"
+          }
+        },
+        {
+          "stopId": "s80-a39-w2",
+          "scholar": "السجاوندي",
+          "typoDetected": {
+            "raw": "الفئتان",
+            "corrected": "الفئتين",
+            "reason": "خطأ مطبعي في المثنى المضاف إليه وحقه الجر بالياء (الفئتين)"
+          }
+        }
+      ],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s083_a001_036": {
+      "surah": 83,
+      "ayahRange": [
+        1,
+        36
+      ],
+      "llmFile": "s083_a001_036_llm_output.json",
+      "inRangeStopsCount": 40,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 3,
+      "typosDetected": [
+        {
+          "stopId": "s83-a3-w5",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "ومفعولاً يخسرون محذوفان أي يخسرون الناسمتاعهم ... وكذلك أو وزنزهم",
+            "corrected": "ومفعولا يخسرون محذوفان أي يخسرون الناس متاعهم ... وكذلك أو وزنوهم",
+            "reason": "تصحيف مطبعي في كلمة قرآنية (وزنزهم) وفي ألفاظ التعليل."
+          }
+        },
+        {
+          "stopId": "s83-a14-w1",
+          "scholar": "النحاس",
+          "typoDetected": {
+            "raw": "الوقوف على ها جائز ... وكلا بمعنى إلا",
+            "corrected": "الوقوف عليها جائز ... وكلا بمعنى ألا",
+            "reason": "تصحيف مطبعي في فصل الضمير (على ها) وفي رسم (إلا) بدل (ألا)."
+          }
+        },
+        {
+          "stopId": "s83-a35-w2",
+          "scholar": "السجاوندي",
+          "typoDetected": {
+            "raw": "لأن: {ينظرون} إل الضمير في: {يضحكون}ز",
+            "corrected": "لأن: {ينظرون} حال من الضمير في: {يضحكون}.",
+            "reason": "سقط وتصحيف مطبعي في لفظ التعليل."
+          }
+        }
+      ],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s084_a001_025": {
+      "surah": 84,
+      "ayahRange": [
+        1,
+        25
+      ],
+      "llmFile": "s084_a001_025_llm_output.json",
+      "inRangeStopsCount": 25,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 4,
+      "typosDetected": [
+        {
+          "stopId": "s84-a8-w4",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "يسير العطف",
+            "corrected": "يسيرًا لعطف",
+            "reason": "تصحيف مطبعي بوصل اللام بالكلمة القرآنية وحذف التنوين، والصواب: ولا يوقف على يسيرًا لعطف ما بعده على ما قبله."
+          }
+        },
+        {
+          "stopId": "s84-a11-w3",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "ثبور العطف",
+            "corrected": "ثبورًا لعطف",
+            "reason": "تصحيف مطبعي بوصل اللام بالكلمة القرآنية وحذف التنوين، والصواب: ولا يوقف على ثبورًا لعطف ما بعده عليه."
+          }
+        },
+        {
+          "stopId": "s84-a14-w5",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "لن يجوز",
+            "corrected": "لن يحور",
+            "reason": "تصحيف مطبعي في الكلمة القرآنية بزيادة نقطتين على الحاء والراء، والصواب: (وقيل الوقف: لن يحور) بدليل قوله بعده: (ومستأنف: بلى إن ربه كان به بصيرا)."
+          }
+        },
+        {
+          "stopId": "s84-a15-w1",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "لن يجوز",
+            "corrected": "لن يحور",
+            "reason": "تصحيف مطبعي في الكلمة القرآنية بزيادة نقطتين على الحاء والراء، والصواب: (وقيل الوقف: لن يحور) بدليل قوله بعده: (ومستأنف: بلى إن ربه كان به بصيرا)."
+          }
+        }
+      ],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s085_a001_022": {
+      "surah": 85,
+      "ayahRange": [
+        1,
+        22
+      ],
+      "llmFile": "s085_a001_022_llm_output.json",
+      "inRangeStopsCount": 23,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 2,
+      "typosDetected": [
+        {
+          "stopId": "s85-a10-w14",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "أن الذين فتنوا",
+            "corrected": "إن الذين فتنوا",
+            "reason": "تصحيف همزة (إن) المكسورة في أول الآية الكريمة إلى همزة مفتوحة"
+          }
+        },
+        {
+          "stopId": "s85-a17-w4",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "إنَّ نصب",
+            "corrected": "إن نصب",
+            "reason": "تصحيف في ضبط حرف الشرط الجازم (إنْ) إلى حرف التوكيد المشدد (إنَّ)"
+          }
+        }
+      ],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s086_a001_017": {
+      "surah": 86,
+      "ayahRange": [
+        1,
+        17
+      ],
+      "llmFile": "s086_a001_017_llm_output.json",
+      "inRangeStopsCount": 15,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 7,
+      "typosDetected": [
+        {
+          "stopId": "s86-a1-w2",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "تعني أنَّ أبا نجم",
+            "corrected": "تعني أنَّ أباها نجم",
+            "reason": "سقط مطبعي لضمير الغائبة في (أباها)"
+          }
+        },
+        {
+          "stopId": "s86-a2-w4",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "تعني أنَّ أبا نجم",
+            "corrected": "تعني أنَّ أباها نجم",
+            "reason": "سقط مطبعي لضمير الغائبة في (أباها)"
+          }
+        },
+        {
+          "stopId": "s86-a3-w2",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "تعني أنَّ أبا نجم",
+            "corrected": "تعني أنَّ أباها نجم",
+            "reason": "سقط مطبعي لضمير الغائبة في (أباها)"
+          }
+        },
+        {
+          "stopId": "s86-a8-w4",
+          "scholar": "السجاوندي",
+          "typoDetected": {
+            "raw": "أي: اذكر يوم قال: الرجع",
+            "corrected": "أي: اذكر يوم، ومن قال: الرجع",
+            "reason": "سقط مطبعي لكلمة (ومن) قبل (قال) يقتضيه السياق لمقابلة قوله (لمن جعل المعنى...)"
+          }
+        },
+        {
+          "stopId": "s86-a8-w4",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "قد فضل بين المصدر ومعموله",
+            "corrected": "قد فصل بين المصدر ومعموله",
+            "reason": "تصحيف مطبعي في (فضل) بالضاد المعجمة، والصواب (فصل) بالصاد المهملة"
+          }
+        },
+        {
+          "stopId": "s86-a10-w6",
+          "scholar": "السجاوندي",
+          "typoDetected": {
+            "raw": "وجوابه: {أنه..}",
+            "corrected": "وجوابه: {إنه..}",
+            "reason": "تصحيف في همزة {إنه} بفتحها والصواب كسرها"
+          }
+        },
+        {
+          "stopId": "s86-a14-w3",
+          "scholar": "السجاوندي",
+          "typoDetected": {
+            "raw": "وجوابه: {أنه..}",
+            "corrected": "وجوابه: {إنه..}",
+            "reason": "تصحيف في همزة {إنه} بفتحها والصواب كسرها"
+          }
+        }
+      ],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s087_a001_019": {
+      "surah": 87,
+      "ayahRange": [
+        1,
+        19
+      ],
+      "llmFile": "s087_a001_019_llm_output.json",
+      "inRangeStopsCount": 20,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 1,
+      "typosDetected": [
+        {
+          "stopId": "s87-a7-w4",
+          "scholar": "النحاس",
+          "typoDetected": {
+            "raw": "التمام ﴿إِلَّا مَا شَاءَ اللَّهُ إِنَّهُ يَعْلَمُ الْجَهْرَ وَمَا يَخْفَىٰ﴾ قطع كاف",
+            "corrected": "التمام ﴿إِلَّا مَا شَاءَ اللَّهُ﴾، ﴿إِنَّهُ يَعْلَمُ الْجَهْرَ وَمَا يَخْفَىٰ﴾ قطع كاف",
+            "reason": "دمج موضعي الوقف في قوس قرآني واحد لاتصال الآية؛ فـ(التمام) حكم لقوله (إلا ما شاء الله)، و(قطع كاف) حكم لقوله (وما يخفى)"
+          }
+        }
+      ],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s001_a001_007": {
+      "surah": 1,
+      "ayahRange": [
+        1,
+        7
+      ],
+      "llmFile": "s001_a001_007_llm_output.json",
+      "inRangeStopsCount": 28,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 0,
+      "typosDetected": [],
+      "boundaryFlags": {}
+    },
+    "s088_a001_026": {
+      "surah": 88,
+      "ayahRange": [
+        1,
+        26
+      ],
+      "llmFile": "s088_a001_026_llm_output.json",
+      "inRangeStopsCount": 26,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 0,
+      "typosDetected": [],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s089_a001_030": {
+      "surah": 89,
+      "ayahRange": [
+        1,
+        30
+      ],
+      "llmFile": "s089_a001_030_llm_output.json",
+      "inRangeStopsCount": 30,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 7,
+      "typosDetected": [
+        {
+          "stopId": "s89-a7-w1",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "وقرأ الحسن يعاد غير مصروف",
+            "corrected": "وقرأ الحسن بعاد غير مصروف",
+            "reason": "تصحيف مطبعي في الكلمة القرآنية {بِعَادٍ} حيث طبعت بالياء بدل الباء."
+          }
+        },
+        {
+          "stopId": "s89-a16-w10",
+          "scholar": "النحاس",
+          "typoDetected": {
+            "raw": "فأما على قول أبو حاتم",
+            "corrected": "فأما على قول أبي حاتم",
+            "reason": "خطأ مطبعي في إعراب المضاف إليه (أبي حاتم)."
+          }
+        },
+        {
+          "stopId": "s89-a17-w1",
+          "scholar": "النحاس",
+          "typoDetected": {
+            "raw": "فأما على قول أبو حاتم",
+            "corrected": "فأما على قول أبي حاتم",
+            "reason": "خطأ مطبعي في إعراب المضاف إليه (أبي حاتم)."
+          }
+        },
+        {
+          "stopId": "s89-a17-w5",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "ولا تخاصمون",
+            "corrected": "ولا تحاضون",
+            "reason": "تصحيف مطبعي في الكلمة القرآنية {وَلَا تَحَاضُّونَ} في الآية 18."
+          }
+        },
+        {
+          "stopId": "s89-a18-w5",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "ولا تخاصمون",
+            "corrected": "ولا تحاضون",
+            "reason": "تصحيف مطبعي في الكلمة القرآنية {وَلَا تَحَاضُّونَ} في الآية 18."
+          }
+        },
+        {
+          "stopId": "s89-a19-w4",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "ولا تخاصمون",
+            "corrected": "ولا تحاضون",
+            "reason": "تصحيف مطبعي في الكلمة القرآنية {وَلَا تَحَاضُّونَ} في الآية 18."
+          }
+        },
+        {
+          "stopId": "s89-a22-w5",
+          "scholar": "السجاوندي",
+          "typoDetected": {
+            "raw": "{صفا- 22-}",
+            "corrected": "{صفا- 22- ج}",
+            "reason": "سقط رمز الوقف الجائز (ج) بعد رقم الآية في المطبوع ويدل عليه تصريحه قبله بقوله: وجواز الوقف على."
+          }
+        }
+      ],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s091_a001_015": {
+      "surah": 91,
+      "ayahRange": [
+        1,
+        15
+      ],
+      "llmFile": "s091_a001_015_llm_output.json",
+      "inRangeStopsCount": 15,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 1,
+      "typosDetected": [
+        {
+          "stopId": "s91-a10-w4",
+          "scholar": "الداني",
+          "typoDetected": {
+            "raw": "قد أفلح من تزكى",
+            "corrected": "قد أفلح من زكاها",
+            "reason": "تصحيف في الآية القرآنية؛ ففي سورة الشمس (قد أفلح من زكاها)، وأما (قد أفلح من تزكى) ففي سورة الأعلى"
+          }
+        }
+      ],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s090_a001_020": {
+      "surah": 90,
+      "ayahRange": [
+        1,
+        20
+      ],
+      "llmFile": "s090_a001_020_llm_output.json",
+      "inRangeStopsCount": 15,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 1,
+      "typosDetected": [
+        {
+          "stopId": "s90-a12-w4",
+          "scholar": "السجاوندي",
+          "typoDetected": {
+            "raw": "ومن رقأ",
+            "corrected": "ومن قرأ",
+            "reason": "تصحيف مطبعي في كلمة (قرأ) بتقديم الراء على القاف."
+          }
+        }
+      ],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s093_a001_011": {
+      "surah": 93,
+      "ayahRange": [
+        1,
+        11
+      ],
+      "llmFile": "s093_a001_011_llm_output.json",
+      "inRangeStopsCount": 11,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 0,
+      "typosDetected": [],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s092_a001_021": {
+      "surah": 92,
+      "ayahRange": [
+        1,
+        21
+      ],
+      "llmFile": "s092_a001_021_llm_output.json",
+      "inRangeStopsCount": 16,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 0,
+      "typosDetected": [],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s094_a001_008": {
+      "surah": 94,
+      "ayahRange": [
+        1,
+        8
+      ],
+      "llmFile": "s094_a001_008_llm_output.json",
+      "inRangeStopsCount": 6,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 1,
+      "typosDetected": [
+        {
+          "stopId": "s94-a6-w4",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "يسر الثاني",
+            "corrected": "يسرا الثاني",
+            "reason": "سقط الألف من رسم الكلمة القرآنية (يسرا) في المطبوع"
+          }
+        }
+      ],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s095_a001_008": {
+      "surah": 95,
+      "ayahRange": [
+        1,
+        8
+      ],
+      "llmFile": "s095_a001_008_llm_output.json",
+      "inRangeStopsCount": 9,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 0,
+      "typosDetected": [],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s097_a001_005": {
+      "surah": 97,
+      "ayahRange": [
+        1,
+        5
+      ],
+      "llmFile": "s097_a001_005_llm_output.json",
+      "inRangeStopsCount": 7,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 1,
+      "typosDetected": [
+        {
+          "stopId": "s97-a5-w1",
+          "scholar": "النحاس",
+          "typoDetected": {
+            "raw": "وروى عن ابن عباس إنه قرأ ﴿من كل امرئ سلام هي﴾ قال أبو جعفر: والتقدير على هذه القراءة من كل امرئ من الملائكة سلام على المؤمنين فالوقف على سلام هي على هذه القراءة.",
+            "corrected": "وروى عن ابن عباس إنه قرأ ﴿من كل امرئ سلام﴾ قال أبو جعفر: والتقدير على هذه القراءة من كل امرئ من الملائكة سلام على المؤمنين فالوقف على سلام [ثم يبتدأ: هي] على هذه القراءة.",
+            "reason": "قراءة ابن عباس هي (من كل امرئ سلام) بالوقف على (سلام) والابتداء بـ(هي)، بدليل تقدير النحاس نفسه (من كل امرئ من الملائكة سلام على المؤمنين) دون دخول (هي) في الجملة، وبدليل نص ابن الأنباري والسجاوندي."
+          }
+        }
+      ],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s098_a001_008": {
+      "surah": 98,
+      "ayahRange": [
+        1,
+        8
+      ],
+      "llmFile": "s098_a001_008_llm_output.json",
+      "inRangeStopsCount": 21,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 0,
+      "typosDetected": [],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s096_a001_019": {
+      "surah": 96,
+      "ayahRange": [
+        1,
+        19
+      ],
+      "llmFile": "s096_a001_019_llm_output.json",
+      "inRangeStopsCount": 22,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 1,
+      "typosDetected": [
+        {
+          "stopId": "s96-a6-w1",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "بأنَّ أن لا تكسر",
+            "corrected": "بأنَّ إنَّ لا تكسر",
+            "reason": "تصحيف مطبعي في ضبط همزة (إنّ) المكسورة في قوله تعالى: (إن الإنسان ليطغى)"
+          }
+        }
+      ],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s099_a001_008": {
+      "surah": 99,
+      "ayahRange": [
+        1,
+        8
+      ],
+      "llmFile": "s099_a001_008_llm_output.json",
+      "inRangeStopsCount": 8,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 0,
+      "typosDetected": [],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s100_a001_011": {
+      "surah": 100,
+      "ayahRange": [
+        1,
+        11
+      ],
+      "llmFile": "s100_a001_011_llm_output.json",
+      "inRangeStopsCount": 10,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 1,
+      "typosDetected": [
+        {
+          "stopId": "s100-a1-w2",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "ضجا",
+            "corrected": "ضبحًا",
+            "reason": "تصحيف مطبعي في الكلمة القرآنية (ضَبْحًا) رأس الآية الأولى"
+          }
+        }
+      ],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s101_a001_011": {
+      "surah": 101,
+      "ayahRange": [
+        1,
+        11
+      ],
+      "llmFile": "s101_a001_011_llm_output.json",
+      "inRangeStopsCount": 8,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 3,
+      "typosDetected": [
+        {
+          "stopId": "s101-a10-w4",
+          "scholar": "الداني",
+          "typoDetected": {
+            "raw": "ماهيه",
+            "corrected": "ما هيه",
+            "reason": "وصل (ما) بـ(هيه) خطأ مطبعي، والصواب فصلهما كما في الرسم القرآني {مَا هِيَهْ}."
+          }
+        },
+        {
+          "stopId": "s101-a10-w4",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "ماهية",
+            "corrected": "ما هيه",
+            "reason": "رسمت في النص المطبوع بالتاء المربوطة موصولة (ماهية)، والصواب بالهاء مفصولة كما في الرسم القرآني {مَا هِيَهْ}."
+          }
+        },
+        {
+          "stopId": "s101-a10-w4",
+          "scholar": "النحاس",
+          "typoDetected": {
+            "raw": "لغيرها",
+            "corrected": "بغير هاء",
+            "reason": "تصحيف مطبعي في تعليل هاء السكت، والصواب: (لأنه إن وصل بغير هاء خالف السواد وإن وصل بالهاء لحن)."
+          }
+        }
+      ],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s102_a001_008": {
+      "surah": 102,
+      "ayahRange": [
+        1,
+        8
+      ],
+      "llmFile": "s102_a001_008_llm_output.json",
+      "inRangeStopsCount": 10,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 0,
+      "typosDetected": [],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s104_a001_009": {
+      "surah": 104,
+      "ayahRange": [
+        1,
+        9
+      ],
+      "llmFile": "s104_a001_009_llm_output.json",
+      "inRangeStopsCount": 10,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 0,
+      "typosDetected": [],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s103_a001_003": {
+      "surah": 103,
+      "ayahRange": [
+        1,
+        3
+      ],
+      "llmFile": "s103_a001_003_llm_output.json",
+      "inRangeStopsCount": 3,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 0,
+      "typosDetected": [],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s107_a001_007": {
+      "surah": 107,
+      "ayahRange": [
+        1,
+        7
+      ],
+      "llmFile": "s107_a001_007_llm_output.json",
+      "inRangeStopsCount": 6,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 1,
+      "typosDetected": [
+        {
+          "stopId": "s107-a5-w5",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "أذام",
+            "corrected": "أذم",
+            "reason": "تصحيف مطبعي في فعل المضارع (أذمّ) المقدر لنصب الاسم الموصول على القطع للذم"
+          }
+        }
+      ],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s110_a001_003": {
+      "surah": 110,
+      "ayahRange": [
+        1,
+        3
+      ],
+      "llmFile": "s110_a001_003_llm_output.json",
+      "inRangeStopsCount": 3,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 0,
+      "typosDetected": [],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s109_a001_006": {
+      "surah": 109,
+      "ayahRange": [
+        1,
+        6
+      ],
+      "llmFile": "s109_a001_006_llm_output.json",
+      "inRangeStopsCount": 5,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 2,
+      "typosDetected": [
+        {
+          "stopId": "s109-a3-w5",
+          "scholar": "ابن الأنباري",
+          "typoDetected": {
+            "raw": "في هذا الوقف",
+            "corrected": "في هذا الوقت",
+            "reason": "تصحيف مطبعي في كلمة (الوقت) إلى (الوقف)؛ لأن السياق في بيان معنى الآية في الحال بمقابلة قوله بعده: (فيما يستقبل)، كما نص عليه الداني في نقله لقول محمد بن يزيد."
+          }
+        },
+        {
+          "stopId": "s109-a5-w5",
+          "scholar": "النحاس",
+          "typoDetected": {
+            "raw": "في هذا الوقف",
+            "corrected": "في هذا الوقت",
+            "reason": "تصحيف مطبعي في كلمة (الوقت) إلى (الوقف) في بيان معنى الآية على قول المبرد، وقد وقع مثله في إيضاح ابن الأنباري."
+          }
+        }
+      ],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s108_a001_003": {
+      "surah": 108,
+      "ayahRange": [
+        1,
+        3
+      ],
+      "llmFile": "s108_a001_003_llm_output.json",
+      "inRangeStopsCount": 3,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 1,
+      "typosDetected": [
+        {
+          "stopId": "s108-a2-w3",
+          "scholar": "الأشموني",
+          "typoDetected": {
+            "raw": "بأن",
+            "corrected": "بإن",
+            "reason": "تصحيف مطبعي في الكلمة القرآنية؛ فمطلع الآية الثالثة مكسور الهمزة {إِنَّ شَانِئَكَ} لا مفتوحها."
+          }
+        }
+      ],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s111_a001_005": {
+      "surah": 111,
+      "ayahRange": [
+        1,
+        5
+      ],
+      "llmFile": "s111_a001_005_llm_output.json",
+      "inRangeStopsCount": 6,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 0,
+      "typosDetected": [],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s112_a001_004": {
+      "surah": 112,
+      "ayahRange": [
+        1,
+        4
+      ],
+      "llmFile": "s112_a001_004_llm_output.json",
+      "inRangeStopsCount": 4,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 0,
+      "typosDetected": [],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s113_a001_005": {
+      "surah": 113,
+      "ayahRange": [
+        1,
+        5
+      ],
+      "llmFile": "s113_a001_005_llm_output.json",
+      "inRangeStopsCount": 5,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 0,
+      "typosDetected": [],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
+    },
+    "s114_a001_006": {
+      "surah": 114,
+      "ayahRange": [
+        1,
+        6
+      ],
+      "llmFile": "s114_a001_006_llm_output.json",
+      "inRangeStopsCount": 6,
+      "outOfRangeStopsCount": 0,
+      "typosDetectedCount": 0,
+      "typosDetected": [],
+      "boundaryFlags": {
+        "expandedLookbehindAyah": null,
+        "expandedLookaheadAyah": null,
+        "inheritedFromPrev": null,
+        "extendedIntoNext": null,
+        "outOfRangeStopsEmitted": []
+      }
     }
   },
   "crossBoundaryOpinions": [
-    {
-      "fromBatch": "s002_a034_043",
-      "surah": 2,
-      "ayah": 44,
-      "wordIndex": 10,
-      "stopId": "s2-a44-w10",
-      "word": "تَعْقِلُونَ",
-      "inUthmaniMushaf": false,
-      "isVerseEnd": true,
-      "opinion": {
-        "scholar": "النحاس",
-        "targetWord": "تَعْقِلُونَ",
-        "verdict": [
-          "تام",
-          "حسن"
-        ],
-        "verdictLabel": [
-          "ط",
-          "ص"
-        ],
-        "symbol": [
-          "tam",
-          "murakhkhas"
-        ],
-        "isQila": [
-          false,
-          false
-        ],
-        "book": "القطع والائتناف",
-        "page": "آية 41",
-        "comment": "والقطع التام ﴿وَارْكَعُوا مَعَ الرَّاكِعِينَ﴾، وكذا أتأمرون الناس بالبر وتنسون أنفسكم وأنتم تتلون الكتاب أفلا تعقلون، لأن المعنى أفلا تعقلون ما في هذا عليكم، والوقف عليه حسن لأنه رأس آية."
-      }
-    },
-    {
-      "fromBatch": "s002_a275_281",
-      "surah": 2,
-      "ayah": 282,
-      "wordIndex": 10,
-      "stopId": "s2-a282-w10",
-      "word": "فَٱكْتُبُوهُ",
-      "inUthmaniMushaf": true,
-      "isVerseEnd": false,
-      "opinion": {
-        "scholar": "النحاس",
-        "targetWord": "فَٱكْتُبُوهُ",
-        "verdict": [
-          "كاف"
-        ],
-        "verdictLabel": [
-          "ج"
-        ],
-        "symbol": [
-          "jaiz"
-        ],
-        "isQila": [
-          false
-        ],
-        "book": "القطع والائتناف",
-        "page": "آية 281",
-        "comment": "وفي آية الدين أكثر من عشرة وقوف كافية منها يا أيها الذين آمنوا إذا تداينتم بدين إلى أجل مسمى فاكتبوه."
-      }
-    },
-    {
-      "fromBatch": "s002_a275_281",
-      "surah": 2,
-      "ayah": 282,
-      "wordIndex": 14,
-      "stopId": "s2-a282-w14",
-      "word": "بِٱلْعَدْلِ",
-      "inUthmaniMushaf": true,
-      "isVerseEnd": false,
-      "opinion": {
-        "scholar": "النحاس",
-        "targetWord": "بِٱلْعَدْلِ",
-        "verdict": [
-          "كاف"
-        ],
-        "verdictLabel": [
-          "ج"
-        ],
-        "symbol": [
-          "jaiz"
-        ],
-        "isQila": [
-          false
-        ],
-        "book": "القطع والائتناف",
-        "page": "آية 281",
-        "comment": "وفي آية الدين أكثر من عشرة وقوف كافية منها يا أيها الذين آمنوا إذا تداينتم بدين إلى أجل مسمى فاكتبوه وبعده ﴿وَلْيَكْتُب بَّيْنَكُمْ كَاتِبٌ بِالْعَدْلِ﴾."
-      }
-    },
-    {
-      "fromBatch": "s002_a275_281",
-      "surah": 2,
-      "ayah": 282,
-      "wordIndex": 23,
-      "stopId": "s2-a282-w23",
-      "word": "فَلْيَكْتُبْ",
-      "inUthmaniMushaf": false,
-      "isVerseEnd": false,
-      "opinion": {
-        "scholar": "النحاس",
-        "targetWord": "فَلْيَكْتُبْ",
-        "verdict": [
-          "كاف"
-        ],
-        "verdictLabel": [
-          "ج"
-        ],
-        "symbol": [
-          "jaiz"
-        ],
-        "isQila": [
-          false
-        ],
-        "book": "القطع والائتناف",
-        "page": "آية 281",
-        "comment": "وفي آية الدين أكثر من عشرة وقوف كافية منها يا أيها الذين آمنوا إذا تداينتم بدين إلى أجل مسمى فاكتبوه وبعده ﴿وَلْيَكْتُب بَّيْنَكُمْ كَاتِبٌ بِالْعَدْلِ﴾ وبعده ﴿فَلْيَكْتُبْ﴾."
-      }
-    },
-    {
-      "fromBatch": "s002_a275_281",
-      "surah": 2,
-      "ayah": 282,
-      "wordIndex": 34,
-      "stopId": "s2-a282-w34",
-      "word": "شَيْـًۭٔا",
-      "inUthmaniMushaf": true,
-      "isVerseEnd": false,
-      "opinion": {
-        "scholar": "النحاس",
-        "targetWord": "شَيْـًۭٔا",
-        "verdict": [
-          "كاف"
-        ],
-        "verdictLabel": [
-          "ج"
-        ],
-        "symbol": [
-          "jaiz"
-        ],
-        "isQila": [
-          false
-        ],
-        "book": "القطع والائتناف",
-        "page": "آية 281",
-        "comment": "وفي آية الدين أكثر من عشرة وقوف كافية منها يا أيها الذين آمنوا إذا تداينتم بدين إلى أجل مسمى فاكتبوه وبعده ﴿وَلْيَكْتُب بَّيْنَكُمْ كَاتِبٌ بِالْعَدْلِ﴾ وبعده ﴿فَلْيَكْتُبْ﴾ وبعده ﴿وَلَا يَبْخَسْ مِنْهُ شَيْئًا﴾."
-      }
-    },
     {
       "fromBatch": "s022_a025_038",
       "surah": 22,
@@ -21593,6 +23120,261 @@
       }
     },
     {
+      "fromBatch": "s002_a034_043",
+      "surah": 2,
+      "ayah": 44,
+      "wordIndex": 10,
+      "stopId": "s2-a44-w10",
+      "word": "تَعْقِلُونَ",
+      "inUthmaniMushaf": false,
+      "isVerseEnd": true,
+      "opinion": {
+        "scholar": "النحاس",
+        "targetWord": "تَعْقِلُونَ",
+        "verdict": [
+          "تام",
+          "حسن"
+        ],
+        "verdictLabel": [
+          "ط",
+          "ص"
+        ],
+        "symbol": [
+          "tam",
+          "murakhkhas"
+        ],
+        "isQila": [
+          false,
+          false
+        ],
+        "book": "القطع والائتناف",
+        "page": "آية 41",
+        "comment": "والقطع التام ﴿وَارْكَعُوا مَعَ الرَّاكِعِينَ﴾، وكذا أتأمرون الناس بالبر وتنسون أنفسكم وأنتم تتلون الكتاب أفلا تعقلون، لأن المعنى أفلا تعقلون ما في هذا عليكم، والوقف عليه حسن لأنه رأس آية.",
+        "demosAndMeanings": [
+          {
+            "verdict": "تام",
+            "isQila": false,
+            "waqfSegmentWords": [
+              1,
+              10
+            ],
+            "ibtidaSegmentWords": null,
+            "waqfDemo": "تلاوة: ﴿ أَتَأْمُرُونَ ٱلنَّاسَ بِٱلْبِرِّ وَتَنسَوْنَ أَنفُسَكُمْ وَأَنتُمْ تَتْلُونَ ٱلْكِتَـٰبَ أَفَلَا تَعْقِلُونَ ﴾ [قف على: تَعْقِلُونْ]",
+            "ibtidaDemo": "﴿ وَٱسْتَعِينُوا۟ بِٱلصَّبْرِ وَٱلصَّلَوٰةِ ﴾ [الآية التالية]",
+            "meaningAtWaqf": "تمام التوبيخ والتقريع لأحبار اليهود بفاصلة الإنكار ﴿أَفَلَا تَعْقِلُونَ﴾.",
+            "meaningAtIbtida": "استئناف خطابٍ جديدٍ موجّهٍ للمؤمنين أو على القطع عن الاستفهام السابق للأمر بالاستعانة بالصبر والصلاة.",
+            "meaningIfConnected": "الوقف تامّ لانقضاء الاستفهام التوبيخي والانتقال إلى أسلوب الأمر الإرشادي."
+          },
+          {
+            "verdict": "حسن",
+            "isQila": false,
+            "waqfSegmentWords": [
+              1,
+              10
+            ],
+            "ibtidaSegmentWords": null,
+            "waqfDemo": "تلاوة: ﴿ أَتَأْمُرُونَ ٱلنَّاسَ بِٱلْبِرِّ وَتَنسَوْنَ أَنفُسَكُمْ وَأَنتُمْ تَتْلُونَ ٱلْكِتَـٰبَ أَفَلَا تَعْقِلُونَ ﴾ [قف على: تَعْقِلُونْ]",
+            "ibtidaDemo": "﴿ وَٱسْتَعِينُوا۟ بِٱلصَّبْرِ وَٱلصَّلَوٰةِ ﴾ [الآية التالية]",
+            "meaningAtWaqf": "انقضاء الجملة الاستفهامية عند رأس الآية.",
+            "meaningAtIbtida": "ابتداء جملة أمرية معطوفة على الأوامر المتقدمة في قوله ﴿وَأَقِيمُوا۟ ٱلصَّلَوٰةَ﴾.",
+            "meaningIfConnected": "يكون الوقف حسناً إذا جُعل ﴿وَٱسْتَعِينُوا۟﴾ معطوفاً على الأوامر السابقة لبني إسرائيل."
+          }
+        ]
+      }
+    },
+    {
+      "fromBatch": "s002_a275_281",
+      "surah": 2,
+      "ayah": 282,
+      "wordIndex": 10,
+      "stopId": "s2-a282-w10",
+      "word": "فَٱكْتُبُوهُ",
+      "inUthmaniMushaf": true,
+      "isVerseEnd": false,
+      "opinion": {
+        "scholar": "النحاس",
+        "targetWord": "فَٱكْتُبُوهُ",
+        "verdict": [
+          "كاف"
+        ],
+        "verdictLabel": [
+          "ج"
+        ],
+        "symbol": [
+          "jaiz"
+        ],
+        "isQila": [
+          false
+        ],
+        "book": "القطع والائتناف",
+        "page": "آية 281",
+        "comment": "وفي آية الدين أكثر من عشرة وقوف كافية منها يا أيها الذين آمنوا إذا تداينتم بدين إلى أجل مسمى فاكتبوه.",
+        "demosAndMeanings": [
+          {
+            "verdict": "كاف",
+            "isQila": false,
+            "waqfSegmentWords": [
+              1,
+              10
+            ],
+            "ibtidaSegmentWords": [
+              11,
+              14
+            ],
+            "waqfDemo": "تلاوة: ﴿ يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا تَدَايَنتُم بِدَيْنٍ إِلَىٰٓ أَجَلٍۢ مُّسَمًّۭى فَٱكْتُبُوهُ ﴾ [قف على: فَٱكْتُبُوهْ]",
+            "ibtidaDemo": "﴿ وَلْيَكْتُب بَّيْنَكُمْ كَاتِبٌۢ بِٱلْعَدْلِ ﴾ [قف على: بِٱلْعَدْلْ]",
+            "meaningAtWaqf": "تمام جملة النداء والشرط وجوابه في الأمر بكتابة الدين المؤجل.",
+            "meaningAtIbtida": "ابتداء جملة أمرية ثانية تبيّن صفة الكتابة المأمور بها وأن يتولاها كاتب بالعدل.",
+            "meaningIfConnected": "الوقف كافٍ لاستقلال الجملة الثانية إعراباً مع تعلقها بالأولى في سياق بيان أحكام كتابة الدين."
+          }
+        ]
+      }
+    },
+    {
+      "fromBatch": "s002_a275_281",
+      "surah": 2,
+      "ayah": 282,
+      "wordIndex": 14,
+      "stopId": "s2-a282-w14",
+      "word": "بِٱلْعَدْلِ",
+      "inUthmaniMushaf": true,
+      "isVerseEnd": false,
+      "opinion": {
+        "scholar": "النحاس",
+        "targetWord": "بِٱلْعَدْلِ",
+        "verdict": [
+          "كاف"
+        ],
+        "verdictLabel": [
+          "ج"
+        ],
+        "symbol": [
+          "jaiz"
+        ],
+        "isQila": [
+          false
+        ],
+        "book": "القطع والائتناف",
+        "page": "آية 281",
+        "comment": "وفي آية الدين أكثر من عشرة وقوف كافية منها يا أيها الذين آمنوا إذا تداينتم بدين إلى أجل مسمى فاكتبوه وبعده ﴿وَلْيَكْتُب بَّيْنَكُمْ كَاتِبٌ بِالْعَدْلِ﴾.",
+        "demosAndMeanings": [
+          {
+            "verdict": "كاف",
+            "isQila": false,
+            "waqfSegmentWords": [
+              11,
+              14
+            ],
+            "ibtidaSegmentWords": [
+              15,
+              23
+            ],
+            "waqfDemo": "تلاوة: ﴿ وَلْيَكْتُب بَّيْنَكُمْ كَاتِبٌۢ بِٱلْعَدْلِ ﴾ [قف على: بِٱلْعَدْلْ]",
+            "ibtidaDemo": "﴿ وَلَا يَأْبَ كَاتِبٌ أَن يَكْتُبَ كَمَا عَلَّمَهُ ٱللَّهُ فَلْيَكْتُبْ ﴾ [قف على: فَلْيَكْتُبْ]",
+            "meaningAtWaqf": "تمام الأمر بتحري العدل في الكتابة بين المتداينين.",
+            "meaningAtIbtida": "ابتداء نهي للكاتب عن الامتناع من الكتابة وأمره بالقيام بها شكراً لنعمة الله الذي علّمه.",
+            "meaningIfConnected": "الوقف كافٍ لتمام الجملة الأمرية لفظاً وبقاء الاتصال المعنوي في تنظيم وظيفة الكاتب."
+          }
+        ]
+      }
+    },
+    {
+      "fromBatch": "s002_a275_281",
+      "surah": 2,
+      "ayah": 282,
+      "wordIndex": 23,
+      "stopId": "s2-a282-w23",
+      "word": "فَلْيَكْتُبْ",
+      "inUthmaniMushaf": false,
+      "isVerseEnd": false,
+      "opinion": {
+        "scholar": "النحاس",
+        "targetWord": "فَلْيَكْتُبْ",
+        "verdict": [
+          "كاف"
+        ],
+        "verdictLabel": [
+          "ج"
+        ],
+        "symbol": [
+          "jaiz"
+        ],
+        "isQila": [
+          false
+        ],
+        "book": "القطع والائتناف",
+        "page": "آية 281",
+        "comment": "وفي آية الدين أكثر من عشرة وقوف كافية منها يا أيها الذين آمنوا إذا تداينتم بدين إلى أجل مسمى فاكتبوه وبعده ﴿وَلْيَكْتُب بَّيْنَكُمْ كَاتِبٌ بِالْعَدْلِ﴾ وبعده ﴿فَلْيَكْتُبْ﴾.",
+        "demosAndMeanings": [
+          {
+            "verdict": "كاف",
+            "isQila": false,
+            "waqfSegmentWords": [
+              15,
+              23
+            ],
+            "ibtidaSegmentWords": [
+              24,
+              34
+            ],
+            "waqfDemo": "تلاوة: ﴿ وَلَا يَأْبَ كَاتِبٌ أَن يَكْتُبَ كَمَا عَلَّمَهُ ٱللَّهُ فَلْيَكْتُبْ ﴾ [قف على: فَلْيَكْتُبْ]",
+            "ibtidaDemo": "﴿ وَلْيُمْلِلِ ٱلَّذِى عَلَيْهِ ٱلْحَقُّ وَلْيَتَّقِ ٱللَّهَ رَبَّهُۥ وَلَا يَبْخَسْ مِنْهُ شَيْـًۭٔا ﴾ [قف على: شَيْـَٔا]",
+            "meaningAtWaqf": "انقضاء النهي عن الإباء وتأكيد الأمر بالكتابة في قوله ﴿فَلْيَكْتُبْ﴾.",
+            "meaningAtIbtida": "الشروع في بيان من يتولى الإملاء على الكاتب، وهو المدين الذي عليه الحق.",
+            "meaningIfConnected": "الوقف كافٍ لانتهاء الحكم المتعلق بالكاتب والانتقال إلى الحكم المتعلق بالمملي مع اشتراكهما في واقعة التوثيق."
+          }
+        ]
+      }
+    },
+    {
+      "fromBatch": "s002_a275_281",
+      "surah": 2,
+      "ayah": 282,
+      "wordIndex": 34,
+      "stopId": "s2-a282-w34",
+      "word": "شَيْـًۭٔا",
+      "inUthmaniMushaf": true,
+      "isVerseEnd": false,
+      "opinion": {
+        "scholar": "النحاس",
+        "targetWord": "شَيْـًۭٔا",
+        "verdict": [
+          "كاف"
+        ],
+        "verdictLabel": [
+          "ج"
+        ],
+        "symbol": [
+          "jaiz"
+        ],
+        "isQila": [
+          false
+        ],
+        "book": "القطع والائتناف",
+        "page": "آية 281",
+        "comment": "وفي آية الدين أكثر من عشرة وقوف كافية منها يا أيها الذين آمنوا إذا تداينتم بدين إلى أجل مسمى فاكتبوه وبعده ﴿وَلْيَكْتُب بَّيْنَكُمْ كَاتِبٌ بِالْعَدْلِ﴾ وبعده ﴿فَلْيَكْتُبْ﴾ وبعده ﴿وَلَا يَبْخَسْ مِنْهُ شَيْئًا﴾.",
+        "demosAndMeanings": [
+          {
+            "verdict": "كاف",
+            "isQila": false,
+            "waqfSegmentWords": [
+              24,
+              34
+            ],
+            "ibtidaSegmentWords": [
+              35,
+              51
+            ],
+            "waqfDemo": "تلاوة: ﴿ وَلْيُمْلِلِ ٱلَّذِى عَلَيْهِ ٱلْحَقُّ وَلْيَتَّقِ ٱللَّهَ رَبَّهُۥ وَلَا يَبْخَسْ مِنْهُ شَيْـًۭٔا ﴾ [قف على: شَيْـَٔا]",
+            "ibtidaDemo": "﴿ فَإِن كَانَ ٱلَّذِى عَلَيْهِ ٱلْحَقُّ سَفِيهًا أَوْ ضَعِيفًا أَوْ لَا يَسْتَطِيعُ أَن يُمِلَّ هُوَ فَلْيُمْلِلْ وَلِيُّهُۥ بِٱلْعَدْلِ ﴾ [قف على: بِٱلْعَدْلْ]",
+            "meaningAtWaqf": "تمام الأمر للمدين بالإملاء وتقوى الله والنهي عن إنقاص شيء من الحق.",
+            "meaningAtIbtida": "ابتداء جملة شرطية تفصّل حكم الإملاء إذا كان المدين سفيهاً أو ضعيفاً أو عاجزاً عن النطق.",
+            "meaningIfConnected": "الوقف كافٍ لاستقلال الجملة الشرطية لفظاً مع تعلقها المعنوي بتفصيل أحوال من عليه الحق."
+          }
+        ]
+      }
+    },
+    {
       "fromBatch": "s106_a001_004",
       "surah": 105,
       "ayah": 5,
@@ -21622,7 +23404,23 @@
         ],
         "book": "إيضاح الوقف والابتداء",
         "page": "2/985- 988",
-        "comment": "قال قوم: اللام في «إيلاف» صلة لقوله: (ألم تر كيف فعل ربك بأصحاب الفيل) وذلك أنه ذكر أهل مكة نعمه عليهم في إنجائه إياهم من أهل الحبشة وإهلاك الحبشة، ثم قال: (لإيلاف قريش) [1] أي ذلك نعمته عليهم في رحلة الشتاء والصيف أي نعمة إلى نعمة ونعمة لنعمة. وقال قوم: اللام صلة لقوله: {فجعلهم كعصف مأكول} [الفيل: 5] أي جعلهم كذلك لتأتلف قريش. فعلى هذا المذهب الأول والثاني لا يحسن الوقف على قوله: (فجعلهم كعصف مأكول) لأن أول لإيلاف متعلق بأول سورة الفيل وآخرها، وقال قوم: اللام صلة لفعل مضمر كأنه قال: اعجب يا محمد لنعم الله على قريش في إيلافهم رحلة الشتاء والصيف، فلا تتشاغلن بذلك عن الإيمان بالله واتباعك، الدليل على هذا قوله (فليعبدوا رب هذا البيت. الذي أطعمهم من جوع وآمنهم من خوف) [3، 4]."
+        "comment": "قال قوم: اللام في «إيلاف» صلة لقوله: (ألم تر كيف فعل ربك بأصحاب الفيل) وذلك أنه ذكر أهل مكة نعمه عليهم في إنجائه إياهم من أهل الحبشة وإهلاك الحبشة، ثم قال: (لإيلاف قريش) [1] أي ذلك نعمته عليهم في رحلة الشتاء والصيف أي نعمة إلى نعمة ونعمة لنعمة. وقال قوم: اللام صلة لقوله: {فجعلهم كعصف مأكول} [الفيل: 5] أي جعلهم كذلك لتأتلف قريش. فعلى هذا المذهب الأول والثاني لا يحسن الوقف على قوله: (فجعلهم كعصف مأكول) لأن أول لإيلاف متعلق بأول سورة الفيل وآخرها، وقال قوم: اللام صلة لفعل مضمر كأنه قال: اعجب يا محمد لنعم الله على قريش في إيلافهم رحلة الشتاء والصيف، فلا تتشاغلن بذلك عن الإيمان بالله واتباعك، الدليل على هذا قوله (فليعبدوا رب هذا البيت. الذي أطعمهم من جوع وآمنهم من خوف) [3، 4].",
+        "demosAndMeanings": [
+          {
+            "verdict": "تام",
+            "isQila": true,
+            "waqfSegmentWords": [
+              1,
+              3
+            ],
+            "ibtidaSegmentWords": null,
+            "waqfDemo": "تلاوة: ﴿ فَجَعَلَهُمْ كَعَصْفٍ مَّأْكُولٍۭ ﴾ [قف على: مَّأْكُولْ]",
+            "ibtidaDemo": "﴿ لِإِيلَـٰفِ قُرَيْشٍ ﴾ [السورة التالية]",
+            "meaningAtWaqf": "تمام القصة والخبر عن إهلاك أصحاب الفيل وصيرورتهم كورق الزرع الذي أكلته الدوابّ فرُثَّ وبقي تِبْنه، على قول من قطع أول سورة قريش عن سورة الفيل.",
+            "meaningAtIbtida": "ابتداء سورة مستقلة على تقدير فعل مضمر قبل اللام؛ أي: اعجبوا لنعم الله على قريش في إيلافهم رحلة الشتاء والصيف، أو: ألِفوا ذلك لإيلاف قريش.",
+            "meaningIfConnected": "الوصل مذهب من علّق اللام في ﴿لِإِيلَـٰفِ قُرَيْشٍ﴾ بقوله ﴿أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ﴾ أو بقوله ﴿فَجَعَلَهُمْ كَعَصْفٍ مَّأْكُولٍۭ﴾؛ أي: أهلك الله الحبشة لتأتلف قريش وتأمن في رحلتيها، والوقف أرجح لكونهما سورتين مستقلتين في المصحف."
+          }
+        ]
       }
     }
   ]

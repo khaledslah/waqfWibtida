@@ -69,6 +69,7 @@ String formatStopShare(
   Ayah? ayah,
   String? surahName,
   WaqfDemoAndMeaning? highlightDemo,
+  List<Ayah>? contextAyahs,
 }) {
   final demo = highlightDemo ?? _firstDemoWithSpans(stop) ?? _firstDemo(stop);
   final b = StringBuffer();
@@ -80,6 +81,7 @@ String formatStopShare(
         stop: stop,
         demo: demo,
         surahName: surahName,
+        contextAyahs: contextAyahs,
       ),
     );
     b.writeln('🔖 *موضع الوقف*: ﴿${stop.word}﴾');
@@ -112,65 +114,199 @@ String formatStopShare(
   return b.toString().trimRight();
 }
 
-/// Full ayah with *bold* stop/highlight words.
-/// When meaning spans exist: `*[…]*` around each waqf/ibtida bracket span.
+({int startAyah, int startWord, int endAyah, int endWord})? _normalizedCoords(
+  List<int>? span,
+  int startAyah,
+  int endAyah,
+) {
+  if (!_spanValid(span)) return null;
+  final sWord = span![0];
+  final eWord = span[1];
+  if (compareWordCoord(startAyah, sWord, endAyah, eWord) <= 0) {
+    return (
+      startAyah: startAyah,
+      startWord: sWord,
+      endAyah: endAyah,
+      endWord: eWord,
+    );
+  }
+  return (
+    startAyah: endAyah,
+    startWord: eWord,
+    endAyah: startAyah,
+    endWord: sWord,
+  );
+}
+
+/// Full ayah (plus any cross-ayah span tail/head from [contextAyahs]) with
+/// *bold* stop/highlight words (`*[…]*` around each waqf/ibtida bracket span).
 String formatAyahMarkedForStop(
   Ayah ayah, {
   required WaqfStop stop,
   WaqfDemoAndMeaning? demo,
   String? surahName,
+  List<Ayah>? contextAyahs,
 }) {
-  final hasWaqf = _spanValid(demo?.waqfSegmentWords);
-  final hasIbtida = _spanValid(demo?.ibtidaSegmentWords);
-  final useSpans = hasWaqf || hasIbtida;
+  final waqfSpan = demo == null
+      ? null
+      : _normalizedCoords(
+          demo.waqfSegmentWords,
+          demo.resolvedWaqfStartAyah(stop.ayah),
+          demo.resolvedWaqfEndAyah(stop.ayah),
+        );
+  final ibtidaSpan = demo == null
+      ? null
+      : _normalizedCoords(
+          demo.ibtidaSegmentWords,
+          demo.resolvedIbtidaStartAyah(stop.ayah),
+          demo.resolvedIbtidaEndAyah(stop.ayah),
+        );
+
+  final extent = demo?.ayahExtent(stop.ayah) ?? (stop.ayah, stop.ayah);
+  final byNumber = <int, Ayah>{ayah.number: ayah};
+  if (contextAyahs != null &&
+      (extent.$1 < ayah.number || extent.$2 > ayah.number)) {
+    for (final a in contextAyahs) {
+      if (a.number >= extent.$1 && a.number <= extent.$2) {
+        byNumber[a.number] = a;
+      }
+    }
+  }
+  final ayahsToRender = byNumber.values.toList()
+    ..sort((a, b) => a.number.compareTo(b.number));
 
   final parts = <String>[];
   var spanDepth = 0;
-  for (var i = 0; i < ayah.words.length; i++) {
-    final w = ayah.words[i];
-    final idx = w.index > 0 ? w.index : i + 1;
-    final isStop = w.stopId == stop.id || idx == stop.wordIndex;
 
-    var openCount = 0;
-    var closeCount = 0;
-    if (useSpans) {
-      if (hasWaqf && _isSpanStart(demo!.waqfSegmentWords, idx)) openCount++;
-      if (hasIbtida && _isSpanStart(demo!.ibtidaSegmentWords, idx)) {
-        openCount++;
+  for (var aPos = 0; aPos < ayahsToRender.length; aPos++) {
+    final curAyah = ayahsToRender[aPos];
+    var fromWord = 1;
+    var toWord = curAyah.words.length;
+    for (var i = 0; i < curAyah.words.length; i++) {
+      final wi = curAyah.words[i].index;
+      if (wi > toWord) toWord = wi;
+    }
+
+    if (ayahsToRender.length > 1) {
+      if (curAyah.number < stop.ayah) {
+        var earliest = toWord + 1;
+        if (waqfSpan != null &&
+            waqfSpan.startAyah <= curAyah.number &&
+            waqfSpan.endAyah >= curAyah.number) {
+          earliest = waqfSpan.startAyah == curAyah.number
+              ? waqfSpan.startWord
+              : 1;
+        }
+        if (ibtidaSpan != null &&
+            ibtidaSpan.startAyah <= curAyah.number &&
+            ibtidaSpan.endAyah >= curAyah.number) {
+          final ibEarliest =
+              ibtidaSpan.startAyah == curAyah.number ? ibtidaSpan.startWord : 1;
+          if (ibEarliest < earliest) earliest = ibEarliest;
+        }
+        if (earliest <= toWord) {
+          fromWord = earliest;
+        }
+        if (fromWord > 1) {
+          parts.add('…');
+        }
+      } else if (curAyah.number > stop.ayah) {
+        var latest = 0;
+        if (ibtidaSpan != null &&
+            ibtidaSpan.endAyah >= curAyah.number &&
+            ibtidaSpan.startAyah <= curAyah.number) {
+          latest = ibtidaSpan.endAyah == curAyah.number
+              ? ibtidaSpan.endWord
+              : toWord;
+        }
+        if (waqfSpan != null &&
+            waqfSpan.endAyah >= curAyah.number &&
+            waqfSpan.startAyah <= curAyah.number) {
+          final wLatest =
+              waqfSpan.endAyah == curAyah.number ? waqfSpan.endWord : toWord;
+          if (wLatest > latest) latest = wLatest;
+        }
+        if (latest > 0 && latest < toWord) {
+          toWord = latest;
+        }
       }
-      if (hasWaqf && _isSpanEnd(demo!.waqfSegmentWords, idx)) closeCount++;
-      if (hasIbtida && _isSpanEnd(demo!.ibtidaSegmentWords, idx)) closeCount++;
     }
 
-    final open = StringBuffer();
-    if (openCount > 0) {
-      if (spanDepth == 0) {
-        // Place one bold marker pair outside the `[]` span (`*[…]*`).
-        open.write('*');
+    var clippedTail = false;
+    for (var i = 0; i < curAyah.words.length; i++) {
+      final w = curAyah.words[i];
+      final idx = w.index > 0 ? w.index : i + 1;
+      if (idx < fromWord) continue;
+      if (idx > toWord) {
+        clippedTail = true;
+        break;
       }
-      open.write('[' * openCount);
-      spanDepth += openCount;
-    }
 
-    var text = w.text;
-    if (isStop && spanDepth == 0) {
-      text = '*$text*';
-    }
+      final isStop =
+          curAyah.number == stop.ayah &&
+          (w.stopId == stop.id || idx == stop.wordIndex);
 
-    final close = StringBuffer();
-    if (closeCount > 0) {
-      spanDepth = (spanDepth - closeCount).clamp(0, 100);
-      close.write(']' * closeCount);
-      if (spanDepth == 0) {
-        close.write('*');
+      var openCount = 0;
+      var closeCount = 0;
+      if (waqfSpan != null) {
+        if (curAyah.number == waqfSpan.startAyah && idx == waqfSpan.startWord) {
+          openCount++;
+        }
+        if (curAyah.number == waqfSpan.endAyah && idx == waqfSpan.endWord) {
+          closeCount++;
+        }
       }
+      if (ibtidaSpan != null) {
+        if (curAyah.number == ibtidaSpan.startAyah &&
+            idx == ibtidaSpan.startWord) {
+          openCount++;
+        }
+        if (curAyah.number == ibtidaSpan.endAyah &&
+            idx == ibtidaSpan.endWord) {
+          closeCount++;
+        }
+      }
+
+      final open = StringBuffer();
+      if (openCount > 0) {
+        if (spanDepth == 0) {
+          // Place one bold marker pair outside the `[]` span (`*[…]*`).
+          open.write('*');
+        }
+        open.write('[' * openCount);
+        spanDepth += openCount;
+      }
+
+      var text = w.text;
+      if (isStop && spanDepth == 0) {
+        text = '*$text*';
+      }
+
+      final close = StringBuffer();
+      if (closeCount > 0) {
+        spanDepth = (spanDepth - closeCount).clamp(0, 100);
+        close.write(']' * closeCount);
+        if (spanDepth == 0) {
+          close.write('*');
+        }
+      }
+
+      parts.add('$open$text$close');
     }
 
-    parts.add('$open$text$close');
+    if (clippedTail) {
+      parts.add('…');
+    }
+    if (aPos + 1 < ayahsToRender.length) {
+      parts.add('۝${arabicDigits(curAyah.number)}');
+    }
   }
 
   final sName = (surahName == null || surahName.isEmpty) ? 'السورة' : surahName;
-  return '﴿ ${parts.join(' ')} ﴾\n[$sName: آية ${arabicDigits(ayah.number)}]';
+  final ayahLabel = ayahsToRender.length == 1
+      ? 'آية ${arabicDigits(ayahsToRender.first.number)}'
+      : 'آية ${arabicDigits(ayahsToRender.first.number)} - ${arabicDigits(ayahsToRender.last.number)}';
+  return '﴿ ${parts.join(' ')} ﴾\n[$sName: $ayahLabel]';
 }
 
 /// Formats clean Quran text for an Ayah:
@@ -316,6 +452,14 @@ void _writeOpinionEntry(StringBuffer b, WaqfStop stop, ScholarOpinion op) {
     b.writeln('📍 *موضع الوقف عنده*: «$tw»');
   }
 
+  final qBadge = op.qiraatBadgeLabel;
+  if (qBadge != null) {
+    final qNote = op.qiraatNote?.trim();
+    final qDetails =
+        (qNote != null && qNote.isNotEmpty) ? '$qBadge — $qNote' : qBadge;
+    b.writeln('📖 *القراءة*: $qDetails');
+  }
+
   final c = op.comment?.trim();
   if (c != null && c.isNotEmpty) {
     b.writeln('💬 *رأي ${op.scholar}*: $c');
@@ -404,20 +548,6 @@ String _stopHeader(WaqfStop stop, String? surahName) {
 }
 
 bool _spanValid(List<int>? span) => span != null && span.length >= 2;
-
-bool _isSpanStart(List<int>? span, int wordIndex) {
-  if (!_spanValid(span)) return false;
-  final a = span![0];
-  final b = span[1];
-  return wordIndex == (a <= b ? a : b);
-}
-
-bool _isSpanEnd(List<int>? span, int wordIndex) {
-  if (!_spanValid(span)) return false;
-  final a = span![0];
-  final b = span[1];
-  return wordIndex == (a <= b ? b : a);
-}
 
 WaqfDemoAndMeaning? _firstDemoWithSpans(WaqfStop stop) {
   for (final op in stop.opinions) {

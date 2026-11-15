@@ -236,6 +236,7 @@ class WaqfStopShareMenu extends StatelessWidget {
       ayah: ayahForStop(controller, stop),
       surahName: controller.currentSurahName,
       highlightDemo: shareHighlightDemo(controller, stop),
+      contextAyahs: controller.currentAyahs,
     );
     shareText(context, text, subject: 'وقف: ${stop.word}');
   }
@@ -734,6 +735,10 @@ class _OpinionRow extends StatelessWidget {
             ),
           ],
         ),
+        if (opinion.hasQiraatInfo) ...[
+          const SizedBox(height: 6),
+          QiraatBadge(opinion: opinion, tone: tone),
+        ],
         if (opinion.comment != null && opinion.comment!.trim().isNotEmpty) ...[
           const SizedBox(height: 8),
           Text(
@@ -1058,6 +1063,59 @@ class _VerdictFacePill extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class QiraatBadge extends StatelessWidget {
+  const QiraatBadge({
+    super.key,
+    required this.opinion,
+    required this.tone,
+  });
+
+  final ScholarOpinion opinion;
+  final DockTone tone;
+
+  @override
+  Widget build(BuildContext context) {
+    final badge = opinion.qiraatBadgeLabel;
+    if (badge == null) return const SizedBox.shrink();
+    final note = opinion.qiraatNote?.trim();
+    final text = (note != null && note.isNotEmpty) ? '$badge · $note' : badge;
+    final dependent = opinion.isQiraatDependent;
+    final borderColor = dependent
+        ? (tone.bg == AppColors.sheet ? AppColors.goldSoft : AppColors.gold)
+        : tone.line;
+    final textColor = dependent ? tone.accent : tone.muted;
+
+    return Align(
+      alignment: AlignmentDirectional.centerStart,
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+        decoration: BoxDecoration(
+          color: borderColor.withOpacity(0.12),
+          borderRadius: BorderRadius.circular(8),
+          border: Border.all(color: borderColor.withOpacity(0.55)),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(Icons.menu_book_outlined, size: 13, color: textColor),
+            const SizedBox(width: 5),
+            Flexible(
+              child: Text(
+                text,
+                style: AppText.ui(
+                  size: 11,
+                  weight: FontWeight.w600,
+                  color: textColor,
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

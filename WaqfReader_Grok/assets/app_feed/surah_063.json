@@ -1959,8 +1959,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "قلى",
+      "uthmaniMarkName": "الوقف أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -2320,8 +2320,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -2720,8 +2720,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -2815,8 +2815,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -2910,8 +2910,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -3121,8 +3121,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -3389,8 +3389,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -3446,8 +3446,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -3881,9 +3881,19 @@
               "ibtidaDemo": "﴿ لَن يَغْفِرَ ٱللَّهُ لَهُمْ ﴾ [قف على: لَهُمْ]",
               "meaningAtWaqf": "تمام جملة التسوية على قراءة أبي جعفر (يزيد بن القعقاع) بالمد، مع تبيين استواء الأمرين عليهم.",
               "meaningAtIbtida": "ابتداء جملة مبينة لوجه التسوية ومقررة لانتفاء المغفرة عنهم.",
-              "meaningIfConnected": "الوقف حسن على قراءة المد ويمتنع على قراءة الجمهور لشدة تعلق ﴿لَن يَغْفِرَ ٱللَّهُ لَهُمْ﴾ ببيان التسوية وتقريره."
+              "meaningIfConnected": "الوقف حسن على قراءة المد ويمتنع على قراءة الجمهور لشدة تعلق ﴿لَن يَغْفِرَ ٱللَّهُ لَهُمْ﴾ ببيان التسوية وتقريره.",
+              "qiraatOverrides": [
+                {
+                  "ayah": 6,
+                  "wordIndex": 3,
+                  "hafsWord": "أَسْتَغْفَرْتَ",
+                  "modifiedWord": "ءَآسْتَغْفَرْتَ"
+                }
+              ]
             }
-          ]
+          ],
+          "qiraatBasis": "varies_by_qiraat",
+          "qiraatNote": "حسن على مد أبي جعفر «آسْتَغْفَرْتَ» لا على العامة"
         },
         {
           "scholar": "النحاس",
@@ -4042,8 +4052,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -4376,8 +4386,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "قلى",
+      "uthmaniMarkName": "الوقف أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -4767,8 +4777,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -5120,8 +5130,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -5242,7 +5252,9 @@
           "book": "منار الهدى",
           "page": "394",
           "comment": "أحدكم الموت ليس بوقف ومثله في عدم الوقف إلى أجل قريب لأنَّ قوله فأصدق منصوب على جواب التمني وهو لولا أخرتني لأنَّ معناه السؤال والدعاء فكأنَّه قال أخرني إلى أجل قريب فأصدَّق وأكون وبها قرأ أبو عمرو عطفًا على لفظ فأصدق وقرأ الجمهور وأكن بالجزم عطفًا على موضع الفاء كأنَّه قيل إن أخرتني أصدق وأكن هذا مذهب أبي علي الفارسي وحكى سيبويه عن شيخه الخليل غير هذا وهو أنَّه جزم وأكن على توهم الشرط كما هو في مصحف عثمان أكن بغير واو ولا موضع هنا لأنَّ الشرط ليس بظاهر وإنَّما يعطف على الموضع حيث يظهر الشرط والفرق بين العطف على الموضع والعطف على التوهم أنَّ العامل في العطف على الموضع موجود دون مؤثرة والعامل في العطف على التوهم مفقود وأثره موجود مثال الأول هذا ضارب زيد وعمرًا فهذا من العطف على الموضع فالعامل وهو ضارب موجود وأثره وهو النصب مفقود ومثال الثاني ما هنا فإنَّ العامل للجزم مفقود وأثره موجود انظر أبا حيان.",
-          "demosAndMeanings": null
+          "demosAndMeanings": null,
+          "qiraatBasis": "hafs_and_others",
+          "qiraatNote": "لا يوقف مع قراءتي «وَأَكُونَ» لأبي عمرو و«وَأَكُنْ»"
         }
       ],
       "aiSuggestion": null,
@@ -5301,7 +5313,9 @@
           "book": "منار الهدى",
           "page": "394",
           "comment": "أحدكم الموت ليس بوقف ومثله في عدم الوقف إلى أجل قريب لأنَّ قوله فأصدق منصوب على جواب التمني وهو لولا أخرتني لأنَّ معناه السؤال والدعاء فكأنَّه قال أخرني إلى أجل قريب فأصدَّق وأكون وبها قرأ أبو عمرو عطفًا على لفظ فأصدق وقرأ الجمهور وأكن بالجزم عطفًا على موضع الفاء كأنَّه قيل إن أخرتني أصدق وأكن هذا مذهب أبي علي الفارسي وحكى سيبويه عن شيخه الخليل غير هذا وهو أنَّه جزم وأكن على توهم الشرط كما هو في مصحف عثمان أكن بغير واو ولا موضع هنا لأنَّ الشرط ليس بظاهر وإنَّما يعطف على الموضع حيث يظهر الشرط والفرق بين العطف على الموضع والعطف على التوهم أنَّ العامل في العطف على الموضع موجود دون مؤثرة والعامل في العطف على التوهم مفقود وأثره موجود مثال الأول هذا ضارب زيد وعمرًا فهذا من العطف على الموضع فالعامل وهو ضارب موجود وأثره وهو النصب مفقود ومثال الثاني ما هنا فإنَّ العامل للجزم مفقود وأثره موجود انظر أبا حيان.",
-          "demosAndMeanings": null
+          "demosAndMeanings": null,
+          "qiraatBasis": "hafs_and_others",
+          "qiraatNote": "لا يوقف مع قراءتي «وَأَكُونَ» لأبي عمرو و«وَأَكُنْ»"
         }
       ],
       "aiSuggestion": null,
@@ -5529,8 +5543,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },

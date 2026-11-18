@@ -5,6 +5,7 @@ import '../theme/app_theme.dart';
 import 'index_screen.dart';
 import 'mushaf_screen.dart';
 import 'review_screen.dart';
+import 'stats_screen.dart';
 
 class HomeShell extends StatefulWidget {
   const HomeShell({super.key});
@@ -168,15 +169,13 @@ class _TopBar extends StatelessWidget {
               Row(
                 children: [
                   Expanded(
-                    child: controller.tab == 0
-                        ? Align(
-                            alignment: AlignmentDirectional.centerStart,
-                            child: _SurahChip(
-                              controller: controller,
-                              onTap: onOpenDrawer,
-                            ),
-                          )
-                        : const SizedBox.shrink(),
+                    child: Align(
+                      alignment: AlignmentDirectional.centerStart,
+                      child: _SurahChip(
+                        controller: controller,
+                        onTap: onOpenDrawer,
+                      ),
+                    ),
                   ),
                   _OverflowMenu(controller: controller),
                 ],
@@ -260,9 +259,19 @@ class _OverflowMenu extends StatelessWidget {
           _showSizeDialog(context);
         } else if (value == 'legend') {
           _showLegend(context);
+        } else if (value == 'stats') {
+          Navigator.of(context).push(
+            MaterialPageRoute<void>(
+              builder: (_) => StopStatsScreen(controller: controller),
+            ),
+          );
         }
       },
       itemBuilder: (context) => [
+        PopupMenuItem(
+          value: 'stats',
+          child: Text('إحصائيات الوقوف', style: AppText.ui(size: 15)),
+        ),
         PopupMenuItem(
           value: 'size',
           child: Text('حجم الخط', style: AppText.ui(size: 15)),

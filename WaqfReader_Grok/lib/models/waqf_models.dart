@@ -22,13 +22,17 @@ enum SurahLoadStatus { inProgress, notStarted, awaitingReview }
 
 enum ReviewListFilter {
   all,
-  needsAttention,
-  favorites,
-  verified,
-  unsettled,
-  ai,
+  extraOverUthmani,
+  multiDemo,
+  crossAyahDemo,
+  withDemos,
+  scholarDisagreement,
+  withQila,
+  qiraat,
   uthmani,
-  verseEnd,
+  favorites,
+  needsAttention,
+  verified,
 }
 
 extension ReviewListFilterLabel on ReviewListFilter {
@@ -36,20 +40,28 @@ extension ReviewListFilterLabel on ReviewListFilter {
     switch (this) {
       case ReviewListFilter.all:
         return 'الكل';
-      case ReviewListFilter.needsAttention:
-        return 'يحتاج مراجعة';
+      case ReviewListFilter.extraOverUthmani:
+        return 'زائدة عن المصحف';
+      case ReviewListFilter.multiDemo:
+        return 'متعددة الأمثلة';
+      case ReviewListFilter.crossAyahDemo:
+        return 'تمتد عبر الآيات';
+      case ReviewListFilter.withDemos:
+        return 'لها أمثلة ومعانٍ';
+      case ReviewListFilter.scholarDisagreement:
+        return 'تعدد الأقوال';
+      case ReviewListFilter.withQila:
+        return 'فيها «قيل»';
+      case ReviewListFilter.qiraat:
+        return 'متعلقة بالقراءات';
+      case ReviewListFilter.uthmani:
+        return 'وقف المصحف';
       case ReviewListFilter.favorites:
         return 'المفضلة';
+      case ReviewListFilter.needsAttention:
+        return 'مُبلّغ عنها';
       case ReviewListFilter.verified:
         return 'مُتحقَّق';
-      case ReviewListFilter.unsettled:
-        return 'غير محسوم';
-      case ReviewListFilter.ai:
-        return 'مقترح AI';
-      case ReviewListFilter.uthmani:
-        return 'عثماني';
-      case ReviewListFilter.verseEnd:
-        return 'رأس آية';
     }
   }
 }
@@ -69,6 +81,20 @@ String defaultVerdictLabelForSymbol(StopSymbol symbol) {
   }
 }
 
+class QiraatWordOverride {
+  const QiraatWordOverride({
+    required this.ayahNumber,
+    required this.wordIndex,
+    required this.hafsWord,
+    required this.modifiedWord,
+  });
+
+  final int ayahNumber;
+  final int wordIndex;
+  final String hafsWord;
+  final String modifiedWord;
+}
+
 class WaqfDemoAndMeaning {
   const WaqfDemoAndMeaning({
     required this.verdict,
@@ -85,6 +111,7 @@ class WaqfDemoAndMeaning {
     required this.meaningAtWaqf,
     required this.meaningAtIbtida,
     required this.meaningIfConnected,
+    this.qiraatOverrides = const <QiraatWordOverride>[],
   });
 
   final String verdict;
@@ -101,6 +128,35 @@ class WaqfDemoAndMeaning {
   final String meaningAtWaqf;
   final String meaningAtIbtida;
   final String meaningIfConnected;
+  final List<QiraatWordOverride> qiraatOverrides;
+
+  static final RegExp _demoQiraatCuePattern = RegExp(
+    r'((?:على|في|عند)\s+قراءة\s+[^،.؛\n()]{2,48}'
+    r'|(?:على|في)\s+قراءتي\s+[^،.؛\n()]{2,48}'
+    r'|قراءة\s+(?:مَن|من)\s+قرأ[^،.؛\n()]{0,40}'
+    r'|القراءة\s+الشاذة[^،.؛\n()]{0,35}'
+    r'|قراءة\s+(?:الرفع|النصب|الجر|الخفض|الجزم|الفتح|الكسر|الضم|التشديد|التخفيف|التاء|الياء|النون|الخطاب|الغيبة|الإفراد|الجمع|التذكير|التأنيث)[^،.؛\n()]{0,30}'
+    r'|(?:بالرفع|بالنصب|بالجر|بالخفض|بالتاء|بالياء|بالنون)\s+في\s+قراءة[^،.؛\n()]{0,35})',
+  );
+
+  /// Extracted Qira'at cue when this specific demo illustrates a different Qira'ah.
+  String? get qiraatCue {
+    for (final src in <String?>[
+      attributedTo,
+      meaningAtWaqf,
+      meaningAtIbtida,
+      meaningIfConnected,
+    ]) {
+      if (src == null || src.isEmpty) continue;
+      final m = _demoQiraatCuePattern.firstMatch(src);
+      if (m != null) {
+        return m.group(0)!.trim();
+      }
+    }
+    return null;
+  }
+
+  bool get isQiraatDemo => qiraatCue != null || qiraatOverrides.isNotEmpty;
 
   int resolvedWaqfEndAyah(int stopAyah) => waqfEndAyah ?? stopAyah;
   int resolvedWaqfStartAyah(int stopAyah) =>
@@ -148,6 +204,37 @@ class WaqfDemoAndMeaning {
     }
     return (minA, maxA);
   }
+
+  static String _normalizedSpanPart(
+    List<int>? span,
+    int startAyah,
+    int endAyah,
+  ) {
+    if (span == null || span.length < 2) return '-';
+    final sWord = span[0];
+    final eWord = span[1];
+    final reversed = compareWordCoord(startAyah, sWord, endAyah, eWord) > 0;
+    final loA = reversed ? endAyah : startAyah;
+    final loW = reversed ? eWord : sWord;
+    final hiA = reversed ? startAyah : endAyah;
+    final hiW = reversed ? sWord : eWord;
+    return '$loA:$loW..$hiA:$hiW';
+  }
+
+  /// Canonical signature of the highlighted `(waqf, ibtida)` spans for [stopAyah].
+  String spanKeyForStop(int stopAyah) {
+    final wPart = _normalizedSpanPart(
+      waqfSegmentWords,
+      resolvedWaqfStartAyah(stopAyah),
+      resolvedWaqfEndAyah(stopAyah),
+    );
+    final iPart = _normalizedSpanPart(
+      ibtidaSegmentWords,
+      resolvedIbtidaStartAyah(stopAyah),
+      resolvedIbtidaEndAyah(stopAyah),
+    );
+    return '$wPart|$iPart';
+  }
 }
 
 class ScholarOpinion {
@@ -189,12 +276,47 @@ class ScholarOpinion {
 
   final List<WaqfDemoAndMeaning> demosAndMeanings;
 
+  static final RegExp _commentQiraatPattern = RegExp(
+    r'((?:على|في)\s+قراءة\s+[^،.؛\n()]{2,45}'
+    r'|(?:على|في)\s+قراءتي\s+[^،.؛\n()]{2,45}'
+    r'|(?:على|في)\s+القراءتين'
+    r'|قراءة\s+(?:مَن|من)\s+قرأ[^،.؛\n()]{0,35}'
+    r'|(?:و|ف)?(?:مَن|من|لمن)\s+قرأ\s+[^،.؛\n()]{2,40}'
+    r'|وروى\s+المفضل[^،.؛\n()]{0,40}'
+    r'|القراءة\s+الشاذة|قرئ\s+شاذ[ًا]?'
+    r'|تعدد\s+القراءات|اختلاف\s+القراء)',
+  );
+
+  String? get inferredQiraatCue {
+    for (final d in demosAndMeanings) {
+      final cue = d.qiraatCue;
+      if (cue != null && cue.isNotEmpty) return cue;
+    }
+    final c = comment;
+    if (c != null && c.isNotEmpty) {
+      final m = _commentQiraatPattern.firstMatch(c);
+      if (m != null) return m.group(0)!.trim();
+    }
+    return null;
+  }
+
+  String? get effectiveQiraatNote {
+    final explicit = qiraatNote?.trim();
+    if (explicit != null && explicit.isNotEmpty) return explicit;
+    return inferredQiraatCue;
+  }
+
   bool get hasQiraatInfo =>
       (qiraatBasis != null && qiraatBasis!.isNotEmpty) ||
-      (qiraatNote != null && qiraatNote!.isNotEmpty);
+      (qiraatNote != null && qiraatNote!.isNotEmpty) ||
+      inferredQiraatCue != null ||
+      demosAndMeanings.any((d) => d.isQiraatDemo);
 
   bool get isQiraatDependent =>
-      qiraatBasis == 'non_hafs_only' || qiraatBasis == 'varies_by_qiraat';
+      qiraatBasis == 'non_hafs_only' ||
+      qiraatBasis == 'varies_by_qiraat' ||
+      inferredQiraatCue != null ||
+      demosAndMeanings.any((d) => d.qiraatOverrides.isNotEmpty);
 
   String? get qiraatBadgeLabel {
     switch (qiraatBasis) {
@@ -205,9 +327,7 @@ class ScholarOpinion {
       case 'hafs_and_others':
         return 'موافق لحفص (مع ذكر قراءة)';
       default:
-        return (qiraatNote != null && qiraatNote!.isNotEmpty)
-            ? 'قراءة قرآنية'
-            : null;
+        return hasQiraatInfo ? 'قراءات' : null;
     }
   }
 
@@ -241,6 +361,8 @@ class WaqfStop {
     this.fallbackReason,
     this.aiSuggestion,
     this.inUthmaniMushaf = false,
+    this.uthmaniMark,
+    this.uthmaniMarkName,
     this.isVerseEnd = false,
     this.textPage,
   });
@@ -256,6 +378,8 @@ class WaqfStop {
   final String? fallbackReason;
   final String? aiSuggestion;
   final bool inUthmaniMushaf;
+  final String? uthmaniMark;
+  final String? uthmaniMarkName;
   final bool isVerseEnd;
 
   /// Page in علل الوقوف (matches page_N.png).
@@ -265,38 +389,260 @@ class WaqfStop {
     return opinions.any((o) => o.scholar == scholarName);
   }
 
-  ScholarOpinion? opinionForScholar(String? scholarName) {
+  /// True when any scholar opinion or demo on this stop relates to Qira'at.
+  bool get hasQiraatVariation => opinions.any((o) => o.hasQiraatInfo);
+
+  /// True when the Uthmani Mushaf mark at this position is non-allowed (`لا` / `ممنوع`).
+  /// False when Uthmani marks it as allowed of any rank (`مـ`, `قلى`, `ج`, `صلى`, `∴`, `س`).
+  bool get isUthmaniNonAllowed {
+    final m = uthmaniMark?.trim() ?? '';
+    final n = uthmaniMarkName?.trim() ?? '';
+    return m == 'لا' || m == 'LA' || n == 'ممنوع';
+  }
+
+  /// True when this stop is neither in the Uthmani Mushaf nor at a verse end,
+  /// or both are on the same position (including verse ends, which Uthmani
+  /// treats as allowed stops unless marked `لا`) and at least one opinion face
+  /// on this stop (even if `isQila`) has the opposite allowed vs. non-allowed
+  /// ruling to the Uthmani Mushaf.
+  bool get differsFromUthmani {
+    if (!inUthmaniMushaf && !isVerseEnd) return true;
+    final uthmaniNonAllowed = isUthmaniNonAllowed;
+    if (opinions.isEmpty) {
+      final fallbackNonAllowed = (fallbackSymbol == StopSymbol.la) ||
+          (fallbackLabel?.contains('لا يوقف') ?? false) ||
+          (fallbackLabel?.trim() == 'لا');
+      return uthmaniNonAllowed ? !fallbackNonAllowed : fallbackNonAllowed;
+    }
+    for (final op in opinions) {
+      final count = [
+        op.verdicts.length,
+        op.symbols.length,
+        op.verdictLabels.length,
+      ].reduce((a, b) => a > b ? a : b);
+      final faces = count > 0 ? count : 1;
+      for (var i = 0; i < faces; i++) {
+        final v = i < op.verdicts.length ? op.verdicts[i] : op.primaryVerdict;
+        final sym = i < op.symbols.length ? op.symbols[i] : op.primarySymbol;
+        final lbl = i < op.verdictLabels.length
+            ? op.verdictLabels[i]
+            : op.primaryVerdictLabel;
+        final faceNonAllowed = v.trim().contains('لا يوقف') ||
+            lbl.trim() == 'لا' ||
+            sym == StopSymbol.la;
+        if (uthmaniNonAllowed && !faceNonAllowed) {
+          return true;
+        }
+        if (!uthmaniNonAllowed && faceNonAllowed) {
+          return true;
+        }
+      }
+    }
+    return false;
+  }
+
+  /// True when, across all opinion faces, at least one face allows stopping
+  /// and at least one face says `لا يوقف` (scholars disagree on allowed vs not).
+  bool get hasAllowedVsNonAllowedDisagreement {
+    var allowed = false;
+    var nonAllowed = false;
+    for (final op in opinions) {
+      final count = [
+        op.verdicts.length,
+        op.symbols.length,
+        op.verdictLabels.length,
+      ].reduce((a, b) => a > b ? a : b);
+      final faces = count > 0 ? count : 1;
+      for (var i = 0; i < faces; i++) {
+        final v = i < op.verdicts.length ? op.verdicts[i] : op.primaryVerdict;
+        final sym = i < op.symbols.length ? op.symbols[i] : op.primarySymbol;
+        final lbl = i < op.verdictLabels.length
+            ? op.verdictLabels[i]
+            : op.primaryVerdictLabel;
+        final faceNonAllowed = v.trim().contains('لا يوقف') ||
+            lbl.trim() == 'لا' ||
+            sym == StopSymbol.la;
+        if (faceNonAllowed) {
+          nonAllowed = true;
+        } else {
+          allowed = true;
+        }
+        if (allowed && nonAllowed) return true;
+      }
+    }
+    return false;
+  }
+
+  /// True when any opinion face on this stop is reported with «قيل».
+  bool get hasQilaFace => opinions.any((o) => o.isQila.any((q) => q));
+
+  /// Highest stop degree across all opinion faces (the «الكل» verdict) as a
+  /// base rank: 60 لازم, 50 تام, 40 كاف, 30 حسن, 25 جائز, 20 صالح,
+  /// 10 قيل فيه وقف, 5 غير محسوم, 0 لا يوقف.
+  int get highestDegreeBase {
+    final best = _bestFaceForScholar(null);
+    if (best == null) {
+      return _verdictDegreeRank(
+            fallbackLabel ?? '',
+            '',
+            fallbackSymbol ?? StopSymbol.unsettled,
+            false,
+          ) ~/
+          2;
+    }
+    final op = best.opinion;
+    final i = best.faceIndex;
+    final v = i < op.verdicts.length ? op.verdicts[i] : op.primaryVerdict;
+    final sym = i < op.symbols.length ? op.symbols[i] : op.primarySymbol;
+    final lbl =
+        i < op.verdictLabels.length ? op.verdictLabels[i] : op.primaryVerdictLabel;
+    final qila = i < op.isQila.length ? op.isQila[i] : op.primaryIsQila;
+    return _verdictDegreeRank(v, lbl, sym, qila) ~/ 2;
+  }
+
+  /// Ranks a stop face by degree of stop (higher = stronger stop):
+  /// لازم > تام > كاف > حسن > جائز > صالح > قيل فيه وقف > لا يوقف,
+  /// with direct rulings (`isQila == false`) preferred over `قيل` at the same degree.
+  static int _verdictDegreeRank(
+    String verdict,
+    String verdictLabel,
+    StopSymbol sym,
+    bool qila,
+  ) {
+    final v = verdict.trim();
+    final lbl = verdictLabel.trim();
+    int base;
+    if (v.contains('لازم') || lbl == 'م') {
+      base = 60;
+    } else if (v.contains('تام') || lbl == 'ط') {
+      base = 50;
+    } else if (v.contains('كاف')) {
+      base = 40;
+    } else if (v.contains('حسن') || lbl == 'ص') {
+      base = 30;
+    } else if (v.contains('جائز') || lbl == 'ج') {
+      base = 25;
+    } else if (v.contains('صالح') || lbl == 'ز') {
+      base = 20;
+    } else if (v.contains('قيل فيه وقف') || lbl == 'ق') {
+      base = 10;
+    } else if (v.contains('لا يوقف') || lbl == 'لا' || sym == StopSymbol.la) {
+      base = 0;
+    } else {
+      switch (sym) {
+        case StopSymbol.tam:
+          base = 50;
+        case StopSymbol.jaiz:
+          base = 25;
+        case StopSymbol.mujawwaz:
+          base = 20;
+        case StopSymbol.la:
+          base = 0;
+        case StopSymbol.unsettled:
+          base = 5;
+      }
+    }
+    return base * 2 + (qila ? 0 : 1);
+  }
+
+  /// Finds the `(ScholarOpinion, faceIndex)` with the highest stop degree across
+  /// all opinions (when `scholarName == null` / empty) or the primary face for a specific scholar.
+  ({ScholarOpinion opinion, int faceIndex})? _bestFaceForScholar(
+    String? scholarName,
+  ) {
     if (opinions.isEmpty) return null;
     if (scholarName != null && scholarName.isNotEmpty) {
       for (final op in opinions) {
-        if (op.scholar == scholarName) return op;
+        if (op.scholar == scholarName) {
+          return (opinion: op, faceIndex: 0);
+        }
+      }
+      return (opinion: opinions.first, faceIndex: 0);
+    }
+
+    ScholarOpinion? bestOp;
+    int bestIdx = 0;
+    int bestRank = -1;
+
+    for (final op in opinions) {
+      final count = [
+        op.verdicts.length,
+        op.symbols.length,
+        op.verdictLabels.length,
+        op.isQila.length,
+      ].reduce((a, b) => a > b ? a : b);
+      final faces = count > 0 ? count : 1;
+      for (int i = 0; i < faces; i++) {
+        final v = i < op.verdicts.length ? op.verdicts[i] : op.primaryVerdict;
+        final sym = i < op.symbols.length ? op.symbols[i] : op.primarySymbol;
+        final lbl = i < op.verdictLabels.length
+            ? op.verdictLabels[i]
+            : op.primaryVerdictLabel;
+        final qila = i < op.isQila.length ? op.isQila[i] : op.primaryIsQila;
+        final rank = _verdictDegreeRank(v, lbl, sym, qila);
+        if (rank > bestRank) {
+          bestRank = rank;
+          bestOp = op;
+          bestIdx = i;
+        }
       }
     }
-    return opinions.first;
+
+    if (bestOp == null) return (opinion: opinions.first, faceIndex: 0);
+    return (opinion: bestOp, faceIndex: bestIdx);
+  }
+
+  /// Resolves the opinion to display for a chosen scholar filter.
+  /// If `scholarName == null` ("الكل"), returns the opinion holding the highest stop degree.
+  ScholarOpinion? opinionForScholar(String? scholarName) {
+    return _bestFaceForScholar(scholarName)?.opinion;
   }
 
   StopSymbol symbolForScholar(String? scholarName) {
-    final op = opinionForScholar(scholarName);
-    if (op != null) return op.primarySymbol;
+    final best = _bestFaceForScholar(scholarName);
+    if (best != null) {
+      final op = best.opinion;
+      final i = best.faceIndex;
+      return i < op.symbols.length ? op.symbols[i] : op.primarySymbol;
+    }
     return fallbackSymbol ?? StopSymbol.jaiz;
   }
 
   String verdictLabelForScholar(String? scholarName) {
-    final op = opinionForScholar(scholarName);
-    if (op != null) return op.primaryVerdictLabel;
+    final best = _bestFaceForScholar(scholarName);
+    if (best != null) {
+      final op = best.opinion;
+      final i = best.faceIndex;
+      return i < op.verdictLabels.length
+          ? op.verdictLabels[i]
+          : op.primaryVerdictLabel;
+    }
     return defaultVerdictLabelForSymbol(symbol);
   }
 
   bool isQilaForScholar(String? scholarName) {
-    final op = opinionForScholar(scholarName);
-    if (op != null) return op.primaryIsQila;
+    final best = _bestFaceForScholar(scholarName);
+    if (best != null) {
+      final op = best.opinion;
+      final i = best.faceIndex;
+      return i < op.isQila.length ? op.isQila[i] : op.primaryIsQila;
+    }
     return false;
   }
 
   String labelForScholar(String? scholarName) {
-    final op = opinionForScholar(scholarName);
-    if (op != null) {
-      return op.verdicts.join(' / ');
+    if (scholarName != null && scholarName.isNotEmpty) {
+      final op = opinionForScholar(scholarName);
+      if (op != null) {
+        return op.verdicts.join(' / ');
+      }
+    } else {
+      final best = _bestFaceForScholar(null);
+      if (best != null) {
+        final op = best.opinion;
+        final i = best.faceIndex;
+        return i < op.verdicts.length ? op.verdicts[i] : op.primaryVerdict;
+      }
     }
     return fallbackLabel ?? 'جائز';
   }

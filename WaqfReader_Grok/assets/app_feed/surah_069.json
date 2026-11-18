@@ -5066,8 +5066,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -6425,8 +6425,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "س",
+      "uthmaniMarkName": "سكتة",
       "isVerseEnd": true,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -7071,11 +7071,12 @@
                 5
               ],
               "ibtidaSegmentWords": null,
-              "waqfDemo": "تلاوة: ﴿ وَلَا يَحُضُّ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ ﴾ [قف على: ٱلْمِسْكِينْ]",
+              "waqfDemo": "تلاوة: ﴿ إِنَّهُۥ كَانَ لَا يُؤْمِنُ بِٱللَّهِ ٱلْعَظِيمِ ۝٣٣ وَلَا يَحُضُّ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ ﴾ [قف على: ٱلْمِسْكِينْ]",
               "ibtidaDemo": "﴿ فَلَيْسَ لَهُ ٱلْيَوْمَ هَـٰهُنَا حَمِيمٌۭ ﴾ [الآية التالية]",
               "meaningAtWaqf": "تمامُ بيان جُرمه الجامع بين ترك الإيمان بالله وترك الحثّ على إطعام المسكين.",
               "meaningAtIbtida": "الابتداء ببيان النتيجة المترتّبة بالفاء على ذلك، وهي انقطاع القرابات والشفعاء عنه.",
-              "meaningIfConnected": "تعلّقُ الفاء في ﴿فَلَيْسَ لَهُ﴾ بما قبلها تعلّقُ المسبَّب بالسبب أوجب قوّة الاتصال، فكان الوقف عند ابن الأنباري حسناً."
+              "meaningIfConnected": "تعلّقُ الفاء في ﴿فَلَيْسَ لَهُ﴾ بما قبلها تعلّقُ المسبَّب بالسبب أوجب قوّة الاتصال، فكان الوقف عند ابن الأنباري حسناً.",
+              "waqfStartAyah": 33
             }
           ]
         },
@@ -7904,8 +7905,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -7972,7 +7973,9 @@
               "meaningAtIbtida": "الابتداء بنفي الكهانة عن القرآن عطفاً على نفي الشعر.",
               "meaningIfConnected": "مع تعلّق ﴿وَلَا بِقَوْلِ كَاهِنٍۢ﴾ بقوله ﴿بِقَوْلِ شَاعِرٍۢ﴾ عطفاً، حسُن الوقف الكافي لكونه رأس آيةٍ وبعد فصل المعترضة."
             }
-          ]
+          ],
+          "qiraatBasis": "hafs_and_others",
+          "qiraatNote": "كافٍ في الفوقية (تُؤْمِنُونَ) كحفص والتحتية (يُؤْمِنُونَ)"
         }
       ],
       "aiSuggestion": null,
@@ -8187,8 +8190,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -8270,7 +8273,9 @@
               "meaningAtIbtida": "الابتداء بخبرٍ لمبتدأٍ محذوفٍ يثبت أن القرآن تنزيلٌ من ربّ العالمين.",
               "meaningIfConnected": "استقلّ قوله ﴿تَنزِيلٌۭ﴾ بإعرابه خبراً لمبتدأٍ مضمرٍ مع اتّصاله المعنوي ببيان حقيقة القرآن بعد نفي الشعر والكهانة عنه."
             }
-          ]
+          ],
+          "qiraatBasis": "hafs_and_others",
+          "qiraatNote": "كافٍ في الفوقية (تَذَكَّرُونَ) كحفص والتحتية (يَذَّكَّرُونَ)"
         },
         {
           "scholar": "النحاس",

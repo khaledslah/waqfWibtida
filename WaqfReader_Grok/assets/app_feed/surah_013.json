@@ -8990,8 +8990,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -9208,8 +9208,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "قلى",
+      "uthmaniMarkName": "الوقف أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -9434,7 +9434,9 @@
               "meaningAtIbtida": "استئناف جملة الاستدراك: ﴿وَلَـٰكِنَّ أَكْثَرَ ٱلنَّاسِ لَا يُؤْمِنُونَ﴾.",
               "meaningIfConnected": "يجوز الوصل على قراءة رفع ﴿ٱلْحَقُّ﴾، ويتعين الوصل قبل ﴿ٱلْحَقُّ﴾ على القراءة الشاذة بجرّه نعتًا لـ﴿رَّبِّكَ﴾."
             }
-          ]
+          ],
+          "qiraatBasis": "varies_by_qiraat",
+          "qiraatNote": "كافٍ على الرفع (الحقُّ)، وليس بوقف إن جُرّ شاذًّا نعتًا لـ(ربّك)"
         },
         {
           "scholar": "النحاس",
@@ -10099,8 +10101,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -10156,8 +10158,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -10289,8 +10291,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -10498,8 +10500,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -10851,8 +10853,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -10899,10 +10901,20 @@
               "waqfDemo": "تلاوة: ﴿ وَمِن كُلِّ ٱلثَّمَرَٰتِ جَعَلَ فِيهَا زَوْجَيْنِ ٱثْنَيْنِ ﴾ [قف على: ٱثْنَيْنْ]",
               "ibtidaDemo": "﴿ يُغْشِى ٱلَّيْلَ ٱلنَّهَارَ ﴾ [قف على: ٱلنَّهَارْ]",
               "meaningAtWaqf": "تمام الإخبار عن خلق الأزواج من الثمرات في الأرض.",
-              "meaningAtIbtida": "الابتداء بـ﴿يُغْشِى ٱلَّيْلَ ٱلنَّهَارَ﴾ على قراءة التثقيل أو التخفيف استئنافًا.",
-              "meaningIfConnected": "الوصل جائز على جعل الجملة حالية أو متصلة بسياق تعداد الأفعال الإلهية، والوقف يفصل بين الجملتين."
+              "meaningAtIbtida": "الابتداء بـ﴿يُغَشِّى ٱلَّيْلَ ٱلنَّهَارَ﴾ على قراءة التثقيل استئنافًا.",
+              "meaningIfConnected": "الوصل جائز على جعل الجملة حالية أو متصلة بسياق تعداد الأفعال الإلهية، والوقف يفصل بين الجملتين.",
+              "qiraatOverrides": [
+                {
+                  "ayah": 3,
+                  "wordIndex": 16,
+                  "hafsWord": "يُغْشِى",
+                  "modifiedWord": "يُغَشِّى"
+                }
+              ]
             }
-          ]
+          ],
+          "qiraatBasis": "non_hafs_only",
+          "qiraatNote": "جائز لمن قرأ (يغشّي) بالتثقيل دون قراءة التخفيف"
         },
         {
           "scholar": "ابن الأنباري",
@@ -11060,8 +11072,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -11193,8 +11205,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -11371,8 +11383,35 @@
               "meaningAtWaqf": "تمام الجملة الاسمية من الخبر المقدم والمبتدأ المؤخر وصفته ﴿قِطَعٌۭ مُّتَجَـٰوِرَٰتٌۭ﴾.",
               "meaningAtIbtida": "الابتداء بـ﴿وَجَنَّـٰتٌۭ﴾ على أنها مبتدأ خبره محذوف تقديره: وفيها جنات من أعناب.",
               "meaningIfConnected": "يتعين الوصل إن عُطفت ﴿وَجَنَّـٰتٌۭ﴾ على ﴿قِطَعٌۭ﴾ رفعًا في جملة واحدة، أو جُرّت عطفًا على معمول سابق، والوقف يعين استئنافها."
+            },
+            {
+              "verdict": "كاف",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                4
+              ],
+              "ibtidaSegmentWords": [
+                5,
+                7
+              ],
+              "waqfDemo": "تلاوة: ﴿ وَفِى ٱلْأَرْضِ قِطَعٌۭ مُّتَجَـٰوِرَٰتٌۭ ﴾ [قف على: مُّتَجَـٰوِرَٰتْ]",
+              "ibtidaDemo": "﴿ وَجَنَّـٰتٌۭ مِّنْ أَعْنَـٰبٍۢ ﴾ [قف على: أَعْنَـٰبْ]",
+              "meaningAtWaqf": "تمام الجملة الاسمية ﴿وَفِى ٱلْأَرْضِ قِطَعٌۭ مُّتَجَـٰوِرَٰتٌۭ﴾.",
+              "meaningAtIbtida": "الابتداء بـ﴿وَجَنَّـٰتٍ مِّنْ أَعْنَـٰبٍۢ﴾ على قراءة الحسن بالجرّ على تقدير فعلٍ مقدرٍ: وسخّر لكم جناتٍ من أعناب.",
+              "meaningIfConnected": "يكون كافيًا على تقدير (وسخّر لكم جناتٍ)، ولا يوقف إن جُعلت مجرورةً حملًا على (كل الثمرات).",
+              "qiraatOverrides": [
+                {
+                  "ayah": 4,
+                  "wordIndex": 5,
+                  "hafsWord": "وَجَنَّـٰتٌۭ",
+                  "modifiedWord": "وَجَنَّـٰتٍ"
+                }
+              ]
             }
-          ]
+          ],
+          "qiraatBasis": "varies_by_qiraat",
+          "qiraatNote": "كافٍ على الرفع بالابتداء، وعلى جر الحسن (وجنّاتٍ) عطفًا على سخّر"
         }
       ],
       "aiSuggestion": null,
@@ -11472,7 +11511,9 @@
               "meaningAtIbtida": "الابتداء بـ﴿وَزَرْعٌۭ وَنَخِيلٌۭ﴾ مرفوعًا بالابتداء وخبره ﴿يُسْقَىٰ بِمَآءٍۢ وَٰحِدٍۢ﴾.",
               "meaningIfConnected": "إذا قُرئ ﴿وَزَرْعٍ وَنَخِيلٍ﴾ بالجر عطفًا على ﴿أَعْنَـٰبٍۢ﴾ أو بالرفع عطفًا على ﴿قِطَعٌۭ﴾ لم يُوقف على ﴿أَعْنَـٰبٍۢ﴾ وكان التمام على ﴿بِمَآءٍۢ وَٰحِدٍۢ﴾."
             }
-          ]
+          ],
+          "qiraatBasis": "varies_by_qiraat",
+          "qiraatNote": "جائز على رفع (وزرعٌ ونخيلٌ)، وعلى الجر التمام على (بماءٍ واحد)"
         }
       ],
       "aiSuggestion": null,
@@ -11548,9 +11589,19 @@
               "ibtidaDemo": "﴿ يُسْقَىٰ بِمَآءٍۢ وَٰحِدٍۢ وَنُفَضِّلُ بَعْضَهَا عَلَىٰ بَعْضٍۢ فِى ٱلْأُكُلِ ﴾ [قف على: ٱلْأُكُلْ]",
               "meaningAtWaqf": "استقلال جملة تعداد الأصناف النباتية وأوصافها على قراءة حمزة والكسائي بالياء في الفعلين بعدها.",
               "meaningAtIbtida": "استئناف جملة ﴿يُسْقَىٰ بِمَآءٍۢ وَٰحِدٍۢ وَيُفَضِّلُ بَعْضَهَا عَلَىٰ بَعْضٍۢ﴾ في نسق واحد.",
-              "meaningIfConnected": "في الوصل تتصل الجملة الفعلية بما قبلها نعتًا، والوقف كافٍ ليتسق الفعلان المبدوءان بالياء في جملة مستأنفة."
+              "meaningIfConnected": "في الوصل تتصل الجملة الفعلية بما قبلها نعتًا، والوقف كافٍ ليتسق الفعلان المبدوءان بالياء في جملة مستأنفة.",
+              "qiraatOverrides": [
+                {
+                  "ayah": 4,
+                  "wordIndex": 16,
+                  "hafsWord": "وَنُفَضِّلُ",
+                  "modifiedWord": "وَيُفَضِّلُ"
+                }
+              ]
             }
-          ]
+          ],
+          "qiraatBasis": "varies_by_qiraat",
+          "qiraatNote": "جائز بتسقى ونفصل (حفص)، وكافٍ بالياء فيهما لحمزة والكسائي"
         }
       ],
       "aiSuggestion": null,
@@ -11607,7 +11658,9 @@
               "meaningAtIbtida": "استئناف جملة ﴿وَنُفَضِّلُ بَعْضَهَا عَلَىٰ بَعْضٍۢ فِى ٱلْأُكُلِ﴾ لمن قرأ بالنون.",
               "meaningIfConnected": "يجوز الوصل للعطف، والوقف جائز على قراءة النون للانتقال من الغيبة والمبني للمفعول إلى نون العظمة."
             }
-          ]
+          ],
+          "qiraatBasis": "varies_by_qiraat",
+          "qiraatNote": "وقف لمن قرأ بالنون (ونفضّل)، بخلاف قراءة الياء (ويفضّل)"
         },
         {
           "scholar": "ابن الأنباري",
@@ -11649,7 +11702,9 @@
               "meaningAtIbtida": "الابتداء بـ﴿وَنُفَضِّلُ﴾ بالنون على الالتفات للتعظيم في جملة مستأنفة.",
               "meaningIfConnected": "على قراءة نافع وابن كثير وعاصم وأبي عمرو بالنون يحسن الوقف لمخالفة صيغة الفعل، أما على قراءة الأعمش وحمزة والكسائي ﴿وَيُفَضِّلُ﴾ بالياء فلا يتم الوقف لاتصال العطف ويتم في آخر الآية."
             }
-          ]
+          ],
+          "qiraatBasis": "varies_by_qiraat",
+          "qiraatNote": "حسن على قراءة النون (ونفضّل)، ولا يتم على الياء للأعمش والأخوين"
         },
         {
           "scholar": "الأشموني",
@@ -11687,7 +11742,9 @@
               "meaningAtIbtida": "الابتداء بجملة مستأنفة مصدرة بنون العظمة: ﴿وَنُفَضِّلُ بَعْضَهَا عَلَىٰ بَعْضٍۢ فِى ٱلْأُكُلِ﴾.",
               "meaningIfConnected": "الوصل أظهر لمن قرأ ﴿وَيُفَضِّلُ﴾ بالياء لتناسب الفعلين، والوقف كافٍ لمن قرأ بالنون."
             }
-          ]
+          ],
+          "qiraatBasis": "varies_by_qiraat",
+          "qiraatNote": "كافٍ لمن قرأ بالنون (ونفضّل) بخلاف قراءة الياء"
         },
         {
           "scholar": "النحاس",
@@ -11728,7 +11785,33 @@
               "ibtidaDemo": "﴿ وَنُفَضِّلُ بَعْضَهَا عَلَىٰ بَعْضٍۢ فِى ٱلْأُكُلِ ﴾ [قف على: ٱلْأُكُلْ]",
               "meaningAtWaqf": "تمام الكلام على قراءة جر ﴿وَزَرْعٍ وَنَخِيلٍ﴾ عطفًا على ﴿أَعْنَـٰبٍۢ﴾ واكتمال وصفها بقوله: ﴿يُسْقَىٰ بِمَآءٍۢ وَٰحِدٍۢ﴾.",
               "meaningAtIbtida": "الابتداء بجملة مستأنفة: ﴿وَنُفَضِّلُ بَعْضَهَا عَلَىٰ بَعْضٍۢ فِى ٱلْأُكُلِ﴾.",
-              "meaningIfConnected": "الوصل جائز للعطف، والوقف تام لانقضاء السياق الأول واستئناف الإخبار بنون العظمة."
+              "meaningIfConnected": "الوصل جائز للعطف، والوقف تام لانقضاء السياق الأول واستئناف الإخبار بنون العظمة.",
+              "qiraatOverrides": [
+                {
+                  "ayah": 4,
+                  "wordIndex": 8,
+                  "hafsWord": "وَزَرْعٌۭ",
+                  "modifiedWord": "وَزَرْعٍ"
+                },
+                {
+                  "ayah": 4,
+                  "wordIndex": 9,
+                  "hafsWord": "وَنَخِيلٌۭ",
+                  "modifiedWord": "وَنَخِيلٍ"
+                },
+                {
+                  "ayah": 4,
+                  "wordIndex": 10,
+                  "hafsWord": "صِنْوَانٌۭ",
+                  "modifiedWord": "صِنْوَانٍ"
+                },
+                {
+                  "ayah": 4,
+                  "wordIndex": 11,
+                  "hafsWord": "وَغَيْرُ",
+                  "modifiedWord": "وَغَيْرِ"
+                }
+              ]
             },
             {
               "verdict": "صالح",
@@ -11747,7 +11830,9 @@
               "meaningAtIbtida": "الابتداء بـ﴿وَنُفَضِّلُ بَعْضَهَا عَلَىٰ بَعْضٍۢ فِى ٱلْأُكُلِ﴾.",
               "meaningIfConnected": "إن قُرئ ﴿وَيُفَضِّلُ﴾ بالياء اتصل الكلام وكان الوقف على ﴿فِى ٱلْأُكُلِ﴾."
             }
-          ]
+          ],
+          "qiraatBasis": "varies_by_qiraat",
+          "qiraatNote": "تام على جر (وزرعٍ ونخيلٍ)، وصالح على قراءة النون (ونفضّل)"
         }
       ],
       "aiSuggestion": null,
@@ -11916,16 +12001,26 @@
               "ibtidaDemo": "﴿ إِنَّ فِى ذَٰلِكَ لَـَٔايَـٰتٍۢ لِّقَوْمٍۢ يَعْقِلُونَ ﴾ [قف على: يَعْقِلُونْ]",
               "meaningAtWaqf": "انتهاء الجملة المعطوفة على قراءة ﴿وَيُفَضِّلُ﴾ بالياء حيث يتصل الفعلان ويحسن الوقف على ﴿فِى ٱلْأُكُلِ﴾.",
               "meaningAtIbtida": "الابتداء بقوله: ﴿إِنَّ فِى ذَٰلِكَ لَـَٔايَـٰتٍۢ لِّقَوْمٍۢ يَعْقِلُونَ﴾.",
-              "meaningIfConnected": "الوصل يصل الدليل بخاتمة الآية، والوقف على ﴿فِى ٱلْأُكُلِ﴾ يفصل بين الدليل والتعقيب."
+              "meaningIfConnected": "الوصل يصل الدليل بخاتمة الآية، والوقف على ﴿فِى ٱلْأُكُلِ﴾ يفصل بين الدليل والتعقيب.",
+              "qiraatOverrides": [
+                {
+                  "ayah": 4,
+                  "wordIndex": 16,
+                  "hafsWord": "وَنُفَضِّلُ",
+                  "modifiedWord": "وَيُفَضِّلُ"
+                }
+              ]
             }
-          ]
+          ],
+          "qiraatBasis": "non_hafs_only",
+          "qiraatNote": "على قراءة الياء «ويفضِّلُ»"
         }
       ],
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -12278,8 +12373,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "قلى",
+      "uthmaniMarkName": "الوقف أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -12373,8 +12468,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -12468,8 +12563,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -12563,8 +12658,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -12897,8 +12992,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "قلى",
+      "uthmaniMarkName": "الوقف أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -12992,8 +13087,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -13176,8 +13271,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "قلى",
+      "uthmaniMarkName": "الوقف أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -13373,8 +13468,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -13728,8 +13823,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -14821,8 +14916,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "قلى",
+      "uthmaniMarkName": "الوقف أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -15051,8 +15146,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "قلى",
+      "uthmaniMarkName": "الوقف أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -15281,8 +15376,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -15790,7 +15885,9 @@
               "meaningAtIbtida": "الابتداء بجملة مستأنفة في الآية التالية: ﴿لَهُۥ دَعْوَةُ ٱلْحَقِّ﴾ مع بقاء التعلق المعنوي بعود الضمير في ﴿لَهُۥ﴾ إلى الله تعالى.",
               "meaningIfConnected": "يجوز الوصل للترابط المعنوي، والوقف كافٍ لاستئناف ما بعده وموافقة رأس الآية."
             }
-          ]
+          ],
+          "qiraatBasis": "hafs_and_others",
+          "qiraatNote": "كافٍ على كسر الميم (المِحال)، وقرأ الأعرج والضحاك بفتحها (المَحال)"
         },
         {
           "scholar": "النحاس",
@@ -16041,8 +16138,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -16308,8 +16405,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -16905,8 +17002,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -17077,8 +17174,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -17385,8 +17482,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "قلى",
+      "uthmaniMarkName": "الوقف أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -17617,8 +17714,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -17936,8 +18033,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -18146,8 +18243,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -18279,8 +18376,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -18374,8 +18471,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -18605,8 +18702,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -19014,8 +19111,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -19207,8 +19304,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -19474,8 +19571,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -19830,8 +19927,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -20743,8 +20840,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -21013,8 +21110,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -21231,8 +21328,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "لا",
+      "uthmaniMarkName": "ممنوع",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -21713,8 +21810,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -22100,8 +22197,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "قلى",
+      "uthmaniMarkName": "الوقف أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -22420,8 +22517,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "قلى",
+      "uthmaniMarkName": "الوقف أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -23349,8 +23446,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -24002,8 +24099,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "قلى",
+      "uthmaniMarkName": "الوقف أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -24211,8 +24308,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "قلى",
+      "uthmaniMarkName": "الوقف أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -24345,8 +24442,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "قلى",
+      "uthmaniMarkName": "الوقف أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -24478,8 +24575,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -24739,8 +24836,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -25116,8 +25213,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "قلى",
+      "uthmaniMarkName": "الوقف أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -25406,8 +25503,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -25634,8 +25731,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "قلى",
+      "uthmaniMarkName": "الوقف أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -25687,9 +25784,19 @@
               "ibtidaDemo": "﴿ وَصُدُّوا۟ عَنِ ٱلسَّبِيلِ ﴾ [قف على: ٱلسَّبِيلْ]",
               "meaningAtWaqf": "تمام الجملة المبنية للمفعول في الإخبار عن تزيين مكر الكافرين لهم.",
               "meaningAtIbtida": "استئناف جملة فعلية مبنية للفاعل (وَصَدُّوا) تخبر عن منعهم الناس عن سبيل الله.",
-              "meaningIfConnected": "الوقف كافٍ لمن قرأ (وَصَدُّوا) بفتح الصاد مبنياً للفاعل لاختلاف بنية الجملتين، وليس بوقف لمن قرأ بضم الصاد للمفعول لعطفه على ﴿زُيِّنَ﴾."
+              "meaningIfConnected": "الوقف كافٍ لمن قرأ (وَصَدُّوا) بفتح الصاد مبنياً للفاعل لاختلاف بنية الجملتين، وليس بوقف لمن قرأ بضم الصاد للمفعول لعطفه على ﴿زُيِّنَ﴾.",
+              "qiraatOverrides": [
+                {
+                  "ayah": 33,
+                  "wordIndex": 30,
+                  "hafsWord": "وَصُدُّوا۟",
+                  "modifiedWord": "وَصَدُّوا"
+                }
+              ]
             }
-          ]
+          ],
+          "qiraatBasis": "non_hafs_only",
+          "qiraatNote": "كافٍ لباقي السبعة ببناء (وصَدّوا) للفاعل، وليس بوقف للكوفيين بالضم"
         }
       ],
       "aiSuggestion": null,
@@ -25866,8 +25973,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "قلى",
+      "uthmaniMarkName": "الوقف أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -26082,8 +26189,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -26313,8 +26420,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -26660,8 +26767,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -26755,8 +26862,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -26965,8 +27072,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -27136,8 +27243,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -27352,8 +27459,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -27523,8 +27630,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -27618,8 +27725,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -27840,8 +27947,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -28121,8 +28228,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -28293,8 +28400,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "قلى",
+      "uthmaniMarkName": "الوقف أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -28699,8 +28806,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -29118,8 +29225,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -29213,8 +29320,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -29550,8 +29657,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -29721,8 +29828,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "قلى",
+      "uthmaniMarkName": "الوقف أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -29905,8 +30012,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -29978,9 +30085,19 @@
               "ibtidaDemo": "﴿ وَمَنْ عِندَهُۥ عِلْمُ ٱلْكِتَـٰبِ ﴾ [قف على: ٱلْكِتَـٰبْ]",
               "meaningAtWaqf": "تمام الاحتجاج بالاكتفاء بشهادة الله تعالى بين الرسول ومكذبيه.",
               "meaningAtIbtida": "ابتداء جملة اسمية مستأنفة على القراءة الشاذة بكسر الميم (وَمِنْ عِنْدِهِ عِلْمُ الْكِتَابِ)؛ فالجار والمجرور خبر مقدم و﴿عِلْمُ﴾ مبتدأ مؤخر.",
-              "meaningIfConnected": "يوقف هنا على قراءة كسر الميم لاستئناف ما بعده، ولا يوقف على قراءة الجمهور بفتح الميم ﴿وَمَنْ عِندَهُۥ﴾ لعطف الموصول على موضع اسم الجلالة في الشهادة."
+              "meaningIfConnected": "يوقف هنا على قراءة كسر الميم لاستئناف ما بعده، ولا يوقف على قراءة الجمهور بفتح الميم ﴿وَمَنْ عِندَهُۥ﴾ لعطف الموصول على موضع اسم الجلالة في الشهادة.",
+              "qiraatOverrides": [
+                {
+                  "ayah": 43,
+                  "wordIndex": 12,
+                  "hafsWord": "وَمَنْ",
+                  "modifiedWord": "وَمِنْ"
+                }
+              ]
             }
-          ]
+          ],
+          "qiraatBasis": "non_hafs_only",
+          "qiraatNote": "على قراءة ابن عباس ومجاهد بكسر «ومِنْ عنده علم الكتاب»"
         },
         {
           "scholar": "الداني",
@@ -30020,9 +30137,25 @@
               "ibtidaDemo": "﴿ وَمَنْ عِندَهُۥ عِلْمُ ٱلْكِتَـٰبِ ﴾ [قف على: ٱلْكِتَـٰبْ]",
               "meaningAtWaqf": "تمام جملة الاكتفاء بشهادة الله بين النبي صلى الله عليه وسلم وبين الكافرين.",
               "meaningAtIbtida": "استئناف جملة جديدة من المبتدأ والخبر على قراءة من قرأ (وَمِنْ عِنْدِهِ عِلْمُ الْكِتَابِ) بكسر الميم والدال.",
-              "meaningIfConnected": "يمتنع الوقف على قراءة الجماعة بفتح الميم والدال لعطف ﴿وَمَنْ عِندَهُۥ﴾ على اسم الله، ويوقف فقط على قراءة الكسر الشاذة."
+              "meaningIfConnected": "يمتنع الوقف على قراءة الجماعة بفتح الميم والدال لعطف ﴿وَمَنْ عِندَهُۥ﴾ على اسم الله، ويوقف فقط على قراءة الكسر الشاذة.",
+              "qiraatOverrides": [
+                {
+                  "ayah": 43,
+                  "wordIndex": 12,
+                  "hafsWord": "وَمَنْ",
+                  "modifiedWord": "وَمِنْ"
+                },
+                {
+                  "ayah": 43,
+                  "wordIndex": 13,
+                  "hafsWord": "عِندَهُۥ",
+                  "modifiedWord": "عِنْدِهِ"
+                }
+              ]
             }
-          ]
+          ],
+          "qiraatBasis": "non_hafs_only",
+          "qiraatNote": "على قراءة كسر الميم والدال «ومِنْ عندِهِ» (دون فتحها)"
         },
         {
           "scholar": "الأشموني",
@@ -30062,9 +30195,25 @@
               "ibtidaDemo": "﴿ وَمَنْ عِندَهُۥ عِلْمُ ٱلْكِتَـٰبِ ﴾ [قف على: ٱلْكِتَـٰبْ]",
               "meaningAtWaqf": "تمام الاستشهاد بالله تعالى بين الرسول صلى الله عليه وسلم ومنكري رسالته.",
               "meaningAtIbtida": "ابتداء خبر مقدم ومبتدأ مؤخر أو فعل مبني للمفعول ونائب فاعل على قراءة كسر ميم (مِن) الجارة.",
-              "meaningIfConnected": "يحسن الوقف لمن قرأ (وَمِنْ عِنْدِهِ) بمن الجارة لاستقلال الجملة بعدها، وليس بوقف على قراءة العامة بفتح الميم لعطف الموصول على اسمه تعالى."
+              "meaningIfConnected": "يحسن الوقف لمن قرأ (وَمِنْ عِنْدِهِ) بمن الجارة لاستقلال الجملة بعدها، وليس بوقف على قراءة العامة بفتح الميم لعطف الموصول على اسمه تعالى.",
+              "qiraatOverrides": [
+                {
+                  "ayah": 43,
+                  "wordIndex": 12,
+                  "hafsWord": "وَمَنْ",
+                  "modifiedWord": "وَمِنْ"
+                },
+                {
+                  "ayah": 43,
+                  "wordIndex": 13,
+                  "hafsWord": "عِندَهُۥ",
+                  "modifiedWord": "عِندِهِۦ"
+                }
+              ]
             }
-          ]
+          ],
+          "qiraatBasis": "non_hafs_only",
+          "qiraatNote": "على القراءة الشاذة بكسر الميم والدال «ومِنْ عندِهِ»"
         },
         {
           "scholar": "النحاس",
@@ -30105,9 +30254,25 @@
               "ibtidaDemo": "﴿ وَمَنْ عِندَهُۥ عِلْمُ ٱلْكِتَـٰبِ ﴾ [قف على: ٱلْكِتَـٰبْ]",
               "meaningAtWaqf": "انقضاء الجملة الفعلية في الاكتفاء بشهادة الله بينه وبينهم.",
               "meaningAtIbtida": "استئناف جملة جديدة على قراءة كسر الميم (وَمِنْ عِنْدِهِ عِلْمُ الْكِتَابِ).",
-              "meaningIfConnected": "تمامه هنا عند الأخفش لمن قرأ بكسر الميم، وأما على قراءة فتح الميم فالتمام آخر السورة لاتصال المعطوف بالمعطوف عليه."
+              "meaningIfConnected": "تمامه هنا عند الأخفش لمن قرأ بكسر الميم، وأما على قراءة فتح الميم فالتمام آخر السورة لاتصال المعطوف بالمعطوف عليه.",
+              "qiraatOverrides": [
+                {
+                  "ayah": 43,
+                  "wordIndex": 12,
+                  "hafsWord": "وَمَنْ",
+                  "modifiedWord": "وَمِنْ"
+                },
+                {
+                  "ayah": 43,
+                  "wordIndex": 13,
+                  "hafsWord": "عِندَهُۥ",
+                  "modifiedWord": "عِنْدِهِ"
+                }
+              ]
             }
-          ]
+          ],
+          "qiraatBasis": "non_hafs_only",
+          "qiraatNote": "على قراءة الأخفش بكسر الميم «ومِنْ عندِهِ» (دون الفتح)"
         }
       ],
       "aiSuggestion": null,
@@ -30161,7 +30326,9 @@
               "meaningAtIbtida": "ابتداء سورة إبراهيم المفتتحة بالحروف المقطعة وتنزيل الكتاب.",
               "meaningIfConnected": "الوقف تام على آخر السورة لانقضاء الكلام على القراءتين."
             }
-          ]
+          ],
+          "qiraatBasis": "hafs_and_others",
+          "qiraatNote": "يُوقف آخر السورة على قراءة فتح الميم والدال (ومَن عندَه)"
         },
         {
           "scholar": "الداني",
@@ -30196,7 +30363,9 @@
               "meaningAtIbtida": "استئناف فاتحة سورة إبراهيم.",
               "meaningIfConnected": "الوقف تام على آخر السورة لاتصال ﴿وَمَنْ عِندَهُۥ عِلْمُ ٱلْكِتَـٰبِ﴾ بما قبله على قراءة الجماعة."
             }
-          ]
+          ],
+          "qiraatBasis": "hafs_and_others",
+          "qiraatNote": "قراءة الجماعة بفتح الميم والدال (ومَن عندَه) تقف على آخر السورة"
         },
         {
           "scholar": "الأشموني",
@@ -30267,7 +30436,9 @@
               "meaningAtIbtida": "ابتداء السورة التالية المستقلة بنظمها.",
               "meaningIfConnected": "الوقف تام على آخر السورة لمن قرأ بفتح الميم والدال على أن (مَن) اسم موصول معطوف."
             }
-          ]
+          ],
+          "qiraatBasis": "hafs_and_others",
+          "qiraatNote": "تمام قراءة فتح الميم والدال (ومَن عندَه علم الكتاب) آخر السورة"
         }
       ],
       "aiSuggestion": null,

@@ -12,7 +12,7 @@ Future<void> _pumpUntilReady(WidgetTester tester) async {
       () => Future<void>.delayed(const Duration(milliseconds: 20)),
     );
     await tester.pump(const Duration(milliseconds: 50));
-    if (find.textContaining('رؤوس الآي').evaluate().isNotEmpty) {
+    if (find.textContaining('وقف المصحف').evaluate().isNotEmpty) {
       await tester.pump();
       return;
     }
@@ -44,6 +44,11 @@ void main() {
     await tester.tap(find.byType(ListTile).first);
     await tester.pump();
     await tester.pump(const Duration(milliseconds: 400));
+
+    // Updated modal sheet matches dock header (آراء العلماء / المعاني / theme toggle)
+    expect(find.text('آراء العلماء'), findsOneWidget);
+    expect(find.text('المعاني'), findsOneWidget);
+    expect(find.byTooltip('سمة داكنة'), findsOneWidget);
 
     // Verify SelectionArea exists in the sheet
     expect(find.byType(SelectionArea), findsWidgets);

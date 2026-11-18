@@ -30,20 +30,6 @@ class WaqfFilterBar extends StatelessWidget {
                 Expanded(
                   flex: 5,
                   child: _FilterToggle(
-                    label: controller.hideVerseEnd
-                        ? 'إظهار رؤوس الآي'
-                        : 'إخفاء رؤوس الآي',
-                    selected: controller.hideVerseEnd,
-                    semanticsLabel: controller.hideVerseEnd
-                        ? 'إظهار وقوف رؤوس الآيات'
-                        : 'إخفاء وقوف رؤوس الآيات',
-                    onTap: controller.toggleHideVerseEnd,
-                  ),
-                ),
-                const SizedBox(width: 6),
-                Expanded(
-                  flex: 5,
-                  child: _FilterToggle(
                     label: controller.hideUthmani
                         ? 'إظهار وقف المصحف'
                         : 'إخفاء وقف المصحف',

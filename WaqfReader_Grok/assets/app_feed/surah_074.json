@@ -3083,11 +3083,12 @@
                 2
               ],
               "ibtidaSegmentWords": null,
-              "waqfDemo": "تلاوة: ﴿ قُمْ فَأَنذِرْ ﴾ [قف على: فَأَنذِرْ]",
+              "waqfDemo": "تلاوة: ﴿ يَـٰٓأَيُّهَا ٱلْمُدَّثِّرُ ۝١ قُمْ فَأَنذِرْ ﴾ [قف على: فَأَنذِرْ]",
               "ibtidaDemo": "﴿ وَرَبَّكَ فَكَبِّرْ ﴾ [الآية التالية]",
               "meaningAtWaqf": "انقضاء جملة النداء وجوابه بالأمر بالإنذار، واستغناؤها اللفظي عما بعدها.",
               "meaningAtIbtida": "وخصَّ ربك بالتكبير والتعظيم.",
-              "meaningIfConnected": "الوقف كافٍ لتمام الكلام ووقوعه على الفاصلة، والوصل يجمع الأوامر المتعاطفة في نسق واحد."
+              "meaningIfConnected": "الوقف كافٍ لتمام الكلام ووقوعه على الفاصلة، والوصل يجمع الأوامر المتعاطفة في نسق واحد.",
+              "waqfStartAyah": 1
             }
           ]
         }
@@ -4477,16 +4478,20 @@
           "scholar": "السجاوندي",
           "targetWord": "كَلَّآ",
           "verdict": [
-            "تام"
+            "تام",
+            "لا يوقف"
           ],
           "verdictLabel": [
-            "ط"
+            "ط",
+            "لا"
           ],
           "symbol": [
-            "tam"
+            "tam",
+            "la"
           ],
           "isQila": [
-            false
+            false,
+            true
           ],
           "book": "علل الوقوف",
           "page": "3/1060-1061",
@@ -4541,11 +4546,12 @@
                 2,
                 5
               ],
-              "waqfDemo": "تلاوة: ﴿ كَلَّآ ﴾ [قف على: كَلَّا]",
+              "waqfDemo": "تلاوة: ﴿ ثُمَّ يَطْمَعُ أَنْ أَزِيدَ ۝١٥ كَلَّآ ﴾ [قف على: كَلَّا]",
               "ibtidaDemo": "﴿ إِنَّهُۥ كَانَ لِـَٔايَـٰتِنَا عَنِيدًۭا ﴾ [قف على: عَنِيدَا]",
               "meaningAtWaqf": "ردعٌ وزجرٌ عن طمعه في الزيادة، بمعنى: لا أفعل ولا أزيده.",
               "meaningAtIbtida": "استئناف تعليل لمنعه الزيادة بأنه كان لآياتنا معاندًا جاحدًا.",
-              "meaningIfConnected": "الوقف على ﴿كَلَّآ﴾ تامٌّ لانقضاء معنى الردع والنفي، والابتداء بـ﴿إِنَّهُۥ﴾ مستأنف لبيان سبب الحرمان."
+              "meaningIfConnected": "الوقف على ﴿كَلَّآ﴾ تامٌّ لانقضاء معنى الردع والنفي، والابتداء بـ﴿إِنَّهُۥ﴾ مستأنف لبيان سبب الحرمان.",
+              "waqfStartAyah": 15
             }
           ]
         },
@@ -4579,11 +4585,12 @@
                 2,
                 5
               ],
-              "waqfDemo": "تلاوة: ﴿ كَلَّآ ﴾ [قف على: كَلَّا]",
+              "waqfDemo": "تلاوة: ﴿ ثُمَّ يَطْمَعُ أَنْ أَزِيدَ ۝١٥ كَلَّآ ﴾ [قف على: كَلَّا]",
               "ibtidaDemo": "﴿ إِنَّهُۥ كَانَ لِـَٔايَـٰتِنَا عَنِيدًۭا ﴾ [قف على: عَنِيدَا]",
               "meaningAtWaqf": "إبطالٌ لطمعه وردعٌ له، أي: ليس الأمر كما يطمع ولا أزيده.",
               "meaningAtIbtida": "إنه كان لآياتنا معاندًا؛ استئنافٌ لبيان علة منعه من الزيادة.",
-              "meaningIfConnected": "الوقف على ﴿كَلَّآ﴾ تامٌّ عند الأكثر لأنها للردع والزجر عما قبلها، وما بعدها مستأنف."
+              "meaningIfConnected": "الوقف على ﴿كَلَّآ﴾ تامٌّ عند الأكثر لأنها للردع والزجر عما قبلها، وما بعدها مستأنف.",
+              "waqfStartAyah": 15
             }
           ]
         },
@@ -4630,8 +4637,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -5683,7 +5690,9 @@
               "meaningAtIbtida": "هي لوَّاحةٌ للبشر؛ خبر لمبتدأ محذوف.",
               "meaningIfConnected": "الوقف كافٍ على قراءة الرفع، ولا يوقف على قراءة نصب (لوَّاحةً) على الحال من سقر أو من ضمير الفعلين."
             }
-          ]
+          ],
+          "qiraatBasis": "varies_by_qiraat",
+          "qiraatNote": "كافٍ في الرفع (لَوَّاحَةٌ) كحفص، وليس بوقف في النصب (لَوَّاحَةً)"
         },
         {
           "scholar": "النحاس",
@@ -6137,8 +6146,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "لا",
+      "uthmaniMarkName": "ممنوع",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -6235,8 +6244,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "لا",
+      "uthmaniMarkName": "ممنوع",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -6294,8 +6303,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "لا",
+      "uthmaniMarkName": "ممنوع",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -6503,8 +6512,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -6712,8 +6721,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -6921,8 +6930,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -7542,11 +7551,12 @@
                 7
               ],
               "ibtidaSegmentWords": null,
-              "waqfDemo": "تلاوة: ﴿ لِمَن شَآءَ مِنكُمْ أَن يَتَقَدَّمَ أَوْ يَتَأَخَّرَ ﴾ [قف على: يَتَأَخَّرْ]",
+              "waqfDemo": "تلاوة: ﴿ إِنَّهَا لَإِحْدَى ٱلْكُبَرِ ۝٣٥ نَذِيرًۭا لِّلْبَشَرِ ۝٣٦ لِمَن شَآءَ مِنكُمْ أَن يَتَقَدَّمَ أَوْ يَتَأَخَّرَ ﴾ [قف على: يَتَأَخَّرْ]",
               "ibtidaDemo": "﴿ كُلُّ نَفْسٍۭ بِمَا كَسَبَتْ رَهِينَةٌ ﴾ [الآية التالية]",
               "meaningAtWaqf": "تناهي جملة جواب القسم مع الحال ﴿نَذِيرًۭا﴾ وبدل البعض ﴿لِمَن شَآءَ﴾ ومعمولاته.",
               "meaningAtIbtida": "ابتداء جملة اسمية كلية مستأنفة في حكم ارتهان النفوس بكسبها.",
-              "meaningIfConnected": "الوقف المطلق متعينٌ لانتهاء متعلقات جواب القسم جميعًا والشروع في جملة ابتدائية مستقلة."
+              "meaningIfConnected": "الوقف المطلق متعينٌ لانتهاء متعلقات جواب القسم جميعًا والشروع في جملة ابتدائية مستقلة.",
+              "waqfStartAyah": 35
             }
           ]
         },
@@ -9396,11 +9406,12 @@
                 2,
                 5
               ],
-              "waqfDemo": "تلاوة: ﴿ كَلَّا ﴾ [قف على: كَلَّا]",
+              "waqfDemo": "تلاوة: ﴿ بَلْ يُرِيدُ كُلُّ ٱمْرِئٍۢ مِّنْهُمْ أَن يُؤْتَىٰ صُحُفًۭا مُّنَشَّرَةًۭ ۝٥٢ كَلَّا ﴾ [قف على: كَلَّا]",
               "ibtidaDemo": "﴿ بَل لَّا يَخَافُونَ ٱلْـَٔاخِرَةَ ﴾ [قف على: ٱلْـَٔاخِرَهْ]",
               "meaningAtWaqf": "تمام الرد والنفي لما تمنوه من إيتاء كل امرئ منهم صحفاً منشرة؛ أي ليس الأمر كما زعموا.",
               "meaningAtIbtida": "استئناف إخبار جديد بـ﴿بَلْ﴾ يكشف أن علتهم الحقيقية هي أمنهم من عذاب الآخرة وعدم خوفهم منها.",
-              "meaningIfConnected": "الوقف تام لكون ﴿كَلَّا﴾ رداً لما قبلها وانقطاع ما بعدها عنها بالابتداء بـ﴿بَلْ﴾."
+              "meaningIfConnected": "الوقف تام لكون ﴿كَلَّا﴾ رداً لما قبلها وانقطاع ما بعدها عنها بالابتداء بـ﴿بَلْ﴾.",
+              "waqfStartAyah": 52
             }
           ]
         },
@@ -9438,11 +9449,12 @@
                 2,
                 5
               ],
-              "waqfDemo": "تلاوة: ﴿ كَلَّا ﴾ [قف على: كَلَّا]",
+              "waqfDemo": "تلاوة: ﴿ بَلْ يُرِيدُ كُلُّ ٱمْرِئٍۢ مِّنْهُمْ أَن يُؤْتَىٰ صُحُفًۭا مُّنَشَّرَةًۭ ۝٥٢ كَلَّا ﴾ [قف على: كَلَّا]",
               "ibtidaDemo": "﴿ بَل لَّا يَخَافُونَ ٱلْـَٔاخِرَةَ ﴾ [قف على: ٱلْـَٔاخِرَهْ]",
               "meaningAtWaqf": "الردع عن طلبهم إيتاء الصحف؛ أي لا يؤتون ذلك أبداً.",
               "meaningAtIbtida": "الابتداء بـ﴿بَل لَّا يَخَافُونَ ٱلْـَٔاخِرَةَ﴾ لبيان أن عدم خوفهم من الآخرة هو الحامل لهم على الإعراض.",
-              "meaningIfConnected": "قيل الوقف كافٍ على جعلها للردع عما قبلها، وقيل لا يوقف عليها إن جُعلت بمعنى (ألا) الاستفتاحية لما بعدها."
+              "meaningIfConnected": "قيل الوقف كافٍ على جعلها للردع عما قبلها، وقيل لا يوقف عليها إن جُعلت بمعنى (ألا) الاستفتاحية لما بعدها.",
+              "waqfStartAyah": 52
             }
           ]
         },
@@ -9476,11 +9488,12 @@
                 2,
                 5
               ],
-              "waqfDemo": "تلاوة: ﴿ كَلَّا ﴾ [قف على: كَلَّا]",
+              "waqfDemo": "تلاوة: ﴿ بَلْ يُرِيدُ كُلُّ ٱمْرِئٍۢ مِّنْهُمْ أَن يُؤْتَىٰ صُحُفًۭا مُّنَشَّرَةًۭ ۝٥٢ كَلَّا ﴾ [قف على: كَلَّا]",
               "ibtidaDemo": "﴿ بَل لَّا يَخَافُونَ ٱلْـَٔاخِرَةَ ﴾ [قف على: ٱلْـَٔاخِرَهْ]",
               "meaningAtWaqf": "الرد والإنكار لمقالتهم المتقدمة في طلب الصحف المنشرة.",
               "meaningAtIbtida": "الابتداء بجملة الإضراب المستأنفة ﴿بَل لَّا يَخَافُونَ ٱلْـَٔاخِرَةَ﴾.",
-              "meaningIfConnected": "الوقف جائز وحسن على معنى الردع لما قبلها، والوصل سائغ على معنى التنبيه والاستفتاح لما بعدها."
+              "meaningIfConnected": "الوقف جائز وحسن على معنى الردع لما قبلها، والوصل سائغ على معنى التنبيه والاستفتاح لما بعدها.",
+              "waqfStartAyah": 52
             }
           ]
         }
@@ -9488,8 +9501,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -9993,8 +10006,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },

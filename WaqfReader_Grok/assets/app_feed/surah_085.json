@@ -1748,11 +1748,12 @@
                 6,
                 10
               ],
-              "waqfDemo": "تلاوة: ﴿ ٱلَّذِى لَهُۥ مُلْكُ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ ﴾ [قف على: وَٱلْأَرْضْ]",
+              "waqfDemo": "تلاوة: ﴿ وَمَا نَقَمُوا۟ مِنْهُمْ إِلَّآ أَن يُؤْمِنُوا۟ بِٱللَّهِ ٱلْعَزِيزِ ٱلْحَمِيدِ ۝٨ ٱلَّذِى لَهُۥ مُلْكُ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ ﴾ [قف على: وَٱلْأَرْضْ]",
               "ibtidaDemo": "﴿ وَٱللَّهُ عَلَىٰ كُلِّ شَىْءٍۢ شَهِيدٌ ﴾ [قف على: شَهِيدْ]",
               "meaningAtWaqf": "انقضاء صفات الله عز وجل المتعلقة بما قبلها.",
               "meaningAtIbtida": "استئناف الإخبار عن إحاطة علم الله وشهادته على أعمال العباد.",
-              "meaningIfConnected": "الوقف أتم لتمام جملة الصلة واستقلال الجملة الاسمية بعدها."
+              "meaningIfConnected": "الوقف أتم لتمام جملة الصلة واستقلال الجملة الاسمية بعدها.",
+              "waqfStartAyah": 8
             }
           ]
         },
@@ -1798,8 +1799,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -2309,8 +2310,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -2783,7 +2784,9 @@
               "meaningAtIbtida": "إثبات صفة المجد لله تعالى على تقدير: هو المجيد.",
               "meaningIfConnected": "الوصل أتم وأولى لعدم الفصل بين الصفات المتتابعة ولتحصيل الوقف على رأس الآية، ويمتنع الوقف على قراءة جر ﴿ٱلْمَجِيدِ﴾ نعتاً للعرش."
             }
-          ]
+          ],
+          "qiraatBasis": "varies_by_qiraat",
+          "qiraatNote": "حسن في الرفع (المَجِيدُ) كحفص على الابتداء، لا إن نُعت أو جُرّ"
         }
       ],
       "aiSuggestion": null,
@@ -2857,7 +2860,9 @@
               "meaningAtIbtida": "الابتداء ببيان نفاذ مشيئته وقدرته التامة على تقدير: هو فعال لما يريد.",
               "meaningIfConnected": "الوقف كافٍ لكونه رأس آية مع تقدير مبتدأ محذوف لقوله ﴿فَعَّالٌۭ﴾."
             }
-          ]
+          ],
+          "qiraatBasis": "hafs_and_others",
+          "qiraatNote": "كافٍ في الرفع (المَجِيدُ) كحفص وقراءة الأخوين بالجر (المَجِيدِ)"
         }
       ],
       "aiSuggestion": null,
@@ -3709,7 +3714,9 @@
               "meaningAtIbtida": "الابتداء بالسورة التالية بعد البسملة.",
               "meaningIfConnected": "الوقف تام لانقضاء السورة وتمام المعنى."
             }
-          ]
+          ],
+          "qiraatBasis": "hafs_and_others",
+          "qiraatNote": "تام على قراءتي الجر (مَحْفُوظٍ) كحفص والرفع لنافع (مَحْفُوظٌ)"
         },
         {
           "scholar": "النحاس",

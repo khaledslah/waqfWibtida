@@ -8705,8 +8705,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -8755,9 +8755,19 @@
               "ibtidaDemo": "﴿ ٱللَّهِ ٱلَّذِى لَهُۥ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ﴾ [الآية التالية]",
               "meaningAtWaqf": "تمامُ الكلام عند رأس الآية لمن قرأ (اللَّهُ) بالرفع على الاستئناف وانقطاع التبعية الإعرابية.",
               "meaningAtIbtida": "استئنافُ ثناءٍ جديدٍ بجملةٍ اسميةٍ مستقلَّةٍ تُثبت لله ملكوت السماوات والأرض.",
-              "meaningIfConnected": "من قرأ بالخفض وصلَ وجوباً من حيث المعنى الإعرابيُّ لكون لفظ الجلالة بدلاً من (العزيز الحميد)."
+              "meaningIfConnected": "من قرأ بالخفض وصلَ وجوباً من حيث المعنى الإعرابيُّ لكون لفظ الجلالة بدلاً من (العزيز الحميد).",
+              "qiraatOverrides": [
+                {
+                  "ayah": 2,
+                  "wordIndex": 1,
+                  "hafsWord": "ٱللَّهِ",
+                  "modifiedWord": "ٱللَّهُ"
+                }
+              ]
             }
-          ]
+          ],
+          "qiraatBasis": "non_hafs_only",
+          "qiraatNote": "تام لمن قرأ (اللهُ) بالرفع، ومن خفض (اللهِ) وصل على البدل"
         },
         {
           "scholar": "ابن الأنباري",
@@ -8790,9 +8800,19 @@
               "ibtidaDemo": "﴿ ٱللَّهِ ٱلَّذِى لَهُۥ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ﴾ [الآية التالية]",
               "meaningAtWaqf": "تمَّ الكلام ببيان غاية إنزال الكتاب وهي إخراج الناس إلى صراط العزيز الحميد، وذلك على قراءة رفع لفظ الجلالة بعده (اللَّهُ الذي).",
               "meaningAtIbtida": "اللهُ هو الذي له ملك السماوات والأرض؛ جملةٌ اسميةٌ مستأنفةٌ مرفوعةٌ على الابتداء والخبر في قراءة نافع وابن عامر وأبي جعفر.",
-              "meaningIfConnected": "يتعيَّن الوصل أو يُمنع التمام على قراءة الجمهور بخفض لفظ الجلالة (اللَّهِ الذي) على البدل أو النعت لـ(العزيز الحميد)."
+              "meaningIfConnected": "يتعيَّن الوصل أو يُمنع التمام على قراءة الجمهور بخفض لفظ الجلالة (اللَّهِ الذي) على البدل أو النعت لـ(العزيز الحميد).",
+              "qiraatOverrides": [
+                {
+                  "ayah": 2,
+                  "wordIndex": 1,
+                  "hafsWord": "ٱللَّهِ",
+                  "modifiedWord": "ٱللَّهُ"
+                }
+              ]
             }
-          ]
+          ],
+          "qiraatBasis": "non_hafs_only",
+          "qiraatNote": "يوقف هنا على رفع نافع وابن عامر (اللهُ)، وعلى الخفض في الآية التالية"
         },
         {
           "scholar": "الداني",
@@ -8829,9 +8849,19 @@
               "ibtidaDemo": "﴿ ٱللَّهِ ٱلَّذِى لَهُۥ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ﴾ [الآية التالية]",
               "meaningAtWaqf": "انقضاء الجملة الأولى بتمام متعلَّقات الإنزال والهداية إلى صراط العزيز الحميد على قراءة رفع اسم الجلالة بعدها.",
               "meaningAtIbtida": "اللهُ الذي له ما في السماوات وما في الأرض؛ ابتداءٌ بجملةٍ اسميةٍ مستقلَّةٍ؛ لفظ الجلالة فيها مبتدأٌ والموصول وصلته خبره.",
-              "meaningIfConnected": "أمَّا على قراءة الخفض فإنَّ اسم الجلالة بدلٌ من (العزيز الحميد)، فلا يُوقف حينئذٍ على (الحميد) لتعلُّق البدل بالمبدل منه."
+              "meaningIfConnected": "أمَّا على قراءة الخفض فإنَّ اسم الجلالة بدلٌ من (العزيز الحميد)، فلا يُوقف حينئذٍ على (الحميد) لتعلُّق البدل بالمبدل منه.",
+              "qiraatOverrides": [
+                {
+                  "ayah": 2,
+                  "wordIndex": 1,
+                  "hafsWord": "ٱللَّهِ",
+                  "modifiedWord": "ٱللَّهُ"
+                }
+              ]
             }
-          ]
+          ],
+          "qiraatBasis": "non_hafs_only",
+          "qiraatNote": "يوقف هنا على الرفع (اللهُ) بالابتداء، وعلى الخفض (اللهِ) في الآية التالية"
         },
         {
           "scholar": "الأشموني",
@@ -8868,9 +8898,19 @@
               "ibtidaDemo": "﴿ ٱللَّهِ ٱلَّذِى لَهُۥ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ﴾ [الآية التالية]",
               "meaningAtWaqf": "تمامُ المعنى والإعراب عند قوله (الحميد) على قراءة نافع وابن عامر برفع الجلالة بعدها.",
               "meaningAtIbtida": "ابتداءٌ بجملةٍ مستأنفةٍ مكونةٍ من المبتدأ (اللَّهُ) وخبره الموصول (الذي له ما في السماوات).",
-              "meaningIfConnected": "على قراءة الباقين بالجرِّ بدلاً أو عطف بيانٍ ممَّا قبله يتَّصل الكلام إعراباً فلا يحسن الفصل."
+              "meaningIfConnected": "على قراءة الباقين بالجرِّ بدلاً أو عطف بيانٍ ممَّا قبله يتَّصل الكلام إعراباً فلا يحسن الفصل.",
+              "qiraatOverrides": [
+                {
+                  "ayah": 2,
+                  "wordIndex": 1,
+                  "hafsWord": "ٱللَّهِ",
+                  "modifiedWord": "ٱللَّهُ"
+                }
+              ]
             }
-          ]
+          ],
+          "qiraatBasis": "non_hafs_only",
+          "qiraatNote": "تام لنافع وابن عامر برفع (اللهُ)، وليس بوقف للباقين بالجر"
         },
         {
           "scholar": "النحاس",
@@ -8903,9 +8943,19 @@
               "ibtidaDemo": "﴿ ٱللَّهِ ٱلَّذِى لَهُۥ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ﴾ [الآية التالية]",
               "meaningAtWaqf": "استقلالُ الكلام وتمامه عند رأس الآية في قراءة من رفع لفظ الجلالة بعدها على القطع والاستئناف.",
               "meaningAtIbtida": "استئنافُ إخبارٍ عن الله تعالى بأنَّ له ملك السماوات والأرض.",
-              "meaningIfConnected": "في قراءة من خفض لا يتمُّ الوقف على (الحميد) بل يتَّصل بما بعده حتى يبلغ التمام عند قوله (وما في الأرض)."
+              "meaningIfConnected": "في قراءة من خفض لا يتمُّ الوقف على (الحميد) بل يتَّصل بما بعده حتى يبلغ التمام عند قوله (وما في الأرض).",
+              "qiraatOverrides": [
+                {
+                  "ayah": 2,
+                  "wordIndex": 1,
+                  "hafsWord": "ٱللَّهِ",
+                  "modifiedWord": "ٱللَّهُ"
+                }
+              ]
             }
-          ]
+          ],
+          "qiraatBasis": "non_hafs_only",
+          "qiraatNote": "تمام لمن رفع (اللهُ)، ومن خفض (اللهِ) فوقفه التام في الآية التالية"
         }
       ],
       "aiSuggestion": null,
@@ -9000,7 +9050,9 @@
               "meaningAtIbtida": "ابتداءُ وعيدٍ شديدٍ للكافرين بالعذاب، وهو كلامٌ مستأنفٌ منتقلٌ من الثناء إلى التهديد.",
               "meaningIfConnected": "الوقفُ أتمُّ للفصل بين مقام الثناء على الله ومقام الوعيد للكافرين."
             }
-          ]
+          ],
+          "qiraatBasis": "hafs_and_others",
+          "qiraatNote": "تام على قراءتي الخفض (اللهِ) ورفع أهل المدينة والشامي (اللهُ)"
         },
         {
           "scholar": "الداني",
@@ -9025,20 +9077,23 @@
               "verdict": "تام",
               "isQila": false,
               "waqfSegmentWords": [
-                1,
+                2,
                 9
               ],
               "ibtidaSegmentWords": [
                 10,
                 14
               ],
-              "waqfDemo": "تلاوة: ﴿ ٱللَّهِ ٱلَّذِى لَهُۥ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ﴾ [قف على: ٱلْأَرْضْ]",
+              "waqfDemo": "تلاوة: ﴿ كِتَـٰبٌ أَنزَلْنَـٰهُ إِلَيْكَ لِتُخْرِجَ ٱلنَّاسَ مِنَ ٱلظُّلُمَـٰتِ إِلَى ٱلنُّورِ بِإِذْنِ رَبِّهِمْ إِلَىٰ صِرَٰطِ ٱلْعَزِيزِ ٱلْحَمِيدِ ۝١ ٱللَّهِ ٱلَّذِى لَهُۥ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ﴾ [قف على: ٱلْأَرْضْ]",
               "ibtidaDemo": "﴿ وَوَيْلٌۭ لِّلْكَـٰفِرِينَ مِنْ عَذَابٍۢ شَدِيدٍ ﴾ [قف على: شَدِيدْ]",
               "meaningAtWaqf": "انقضاءُ جملة الثناء وتمامُ البدل أو الخبر على القراءتين جميعاً (الرفع والخفض).",
               "meaningAtIbtida": "استئنافُ جملةٍ وعيديَّةٍ جديدةٍ لا تعلُّق لها بما قبلها إعراباً.",
-              "meaningIfConnected": "الوقفُ متعيِّنٌ في الحُسن والتمام لانقطاع النظم الإعرابيِّ وانتقال الغرض البيانيِّ إلى وعيد الكافرين."
+              "meaningIfConnected": "الوقفُ متعيِّنٌ في الحُسن والتمام لانقطاع النظم الإعرابيِّ وانتقال الغرض البيانيِّ إلى وعيد الكافرين.",
+              "waqfStartAyah": 1
             }
-          ]
+          ],
+          "qiraatBasis": "hafs_and_others",
+          "qiraatNote": "تام على القراءتين: قراءة رفع الجلالة وقراءة خفضها"
         },
         {
           "scholar": "الأشموني",
@@ -9101,27 +9156,30 @@
               "verdict": "تام",
               "isQila": false,
               "waqfSegmentWords": [
-                1,
+                2,
                 9
               ],
               "ibtidaSegmentWords": [
                 10,
                 14
               ],
-              "waqfDemo": "تلاوة: ﴿ ٱللَّهِ ٱلَّذِى لَهُۥ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ﴾ [قف على: ٱلْأَرْضْ]",
+              "waqfDemo": "تلاوة: ﴿ كِتَـٰبٌ أَنزَلْنَـٰهُ إِلَيْكَ لِتُخْرِجَ ٱلنَّاسَ مِنَ ٱلظُّلُمَـٰتِ إِلَى ٱلنُّورِ بِإِذْنِ رَبِّهِمْ إِلَىٰ صِرَٰطِ ٱلْعَزِيزِ ٱلْحَمِيدِ ۝١ ٱللَّهِ ٱلَّذِى لَهُۥ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ﴾ [قف على: ٱلْأَرْضْ]",
               "ibtidaDemo": "﴿ وَوَيْلٌۭ لِّلْكَـٰفِرِينَ مِنْ عَذَابٍۢ شَدِيدٍ ﴾ [قف على: شَدِيدْ]",
               "meaningAtWaqf": "تمامُ الكلام في القراءتين جميعاً (الرفع والخفض) بانتهاء صلة الموصول ومتعلَّقاتها.",
               "meaningAtIbtida": "ابتداءٌ مستقلٌّ بوعيد الكافرين؛ لا يتعلَّق بما قبله في الإعراب.",
-              "meaningIfConnected": "الوقفُ هو المختار باتفاق القراءتين للفصل التامِّ بين الثناء والوعيد."
+              "meaningIfConnected": "الوقفُ هو المختار باتفاق القراءتين للفصل التامِّ بين الثناء والوعيد.",
+              "waqfStartAyah": 1
             }
-          ]
+          ],
+          "qiraatBasis": "hafs_and_others",
+          "qiraatNote": "الوقف التام في القراءتين جميعًا (رفع الجلالة وخفضها)"
         }
       ],
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "قلى",
+      "uthmaniMarkName": "الوقف أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -9312,18 +9370,19 @@
               "verdict": "كاف",
               "isQila": false,
               "waqfSegmentWords": [
-                1,
+                10,
                 12
               ],
               "ibtidaSegmentWords": [
                 13,
                 16
               ],
-              "waqfDemo": "تلاوة: ﴿ ٱلَّذِينَ يَسْتَحِبُّونَ ٱلْحَيَوٰةَ ٱلدُّنْيَا عَلَى ٱلْـَٔاخِرَةِ وَيَصُدُّونَ عَن سَبِيلِ ٱللَّهِ وَيَبْغُونَهَا عِوَجًا ﴾ [قف على: عِوَجَا]",
+              "waqfDemo": "تلاوة: ﴿ وَوَيْلٌۭ لِّلْكَـٰفِرِينَ مِنْ عَذَابٍۢ شَدِيدٍ ۝٢ ٱلَّذِينَ يَسْتَحِبُّونَ ٱلْحَيَوٰةَ ٱلدُّنْيَا عَلَى ٱلْـَٔاخِرَةِ وَيَصُدُّونَ عَن سَبِيلِ ٱللَّهِ وَيَبْغُونَهَا عِوَجًا ﴾ [قف على: عِوَجَا]",
               "ibtidaDemo": "﴿ أُو۟لَـٰٓئِكَ فِى ضَلَـٰلٍۭ بَعِيدٍۢ ﴾ [قف على: بَعِيدْ]",
               "meaningAtWaqf": "تمامُ النعت المجرور المتعلِّق بـ(الكافرين) بانتهاء المعطوفات في صلة الموصول عند قوله (عِوَجًا).",
               "meaningAtIbtida": "أولئك في ضلالٍ بعيد؛ جملةٌ اسميةٌ مستأنفةٌ للحكم عليهم بالضلال البعيد مع بقاء التعلُّق المعنويِّ بمرجع اسم الإشارة.",
-              "meaningIfConnected": "الوصلُ وجيهٌ لمن جعل (الذين) مبتدأً وجملة (أولئك في ضلال بعيد) خبرَه."
+              "meaningIfConnected": "الوصلُ وجيهٌ لمن جعل (الذين) مبتدأً وجملة (أولئك في ضلال بعيد) خبرَه.",
+              "waqfStartAyah": 2
             }
           ]
         },
@@ -9350,18 +9409,19 @@
               "verdict": "كاف",
               "isQila": false,
               "waqfSegmentWords": [
-                1,
+                10,
                 12
               ],
               "ibtidaSegmentWords": [
                 13,
                 16
               ],
-              "waqfDemo": "تلاوة: ﴿ ٱلَّذِينَ يَسْتَحِبُّونَ ٱلْحَيَوٰةَ ٱلدُّنْيَا عَلَى ٱلْـَٔاخِرَةِ وَيَصُدُّونَ عَن سَبِيلِ ٱللَّهِ وَيَبْغُونَهَا عِوَجًا ﴾ [قف على: عِوَجَا]",
+              "waqfDemo": "تلاوة: ﴿ وَوَيْلٌۭ لِّلْكَـٰفِرِينَ مِنْ عَذَابٍۢ شَدِيدٍ ۝٢ ٱلَّذِينَ يَسْتَحِبُّونَ ٱلْحَيَوٰةَ ٱلدُّنْيَا عَلَى ٱلْـَٔاخِرَةِ وَيَصُدُّونَ عَن سَبِيلِ ٱللَّهِ وَيَبْغُونَهَا عِوَجًا ﴾ [قف على: عِوَجَا]",
               "ibtidaDemo": "﴿ أُو۟لَـٰٓئِكَ فِى ضَلَـٰلٍۭ بَعِيدٍۢ ﴾ [قف على: بَعِيدْ]",
               "meaningAtWaqf": "انتهاءُ نعت الكافرين المجرور واستيفاءُ صلة (الذين) وما عُطف عليها، فلا يبقى لما بعده تعلُّقٌ إعرابيٌّ به.",
               "meaningAtIbtida": "ابتداءٌ بجملةٍ مستقلَّةٍ من المبتدأ والخبر (أولئك في ضلال بعيد) مرتبطةٍ بما قبلها من جهة المعنى.",
-              "meaningIfConnected": "الوقفُ هنا هو الكافي في بابه؛ لأنَّ (الذين) نعتٌ لما قبله وجملة (أولئك) مستأنفةٌ بعد تمام النعت."
+              "meaningIfConnected": "الوقفُ هنا هو الكافي في بابه؛ لأنَّ (الذين) نعتٌ لما قبله وجملة (أولئك) مستأنفةٌ بعد تمام النعت.",
+              "waqfStartAyah": 2
             }
           ]
         }
@@ -9369,8 +9429,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -9658,7 +9718,9 @@
               "meaningAtIbtida": "ابتداءُ حكمٍ آخر خارجٍ عن تعليل الإرسال؛ لأنَّ (فَيُضِلُّ) مرفوعٌ على الاستئناف وليس منصوباً بالعطف على (لِيُبَيِّنَ).",
               "meaningIfConnected": "الوقفُ كافٍ للفصل الإعرابيِّ بين المنصوب بلام كي والمرفوع على الاستئناف مع اتِّصال المعنى العام."
             }
-          ]
+          ],
+          "qiraatBasis": "hafs_and_others",
+          "qiraatNote": "قرأ العامة (بلسان) وقرئ (بلِسْن قومه) بكسر اللام وسكون السين"
         },
         {
           "scholar": "النحاس",
@@ -9703,8 +9765,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -9913,8 +9975,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -10170,8 +10232,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -10428,8 +10490,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -10610,8 +10672,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -11107,8 +11169,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "∴",
+      "uthmaniMarkName": "معانقة",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -11241,8 +11303,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "∴",
+      "uthmaniMarkName": "معانقة",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -11376,8 +11438,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -11752,8 +11814,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -11906,8 +11968,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -12356,8 +12418,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -12451,8 +12513,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -12670,8 +12732,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -12765,8 +12827,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -12984,8 +13046,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -13254,8 +13316,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -13455,18 +13517,19 @@
               "verdict": "حسن",
               "isQila": false,
               "waqfSegmentWords": [
-                1,
+                5,
                 1
               ],
               "ibtidaSegmentWords": [
                 2,
                 5
               ],
-              "waqfDemo": "تلاوة: ﴿ ذَٰلِكَ لِمَنْ خَافَ مَقَامِى وَخَافَ وَعِيدِ ۝ وَٱسْتَفْتَحُوا۟ ﴾ [قف على: وَٱسْتَفْتَحُوا۟]",
+              "waqfDemo": "تلاوة: ﴿ ذَٰلِكَ لِمَنْ خَافَ مَقَامِى وَخَافَ وَعِيدِ ۝١٤ وَٱسْتَفْتَحُوا۟ ﴾ [قف على: وَٱسْتَفْتَحُوا۟]",
               "ibtidaDemo": "﴿ وَخَابَ كُلُّ جَبَّارٍ عَنِيدٍۢ ﴾ [قف على: عَنِيدْ]",
               "meaningAtWaqf": "إفادة طلب الرسل الفتح والنصر من الله عند وصل الكلمة بما قبلها وعدم الابتداء بها مفردة.",
               "meaningAtIbtida": "الابتداء ببيان عاقبة ذلك الاستفتاح وهي خيبة وخسران كل متكبر معاند.",
-              "meaningIfConnected": "يحسن الوقف عليها بشرط وصلها بما قبلها؛ فإن ابتدئ بها لم يحسن الوقف عليها لما فيه من الابتداء بكلمة واحدة والوقف عليها، فالوصل حينئذٍ متعين."
+              "meaningIfConnected": "يحسن الوقف عليها بشرط وصلها بما قبلها؛ فإن ابتدئ بها لم يحسن الوقف عليها لما فيه من الابتداء بكلمة واحدة والوقف عليها، فالوصل حينئذٍ متعين.",
+              "waqfStartAyah": 14
             }
           ]
         }
@@ -13921,8 +13984,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -14146,8 +14209,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -14241,8 +14304,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -14412,8 +14475,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -14625,7 +14688,9 @@
               "meaningAtIbtida": "ابتداء جملة شرطية مستأنفة تهدد المخاطبين بقدرة الله على إذهابهم والإتيان بخلق جديد.",
               "meaningIfConnected": "الوقف تام على قراءة الفعل ﴿خَلَقَ﴾ لتمام الخبر؛ أما على قراءة ﴿خَالِقَ ٱلسَّمَـٰوَٰتِ﴾ بالنصب نعتاً لاسم ﴿أَنَّ﴾ فلا يوقف هنا لأن الجملة الشرطية بعدها هي الخبر."
             }
-          ]
+          ],
+          "qiraatBasis": "varies_by_qiraat",
+          "qiraatNote": "تام على فعل الماضي (خلق)، وعلى نصب (خالقَ) الوقف على خلق جديد"
         },
         {
           "scholar": "الداني",
@@ -14740,14 +14805,16 @@
               "meaningAtIbtida": "ابتداء جملة شرطية مستأنفة تبين قدرة الله تعالى على إذهابهم والإتيان بخلق جديد.",
               "meaningIfConnected": "القطع كافٍ على قراءة ﴿خَلَقَ﴾ بلفظ الفعل، أما على قراءة ﴿خَالِقَ ٱلسَّمَـٰوَٰتِ﴾ بالنصب نعتاً لاسم ﴿أَنَّ﴾ فلا يوقف هنا لأن جملة الشرط بعدها هي الخبر."
             }
-          ]
+          ],
+          "qiraatBasis": "varies_by_qiraat",
+          "qiraatNote": "كافٍ على (خلق)، ومن نصب (خالقَ السماوات) فالوقف على خلق جديد"
         }
       ],
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -14812,9 +14879,19 @@
               "ibtidaDemo": "﴿ وَمَا ذَٰلِكَ عَلَى ٱللَّهِ بِعَزِيزٍۢ ﴾ [الآية التالية]",
               "meaningAtWaqf": "تمام الكلام بانتهاء خبر ﴿أَنَّ﴾ وهو الجملة الشرطية ﴿إِن يَشَأْ يُذْهِبْكُمْ﴾ على قراءة من قرأ ﴿خَالِقَ ٱلسَّمَـٰوَٰتِ﴾ بالنصب نعتاً لاسم الجلالة.",
               "meaningAtIbtida": "ابتداء جملة منفية تقرر يسر ذلك الأمر على الله تعالى وعدم امتناعه عليه.",
-              "meaningIfConnected": "يتعين وصل ﴿بِٱلْحَقِّ﴾ بما بعده والوقف على ﴿جَدِيدٍۢ﴾ على قراءة نصب ﴿خَالِقَ﴾؛ لأن الجملة الشرطية حينئذٍ في موضع رفع خبراً لـ﴿أَنَّ﴾."
+              "meaningIfConnected": "يتعين وصل ﴿بِٱلْحَقِّ﴾ بما بعده والوقف على ﴿جَدِيدٍۢ﴾ على قراءة نصب ﴿خَالِقَ﴾؛ لأن الجملة الشرطية حينئذٍ في موضع رفع خبراً لـ﴿أَنَّ﴾.",
+              "qiraatOverrides": [
+                {
+                  "ayah": 19,
+                  "wordIndex": 5,
+                  "hafsWord": "خَلَقَ",
+                  "modifiedWord": "خَـٰلِقَ"
+                }
+              ]
             }
-          ]
+          ],
+          "qiraatBasis": "non_hafs_only",
+          "qiraatNote": "على قراءة نصب «خالقَ السماوات» نعتًا لاسم الجلالة"
         },
         {
           "scholar": "الأشموني",
@@ -14883,9 +14960,19 @@
               "ibtidaDemo": "﴿ وَمَا ذَٰلِكَ عَلَى ٱللَّهِ بِعَزِيزٍۢ ﴾ [الآية التالية]",
               "meaningAtWaqf": "اكتمال جملة ﴿أَنَّ﴾ واسمها ونعته وخبره الشرطي على قراءة نصب ﴿خَالِقَ ٱلسَّمَـٰوَٰتِ﴾.",
               "meaningAtIbtida": "ابتداء جملة معطوفة تنفي كون الإذهاب والإتيان بخلق جديد ممتنعاً أو شاقاً على الله.",
-              "meaningIfConnected": "الوقف كافٍ لاستغناء الجملة لفظاً، والتمام على ﴿بِعَزِيزٍۢ﴾ لارتباط اسم الإشارة ﴿ذَٰلِكَ﴾ بما تقدم معنىً."
+              "meaningIfConnected": "الوقف كافٍ لاستغناء الجملة لفظاً، والتمام على ﴿بِعَزِيزٍۢ﴾ لارتباط اسم الإشارة ﴿ذَٰلِكَ﴾ بما تقدم معنىً.",
+              "qiraatOverrides": [
+                {
+                  "ayah": 19,
+                  "wordIndex": 5,
+                  "hafsWord": "خَلَقَ",
+                  "modifiedWord": "خَـٰلِقَ"
+                }
+              ]
             }
-          ]
+          ],
+          "qiraatBasis": "non_hafs_only",
+          "qiraatNote": "على قراءة نصب «خالقَ السماوات» نعتًا (دون الفعل «خلق»)"
         }
       ],
       "aiSuggestion": null,
@@ -15167,8 +15254,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -15262,8 +15349,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -15507,8 +15594,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -15606,8 +15693,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -15705,8 +15792,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -15808,8 +15895,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -16018,8 +16105,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "قلى",
+      "uthmaniMarkName": "الوقف أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -16316,8 +16403,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -16633,11 +16720,12 @@
                 7,
                 12
               ],
-              "waqfDemo": "تلاوة: ﴿ تُؤْتِىٓ أُكُلَهَا كُلَّ حِينٍۭ بِإِذْنِ رَبِّهَا ﴾ [قف على: رَبِّهَا]",
+              "waqfDemo": "تلاوة: ﴿ أَلَمْ تَرَ كَيْفَ ضَرَبَ ٱللَّهُ مَثَلًۭا كَلِمَةًۭ طَيِّبَةًۭ كَشَجَرَةٍۢ طَيِّبَةٍ أَصْلُهَا ثَابِتٌۭ وَفَرْعُهَا فِى ٱلسَّمَآءِ ۝٢٤ تُؤْتِىٓ أُكُلَهَا كُلَّ حِينٍۭ بِإِذْنِ رَبِّهَا ﴾ [قف على: رَبِّهَا]",
               "ibtidaDemo": "﴿ وَيَضْرِبُ ٱللَّهُ ٱلْأَمْثَالَ لِلنَّاسِ لَعَلَّهُمْ يَتَذَكَّرُونَ ﴾ [قف على: يَتَذَكَّرُونْ]",
               "meaningAtWaqf": "تمام الكلام المنتظم في وصف الشجرة الطيبة وانتهاء تفصيل المثل.",
               "meaningAtIbtida": "الابتداء بجملة مستأنفة تقرر حكمة الله تعالى في ضرب الأمثال للناس.",
-              "meaningIfConnected": "الوقف تام لأن ما إلى هاهنا من وصف الشجرة، وما بعده انتقال إلى بيان علة ضرب الأمثال."
+              "meaningIfConnected": "الوقف تام لأن ما إلى هاهنا من وصف الشجرة، وما بعده انتقال إلى بيان علة ضرب الأمثال.",
+              "waqfStartAyah": 24
             }
           ]
         },
@@ -16759,8 +16847,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "قلى",
+      "uthmaniMarkName": "الوقف أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -17312,8 +17400,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -17465,8 +17553,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -17753,7 +17841,9 @@
               "meaningAtIbtida": "الابتداء بجملة مفسرة لدار البوار على قراءة رفع (جهنمُ) خبرَ مبتدأ مضمر أي «هي جهنم»، أو على نصبها بفعل مضمر يفسره ﴿يَصْلَوْنَهَا﴾.",
               "meaningIfConnected": "الأصل عدم التمام لأن ﴿جَهَنَّمَ﴾ منصوبة على البدل والترجمة عن ﴿دَارَ ٱلْبَوَارِ﴾، ويحسن الوقف فقط على تخريج رفعها بإضمار مبتدأ أو نصبها بفعل مقدر من باب الاشتغال."
             }
-          ]
+          ],
+          "qiraatBasis": "non_hafs_only",
+          "qiraatNote": "على تقدير قراءة رفع «جهنمُ» (دون قراءة نصبها «جهنمَ»)"
         },
         {
           "scholar": "الأشموني",
@@ -17902,11 +17992,12 @@
                 2,
                 4
               ],
-              "waqfDemo": "تلاوة: ﴿ جَهَنَّمَ ﴾ [قف على: جَهَنَّمْ]",
+              "waqfDemo": "تلاوة: ﴿ ۞ أَلَمْ تَرَ إِلَى ٱلَّذِينَ بَدَّلُوا۟ نِعْمَتَ ٱللَّهِ كُفْرًۭا وَأَحَلُّوا۟ قَوْمَهُمْ دَارَ ٱلْبَوَارِ ۝٢٨ جَهَنَّمَ ﴾ [قف على: جَهَنَّمْ]",
               "ibtidaDemo": "﴿ يَصْلَوْنَهَا وَبِئْسَ ٱلْقَرَارُ ﴾ [قف على: ٱلْقَرَارْ]",
               "meaningAtWaqf": "بيانٌ لـ﴿دَارَ ٱلْبَوَارِ﴾ في آخر الآية السابقة على البدلية أو عطف البيان؛ أي: أحلوا قومهم دار الهلاك وهي جهنم.",
               "meaningAtIbtida": "يُقاسون حرَّها ويدخلونها، على استئناف جملة جديدة لبيان حالهم فيها.",
-              "meaningIfConnected": "الوصل جائز ومعتبر؛ لاحتمال كون جملة ﴿يَصْلَوْنَهَا﴾ في موضع الحال من ﴿قَوْمَهُمْ﴾ في قوله ﴿وَأَحَلُّوا۟ قَوْمَهُمْ﴾ أي: أحلوهم إياها صالين."
+              "meaningIfConnected": "الوصل جائز ومعتبر؛ لاحتمال كون جملة ﴿يَصْلَوْنَهَا﴾ في موضع الحال من ﴿قَوْمَهُمْ﴾ في قوله ﴿وَأَحَلُّوا۟ قَوْمَهُمْ﴾ أي: أحلوهم إياها صالين.",
+              "waqfStartAyah": 28
             }
           ]
         }
@@ -17997,11 +18088,12 @@
                 3,
                 4
               ],
-              "waqfDemo": "تلاوة: ﴿ جَهَنَّمَ يَصْلَوْنَهَا ﴾ [قف على: يَصْلَوْنَهَا]",
+              "waqfDemo": "تلاوة: ﴿ ۞ أَلَمْ تَرَ إِلَى ٱلَّذِينَ بَدَّلُوا۟ نِعْمَتَ ٱللَّهِ كُفْرًۭا وَأَحَلُّوا۟ قَوْمَهُمْ دَارَ ٱلْبَوَارِ ۝٢٨ جَهَنَّمَ يَصْلَوْنَهَا ﴾ [قف على: يَصْلَوْنَهَا]",
               "ibtidaDemo": "﴿ وَبِئْسَ ٱلْقَرَارُ ﴾ [قف على: ٱلْقَرَارْ]",
               "meaningAtWaqf": "تمام الجملة المبيِّنة لدار البوار التي أحلوا قومهم فيها، أو تمام الجملة الفعلية على الاشتغال بتقدير: يصلون جهنم يصلونها.",
               "meaningAtIbtida": "ذمٌّ مستأنف لذلك المستقر؛ أي: وبئس المقرُّ والمثوى جهنم.",
-              "meaningIfConnected": "الوصل حسنٌ؛ لعطف جملة الذم ﴿وَبِئْسَ ٱلْقَرَارُ﴾ بالواو على ما قبلها مع اتحاد المذموم."
+              "meaningIfConnected": "الوصل حسنٌ؛ لعطف جملة الذم ﴿وَبِئْسَ ٱلْقَرَارُ﴾ بالواو على ما قبلها مع اتحاد المذموم.",
+              "waqfStartAyah": 28
             }
           ]
         },
@@ -18074,11 +18166,12 @@
                 3,
                 4
               ],
-              "waqfDemo": "تلاوة: ﴿ جَهَنَّمَ يَصْلَوْنَهَا ﴾ [قف على: يَصْلَوْنَهَا]",
+              "waqfDemo": "تلاوة: ﴿ ۞ أَلَمْ تَرَ إِلَى ٱلَّذِينَ بَدَّلُوا۟ نِعْمَتَ ٱللَّهِ كُفْرًۭا وَأَحَلُّوا۟ قَوْمَهُمْ دَارَ ٱلْبَوَارِ ۝٢٨ جَهَنَّمَ يَصْلَوْنَهَا ﴾ [قف على: يَصْلَوْنَهَا]",
               "ibtidaDemo": "﴿ وَبِئْسَ ٱلْقَرَارُ ﴾ [قف على: ٱلْقَرَارْ]",
               "meaningAtWaqf": "تمام البدل وصفته؛ لأن ﴿جَهَنَّمَ﴾ بدلٌ من ﴿دَارَ ٱلْبَوَارِ﴾ وجملة ﴿يَصْلَوْنَهَا﴾ متممة لبيانها.",
               "meaningAtIbtida": "ذمٌّ مستأنف لجهنم؛ أي: وبئس المستقر هي.",
-              "meaningIfConnected": "الوقف كافٍ لتمام جملة البدل أو الاشتغال، والوصل حسنٌ لارتباط جملة الذم بالمذموم المتقدم معنى."
+              "meaningIfConnected": "الوقف كافٍ لتمام جملة البدل أو الاشتغال، والوصل حسنٌ لارتباط جملة الذم بالمذموم المتقدم معنى.",
+              "waqfStartAyah": 28
             }
           ]
         },
@@ -18112,11 +18205,12 @@
                 3,
                 4
               ],
-              "waqfDemo": "تلاوة: ﴿ جَهَنَّمَ يَصْلَوْنَهَا ﴾ [قف على: يَصْلَوْنَهَا]",
+              "waqfDemo": "تلاوة: ﴿ ۞ أَلَمْ تَرَ إِلَى ٱلَّذِينَ بَدَّلُوا۟ نِعْمَتَ ٱللَّهِ كُفْرًۭا وَأَحَلُّوا۟ قَوْمَهُمْ دَارَ ٱلْبَوَارِ ۝٢٨ جَهَنَّمَ يَصْلَوْنَهَا ﴾ [قف على: يَصْلَوْنَهَا]",
               "ibtidaDemo": "﴿ وَبِئْسَ ٱلْقَرَارُ ﴾ [قف على: ٱلْقَرَارْ]",
               "meaningAtWaqf": "تمام الإخبار عن إحلالهم قومهم دار البوار بإبدال ﴿جَهَنَّمَ﴾ منها وبيان صليهم إياها.",
               "meaningAtIbtida": "إنشاء ذمٍّ لذلك المقر؛ أي: وبئس القرار جهنم.",
-              "meaningIfConnected": "الوقف كافٍ؛ لأن ﴿جَهَنَّمَ﴾ بدل مما قبلها فلا يُفصل بين البدل والمبدل منه، فإذا تمَّ البدل وصلته كفى الوقف."
+              "meaningIfConnected": "الوقف كافٍ؛ لأن ﴿جَهَنَّمَ﴾ بدل مما قبلها فلا يُفصل بين البدل والمبدل منه، فإذا تمَّ البدل وصلته كفى الوقف.",
+              "waqfStartAyah": 28
             }
           ]
         }
@@ -18124,8 +18218,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -18493,8 +18587,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "قلى",
+      "uthmaniMarkName": "الوقف أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -18836,8 +18930,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -18931,8 +19025,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -19150,8 +19244,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -19328,9 +19422,19 @@
               "ibtidaDemo": "﴿ مَّا سَأَلْتُمُوهُ ﴾ [قف على: سَأَلْتُمُوهْ]",
               "meaningAtWaqf": "على قراءة التنوين ﴿مِّن كُلٍّ﴾؛ أي: وآتاكم من كل شيءٍ مما تقدم ذكره من النعم.",
               "meaningAtIbtida": "تكون ﴿مَا﴾ نافية؛ أي: لم تسألوه إياه، لأن الله أعطى العباد الشمس والقمر وكثيرًا من النعم ابتداءً من غير سؤال.",
-              "meaningIfConnected": "على قراءة الجمهور بالإضافة ﴿مِّن كُلِّ مَا سَأَلْتُمُوهُ﴾ لا يوقف على ﴿كُلِّ﴾ لأن المضاف لا يُفصل عن المضاف إليه، وتكون ﴿مَا﴾ موصولة."
+              "meaningIfConnected": "على قراءة الجمهور بالإضافة ﴿مِّن كُلِّ مَا سَأَلْتُمُوهُ﴾ لا يوقف على ﴿كُلِّ﴾ لأن المضاف لا يُفصل عن المضاف إليه، وتكون ﴿مَا﴾ موصولة.",
+              "qiraatOverrides": [
+                {
+                  "ayah": 34,
+                  "wordIndex": 3,
+                  "hafsWord": "كُلِّ",
+                  "modifiedWord": "كُلٍّ"
+                }
+              ]
             }
-          ]
+          ],
+          "qiraatBasis": "non_hafs_only",
+          "qiraatNote": "على قراءة سلّام أبي المنذر بتنوين «من كلٍّ» (دون الإضافة)"
         },
         {
           "scholar": "الأشموني",
@@ -19367,9 +19471,19 @@
               "ibtidaDemo": "﴿ مَّا سَأَلْتُمُوهُ ﴾ [قف على: سَأَلْتُمُوهْ]",
               "meaningAtWaqf": "على قراءة تنوين ﴿كُلٍّ﴾؛ أي: وآتاكم من كل النعم المتقدم ذكرها.",
               "meaningAtIbtida": "تُجعل ﴿مَا﴾ نافية مستأنفة أو صفة؛ أي: لم تسألوه ذلك بل تفضل به عليكم ابتداءً.",
-              "meaningIfConnected": "في قراءة العامة بالإضافة تتصل ﴿كُلِّ﴾ بـ﴿مَا﴾ الموصولة أو الموصوفة وجوبًا فلا يوقف عليها."
+              "meaningIfConnected": "في قراءة العامة بالإضافة تتصل ﴿كُلِّ﴾ بـ﴿مَا﴾ الموصولة أو الموصوفة وجوبًا فلا يوقف عليها.",
+              "qiraatOverrides": [
+                {
+                  "ayah": 34,
+                  "wordIndex": 3,
+                  "hafsWord": "كُلِّ",
+                  "modifiedWord": "كُلٍّ"
+                }
+              ]
             }
-          ]
+          ],
+          "qiraatBasis": "non_hafs_only",
+          "qiraatNote": "على قراءة سلّام بن المنذر بتنوين «من كلٍّ» (دون الإضافة)"
         },
         {
           "scholar": "النحاس",
@@ -19406,9 +19520,19 @@
               "ibtidaDemo": "﴿ مَّا سَأَلْتُمُوهُ ﴾ [قف على: سَأَلْتُمُوهْ]",
               "meaningAtWaqf": "على قراءة التنوين؛ أي: وأعطاكم من كل صنف من النعم.",
               "meaningAtIbtida": "ابتداء جملة منفية بـ﴿مَا﴾ النافية؛ أي: ما سألتموه إياه، كالشمس والقمر وسائر النعم التي لم يسألوها.",
-              "meaningIfConnected": "من لم ينون وأضاف ﴿كُلِّ﴾ إلى ﴿مَا﴾ وصلها ولم يقف إلا على ﴿سَأَلْتُمُوهُ﴾."
+              "meaningIfConnected": "من لم ينون وأضاف ﴿كُلِّ﴾ إلى ﴿مَا﴾ وصلها ولم يقف إلا على ﴿سَأَلْتُمُوهُ﴾.",
+              "qiraatOverrides": [
+                {
+                  "ayah": 34,
+                  "wordIndex": 3,
+                  "hafsWord": "كُلِّ",
+                  "modifiedWord": "كُلٍّ"
+                }
+              ]
             }
-          ]
+          ],
+          "qiraatBasis": "non_hafs_only",
+          "qiraatNote": "على قراءة سلّام أبي المنذر بتنوين «من كلٍّ»"
         }
       ],
       "aiSuggestion": null,
@@ -19579,7 +19703,9 @@
               "meaningAtIbtida": "استئناف جملة شرطية لبيان أن نعم الله تفوق العدَّ والحصر.",
               "meaningIfConnected": "الوقف تام؛ لانقضاء تعداد النعم والانتقال إلى أسلوب الشرط."
             }
-          ]
+          ],
+          "qiraatBasis": "hafs_and_others",
+          "qiraatNote": "تام على قراءة الإضافة (كلِّ ما)، وقرأ سلام بن المنذر بالتنوين (كلٍّ)"
         },
         {
           "scholar": "النحاس",
@@ -19617,14 +19743,16 @@
               "meaningAtIbtida": "ابتداء شرطٍ وجوابه في بيان تعذُّر إحصاء نعم الله.",
               "meaningIfConnected": "القطع كافٍ؛ لاستقلال جملة الشرط لفظًا مع اتصالها بسياق الامتنان بالنعم معنى."
             }
-          ]
+          ],
+          "qiraatBasis": "varies_by_qiraat",
+          "qiraatNote": "كافٍ على قراءة ترك التنوين (من كلِّ ما سألتموه)"
         }
       ],
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -19796,8 +19924,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "قلى",
+      "uthmaniMarkName": "الوقف أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -20297,8 +20425,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -20440,8 +20568,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -20929,8 +21057,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "قلى",
+      "uthmaniMarkName": "الوقف أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -21184,8 +21312,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -21373,8 +21501,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -21509,7 +21637,9 @@
               "meaningAtIbtida": "استئناف دعاءٍ آخر بالمغفرة له ولوالديه وللمؤمنين.",
               "meaningIfConnected": "الوقف كافٍ ورأس آية؛ لاستقلال الجملة التالية بالنداء مع اتحاد سياق مناجاة الخليل عليه السلام."
             }
-          ]
+          ],
+          "qiraatBasis": "hafs_and_others",
+          "qiraatNote": "أثبت أبو عمرو وحمزة وورش والبزي ياء (دعاءِ) وصلًا وحذفها الباقون"
         },
         {
           "scholar": "النحاس",
@@ -21798,9 +21928,19 @@
               "ibtidaDemo": "﴿ إِنَّمَا يُؤَخِّرُهُمْ لِيَوْمٍۢ تَشْخَصُ فِيهِ ٱلْأَبْصَـٰرُ ﴾ [قف على: ٱلْأَبْصَـٰرْ]",
               "meaningAtWaqf": "تمام النهي عن ظن غفلة الله عن أعمال الظالمين.",
               "meaningAtIbtida": "استئناف إخبارٍ من الله عن نفسه بنون العظمة على قراءة (إِنَّمَا نُؤَخِّرُهُمْ)؛ أي: إنما نمهلهم ليوم القيامة.",
-              "meaningIfConnected": "على قراءة النون يحسن الوقف على ﴿ٱلظَّـٰلِمُونَ﴾ للعدول من الغيبة إلى التكلم، وعلى قراءة العامة بالياء ﴿يُؤَخِّرُهُمْ﴾ يتصل السياق بضمير الغيبة العائد على اسم الجلالة."
+              "meaningIfConnected": "على قراءة النون يحسن الوقف على ﴿ٱلظَّـٰلِمُونَ﴾ للعدول من الغيبة إلى التكلم، وعلى قراءة العامة بالياء ﴿يُؤَخِّرُهُمْ﴾ يتصل السياق بضمير الغيبة العائد على اسم الجلالة.",
+              "qiraatOverrides": [
+                {
+                  "ayah": 42,
+                  "wordIndex": 9,
+                  "hafsWord": "يُؤَخِّرُهُمْ",
+                  "modifiedWord": "نُؤَخِّرُهُمْ"
+                }
+              ]
             }
-          ]
+          ],
+          "qiraatBasis": "non_hafs_only",
+          "qiraatNote": "على قراءة السلمي والحسن بالنون «نؤخِّرُهم» (دون الياء)"
         },
         {
           "scholar": "الأشموني",
@@ -21836,9 +21976,19 @@
               "ibtidaDemo": "﴿ إِنَّمَا يُؤَخِّرُهُمْ لِيَوْمٍۢ تَشْخَصُ فِيهِ ٱلْأَبْصَـٰرُ ﴾ [قف على: ٱلْأَبْصَـٰرْ]",
               "meaningAtWaqf": "تمام النهي عن حسبان غفلة الله عن أفعال الظالمين.",
               "meaningAtIbtida": "ابتداء بيان سبب إمهالهم على قراءة النون (نؤخرهم)؛ أي: إنما نؤخرهم ليوم تشخص فيه الأبصار.",
-              "meaningIfConnected": "يحسن الوقف لمن قرأ (نؤخرهم) بالنون لتحول الأسلوب من الغيبة إلى التكلم، والوصل سائغٌ لارتباط التعليل بما قبله."
+              "meaningIfConnected": "يحسن الوقف لمن قرأ (نؤخرهم) بالنون لتحول الأسلوب من الغيبة إلى التكلم، والوصل سائغٌ لارتباط التعليل بما قبله.",
+              "qiraatOverrides": [
+                {
+                  "ayah": 42,
+                  "wordIndex": 9,
+                  "hafsWord": "يُؤَخِّرُهُمْ",
+                  "modifiedWord": "نُؤَخِّرُهُمْ"
+                }
+              ]
             }
-          ]
+          ],
+          "qiraatBasis": "non_hafs_only",
+          "qiraatNote": "على قراءة النون «نؤخِّرُهم» (دون الياء «يؤخِّرُهم»)"
         },
         {
           "scholar": "النحاس",
@@ -21868,13 +22018,14 @@
               ],
               "ibtidaSegmentWords": [
                 8,
-                13
+                7
               ],
               "waqfDemo": "تلاوة: ﴿ وَلَا تَحْسَبَنَّ ٱللَّهَ غَـٰفِلًا عَمَّا يَعْمَلُ ٱلظَّـٰلِمُونَ ﴾ [قف على: ٱلظَّـٰلِمُونْ]",
-              "ibtidaDemo": "﴿ إِنَّمَا يُؤَخِّرُهُمْ لِيَوْمٍۢ تَشْخَصُ فِيهِ ٱلْأَبْصَـٰرُ ﴾ [قف على: ٱلْأَبْصَـٰرْ]",
+              "ibtidaDemo": "﴿ إِنَّمَا يُؤَخِّرُهُمْ لِيَوْمٍۢ تَشْخَصُ فِيهِ ٱلْأَبْصَـٰرُ ۝٤٢ مُهْطِعِينَ مُقْنِعِى رُءُوسِهِمْ لَا يَرْتَدُّ إِلَيْهِمْ طَرْفُهُمْ ﴾ [قف على: طَرْفُهُمْ]",
               "meaningAtWaqf": "انقضاء جملة النهي عن ظن غفلة الله عن الظالمين.",
               "meaningAtIbtida": "استئناف جملة مفسِّرة ومعلِّلة لحقيقة إمهالهم إلى يوم القيامة.",
-              "meaningIfConnected": "القطع كافٍ؛ لاستقلال جملة ﴿إِنَّمَا يُؤَخِّرُهُمْ﴾ إعرابًا مع تعلقها بما قبلها معنى وعود الضمائر عليه."
+              "meaningIfConnected": "القطع كافٍ؛ لاستقلال جملة ﴿إِنَّمَا يُؤَخِّرُهُمْ﴾ إعرابًا مع تعلقها بما قبلها معنى وعود الضمائر عليه.",
+              "ibtidaEndAyah": 43
             }
           ]
         }
@@ -21882,8 +22033,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -22094,20 +22245,23 @@
               "verdict": "حسن",
               "isQila": false,
               "waqfSegmentWords": [
-                1,
+                8,
                 7
               ],
               "ibtidaSegmentWords": [
                 8,
                 9
               ],
-              "waqfDemo": "تلاوة: ﴿ مُهْطِعِينَ مُقْنِعِى رُءُوسِهِمْ لَا يَرْتَدُّ إِلَيْهِمْ طَرْفُهُمْ ﴾ [قف على: طَرْفُهُمْ]",
+              "waqfDemo": "تلاوة: ﴿ إِنَّمَا يُؤَخِّرُهُمْ لِيَوْمٍۢ تَشْخَصُ فِيهِ ٱلْأَبْصَـٰرُ ۝٤٢ مُهْطِعِينَ مُقْنِعِى رُءُوسِهِمْ لَا يَرْتَدُّ إِلَيْهِمْ طَرْفُهُمْ ﴾ [قف على: طَرْفُهُمْ]",
               "ibtidaDemo": "﴿ وَأَفْـِٔدَتُهُمْ هَوَآءٌۭ ﴾ [قف على: هَوَآءْ]",
               "meaningAtWaqf": "تمام وصف حال الظالمين يوم القيامة على قراءة الياء ﴿إِنَّمَا يُؤَخِّرُهُمْ﴾ إلى منتهى الأحوال المتعلقة بشخوص أبصارهم.",
               "meaningAtIbtida": "ابتداء جملة اسمية تصف قلوبهم بالخلوِّ من الخير أو من الفهم لشدة الفزع.",
-              "meaningIfConnected": "الوقف حسنٌ لتمام الجملة الفعلية المنفية، والوصل سائغٌ لعطف الجملة الاسمية عليها في سياق وصف حالهم."
+              "meaningIfConnected": "الوقف حسنٌ لتمام الجملة الفعلية المنفية، والوصل سائغٌ لعطف الجملة الاسمية عليها في سياق وصف حالهم.",
+              "waqfStartAyah": 42
             }
-          ]
+          ],
+          "qiraatBasis": "hafs_and_others",
+          "qiraatNote": "خصّ الوقف هنا بقراءة الياء في (يؤخرهم) في الآية السابقة"
         },
         {
           "scholar": "الداني",
@@ -22213,18 +22367,19 @@
               "isQila": true,
               "attributedTo": "أبو حاتم السجستاني",
               "waqfSegmentWords": [
-                1,
+                8,
                 7
               ],
               "ibtidaSegmentWords": [
                 8,
                 9
               ],
-              "waqfDemo": "تلاوة: ﴿ مُهْطِعِينَ مُقْنِعِى رُءُوسِهِمْ لَا يَرْتَدُّ إِلَيْهِمْ طَرْفُهُمْ ﴾ [قف على: طَرْفُهُمْ]",
+              "waqfDemo": "تلاوة: ﴿ إِنَّمَا يُؤَخِّرُهُمْ لِيَوْمٍۢ تَشْخَصُ فِيهِ ٱلْأَبْصَـٰرُ ۝٤٢ مُهْطِعِينَ مُقْنِعِى رُءُوسِهِمْ لَا يَرْتَدُّ إِلَيْهِمْ طَرْفُهُمْ ﴾ [قف على: طَرْفُهُمْ]",
               "ibtidaDemo": "﴿ وَأَفْـِٔدَتُهُمْ هَوَآءٌۭ ﴾ [قف على: هَوَآءْ]",
               "meaningAtWaqf": "تمام وصف حالهم يوم القيامة.",
               "meaningAtIbtida": "استئناف خبرٍ مقطوع عما قبله في بيان أن قلوب الكفرة خالية من الخير.",
-              "meaningIfConnected": "قال أبو حاتم بالتمام، وخولف؛ لأن جملة ﴿وَأَفْـِٔدَتُهُمْ هَوَآءٌۭ﴾ تصلح أن تكون من صفات أهل المحشر متصلةً بما قبلها."
+              "meaningIfConnected": "قال أبو حاتم بالتمام، وخولف؛ لأن جملة ﴿وَأَفْـِٔدَتُهُمْ هَوَآءٌۭ﴾ تصلح أن تكون من صفات أهل المحشر متصلةً بما قبلها.",
+              "waqfStartAyah": 42
             }
           ]
         },
@@ -22271,8 +22426,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -22815,8 +22970,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "قلى",
+      "uthmaniMarkName": "الوقف أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -23597,8 +23752,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "قلى",
+      "uthmaniMarkName": "الوقف أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -23849,8 +24004,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -24093,10 +24248,11 @@
                 6
               ],
               "waqfDemo": "تلاوة: ﴿ سَرَابِيلُهُم مِّن قَطِرَانٍۢ ﴾ [قف على: قَطِرَانْ]",
-              "ibtidaDemo": "﴿ وَتَغْشَىٰ وُجُوهَهُمُ ٱلنَّارُ ﴾ [قف على: ٱلنَّارْ]",
+              "ibtidaDemo": "﴿ وَتَغْشَىٰ وُجُوهَهُمُ ٱلنَّارُ ۝٥٠ لِيَجْزِىَ ٱللَّهُ كُلَّ نَفْسٍۢ مَّا كَسَبَتْ ﴾ [قف على: كَسَبَتْ]",
               "meaningAtWaqf": "تمام الجملة الاسمية من المبتدأ والخبر في وصف سرابيل المجرمين.",
               "meaningAtIbtida": "ابتداء جملة فعلية معطوفة تبيِّن أن النار تعلو وجوههم وتجللها.",
-              "meaningIfConnected": "الوقف جائز لتمام الجملة الاسمية، والوصل أتمُّ لعطف ﴿وَتَغْشَىٰ﴾ على ما قبلها في سياق وصف عذابهم."
+              "meaningIfConnected": "الوقف جائز لتمام الجملة الاسمية، والوصل أتمُّ لعطف ﴿وَتَغْشَىٰ﴾ على ما قبلها في سياق وصف عذابهم.",
+              "ibtidaEndAyah": 51
             }
           ]
         },
@@ -24248,11 +24404,12 @@
                 7,
                 10
               ],
-              "waqfDemo": "تلاوة: ﴿ لِيَجْزِىَ ٱللَّهُ كُلَّ نَفْسٍۢ مَّا كَسَبَتْ ﴾ [قف على: كَسَبَتْ]",
+              "waqfDemo": "تلاوة: ﴿ سَرَابِيلُهُم مِّن قَطِرَانٍۢ وَتَغْشَىٰ وُجُوهَهُمُ ٱلنَّارُ ۝٥٠ لِيَجْزِىَ ٱللَّهُ كُلَّ نَفْسٍۢ مَّا كَسَبَتْ ﴾ [قف على: كَسَبَتْ]",
               "ibtidaDemo": "﴿ إِنَّ ٱللَّهَ سَرِيعُ ٱلْحِسَابِ ﴾ [قف على: ٱلْحِسَابْ]",
               "meaningAtWaqf": "انقضاء الجملة التعليلية المتعلقة بما قبلها ببيان مجازاة كل نفس بما كسبت.",
               "meaningAtIbtida": "ابتداء جملة اسمية مؤكدة مستأنفة في تقرير سرعة حساب الله لعباده.",
-              "meaningIfConnected": "الوقف تام؛ لانقطاع النظم التعليلي واستئناف الجملة المؤكدة بـ﴿إِنَّ﴾."
+              "meaningIfConnected": "الوقف تام؛ لانقطاع النظم التعليلي واستئناف الجملة المؤكدة بـ﴿إِنَّ﴾.",
+              "waqfStartAyah": 50
             }
           ]
         },
@@ -24362,11 +24519,12 @@
                 7,
                 10
               ],
-              "waqfDemo": "تلاوة: ﴿ لِيَجْزِىَ ٱللَّهُ كُلَّ نَفْسٍۢ مَّا كَسَبَتْ ﴾ [قف على: كَسَبَتْ]",
+              "waqfDemo": "تلاوة: ﴿ سَرَابِيلُهُم مِّن قَطِرَانٍۢ وَتَغْشَىٰ وُجُوهَهُمُ ٱلنَّارُ ۝٥٠ لِيَجْزِىَ ٱللَّهُ كُلَّ نَفْسٍۢ مَّا كَسَبَتْ ﴾ [قف على: كَسَبَتْ]",
               "ibtidaDemo": "﴿ إِنَّ ٱللَّهَ سَرِيعُ ٱلْحِسَابِ ﴾ [قف على: ٱلْحِسَابْ]",
               "meaningAtWaqf": "تمام الكلام المتعلق بما قبله في بيان غاية البروز والجزاء.",
               "meaningAtIbtida": "استئناف جملة مؤكدة في الإخبار عن سرعة حساب الله.",
-              "meaningIfConnected": "القطع صالحٌ؛ لتمام الجملة الفعلية واستئناف الجملة الاسمية بعدها."
+              "meaningIfConnected": "القطع صالحٌ؛ لتمام الجملة الفعلية واستئناف الجملة الاسمية بعدها.",
+              "waqfStartAyah": 50
             }
           ]
         }
@@ -24374,8 +24532,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },

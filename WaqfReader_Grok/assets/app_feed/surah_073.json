@@ -2711,7 +2711,9 @@
           "book": "علل الوقوف",
           "page": "3/1057",
           "comment": "لمن قرأ {رب} بالخفض.",
-          "demosAndMeanings": null
+          "demosAndMeanings": null,
+          "qiraatBasis": "varies_by_qiraat",
+          "qiraatNote": "لا يُوقف على قراءة الخفض (رَبِّ)، ويُوقف على الرفع (رَبُّ) كحفص"
         },
         {
           "scholar": "الداني",
@@ -2750,7 +2752,9 @@
               "meaningAtIbtida": "استئناف ثناء على الله برفع ﴿رَّبُّ﴾ على الابتداء وخبره ﴿لَآ إِلَـٰهَ إِلَّا هُوَ﴾ أو على أنه خبر لمبتدأ محذوف تقديره: هو ربّ المشرق.",
               "meaningIfConnected": "الوقف كافٍ على قراءة الرفع لانقطاع التعلق الإعرابي وبقاء التعلق المعنوي، وأما على قراءة الخفض فلا يوقف لأنه بدل من ﴿رَبِّكَ﴾."
             }
-          ]
+          ],
+          "qiraatBasis": "varies_by_qiraat",
+          "qiraatNote": "كافٍ في قراءة الرفع (رَبُّ) كحفص، ولا يُوقف في الخفض (رَبِّ)"
         },
         {
           "scholar": "الأشموني",
@@ -2789,7 +2793,9 @@
               "meaningAtIbtida": "ابتداء جملة اسمية مستأنفة برفع ﴿رَّبُّ﴾ مبتدأً أو خبراً لمبتدأ محذوف على قراءة نافع وابن كثير وأبي عمرو وحفص.",
               "meaningIfConnected": "الوقف تام على قراءة الرفع لاستئناف الجملة، ولا يوقف عليه على قراءة الجر لأن المجرور بدل من ﴿رَبِّكَ﴾ فلا يفصل بين البدل والمبدل منه."
             }
-          ]
+          ],
+          "qiraatBasis": "varies_by_qiraat",
+          "qiraatNote": "تام في الرفع (رَبُّ) كحفص، وليس بوقف في الجر (رَبِّ)"
         },
         {
           "scholar": "النحاس",
@@ -2828,7 +2834,9 @@
               "meaningAtIbtida": "استئناف جملة جديدة برفع ﴿رَّبُّ الْمَشْرِقِ﴾ على قراءة أهل المدينة وأبي عمرو.",
               "meaningIfConnected": "يكفي الوقف هنا لقراء الرفع لاستقلال الجملة، ويمتنع لقراء الخفض (أهل الكوفة وابن عامر) لتعلقه بقوله ﴿رَبِّكَ﴾."
             }
-          ]
+          ],
+          "qiraatBasis": "varies_by_qiraat",
+          "qiraatNote": "كافٍ في الرفع (رَبُّ) كحفص، ولا يُوقف في قراءة الخفض (رَبِّ)"
         }
       ],
       "aiSuggestion": null,
@@ -3273,11 +3281,12 @@
                 5
               ],
               "ibtidaSegmentWords": null,
-              "waqfDemo": "تلاوة: ﴿ وَطَعَامًۭا ذَا غُصَّةٍۢ وَعَذَابًا أَلِيمًۭا ﴾ [قف على: أَلِيمَا]",
+              "waqfDemo": "تلاوة: ﴿ إِنَّ لَدَيْنَآ أَنكَالًۭا وَجَحِيمًۭا ۝١٢ وَطَعَامًۭا ذَا غُصَّةٍۢ وَعَذَابًا أَلِيمًۭا ﴾ [قف على: أَلِيمَا]",
               "ibtidaDemo": "﴿ يَوْمَ تَرْجُفُ ٱلْأَرْضُ وَٱلْجِبَالُ وَكَانَتِ ٱلْجِبَالُ كَثِيبًۭا مَّهِيلًا ﴾ [الآية التالية]",
               "meaningAtWaqf": "تمام تعداد أصناف العقاب المعدة للمكذبين من الأنكال والجحيم والطعام ذي الغصة والعذاب الأليم.",
               "meaningAtIbtida": "الابتداء بـ﴿يَوْمَ تَرْجُفُ﴾ منصوباً بفعل مقدر تقديره: اذكر يوم ترجف الأرض، أو: يعذبون يوم ترجف.",
-              "meaningIfConnected": "الوقف أجوز لأن كون الأنكال وغيرها لدى الله لا يختص بيوم الرجفة بل عامله محذوف، وقيل يوصل على جعل ﴿يَوْمَ﴾ ظرفاً للاستقرار في ﴿إِنَّ لَدَيْنَآ﴾."
+              "meaningIfConnected": "الوقف أجوز لأن كون الأنكال وغيرها لدى الله لا يختص بيوم الرجفة بل عامله محذوف، وقيل يوصل على جعل ﴿يَوْمَ﴾ ظرفاً للاستقرار في ﴿إِنَّ لَدَيْنَآ﴾.",
+              "waqfStartAyah": 12
             }
           ]
         },
@@ -3312,11 +3321,12 @@
                 5
               ],
               "ibtidaSegmentWords": null,
-              "waqfDemo": "تلاوة: ﴿ وَطَعَامًۭا ذَا غُصَّةٍۢ وَعَذَابًا أَلِيمًۭا ﴾ [قف على: أَلِيمَا]",
+              "waqfDemo": "تلاوة: ﴿ إِنَّ لَدَيْنَآ أَنكَالًۭا وَجَحِيمًۭا ۝١٢ وَطَعَامًۭا ذَا غُصَّةٍۢ وَعَذَابًا أَلِيمًۭا ﴾ [قف على: أَلِيمَا]",
               "ibtidaDemo": "﴿ يَوْمَ تَرْجُفُ ٱلْأَرْضُ وَٱلْجِبَالُ وَكَانَتِ ٱلْجِبَالُ كَثِيبًۭا مَّهِيلًا ﴾ [الآية التالية]",
               "meaningAtWaqf": "تكامل الجملة الخبرية في تعداد ألوان العذاب المعدّة للكافرين.",
               "meaningAtIbtida": "نصب ﴿يَوْمَ تَرْجُفُ﴾ بمقدر مفعولاً به (أي: اذكر يوم ترجف) على عطف الجمل.",
-              "meaningIfConnected": "يجوز الوقف على تقدير عامل محذوف لـ﴿يَوْمَ﴾، ويمتنع الوقف إن جُعل ﴿يَوْمَ﴾ ظرفاً متعلقاً بـ﴿لَدَيْنَآ﴾ أو نعتاً لـ﴿عَذَابًا أَلِيمًۭا﴾."
+              "meaningIfConnected": "يجوز الوقف على تقدير عامل محذوف لـ﴿يَوْمَ﴾، ويمتنع الوقف إن جُعل ﴿يَوْمَ﴾ ظرفاً متعلقاً بـ﴿لَدَيْنَآ﴾ أو نعتاً لـ﴿عَذَابًا أَلِيمًۭا﴾.",
+              "waqfStartAyah": 12
             }
           ]
         },
@@ -3781,7 +3791,9 @@
               "meaningAtIbtida": "يجعل الله الولدان شيباً في يومٍ عظيم الهول، بنصب ﴿يَوْمًۭا﴾ على الظرفية بـ﴿يَجْعَلُ﴾.",
               "meaningIfConnected": "ردّ ابن الأنباري هذا الوقف واختار الوصل لأن ﴿يَوْمًۭا﴾ مفعول لـ﴿تَتَّقُونَ﴾ والفاعل في ﴿يَجْعَلُ﴾ ضمير اليوم لشدة هوله، كما تؤيده قراءة ابن مسعود: (فكيف تتقون يوماً يجعل الولدان شيباً إن كفرتم)."
             }
-          ]
+          ],
+          "qiraatBasis": "hafs_and_others",
+          "qiraatNote": "الوصل أولى وتؤيده قراءة ابن مسعود في النظم"
         },
         {
           "scholar": "الداني",
@@ -4250,7 +4262,9 @@
               "meaningAtIbtida": "ابتداء إخبار مستأنف بأن وعد الله تعالى بالقيامة والجزاء نافذٌ واقع.",
               "meaningIfConnected": "الوقف تام كما نصّ عليه أبو حاتم والأشموني لانتهاء نعت اليوم واستئناف ما بعده."
             }
-          ]
+          ],
+          "qiraatBasis": "hafs_and_others",
+          "qiraatNote": "تام، وقرأ زيد بن علي (يَوْمَ) بالإضافة ولا أثر لها في الوقف"
         },
         {
           "scholar": "النحاس",
@@ -4295,8 +4309,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -4549,8 +4563,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -4917,8 +4931,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -5012,8 +5026,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -5069,8 +5083,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -5278,8 +5292,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -5337,8 +5351,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "لا",
+      "uthmaniMarkName": "ممنوع",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -5414,8 +5428,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "لا",
+      "uthmaniMarkName": "ممنوع",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -5585,8 +5599,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -5797,8 +5811,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -6063,8 +6077,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -6293,8 +6307,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -6388,8 +6402,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },

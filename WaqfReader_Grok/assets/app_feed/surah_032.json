@@ -4304,8 +4304,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -4906,8 +4906,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -5077,8 +5077,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -5655,7 +5655,9 @@
               "meaningAtIbtida": "الابتداء بـ﴿ٱلَّذِىٓ أَحْسَنَ﴾ في موضع رفع خبرًا لمبتدأ محذوف تقديره: (هو الذي أحسن كل شيء خلقه).",
               "meaningIfConnected": "إن جُعل ﴿ٱلَّذِىٓ﴾ نعتًا لما قبله فالوصل متعين إعرابًا، وإن قُدِّر خبرًا لمحذوف فالوقف كافٍ وموافق لرأس الآية."
             }
-          ]
+          ],
+          "qiraatBasis": "varies_by_qiraat",
+          "qiraatNote": "الرفع (كاف)، وقراءة زيد بن علي بجر الثلاثة (عالمِ...) (ليس بوقف)"
         },
         {
           "scholar": "النحاس",
@@ -5749,9 +5751,19 @@
               "ibtidaDemo": "﴿ خَلَقَهُۥ وَبَدَأَ خَلْقَ ٱلْإِنسَـٰنِ مِن طِينٍۢ ﴾ [قف على: طِينْ]",
               "meaningAtWaqf": "تمام جملة الصلة بإثبات إحسانه سبحانه لكل شيء على القراءة بسكون اللام ورفع القاف (خَلْقُهُ).",
               "meaningAtIbtida": "الابتداء بـ(خَلْقُهُ) مرفوعًا على أنه خبر لمبتدأ مضمر تقديره: (ذلك خَلْقُهُ).",
-              "meaningIfConnected": "على قراءة الجمهور بفتح اللام (خَلَقَهُ) فعلًا ماضيًا أو بسكونها مع النصب (خَلْقَهُ) على البدل لا يوقف على ﴿شَىْءٍ﴾ بل يوصل بـ﴿خَلَقَهُۥ﴾."
+              "meaningIfConnected": "على قراءة الجمهور بفتح اللام (خَلَقَهُ) فعلًا ماضيًا أو بسكونها مع النصب (خَلْقَهُ) على البدل لا يوقف على ﴿شَىْءٍ﴾ بل يوصل بـ﴿خَلَقَهُۥ﴾.",
+              "qiraatOverrides": [
+                {
+                  "ayah": 7,
+                  "wordIndex": 5,
+                  "hafsWord": "خَلَقَهُۥ",
+                  "modifiedWord": "خَلْقُهُۥ"
+                }
+              ]
             }
-          ]
+          ],
+          "qiraatBasis": "non_hafs_only",
+          "qiraatNote": "جائز على قراءة إسكان اللام ورفع «خَلْقُهُ»"
         }
       ],
       "aiSuggestion": null,
@@ -5811,15 +5823,42 @@
               "meaningAtWaqf": "تمام الإخبار عن إتقان الله وإحسانه لكل ما خلقه على القراءتين المتواترتين: فتح اللام فعلًا ماضيًا في موضع نصب نعتًا لـ﴿شَىْءٍ﴾، وسكون اللام مصدرًا منصوبًا على بدل الاشتمال من ﴿كُلَّ شَىْءٍ﴾.",
               "meaningAtIbtida": "الابتداء بذكر بدء خلق الإنسان من طين تخصيصًا له بالذكر بعد التعميم.",
               "meaningIfConnected": "الوقف كافٍ لاستقلال الجملة الأولى، والوصل سائغ للعطف بالواو."
+            },
+            {
+              "verdict": "كاف",
+              "isQila": false,
+              "waqfSegmentWords": [
+                1,
+                5
+              ],
+              "ibtidaSegmentWords": [
+                6,
+                10
+              ],
+              "waqfDemo": "تلاوة: ﴿ ٱلَّذِىٓ أَحْسَنَ كُلَّ شَىْءٍ خَلَقَهُۥ ﴾ [قف على: خَلَقَهْ]",
+              "ibtidaDemo": "﴿ وَبَدَأَ خَلْقَ ٱلْإِنسَـٰنِ مِن طِينٍۢ ﴾ [قف على: طِينْ]",
+              "meaningAtWaqf": "تمام الإخبار بإحسان خلق كل شيء على قراءة إسكان اللام ونصب ﴿خَلْقَهُۥ﴾ بدل اشتمال.",
+              "meaningAtIbtida": "الابتداء بذكر بدء خلق الإنسان من طين.",
+              "meaningIfConnected": "الوقف كافٍ على قراءة ابن كثير وأبي عمرو وابن عامر بسكون اللام ونصبها.",
+              "qiraatOverrides": [
+                {
+                  "ayah": 7,
+                  "wordIndex": 5,
+                  "hafsWord": "خَلَقَهُۥ",
+                  "modifiedWord": "خَلْقَهُۥ"
+                }
+              ]
             }
-          ]
+          ],
+          "qiraatBasis": "varies_by_qiraat",
+          "qiraatNote": "كاف على (خلَقَه) و(خَلْقَه) نصبًا، وبرفع (خَلْقُه) (ليس بوقف)"
         }
       ],
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -6269,8 +6308,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -6479,8 +6518,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -6698,8 +6737,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -6962,7 +7001,9 @@
               "meaningAtIbtida": "الابتداء بأسلوب الشرط ﴿وَلَوْ تَرَىٰٓ﴾ لبيان فظاعة حالهم عند المثول بين يدي ربهم.",
               "meaningIfConnected": "الوقف متعين لتمام الكلام وموافقة رأس الآية."
             }
-          ]
+          ],
+          "qiraatBasis": "hafs_and_others",
+          "qiraatNote": "قراءة العامة (تُرجَعون) للمفعول، وزيد بن علي (تَرجِعون) للفاعل"
         },
         {
           "scholar": "النحاس",
@@ -7537,8 +7578,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -7834,11 +7875,12 @@
                 5,
                 8
               ],
-              "waqfDemo": "تلاوة: ﴿ تَتَجَافَىٰ جُنُوبُهُمْ عَنِ ٱلْمَضَاجِعِ ﴾ [قف على: ٱلْمَضَاجِعْ]",
+              "waqfDemo": "تلاوة: ﴿ إِنَّمَا يُؤْمِنُ بِـَٔايَـٰتِنَا ٱلَّذِينَ إِذَا ذُكِّرُوا۟ بِهَا خَرُّوا۟ سُجَّدًۭا وَسَبَّحُوا۟ بِحَمْدِ رَبِّهِمْ وَهُمْ لَا يَسْتَكْبِرُونَ ۩ ۝١٥ تَتَجَافَىٰ جُنُوبُهُمْ عَنِ ٱلْمَضَاجِعِ ﴾ [قف على: ٱلْمَضَاجِعْ]",
               "ibtidaDemo": "﴿ يَدْعُونَ رَبَّهُمْ خَوْفًۭا وَطَمَعًۭا ﴾ [قف على: وَطَمَعَا]",
               "meaningAtWaqf": "تمام الجملة الفعلية الواصفة لتجافي جنوبهم عن المضاجع، ولا سيما لمن وصل رأس الآية قبلها على الحالية.",
               "meaningAtIbtida": "الابتداء بجملة ﴿يَدْعُونَ رَبَّهُمْ خَوْفًۭا وَطَمَعًۭا﴾ على الاستئناف البياني.",
-              "meaningIfConnected": "الوصل راجح عند من أعرب جملة ﴿يَدْعُونَ﴾ حالًا من ضمير ﴿جُنُوبُهُمْ﴾، والوقف كافٍ على تقدير الاستئناف."
+              "meaningIfConnected": "الوصل راجح عند من أعرب جملة ﴿يَدْعُونَ﴾ حالًا من ضمير ﴿جُنُوبُهُمْ﴾، والوقف كافٍ على تقدير الاستئناف.",
+              "waqfStartAyah": 15
             }
           ]
         }
@@ -8217,7 +8259,9 @@
               "meaningAtIbtida": "الابتداء بـ﴿جَزَآءًۢ﴾ على تقدير فعل محذوف: (يُجزون جزاءً بما كانوا يعملون).",
               "meaningIfConnected": "إن أُعرب ﴿جَزَآءًۢ﴾ مفعولًا من أجله أو مصدرًا معمولًا لما قبله كما عند الخليل وسيبويه فالوصل متعين ولا يوقف على ﴿أَعْيُنٍۢ﴾."
             }
-          ]
+          ],
+          "qiraatBasis": "hafs_and_others",
+          "qiraatNote": "قراءة حمزة (أُخْفِيْ) مضارعًا مسندًا للمتكلم، والباقون ماضيًا"
         },
         {
           "scholar": "النحاس",
@@ -8485,8 +8529,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -8979,8 +9023,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -9367,8 +9411,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -9478,8 +9522,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -9670,7 +9714,9 @@
           "book": "علل الوقوف",
           "page": "2/810-811",
           "comment": "لمن قرأ {لما} مخففًا، لأن التقدير: لصبرهم ويقينهم. ومن شدد {لما} لا يمكنه العطف، لأن يقينهم لم يكن يختص بظرف في حال دون حال. والصبر قد يتبدل بالشكر. وهو فيهما موقن.",
-          "demosAndMeanings": null
+          "demosAndMeanings": null,
+          "qiraatBasis": "varies_by_qiraat",
+          "qiraatNote": "لا يوقف على تخفيف «لِمَا» بخلاف تشديد «لَمَّا»"
         },
         {
           "scholar": "الأشموني",
@@ -9712,14 +9758,16 @@
               "meaningAtIbtida": "استئناف الثناء عليهم بأنهم كانوا في جميع أحوالهم موقنين بآيات الله.",
               "meaningIfConnected": "الوقف كافٍ؛ لأن يقينهم بالآيات ثابت مطلقاً لا يختص بظرف الصبر وحده، أما على قراءة كسر اللام وتخفيف الميم (لِمَا صبروا) فقيل لا يوقف لعطف الإيقان على الصبر."
             }
-          ]
+          ],
+          "qiraatBasis": "hafs_and_others",
+          "qiraatNote": "كافٍ على القراءتين في تشديد «لَمَّا» وتخفيفها"
         }
       ],
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -9997,8 +10045,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -10092,8 +10140,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -10390,8 +10438,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },

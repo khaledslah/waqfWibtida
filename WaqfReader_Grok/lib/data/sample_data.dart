@@ -8,6 +8,7 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../models/waqf_models.dart';
+import '../utils/qiraat_word_diff.dart';
 import '../utils/report_service.dart';
 
 const catalogAssetPath = 'assets/app_feed/catalog.json';
@@ -124,6 +125,29 @@ class AppFeedBundle {
     return <int>[start, end];
   }
 
+  static List<QiraatWordOverride> _parseQiraatOverrides(dynamic raw) {
+    if (raw is! List || raw.isEmpty) return const <QiraatWordOverride>[];
+    final out = <QiraatWordOverride>[];
+    for (final item in raw) {
+      if (item is! Map) continue;
+      final ay = _parsePositiveInt(item['ayah']);
+      final wi = _parsePositiveInt(item['wordIndex']);
+      final hw = item['hafsWord']?.toString() ?? '';
+      final mw = item['modifiedWord']?.toString().trim() ?? '';
+      if (ay != null && wi != null && hw.isNotEmpty && mw.isNotEmpty) {
+        out.add(
+          QiraatWordOverride(
+            ayahNumber: ay,
+            wordIndex: wi,
+            hafsWord: hw,
+            modifiedWord: mw,
+          ),
+        );
+      }
+    }
+    return out;
+  }
+
   static List<WaqfDemoAndMeaning> _parseDemosAndMeanings(dynamic raw) {
     if (raw is! List || raw.isEmpty) return const <WaqfDemoAndMeaning>[];
     final out = <WaqfDemoAndMeaning>[];
@@ -150,6 +174,7 @@ class AppFeedBundle {
           meaningAtWaqf: map['meaningAtWaqf']?.toString() ?? '',
           meaningAtIbtida: map['meaningAtIbtida']?.toString() ?? '',
           meaningIfConnected: map['meaningIfConnected']?.toString() ?? '',
+          qiraatOverrides: _parseQiraatOverrides(map['qiraatOverrides']),
         ),
       );
     }
@@ -186,6 +211,25 @@ class AppFeedBundle {
     final stopsJson = json['stops'] as List<dynamic>? ?? const [];
     final ayahsJson = json['ayahs'] as List<dynamic>? ?? const [];
 
+    final wordUthmaniByPos = <(int, int), (String?, String?)>{};
+    for (final rawAyah in ayahsJson) {
+      if (rawAyah is! Map) continue;
+      final aNum = rawAyah['number'] as int? ?? 0;
+      final wordsList = rawAyah['words'] as List<dynamic>? ?? const [];
+      for (var wi = 0; wi < wordsList.length; wi++) {
+        final w = wordsList[wi];
+        if (w is! Map) continue;
+        final um = w['uthmaniMark'] as String?;
+        final umn = w['uthmaniMarkName'] as String?;
+        if (um != null || umn != null) {
+          final parsedIdx = w['index'] is int
+              ? w['index'] as int
+              : int.tryParse('${w['index'] ?? ''}');
+          wordUthmaniByPos[(aNum, parsedIdx ?? (wi + 1))] = (um, umn);
+        }
+      }
+    }
+
     final stops = <WaqfStop>[
       for (final raw in stopsJson)
         WaqfStop(
@@ -200,6 +244,14 @@ class AppFeedBundle {
           fallbackLabel: raw['label'] as String?,
           fallbackReason: raw['reason'] as String?,
           inUthmaniMushaf: raw['inUthmaniMushaf'] as bool? ?? false,
+          uthmaniMark: (raw['uthmaniMark'] as String?) ??
+              wordUthmaniByPos[
+                      (raw['ayah'] as int, raw['wordIndex'] as int? ?? 1)]
+                  ?.$1,
+          uthmaniMarkName: (raw['uthmaniMarkName'] as String?) ??
+              wordUthmaniByPos[
+                      (raw['ayah'] as int, raw['wordIndex'] as int? ?? 1)]
+                  ?.$2,
           isVerseEnd: raw['isVerseEnd'] as bool? ?? false,
           textPage: raw['textPage'] as int?,
           aiSuggestion: raw['aiSuggestion'] as String?,
@@ -342,10 +394,12 @@ class ReaderController extends ChangeNotifier {
   final Set<String> favorites = <String>{};
   final Set<String> verified = <String>{};
 
-  bool hideVerseEnd = true;
+  bool hideVerseEnd = false;
   bool hideUthmani = true;
   String? selectedScholar;
   ReviewListFilter reviewFilter = ReviewListFilter.all;
+  bool reviewAllSurahs = false;
+  bool loadingAllSurahs = false;
 
   /// Fixed bottom stop panel (معاني / أقوال).
   bool stopDockOpen = false;
@@ -660,7 +714,7 @@ class ReaderController extends ChangeNotifier {
 
   static String? _defaultSelectedId(List<WaqfStop> stops) {
     for (final s in stops) {
-      if (!s.isVerseEnd && !s.inUthmaniMushaf) return s.id;
+      if (s.differsFromUthmani) return s.id;
     }
     return stops.isNotEmpty ? stops.first.id : null;
   }
@@ -673,8 +727,8 @@ class ReaderController extends ChangeNotifier {
     if (selectedScholar != null && !stop.hasScholar(selectedScholar!)) {
       return false;
     }
-    if (hideVerseEnd && isVerseEnd(stop)) return false;
-    if (hideUthmani && stop.inUthmaniMushaf) return false;
+    if (stopDemoGroupsFor(stop).length > 1) return true;
+    if (hideUthmani && !stop.differsFromUthmani) return false;
     return true;
   }
 
@@ -693,6 +747,14 @@ class ReaderController extends ChangeNotifier {
     if (selectedScholar == scholar) return;
     selectedScholar = scholar;
     _cachedVisibleStopCount = null;
+    if (stopDockOpen && selectedStopId != null) {
+      final stop = stopById(selectedStopId!);
+      if (stop != null) {
+        selectedDemoScholar = scholar;
+        selectedDemoIndex = 0;
+        _ensureDemoHighlightForDock(stop);
+      }
+    }
     notifyListeners();
   }
 
@@ -730,13 +792,34 @@ class ReaderController extends ChangeNotifier {
     _showStopInDock(stop, tab: stopDockTab);
   }
 
+  /// Selects [stopId] and initializes its prioritized demo highlight for modal sheets.
+  void prepareStopForSheet(String stopId, {bool notify = true}) {
+    final stop = stopById(stopId);
+    if (stop == null) return;
+    if (selectedStopId != stop.id) {
+      selectedStopId = stop.id;
+      selectedDemoScholar = null;
+      selectedDemoIndex = 0;
+    } else {
+      selectedDemoIndex ??= 0;
+    }
+    _ensureDemoHighlightForDock(stop);
+    if (notify) notifyListeners();
+  }
+
   void _showStopInDock(WaqfStop stop, {required int tab}) {
+    final sameStop = selectedStopId == stop.id;
     selectedStopId = stop.id;
     stopDockOpen = true;
     var t = tab.clamp(0, 1);
     if (!stop.hasDemosAndMeanings) t = 1;
     stopDockTab = t;
-    selectedDemoIndex = 0;
+    if (!sameStop) {
+      selectedDemoScholar = null;
+      selectedDemoIndex = 0;
+    } else {
+      selectedDemoIndex ??= 0;
+    }
     _ensureDemoHighlightForDock(stop);
     notifyListeners();
   }
@@ -766,24 +849,38 @@ class ReaderController extends ChangeNotifier {
       selectedDemoIndex = null;
       return;
     }
-    ScholarOpinion? op;
-    if (selectedScholar != null && selectedScholar!.isNotEmpty) {
-      final preferred = stop.opinionForScholar(selectedScholar);
-      if (preferred != null && preferred.demosAndMeanings.isNotEmpty) {
-        op = preferred;
+    final activeFilter = selectedScholar;
+    final currentScholar = selectedDemoScholar;
+    if (currentScholar != null &&
+        currentScholar.isNotEmpty &&
+        (activeFilter == null ||
+            activeFilter.isEmpty ||
+            activeFilter == currentScholar)) {
+      final kept = stop.opinionForScholar(currentScholar);
+      if (kept != null && kept.demosAndMeanings.isNotEmpty) {
+        demoHighlightActive = true;
+        selectedDemoScholar = kept.scholar;
+        final maxIdx = kept.demosAndMeanings.length - 1;
+        selectedDemoIndex =
+            (selectedDemoIndex ?? 0).clamp(0, maxIdx < 0 ? 0 : maxIdx);
+        return;
       }
     }
-    if (op == null) {
-      for (final o in stop.opinions) {
-        if (o.demosAndMeanings.isNotEmpty) {
-          op = o;
-          break;
-        }
+    final groups = stopDemoGroupsFor(stop);
+    if (groups.isNotEmpty) {
+      demoHighlightActive = true;
+      selectedDemoScholar = groups.first.scholar;
+      selectedDemoIndex = groups.first.demoIndex;
+      return;
+    }
+    for (final o in stop.opinions) {
+      if (o.demosAndMeanings.isNotEmpty) {
+        demoHighlightActive = true;
+        selectedDemoScholar = o.scholar;
+        selectedDemoIndex = 0;
+        return;
       }
     }
-    demoHighlightActive = true;
-    selectedDemoScholar = op?.scholar;
-    selectedDemoIndex ??= 0;
   }
 
   void setStopDockTab(int tab) {
@@ -880,6 +977,241 @@ class ReaderController extends ChangeNotifier {
     selectedDemoScholar = scholar;
     selectedDemoIndex = demoIndex;
     notifyListeners();
+  }
+
+  /// Distinct-span demo variants for [stop].
+  /// When filtered to one scholar, returns all demos for that scholar.
+  /// When "الكل" is active, groups across all scholars by distinct highlight span.
+  List<StopDemoGroup> stopDemoGroupsFor(WaqfStop stop) {
+    final key = selectedScholar ?? '';
+    final perStop = _demoGroupsCache[stop] ??= <String, List<StopDemoGroup>>{};
+    return perStop[key] ??= _computeStopDemoGroups(stop);
+  }
+
+  /// Per-stop-object cache (identity-keyed; drops automatically when a surah reloads).
+  final Expando<Map<String, List<StopDemoGroup>>> _demoGroupsCache =
+      Expando<Map<String, List<StopDemoGroup>>>('demoGroups');
+
+  /// Swipe to step through [stopId]'s distinct-span demos (no circular wrap).
+  /// Opens المعاني if needed; returns false at ends or if < 2 variants.
+  bool swipeStopVariant(String stopId, int delta) {
+    if (delta == 0) return false;
+    final stop = stopById(stopId);
+    if (stop == null) return false;
+    final groups = stopDemoGroupsFor(stop);
+    if (groups.length < 2) return false;
+    final cur = activeStopDemoGroupIndex(stop);
+    final next = cur + (delta > 0 ? 1 : -1);
+    if (next < 0 || next >= groups.length) return false;
+    if (!stopDockOpen || selectedStopId != stopId) {
+      _showStopInDock(stop, tab: 0);
+    } else if (stopDockTab != 0) {
+      stopDockTab = 0;
+      _ensureDemoHighlightForDock(stop);
+    }
+    selectDemo(scholar: groups[next].scholar, demoIndex: groups[next].demoIndex);
+    return true;
+  }
+
+  /// Swipe in the dock: walk this stop's distinct-span demos first whenever
+  /// demo highlighting is active, then continue to the next/previous visible stop.
+  bool stepDemoOrStop(int delta) {
+    if (!stopDockOpen || delta == 0) return false;
+    final dir = delta > 0 ? 1 : -1;
+    final id = selectedStopId;
+    final stop = id == null ? null : stopById(id);
+    if (stop != null && demoHighlightActive) {
+      final groups = stopDemoGroupsFor(stop);
+      if (groups.length > 1) {
+        final next = activeStopDemoGroupIndex(stop) + dir;
+        if (next >= 0 && next < groups.length) {
+          selectDemo(
+            scholar: groups[next].scholar,
+            demoIndex: groups[next].demoIndex,
+          );
+          return true;
+        }
+      }
+    }
+    final moved = stepVisibleStop(delta);
+    if (moved && dir < 0 && demoHighlightActive) {
+      final ns = selectedStopId == null ? null : stopById(selectedStopId!);
+      if (ns != null) {
+        final g = stopDemoGroupsFor(ns);
+        if (g.length > 1) {
+          selectDemo(scholar: g.last.scholar, demoIndex: g.last.demoIndex);
+        }
+      }
+    }
+    return moved;
+  }
+
+  /// Faint preview: role of a non-active demo variant covering this word
+  /// (only where the active demo does not already highlight it).
+  ({StopDemoGroup group, DemoSegmentRole role})? ghostDemoForWord({
+    required int ayahNumber,
+    required int wordIndex,
+  }) {
+    if (!demoHighlightActive || !stopDockOpen || selectedStopId == null) {
+      return null;
+    }
+    final stop = stopById(selectedStopId!);
+    if (stop == null) return null;
+    final groups = stopDemoGroupsFor(stop);
+    if (groups.length < 2) return null;
+    if (demoRoleForWord(ayahNumber: ayahNumber, wordIndex: wordIndex) !=
+        DemoSegmentRole.none) {
+      return null;
+    }
+    final activeIdx = activeStopDemoGroupIndex(stop);
+    for (var i = 0; i < groups.length; i++) {
+      if (i == activeIdx) continue;
+      final g = groups[i];
+      final (minA, maxA) = g.demo.ayahExtent(stop.ayah);
+      if (ayahNumber < minA || ayahNumber > maxA) continue;
+      final role = demoSegmentRoleForWord(
+        demo: g.demo,
+        wordIndex: wordIndex,
+        ayahNumber: ayahNumber,
+        stopAyah: stop.ayah,
+      );
+      if (role != DemoSegmentRole.none) return (group: g, role: role);
+    }
+    return null;
+  }
+
+  static List<StopDemoGroup> _orderHafsBeforeQiraat(
+    List<StopDemoGroup> groups,
+  ) {
+    if (groups.length <= 1) return groups;
+    final hafs = <StopDemoGroup>[];
+    final qiraat = <StopDemoGroup>[];
+    for (final g in groups) {
+      if (g.demo.qiraatOverrides.isEmpty) {
+        hafs.add(g);
+      } else {
+        qiraat.add(g);
+      }
+    }
+    if (hafs.isEmpty || qiraat.isEmpty) return groups;
+    return [...hafs, ...qiraat];
+  }
+
+  static List<StopDemoGroup> _orderCrossAyahFirst(
+    List<StopDemoGroup> groups,
+    int stopAyah,
+  ) {
+    if (groups.length <= 1) return groups;
+    final cross = <StopDemoGroup>[];
+    final local = <StopDemoGroup>[];
+    for (final g in groups) {
+      if (g.demo.spansOtherAyahs(stopAyah)) {
+        cross.add(g);
+      } else {
+        local.add(g);
+      }
+    }
+    if (cross.isEmpty || local.isEmpty) {
+      return _orderHafsBeforeQiraat(groups);
+    }
+    return [
+      ..._orderHafsBeforeQiraat(cross),
+      ..._orderHafsBeforeQiraat(local),
+    ];
+  }
+
+  String _demoGroupKey(WaqfStop stop, WaqfDemoAndMeaning demo) {
+    final base = demo.spanKeyForStop(stop.ayah);
+    final mods = demo.qiraatOverrides;
+    if (mods.isEmpty) return base;
+    final sig = mods
+        .map((m) => '${m.ayahNumber}:${m.wordIndex}=${m.modifiedWord}')
+        .join(',');
+    return '$base|q:$sig';
+  }
+
+  List<StopDemoGroup> _computeStopDemoGroups(WaqfStop stop) {
+    final filter = selectedScholar;
+    if (filter != null && filter.isNotEmpty) {
+      final op = stop.opinionForScholar(filter);
+      if (op == null || op.demosAndMeanings.isEmpty) return const [];
+      return _orderCrossAyahFirst(
+        [
+          for (var i = 0; i < op.demosAndMeanings.length; i++)
+            StopDemoGroup(
+              scholar: op.scholar,
+              demoIndex: i,
+              opinion: op,
+              demo: op.demosAndMeanings[i],
+              scholars: [op.scholar],
+              members: [(scholar: op.scholar, demoIndex: i)],
+              spanKey: _demoGroupKey(stop, op.demosAndMeanings[i]),
+            ),
+        ],
+        stop.ayah,
+      );
+    }
+
+    final bySpan = <String, _MutableDemoGroup>{};
+    for (final op in stop.opinions) {
+      for (var i = 0; i < op.demosAndMeanings.length; i++) {
+        final demo = op.demosAndMeanings[i];
+        final key = _demoGroupKey(stop, demo);
+        final existing = bySpan[key];
+        if (existing == null) {
+          bySpan[key] = _MutableDemoGroup(
+            scholar: op.scholar,
+            demoIndex: i,
+            opinion: op,
+            demo: demo,
+            scholars: [op.scholar],
+            members: [(scholar: op.scholar, demoIndex: i)],
+            spanKey: key,
+          );
+        } else {
+          if (!existing.scholars.contains(op.scholar)) {
+            existing.scholars.add(op.scholar);
+          }
+          existing.members.add((scholar: op.scholar, demoIndex: i));
+        }
+      }
+    }
+    return _orderCrossAyahFirst(
+      [for (final g in bySpan.values) g.freeze()],
+      stop.ayah,
+    );
+  }
+
+  int activeStopDemoGroupIndex(WaqfStop stop) {
+    final groups = stopDemoGroupsFor(stop);
+    if (groups.isEmpty) return -1;
+    final active = activeDemoHighlight;
+    final activeIdx = selectedDemoIndex ?? 0;
+    final activeSch = selectedDemoScholar ?? selectedScholar;
+    final direct = groups.indexWhere(
+      (g) => g.matchesSelection(activeSch, activeIdx),
+    );
+    if (direct >= 0) return direct;
+    if (active != null) {
+      final spanKey = _demoGroupKey(stop, active);
+      final bySpan = groups.indexWhere((g) => g.spanKey == spanKey);
+      if (bySpan >= 0) return bySpan;
+    }
+    return 0;
+  }
+
+  bool stepStopDemo(int delta) {
+    if (delta == 0 || selectedStopId == null) return false;
+    final stop = stopById(selectedStopId!);
+    if (stop == null) return false;
+    final groups = stopDemoGroupsFor(stop);
+    if (groups.length <= 1) return false;
+    final cur = activeStopDemoGroupIndex(stop);
+    final next = cur + (delta > 0 ? 1 : -1);
+    if (next < 0 || next >= groups.length) return false;
+    final target = groups[next];
+    selectDemo(scholar: target.scholar, demoIndex: target.demoIndex);
+    return true;
   }
 
   /// Visible stops that have demos, in mushaf reading order (ayah, word).
@@ -1025,6 +1357,40 @@ class ReaderController extends ChangeNotifier {
     return demos[idx];
   }
 
+  final Expando<List<QiraatWordOverride>> _qiraatOverridesCache =
+      Expando<List<QiraatWordOverride>>('qiraatOverrides');
+
+  List<QiraatWordOverride> qiraatOverridesFor(
+    WaqfStop stop,
+    WaqfDemoAndMeaning demo,
+  ) {
+    return _qiraatOverridesCache[demo] ??= extractQiraatWordOverrides(
+      stop: stop,
+      demo: demo,
+      ayahs: yusufAyahs,
+    );
+  }
+
+  List<QiraatWordOverride> get activeQiraatWordOverrides {
+    if (!demoHighlightActive) return const <QiraatWordOverride>[];
+    final stop = selectedStopId == null ? null : stopById(selectedStopId!);
+    final demo = activeDemoHighlight;
+    if (stop == null || demo == null) return const <QiraatWordOverride>[];
+    return qiraatOverridesFor(stop, demo);
+  }
+
+  QiraatWordOverride? qiraatOverrideForWord({
+    required int ayahNumber,
+    required int wordIndex,
+  }) {
+    final mods = activeQiraatWordOverrides;
+    if (mods.isEmpty) return null;
+    for (final m in mods) {
+      if (m.ayahNumber == ayahNumber && m.wordIndex == wordIndex) return m;
+    }
+    return null;
+  }
+
   DemoSegmentRole demoRoleForWord({
     required int ayahNumber,
     required int wordIndex,
@@ -1105,6 +1471,61 @@ class ReaderController extends ChangeNotifier {
     notifyListeners();
   }
 
+  void setReviewAllSurahs(bool all) {
+    if (reviewAllSurahs == all) return;
+    reviewAllSurahs = all;
+    notifyListeners();
+    if (all) {
+      unawaited(ensureAllSurahsLoaded());
+    }
+  }
+
+  Future<void> ensureAllSurahsLoaded() async {
+    if (loadingAllSurahs || _disposed) return;
+    final missing = [
+      for (final entry in catalog)
+        if (AppFeedBundle.getCached(entry.asset) == null) entry,
+    ];
+    if (missing.isEmpty) return;
+    loadingAllSurahs = true;
+    notifyListeners();
+    try {
+      for (final entry in missing) {
+        if (_disposed) return;
+        try {
+          await AppFeedBundle.loadAsset(entry.asset);
+        } catch (_) {}
+      }
+    } finally {
+      loadingAllSurahs = false;
+      if (!_disposed) notifyListeners();
+    }
+  }
+
+  String surahNameFor(int surahNumber) {
+    if (surahNumber == currentSurah && currentSurahName.isNotEmpty) {
+      return currentSurahName;
+    }
+    for (final entry in catalog) {
+      if (entry.number == surahNumber) return entry.name;
+    }
+    return 'سورة ${arabicDigits(surahNumber)}';
+  }
+
+  List<WaqfStop> get reviewPoolStops {
+    if (!reviewAllSurahs) return sampleStops;
+    final all = <WaqfStop>[];
+    for (final entry in catalog) {
+      final cached = AppFeedBundle.getCached(entry.asset);
+      if (cached != null) {
+        all.addAll(cached.stops);
+      } else if (entry.number == currentSurah) {
+        all.addAll(sampleStops);
+      }
+    }
+    return all.isEmpty ? sampleStops : all;
+  }
+
   void setTab(int value) {
     if (tab == value) return;
     tab = value;
@@ -1117,30 +1538,140 @@ class ReaderController extends ChangeNotifier {
     notifyListeners();
   }
 
-  List<WaqfStop> get reviewItems {
-    final filter = reviewFilter;
-    if (filter == ReviewListFilter.all) {
-      return List<WaqfStop>.from(sampleStops);
+  bool matchesReviewFilter(WaqfStop s, ReviewListFilter filter) {
+    if (selectedScholar != null && !s.hasScholar(selectedScholar!)) {
+      return false;
     }
-    return sampleStops.where((s) {
-      switch (filter) {
-        case ReviewListFilter.all:
-          return true;
-        case ReviewListFilter.needsAttention:
-          return s.needsReview || sentToReview.contains(s.id);
-        case ReviewListFilter.favorites:
-          return favorites.contains(s.id);
-        case ReviewListFilter.verified:
-          return verified.contains(s.id);
-        case ReviewListFilter.unsettled:
-          return s.symbol == StopSymbol.unsettled || s.hasNullVerdict;
-        case ReviewListFilter.ai:
-          return s.hasAiSuggestion;
-        case ReviewListFilter.uthmani:
-          return s.inUthmaniMushaf;
-        case ReviewListFilter.verseEnd:
-          return s.isVerseEnd;
-      }
-    }).toList();
+    switch (filter) {
+      case ReviewListFilter.all:
+        return true;
+      case ReviewListFilter.extraOverUthmani:
+        return s.differsFromUthmani;
+      case ReviewListFilter.multiDemo:
+        return stopDemoGroupsFor(s).length > 1;
+      case ReviewListFilter.crossAyahDemo:
+        return s.opinions.any(
+          (o) => o.demosAndMeanings.any((d) => d.spansOtherAyahs(s.ayah)),
+        );
+      case ReviewListFilter.withDemos:
+        return s.hasDemosAndMeanings;
+      case ReviewListFilter.scholarDisagreement:
+        return s.hasAllowedVsNonAllowedDisagreement;
+      case ReviewListFilter.withQila:
+        return s.hasQilaFace;
+      case ReviewListFilter.qiraat:
+        return s.hasQiraatVariation;
+      case ReviewListFilter.uthmani:
+        return s.inUthmaniMushaf;
+      case ReviewListFilter.favorites:
+        return favorites.contains(s.id);
+      case ReviewListFilter.needsAttention:
+        return sentToReview.contains(s.id);
+      case ReviewListFilter.verified:
+        return verified.contains(s.id);
+    }
   }
+
+  int reviewCountForFilter(ReviewListFilter filter) {
+    final pool = reviewPoolStops;
+    if (filter == ReviewListFilter.all && selectedScholar == null) {
+      return pool.length;
+    }
+    var count = 0;
+    for (final s in pool) {
+      if (matchesReviewFilter(s, filter)) count++;
+    }
+    return count;
+  }
+
+  List<WaqfStop> get reviewItems {
+    final pool = reviewPoolStops;
+    final filter = reviewFilter;
+    if (filter == ReviewListFilter.all && selectedScholar == null) {
+      return List<WaqfStop>.from(pool);
+    }
+    return [
+      for (final s in pool)
+        if (matchesReviewFilter(s, filter)) s,
+    ];
+  }
+}
+
+class StopDemoGroup {
+  const StopDemoGroup({
+    required this.scholar,
+    required this.demoIndex,
+    required this.opinion,
+    required this.demo,
+    required this.scholars,
+    required this.members,
+    required this.spanKey,
+  });
+
+  final String scholar;
+  final int demoIndex;
+  final ScholarOpinion opinion;
+  final WaqfDemoAndMeaning demo;
+  final List<String> scholars;
+  final List<({String scholar, int demoIndex})> members;
+  final String spanKey;
+
+  bool matchesSelection(String? activeScholar, int activeDemoIndex) {
+    return members.any(
+      (m) => m.scholar == activeScholar && m.demoIndex == activeDemoIndex,
+    );
+  }
+
+  /// Best opinion in this group carrying Qira'at metadata/cues so a leading
+  /// non-Qira'at scholar (e.g. السجاوندي) never hides another member's Qira'at badge.
+  ScholarOpinion? qiraatOpinion(WaqfStop stop) {
+    if (opinion.hasQiraatInfo &&
+        (opinion.qiraatNote?.trim().isNotEmpty == true ||
+            opinion.isQiraatDependent)) {
+      return opinion;
+    }
+    ScholarOpinion? best;
+    for (final sName in scholars) {
+      final op = stop.opinionForScholar(sName);
+      if (op == null || !op.hasQiraatInfo) continue;
+      final hasExplicit = op.qiraatNote?.trim().isNotEmpty == true;
+      if (op.isQiraatDependent && hasExplicit) return op;
+      if (best == null ||
+          (op.isQiraatDependent && !best.isQiraatDependent) ||
+          (hasExplicit && best.qiraatNote?.trim().isNotEmpty != true)) {
+        best = op;
+      }
+    }
+    return best ?? (opinion.hasQiraatInfo ? opinion : null);
+  }
+}
+
+class _MutableDemoGroup {
+  _MutableDemoGroup({
+    required this.scholar,
+    required this.demoIndex,
+    required this.opinion,
+    required this.demo,
+    required this.scholars,
+    required this.members,
+    required this.spanKey,
+  });
+
+  final String scholar;
+  final int demoIndex;
+  final ScholarOpinion opinion;
+  final WaqfDemoAndMeaning demo;
+  final List<String> scholars;
+  final List<({String scholar, int demoIndex})> members;
+  final String spanKey;
+
+  StopDemoGroup freeze() => StopDemoGroup(
+        scholar: scholar,
+        demoIndex: demoIndex,
+        opinion: opinion,
+        demo: demo,
+        scholars: List<String>.unmodifiable(scholars),
+        members: List<({String scholar, int demoIndex})>.unmodifiable(members),
+        spanKey: spanKey,
+      );
 }

@@ -103,7 +103,7 @@ class _StopDetailDockState extends State<StopDetailDock>
     _stopHintNow();
 
     final goNext = dx > 0;
-    final moved = controller.stepVisibleStop(goNext ? 1 : -1);
+    final moved = controller.stepDemoOrStop(goNext ? 1 : -1);
     if (moved) {
       HapticFeedback.selectionClick();
     } else {

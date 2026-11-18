@@ -765,7 +765,9 @@ void main() {
         find.text('يختلف باختلاف القراءات · يبنى الوقف على رفع بعوضة ونصبها وجرها'),
         findsOneWidget,
       );
-      expect(find.byIcon(Icons.menu_book_outlined), findsOneWidget);
+      // Plain text line only — no boxed chip, no icon; empty opinion hidden.
+      expect(find.byType(Container), findsOneWidget);
+      expect(find.byIcon(Icons.menu_book_outlined), findsNothing);
     });
   });
 }

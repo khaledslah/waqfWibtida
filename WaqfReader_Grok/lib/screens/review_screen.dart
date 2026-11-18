@@ -17,76 +17,269 @@ class ReviewScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final items = controller.reviewItems;
+    final poolCount = controller.reviewPoolStops.length;
 
-    return ListView.builder(
-      key: ValueKey<String>(
-        'review-${controller.currentSurah}-${controller.reviewFilter.name}',
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        _ReviewFilterBar(
+          controller: controller,
+          shownCount: items.length,
+          poolCount: poolCount,
+        ),
+        if (controller.loadingAllSurahs)
+          const LinearProgressIndicator(
+            minHeight: 2,
+            color: AppColors.forest,
+            backgroundColor: AppColors.hairline,
+          ),
+        Expanded(
+          child: ListView.builder(
+            key: ValueKey<String>(
+              'review-${controller.reviewAllSurahs ? "all" : controller.currentSurah}-${controller.reviewFilter.name}-${controller.selectedScholar ?? ""}',
+            ),
+            padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
+            itemCount: items.isEmpty ? 1 : items.length,
+            itemBuilder: (context, index) {
+              if (items.isEmpty) {
+                return const _EmptyReview();
+              }
+              final stop = items[index];
+              final pageTarget = _resolveReviewPageTarget(
+                context,
+                stop,
+                controller.selectedScholar,
+              );
+              return Padding(
+                padding: const EdgeInsets.only(bottom: 8),
+                child: _ReviewCard(
+                  stop: stop,
+                  surahName: controller.surahNameFor(stop.surah),
+                  favorite: controller.isFavorite(stop.id),
+                  verified: controller.isVerified(stop.id),
+                  sent: controller.isSent(stop.id),
+                  variantCount: controller.stopDemoGroupsFor(stop).length,
+                  onOpen: () async {
+                    if (stop.surah != controller.currentSurah) {
+                      await controller.loadSurah(stop.surah);
+                    }
+                    if (context.mounted) {
+                      showWaqfSheet(context, controller, stop.id);
+                    }
+                  },
+                  onToggleFavorite: () => controller.toggleFavorite(stop.id),
+                  onToggleVerified: () => controller.toggleVerified(stop.id),
+                  pageLabel: pageTarget?.label,
+                  onOpenPage: pageTarget?.onTap,
+                ),
+              );
+            },
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+/// Top underline dropdown filter bar matching the main Mushaf page [WaqfFilterBar].
+class _ReviewFilterBar extends StatelessWidget {
+  const _ReviewFilterBar({
+    required this.controller,
+    required this.shownCount,
+    required this.poolCount,
+  });
+
+  final ReaderController controller;
+  final int shownCount;
+  final int poolCount;
+
+  @override
+  Widget build(BuildContext context) {
+    final activeScholar = controller.selectedScholar;
+    final scholarLabel = activeScholar ?? 'الكل';
+    final scholarMenuValue = activeScholar ?? ReaderController.scholarAllSentinel;
+    final rawSurah = controller.currentSurahName;
+    final shortSurah = rawSurah.isEmpty
+        ? 'السورة'
+        : 'سورة ${rawSurah.replaceFirst(RegExp(r'^سورة\s*'), '')}';
+    final scopeLabel = controller.reviewAllSurahs ? 'كل السور' : shortSurah;
+    final activeFilter = controller.reviewFilter;
+    final activeFilterLabel =
+        '${activeFilter.labelAr} (${arabicDigits(controller.reviewCountForFilter(activeFilter))})';
+
+    return Material(
+      color: AppColors.parchment,
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(12, 0, 12, 8),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Row(
+              children: [
+                Expanded(
+                  flex: 4,
+                  child: _UnderlineDropdown<bool>(
+                    tooltip: 'نطاق العرض',
+                    initialValue: controller.reviewAllSurahs,
+                    label: scopeLabel,
+                    onSelected: controller.setReviewAllSurahs,
+                    itemBuilder: (_) => [
+                      PopupMenuItem<bool>(
+                        value: false,
+                        child: Text(
+                          shortSurah,
+                          style: AppText.ui(
+                            size: 14,
+                            weight: !controller.reviewAllSurahs
+                                ? FontWeight.w700
+                                : FontWeight.w500,
+                            color: AppColors.forestDeep,
+                          ),
+                        ),
+                      ),
+                      PopupMenuItem<bool>(
+                        value: true,
+                        child: Text(
+                          'كل السور',
+                          style: AppText.ui(
+                            size: 14,
+                            weight: controller.reviewAllSurahs
+                                ? FontWeight.w700
+                                : FontWeight.w500,
+                            color: AppColors.forestDeep,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(width: 6),
+                Expanded(
+                  flex: 6,
+                  child: _UnderlineDropdown<ReviewListFilter>(
+                    tooltip: 'تصفية الوقوف',
+                    initialValue: activeFilter,
+                    label: activeFilterLabel,
+                    onSelected: controller.setReviewFilter,
+                    itemBuilder: (_) => [
+                      for (final filter in ReviewListFilter.values)
+                        PopupMenuItem<ReviewListFilter>(
+                          value: filter,
+                          child: Text(
+                            '${filter.labelAr} (${arabicDigits(controller.reviewCountForFilter(filter))})',
+                            style: AppText.ui(
+                              size: 14,
+                              weight: filter == activeFilter
+                                  ? FontWeight.w700
+                                  : FontWeight.w500,
+                              color: AppColors.forestDeep,
+                            ),
+                          ),
+                        ),
+                    ],
+                  ),
+                ),
+                const SizedBox(width: 6),
+                Expanded(
+                  flex: 4,
+                  child: _UnderlineDropdown<String>(
+                    tooltip: 'اختيار العالم الرئيسي',
+                    initialValue: scholarMenuValue,
+                    label: scholarLabel,
+                    onSelected: controller.setSelectedScholarFromMenu,
+                    itemBuilder: (_) => [
+                      for (final sOpt in ReaderController.scholarOptions)
+                        PopupMenuItem<String>(
+                          value: sOpt ?? ReaderController.scholarAllSentinel,
+                          child: Text(
+                            sOpt ?? 'الكل (الافتراضي)',
+                            style: AppText.ui(
+                              size: 14,
+                              weight: (sOpt == activeScholar) ||
+                                      (sOpt == null && activeScholar == null)
+                                  ? FontWeight.w700
+                                  : FontWeight.w500,
+                              color: AppColors.forestDeep,
+                            ),
+                          ),
+                        ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 6),
+            Text(
+              'يظهر ${arabicDigits(shownCount)} من ${arabicDigits(poolCount)} · '
+              '${controller.reviewAllSurahs ? "جميع السور" : controller.currentSurahName} · '
+              'العرض حسب: ${activeScholar ?? "جميع العلماء"}',
+              style: AppText.ui(size: 11, color: AppColors.muted, height: 1.3),
+            ),
+          ],
+        ),
       ),
-      padding: const EdgeInsets.fromLTRB(16, 16, 16, 24),
-      itemCount: items.isEmpty ? 2 : items.length + 1,
-      itemBuilder: (context, index) {
-        if (index == 0) {
-          return Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Text(
-                'المراجعة',
+    );
+  }
+}
+
+class _UnderlineDropdown<T extends Object> extends StatelessWidget {
+  const _UnderlineDropdown({
+    required this.tooltip,
+    required this.initialValue,
+    required this.label,
+    required this.onSelected,
+    required this.itemBuilder,
+  });
+
+  final String tooltip;
+  final T initialValue;
+  final String label;
+  final PopupMenuItemSelected<T> onSelected;
+  final PopupMenuItemBuilder<T> itemBuilder;
+
+  @override
+  Widget build(BuildContext context) {
+    return PopupMenuButton<T>(
+      tooltip: tooltip,
+      initialValue: initialValue,
+      onSelected: onSelected,
+      itemBuilder: itemBuilder,
+      child: Container(
+        constraints: const BoxConstraints(minHeight: 44),
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+          border: Border(
+            bottom: BorderSide(
+              color: AppColors.forest.withOpacity(0.35),
+              width: 1,
+            ),
+          ),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Flexible(
+              child: Text(
+                label,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                textAlign: TextAlign.center,
                 style: AppText.ui(
-                  size: 22,
+                  size: 12,
                   weight: FontWeight.w700,
                   color: AppColors.forestDeep,
+                  height: 1.1,
                 ),
               ),
-              const SizedBox(height: 4),
-              Text(
-                '${controller.currentSurahName} · ${arabicDigits(items.length)} / ${arabicDigits(controller.sampleStops.length)}',
-                style: AppText.ui(size: 14, color: AppColors.muted),
-              ),
-              const SizedBox(height: 12),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: [
-                    for (final filter in ReviewListFilter.values) ...[
-                      _FilterChip(
-                        label: filter.labelAr,
-                        selected: controller.reviewFilter == filter,
-                        onTap: () => controller.setReviewFilter(filter),
-                      ),
-                      const SizedBox(width: 8),
-                    ],
-                  ],
-                ),
-              ),
-              const SizedBox(height: 16),
-            ],
-          );
-        }
-        if (items.isEmpty) {
-          return const _EmptyReview();
-        }
-        final stop = items[index - 1];
-        final pageTarget = _resolveReviewPageTarget(
-          context,
-          stop,
-          controller.selectedScholar,
-        );
-        return Padding(
-          padding: const EdgeInsets.only(bottom: 8),
-          child: _ReviewCard(
-            stop: stop,
-            surahName: controller.currentSurahName,
-            favorite: controller.isFavorite(stop.id),
-            verified: controller.isVerified(stop.id),
-            sent: controller.isSent(stop.id),
-            onOpen: () => showWaqfSheet(context, controller, stop.id),
-            onToggleFavorite: () => controller.toggleFavorite(stop.id),
-            onToggleVerified: () => controller.toggleVerified(stop.id),
-            pageLabel: pageTarget?.label,
-            onOpenPage: pageTarget?.onTap,
-          ),
-        );
-      },
+            ),
+            const Icon(
+              Icons.expand_more,
+              size: 18,
+              color: AppColors.muted,
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
@@ -138,48 +331,6 @@ class ReviewScreen extends StatelessWidget {
   );
 }
 
-class _FilterChip extends StatelessWidget {
-  const _FilterChip({
-    required this.label,
-    required this.selected,
-    required this.onTap,
-  });
-
-  final String label;
-  final bool selected;
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    return Material(
-      color: selected ? AppColors.chipFill : AppColors.white,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(18),
-        side: BorderSide(
-          color: selected ? AppColors.forest : AppColors.hairline,
-          width: selected ? 1.4 : 1,
-        ),
-      ),
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(18),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-          child: Text(
-            label,
-            style: AppText.ui(
-              size: 12,
-              weight: FontWeight.w700,
-              color: selected ? AppColors.forest : AppColors.muted,
-              height: 1.1,
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-}
-
 class _EmptyReview extends StatelessWidget {
   const _EmptyReview();
 
@@ -215,6 +366,7 @@ class _ReviewCard extends StatelessWidget {
     required this.favorite,
     required this.verified,
     required this.sent,
+    required this.variantCount,
     required this.onOpen,
     required this.onToggleFavorite,
     required this.onToggleVerified,
@@ -227,6 +379,7 @@ class _ReviewCard extends StatelessWidget {
   final bool favorite;
   final bool verified;
   final bool sent;
+  final int variantCount;
   final VoidCallback onOpen;
   final VoidCallback onToggleFavorite;
   final VoidCallback onToggleVerified;
@@ -240,11 +393,23 @@ class _ReviewCard extends StatelessWidget {
       'آية ${arabicDigits(stop.ayah)}',
       stop.label,
     ];
+    final hasCrossAyah = stop.opinions.any(
+      (o) => o.demosAndMeanings.any((d) => d.spansOtherAyahs(stop.ayah)),
+    );
     final statusTags = <Widget>[
-      if (stop.symbol == StopSymbol.unsettled || stop.hasNullVerdict)
-        const _Tag(label: 'غير محسوم', amber: true),
-      if (stop.hasAiSuggestion) const _Tag(label: 'مقترح AI', amber: false),
-      if (sent) const _Tag(label: 'أُرسلت', amber: false),
+      if (stop.differsFromUthmani)
+        const _Tag(label: 'زائد عن المصحف', amber: true),
+      if (stop.inUthmaniMushaf &&
+          stop.uthmaniMark != null &&
+          stop.uthmaniMark!.trim().isNotEmpty)
+        _Tag(label: 'مصحف: ${stop.uthmaniMark!.trim()}', amber: false),
+      if (variantCount > 1)
+        _Tag(label: '${arabicDigits(variantCount)} أمثلة', amber: false),
+      if (hasCrossAyah) const _Tag(label: 'عبر الآيات', amber: true),
+      if (stop.hasAllowedVsNonAllowedDisagreement)
+        const _Tag(label: 'تعدد أقوال', amber: true),
+      if (stop.hasQiraatVariation) const _Tag(label: 'قراءات', amber: true),
+      if (sent) const _Tag(label: 'مُبلّغ عنها', amber: true),
     ];
 
     return Material(

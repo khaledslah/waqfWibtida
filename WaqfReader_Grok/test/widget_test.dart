@@ -13,7 +13,7 @@ Future<void> _pumpUntilReady(WidgetTester tester) async {
       () => Future<void>.delayed(const Duration(milliseconds: 20)),
     );
     await tester.pump(const Duration(milliseconds: 50));
-    if (find.textContaining('رؤوس الآي').evaluate().isNotEmpty) {
+    if (find.textContaining('وقف المصحف').evaluate().isNotEmpty) {
       await tester.pump();
       return;
     }
@@ -37,7 +37,7 @@ void main() {
 
     expect(find.text('وقف وابتداء'), findsOneWidget);
     expect(find.text('الفاتحة'), findsWidgets);
-    expect(find.textContaining('رؤوس الآي'), findsOneWidget);
+    expect(find.textContaining('وقف المصحف'), findsOneWidget);
     expect(find.byTooltip('اختيار العالم الرئيسي'), findsOneWidget);
 
     await tester.tap(find.byTooltip('عرض وقوف الفاتحة'));

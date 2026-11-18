@@ -2884,8 +2884,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -2979,8 +2979,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -5473,8 +5473,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -5649,7 +5649,9 @@
               "meaningAtIbtida": "عطف بيان خذلانهم التام وعدم وجود من ينصرهم أو يدفع عنهم عذاب الله.",
               "meaningIfConnected": "الوصل أولى لتعاطف الجمل بالفاء وتكامل تصوير هلاكهم وانقطاع النصرة عنهم عند رأس الآية."
             }
-          ]
+          ],
+          "qiraatBasis": "hafs_and_others",
+          "qiraatNote": "جائز على قراءتي (خَطِيئَاتِهِمْ) كحفص و(خَطَايَاهُمْ) لأبي عمرو"
         }
       ],
       "aiSuggestion": null,

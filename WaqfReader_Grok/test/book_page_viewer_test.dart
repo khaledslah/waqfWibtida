@@ -386,7 +386,7 @@ void main() {
             () => Future<void>.delayed(const Duration(milliseconds: 20)),
           );
           await tester.pump(const Duration(milliseconds: 50));
-          if (find.textContaining('رؤوس الآي').evaluate().isNotEmpty) {
+          if (find.textContaining('وقف المصحف').evaluate().isNotEmpty) {
             await tester.pump();
             loaded = true;
             break;
@@ -400,10 +400,6 @@ void main() {
               .toList();
           fail('Not loaded; found texts: $texts, spinners: ${find.byType(CircularProgressIndicator).evaluate().length}');
         }
-
-        // Turn off hide so verse-end stop on s1-a1-w4 (الرحيم) is visible
-        await tester.tap(find.textContaining('رؤوس الآي'));
-        await tester.pumpAndSettle();
 
         // Open ayah options → stop sheet (badge tap now opens fixed dock)
         final ayahMark = find.bySemanticsLabel(RegExp(r'خيارات الآية'));

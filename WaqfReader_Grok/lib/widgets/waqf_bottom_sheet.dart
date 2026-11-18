@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../data/sample_data.dart';
 import '../models/waqf_models.dart';
 import '../theme/app_theme.dart';
 import '../utils/book_page_service.dart';
 import '../utils/waqf_share.dart';
+import 'demo_meanings_popup.dart';
 import 'page_image_viewer.dart';
 import 'stop_badge.dart';
 
@@ -123,6 +125,16 @@ class WaqfBottomSheet extends StatefulWidget {
 }
 
 class _WaqfBottomSheetState extends State<WaqfBottomSheet> {
+  late int _tab = widget.includeDemos ? 0 : 1;
+  Offset? _origin;
+  int? _pointer;
+
+  @override
+  void initState() {
+    super.initState();
+    widget.controller.prepareStopForSheet(widget.stopId, notify: false);
+  }
+
   Future<void> _openPage(int? page) async {
     if (page == null) return;
     await showSajawandiPage(context, page: page);
@@ -131,6 +143,30 @@ class _WaqfBottomSheetState extends State<WaqfBottomSheet> {
   void _dismiss() {
     if (Navigator.of(context).canPop()) {
       Navigator.of(context).pop();
+    }
+  }
+
+  void _onPointerDown(PointerDownEvent e) {
+    _origin = e.position;
+    _pointer = e.pointer;
+  }
+
+  void _onPointerUp(PointerUpEvent e) {
+    if (_pointer != e.pointer || _origin == null) return;
+    final dx = e.position.dx - _origin!.dx;
+    final dy = e.position.dy - _origin!.dy;
+    _origin = null;
+    _pointer = null;
+    if (dx.abs() < 48 || dx.abs() <= dy.abs()) return;
+    if (widget.controller.stepStopDemo(dx > 0 ? 1 : -1)) {
+      HapticFeedback.selectionClick();
+    }
+  }
+
+  void _onPointerCancel(PointerCancelEvent e) {
+    if (_pointer == e.pointer) {
+      _origin = null;
+      _pointer = null;
     }
   }
 
@@ -154,59 +190,171 @@ class _WaqfBottomSheetState extends State<WaqfBottomSheet> {
           ),
           Align(
             alignment: Alignment.bottomCenter,
-            child: Material(
-              color: AppColors.sheet,
-              borderRadius:
-                  const BorderRadius.vertical(top: Radius.circular(28)),
-              clipBehavior: Clip.antiAlias,
-              child: SizedBox(
-                height: height,
-                child: ListenableBuilder(
-                  listenable: widget.controller,
-                  builder: (context, _) {
-                    final stop = widget.controller.stopById(widget.stopId);
-                    if (stop == null) return const _MissingStop();
-                    final sent = widget.controller.isSent(stop.id);
-                    final fav = widget.controller.isFavorite(stop.id);
-                    return Column(
-                      children: [
-                        const _DragHandle(),
-                        Expanded(
-                          child: SelectionArea(
-                            child: SingleChildScrollView(
-                              padding: EdgeInsets.fromLTRB(
-                                20,
-                                4,
-                                20,
-                                20 + bottom,
-                              ),
-                              child: WaqfStopSheetBody(
-                                controller: widget.controller,
-                                stop: stop,
-                                selectedScholar:
-                                    widget.controller.selectedScholar,
-                                includeDemos: widget.includeDemos,
-                                isVerseEnd:
-                                    widget.controller.isVerseEnd(stop),
-                                favorite: fav,
-                                sent: sent,
-                                onToggleFavorite: () => widget.controller
-                                    .toggleFavorite(stop.id),
-                                onToggleReport: () =>
-                                    confirmAndToggleStopReport(
-                                      context,
-                                      widget.controller,
-                                      stop.id,
+            child: SizedBox(
+              height: height,
+              child: ListenableBuilder(
+                listenable: widget.controller,
+                builder: (context, _) {
+                  final dark = widget.controller.panelDark;
+                  final bg = dark ? AppColors.sheet : AppColors.parchment;
+                  final line = dark ? AppColors.sheetLine : AppColors.hairline;
+                  final accent = dark ? AppColors.goldSoft : AppColors.forest;
+                  final muted = dark ? AppColors.sheetMuted : AppColors.muted;
+                  final tone = DockTone.of(dark);
+                  final stop = widget.controller.stopById(widget.stopId);
+
+                  return Material(
+                    color: bg,
+                    borderRadius:
+                        const BorderRadius.vertical(top: Radius.circular(28)),
+                    clipBehavior: Clip.antiAlias,
+                    child: stop == null
+                        ? const _MissingStop()
+                        : () {
+                            final hasDemos = stop.hasDemosAndMeanings;
+                            final tab = hasDemos ? _tab : 1;
+                            final sent = widget.controller.isSent(stop.id);
+                            final fav = widget.controller.isFavorite(stop.id);
+                            final demo = widget.controller.activeDemoHighlight;
+
+                            return Listener(
+                              behavior: HitTestBehavior.translucent,
+                              onPointerDown: _onPointerDown,
+                              onPointerUp: _onPointerUp,
+                              onPointerCancel: _onPointerCancel,
+                              child: Column(
+                                children: [
+                                  _DragHandle(dark: dark),
+                                  Padding(
+                                    padding:
+                                        const EdgeInsets.fromLTRB(12, 0, 8, 4),
+                                    child: Row(
+                                      children: [
+                                        Expanded(
+                                          child: _SheetTab(
+                                            label: 'آراء العلماء',
+                                            selected: tab == 1,
+                                            enabled: true,
+                                            dark: dark,
+                                            onTap: () =>
+                                                setState(() => _tab = 1),
+                                          ),
+                                        ),
+                                        const SizedBox(width: 8),
+                                        Expanded(
+                                          child: _SheetTab(
+                                            label: 'المعاني',
+                                            selected: tab == 0,
+                                            enabled: hasDemos,
+                                            dark: dark,
+                                            onTap: hasDemos
+                                                ? () => setState(() => _tab = 0)
+                                                : null,
+                                          ),
+                                        ),
+                                        IconButton(
+                                          tooltip:
+                                              dark ? 'سمة فاتحة' : 'سمة داكنة',
+                                          onPressed: widget
+                                              .controller.togglePanelTheme,
+                                          icon: Icon(
+                                            dark
+                                                ? Icons.light_mode_outlined
+                                                : Icons.dark_mode_outlined,
+                                            color: accent,
+                                          ),
+                                        ),
+                                        IconButton(
+                                          tooltip: 'إغلاق',
+                                          onPressed: _dismiss,
+                                          icon: Icon(Icons.close, color: muted),
+                                        ),
+                                      ],
                                     ),
-                                onOpenPage: _openPage,
+                                  ),
+                                  Divider(height: 1, thickness: 1, color: line),
+                                  Expanded(
+                                    child: tab == 0 && hasDemos
+                                        ? SingleChildScrollView(
+                                            padding: EdgeInsets.fromLTRB(
+                                              12,
+                                              4,
+                                              12,
+                                              20 + bottom,
+                                            ),
+                                            child: Column(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.stretch,
+                                              children: [
+                                                DemoMeaningsBox(
+                                                  controller: widget.controller,
+                                                  showClose: false,
+                                                  dark: dark,
+                                                ),
+                                                if (demo != null &&
+                                                    (demo.waqfDemo
+                                                            .trim()
+                                                            .isNotEmpty ||
+                                                        demo.ibtidaDemo
+                                                            .trim()
+                                                            .isNotEmpty))
+                                                  _SheetDemoPreviewCard(
+                                                    controller:
+                                                        widget.controller,
+                                                    demo: demo,
+                                                    tone: tone,
+                                                  ),
+                                              ],
+                                            ),
+                                          )
+                                        : SelectionArea(
+                                            child: SingleChildScrollView(
+                                              padding: EdgeInsets.fromLTRB(
+                                                20,
+                                                12,
+                                                20,
+                                                20 + bottom,
+                                              ),
+                                              child: WaqfStopSheetBody(
+                                                controller: widget.controller,
+                                                stop: stop,
+                                                selectedScholar: widget
+                                                    .controller.selectedScholar,
+                                                includeDemos: false,
+                                                isVerseEnd: widget.controller
+                                                    .isVerseEnd(stop),
+                                                favorite: fav,
+                                                sent: sent,
+                                                onToggleFavorite: () => widget
+                                                    .controller
+                                                    .toggleFavorite(stop.id),
+                                                onToggleReport: () =>
+                                                    confirmAndToggleStopReport(
+                                                  context,
+                                                  widget.controller,
+                                                  stop.id,
+                                                ),
+                                                onOpenPage: _openPage,
+                                                onSelectQiraatDemo:
+                                                    (scholar, demoIndex) {
+                                                  setState(() => _tab = 0);
+                                                  widget.controller.selectDemo(
+                                                    scholar: scholar,
+                                                    demoIndex: demoIndex,
+                                                  );
+                                                },
+                                                showAiSection: false,
+                                                dark: dark,
+                                              ),
+                                            ),
+                                          ),
+                                  ),
+                                ],
                               ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    );
-                  },
-                ),
+                            );
+                          }(),
+                  );
+                },
               ),
             ),
           ),
@@ -285,7 +433,9 @@ class WaqfStopShareMenu extends StatelessWidget {
 }
 
 class _DragHandle extends StatelessWidget {
-  const _DragHandle();
+  const _DragHandle({this.dark = true});
+
+  final bool dark;
 
   @override
   Widget build(BuildContext context) {
@@ -293,11 +443,164 @@ class _DragHandle extends StatelessWidget {
       child: Container(
         width: 40,
         height: 4,
-        margin: const EdgeInsets.only(top: 10, bottom: 12),
+        margin: const EdgeInsets.only(top: 10, bottom: 6),
         decoration: BoxDecoration(
-          color: AppColors.white.withOpacity(0.45),
+          color: dark
+              ? AppColors.white.withOpacity(0.45)
+              : AppColors.hairline,
           borderRadius: BorderRadius.circular(4),
         ),
+      ),
+    );
+  }
+}
+
+class _SheetTab extends StatelessWidget {
+  const _SheetTab({
+    required this.label,
+    required this.selected,
+    required this.enabled,
+    required this.dark,
+    required this.onTap,
+  });
+
+  final String label;
+  final bool selected;
+  final bool enabled;
+  final bool dark;
+  final VoidCallback? onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final accent = dark ? AppColors.goldSoft : AppColors.forest;
+    final muted = dark ? AppColors.sheetMuted : AppColors.muted;
+    final line = dark ? AppColors.sheetLine : AppColors.hairline;
+    final color =
+        !enabled ? muted.withOpacity(0.4) : (selected ? accent : muted);
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: enabled ? onTap : null,
+        child: Opacity(
+          opacity: enabled ? 1 : 0.45,
+          child: Container(
+            constraints: const BoxConstraints(minHeight: 40),
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              border: Border(
+                bottom: BorderSide(
+                  color: selected && enabled ? accent : line,
+                  width: selected && enabled ? 2 : 1,
+                ),
+              ),
+            ),
+            child: Text(
+              label,
+              style: AppText.ui(
+                size: 13,
+                weight: selected && enabled ? FontWeight.w700 : FontWeight.w500,
+                color: color,
+                height: 1.1,
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _SheetDemoPreviewCard extends StatelessWidget {
+  const _SheetDemoPreviewCard({
+    required this.controller,
+    required this.demo,
+    required this.tone,
+  });
+
+  final ReaderController controller;
+  final WaqfDemoAndMeaning demo;
+  final DockTone tone;
+
+  static final RegExp _uthmaniDecor = RegExp(r'[\u0640\u06D6-\u06ED]');
+  static String _normDemoToken(String w) => w.replaceAll(_uthmaniDecor, '');
+
+  TextSpan _buildDemoSpan(String raw) {
+    final mods = controller.activeQiraatWordOverrides;
+    if (mods.isEmpty) {
+      return TextSpan(
+        text: raw,
+        style: AppText.quran(size: 20, color: tone.quran, height: 1.6),
+      );
+    }
+    final byHafs = <String, String>{
+      for (final m in mods) _normDemoToken(m.hafsWord): m.modifiedWord,
+    };
+    final parts = raw.split(' ');
+    final baseStyle = AppText.quran(size: 20, color: tone.quran, height: 1.6);
+    final modStyle = AppText.quran(
+      size: 20,
+      weight: FontWeight.w400,
+      color: tone.dark ? AppColors.qiraatSoft : AppColors.qiraat,
+      height: 1.6,
+    );
+    return TextSpan(
+      children: [
+        for (var i = 0; i < parts.length; i++) ...[
+          if (i > 0) TextSpan(text: ' ', style: baseStyle),
+          () {
+            final key = _normDemoToken(parts[i]);
+            final swapped = byHafs[key];
+            return TextSpan(
+              text: swapped ?? parts[i],
+              style: swapped != null ? modStyle : baseStyle,
+            );
+          }(),
+        ],
+      ],
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final w = demo.waqfDemo.trim();
+    final ib = demo.ibtidaDemo.trim();
+    return Container(
+      margin: const EdgeInsets.fromLTRB(4, 6, 4, 0),
+      padding: const EdgeInsets.fromLTRB(12, 10, 12, 10),
+      decoration: BoxDecoration(
+        color: tone.raised,
+        borderRadius: BorderRadius.circular(10),
+        border: Border.all(color: tone.line),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          if (w.isNotEmpty) ...[
+            Text(
+              'موضع الوقف',
+              style: AppText.ui(
+                size: 11,
+                weight: FontWeight.w700,
+                color: AppColors.gold,
+              ),
+            ),
+            const SizedBox(height: 2),
+            Text.rich(_buildDemoSpan(w)),
+          ],
+          if (ib.isNotEmpty) ...[
+            if (w.isNotEmpty) const SizedBox(height: 8),
+            Text(
+              'موضع الابتداء',
+              style: AppText.ui(
+                size: 11,
+                weight: FontWeight.w700,
+                color: AppColors.forest,
+              ),
+            ),
+            const SizedBox(height: 2),
+            Text.rich(_buildDemoSpan(ib)),
+          ],
+        ],
       ),
     );
   }
@@ -317,6 +620,7 @@ class WaqfStopSheetBody extends StatelessWidget {
     required this.onToggleFavorite,
     required this.onToggleReport,
     required this.onOpenPage,
+    this.onSelectQiraatDemo,
     this.showAiSection = true,
     this.dark = true,
   });
@@ -331,6 +635,7 @@ class WaqfStopSheetBody extends StatelessWidget {
   final VoidCallback onToggleFavorite;
   final VoidCallback onToggleReport;
   final Future<void> Function(int? page) onOpenPage;
+  final void Function(String scholar, int demoIndex)? onSelectQiraatDemo;
   final bool showAiSection;
   final bool dark;
 
@@ -458,6 +763,7 @@ class WaqfStopSheetBody extends StatelessWidget {
           emptyText: 'لا حكم مسجّل.',
           sajawandiPage: stop.textPage,
           onOpenPage: onOpenPage,
+          onSelectQiraatDemo: onSelectQiraatDemo,
           tone: tone,
         ),
         if (showAiSection) ...[
@@ -591,6 +897,7 @@ class _OpinionTable extends StatelessWidget {
     required this.emptyText,
     required this.sajawandiPage,
     required this.onOpenPage,
+    this.onSelectQiraatDemo,
     required this.tone,
   });
 
@@ -601,6 +908,7 @@ class _OpinionTable extends StatelessWidget {
   final String emptyText;
   final int? sajawandiPage;
   final Future<void> Function(int? page) onOpenPage;
+  final void Function(String scholar, int demoIndex)? onSelectQiraatDemo;
   final DockTone tone;
 
   @override
@@ -631,6 +939,7 @@ class _OpinionTable extends StatelessWidget {
                 includeDemos: includeDemos,
                 sajawandiPage: sajawandiPage,
                 onOpenPage: onOpenPage,
+                onSelectQiraatDemo: onSelectQiraatDemo,
                 tone: tone,
               ),
             ),
@@ -649,6 +958,7 @@ class _OpinionRow extends StatelessWidget {
     required this.includeDemos,
     required this.sajawandiPage,
     required this.onOpenPage,
+    this.onSelectQiraatDemo,
     required this.tone,
   });
 
@@ -658,6 +968,7 @@ class _OpinionRow extends StatelessWidget {
   final bool includeDemos;
   final int? sajawandiPage;
   final Future<void> Function(int? page) onOpenPage;
+  final void Function(String scholar, int demoIndex)? onSelectQiraatDemo;
   final DockTone tone;
 
   @override
@@ -761,8 +1072,12 @@ class _OpinionRow extends StatelessWidget {
                 controller.activeDemoHighlight,
                 opinion.demosAndMeanings[d],
               ),
+              tone: tone,
               onTap: () {
-                controller.select(stop.id);
+                if (!controller.stopDockOpen ||
+                    controller.selectedStopId != stop.id) {
+                  controller.select(stop.id);
+                }
                 controller.selectDemo(
                   scholar: opinion.scholar,
                   demoIndex: d,
@@ -868,11 +1183,13 @@ class _DemoMeaningCard extends StatelessWidget {
     required this.demo,
     required this.selected,
     required this.onTap,
+    this.tone = DockTone.darkSheet,
   });
 
   final WaqfDemoAndMeaning demo;
   final bool selected;
   final VoidCallback onTap;
+  final DockTone tone;
 
   @override
   Widget build(BuildContext context) {
@@ -895,6 +1212,7 @@ class _DemoMeaningCard extends StatelessWidget {
         ('المعنى عند الوصل', demo.meaningIfConnected.trim()),
     ];
 
+    final cardAccent = tone.dark ? AppColors.goldSoft : tone.accent;
     return Material(
       color: Colors.transparent,
       child: InkWell(
@@ -902,16 +1220,14 @@ class _DemoMeaningCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
         child: DecoratedBox(
           decoration: BoxDecoration(
-            color: selected
-                ? AppColors.goldSoft.withOpacity(0.12)
-                : AppColors.sheet,
+            color: selected ? cardAccent.withOpacity(0.12) : tone.bg,
             borderRadius: BorderRadius.circular(10),
             border: Border.all(
               color: selected
-                  ? AppColors.goldSoft
+                  ? cardAccent
                   : (demo.isQila
-                      ? AppColors.goldSoft.withOpacity(0.55)
-                      : AppColors.sheetLine),
+                      ? cardAccent.withOpacity(0.55)
+                      : tone.line),
               width: selected ? 1.4 : 1,
             ),
           ),
@@ -928,7 +1244,7 @@ class _DemoMeaningCard extends StatelessWidget {
                         style: AppText.ui(
                           size: 12,
                           weight: FontWeight.w700,
-                          color: AppColors.goldSoft,
+                          color: cardAccent,
                         ),
                       ),
                     ),
@@ -952,7 +1268,7 @@ class _DemoMeaningCard extends StatelessWidget {
                     style: AppText.ui(
                       size: 11,
                       weight: FontWeight.w600,
-                      color: AppColors.sheetMuted,
+                      color: tone.muted,
                     ),
                   ),
                   const SizedBox(height: 2),
@@ -961,7 +1277,7 @@ class _DemoMeaningCard extends StatelessWidget {
                     textAlign: TextAlign.start,
                     style: AppText.ui(
                       size: 13,
-                      color: AppColors.sheetText,
+                      color: tone.text,
                       height: 1.55,
                     ),
                   ),
@@ -1073,49 +1389,58 @@ class QiraatBadge extends StatelessWidget {
     super.key,
     required this.opinion,
     required this.tone,
+    this.demo,
   });
 
   final ScholarOpinion opinion;
   final DockTone tone;
+  final WaqfDemoAndMeaning? demo;
 
   @override
   Widget build(BuildContext context) {
-    final badge = opinion.qiraatBadgeLabel;
+    final hasDemoQiraat = demo?.isQiraatDemo == true;
+    final demoCue = demo?.qiraatCue;
+    final badge =
+        opinion.qiraatBadgeLabel ?? (hasDemoQiraat ? 'قراءات' : null);
     if (badge == null) return const SizedBox.shrink();
-    final note = opinion.qiraatNote?.trim();
-    final text = (note != null && note.isNotEmpty) ? '$badge · $note' : badge;
-    final dependent = opinion.isQiraatDependent;
-    final borderColor = dependent
-        ? (tone.bg == AppColors.sheet ? AppColors.goldSoft : AppColors.gold)
-        : tone.line;
-    final textColor = dependent ? tone.accent : tone.muted;
+    final explicitNote = opinion.qiraatNote?.trim();
+    final note = (explicitNote != null && explicitNote.isNotEmpty)
+        ? explicitNote
+        : (demoCue ?? opinion.effectiveQiraatNote);
+    final text =
+        (note != null && note.isNotEmpty && note != badge) ? '$badge · $note' : badge;
+    final dependent = opinion.isQiraatDependent || hasDemoQiraat;
+    final textColor = dependent
+        ? (tone.dark ? AppColors.qiraatSoft : AppColors.qiraat)
+        : tone.muted;
 
+    // Plain text line — no box, no border.
     return Align(
       alignment: AlignmentDirectional.centerStart,
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-        decoration: BoxDecoration(
-          color: borderColor.withOpacity(0.12),
-          borderRadius: BorderRadius.circular(8),
-          border: Border.all(color: borderColor.withOpacity(0.55)),
-        ),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Icon(Icons.menu_book_outlined, size: 13, color: textColor),
-            const SizedBox(width: 5),
-            Flexible(
-              child: Text(
-                text,
-                style: AppText.ui(
-                  size: 11,
-                  weight: FontWeight.w600,
-                  color: textColor,
-                ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Container(
+            width: 3,
+            height: 14,
+            decoration: BoxDecoration(
+              color: textColor,
+              borderRadius: BorderRadius.circular(2),
+            ),
+          ),
+          const SizedBox(width: 6),
+          Flexible(
+            child: Text(
+              text,
+              style: AppText.ui(
+                size: 12,
+                weight: FontWeight.w600,
+                color: textColor,
+                height: 1.4,
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

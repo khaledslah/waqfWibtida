@@ -32,6 +32,13 @@ abstract final class AppColors {
   static const demoWaqfMarker = Color(0xCCC4A15A);
   /// Marker line for demo ibtida segment.
   static const demoIbtidaMarker = Color(0xB31A5C48);
+  /// Qira'at (non-Hafs) word swap: royal purple — clearly distinct from
+  /// the gold waqf, green ibtida, and red harakat.
+  static const qiraat = Color(0xFF6B3FA0);
+  /// Lighter royal purple for dark panels.
+  static const qiraatSoft = Color(0xFFC9B0EC);
+  /// Faint purple wash behind a swapped word outside any demo segment.
+  static const qiraatWash = Color(0x146B3FA0);
   static const hairline = Color(0xFFE4DCC8);
   static const dash = Color(0xFF4A5850);
   static const muted = Color(0xFF7A756C);
@@ -101,6 +108,32 @@ abstract final class AppText {
       );
     }
     return GoogleFonts.cairo(
+      fontSize: size,
+      fontWeight: weight,
+      color: color,
+      height: height,
+    );
+  }
+
+  /// Quran text in a monochrome (non-COLR) font. Amiri Quran paints its
+  /// harakat in fixed red, so a text colour can't recolour them; this plain
+  /// Amiri draws letters *and* marks in [color]. Used for Qira'at-changed
+  /// letters so the changed i'rab really takes the highlight colour.
+  static TextStyle quranPlain({
+    double size = 26,
+    FontWeight weight = FontWeight.w400,
+    Color color = AppColors.ink,
+    double height = 1.45,
+  }) {
+    if (!GoogleFonts.config.allowRuntimeFetching) {
+      return TextStyle(
+        fontSize: size,
+        fontWeight: weight,
+        color: color,
+        height: height,
+      );
+    }
+    return GoogleFonts.amiri(
       fontSize: size,
       fontWeight: weight,
       color: color,

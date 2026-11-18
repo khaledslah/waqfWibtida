@@ -4535,11 +4535,12 @@
                 5,
                 10
               ],
-              "waqfDemo": "تلاوة: ﴿ مُّتَّكِـِٔينَ فِيهَا عَلَى ٱلْأَرَآئِكِ ﴾ [قف على: ٱلْأَرَآئِكْ]",
+              "waqfDemo": "تلاوة: ﴿ وَجَزَىٰهُم بِمَا صَبَرُوا۟ جَنَّةًۭ وَحَرِيرًۭا ۝١٢ مُّتَّكِـِٔينَ فِيهَا عَلَى ٱلْأَرَآئِكِ ﴾ [قف على: ٱلْأَرَآئِكْ]",
               "ibtidaDemo": "﴿ لَا يَرَوْنَ فِيهَا شَمْسًۭا وَلَا زَمْهَرِيرًۭا ﴾ [قف على: زَمْهَرِيرَا]",
               "meaningAtWaqf": "تمام وصف حال الأبرار في الجنة باتكائهم على الأرائك، وهي السُّرُر في الحِجال.",
               "meaningAtIbtida": "ابتداءٌ بجملة مستأنفة تبيّن اعتدال هواء الجنة ونفي أذى الحرّ والبرد الشديدين عنها.",
-              "meaningIfConnected": "الوصل سائغٌ على جعل جملة ﴿لَا يَرَوْنَ﴾ حالاً ثانيةً من ضمير الأبرار، أو حالاً من الضمير في ﴿مُّتَّكِـِٔينَ﴾."
+              "meaningIfConnected": "الوصل سائغٌ على جعل جملة ﴿لَا يَرَوْنَ﴾ حالاً ثانيةً من ضمير الأبرار، أو حالاً من الضمير في ﴿مُّتَّكِـِٔينَ﴾.",
+              "waqfStartAyah": 12
             }
           ]
         },
@@ -4573,11 +4574,12 @@
                 5,
                 10
               ],
-              "waqfDemo": "تلاوة: ﴿ مُّتَّكِـِٔينَ فِيهَا عَلَى ٱلْأَرَآئِكِ ﴾ [قف على: ٱلْأَرَآئِكْ]",
+              "waqfDemo": "تلاوة: ﴿ وَجَزَىٰهُم بِمَا صَبَرُوا۟ جَنَّةًۭ وَحَرِيرًۭا ۝١٢ مُّتَّكِـِٔينَ فِيهَا عَلَى ٱلْأَرَآئِكِ ﴾ [قف على: ٱلْأَرَآئِكْ]",
               "ibtidaDemo": "﴿ لَا يَرَوْنَ فِيهَا شَمْسًۭا وَلَا زَمْهَرِيرًۭا ﴾ [قف على: زَمْهَرِيرَا]",
               "meaningAtWaqf": "انقضاء الحال الأولى المبيّنة لهيئة جلوسهم وتنعّمهم على الأرائك.",
               "meaningAtIbtida": "ابتداءٌ ببيان طيب مستقرّهم وسلامتهم فيه من وهج الشمس وشدة الزمهرير.",
-              "meaningIfConnected": "الوصل أتمّ لتعلّق جملة ﴿لَا يَرَوْنَ فِيهَا شَمْسًۭا﴾ بما قبلها على الحالية، والوقف حسنٌ لإفادته معنىً مستقلاً."
+              "meaningIfConnected": "الوصل أتمّ لتعلّق جملة ﴿لَا يَرَوْنَ فِيهَا شَمْسًۭا﴾ بما قبلها على الحالية، والوقف حسنٌ لإفادته معنىً مستقلاً.",
+              "waqfStartAyah": 12
             }
           ]
         }
@@ -4585,8 +4587,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -5219,7 +5221,9 @@
               "meaningAtIbtida": "الابتداء بـ﴿عَـٰلِيَهُمْ﴾، ولا سيما على قراءة الرفع (عاليهم ثيابُ) على الابتداء والخبر، أو على النصب حالاً من محذوف دلّ عليه السياق.",
               "meaningIfConnected": "الوقف كافٍ على استئناف ما بعده، ولا يوقف إن نُصب ﴿عَـٰلِيَهُمْ﴾ حالاً من مفعول ﴿رَأَيْتَ﴾ أو من الضمير في الآية السابقة دون تقدير عامل."
             }
-          ]
+          ],
+          "qiraatBasis": "varies_by_qiraat",
+          "qiraatNote": "كافٍ في الإسكان (عَالِيهِمْ) والظرفية، لا في النصب (كحفص) حالًا"
         },
         {
           "scholar": "الأشموني",
@@ -5256,9 +5260,19 @@
               "ibtidaDemo": "﴿ عَـٰلِيَهُمْ ثِيَابُ سُندُسٍ خُضْرٌۭ وَإِسْتَبْرَقٌۭ ﴾ [الآية التالية]",
               "meaningAtWaqf": "تمام الإخبار عن فخامة النعيم والملك في الجنة، وموافقة رأس الآية.",
               "meaningAtIbtida": "الابتداء بـ﴿عَـٰلِيَهُمْ ثِيَابُ سُندُسٍ﴾ على جعله ظرفاً خبراً مقدماً لـ﴿ثِيَابُ﴾، أو على قراءة رفع (عاليهم).",
-              "meaningIfConnected": "الوصل أظهر عند من نصب ﴿عَـٰلِيَهُمْ﴾ على الحال، والوقف جائز على رأس الآية وعلى توجيه الاستئناف."
+              "meaningIfConnected": "الوصل أظهر عند من نصب ﴿عَـٰلِيَهُمْ﴾ على الحال، والوقف جائز على رأس الآية وعلى توجيه الاستئناف.",
+              "qiraatOverrides": [
+                {
+                  "ayah": 21,
+                  "wordIndex": 1,
+                  "hafsWord": "عَـٰلِيَهُمْ",
+                  "modifiedWord": "عَـٰلِيهِمْ"
+                }
+              ]
             }
-          ]
+          ],
+          "qiraatBasis": "varies_by_qiraat",
+          "qiraatNote": "جائز في الإسكان (عَالِيهِمْ)، وليس بوقف في النصب (كحفص) حالًا"
         }
       ],
       "aiSuggestion": null,
@@ -5353,14 +5367,16 @@
               "meaningAtIbtida": "الشروع في جملة ﴿وَحُلُّوٓا۟ أَسَاوِرَ مِن فِضَّةٍۢ﴾ لبيان حليّهم بعد بيان لباسهم.",
               "meaningIfConnected": "الوقف كافٍ لاستقلال جملة التحلية بإعرابها مع اتحاد المعنى في وصف نعيم الأبرار."
             }
-          ]
+          ],
+          "qiraatBasis": "hafs_and_others",
+          "qiraatNote": "كافٍ على قراءتي الرفع (وَإِسْتَبْرَقٌ) كحفص والجر (وَإِسْتَبْرَقٍ)"
         }
       ],
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -6575,8 +6591,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -6794,8 +6810,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -6978,8 +6994,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -7308,9 +7324,19 @@
               "ibtidaDemo": "﴿ وَٱلظَّـٰلِمِينَ أَعَدَّ لَهُمْ عَذَابًا أَلِيمًۢا ﴾ [قف على: أَلِيمَا]",
               "meaningAtWaqf": "انقطاع الكلام في شأن المرحومين انقطاعاً تاماً يميّزهم عن حال الهالكين.",
               "meaningAtIbtida": "ابتداءٌ بوعيد الظالمين في جملة مستقلة بعاملها.",
-              "meaningIfConnected": "الوقف تامّ عند من راعى تضادّ الفريقين وامتناع عطف ﴿وَٱلظَّـٰلِمِينَ﴾ على ﴿مَن يَشَآءُ﴾."
+              "meaningIfConnected": "الوقف تامّ عند من راعى تضادّ الفريقين وامتناع عطف ﴿وَٱلظَّـٰلِمِينَ﴾ على ﴿مَن يَشَآءُ﴾.",
+              "qiraatOverrides": [
+                {
+                  "ayah": 31,
+                  "wordIndex": 6,
+                  "hafsWord": "وَٱلظَّـٰلِمِينَ",
+                  "modifiedWord": "وَٱلظَّـٰلِمُونَ"
+                }
+              ]
             }
-          ]
+          ],
+          "qiraatBasis": "varies_by_qiraat",
+          "qiraatNote": "كافٍ في النصب (وَٱلظَّالِمِينَ) كحفص، وتام للحسن بالرفع (وَٱلظَّالِمُونَ)"
         },
         {
           "scholar": "النحاس",
@@ -7354,8 +7380,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },

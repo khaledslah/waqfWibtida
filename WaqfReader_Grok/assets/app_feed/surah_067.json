@@ -3849,8 +3849,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -4057,8 +4057,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -4222,7 +4222,9 @@
               "meaningAtIbtida": "فاردد البصر متثبّتاً: هل تبصر من شقوقٍ أو وهن؟",
               "meaningIfConnected": "يحسن الوقف والابتداء لتمام الجملة المنفية بمفعولها ﴿مِن تَفَـٰوُتٍۢ﴾، مع اتصال ما بعدها بها معنىً على سبيل الاستدلال والتثبّت."
             }
-          ]
+          ],
+          "qiraatBasis": "hafs_and_others",
+          "qiraatNote": "كافٍ على القراءتين في «تَفَاوُتٍ» و«تَفَوُّتٍ»"
         },
         {
           "scholar": "النحاس",
@@ -4266,8 +4268,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -4751,8 +4753,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -4873,7 +4875,9 @@
               "meaningAtIbtida": "وللذين كفروا بربّهم عذاب جهنم (بالرفع على الابتداء والخبر المقدم).",
               "meaningIfConnected": "الوقف تامٌّ على قراءة الجمهور برفع ﴿عَذَابُ جَهَنَّمَ﴾ لاستقلال الجملة الاسمية عن الفعلية قبلها، بخلاف قراءة النصب الشاذة عطفاً على ﴿عَذَابَ ٱلسَّعِيرِ﴾."
             }
-          ]
+          ],
+          "qiraatBasis": "varies_by_qiraat",
+          "qiraatNote": "تام في الرفع (عَذَابُ) كحفص، وليس بوقف للأعرج (عَذَابَ)"
         },
         {
           "scholar": "النحاس",
@@ -4913,7 +4917,9 @@
               "meaningAtIbtida": "وللذين كفروا بربّهم عذاب جهنم (مبتدأ مؤخر وخبره الجار والمجرور قبله).",
               "meaningIfConnected": "الوقف تامٌّ لمن قرأ برفع ﴿عَذَابُ جَهَنَّمَ﴾ لابتداء جملةٍ اسميةٍ مستأنفة، أمّا من نصبها عطفاً على ﴿عَذَابَ ٱلسَّعِيرِ﴾ فيصل ولا يقف."
             }
-          ]
+          ],
+          "qiraatBasis": "varies_by_qiraat",
+          "qiraatNote": "تام في الرفع (عَذَابُ) كحفص، ولا يُوقف في النصب (عَذَابَ)"
         }
       ],
       "aiSuggestion": null,
@@ -5033,18 +5039,19 @@
               "verdict": "كاف",
               "isQila": false,
               "waqfSegmentWords": [
-                1,
+                9,
                 5
               ],
               "ibtidaSegmentWords": [
                 6,
                 7
               ],
-              "waqfDemo": "تلاوة: ﴿ وَلِلَّذِينَ كَفَرُوا۟ بِرَبِّهِمْ عَذَابُ جَهَنَّمَ ﴾ [قف على: جَهَنَّمْ]",
+              "waqfDemo": "تلاوة: ﴿ وَأَعْتَدْنَا لَهُمْ عَذَابَ ٱلسَّعِيرِ ۝٥ وَلِلَّذِينَ كَفَرُوا۟ بِرَبِّهِمْ عَذَابُ جَهَنَّمَ ﴾ [قف على: جَهَنَّمْ]",
               "ibtidaDemo": "﴿ وَبِئْسَ ٱلْمَصِيرُ ﴾ [قف على: ٱلْمَصِيرْ]",
               "meaningAtWaqf": "انقضاء العطف أو الخبر في إثبات عذاب جهنم للكافرين.",
               "meaningAtIbtida": "وبئس المصير جهنم.",
-              "meaningIfConnected": "وقفٌ كافٍ؛ فالجملة قد تمّت لفظاً، وما بعدها ذمٌّ لجهنم المذكورة قبلها فتعلّقت بها معنىً."
+              "meaningIfConnected": "وقفٌ كافٍ؛ فالجملة قد تمّت لفظاً، وما بعدها ذمٌّ لجهنم المذكورة قبلها فتعلّقت بها معنىً.",
+              "waqfStartAyah": 5
             }
           ]
         }
@@ -5052,8 +5059,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -5353,8 +5360,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -6446,8 +6453,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -7056,8 +7063,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -7139,7 +7146,9 @@
               "meaningAtIbtida": "أأمنتم مَن في السماء أن يخسف بكم الأرض؟",
               "meaningIfConnected": "الوقف تامٌّ لانقطاع الاستفهام التوبيخيّ عمّا قبله لفظاً، مع ملاحظة أنّ قنبلاً عن ابن كثير يبدل الهمزة الأولى واواً مفتوحةً في حال الوصل خاصّةً لضمّة الراء قبلها."
             }
-          ]
+          ],
+          "qiraatBasis": "hafs_and_others",
+          "qiraatNote": "تام، وقرأ قنبل في الوصل (وَأَمِنتُم) بإبدال الهمزة الأولى واوًا"
         },
         {
           "scholar": "النحاس",
@@ -7506,8 +7515,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -8022,8 +8031,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -8232,8 +8241,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -8565,8 +8574,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -8916,8 +8925,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "ج",
+      "uthmaniMarkName": "جائز",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -9487,8 +9496,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },
@@ -10648,9 +10657,19 @@
               "ibtidaDemo": "﴿ فَسَتَعْلَمُونَ مَنْ هُوَ فِى ضَلَـٰلٍۢ مُّبِينٍۢ ﴾ [قف على: مُّبِينْ]",
               "meaningAtWaqf": "انقضاء المقول الموجّه للمشركين في إثبات الإيمان بالرحمن والتوكّل عليه.",
               "meaningAtIbtida": "فسيعلم الكافرون عن قريبٍ مَن هو في ضلالٍ مبين (على قراءة الكسائي بالياء).",
-              "meaningIfConnected": "وقفٌ مطلقٌ (تام) على قراءة الكسائي بالياء ﴿فَسَيَعْلَمُونَ﴾؛ للعدول في الأسلوب من الخطاب إلى الغيبة إعراضاً عنهم وتهديداً لهم."
+              "meaningIfConnected": "وقفٌ مطلقٌ (تام) على قراءة الكسائي بالياء ﴿فَسَيَعْلَمُونَ﴾؛ للعدول في الأسلوب من الخطاب إلى الغيبة إعراضاً عنهم وتهديداً لهم.",
+              "qiraatOverrides": [
+                {
+                  "ayah": 29,
+                  "wordIndex": 8,
+                  "hafsWord": "فَسَتَعْلَمُونَ",
+                  "modifiedWord": "فَسَيَعْلَمُونَ"
+                }
+              ]
             }
-          ]
+          ],
+          "qiraatBasis": "varies_by_qiraat",
+          "qiraatNote": "جائز في التاء (فَسَتَعْلَمُونَ) كحفص، وتام في الياء (فَسَيَعْلَمُونَ)"
         },
         {
           "scholar": "ابن الأنباري",
@@ -10829,8 +10848,8 @@
       "aiSuggestion": null,
       "symbolWitness": null,
       "inUthmaniMushaf": true,
-      "uthmaniMark": null,
-      "uthmaniMarkName": null,
+      "uthmaniMark": "صلى",
+      "uthmaniMarkName": "الوصل أولى",
       "isVerseEnd": false,
       "sourceBatch": "llm_grounded_v1"
     },

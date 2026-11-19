@@ -106,6 +106,61 @@ Future<void> confirmAndToggleStopReport(
   );
 }
 
+/// Adds or toggles a waqf stop in "مصحفي" and offers a quick jump to its page.
+Future<void> addOrToggleMyMushafWithFeedback(
+  BuildContext context,
+  ReaderController controller,
+  WaqfStop stop, {
+  ScholarOpinion? opinion,
+  int faceIndex = 0,
+  int? demoIndex,
+  bool forceAdd = false,
+}) async {
+  await controller.ensureMushafPagesLoaded();
+  final added = controller.toggleMyMushafStop(
+    stop,
+    opinion: opinion,
+    faceIndex: faceIndex,
+    demoIndex: demoIndex,
+    forceAdd: forceAdd,
+  );
+  if (!context.mounted) return;
+  final page = controller.mushafPageForVerse(stop.surah, stop.ayah);
+  final modalRoute = ModalRoute.of(context);
+  final navigator = Navigator.maybeOf(context);
+  final messenger = ScaffoldMessenger.maybeOf(context);
+  messenger?.clearSnackBars();
+  messenger?.showSnackBar(
+    SnackBar(
+      behavior: SnackBarBehavior.floating,
+      duration: const Duration(seconds: 3),
+      margin: const EdgeInsets.fromLTRB(16, 0, 16, 32),
+      content: Text(
+        added
+            ? opinion != null
+                ? 'أُضيف وقف «${stop.word}» (${opinion.scholar}) إلى مصحفي — ص ${arabicDigits(page)}'
+                : 'أُضيف وقف «${stop.word}» إلى مصحفي — ص ${arabicDigits(page)}'
+            : 'أُزيل وقف «${stop.word}» من مصحفي',
+        style: AppText.ui(size: 13, color: AppColors.white),
+      ),
+      action: added
+          ? SnackBarAction(
+              label: 'عرض في مصحفي',
+              textColor: AppColors.goldSoft,
+              onPressed: () {
+                if (modalRoute != null &&
+                    modalRoute.isActive &&
+                    modalRoute is PopupRoute) {
+                  navigator?.pop();
+                }
+                controller.jumpToMyMushafAtVerse(stop.surah, stop.ayah);
+              },
+            )
+          : null,
+    ),
+  );
+}
+
 class WaqfBottomSheet extends StatefulWidget {
   const WaqfBottomSheet({
     super.key,
@@ -540,7 +595,7 @@ class _SheetDemoPreviewCard extends StatelessWidget {
     final modStyle = AppText.quran(
       size: 20,
       weight: FontWeight.w400,
-      color: tone.dark ? AppColors.qiraatSoft : AppColors.qiraat,
+      color: tone.dark ? AppColors.goldSoft : const Color(0xFF7B4F12),
       height: 1.6,
     );
     return TextSpan(
@@ -686,6 +741,27 @@ class WaqfStopSheetBody extends StatelessWidget {
                     ),
                 ],
               ),
+            ),
+            ListenableBuilder(
+              listenable: controller,
+              builder: (context, _) {
+                final inMyMushaf = controller.isInMyMushaf(stop.id);
+                return IconButton(
+                  key: const ValueKey('add-to-my-mushaf-sheet-btn'),
+                  tooltip: inMyMushaf ? 'في مصحفي (انقر للإزالة)' : 'إضافة إلى مصحفي',
+                  onPressed: () => addOrToggleMyMushafWithFeedback(
+                    context,
+                    controller,
+                    stop,
+                  ),
+                  icon: Icon(
+                    inMyMushaf
+                        ? Icons.bookmark_added
+                        : Icons.bookmark_add_outlined,
+                    color: inMyMushaf ? AppColors.goldSoft : tone.muted,
+                  ),
+                );
+              },
             ),
             IconButton(
               tooltip: favorite ? 'إزالة من المفضلة' : 'إضافة للمفضلة',
@@ -1088,89 +1164,153 @@ class _OpinionRow extends StatelessWidget {
         ],
         Padding(
           padding: const EdgeInsets.only(top: 8),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              InkWell(
-                onTap: () {
-                  final text = formatOpinionText(
-                    stop,
-                    opinion,
-                    surahName: controller.currentSurahName,
-                  );
-                  copyText(
-                    context,
-                    text,
-                    message: 'تم نسخ قول ${opinion.scholar}',
-                  );
-                },
-                borderRadius: BorderRadius.circular(6),
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 8,
-                    vertical: 4,
-                  ),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Icon(
-                        Icons.copy_rounded,
-                        size: 14,
-                        color: tone.dark ? AppColors.goldSoft : tone.muted,
+          child: Align(
+            alignment: AlignmentDirectional.centerEnd,
+            child: Wrap(
+              alignment: WrapAlignment.end,
+              crossAxisAlignment: WrapCrossAlignment.center,
+              spacing: 6,
+              runSpacing: 4,
+              children: [
+                ListenableBuilder(
+                  listenable: controller,
+                  builder: (context, _) {
+                    final existing = controller.myMushafEntryFor(stop.id);
+                    final sameScholar =
+                        existing != null && existing.scholar == opinion.scholar;
+                    final color = sameScholar
+                        ? AppColors.goldSoft
+                        : (tone.dark ? AppColors.goldSoft : tone.muted);
+                    return InkWell(
+                      onTap: () => addOrToggleMyMushafWithFeedback(
+                        context,
+                        controller,
+                        stop,
+                        opinion: opinion,
+                        forceAdd: existing != null && !sameScholar,
                       ),
-                      const SizedBox(width: 4),
-                      Text(
-                        'نسخ',
-                        style: AppText.ui(
-                          size: 11,
-                          color: tone.dark ? AppColors.goldSoft : tone.muted,
+                      borderRadius: BorderRadius.circular(6),
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 6,
+                          vertical: 4,
+                        ),
+                        decoration: sameScholar
+                            ? BoxDecoration(
+                                color: AppColors.goldSoft.withOpacity(0.16),
+                                borderRadius: BorderRadius.circular(6),
+                                border: Border.all(
+                                  color: AppColors.goldSoft.withOpacity(0.45),
+                                ),
+                              )
+                            : null,
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Icon(
+                              sameScholar
+                                  ? Icons.bookmark_added
+                                  : Icons.bookmark_add_outlined,
+                              size: 14,
+                              color: color,
+                            ),
+                            const SizedBox(width: 4),
+                            Text(
+                              sameScholar ? 'في مصحفي' : 'أضف لمصحفي',
+                              style: AppText.ui(
+                                size: 11,
+                                weight: sameScholar
+                                    ? FontWeight.w700
+                                    : FontWeight.w500,
+                                color: color,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
-                    ],
-                  ),
+                    );
+                  },
                 ),
-              ),
-              const SizedBox(width: 8),
-              InkWell(
-                onTap: () {
-                  final text = formatOpinionText(
-                    stop,
-                    opinion,
-                    surahName: controller.currentSurahName,
-                  );
-                  shareText(
-                    context,
-                    text,
-                    subject: 'وقف ${stop.word} عند ${opinion.scholar}',
-                  );
-                },
-                borderRadius: BorderRadius.circular(6),
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 8,
-                    vertical: 4,
-                  ),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Icon(
-                        Icons.share_outlined,
-                        size: 14,
-                        color: tone.dark ? AppColors.goldSoft : tone.muted,
-                      ),
-                      const SizedBox(width: 4),
-                      Text(
-                        'مشاركة',
-                        style: AppText.ui(
-                          size: 11,
+                InkWell(
+                  onTap: () {
+                    final text = formatOpinionText(
+                      stop,
+                      opinion,
+                      surahName: controller.currentSurahName,
+                    );
+                    copyText(
+                      context,
+                      text,
+                      message: 'تم نسخ قول ${opinion.scholar}',
+                    );
+                  },
+                  borderRadius: BorderRadius.circular(6),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 6,
+                      vertical: 4,
+                    ),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Icon(
+                          Icons.copy_rounded,
+                          size: 14,
                           color: tone.dark ? AppColors.goldSoft : tone.muted,
                         ),
-                      ),
-                    ],
+                        const SizedBox(width: 4),
+                        Text(
+                          'نسخ',
+                          style: AppText.ui(
+                            size: 11,
+                            color: tone.dark ? AppColors.goldSoft : tone.muted,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-              ),
-            ],
+                InkWell(
+                  onTap: () {
+                    final text = formatOpinionText(
+                      stop,
+                      opinion,
+                      surahName: controller.currentSurahName,
+                    );
+                    shareText(
+                      context,
+                      text,
+                      subject: 'وقف ${stop.word} عند ${opinion.scholar}',
+                    );
+                  },
+                  borderRadius: BorderRadius.circular(6),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 6,
+                      vertical: 4,
+                    ),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Icon(
+                          Icons.share_outlined,
+                          size: 14,
+                          color: tone.dark ? AppColors.goldSoft : tone.muted,
+                        ),
+                        const SizedBox(width: 4),
+                        Text(
+                          'مشاركة',
+                          style: AppText.ui(
+                            size: 11,
+                            color: tone.dark ? AppColors.goldSoft : tone.muted,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ],
@@ -1410,9 +1550,7 @@ class QiraatBadge extends StatelessWidget {
     final text =
         (note != null && note.isNotEmpty && note != badge) ? '$badge · $note' : badge;
     final dependent = opinion.isQiraatDependent || hasDemoQiraat;
-    final textColor = dependent
-        ? (tone.dark ? AppColors.qiraatSoft : AppColors.qiraat)
-        : tone.muted;
+    final textColor = dependent ? tone.accent : tone.muted;
 
     // Plain text line — no box, no border.
     return Align(

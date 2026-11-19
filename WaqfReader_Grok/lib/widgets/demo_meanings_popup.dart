@@ -122,6 +122,39 @@ class _DemoMeaningsBoxState extends State<DemoMeaningsBox> {
                           ),
                         ),
                       ),
+                      ListenableBuilder(
+                        listenable: widget.controller,
+                        builder: (context, _) {
+                          final inMyMushaf =
+                              widget.controller.isInMyMushaf(stop.id);
+                          return IconButton(
+                            key: const ValueKey('add-to-my-mushaf-dock-btn'),
+                            tooltip: inMyMushaf
+                                ? 'في مصحفي (انقر للإزالة)'
+                                : 'إضافة إلى مصحفي',
+                            onPressed: () => addOrToggleMyMushafWithFeedback(
+                              context,
+                              widget.controller,
+                              stop,
+                            ),
+                            visualDensity: VisualDensity.compact,
+                            iconSize: 19,
+                            constraints: const BoxConstraints(
+                              minWidth: 32,
+                              minHeight: 32,
+                            ),
+                            padding: EdgeInsets.zero,
+                            icon: Icon(
+                              inMyMushaf
+                                  ? Icons.bookmark_added
+                                  : Icons.bookmark_add_outlined,
+                              color: inMyMushaf
+                                  ? AppColors.goldSoft
+                                  : tone.muted,
+                            ),
+                          );
+                        },
+                      ),
                       IconButton(
                         tooltip: fav ? 'إزالة من المفضلة' : 'إضافة للمفضلة',
                         onPressed: () =>
@@ -196,11 +229,9 @@ class _DemoMeaningsBoxState extends State<DemoMeaningsBox> {
                                           .isNotEmpty;
                                       final pillAccent = hasQ
                                           ? (tone.dark
-                                              ? AppColors.qiraatSoft
-                                              : AppColors.qiraat)
-                                          : (tone.dark
                                               ? AppColors.goldSoft
-                                              : AppColors.forest);
+                                              : const Color(0xFF7B4F12))
+                                          : tone.accent;
                                       return InkWell(
                                         onTap: () =>
                                             widget.controller.selectDemo(
@@ -319,8 +350,8 @@ class _DemoMeaningsBoxState extends State<DemoMeaningsBox> {
                             size: 12,
                             weight: FontWeight.w600,
                             color: tone.dark
-                                ? AppColors.qiraatSoft
-                                : AppColors.qiraat,
+                                ? AppColors.goldSoft
+                                : const Color(0xFF7B4F12),
                             height: 1.4,
                           ),
                         ),

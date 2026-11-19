@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 
 import '../data/sample_data.dart';
 import '../theme/app_theme.dart';
+import '../widgets/display_settings_sheet.dart';
 import 'index_screen.dart';
 import 'mushaf_screen.dart';
+import 'my_mushaf_screen.dart';
 import 'review_screen.dart';
 import 'stats_screen.dart';
 
@@ -113,12 +115,12 @@ class _Body extends StatelessWidget {
           ),
         );
       case ReaderLoadState.ready:
-        // tab 0 = mushaf, tab 2 = review (1 reserved / unused — فهرس is drawer).
-        final stackIndex = controller.tab == 2 ? 1 : 0;
+        final stackIndex = controller.tab.clamp(0, 2);
         return IndexedStack(
           index: stackIndex,
           children: [
             MushafScreen(controller: controller),
+            MyMushafScreen(controller: controller),
             ReviewScreen(controller: controller),
           ],
         );
@@ -150,7 +152,7 @@ class _TopBar extends StatelessWidget {
             children: [
               IgnorePointer(
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 72),
+                  padding: const EdgeInsets.symmetric(horizontal: 92),
                   child: FittedBox(
                     fit: BoxFit.scaleDown,
                     child: Text(
@@ -177,6 +179,16 @@ class _TopBar extends StatelessWidget {
                       ),
                     ),
                   ),
+                  IconButton(
+                    key: const ValueKey<String>('display-settings-btn'),
+                    tooltip: 'إعدادات العرض والألوان',
+                    onPressed: () =>
+                        showDisplaySettingsSheet(context, controller),
+                    icon: const Icon(
+                      Icons.tune_rounded,
+                      color: AppColors.forestDeep,
+                    ),
+                  ),
                   _OverflowMenu(controller: controller),
                 ],
               ),
@@ -199,7 +211,13 @@ class _SurahChip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final raw = controller.currentSurahName;
+    final isMyMushaf = controller.tab == 1;
+    final pageSurah = isMyMushaf
+        ? controller.mushafPageInfo(controller.currentMushafPage)?.ranges.firstOrNull?.surah
+        : null;
+    final raw = isMyMushaf
+        ? (pageSurah != null ? controller.surahNameForNumber(pageSurah) : 'مصحفي')
+        : controller.currentSurahName;
     final name = raw.isEmpty
         ? '…'
         : raw.replaceFirst(RegExp(r'^سورة\s*'), '');
@@ -255,7 +273,9 @@ class _OverflowMenu extends StatelessWidget {
       tooltip: 'المزيد',
       icon: const Icon(Icons.more_vert, color: AppColors.forestDeep),
       onSelected: (value) {
-        if (value == 'size') {
+        if (value == 'colors') {
+          showDisplaySettingsSheet(context, controller);
+        } else if (value == 'size') {
           _showSizeDialog(context);
         } else if (value == 'legend') {
           _showLegend(context);
@@ -268,6 +288,10 @@ class _OverflowMenu extends StatelessWidget {
         }
       },
       itemBuilder: (context) => [
+        PopupMenuItem(
+          value: 'colors',
+          child: Text('ألوان القراءات والعرض', style: AppText.ui(size: 15)),
+        ),
         PopupMenuItem(
           value: 'stats',
           child: Text('إحصائيات الوقوف', style: AppText.ui(size: 15)),
@@ -397,8 +421,7 @@ class _BottomNav extends StatelessWidget {
     final muted = dark ? AppColors.sheetMuted : AppColors.navMuted;
     final indicator =
         dark ? AppColors.sheetRaised : AppColors.chipFill;
-    // Only مصحف (0) and مراجعة (2) — map to nav indices 0 and 1.
-    final navIndex = controller.tab == 2 ? 1 : 0;
+    final navIndex = controller.tab.clamp(0, 2);
 
     return DecoratedBox(
       decoration: BoxDecoration(
@@ -436,14 +459,17 @@ class _BottomNav extends StatelessWidget {
             surfaceTintColor: Colors.transparent,
             indicatorColor: indicator,
             selectedIndex: navIndex,
-            onDestinationSelected: (index) {
-              controller.setTab(index == 0 ? 0 : 2);
-            },
+            onDestinationSelected: controller.setTab,
             destinations: const [
               NavigationDestination(
                 icon: Icon(Icons.menu_book_outlined),
                 selectedIcon: Icon(Icons.menu_book),
                 label: 'مصحف',
+              ),
+              NavigationDestination(
+                icon: Icon(Icons.auto_stories_outlined),
+                selectedIcon: Icon(Icons.auto_stories),
+                label: 'مصحفي',
               ),
               NavigationDestination(
                 icon: Icon(Icons.check_circle_outline),

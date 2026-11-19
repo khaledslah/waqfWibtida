@@ -32,17 +32,79 @@ abstract final class AppColors {
   static const demoWaqfMarker = Color(0xCCC4A15A);
   /// Marker line for demo ibtida segment.
   static const demoIbtidaMarker = Color(0xB31A5C48);
-  /// Qira'at (non-Hafs) word swap: royal purple — clearly distinct from
-  /// the gold waqf, green ibtida, and red harakat.
-  static const qiraat = Color(0xFF6B3FA0);
-  /// Lighter royal purple for dark panels.
-  static const qiraatSoft = Color(0xFFC9B0EC);
-  /// Faint purple wash behind a swapped word outside any demo segment.
-  static const qiraatWash = Color(0x146B3FA0);
+  /// Qira'at (non-Hafs) word swap: warm copper/terracotta paired with the
+  /// dotted outline so swapped words harmonize with the parchment palette.
+  static const qiraat = Color(0xFFB0602A);
+  /// Lighter copper for dark panels.
+  static const qiraatSoft = Color(0xFFE09F6E);
+  /// Faint copper wash behind a swapped word outside any demo segment.
+  static const qiraatWash = Color(0x14B0602A);
+
+  /// User-selectable Qira'at highlight color presets (Settings sheet).
+  static const List<QiraatColorOption> qiraatPresets = <QiraatColorOption>[
+    QiraatColorOption(
+      id: 'copper',
+      label: 'نحاسي',
+      color: Color(0xFFB0602A),
+      wash: Color(0x14B0602A),
+    ),
+    QiraatColorOption(
+      id: 'lapis',
+      label: 'أزرق لازوردي',
+      color: Color(0xFF28557F),
+      wash: Color(0x1A28557F),
+    ),
+    QiraatColorOption(
+      id: 'purple',
+      label: 'بنفسجي ملكي',
+      color: Color(0xFF6B3FA0),
+      wash: Color(0x146B3FA0),
+    ),
+    QiraatColorOption(
+      id: 'teal',
+      label: 'فيروزي',
+      color: Color(0xFF1E7F86),
+      wash: Color(0x141E7F86),
+    ),
+    QiraatColorOption(
+      id: 'burgundy',
+      label: 'عنابي',
+      color: Color(0xFF8A2E3B),
+      wash: Color(0x148A2E3B),
+    ),
+    QiraatColorOption(
+      id: 'indigo',
+      label: 'نيلي',
+      color: Color(0xFF3D3A8C),
+      wash: Color(0x143D3A8C),
+    ),
+  ];
+
+  static QiraatColorOption qiraatPresetById(String id) {
+    for (final opt in qiraatPresets) {
+      if (opt.id == id) return opt;
+    }
+    return qiraatPresets.first;
+  }
+
   static const hairline = Color(0xFFE4DCC8);
   static const dash = Color(0xFF4A5850);
   static const muted = Color(0xFF7A756C);
   static const amberWash = Color(0xFFF8EFD6);
+}
+
+class QiraatColorOption {
+  const QiraatColorOption({
+    required this.id,
+    required this.label,
+    required this.color,
+    required this.wash,
+  });
+
+  final String id;
+  final String label;
+  final Color color;
+  final Color wash;
 }
 
 /// Shared palette for dock / sheet / bottom nav (معاني light vs أقوال dark).

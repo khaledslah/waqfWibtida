@@ -8,10 +8,12 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../models/waqf_models.dart';
+import '../theme/app_theme.dart';
 import '../utils/qiraat_word_diff.dart';
 import '../utils/report_service.dart';
 
 const catalogAssetPath = 'assets/app_feed/catalog.json';
+const mushafPagesAssetPath = 'assets/app_feed/mushaf_pages.json';
 const _reviewStateServerUrl = 'http://127.0.0.1:8765/api/review-state';
 
 class SurahCatalogEntry {
@@ -323,6 +325,9 @@ class AppFeedBundle {
                   w['text'] as String,
                   w['stopId'] as String?,
                   parsedIndex ?? (wi + 1),
+                  w['inUthmaniMushaf'] as bool? ?? false,
+                  w['uthmaniMark'] as String?,
+                  w['uthmaniMarkName'] as String?,
                 );
               }(),
           ],
@@ -379,6 +384,13 @@ enum ReaderLoadState { loading, ready, error }
 class ReaderController extends ChangeNotifier {
   int tab = 0;
   double quranSize = 26;
+  String qiraatColorId = 'copper';
+  bool qiraatDottedOutline = true;
+  int currentMushafPage = 1;
+  bool loadingMushafPage = false;
+  List<MushafPageInfo> _mushafPages = const <MushafPageInfo>[];
+  Future<void>? _mushafPagesLoadFuture;
+  final Map<String, MyMushafEntry> myMushafStops = <String, MyMushafEntry>{};
   String? selectedStopId;
 
   /// When false, mushaf never paints demo waqf/ibtida spans.
@@ -532,6 +544,7 @@ class ReaderController extends ChangeNotifier {
   }
 
   Future<void> _restorePrefs() async {
+    var changed = false;
     try {
       final prefs = await SharedPreferences.getInstance();
       sentToReview
@@ -543,11 +556,66 @@ class ReaderController extends ChangeNotifier {
       verified
         ..clear()
         ..addAll(prefs.getStringList('verified') ?? const []);
+      final savedColor = prefs.getString('qiraatColorId');
+      if (savedColor != null && savedColor != qiraatColorId) {
+        qiraatColorId = AppColors.qiraatPresetById(savedColor).id;
+        changed = true;
+      }
+      final savedDotted = prefs.getBool('qiraatDottedOutline');
+      if (savedDotted != null && savedDotted != qiraatDottedOutline) {
+        qiraatDottedOutline = savedDotted;
+        changed = true;
+      }
+      final savedSize = prefs.getDouble('quranSize');
+      if (savedSize != null && savedSize >= 18 && savedSize <= 40 && savedSize != quranSize) {
+        quranSize = savedSize;
+        changed = true;
+      }
+      final savedPage = prefs.getInt('currentMushafPage');
+      if (savedPage != null &&
+          savedPage >= 1 &&
+          savedPage <= 604 &&
+          savedPage != currentMushafPage) {
+        currentMushafPage = savedPage;
+        changed = true;
+      }
+      final rawMy = prefs.getStringList('myMushafStops') ?? const <String>[];
+      if (rawMy.isNotEmpty) {
+        myMushafStops.clear();
+        for (final item in rawMy) {
+          try {
+            final entry = MyMushafEntry.fromJson(jsonDecode(item));
+            if (entry != null) myMushafStops[entry.stopId] = entry;
+          } catch (_) {}
+        }
+        changed = true;
+      }
     } catch (_) {
       // Prefs optional on some platforms.
     }
+    if (changed) notifyListeners();
     unawaited(_pullAndPushServerReviewState());
     unawaited(WaqfReportService.flushPendingReports());
+  }
+
+  Future<void> _persistDisplayPrefs() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setString('qiraatColorId', qiraatColorId);
+      await prefs.setBool('qiraatDottedOutline', qiraatDottedOutline);
+      await prefs.setDouble('quranSize', quranSize);
+    } catch (_) {}
+  }
+
+  Future<void> _persistMyMushafPrefs() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setInt('currentMushafPage', currentMushafPage);
+      await prefs.setStringList(
+        'myMushafStops',
+        [for (final e in myMushafStops.values) jsonEncode(e.toJson())],
+      );
+    } catch (_) {}
   }
 
   Future<void> _persistPrefs() async {
@@ -719,7 +787,17 @@ class ReaderController extends ChangeNotifier {
     return stops.isNotEmpty ? stops.first.id : null;
   }
 
-  WaqfStop? stopById(String id) => _stopsById[id];
+  WaqfStop? stopById(String id) {
+    final local = _stopsById[id];
+    if (local != null) return local;
+    for (final entry in catalog) {
+      final bundle = AppFeedBundle.getCached(entry.asset);
+      if (bundle == null) continue;
+      final hit = bundle.stopsById[id];
+      if (hit != null) return hit;
+    }
+    return null;
+  }
 
   bool isVerseEnd(WaqfStop stop) => stop.isVerseEnd;
 
@@ -1362,12 +1440,24 @@ class ReaderController extends ChangeNotifier {
 
   List<QiraatWordOverride> qiraatOverridesFor(
     WaqfStop stop,
-    WaqfDemoAndMeaning demo,
-  ) {
+    WaqfDemoAndMeaning demo, {
+    List<Ayah>? ayahs,
+  }) {
+    final targetAyahs = ayahs ??
+        (stop.surah == currentSurah
+            ? yusufAyahs
+            : cachedBundleForSurah(stop.surah)?.ayahs);
+    if (targetAyahs == null || targetAyahs.isEmpty) {
+      return extractQiraatWordOverrides(
+        stop: stop,
+        demo: demo,
+        ayahs: const <Ayah>[],
+      );
+    }
     return _qiraatOverridesCache[demo] ??= extractQiraatWordOverrides(
       stop: stop,
       demo: demo,
-      ayahs: yusufAyahs,
+      ayahs: targetAyahs,
     );
   }
 
@@ -1530,12 +1620,313 @@ class ReaderController extends ChangeNotifier {
     if (tab == value) return;
     tab = value;
     notifyListeners();
+    if (tab == 1) {
+      unawaited(openMushafPage(currentMushafPage));
+    }
+  }
+
+  List<MushafPageInfo> get mushafPages => _mushafPages;
+
+  Future<void> ensureMushafPagesLoaded() {
+    if (_mushafPages.isNotEmpty) return Future<void>.value();
+    return _mushafPagesLoadFuture ??= () async {
+      final rawStr = await rootBundle.loadString(mushafPagesAssetPath);
+      final decoded = jsonDecode(rawStr) as Map<String, dynamic>;
+      final rawPages = decoded['pages'] as List<dynamic>? ?? const [];
+      _mushafPages = [
+        for (final p in rawPages)
+          if (p is Map)
+            MushafPageInfo(
+              page: p['page'] as int,
+              juz: p['juz'] as int? ?? 1,
+              hizbQuarter: p['hizbQuarter'] as int? ?? 1,
+              ranges: [
+                for (final r in (p['ranges'] as List<dynamic>? ?? const []))
+                  if (r is List && r.length >= 3)
+                    MushafPageRange(
+                      surah: r[0] as int,
+                      startAyah: r[1] as int,
+                      endAyah: r[2] as int,
+                    ),
+              ],
+            ),
+      ];
+    }();
+  }
+
+  MushafPageInfo? mushafPageInfo(int page) {
+    if (_mushafPages.isEmpty) return null;
+    final idx = page - 1;
+    if (idx < 0 || idx >= _mushafPages.length) return null;
+    return _mushafPages[idx];
+  }
+
+  int mushafPageForVerse(int surah, int ayah) {
+    for (final pg in _mushafPages) {
+      for (final r in pg.ranges) {
+        if (r.surah == surah && ayah >= r.startAyah && ayah <= r.endAyah) {
+          return pg.page;
+        }
+      }
+    }
+    return currentMushafPage;
+  }
+
+  int firstMushafPageForSurah(int surah) {
+    for (final pg in _mushafPages) {
+      for (final r in pg.ranges) {
+        if (r.surah == surah) return pg.page;
+      }
+    }
+    return 1;
+  }
+
+  AppFeedBundle? cachedBundleForSurah(int surah) {
+    for (final e in catalog) {
+      if (e.number == surah) {
+        return AppFeedBundle.getCached(e.asset);
+      }
+    }
+    return null;
+  }
+
+  String surahNameForNumber(int surah) {
+    for (final e in catalog) {
+      if (e.number == surah) return e.name;
+    }
+    return 'سورة $surah';
+  }
+
+  Future<void> openMushafPage(int page) async {
+    final target = page.clamp(1, 604);
+    final changed = target != currentMushafPage;
+    currentMushafPage = target;
+    await ensureMushafPagesLoaded();
+    final info = mushafPageInfo(target);
+    if (info != null) {
+      final needed = <String>[];
+      for (final r in info.ranges) {
+        for (final entry in catalog) {
+          if (entry.number == r.surah &&
+              AppFeedBundle.getCached(entry.asset) == null &&
+              !needed.contains(entry.asset)) {
+            needed.add(entry.asset);
+          }
+        }
+      }
+      if (needed.isNotEmpty) {
+        loadingMushafPage = true;
+        notifyListeners();
+        try {
+          for (final asset in needed) {
+            await AppFeedBundle.loadAsset(asset);
+          }
+        } catch (_) {}
+        loadingMushafPage = false;
+      }
+    }
+    if (!_disposed) {
+      notifyListeners();
+    }
+    if (changed) {
+      unawaited(_persistMyMushafPrefs());
+    }
+  }
+
+  Future<void> jumpToMyMushafAtVerse(int surah, int ayah) async {
+    await ensureMushafPagesLoaded();
+    final page = mushafPageForVerse(surah, ayah);
+    tab = 1;
+    stopDockOpen = false;
+    await openMushafPage(page);
+  }
+
+  Future<void> jumpMyMushafToSurah(int surah) async {
+    await ensureMushafPagesLoaded();
+    final page = firstMushafPageForSurah(surah);
+    tab = 1;
+    await openMushafPage(page);
+  }
+
+  bool isInMyMushaf(String stopId) => myMushafStops.containsKey(stopId);
+
+  MyMushafEntry? myMushafEntryFor(String? stopId) {
+    if (stopId == null) return null;
+    return myMushafStops[stopId];
+  }
+
+  List<MyMushafEntry> get sortedMyMushafStops {
+    final list = myMushafStops.values.toList();
+    list.sort((a, b) {
+      final s = a.surah.compareTo(b.surah);
+      if (s != 0) return s;
+      final ay = a.ayah.compareTo(b.ayah);
+      if (ay != 0) return ay;
+      return a.wordIndex.compareTo(b.wordIndex);
+    });
+    return list;
+  }
+
+  WaqfDemoAndMeaning? resolveMyMushafDemo(
+    MyMushafEntry entry,
+    WaqfStop stop,
+  ) {
+    ScholarOpinion? op;
+    if (entry.scholar != null && entry.scholar!.isNotEmpty) {
+      final candidate = stop.opinionForScholar(entry.scholar!);
+      if (candidate != null && candidate.demosAndMeanings.isNotEmpty) {
+        op = candidate;
+      }
+    }
+    if (op == null) {
+      for (final candidate in stop.opinions) {
+        if (candidate.demosAndMeanings.isNotEmpty) {
+          op = candidate;
+          break;
+        }
+      }
+    }
+    if (op == null || op.demosAndMeanings.isEmpty) return null;
+    final idx =
+        (entry.demoIndex ?? 0).clamp(0, op.demosAndMeanings.length - 1);
+    return op.demosAndMeanings[idx];
+  }
+
+  /// Adds or toggles a stop into "مصحفي" (personal Uthmani Mushaf).
+  /// When [opinion] is omitted, uses the active demo scholar or [selectedScholar]
+  /// filter (or the stop's primary verdict in "الكل" mode). Returns true if
+  /// added/updated, false if removed.
+  bool toggleMyMushafStop(
+    WaqfStop stop, {
+    ScholarOpinion? opinion,
+    int faceIndex = 0,
+    int? demoIndex,
+    bool forceAdd = false,
+  }) {
+    final existing = myMushafStops[stop.id];
+    if (existing != null && !forceAdd && opinion == null) {
+      myMushafStops.remove(stop.id);
+      notifyListeners();
+      unawaited(_persistMyMushafPrefs());
+      return false;
+    }
+
+    final StopSymbol sym;
+    final String label;
+    final String? scholarName;
+    final String? verdictText;
+    final int? resolvedDemoIndex;
+
+    if (opinion != null) {
+      sym = faceIndex < opinion.symbols.length
+          ? opinion.symbols[faceIndex]
+          : opinion.primarySymbol;
+      label = faceIndex < opinion.verdictLabels.length
+          ? opinion.verdictLabels[faceIndex]
+          : opinion.primaryVerdictLabel;
+      verdictText = faceIndex < opinion.verdicts.length
+          ? opinion.verdicts[faceIndex]
+          : opinion.primaryVerdict;
+      scholarName = opinion.scholar;
+      resolvedDemoIndex = demoIndex ??
+          (selectedStopId == stop.id &&
+                  demoHighlightActive &&
+                  selectedDemoScholar == opinion.scholar
+              ? selectedDemoIndex
+              : null);
+    } else {
+      final activeDemoScholar = (selectedStopId == stop.id &&
+              demoHighlightActive &&
+              selectedDemoScholar != null &&
+              stop.opinionForScholar(selectedDemoScholar!) != null)
+          ? selectedDemoScholar
+          : null;
+      final effectiveScholar = activeDemoScholar ?? selectedScholar;
+      sym = stop.symbolForScholar(effectiveScholar);
+      label = stop.verdictLabelForScholar(effectiveScholar);
+      scholarName = effectiveScholar;
+      verdictText = stop.labelForScholar(effectiveScholar);
+      resolvedDemoIndex =
+          demoIndex ?? (activeDemoScholar != null ? selectedDemoIndex : null);
+    }
+
+    // If tapping the same scholar's button when already added with that exact
+    // scholar & mark, toggle it off cleanly.
+    if (existing != null &&
+        !forceAdd &&
+        opinion != null &&
+        existing.scholar == scholarName &&
+        existing.mark == label) {
+      myMushafStops.remove(stop.id);
+      notifyListeners();
+      unawaited(_persistMyMushafPrefs());
+      return false;
+    }
+
+    myMushafStops[stop.id] = MyMushafEntry(
+      stopId: stop.id,
+      surah: stop.surah,
+      ayah: stop.ayah,
+      wordIndex: stop.wordIndex,
+      word: stop.word,
+      mark: label,
+      symbol: sym,
+      scholar: scholarName,
+      verdict: verdictText,
+      demoIndex: resolvedDemoIndex,
+      addedAtMs: DateTime.now().millisecondsSinceEpoch,
+    );
+    notifyListeners();
+    unawaited(_persistMyMushafPrefs());
+    return true;
+  }
+
+  void removeFromMyMushaf(String stopId) {
+    if (myMushafStops.remove(stopId) != null) {
+      notifyListeners();
+      unawaited(_persistMyMushafPrefs());
+    }
+  }
+
+  QiraatColorOption get qiraatColorOption =>
+      AppColors.qiraatPresetById(qiraatColorId);
+
+  Color get qiraatHighlightColor => qiraatColorOption.color;
+  Color get qiraatHighlightWash => qiraatColorOption.wash;
+
+  void setQiraatColorId(String id) {
+    final resolved = AppColors.qiraatPresetById(id).id;
+    if (qiraatColorId == resolved) return;
+    qiraatColorId = resolved;
+    notifyListeners();
+    unawaited(_persistDisplayPrefs());
+  }
+
+  void setQiraatDottedOutline(bool value) {
+    if (qiraatDottedOutline == value) return;
+    qiraatDottedOutline = value;
+    notifyListeners();
+    unawaited(_persistDisplayPrefs());
+  }
+
+  void resetDisplaySettings() {
+    if (qiraatColorId == 'copper' &&
+        qiraatDottedOutline == true &&
+        quranSize == 26) {
+      return;
+    }
+    qiraatColorId = 'copper';
+    qiraatDottedOutline = true;
+    quranSize = 26;
+    notifyListeners();
+    unawaited(_persistDisplayPrefs());
   }
 
   void setQuranSize(double value) {
     if (quranSize == value) return;
     quranSize = value;
     notifyListeners();
+    unawaited(_persistDisplayPrefs());
   }
 
   bool matchesReviewFilter(WaqfStop s, ReviewListFilter filter) {

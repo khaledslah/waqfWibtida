@@ -87,6 +87,11 @@ class _IndexScreenState extends State<IndexScreen> {
       Navigator.of(context).pop();
     }
 
+    if (controller.tab == 1) {
+      await controller.jumpMyMushafToSurah(surah.number);
+      return;
+    }
+
     controller.setTab(0);
     if (surah.number == controller.currentSurah) {
       return;

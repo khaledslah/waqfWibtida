@@ -4,6 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:waqf_reader_grok/data/sample_data.dart';
 import 'package:waqf_reader_grok/data/stop_stats.dart';
 import 'package:waqf_reader_grok/models/waqf_models.dart';
+import 'package:waqf_reader_grok/screens/mushaf_screen.dart';
+import 'package:waqf_reader_grok/screens/my_mushaf_screen.dart';
 import 'package:waqf_reader_grok/screens/review_screen.dart';
 import 'package:waqf_reader_grok/screens/stats_screen.dart';
 
@@ -422,5 +424,152 @@ void main() {
     expect(a17Q.demo.qiraatOverrides.length, 3);
     expect(a17Q.demo.qiraatOverrides.first.ayahNumber, 18);
     expect(a17Q.demo.qiraatOverrides.first.modifiedWord, 'صُمًّا');
+
+    // Display color & outline settings switch live and reset cleanly.
+    expect(controller.qiraatColorId, 'copper');
+    expect(controller.qiraatDottedOutline, isTrue);
+    controller.setQiraatColorId('teal');
+    expect(controller.qiraatHighlightColor.value, 0xFF1E7F86);
+    controller.setQiraatDottedOutline(false);
+    expect(controller.qiraatDottedOutline, isFalse);
+    controller.resetDisplaySettings();
+    expect(controller.qiraatColorId, 'copper');
+    expect(controller.qiraatDottedOutline, isTrue);
+  });
+
+  testWidgets('MyMushaf 604 pages + add/remove custom stops work cleanly',
+      (tester) async {
+    final controller = ReaderController();
+    addTearDown(controller.dispose);
+    await tester.runAsync(() async {
+      await controller.bootstrap(initialSurah: 1);
+      await controller.ensureMushafPagesLoaded();
+
+      expect(controller.mushafPageInfo(1)?.juz, 1);
+      expect(controller.mushafPageInfo(604)?.ranges.length, 3);
+      expect(controller.firstMushafPageForSurah(1), 1);
+      expect(controller.firstMushafPageForSurah(2), 2);
+      expect(controller.firstMushafPageForSurah(114), 604);
+      expect(controller.mushafPageForVerse(2, 26), 5);
+      expect(controller.mushafPageForVerse(114, 1), 604);
+
+      await controller.loadSurah(2);
+      final stop = controller.stopById('s2-a26-w8')!;
+      final scholarOp =
+          stop.opinions.firstWhere((o) => o.scholar == 'الأشموني');
+
+      // Add default, then replace with explicit scholar via forceAdd, then toggle remove.
+      expect(controller.toggleMyMushafStop(stop), isTrue);
+      expect(controller.isInMyMushaf(stop.id), isTrue);
+      expect(
+        controller.toggleMyMushafStop(stop, opinion: scholarOp, forceAdd: true),
+        isTrue,
+      );
+      expect(controller.myMushafEntryFor(stop.id)?.scholar, 'الأشموني');
+      expect(controller.sortedMyMushafStops.length, 1);
+
+      await controller.jumpToMyMushafAtVerse(2, 26);
+      expect(controller.tab, 1);
+      expect(controller.currentMushafPage, 5);
+    });
+
+    final stop = controller.stopById('s2-a26-w8')!;
+    await tester.pumpWidget(
+      MaterialApp(
+        home: Scaffold(
+          body: MyMushafScreen(controller: controller),
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+
+    expect(find.byKey(const ValueKey('my-mushaf-page-pill')), findsOneWidget);
+    expect(find.textContaining('ص ٥ / ٦٠٤'), findsOneWidget);
+    expect(find.textContaining('وقوفي (١)'), findsOneWidget);
+    expect(find.byKey(ValueKey<String>('my-mushaf-badge-${stop.id}')),
+        findsOneWidget);
+
+    // Full Waqf (amber) + Ibtida (green) phrase spans & Qira'at word swap
+    // are always highlighted for added My Mushaf stops (s2-a26-w8, الأشموني demo 0).
+    expect(
+      find.byKey(const ValueKey('my-mushaf-hl-2-26-1-waqf')),
+      findsOneWidget,
+    );
+    expect(
+      find.byKey(const ValueKey('my-mushaf-hl-2-26-8-waqf')),
+      findsOneWidget,
+    );
+    expect(
+      find.byKey(const ValueKey('my-mushaf-hl-2-26-9-ibtida')),
+      findsOneWidget,
+    );
+    expect(
+      find.byKey(const ValueKey('my-mushaf-hl-2-26-11-ibtida')),
+      findsOneWidget,
+    );
+    expect(find.byType(QiraatWordText), findsOneWidget);
+
+    // Next arrow sits to the RIGHT of Previous arrow around the page pill,
+    // and both chevron icons lock LTR direction so they point outward (< [page] >).
+    expect(
+      tester.getCenter(find.byKey(const ValueKey('my-mushaf-next-btn'))).dx,
+      greaterThan(
+        tester.getCenter(find.byKey(const ValueKey('my-mushaf-prev-btn'))).dx,
+      ),
+    );
+    expect(
+      tester
+          .widget<Icon>(find.descendant(
+            of: find.byKey(const ValueKey('my-mushaf-next-btn')),
+            matching: find.byType(Icon),
+          ))
+          .textDirection,
+      TextDirection.ltr,
+    );
+    expect(
+      tester
+          .widget<Icon>(find.descendant(
+            of: find.byKey(const ValueKey('my-mushaf-prev-btn')),
+            matching: find.byType(Icon),
+          ))
+          .textDirection,
+      TextDirection.ltr,
+    );
+
+    // Horizontal swipe left-to-right advances to Next Mushaf page (5 -> 6).
+    await tester.runAsync(() async {
+      await tester.fling(
+        find.byType(PageView),
+        const Offset(300, 0),
+        1000,
+      );
+      await tester.pumpAndSettle();
+    });
+    expect(controller.currentMushafPage, 6);
+
+    // Next/Prev tap back from 6 -> 5.
+    await tester.runAsync(() async {
+      await tester.tap(find.byKey(const ValueKey('my-mushaf-prev-btn')));
+      await tester.pumpAndSettle();
+    });
+    expect(controller.currentMushafPage, 5);
+
+    await tester.tap(find.byKey(const ValueKey('my-mushaf-stops-pill')));
+    await tester.pumpAndSettle();
+    expect(find.textContaining('وقوفي المضافة إلى مصحفي'), findsOneWidget);
+
+    controller.removeFromMyMushaf(stop.id);
+    await tester.pumpAndSettle();
+    expect(controller.isInMyMushaf(stop.id), isFalse);
+    expect(find.textContaining('وقوفي (٠)'), findsOneWidget);
+    expect(
+      find.byKey(const ValueKey('my-mushaf-hl-2-26-1-waqf')),
+      findsNothing,
+    );
+    expect(
+      find.byKey(const ValueKey('my-mushaf-hl-2-26-9-ibtida')),
+      findsNothing,
+    );
+    expect(find.byType(QiraatWordText), findsNothing);
   });
 }

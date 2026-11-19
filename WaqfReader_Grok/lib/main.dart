@@ -1,9 +1,25 @@
+import 'dart:ui' show PointerDeviceKind;
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'screens/home_shell.dart';
 import 'theme/app_theme.dart';
+
+/// Enables pointer/mouse-drag swiping alongside touch and trackpad across web and desktop.
+class AppScrollBehavior extends MaterialScrollBehavior {
+  const AppScrollBehavior();
+
+  @override
+  Set<PointerDeviceKind> get dragDevices => const <PointerDeviceKind>{
+        PointerDeviceKind.touch,
+        PointerDeviceKind.mouse,
+        PointerDeviceKind.stylus,
+        PointerDeviceKind.invertedStylus,
+        PointerDeviceKind.trackpad,
+      };
+}
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -26,6 +42,7 @@ class WaqfReaderApp extends StatelessWidget {
     return MaterialApp(
       title: 'وقف وابتداء',
       debugShowCheckedModeBanner: false,
+      scrollBehavior: const AppScrollBehavior(),
       locale: const Locale('ar'),
       supportedLocales: const [Locale('ar')],
       localizationsDelegates: const [

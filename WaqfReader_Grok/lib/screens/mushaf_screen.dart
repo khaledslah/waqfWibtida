@@ -384,6 +384,8 @@ class _WordToken extends StatelessWidget {
         controller.stopDockOpen;
     final activeScholar = controller.selectedScholar;
     final qMod = qiraatOverride;
+    final qColor = controller.qiraatHighlightColor;
+    final qWash = controller.qiraatHighlightWash;
 
     final Color wash;
     final Color marker;
@@ -396,9 +398,9 @@ class _WordToken extends StatelessWidget {
         marker = AppColors.demoIbtidaMarker;
       case DemoSegmentRole.none:
         // A swapped Qira'at word outside both segments still gets a faint
-        // purple wash; the segment colours stay reserved for waqf/ibtida.
+        // Qira'at wash; the segment colours stay reserved for waqf/ibtida.
         wash = qMod != null
-            ? AppColors.qiraatWash
+            ? qWash
             : (selected
                 ? AppColors.wordGlow.withOpacity(0.55)
                 : Colors.transparent);
@@ -437,17 +439,24 @@ class _WordToken extends StatelessWidget {
                   height: 1.35,
                 ),
               )
-            : _qiraatWordText(qMod, controller.quranSize),
+            : QiraatWordText(
+                word: qMod.modifiedWord,
+                size: controller.quranSize,
+                color: qColor,
+              ),
       ),
     );
     if (qMod != null) {
+      final painted = controller.qiraatDottedOutline
+          ? CustomPaint(
+              foregroundPainter: QiraatDottedOutlinePainter(color: qColor),
+              child: box,
+            )
+          : box;
       box = Tooltip(
         message: 'قراءة أخرى: ${qMod.modifiedWord} (في حفص: ${qMod.hafsWord})',
         waitDuration: const Duration(milliseconds: 250),
-        child: CustomPaint(
-          foregroundPainter: const _DottedOutlinePainter(color: AppColors.qiraat),
-          child: box,
-        ),
+        child: painted,
       );
     } else if (ghostColor != null) {
       box = Tooltip(
@@ -680,8 +689,8 @@ class _GhostUnderlinePainter extends CustomPainter {
 
 /// Dotted rounded outline marking a non-Hafs Qira'at word swap without
 /// colliding with the solid waqf/ibtida wash or shifting layout geometry.
-class _DottedOutlinePainter extends CustomPainter {
-  const _DottedOutlinePainter({required this.color});
+class QiraatDottedOutlinePainter extends CustomPainter {
+  const QiraatDottedOutlinePainter({required this.color});
 
   final Color color;
 
@@ -714,30 +723,40 @@ class _DottedOutlinePainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(covariant _DottedOutlinePainter oldDelegate) =>
+  bool shouldRepaint(covariant QiraatDottedOutlinePainter oldDelegate) =>
       oldDelegate.color != color;
 }
 
-/// A word swapped to a non-Hafs Qira'ah.
-///
-/// Uses the exact same Amiri Quran (w400) face as the rest of the Mushaf so
-/// ligatures and letter forms stay identical, with a single `ColorFiltered`
-/// (`BlendMode.srcIn`) pass so both the base letters and COLR harakat tint
-/// cleanly in [AppColors.qiraat].
-Widget _qiraatWordText(QiraatWordOverride m, double size) {
-  return ColorFiltered(
-    colorFilter: const ColorFilter.mode(
-      AppColors.qiraat,
-      BlendMode.srcIn,
-    ),
-    child: Text(
-      m.modifiedWord,
-      textDirection: TextDirection.rtl,
-      style: AppText.quran(
-        size: size,
-        color: AppColors.qiraat,
-        height: 1.35,
+/// Renders [word] in the Mushaf's Amiri Quran (w400) face tinted in [color]
+/// so both base letters and COLR harakat recolor uniformly without morphing.
+class QiraatWordText extends StatelessWidget {
+  const QiraatWordText({
+    super.key,
+    required this.word,
+    required this.size,
+    required this.color,
+  });
+
+  final String word;
+  final double size;
+  final Color color;
+
+  @override
+  Widget build(BuildContext context) {
+    return ColorFiltered(
+      colorFilter: ColorFilter.mode(
+        color,
+        BlendMode.srcIn,
       ),
-    ),
-  );
+      child: Text(
+        word,
+        textDirection: TextDirection.rtl,
+        style: AppText.quran(
+          size: size,
+          color: color,
+          height: 1.35,
+        ),
+      ),
+    );
+  }
 }

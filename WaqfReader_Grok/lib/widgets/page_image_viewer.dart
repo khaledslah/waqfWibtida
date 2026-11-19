@@ -127,18 +127,29 @@ class _BookPageViewerDialogState extends State<BookPageViewerDialog> {
   bool _loading = true;
   String? _errorMessage;
   bool _showText = false;
+  bool _isZoomed = false;
+  double _dragOffset = 0;
   int _reqEpoch = 0;
 
   @override
   void initState() {
     super.initState();
+    _transformCtrl.addListener(_handleTransformChanged);
     _loadInitial();
   }
 
   @override
   void dispose() {
+    _transformCtrl.removeListener(_handleTransformChanged);
     _transformCtrl.dispose();
     super.dispose();
+  }
+
+  void _handleTransformChanged() {
+    final zoomed = _transformCtrl.value.getMaxScaleOnAxis() > 1.05;
+    if (zoomed != _isZoomed && mounted) {
+      setState(() => _isZoomed = zoomed);
+    }
   }
 
   Future<void> _loadInitial() async {
@@ -182,6 +193,7 @@ class _BookPageViewerDialogState extends State<BookPageViewerDialog> {
     setState(() {
       _loading = true;
       _errorMessage = null;
+      _dragOffset = 0;
     });
     try {
       final result = await loader();
@@ -190,6 +202,8 @@ class _BookPageViewerDialogState extends State<BookPageViewerDialog> {
       setState(() {
         _record = result;
         _loading = false;
+        _isZoomed = false;
+        _dragOffset = 0;
         if (result != null && !result.hasPageText) {
           _showText = false;
         }
@@ -249,9 +263,11 @@ class _BookPageViewerDialogState extends State<BookPageViewerDialog> {
       backgroundColor: AppColors.sheet,
       insetPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 20),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-      child: SizedBox(
-        width: size.width,
-        height: size.height * 0.90,
+      child: Directionality(
+        textDirection: TextDirection.rtl,
+        child: SizedBox(
+          width: size.width,
+          height: size.height * 0.90,
         child: Column(
           children: [
             Padding(
@@ -350,16 +366,21 @@ class _BookPageViewerDialogState extends State<BookPageViewerDialog> {
                 child: Row(
                   children: [
                     TextButton.icon(
-                      onPressed: (!_loading && rec.seqIndex > 1)
-                          ? () => _goToSeq(rec.seqIndex - 1)
+                      key: const ValueKey('book-viewer-next-btn'),
+                      onPressed: (!_loading && rec.seqIndex < rec.totalPages)
+                          ? () => _goToSeq(rec.seqIndex + 1)
                           : null,
-                      icon: const Icon(Icons.chevron_right, size: 20),
+                      icon: const Icon(
+                        Icons.chevron_right,
+                        size: 20,
+                        textDirection: TextDirection.ltr,
+                      ),
                       label: Text(
-                        'السابقة',
+                        'التالية',
                         style: AppText.ui(
                           size: 13,
                           weight: FontWeight.w600,
-                          color: (!_loading && rec.seqIndex > 1)
+                          color: (!_loading && rec.seqIndex < rec.totalPages)
                               ? AppColors.sheetText
                               : AppColors.sheetMuted.withOpacity(0.4),
                         ),
@@ -394,25 +415,29 @@ class _BookPageViewerDialogState extends State<BookPageViewerDialog> {
                       ),
                     ),
                     TextButton(
-                      onPressed: (!_loading && rec.seqIndex < rec.totalPages)
-                          ? () => _goToSeq(rec.seqIndex + 1)
+                      key: const ValueKey('book-viewer-prev-btn'),
+                      onPressed: (!_loading && rec.seqIndex > 1)
+                          ? () => _goToSeq(rec.seqIndex - 1)
                           : null,
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           Text(
-                            'التالية',
+                            'السابقة',
                             style: AppText.ui(
                               size: 13,
                               weight: FontWeight.w600,
-                              color: (!_loading &&
-                                      rec.seqIndex < rec.totalPages)
+                              color: (!_loading && rec.seqIndex > 1)
                                   ? AppColors.sheetText
                                   : AppColors.sheetMuted.withOpacity(0.4),
                             ),
                           ),
                           const SizedBox(width: 4),
-                          const Icon(Icons.chevron_left, size: 20),
+                          const Icon(
+                            Icons.chevron_left,
+                            size: 20,
+                            textDirection: TextDirection.ltr,
+                          ),
                         ],
                       ),
                     ),
@@ -422,6 +447,7 @@ class _BookPageViewerDialogState extends State<BookPageViewerDialog> {
             ],
           ],
         ),
+      ),
       ),
     );
   }
@@ -547,34 +573,71 @@ class _BookPageViewerDialogState extends State<BookPageViewerDialog> {
 
     return Stack(
       children: [
-        InteractiveViewer(
-          transformationController: _transformCtrl,
-          minScale: 0.7,
-          maxScale: 5.0,
-          child: Center(
-            child: Padding(
-              padding: const EdgeInsets.all(8),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(8),
-                child: ColoredBox(
-                  color: Colors.white,
-                  child: Image.memory(
-                    rec.imageBytes,
-                    fit: BoxFit.contain,
-                    gaplessPlayback: true,
-                    errorBuilder: (context, error, stackTrace) {
-                      return Container(
-                        padding: const EdgeInsets.all(24),
-                        color: AppColors.sheetRaised,
-                        child: Text(
-                          'تعذّر فكّ ترميز صورة الصفحة ${arabicDigits(rec.pageNum)}.',
-                          style: AppText.ui(
-                            size: 13,
-                            color: AppColors.sheetMuted,
-                          ),
-                        ),
-                      );
-                    },
+        GestureDetector(
+          behavior: HitTestBehavior.opaque,
+          onDoubleTap: _isZoomed
+              ? () => _transformCtrl.value = Matrix4.identity()
+              : null,
+          onHorizontalDragUpdate: (!_loading && !_isZoomed)
+              ? (details) {
+                  setState(() {
+                    _dragOffset =
+                        (_dragOffset + details.delta.dx).clamp(-140.0, 140.0);
+                  });
+                }
+              : null,
+          onHorizontalDragCancel: () {
+            if (_dragOffset != 0) {
+              setState(() => _dragOffset = 0);
+            }
+          },
+          onHorizontalDragEnd: (!_loading && !_isZoomed)
+              ? (details) {
+                  final v = details.primaryVelocity ?? 0;
+                  final offset = _dragOffset;
+                  setState(() => _dragOffset = 0);
+                  if ((v > 220 || offset > 50) &&
+                      rec.seqIndex < rec.totalPages) {
+                    _goToSeq(rec.seqIndex + 1);
+                  } else if ((v < -220 || offset < -50) && rec.seqIndex > 1) {
+                    _goToSeq(rec.seqIndex - 1);
+                  }
+                }
+              : null,
+          child: Transform.translate(
+            offset: Offset(_dragOffset * 0.45, 0),
+            child: InteractiveViewer(
+              transformationController: _transformCtrl,
+              panEnabled: _isZoomed,
+              scaleEnabled: true,
+              minScale: 0.7,
+              maxScale: 5.0,
+              child: Center(
+                child: Padding(
+                  padding: const EdgeInsets.all(8),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(8),
+                    child: ColoredBox(
+                      color: Colors.white,
+                      child: Image.memory(
+                        rec.imageBytes,
+                        fit: BoxFit.contain,
+                        gaplessPlayback: true,
+                        errorBuilder: (context, error, stackTrace) {
+                          return Container(
+                            padding: const EdgeInsets.all(24),
+                            color: AppColors.sheetRaised,
+                            child: Text(
+                              'تعذّر فكّ ترميز صورة الصفحة ${arabicDigits(rec.pageNum)}.',
+                              style: AppText.ui(
+                                size: 13,
+                                color: AppColors.sheetMuted,
+                              ),
+                            ),
+                          );
+                        },
+                      ),
+                    ),
                   ),
                 ),
               ),

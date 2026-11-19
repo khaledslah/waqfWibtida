@@ -260,6 +260,31 @@ void main() {
         expect(find.text('نص إيضاح الوقف والابتداء صفحة 475'), findsOneWidget);
         expect(fetchCalls, 2);
 
+        // Next button ("التالية") must be on the RIGHT of Previous ("السابقة"),
+        // with outward LTR chevron directions (> on right, < on left).
+        expect(
+          tester.getCenter(find.text('التالية')).dx,
+          greaterThan(tester.getCenter(find.text('السابقة')).dx),
+        );
+        expect(
+          tester
+              .widget<Icon>(find.descendant(
+                of: find.byKey(const ValueKey('book-viewer-next-btn')),
+                matching: find.byType(Icon),
+              ))
+              .textDirection,
+          TextDirection.ltr,
+        );
+        expect(
+          tester
+              .widget<Icon>(find.descendant(
+                of: find.byKey(const ValueKey('book-viewer-prev-btn')),
+                matching: find.byType(Icon),
+              ))
+              .textDirection,
+          TextDirection.ltr,
+        );
+
         // Toggle back to image
         await tester.tap(find.text('صورة الصفحة'));
         await tester.pumpAndSettle();
@@ -270,6 +295,24 @@ void main() {
         await tester.pumpAndSettle();
         expect(find.textContaining('٤٧٤ / ١١٩٩'), findsOneWidget);
         expect(fetchCalls, 2);
+
+        // Swiping horizontally left-to-right navigates to Next scanned page,
+        // and right-to-left navigates back to Previous (cached!).
+        await tester.fling(
+          find.byType(InteractiveViewer),
+          const Offset(260, 0),
+          900,
+        );
+        await tester.pumpAndSettle();
+        expect(find.textContaining('٤٧٥ / ١١٩٩'), findsOneWidget);
+
+        await tester.fling(
+          find.byType(InteractiveViewer),
+          const Offset(-260, 0),
+          900,
+        );
+        await tester.pumpAndSettle();
+        expect(find.textContaining('٤٧٤ / ١١٩٩'), findsOneWidget);
       },
     );
 

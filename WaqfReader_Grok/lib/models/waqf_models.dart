@@ -696,13 +696,127 @@ class WaqfStop {
 enum DemoSegmentRole { none, waqf, ibtida }
 
 class AyahWord {
-  const AyahWord(this.text, [this.stopId, this.index = 0]);
+  const AyahWord(
+    this.text, [
+    this.stopId,
+    this.index = 0,
+    this.inUthmaniMushaf = false,
+    this.uthmaniMark,
+    this.uthmaniMarkName,
+  ]);
 
   final String text;
   final String? stopId;
 
   /// 1-based word index in the ayah (matches feed `index` / demo spans).
   final int index;
+  final bool inUthmaniMushaf;
+  final String? uthmaniMark;
+  final String? uthmaniMarkName;
+}
+
+class MushafPageRange {
+  const MushafPageRange({
+    required this.surah,
+    required this.startAyah,
+    required this.endAyah,
+  });
+
+  final int surah;
+  final int startAyah;
+  final int endAyah;
+}
+
+class MushafPageInfo {
+  const MushafPageInfo({
+    required this.page,
+    required this.juz,
+    required this.hizbQuarter,
+    required this.ranges,
+  });
+
+  final int page;
+  final int juz;
+  final int hizbQuarter;
+  final List<MushafPageRange> ranges;
+}
+
+class MyMushafEntry {
+  const MyMushafEntry({
+    required this.stopId,
+    required this.surah,
+    required this.ayah,
+    required this.wordIndex,
+    required this.word,
+    required this.mark,
+    required this.symbol,
+    this.scholar,
+    this.verdict,
+    this.demoIndex,
+    this.addedAtMs = 0,
+  });
+
+  final String stopId;
+  final int surah;
+  final int ayah;
+  final int wordIndex;
+  final String word;
+  final String mark;
+  final StopSymbol symbol;
+  final String? scholar;
+  final String? verdict;
+  final int? demoIndex;
+  final int addedAtMs;
+
+  Map<String, dynamic> toJson() => <String, dynamic>{
+        'stopId': stopId,
+        'surah': surah,
+        'ayah': ayah,
+        'wordIndex': wordIndex,
+        'word': word,
+        'mark': mark,
+        'symbol': symbol.name,
+        if (scholar != null) 'scholar': scholar,
+        if (verdict != null) 'verdict': verdict,
+        if (demoIndex != null) 'demoIndex': demoIndex,
+        'addedAtMs': addedAtMs,
+      };
+
+  static StopSymbol _symbolByName(String? raw) {
+    for (final s in StopSymbol.values) {
+      if (s.name == raw) return s;
+    }
+    return stopSymbolFromFeed(raw);
+  }
+
+  static MyMushafEntry? fromJson(dynamic raw) {
+    if (raw is! Map) return null;
+    final stopId = raw['stopId']?.toString() ?? '';
+    final surah = raw['surah'] is int
+        ? raw['surah'] as int
+        : int.tryParse('${raw['surah'] ?? ''}') ?? 0;
+    final ayah = raw['ayah'] is int
+        ? raw['ayah'] as int
+        : int.tryParse('${raw['ayah'] ?? ''}') ?? 0;
+    if (stopId.isEmpty || surah < 1 || ayah < 1) return null;
+    return MyMushafEntry(
+      stopId: stopId,
+      surah: surah,
+      ayah: ayah,
+      wordIndex: raw['wordIndex'] is int
+          ? raw['wordIndex'] as int
+          : int.tryParse('${raw['wordIndex'] ?? ''}') ?? 1,
+      word: raw['word']?.toString() ?? '',
+      mark: raw['mark']?.toString() ?? 'ج',
+      symbol: _symbolByName(raw['symbol']?.toString()),
+      scholar: raw['scholar']?.toString(),
+      verdict: raw['verdict']?.toString(),
+      demoIndex: raw['demoIndex'] is int
+          ? raw['demoIndex'] as int
+          : int.tryParse('${raw['demoIndex'] ?? ''}'),
+      addedAtMs: raw['addedAtMs'] is int ? raw['addedAtMs'] as int : 0,
+    );
+  }
 }
 
 int compareWordCoord(int ayahA, int wordA, int ayahB, int wordB) {
